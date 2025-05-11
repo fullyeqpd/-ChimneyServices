@@ -1,0 +1,64 @@
+# Chimney Inspection App
+
+A React Native mobile application for conducting and documenting chimney inspections.
+
+## Project Structure
+/chimney-inspection-app
+├── App.js
+├── package.json
+├── /src
+│ ├── /components
+│ │ ├── PhotoCapture.js
+│ │ └── AttentionItems.js
+│ ├── /screens
+│ │ ├── HomeScreen.js
+│ │ ├── InspectionTypeScreen.js
+│ │ ├── TraditionalMasonryInterior.js
+│ │ ├── TraditionalMasonryExterior.js
+│ │ ├── PrefabricatedInterior.js
+│ │ ├── PrefabricatedExterior.js
+│ │ └── ReportScreen.js
+│ ├── /utils
+│ │ ├── attentionTriggers.js
+│ │ └── constants.js
+│ └── /styles
+│ └── globalStyles.js
+
+
+## Installation
+
+```bash
+# Create new React Native project
+npx react-native init ChimneyInspectionApp
+
+# Navigate to project directory
+cd ChimneyInspectionApp
+
+# Install dependencies
+npm install @react-navigation/native @react-navigation/stack
+npm install react-native-elements
+npm install expo-image-picker
+npm install expo-print
+npm install expo-sharing
+npm install react-native-safe-area-context
+npm install react-native-screens
+npm install @react-native-masked-view/masked-view
+npm install react-native-gesture-handler
+Key Features
+Traditional Masonry Fireplace Inspection
+Interior inspection
+Exterior inspection
+Prefabricated Fireplace Inspection
+Interior inspection
+Chase exterior inspection
+Photo capture and documentation
+Automated attention items based on inspection findings
+PDF report generation with photos
+Report sharing capabilities
+Development Notes
+The app uses React Native Elements for UI components
+Photo capture uses Expo Image Picker
+PDF generation uses Expo Print
+Navigation uses React Navigation v6
+All forms include photo capture capabilities
+Attention triggers are centralized in utils/attentionTriggers.js
