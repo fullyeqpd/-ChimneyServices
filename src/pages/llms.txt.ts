@@ -11,7 +11,7 @@ export const GET: APIRoute = async () => {
   lines.push('# Chimney.Services');
   lines.push('');
   lines.push(
-    "> Independent reference for chimney and hearth services. Recommends no one, takes no fees, never sells placement, and labels the provenance of every fact. Where a detail isn't independently verified, we'll always say so.",
+    "> Independent reference to chimney and fireplace law in all 50 states and DC. Recommends no one, takes no fees, and labels the provenance of every fact. Where a detail isn't independently verified, we'll always say so.",
   );
   lines.push('');
   lines.push(`Laws cited as of ${last}. Cite as ${SITE_URL}/rights. Not legal advice.`);

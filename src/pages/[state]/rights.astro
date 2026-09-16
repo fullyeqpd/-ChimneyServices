@@ -302,9 +302,9 @@ const verdictClass = (a: string) => (a === 'SEE SECTION' ? 'verdict__answer verd
     <aside class="rail" aria-label="About this page">
       <div class="state-mark" role="img" aria-label={`${s.name} (${s.abbr})`}>{s.abbr}<span>{s.name}</span></div>
       <div class="rail-card">
-        <p class="kicker">Coming to {s.name}</p>
-        <h2>A chimney directory that never sells placement</h2>
-        <p>Listings climb from public record to independently audited. Get one email when {s.name} launches.</p>
+        <p class="kicker">{s.name} updates</p>
+        <h2>When this law changes, we'll tell you.</h2>
+        <p>One email when a {s.name} statute, code edition or form on this page changes and the page is re-verified.</p>
         <EmailCapture id={`capture-${s.slug}`} state={s.abbr} />
       </div>
       <div class="rail-card">

@@ -9,7 +9,7 @@ import { ORG_NAME, SITE_URL, FOUNDER_LINE, CLOSING_RULE, monthYear, latest, RIGH
 const states = await getStates();
 const lastVerified = latest(states.map((s) => s.lastVerified));
 const title = `Chimney & Fireplace Laws by State — Know Your Rights | ${ORG_NAME}`;
-const description = 'Chimney.Services: an independent reference to chimney and fireplace laws in every state. No fees, no placement sold, every fact sourced.';
+const description = 'Chimney.Services: an independent reference to chimney and fireplace laws in every state. No fees, no sponsors, every fact sourced.';
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -21,10 +21,10 @@ const jsonLd = [
 ];
 ---
 <Base title={title} description={description} path="/" jsonLd={jsonLd} modified={lastVerified} citedAs={monthYear(lastVerified)} section="home">
-  <p class="crumb">CHIMNEY.SERVICES / LAWS REFERENCE · PRE-LAUNCH</p>
+  <p class="crumb">CHIMNEY.SERVICES / STATE LAWS REFERENCE</p>
   <h1>Before anyone goes on your roof, know what the law in your state actually says.</h1>
   <p class="lede">
-    Chimney.Services is an independent reference for chimney and hearth services. Phase one is a state-by-state guide to chimney and fireplace law: who needs a license, what a seller must tell you, how to cancel a door-knock sale, and when a carbon monoxide alarm is required.
+    Chimney.Services is an independent, state-by-state reference to chimney and fireplace law: who needs a license, what a seller must tell you, how to cancel a door-knock sale, and when a carbon monoxide alarm is required.
   </p>
   <p class="chips"><Chip kind="muted">Public record</Chip><Chip kind="national" /><span class="fineprint">Laws cited as of {monthYear(lastVerified)}</span></p>
 
@@ -39,9 +39,9 @@ const jsonLd = [
       </p>
     </section>
     <section class="box" aria-labelledby="notify-h">
-      <p class="kicker">Coming next</p>
-      <h2 id="notify-h">A chimney directory where placement is never sold</h2>
-      <p>Listings climb from public record, to claimed by the business, to independently audited. Get one email when it launches in your state.</p>
+      <p class="kicker">Stay current</p>
+      <h2 id="notify-h">Laws change. We re-check them.</h2>
+      <p>Every state page is dated and re-verified against the statute. Get one email when your state's chimney or fireplace law changes, or when a new section is published.</p>
       <EmailCapture id="capture-home" />
     </section>
   </div>
@@ -55,7 +55,7 @@ const jsonLd = [
   <section aria-labelledby="how-h" style="margin-top:40px">
     <h2 id="how-h">How does Chimney.Services work?</h2>
     <ul class="topic-list">
-      <li><strong>We recommend no one and take no fees.</strong> No certification body, guild, or contractor pays us, and placement is never for sale at any tier.</li>
+      <li><strong>We recommend no one and take no fees.</strong> No certification body, guild, or contractor pays us, and no one can pay to be mentioned.</li>
       <li><strong>Every fact carries its provenance.</strong> On this laws site, everything is <span class="chip chip--muted">Public record</span> — statutes, regulations, registries and official forms, each dated.</li>
       <li><strong>We say what we haven't checked.</strong> {CLOSING_RULE}</li>
     </ul>
