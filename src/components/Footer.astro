@@ -1,0 +1,24 @@
+---
+import { DISCLAIMER, CLOSING_RULE } from '../lib/site';
+interface Props { citedAs?: string | null }
+const { citedAs } = Astro.props;
+---
+<footer class="footer">
+  <div class="wrap footer__grid">
+    <div>
+      <p><strong>Chimney.Services</strong> — the independent reference for chimney and hearth services. We recommend no one, take no fees, and never sell placement.</p>
+      <p class="muted">{DISCLAIMER}</p>
+      <p class="muted">{CLOSING_RULE}</p>
+      <p class="muted">Founded by <a href="/about#founder">Art Kalina</a>, founder of ChimneyMonkey.</p>
+      <p class="cited">{citedAs ? `Laws cited as of ${citedAs}` : 'Laws cited as of the dates shown on each page'}</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="/rights">Rights</a>
+      <a href="/licensing">Licensing</a>
+      <a href="/learn">Learn</a>
+      <a href="/about">About</a>
+      <a href="/data/rights-table.csv" download>Rights CSV</a>
+      <a href="/llms.txt">llms.txt</a>
+    </nav>
+  </div>
+</footer>

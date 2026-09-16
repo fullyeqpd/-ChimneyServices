@@ -1,0 +1,317 @@
+{
+  "slug": "new-mexico",
+  "name": "New Mexico",
+  "abbr": "NM",
+  "sourceFile": "rights-research-new-mexico.md",
+  "researched": "2026-07-10",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "CO section now rests on the verified code-only fact — publish that, never the certificate claim; $10,000 bond must be dropped or cited; sweep-only reading needs legal review; lookup URL needs a manual load check",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked Sep 15, 2026 by verification agent. Laws cited as of Sep 2026.\n- CO \"certificate of compliance\" claim (FAILED earlier, DO-NOT-PUBLISH): CORRECTED/REPLACED — no pre-sale CO certificate exists in any source reached; the verified fact is that 14.7.3.8 NMAC adopts the 2021 IRC with no R315/R314 amendment (eff. 7/14/2023; mandatory after 12/14/2023) — srca.nm.gov/parts/title14/14.007.0003.html — GOV. § 47-8-20 (landlord duties) has no detector duty — law.justia.com/codes/new-mexico/chapter-47/article-8/section-47-8-20/ — DOC (statute mirror). NCSL table lists no NM CO statute — REF (supporting only). Page statement: \"New Mexico has no standalone CO-alarm statute; CO alarms come only through the residential building code at new construction and permitted work.\"\n- $7,200 handyman exemption subsection: RESOLVED — NMSA § 60-13-3(D)(14), conditions (a)–(c) + electrical/plumbing/gas exclusion — law.justia.com/codes/new-mexico/chapter-60/article-13/section-60-13-3/ (2025) — DOC (statute mirror)\n- 14.6.2.8 NMAC handyman certificate conditions: RESOLVED — $7,200/year, casual/minor/inconsequential, not part of larger operation, no advertising, annual declaration, no electrical/plumbing/gas — srca.nm.gov/parts/title14/14.006.0002.html — GOV\n- Seller disclosure: RESOLVED — § 47-13-4 requires only property-tax levy disclosures (2025) — law.justia.com — DOC; no chimney item on any statutory form (none exists)\n- Residential code cycle: RESOLVED — 2021 IRC via 14.7.3.8 NMAC; Chapter 10 adopted without NM amendment (14.7.3.18) — srca.nm.gov — GOV\n- 2026 changes: none found in the sources reached (no web search available to sweep 2026 session laws — noted as a limit, not a finding)\n- Template-leakage sweep: clean\n- Bond cite, RANM form edition, IFC edition/WUI, enforcement, inspection window, sweep-only legal reading, lookup URL load: STILL OPEN"
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; universal state license, adobe named in the masonry class, near-zero threshold)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; universal state license, adobe named in the masonry class, near-zero threshold",
+      "markdown": "**New Mexico has one of the strictest contractor-licensing regimes in the country: essentially ALL contracting work requires a state license, with no meaningful dollar threshold.** STATE LAW: the **Construction Industries Division (CID)** of the Regulation & Licensing Department licenses under the **Construction Industries Licensing Act (CILA), NMSA 1978 §§ 60-13-1 through 60-13-59** (rld.nm.gov/uploads/files/Construction%20Industries%20Licensing%20Act.pdf, checked Jul 10, 2026); a license is required before contracting (**NMSA § 60-13-12**, law.justia.com/codes/new-mexico/chapter-60/article-13/section-60-13-12/). Classifications live in **14.6.6 NMAC (eff. 3/10/2022)** (srca.nm.gov/parts/title14/14.006.0006.html, full text read Jul 10, 2026): a masonry chimney falls under **GS-16 (Masonry)** — \"brick and other baked clay products, rough cut and dressed stone, artificial stone and pre-cast blocks, structural glass brick or **block adobe**… to form masonry walls, anchored stone or masonry veneer\" (2 yrs experience; note the scope names walls/veneer, **not the word \"chimney\"** — flag as our reading). A **prefab/metal chimney is explicitly GS-32 (Miscellaneous sheet metal)** — \"fabricate on site and install sheet metal… and **prefabricated chimneys**\" (may not do HVAC ducts/vents); **GS-21 (Roofing)** may also install \"prefabricated chimneys, at or near roof lines, metal flues\" *incidental to roofing*; gas-appliance \"chimney connections, flues, refractories\" are **MM-2 (Natural gas fitting)**. **GB-2 (Residential)** and **GB-98 (General building)** include all GS-scope work (GB-98: 4 yrs foreman-level experience incl. 2 commercial). Oddities that don't fit get **GS-29** case-by-case. **The only exemption is the narrow handyman carve-out — NMSA 1978 § 60-13-3(D)(14)** (2025 code text, law.justia.com/codes/new-mexico/chapter-60/article-13/section-60-13-3/, checked Sep 15, 2026) **and 14.6.2.8 NMAC (Handyman Certificate)** (srca.nm.gov/parts/title14/14.006.0002.html, checked Sep 15, 2026): \"an individual who works on one undertaking or project at a time that, in the aggregate or singly, does not exceed seven thousand two hundred dollars ($7,200) compensation a year, the work being casual, minor or inconsequential, such as handyman repairs,\" provided (a) the work is not part of a larger or major operation, (b) the individual does not advertise or maintain a sign, card or other device indicating contracting qualification, and (c) the individual files an annual declaration with the division; the exemption never covers electrical wiring, plumbing or gas fitting — this is a yearly income cap, not a per-job threshold, so nearly every real chimney job is licensed work. Getting licensed is real: qualifying-party trade exam + business & law exam through PSI (75% pass) and a **$10,000 contractor license bond** *(bond and exam details from REF prep-industry pages — confirm the bond's statutory/rule cite before publish)*. Penalties: unlicensed contracting is a **misdemeanor — ≤$5,000 job: 90 days and/or $300–$500 fine; >$5,000 job: six months and/or a fine of 10% of the job value (NMSA § 60-13-52**, law.justia.com/codes/new-mexico/chapter-60/article-13/section-60-13-52/). Public lookup: **RLD Public Search, nmrldlpi.my.site.com/bcd/s/rld-public-search** (returns status, classification, qualifier, discipline)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Even this strict license tests **New Mexico contracting law (NMSA 60-13, 14.6 NMAC), business/finance, and general trade code knowledge — not flue diagnosis, not NFPA 211, not whether the licensee can read *your* chimney.** A GS-16 licensee is attested as a mason (walls, veneer, adobe) — the classification scope never says \"chimney\"; a GS-32 licensee as a sheet-metal fabricator. Neither exam contains a chimney-inspection component. And **pure chimney *sweeping* arguably isn't \"contracting\" at all** — CILA's definition turns on constructing, altering, repairing or demolishing; a cleaning-only visit with no repair plausibly falls outside licensure entirely *(interpretive point — our reading, flag for legal review, not statute text)*. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) plus an independent inspection remain the competence signal on top of the license."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence on the absence; the mandatory disclosure is taxes only)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on the absence; the mandatory disclosure is taxes only",
+      "markdown": "**Absence is the finding: New Mexico has NO statute requiring a seller defect-disclosure form.** STATE LAW: the only mandatory transfer disclosure is the **Real Estate Disclosure Act, NMSA 1978 Ch. 47, Art. 13 — and it covers estimated property-tax levy only** (§ 47-13-4, law.justia.com/codes/new-mexico/chapter-47/article-13/section-47-13-4/); § 47-13-2 is literally titled \"Disclosure of information not required in real estate transactions\" (it also shields sellers from disclosing crimes on the property). But NM is not pure caveat emptor: courts impose liability for **fraud/misrepresentation and nondisclosure of known material defects** (common-law duty; nolo.com/legal-encyclopedia/selling-new-mexico-home-what-are-my-disclosure-obligations.html, checked Jul 10, 2026). In practice the market runs on the **REALTORS® Association of New Mexico \"Seller's Property Disclosure – Residential\" (RANM Form 2301)** — a private, voluntary-by-law form that is *more* chimney-specific than most statutory forms: Section E (Mechanical) has line items for **Fireplace (wood-burning/gas logs/log lighter/electric), Stove (wood/pellet), Fireplace Insert — and line E-13 asks for \"date of last fireplace/wood stove, chimney/flue cleaning\"** (2018 edition PDF read in full Jul 10, 2026; confirm current edition before publish — the form is RANM-copyrighted, describe rather than reproduce). No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. Buyer due-diligence/inspection windows are set by the RANM purchase agreement, customarily on the order of 1–2 weeks *(customary, REF — confirm)*."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: the **New Mexico Unfair Practices Act (UPA), NMSA 1978 § 57-12-1 et seq.**, enforced by the **AG (New Mexico Department of Justice) Consumer Protection Division**. **Private remedies are unusually consumer-friendly (§ 57-12-10**, law.justia.com/codes/new-mexico/chapter-57/article-12/section-57-12-10/): recover **actual damages or $100, whichever is greater**; where the violation is **willful, the court may award up to TREBLE damages or $300, whichever is greater**; and the court **SHALL award attorney fees and costs** to a prevailing complainant — a fee-shift that makes small chimney-job claims economically viable. **Right to cancel: NMSA § 57-12-21** gives a **3-business-day rescission on door-to-door AND seller-initiated telephone sales of $25 or more** (seller must attach a detachable duplicate \"NOTICE OF CANCELLATION\"; refund due within 10 business days; codes.findlaw.com/nm/chapter-57-trade-practices-and-regulations/nm-st-sect-57-12-21.html). AG complaints: **nmdoj.gov/submit-a-complaint** (portal) or 1-800-678-1508. Contractor-side leverage stack (CILA): an unlicensed contractor **cannot sue in any NM court to collect payment and must plead and prove licensure — and has NO right to a mechanic's lien (NMSA § 60-13-30**, law.justia.com/codes/new-mexico/chapter-60/article-13/section-60-13-30/; NM courts enforce this even against unjust-enrichment arguments). Hiring an unlicensed contractor does not void the homeowner's own UPA remedies; CID also takes complaints against licensees and unlicensed operators (rld.nm.gov)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; a real statewide code on a current cycle)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real statewide code on a current cycle",
+      "markdown": "STATE LAW: New Mexico has a **mandatory statewide residential code — the 2021 New Mexico Residential Building Code (NMRBC), 14.7.3 NMAC, adopting the 2021 IRC as amended**; after **December 14, 2023** permits issue only under this rule (srca.nm.gov/parts/title14/14.007.0003.html, checked Jul 10, 2026). **CID itself is the building department wherever no certified local jurisdiction exists** — a genuinely unusual arrangement that means rural NM chimney permits go through the state; Albuquerque, Santa Fe, Las Cruces, Rio Rancho and other cities run local departments enforcing the same state code. Chimney relines, rebuilds, and solid-fuel appliance installs are permit work under the NMRBC/mechanical rules; routine sweeps and like-for-like cap swaps generally are not — local-variance disclaimer applies. **NFPA 211 is not adopted as NM statute** — it remains a NATIONAL STANDARD (the state fire code adopts the IFC; current edition NOT CONFIRMED — verify before publish)."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV on the code layer — medium; statute layer is an absence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "on the code layer — medium; statute layer is an absence",
+      "markdown": "**New Mexico has no standalone carbon-monoxide-alarm statute that we could find — the CO requirement is code-only.** STATE LAW (code): **14.7.3.8 NMAC adopts the 2021 International Residential Code \"as amended by this rule,\"** effective July 14, 2023, with permits issued only under it after December 14, 2023 — and the NM rule makes **no amendment to R315 (CO alarms) or R314 (smoke alarms)**, so the unamended 2021 IRC R315 applies: CO alarms in dwellings with fuel-burning appliances or attached garages, at new construction and at permit-triggering alterations/additions (srca.nm.gov/parts/title14/14.007.0003.html, checked Sep 15, 2026). Rentals: the owner-obligations section of the Uniform Owner-Resident Relations Act, **NMSA § 47-8-20, contains no smoke- or CO-detector duty** (2025 code, law.justia.com, checked Sep 15, 2026). NCSL's CO-statute table (updated Sep 2025 — REF) lists no New Mexico statute. **There is no pre-sale CO certificate requirement in New Mexico; the \"certificate of compliance\" claim on vendor/blog pages has no statutory basis we could locate and must not be published.** LOCAL: Albuquerque's housing code imposes its own smoke-detector installation duties on rentals (ABQ Code § 9-13-4, codelibrary.amlegal.com; renter's guide at cabq.gov). The honest framing: a permitted chimney/stove job is the natural moment alarms get added; the RANM disclosure form's Section D asks whether smoke and CO alarms are present and working — market practice, not statute."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV — high confidence; NM runs BOTH western axes: wildfire/spark-arrestor AND air-quality no-burn)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; NM runs BOTH western axes: wildfire/spark-arrestor AND air-quality no-burn",
+      "markdown": "**Two regimes, both real.** LOCAL (air quality): the **Albuquerque–Bernalillo County winter no-burn program** is one of the strongest urban wood-smoke regimes in the West — **20.11.22 NMAC (Woodburning)**, adopted by the joint Air Quality Control Board and EPA-approved into the State Implementation Plan (srca.nm.gov/parts/title20/20.011.0022.html; epa.gov/sips-nm/new-mexico-sip-bernalillo-county-part-22-woodburning, checked Jul 10, 2026). The city calls nightly **\"Burn / No Burn\"** restrictions **October through February** in a defined \"Wood smoke Impacted Area\" of Bernalillo County; a **sole-source exemption** exists where a solid-fuel device is the home's only heat (status line: **cabq.gov/airquality/burn-no-burn**). LOCAL (wildfire/WUI): **Santa Fe County adopted the International Wildland-Urban Interface Code (Ordinance 2018-8, with the 2015 IFC)**, and its Urban Wildland Interface packet **requires spark arresters on chimneys serving solid- or liquid-fuel fireplaces, barbecues, incinerators and decorative appliances — woven/welded wire, 12-gauge, openings not exceeding ¾ inch** (santafecountynm.gov/userfiles/file/resident/UrbanWildland.pdf, checked Jul 10, 2026) — a genuine cap/arrestor LAW, not guidance. Lincoln County (Ruidoso) publishes WUI guidance and the 2024 South Fork/Salt fires make it the highest-consequence market, but a **Ruidoso-specific chimney/spark-arrestor ordinance is NOT CONFIRMED — pull before publish**; statewide burn restrictions run through EMNRD Forestry/nmfireinfo (REF). Regional oddity worth owning: the **kiva fireplace** — the sculpted adobe corner fireplace of Santa Fe/Taos style. The state's own masonry classification (GS-16) explicitly includes **adobe**, and modern kiva kits vent through **UL-103 listed metal flues** (Adobelite installation manual, adobelite.com — REF), meaning a single traditional NM fireplace can straddle GS-16 (adobe body) and GS-32 (metal flue) scopes. No statewide stove-emission or burn-day regime beyond local rules."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "**No chimney-specific NM AG alert or enforcement action surfaced this session — NOT CONFIRMED; re-run before publish.** The structural pieces are strong regardless: the door-knock \"we noticed your chimney\" pitch is a textbook **§ 57-12-21** (no cancellation notice) plus UPA violation with mandatory fee-shifting; unlicensed operators face the § 60-13-52 misdemeanor and CID stings; and NM DOJ runs a general scam-alert program with an online intake (nmdoj.gov/about-the-office/consumer-affairs/; secure.nmdoj.gov ECS portal). Post-wildfire repair fraud (Ruidoso 2024 aftermath) is the likely NM-specific pattern — search for AG releases on fire-rebuild contractor fraud before publish."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "High-desert and mountain state: Albuquerque sits at ~5,300 ft, Santa Fe ~7,200 ft, Taos and the northern mountains higher — real heating winters despite the latitude. Burn season ~**Oct–Apr** (longer in the northern mountains); in Albuquerque the same Oct–Feb window carries **no-burn nights**, which concentrates demand for EPA-certified inserts and compliant, clean-burning systems. Rush: **SEP–NOV**. Best booking: **APR–AUG** (spring/summer; monsoon rains Jul–Aug rarely block work)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "New Mexico's cost of living runs **below national** (MERIC index — consistent with the state price CSVs); Albuquerque metro ≈ slightly below national labor. The exceptions are the **Santa Fe/Taos resort belt**, which carries a premium (and the kiva/adobe specialty skews custom, artisan-priced work), and remote mountain/rural areas where travel time inflates minimums. Regionalize on an ABQ-baseline vs. Santa Fe/Taos-premium split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — CID state license (CILA, NMSA 60-13), masonry chimney = GS-16 (adobe named), prefab/metal chimney = GS-32; no per-job threshold (handyman carve-out ≤$7,200/YEAR, NMSA 60-13-3(D)(14))** · Registration: **license regime + $10,000 license bond (confirm cite)** · Disclosure law: **NO statutory defect form — tax-only Real Estate Disclosure Act (NMSA 47-13); customary RANM form names fireplace/stove/insert and asks date of last chimney cleaning** · CO law: **code-only (14.7.3.8 NMAC adopts 2021 IRC R315 unamended); no standalone CO statute, no rental or pre-sale CO requirement found** · Unlicensed can't sue or lien: **YES (NMSA 60-13-30)** · 3-day cancel: **YES (door-to-door + telephone, $25+, NMSA 57-12-21)** · Lookup: nmrldlpi.my.site.com/bcd/s/rld-public-search · Leverage: **Santa Fe County WUI spark-arrestor rule + ABQ no-burn nights (20.11.22 NMAC)**"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "New Mexico **CONFIRMS the license⇄disclosure inverse correlation — and it's the cleanest confirm in the West.** On licensing it sits at the **top of the launch set**: a universal state license with *no per-job dollar threshold at all* (the only out is a $7,200-per-YEAR handyman income cap with an annual filed declaration), classification codes granular enough to name **adobe** in the masonry scope and **prefabricated chimneys** in the sheet-metal scope, a $10,000 bond, real exams, misdemeanor penalties scaled to job value — and the nuclear deterrent of **§ 60-13-30: an unlicensed contractor cannot sue you and cannot lien your house.** The inverse-correlation rule predicts a state this strong on the contractor axis goes soft at the sale table — and **New Mexico does, completely**: the only *mandatory* transfer disclosure in the state is an estimate of property taxes; defect disclosure survives on common-law fraud and a REALTOR-association form. That takes the West from 4-4 to **5-4 on the confirm side** — still a coin flip trending, not a law. The twist that keeps the page honest: the *voluntary* RANM form is more chimney-literate than almost any *statutory* form in the country — it asks for the **date of the last chimney/flue cleaning** by name. On the West's orthogonal **wildfire/cap-law axis, NM sits firmly ON it** — Santa Fe County's WUI ordinance makes spark arresters (12-gauge screen, ¾-inch openings) a legal requirement, with Ruidoso the post-2024-fire watch point — and NM adds a **third axis of its own: air-quality no-burn nights** (Albuquerque/Bernalillo, 20.11.22 NMAC, Oct–Feb), a regime type the launch set hasn't seen since the Northwest. Message: **in New Mexico the license check is everything — verify GS-16/GS-32/GB-98 on the RLD lookup before anyone touches the chimney, because the state gives you a bond, a fee-shifted UPA claim, and a contractor who literally can't collect without a license — but at home sale, you're on your own: no law makes the seller hand you anything but a tax estimate, so get the Level 2 inspection.**"
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — CID state license (CILA, NMSA 60-13), masonry chimney = GS-16 (adobe named), prefab/metal chimney = GS-32; no per-job threshold (handyman carve-out ≤$7,200/YEAR, NMSA 60-13-3(D)(14))",
+    "registration_name": "license regime + $10,000 license bond (cite unconfirmed)",
+    "disclosure_law": "NO statutory defect form — tax-only Real Estate Disclosure Act (NMSA 47-13-4); customary RANM form names fireplace/stove/insert and asks date of last chimney cleaning",
+    "chimney_item_on_form": "Yes — customary RANM form only (no statutory form)",
+    "three_day_cancel": "YES (door-to-door + telephone, $25+, NMSA 57-12-21)",
+    "co_law": "NO standalone CO statute — code-only (14.7.3.8 NMAC adopts 2021 IRC R315 unamended); no rental or pre-sale CO requirement",
+    "lookup_url": "nmrldlpi.my.site.com/bcd/s/rld-public-search",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — CID state license (CILA, NMSA 60-13), masonry chimney = GS-16 (adobe named), prefab/metal chimney = GS-32; no per-job threshold (handyman carve-out ≤$7,200/YEAR, NMSA 60-13-3(D)(14))",
+    "registration_name": "license regime + $10,000 license bond (confirm cite)",
+    "disclosure_law": "NO statutory defect form — tax-only Real Estate Disclosure Act (NMSA 47-13); customary RANM form names fireplace/stove/insert and asks date of last chimney cleaning",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (door-to-door + telephone, $25+, NMSA 57-12-21)",
+    "co_law": "code-only (14.7.3.8 NMAC adopts 2021 IRC R315 unamended); no standalone CO statute, no rental or pre-sale CO requirement found",
+    "lookup_url": "nmrldlpi.my.site.com/bcd/s/rld-public-search"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "CID state license (CILA, NMSA 60-13), masonry chimney = GS-16 (adobe named), prefab/metal…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Even this strict license tests New Mexico contracting law (NMSA 60-13, 14.6 NMAC), business/finance, and general trade code knowledge — not flue diagnosis, not NFPA 211, not whether the licensee can read your chimney."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (door-to-door + telephone, $25+, NMSA 57-12-21)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:limited→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "remedies",
+      "rule": "sue:§4-sentence",
+      "derivedFrom": "§4 text",
+      "evidence": "Contractor-side leverage stack (CILA): an unlicensed contractor cannot sue in any NM court to collect payment and must plead and prove licensure — and has NO right to a mechanic's lien (NMSA § 60-13-30…"
+    }
+  ],
+  "h1": "New Mexico: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "New Mexico chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "High-desert and mountain state: Albuquerque sits at ~5,300 ft, Santa Fe ~7,200 ft, Taos and the northern mountains higher — real heating winters despite the latitude. Burn season ~Oct–Apr (longer in the northern mountains); in Albuquerque the same Oct–Feb window carries no-burn nights, which concentrates demand for…"
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in New Mexico?",
+      "a": "State licensing: YES — CID state license (CILA, NMSA 60-13), masonry chimney = GS-16 (adobe named), prefab/metal chimney = GS-32; no per-job threshold (handyman carve-out ≤$7,200/YEAR, NMSA 60-13-3(D)(14)). Registration or credential: license regime + $10,000 license bond (confirm cite). Seller disclosure at sale: NO statutory defect form — tax-only Real Estate Disclosure Act (NMSA 47-13); customary RANM form names fireplace/stove/insert and asks date of last chimney cleaning. Right to cancel a sale made at your home: YES (door-to-door + telephone, $25+, NMSA 57-12-21). Carbon monoxide alarm law: code-only (14.7.3.8 NMAC adopts 2021 IRC R315 unamended); no standalone CO statute, no rental or pre-sale CO requirement found. Where to check a contractor: nmrldlpi.my.site.com/bcd/s/rld-public-search. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in New Mexico?",
+      "a": "Absence is the finding: New Mexico has NO statute requiring a seller defect-disclosure form. STATE LAW: the only mandatory transfer disclosure is the Real Estate Disclosure Act, NMSA 1978 Ch. 47, Art. 13 — and it covers estimated property-tax levy only (§ 47-13-4, law.justia.com/codes/new-mexico/chapter-47/article-13/section-47-13-4/); § 47-13-2 is literally titled \"Disclosure of information not required in real estate transactions\" (it also shields sellers from disclosing crimes on the property).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in New Mexico?",
+      "a": "STATE LAW: the New Mexico Unfair Practices Act (UPA), NMSA 1978 § 57-12-1 et seq., enforced by the AG (New Mexico Department of Justice) Consumer Protection Division. Private remedies are unusually consumer-friendly (§ 57-12-10, law.justia.com/codes/new-mexico/chapter-57/article-12/section-57-12-10/): recover actual damages or $100, whichever is greater; where the violation is willful, the court may award up to TREBLE damages or $300, whichever is greater; and the court SHALL award attorney fees and costs to a prevailing complainant — a fee-shift that makes small chimney-job claims economically viable. Right to cancel: NMSA § 57-12-21 gives a 3-business-day rescission on door-to-door AND seller-initiated telephone sales of $25 or more (seller must attach a detachable duplicate \"NOTICE OF CANCELLATION\"; refund due within 10 business days; codes.findlaw.com/nm/chapter-57-trade-practices-and-regulations/nm-st-sect-57-12-21.html). AG complaints: nmdoj.gov/submit-a-complaint (portal) or 1-800-678-1508.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "colorado",
+    "neighborName": "Colorado",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "CID state license (CILA, NMSA 60-13), masonry chimney = GS-16 (adobe named), prefab/metal…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

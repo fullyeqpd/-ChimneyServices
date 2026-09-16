@@ -1,0 +1,313 @@
+{
+  "slug": "virginia",
+  "name": "Virginia",
+  "abbr": "VA",
+  "sourceFile": "rights-research-virginia.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) § 8 pattern-only, (2) no dollar figures for financial responsibility/experience, (3) CO new-construction section cited generically as USBC.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Transaction Recovery Fund cap after 2025 HB1707: RESOLVED — § 54.1-1123: $30,000 per claimant per single transaction; $100,000 aggregate per regulant per biennium (HB1707 raised $20,000→$30,000 and $40,000→$100,000; approved Mar 19, 2025). File previously said \"~$100k\", now exact — https://law.lis.virginia.gov/vacode/title54.1/chapter11/section54.1-1123/ ; https://legiscan.com/VA/text/HB1707/id/3183493/Virginia-2025-HB1707-Chaptered.html — GOV\n- License thresholds (§ 54.1-1100): CORRECTED — trigger is \"over $1,000\" (file previously stated the trigger inclusively at $1,000); Class C <$30,000 / <$250,000 per 12 mo; Class B $30,000–<$150,000 / $250,000–<$1M; Class A $150,000+ / $1M+ — https://law.lis.virginia.gov/vacode/title54.1/chapter11/section54.1-1100/ — GOV\n- Financial-responsibility dollar figures previously in § 1: STILL OPEN — not found on a primary page this pass; numbers removed from file.\n- § 55.1-703 buyer-beware form: RESOLVED — statute requires statement that \"The owner makes no representations or warranties as to the condition of the real property or any improvements thereon\" and advises purchasers to exercise due diligence incl. \"obtaining a home inspection\"; no chimney/fireplace item anywhere in the section — https://law.lis.virginia.gov/vacode/title55.1/chapter7/section55.1-703/ — GOV\n- USBC cycle: RESOLVED — 2021 USBC effective Jan 18, 2024 (GOV: https://www.dhcd.virginia.gov/codes); 2024 USBC tentatively Oct 2027 (REF only: https://hbav.com/news/update-2024-virginia-building-code-development-cycle)\n- Rental CO on request: RESOLVED — § 55.1-1229(E), install within 90 days of written request — https://law.lis.virginia.gov/vacodefull/title55.1/chapter12/article3/ — GOV\n- 3-day cancel: RESOLVED — § 59.1-21.3, until midnight of third business day after signing — https://law.lis.virginia.gov/vacode/title59.1/chapter2.1/section59.1-21.3/ — GOV\n- Enforcement actions: STILL OPEN — not searched.\n- Template-leakage sweep: clean (no other-state statute strings; MD/MA/OH mentions are labeled comparisons)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; tiered exam license)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; tiered exam license",
+      "markdown": "Virginia runs a **statewide, tiered contractor license with real exams** through **DPOR's Board for Contractors** (Va. Code Title 54.1, Chapter 11). **A license is required for contracting work valued over $1,000** (§ 54.1-1100: Class C starts at \"over $1,000\"). Three classes by value, as amended by **2025 HB1707**: **Class C** (single contract over $1,000 but under $30,000, or under $250,000 in 12 months), **Class B** ($30,000 to under $150,000 per contract, or $250,000 to under $1 million in 12 months), **Class A** ($150,000+ per contract or $1 million+ in 12 months) (law.lis.virginia.gov/vacode/title54.1/chapter11/section54.1-1100/). *(Per-class experience years and exam waivers not re-read on a primary page in Sep 2026 — verify before publishing specifics.)* Two exam tracks: the **designated employee** passes the Virginia Contractor Law/business portion; the **qualified individual** passes a **trade exam per classification/specialty** (Building, HVAC, etc.). Home improvement / masonry chimney work runs under a Building or Home Improvement specialty. Financial-responsibility requirements plus a Recovery Fund contribution apply *(specific net-worth/bond figures UNVERIFIED — do not publish numbers)*. Public lookup: **dpor.virginia.gov** license search."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The trade exam is **by classification (Building code, HVAC code, etc.) — not chimney/flue diagnosis or sweep competence.** A Class A Building contractor may never have scanned a flue. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal on top of the license."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; the quirk)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; the quirk",
+      "markdown": "Virginia's disclosure is the strangest of the launch set: a **mandatory form that discloses nothing about condition.** Under the **Virginia Residential Property Disclosure Act (Va. Code § 55.1-700 et seq.; § 55.1-703)**, the seller must deliver a **Residential Property Disclosure Statement — but it is a \"buyer beware\" notice**: the owner \"makes no representations or warranties as to the condition,\" and the buyer is advised to \"exercise whatever due diligence [the] purchaser deems necessary, including obtaining a home inspection.\" **There is no chimney line item because the form lists no property conditions at all.** Virginia is caveat emptor with a mandatory notice that says so in writing. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Two-track, like Maryland. **(1) The Contractor Transaction Recovery Fund (Va. Code § 54.1-1118 et seq.)** pays a homeowner with an unpaid judgment against a *licensed* contractor **up to $30,000 per claimant per single transaction** (§ 54.1-1123; raised from $20,000 by 2025 HB1707, approved Mar 19, 2025) with an **aggregate cap of $100,000 per regulant per biennium** (raised from $40,000 by the same bill); actual loss only. **(2) The Virginia Consumer Protection Act (§ 59.1-196 et seq.; § 59.1-204)** gives actual damages or $500 (whichever greater), and for **willful** violations up to **treble damages** (or $1,000) plus attorney's fees — discretionary, moderate. Home-solicitation/door-to-door sales carry a **3-business-day right to cancel** (Home Solicitation Sales Act, Va. Code § 59.1-21.1 et seq.; cancellation right at **§ 59.1-21.3**, until midnight of the third business day after signing). Complaints: DPOR + AG."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high on uniformity; confirm cycle)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on uniformity; confirm cycle",
+      "markdown": "Virginia has a **statewide Uniform Statewide Building Code (USBC, Va. Code § 36-97 et seq.)**, IRC-based and **genuinely uniform** — VA is a Dillon-rule state, so localities enforce but cannot materially amend the code (a real contrast to home-rule patchworks like Ohio). The **2021 USBC (2021 I-Code base) has been in effect since Jan 18, 2024** (dhcd.virginia.gov/codes); the 2024 USBC is tentatively slated for **October 2027** with a one-year transition (REF: HBAV, Aug 5, 2026 — confirm with DHCD when adopted). Chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work** through the local building official; routine sweeps and like-for-like caps generally are not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium; code + rental, no pre-sale certificate)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; code + rental, no pre-sale certificate",
+      "markdown": "The USBC requires CO detection in new construction with fuel-fired appliances/attached garage, *(exact VRC section number not read in Sep 2026 — cite \"USBC\" generically)*, and the Virginia Residential Landlord and Tenant Act requires that **\"Upon written request of a tenant in a dwelling unit, the landlord shall install a carbon monoxide alarm in the tenant's dwelling unit within 90 days\"** (landlord may recover reasonable costs) — **Va. Code § 55.1-1229(E)**; tenants may not tamper with a landlord-installed CO alarm (§ 55.1-1227(A)(9)). **No statewide mandatory pre-sale CO certificate.** A permitted chimney job remains the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for VA."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "DPOR disciplines licensees and the AG enforces the VCPA; the door-knock \"we noticed your chimney\" pitch is a textbook Home Solicitation Sales Act / VCPA scenario, and unlicensed contracting over $1,000 is itself an offense. **Specific VA chimney-sweep enforcement actions: NOT YET CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Mixed climate — colder in the western mountains, milder in Tidewater/Hampton Roads. Burn season ~Oct–Mar (longer in the west). Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Northern Virginia (Fairfax, Loudoun, Arlington — DC metro) runs **well above national**; the rest of the state nearer or below national. Regionalize sharply for NoVA."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — DPOR tiered license (Class A/B/C), required for work over $1,000; Class C <$30k, B $30k–<$150k, A $150k+ (post-HB1707)** · Registration: **license regime + Contractor Transaction Recovery Fund (up to $30k)** · Disclosure law: **mandatory form but BUYER-BEWARE — no condition content (§ 55.1-703)** · Chimney item on form: **none (form discloses nothing)** · 3-day cancel: **YES (Home Solicitation Sales Act § 59.1-21.1)** · CO law: **code (USBC) + rental-on-request within 90 days (§ 55.1-1229(E)); no pre-sale certificate** · Lookup: dpor.virginia.gov"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Virginia is the **\"strong license, non-disclosing disclosure\"** state. DPOR runs a genuine tiered exam license (a Class A contractor cleared a trade exam and a law exam) backed by a **$30,000 recovery fund** — peer to Maryland's regime. Yet Virginia's mandatory seller \"disclosure\" is a **buyer-beware notice that reveals nothing about the chimney and tells you, in writing, to inspect it yourself.** So Virginia and Massachusetts reach the same buyer from opposite directions: MA has no disclosure form; VA has a form whose entire content is \"there is no disclosure.\" Against the ladder — VA licenses (like MD/MI), Ohio doesn't; and VA's protection, like Maryland's, lives in the *contractor* license and recovery fund, not the sale. The competence gap holds: the trade exam is by code classification, never chimney-specific."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — DPOR tiered license (Class C >$1k-<$30k, B $30k-<$150k, A $150k+; post-2025 HB1707)",
+    "registration_name": "DPOR license (Title 54.1 ch.11) + Contractor Transaction Recovery Fund ($30k/claimant, $100k/biennium per regulant)",
+    "disclosure_law": "Mandatory form but buyer-beware, no condition content (55.1-703)",
+    "chimney_item_on_form": "None (form discloses nothing)",
+    "three_day_cancel": "Yes (Home Solicitation Sales Act, 59.1-21.3)",
+    "co_law": "Code (USBC) + landlord install on written tenant request within 90 days (55.1-1229(E)); no pre-sale cert",
+    "lookup_url": "dpor.virginia.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — DPOR tiered license (Class A/B/C), required for work over $1,000; Class C <$30k, B $30k–<$150k, A $150k+ (post-HB1707)",
+    "registration_name": "license regime + Contractor Transaction Recovery Fund (up to $30k)",
+    "disclosure_law": "mandatory form but BUYER-BEWARE — no condition content (§ 55.1-703)",
+    "chimney_item_on_form": "none (form discloses nothing)",
+    "three_day_cancel": "YES (Home Solicitation Sales Act § 59.1-21.1)",
+    "co_law": "code (USBC) + rental-on-request within 90 days (§ 55.1-1229(E)); no pre-sale certificate",
+    "lookup_url": "dpor.virginia.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "DPOR tiered license (Class A/B/C), required for work over $1,000; Class C <$30k, B…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "The trade exam is by classification (Building code, HVAC code, etc.) — not chimney/flue diagnosis or sweep competence."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Home Solicitation Sales Act § 59.1-21.1)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:limited→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Virginia: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Virginia chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Mixed climate — colder in the western mountains, milder in Tidewater/Hampton Roads. Burn season ~Oct–Mar (longer in the west). Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Virginia?",
+      "a": "State licensing: YES — DPOR tiered license (Class A/B/C), required for work over $1,000; Class C <$30k, B $30k–<$150k, A $150k+ (post-HB1707). Registration or credential: license regime + Contractor Transaction Recovery Fund (up to $30k). Seller disclosure at sale: mandatory form but BUYER-BEWARE — no condition content (§ 55.1-703). Right to cancel a sale made at your home: YES (Home Solicitation Sales Act § 59.1-21.1). Carbon monoxide alarm law: code (USBC) + rental-on-request within 90 days (§ 55.1-1229(E)); no pre-sale certificate. Where to check a contractor: dpor.virginia.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Virginia?",
+      "a": "Virginia's disclosure is the strangest of the launch set: a mandatory form that discloses nothing about condition. Under the Virginia Residential Property Disclosure Act (Va. Code § 55.1-700 et seq.; § 55.1-703), the seller must deliver a Residential Property Disclosure Statement — but it is a \"buyer beware\" notice: the owner \"makes no representations or warranties as to the condition,\" and the buyer is advised to \"exercise whatever due diligence [the] purchaser deems necessary, including obtaining a home inspection.\" There is no chimney line item because the form lists no property conditions at all. Virginia is caveat emptor with a mandatory notice that says so in writing.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Virginia?",
+      "a": "Two-track, like Maryland. (1) The Contractor Transaction Recovery Fund (Va. Code § 54.1-1118 et seq.) pays a homeowner with an unpaid judgment against a licensed contractor up to $30,000 per claimant per single transaction (§ 54.1-1123; raised from $20,000 by 2025 HB1707, approved Mar 19, 2025) with an aggregate cap of $100,000 per regulant per biennium (raised from $40,000 by the same bill); actual loss only. (2) The Virginia Consumer Protection Act (§ 59.1-196 et seq.; § 59.1-204) gives actual damages or $500 (whichever greater), and for willful violations up to treble damages (or $1,000) plus attorney's fees — discretionary, moderate.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "kentucky",
+    "neighborName": "Kentucky",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "DPOR tiered license (Class A/B/C), required for work over $1,000; Class C <$30k, B…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

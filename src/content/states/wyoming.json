@@ -1,0 +1,316 @@
+{
+  "slug": "wyoming",
+  "name": "Wyoming",
+  "abbr": "WY",
+  "sourceFile": "rights-research-wyoming.md",
+  "researched": "2026-07-10",
+  "lawsCitedAs": "Jul 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "CPA text verified only via Justia mirror; SFM code scope, local license classes, Teton County citation, REALTORS form, EIA table unverified; disclosure and license absences not re-verified on GOV this pass",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- § 40-12-105 prohibited practices: RESOLVED — (a)(i)–(ii) sponsorship/approval misrepresentation; (a)(vi) \"represents that replacement or repair is needed, if it is not\"; (a)(xv) unfair or deceptive acts catch-all. — https://law.justia.com/codes/wyoming/title-40/chapter-12/article-1/section-40-12-105/ — REF mirror of 2025 W.S. text (wyoleg PDF truncated)\n- §§ 40-12-106/-107 civil penalties: CORRECTED — § 40-12-106 = injunction + compensation orders; § 40-12-107 = assurances of voluntary compliance; civil penalties are in § 40-12-113 ($5,000 for violating an injunction; $10,000 per willful violation). Old text placed penalties in the 106–107 range. — Justia § 40-12-106, -107, -113 (2025) — REF mirror\n- § 40-12-109 notice mechanics / § 40-12-108: RESOLVED — written notice within 1 yr of discovery or 2 yrs of transaction; suit within 1 yr of notice; 15-day cure window per § 40-12-102(a)(ix); actual damages only; class actions with mandatory attorney fees when damages found. — Justia § 40-12-102, -108, -109 (2025) — REF mirror\n- § 40-12-104 home solicitation: CORRECTED (minor) — applies when cash price \"exceeds $25\" (old CSV: \"≥$25\"); 3rd-business-day window does not commence until contract copy, address and written cancellation statement furnished; 5% fee cap; emergency exception. — Justia § 40-12-104 (2025) — REF mirror\n- State code adoption: CORRECTED — SFM adopted 2024 IFC/IBC/IFGC/IMC/IEBC and 2023 NEC (2026 NEC from July 1, 2026); old text said 2021 editions. Scope (state buildings / no-local-enforcement areas; whether 1–2 family homes excluded) STILL OPEN — not stated on the homepage. — https://wsfm.wyo.gov/ — GOV\n- 2009 HB0187: RESOLVED — died on General File (not considered in Committee of the Whole). — https://wyoleg.gov/2009/Digest/HB0187.htm ; https://wyoleg.gov/2009/Introduced/HB0187.pdf — GOV\n- CO law (load-bearing c): RESOLVED as absence with caveat — NCSL table lists no WY CO statute; HB0187 failed; no GOV statute located. — NCSL page (REF) + wyoleg (GOV)\n- Slender/Fox AG matters: RESOLVED/CORRECTED — Slender (Docket 2017-90-DC, Lincoln Co., paving/roofing, \"licensed and bonded\" misrepresentation, $8,768, ban) confirmed; Fox (cv-2017-11) is Platte County, asphalt paving, $28,400 restitution + ban (added). No chimney matters listed. — https://attorneygeneral.wyo.gov/law-office-division/consumer-protection-and-antitrust-unit/resolved-matters — GOV\n- No statewide contractor license (load-bearing a): NOT RE-VERIFIED beyond SFM homepage (electrical licensing only); July REF-based absence stands. — https://wsfm.wyo.gov/ — GOV (partial)\n- Disclosure (load-bearing b): NOT RE-VERIFIED this pass (caveat emptor / W.S. 33-28-303 from July draft).\n- Cheyenne/Casper classes, Teton County spark-arrestor citation, EIA wood-heat table, REALTORS form: STILL OPEN (not re-checked).\n- Template-leakage sweep: clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence on the absence; the absence IS the finding)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on the absence; the absence IS the finding",
+      "markdown": "**Wyoming has NO state contractor license and NO state contractor registration of any kind — for general contractors, masons, roofers, or chimney work. It is arguably the least-regulated contractor state in the nation.** STATE LAW: there is no contractor licensing board in Wyoming and no statute requiring a general or residential contractor credential; anyone may legally sweep, reline, or rebuild a chimney anywhere in Wyoming with no state credential at all. **Search trail for the absence claim (checked Jul 10, 2026):** (a) the **Wyoming State Fire Marshal's Office (wsfm.wyo.gov)** licenses exactly one construction trade — **electricians** (apprentice/journeyman/master/electrical contractor/low-voltage), through the Electrical Board under the Department of Fire Prevention and Electrical Safety, with a public lookup at **wyelectrician.imagetrendlicense.com** — nothing else; (b) the **Department of Workforce Services \"Resident Contractor\" certification (dws.wyo.gov)** is a public-works bid-preference certificate, NOT a consumer licensing credential — do not confuse the two; (c) no other Wyoming agency (no \"contractors board,\" no counterpart to a licensing bureau) surfaced in any GOV source; REF compliance guides (Procore, ServiceTitan, Harbor Compliance, checked Jul 10, 2026) uniformly confirm \"no statewide licensing requirement, electrical excepted.\" **LOCAL is the only licensing layer:** **Cheyenne** licenses contractors through its Contractor Licensing Board (Class A any structure / Class B ≤2-story residential + small commercial / Class R detached single-family; applications via cheyennewy.portal.opengov.com; Municipal Code Title 15; cheyennecity.org, checked Jul 10, 2026); **Casper** runs five GC classifications (Class 1 requires 8 years' experience); **Gillette** and **Cody** license contractors citywide; and in the Jackson Hole market **the Town of Jackson issues the contractor licenses — including for work in unincorporated Teton County** (tetoncountywy.gov building pages, checked Jul 10, 2026). Penalty for unlicensed work is therefore municipal-ordinance-level only; in unincorporated areas of most counties there may be no licensing requirement whatsoever."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "In Wyoming the gap is total: outside a handful of cities there is **no credential of any kind between a homeowner and whoever shows up with a brush** — no exam, no insurance attestation, no bond, no registration, nothing to look up. Even where city licenses exist (Cheyenne, Casper, Jackson), they test general contracting experience and insurance, not flue diagnosis, NFPA 211 inspection levels, or solid-fuel venting. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) plus proof of liability insurance are effectively the ONLY competence and accountability signals available to a Wyoming homeowner — the \"why certifications matter\" read writes itself here."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV/case-law — high confidence; caveat emptor, NO statutory disclosure form)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "case-law — high confidence; caveat emptor, NO statutory disclosure form",
+      "markdown": "**Wyoming is a true caveat emptor state: no statute requires a seller disclosure form, and no statutory form naming the chimney exists.** STATE LAW: no Wyoming disclosure statute surfaced in Title 34 (Property) or elsewhere — REF/DOC sources (Sagebrush Law Firm, listwithclever, houzeo, srpds.com, all checked Jul 10, 2026) uniformly describe Wyoming as a buyer-beware state with no mandated property-condition disclosure. The common-law frame: **Snyder v. Lovercheck, 992 P.2d 1079 (Wyo. 1999)** (law.justia.com, checked Jul 10, 2026) — the Wyoming Supreme Court enforced contractual disclaimer/\"as-is\"/merger clauses against a buyer's negligent-misrepresentation claim, while preserving that **fraud vitiates all contracts**: a seller may not actively conceal defects or lie when asked, but silence about an unasked-about chimney defect is largely the buyer's problem. The one statutory duty runs through the **broker**, not the seller: **W.S. § 33-28-303** (Real Estate Brokers, Article 3) requires a seller's agent to **disclose to any prospective buyer all adverse material facts actually known by the licensee**, including physical-condition defects — actual knowledge only, no duty to inspect or verify. Realtor-association disclosure forms circulate voluntarily and typically include fireplace/chimney lines *(form content UNVERIFIED — pull the current Wyoming REALTORS form before publish)*. No inspection is mandated at transfer; the federal lead-paint disclosure (pre-1978 homes) is the only mandatory disclosure. NFPA 211 Level 2 at transfer is a NATIONAL STANDARD only — and in Wyoming, the buyer's own inspection is not just best practice, it is the entire protection."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; a real act, but with a notice-and-cure catch)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real act, but with a notice-and-cure catch",
+      "markdown": "STATE LAW: the **Wyoming Consumer Protection Act, W.S. §§ 40-12-101 through 40-12-114**, enforced by the **Attorney General's Consumer Protection & Antitrust Unit** (enforcing authority per § 40-12-102(a)(vii); complaints at attorneygeneral.wyo.gov → Consumer Protection, checked Jul 10, 2026). Prohibited practices are listed in **§ 40-12-105(a)** — chimney-relevant items include misrepresenting sponsorship, approval, or certification (a)(i)–(ii), **representing \"that replacement or repair is needed, if it is not\"** (a)(vi) — the fear-based-upsell provision — and the catch-all \"unfair or deceptive acts or practices\" (a)(xv). AG remedies: **§ 40-12-106** injunctions plus orders compensating identifiable persons for actual damages or restoring money/property; **§ 40-12-107** assurances of voluntary compliance (breach = prima facie evidence of violation); **§ 40-12-113** civil penalties of **up to $5,000 for violating an injunction** and **up to $10,000 per willful violation** (\"knew or should have known\"), waivable on full restitution. **The catch that must be on the page:** the private remedy (§ 40-12-108) allows a consumer to recover only **actual damages** — no treble, no statutory minimum — and only for an \"**uncured** unlawful deceptive trade practice\": per § 40-12-102(a)(viii)–(ix) the consumer must first give the business **written notice describing the violation and damages (§ 40-12-109) — within one year of discovery or two years after the transaction, whichever is first** — and if no written cure offer arrives **within 15 days** the practice is \"uncured\" (§ 40-12-102(a)(ix)); suit must then be filed within one year after the notice. Class actions are available, with mandatory attorney's fees when actual damages are found (§ 40-12-108). **Door-to-door cancel right — strong and chimney-relevant:** **W.S. § 40-12-104** (inside the CPA itself) gives a right to cancel until **midnight of the third business day** after signing for any **\"home solicitation sale\" whose cash price exceeds $25**; the period **\"shall not commence\"** until the buyer gets a copy of the completed contract, the cancellation address, and a written statement of the right to cancel; seller may keep at most a 5% cancellation fee; an emergency-request exception exists (§ 40-12-104(c)) — expect scammers to invoke \"emergency.\" Credit-sale solicitations get the parallel right under the UCCC, **W.S. §§ 40-14-251 through 40-14-253** (findlaw/justia, checked Jul 10, 2026). Hiring an unlicensed contractor voids nothing — there is no license to void. No guaranty/recovery fund of any kind exists."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; no statewide residential code, a true home-rule patchwork)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; no statewide residential code, a true home-rule patchwork",
+      "markdown": "STATE LAW/LOCAL: **Wyoming has no statewide residential building code for private homes.** The **State Fire Marshal** (under the Council on Fire Prevention and Electrical Safety) has adopted the **2024 IFC, IBC, IFGC, IMC and IEBC** (and 2023 NEC, moving to the 2026 NEC July 1, 2026) as minimum state codes (wsfm.wyo.gov, checked Sep 15, 2026), but these apply to **state-owned buildings, schools, and areas without local enforcement** — ordinary single-family homes fall outside state oversight (wsfm.wyo.gov; ICC Wyoming adoption page; checked Jul 10, 2026 — *confirm exact scope language on wsfm.wyo.gov before publish*). Code adoption for homes is **entirely local and discretionary**: **Cheyenne** (Municipal Code Title 15), **Casper**, **Gillette**, **Laramie** run standard permit regimes; **Teton County/Jackson is the most sophisticated regime in the state** — the county's **2025 Building Codes Resolution (effective July 1, 2025)** and the Town/County adoption of the **2024 International Fire Code and 2024 International Wildland-Urban Interface Code** (tetoncountywy.gov Current Code Adoption page, checked Jul 10, 2026), with permits through the SmartGov portal, engineered plans required for wood-burning masonry fireplaces, and explicit review of flue lining, clearance to combustibles, **chimney termination and spark arrestors**. In much of rural, unincorporated Wyoming there is **no building department, no permit, and no inspection at all** — say this plainly: NFPA 211 (NATIONAL STANDARD) is the only rulebook a rural Wyoming chimney has."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO & smoke-alarm law (GOV — medium; no standalone statute, code-based only where a code exists)",
+      "researchTitle": "CO & smoke-alarm law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; no standalone statute, code-based only where a code exists",
+      "markdown": "STATE LAW: **no standalone statewide CO-alarm statute surfaced** — Wyoming does not appear on NCSL's list of states with CO-detector installation statutes (ncsl.org, checked Jul 10, 2026), and no rental or point-of-sale CO mandate exists. Where CO requirements bind, they arrive via a **locally adopted IRC (R315)**: new construction and permit-triggering alterations in code jurisdictions (Cheyenne, Casper, Teton County — which publishes a CO-alarm information page, tetoncountywy.gov/679, checked Jul 10, 2026) need alarms outside sleeping areas when the home has fuel-burning appliances or an attached garage. In no-code rural areas, **nothing requires a CO alarm in a wood-heated Wyoming home** — with top-ten wood-heat density and brutal winters, that is the sharpest safety sentence on the page. A 2009 bill that would have required CO detectors in new residential construction/remodels (**HB0187, \"Early detection smoke alarms\"**) cleared House committee 7-2 but was placed on General File and never considered in Committee of the Whole — it **did not become law** (wyoleg.gov 2009 bill digest, checked Sep 15, 2026). Frame: every chimney/stove visit is the moment to add alarms, because no law will ever make you."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV/REF — the wildfire angle lives in Teton County)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "the wildfire angle lives in Teton County",
+      "markdown": "Wyoming ranks **top-ten nationally for homes heating primarily with wood** (EIA data via REF, checked Jul 10, 2026 — *pull the EIA/Census table directly before publish*). **No statewide residential burn-ban or stove-emission regime exists**: Wyoming DEQ's Air Quality Division regulates **smoke management and open burning** (WAQSR Chapter 10, Sections 2 and 4; deq.wyoming.gov, checked Jul 10, 2026) — prescribed/open fires, not home wood stoves; no Oregon/Washington-style stove certification or no-burn-day program. **The WUI/wildfire axis is real but LOCAL:** Teton County expanded its **Wildland-Urban Interface boundary to include ALL private land in the county effective January 1, 2025** (county resolution + Buckrail, checked Jul 10, 2026), adopted the **2024 IWUIC**, and its building-code resolution requires **spark arrestors and compliant chimney termination on wood-burning masonry fireplaces**, with county guidance to keep a non-flammable screen over every chimney and stovepipe flue; Bridger-Teton NF, Grand Teton NP, and Jackson Hole Fire/EMS impose seasonal spark-arrestor and fire restrictions in bad fire-weather. Elsewhere in the state, fire-season restrictions are county-by-county and episodic. Rental-unit stove rules: none statewide."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV — high confidence; real, named AG enforcement actions)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real, named AG enforcement actions",
+      "markdown": "**Wyoming's AG has actually prosecuted the exact scam pattern this page warns about — and one detail is priceless:** in the **Slender** matter (AG Consumer Protection Unit, Resolved Matters page, attorneygeneral.wyo.gov, checked Jul 10, 2026), door-to-door paving/roofing sellers in Lincoln County were found to have misrepresented service quality, performed work without permission then demanded payment, **failed to give the mandatory § 40-12-104 cancellation-rights disclosures**, and **\"falsely represented to consumers that they were licensed and bonded to perform contract work in the state\" — in a state that issues no such contractor license**; result: banned from offering paving/roofing in Wyoming + $8,768 restitution. In the **Fox** matter (Paul & Marlan Fox, Platte County, services offered summer 2016, resolved 2017), door-to-door asphalt pavers misrepresented price/quality/warranty, failed to give cancellation-rights disclosures, and blocked an elderly consumer from inspecting substandard work before extracting payment; result: banned from paving in Wyoming + $28,400 restitution. (Slender: Docket 2017-90-DC, resolved 2017.) Pattern for the page: transient door-knockers (\"we noticed your chimney/roof\"), the elderly targeted, \"licensed and bonded\" claims that are unverifiable by design in Wyoming. Chimney-specific Wyoming enforcement actions: NOT CONFIRMED — the paving/roofing actions are the closest documented analogues; re-run search before publish."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "High-plains/mountain cold (climate zones 6–7; Jackson among the coldest towns in the lower 48). Burn season ~SEP–MAY, longer at elevation; wood heat is primary heat for many rural homes. Rush: AUG–OCT (winter arrives early). Best booking: MAY–JUL."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cheyenne/Casper labor runs at or below national; the state is thin-market with long drive times (surcharges real in rural counties). **Jackson Hole is the outlier — a resort labor market with some of the highest costs in the country; price it as its own market, not \"Wyoming.\"** Regionalize on the Jackson vs. rest-of-state split until listings data exists."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO — no state license or registration of any kind (electricians only, via State Fire Marshal); LOCAL only: Cheyenne (Class A/B/R), Casper, Gillette, Cody, Jackson (also covers unincorporated Teton Co.)** · Registration: **NONE (DWS \"resident contractor\" cert = public-works bid preference, not consumer protection)** · Disclosure law: **NO — caveat emptor (Snyder v. Lovercheck, 992 P.2d 1079); no statutory form; only broker's actual-knowledge duty, W.S. 33-28-303** · 3-day cancel: **YES (home solicitation over $25, W.S. 40-12-104; clock does not start without written notice)** · CO law: **none statewide — local IRC R315 only where a code exists** · Lookup: **none statewide** — cheyennewy.portal.opengov.com (Cheyenne) / wyelectrician.imagetrendlicense.com (electrical only) · Leverage: WCPA actual damages only + 15-day notice-and-cure (W.S. 40-12-108/-109)."
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Wyoming is the launch set's **absolute floor — and a clean BREAK of the license⇄disclosure inverse correlation, in the double-weak direction.** The inverse-correlation rule says a state with the weakest licensing should compensate with strong seller disclosure. Wyoming — the weakest-licensing state in the nation, with **no contractor license, no registration, no statewide residential code, no CO statute, and no recovery fund** — should therefore have a strong disclosure law. **It has none at all:** pure caveat emptor, no statutory form, chimney never named, only a broker's actual-knowledge duty (W.S. 33-28-303) and the fraud backstop of *Snyder v. Lovercheck*. Both axes bottom out together. That drops the West further from correlation coherence (the region was already a 4-4 coin flip; Wyoming makes it a losing record) and strengthens the emerging alternative read: the West doesn't trade licensing against disclosure — it organizes around the **orthogonal wildfire/cap-law axis** instead. And Wyoming sits on that axis in the most Wyoming way possible: **locally, not statewide.** The single most sophisticated chimney regulation in the state is Teton County's — a WUI boundary covering literally all private land in the county, the 2024 IWUIC, engineered masonry-fireplace plans, and required spark arrestors — while a hundred miles away a chimney can be built, swept, or butchered with no permit, no license, and no disclosure at sale. The page's honest message: **in Wyoming, nothing checks your chimney contractor and nothing makes a seller tell you about the flue — the homeowner's only real protections are the 3-day door-to-door cancel right (W.S. 40-12-104), the AG's complaint desk, an insured + independently certified sweep, and their own paid inspection.** The best oddball proof of the whole regime: the AG had to prosecute door-knockers for claiming to be *\"licensed and bonded\"* — a lie that works precisely because Wyoming issues no license a homeowner could check."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "NO — no state license or registration of any kind (electricians only, via State Fire Marshal); LOCAL only: Cheyenne (Class A/B/R), Casper, Gillette, Cody, Jackson (also covers unincorporated Teton Co.)",
+    "registration_name": "NONE (DWS \"resident contractor\" cert = public-works bid preference, not consumer protection)",
+    "disclosure_law": "NO — caveat emptor (Snyder v. Lovercheck, 992 P.2d 1079); no statutory form; only broker's actual-knowledge duty, W.S. 33-28-303",
+    "chimney_item_on_form": "N/A (no form)",
+    "three_day_cancel": "YES (home solicitation over $25, W.S. 40-12-104; clock does not start without written notice)",
+    "co_law": "none statewide (2009 HB0187 failed) — local IRC R315 only where a code exists",
+    "lookup_url": "none statewide — cheyennewy.portal.opengov.com (Cheyenne) / wyelectrician.imagetrendlicense.com (electrical only)",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO — no state license or registration of any kind (electricians only, via State Fire Marshal); LOCAL only: Cheyenne (Class A/B/R), Casper, Gillette, Cody, Jackson (also covers unincorporated Teton Co.)",
+    "registration_name": "NONE (DWS \"resident contractor\" cert = public-works bid preference, not consumer protection)",
+    "disclosure_law": "NO — caveat emptor (Snyder v. Lovercheck, 992 P.2d 1079); no statutory form; only broker's actual-knowledge duty, W.S. 33-28-303",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (home solicitation over $25, W.S. 40-12-104; clock does not start without written notice)",
+    "co_law": "none statewide — local IRC R315 only where a code exists",
+    "lookup_url": "none statewide — cheyennewy.portal.opengov.com (Cheyenne) / wyelectrician.imagetrendlicense.com (electrical only)"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "no state license or registration of any kind (electricians only, via State Fire Marshal)…",
+      "anchor": "license",
+      "rule": "license:NO-nothing",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; the federal lead-paint disclosure (pre-1978 homes) is the only mandatory disclosure."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (home solicitation over $25, W.S. 40-12-104; clock does not start without written notice)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "NO STATE LAW",
+      "note": "none statewide — local IRC R315 only where a code exists",
+      "anchor": "co-law",
+      "rule": "co:none",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Wyoming: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Wyoming chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "Class A/B/R",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      8,
+      9,
+      10
+    ],
+    "best": [
+      5,
+      6,
+      7
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "High-plains/mountain cold (climate zones 6–7; Jackson among the coldest towns in the lower 48). Burn season ~SEP–MAY, longer at elevation; wood heat is primary heat for many rural homes. Rush: AUG–OCT (winter arrives early). Best booking: MAY–JUL."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Wyoming?",
+      "a": "State licensing: NO — no state license or registration of any kind (electricians only, via State Fire Marshal); LOCAL only: Cheyenne (Class A/B/R), Casper, Gillette, Cody, Jackson (also covers unincorporated Teton Co.). Registration or credential: NONE (DWS \"resident contractor\" cert = public-works bid preference, not consumer protection). Seller disclosure at sale: NO — caveat emptor (Snyder v. Lovercheck, 992 P.2d 1079); no statutory form; only broker's actual-knowledge duty, W.S. 33-28-303. Right to cancel a sale made at your home: YES (home solicitation over $25, W.S. 40-12-104; clock does not start without written notice). Carbon monoxide alarm law: none statewide — local IRC R315 only where a code exists. Where to check a contractor: none statewide — cheyennewy.portal.opengov.com (Cheyenne) / wyelectrician.imagetrendlicense.com (electrical only). Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Wyoming?",
+      "a": "Wyoming is a true caveat emptor state: no statute requires a seller disclosure form, and no statutory form naming the chimney exists. STATE LAW: no Wyoming disclosure statute surfaced in Title 34 (Property) or elsewhere — REF/DOC sources (Sagebrush Law Firm, listwithclever, houzeo, srpds.com, all checked Jul 10, 2026) uniformly describe Wyoming as a buyer-beware state with no mandated property-condition disclosure. The common-law frame: Snyder v. Lovercheck, 992 P.2d 1079 (Wyo.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Wyoming?",
+      "a": "STATE LAW: the Wyoming Consumer Protection Act, W.S. §§ 40-12-101 through 40-12-114, enforced by the Attorney General's Consumer Protection & Antitrust Unit (enforcing authority per § 40-12-102(a)(vii); complaints at attorneygeneral.wyo.gov → Consumer Protection, checked Jul 10, 2026). Prohibited practices are listed in § 40-12-105(a) — chimney-relevant items include misrepresenting sponsorship, approval, or certification (a)(i)–(ii), representing \"that replacement or repair is needed, if it is not\" (a)(vi) — the fear-based-upsell provision — and the catch-all \"unfair or deceptive acts or practices\" (a)(xv). AG remedies: § 40-12-106 injunctions plus orders compensating identifiable persons for actual damages or restoring money/property; § 40-12-107 assurances of voluntary compliance (breach = prima facie evidence of violation); § 40-12-113 civil penalties of up to $5,000 for violating an injunction and up to $10,000 per willful violation (\"knew or should have known\"), waivable on full restitution.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "idaho",
+    "neighborName": "Idaho",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "no state license or registration of any kind (electricians only, via State Fire Marshal)…"
+    },
+    "b": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

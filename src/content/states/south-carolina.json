@@ -1,0 +1,313 @@
+{
+  "slug": "south-carolina",
+  "name": "South Carolina",
+  "abbr": "SC",
+  "sourceFile": "rights-research-south-carolina.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) 3-day-cancel copy must say credit-only + FTC rule for cash; (2) attribute the narrow No-Representation reading to the form instructions/§ 27-50-65; (3) say \"2024 code update pending\" rather than implying 2021 is final.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- $500 specialty / $5,000 builder thresholds; masonry named: RESOLVED — § 40-59-20 definitions and specialty list (\"masons\"); $200→$500 by 2022 Act No. 186 — https://www.scstatehouse.gov/code/t40c059.php — GOV\n- Specialty registration exam: RESOLVED — \"An examination is not required to become a registered specialty contractor\"; masonry classification defined — https://llr.sc.gov/res/resspecialty.aspx — GOV\n- Bond / lien-and-suit bar: RESOLVED (added) — § 40-59-240 bond > $5,000; § 40-59-30(B) no lien/action by unlicensed — https://www.scstatehouse.gov/code/t40c059.php — GOV\n- Chimney line on disclosure form: RESOLVED — Q7 \"fireplaces, chimneys, wood stoves\", Yes/No/No Representation, form effective 6/1/2023 — https://www.llr.sc.gov/re/recpdf/Property-Condition-Disclosure-Statement-06.01.2023.pdf — DOC (official LLR PDF); statute § 27-50-40(A)(2) names chimneys — https://www.scstatehouse.gov/code/t27c050.php — GOV. Pending reg Doc. 5238 (2024 H.1226) stalled in Senate committee; no newer form found.\n- \"No representation tied to lack of knowledge\": CORRECTED (attribution) — statute § 27-50-40(B) does not itself restrict the option; the narrowing is in the official form instructions + § 27-50-65 knowing-violation liability — same URLs — GOV/DOC\n- 2021 IRC cycle not superseded: RESOLVED — 2021 codes effective Jan 1, 2023 still listed as current; 2024 notice of intent posted, no effective date — https://llr.sc.gov/bcc/BCAdoption.aspx ; https://llr.sc.gov/bcc/ ; https://www.llr.sc.gov/bcc/pdffiles/SC-Code-Adoption-Notice.pdf — GOV. 2024 effective date: STILL OPEN (York County notice fetch 429; search budget exhausted).\n- 3-day cancel: CORRECTED — § 37-2-501 limited to \"a consumer credit sale\"; cash sales → 16 CFR 429 — https://www.scstatehouse.gov/code/t37c002.php — GOV; https://www.law.cornell.edu/cfr/text/16/429.0 — REF mirror\n- SCUTPA treble: RESOLVED — § 39-5-140(a) willful/knowing trebling, mandatory fees — https://www.scstatehouse.gov/code/t39c005.php — GOV\n- CO law: RESOLVED as absence (medium) — no CO/smoke provision in Title 27 Ch. 40 text — https://www.scstatehouse.gov/code/t27c040.php — GOV; exhaustive statewide absence not provable by one chapter read.\n- Enforcement actions: STILL OPEN — none located; web-search budget exhausted.\n- 2026 changes: H.4266 (2025, local code modification procedures) still in committee, not enacted — https://www.scstatehouse.gov/sess126_2025-2026/bills/4266.htm — GOV. Full 2026 licensing-law sweep: STILL OPEN (search budget exhausted).\n- Template-leakage sweep: clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; registration-based, masonry IS covered)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; registration-based, masonry IS covered",
+      "markdown": "**South Carolina is the launch set's clearest example of registration reaching chimney masonry — but with no competence exam.** STATE LAW: the **SC Dept. of Labor, Licensing and Regulation (LLR) Residential Builders Commission**, under **S.C. Code Title 40, Chapter 59**, runs a two-tier residential regime. A **Residential Builder** license is required when \"the cost of the undertaking exceeds five thousand dollars\" (§ 40-59-20), and a **Residential Specialty Contractor** registration is required \"when the undertakings exceed five hundred dollars\" (§ 40-59-20; threshold raised from $200 to $500 by 2022 Act No. 186). **\"Masons\" are a named residential specialty in the statute** (§ 40-59-20(7)), and LLR's masonry classification covers \"brick, concrete block, and products common to the masonry industry\" — so chimney rebuild/reline masonry above $500 needs at least specialty registration. LLR states plainly: **\"An examination is not required to become a registered specialty contractor\"** (plumbers, electricians, and HVAC are licensed/examined separately). A specialty registrant may hold at most three classifications (§ 40-59-240) and must post a surety **bond when an undertaking for an individual owner exceeds $5,000** (§ 40-59-240). Unlicensed/unregistered work is a misdemeanor (§ 40-59-30(A)), and the unlicensed contractor \"may not file a mechanics' lien or bring an action at law or in equity\" to enforce the contract (§ 40-59-30(B)). Larger/commercial work runs through the separate LLR **Contractor's Licensing Board (S.C. Code Title 40, Chapter 11)** — its classifications were not re-verified in this pass. Public lookup: **llr.sc.gov/res/**."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Wider than it looks. SC's specialty registration for masonry is **registration, not qualification — no exam.** It attests that the contractor signed up and (for specialty) carries the registration, not that they can diagnose a flue or a spalling crown. Even the Residential Builder exam tests building/business law, not chimney competence. So \"registered specialty masonry contractor\" verifies existence, not skill — exactly the gap individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit are built to close."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; chimney named; form instructions narrow the opt-out)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; chimney named; form instructions narrow the opt-out",
+      "markdown": "STATE LAW: the **Residential Property Condition Disclosure Act (S.C. Code § 27-50-10 et seq.)** requires most residential sellers to deliver a disclosure statement; **§ 27-50-40(A)(2)** requires it to cover \"the roof, **chimneys**, floors, foundation, basement, and other structural components.\" The current LLR Real Estate Commission form (**Residential Property Condition Disclosure Statement, effective 6/1/2023**) asks in **Question 7** about \"Foundation, slab, **fireplaces, chimneys, wood stoves**, floors, basement, windows ...\" with **Yes / No / No Representation** boxes. **Precision on the opt-out:** the statute (§ 27-50-40(B)) simply requires the form to let the owner indicate actual knowledge *or* \"no representations\" — the statute text itself does **not** forbid a knowing seller from choosing it. The narrowing comes from the **official form's instructions**: \"No Representation\" means the owner lacks \"the current knowledge necessary to answer,\" it \"should not be selected if the owner simply wishes to not disclose information,\" and \"selecting 'No Representation' does not waive liability if owner is aware or subsequently becomes aware.\" Liability attaches under **§ 27-50-65** to an owner who \"knowingly violates or fails to perform any duty\" or discloses information \"he knows to be false, incomplete, or misleading\" (actual damages + court costs). So SC's opt-out is narrower in practice than NC's § 47E-4(c) — but the page should attribute that to the form and § 27-50-65, not to § 27-50-40 alone. § 27-50-80 preserves the buyer's obligation to inspect. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; treble, but willful-only)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; treble, but willful-only",
+      "markdown": "STATE LAW: the **SC Unfair Trade Practices Act (SCUTPA), S.C. Code § 39-5-10 et seq.** A private plaintiff who suffers ascertainable loss may sue for **actual damages** (§ 39-5-140(a)); \"if the court finds that the use or employment of the unfair or deceptive method, act or practice was a **willful or knowing** violation ... the court shall award three times the actual damages\" (trebling only on willful/knowing, unlike NC's automatic § 75-16), and **attorney's fees and costs are mandatory** on any violation finding. **Three-day cancel — scope matters:** the **SC Consumer Protection Code, S.C. Code § 37-2-501** defines a home solicitation sale as \"a **consumer credit sale** of goods or services\" solicited at a residence, and **§ 37-2-502** lets the buyer cancel \"until midnight of the third business day after the day on which the buyer signs\" (with an emergency-repair waiver exception). So the state right covers **financed** doorstep deals; a **cash** doorstep chimney sale of $25+ at the home falls under the **federal FTC Cooling-Off Rule (16 CFR Part 429)** — NATIONAL, not SC law. Complaints: **SC Dept. of Consumer Affairs (SCDCA)** and the **SC Attorney General (scag.gov).**"
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on current code; next cycle pending)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on current code; next cycle pending",
+      "markdown": "STATE LAW: the **2021 South Carolina Residential Code (2021 IRC with SC modifications)**, adopted by the **SC Building Codes Council** on Oct 6, 2021 with an **effective date of Jan 1, 2023** — still the code in effect per LLR's Building Code Adoption page (Sep 2026). The Council has posted a **Notice of Intent to Modify and Adopt the 2024 Building Codes**, but no 2024-cycle effective date was confirmed on a primary source in this pass — say \"2021 codes in effect; 2024 update pending.\" Chimney/fireplace provisions track IRC Chapter 10. Relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work** through the **local** building department; routine sweeps and like-for-like caps generally are not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium-high; weakest track in the pair — code only, no statute located)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; weakest track in the pair — code only, no statute located",
+      "markdown": "Finding: **no SC statute mandating CO detectors in existing homes or rentals was located — protection rests on IRC code adoption.** The SC Residential Landlord and Tenant Act (S.C. Code Title 27, Chapter 40) text contains no \"carbon monoxide\" or \"smoke detector\" provision (checked Sep 2026). NATIONAL STANDARD via STATE code: the **2021 SC Residential Code (IRC)** carries the IRC CO-alarm requirement for **new construction** dwelling units with a fuel-fired appliance or attached garage (IRC section and any SC modification not re-verified this pass). **No pre-sale CO certificate.** Local jurisdictions may add their own. This is materially weaker than NC's landlord statute (§ 42-42(a)(7)) — a real contrast point for the page."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (finding: no statewide burn regime; upstate/mountain split)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": "finding: no statewide burn regime; upstate/mountain split",
+      "markdown": "No statewide burn-ban or stove-emission program. Geography: the **Upstate (Greenville/Spartanburg) and the Blue Ridge escarpment counties have real wood-heat and chimney density**, while the **Midlands and Lowcountry (Charleston/coast) are milder** with lighter wood use. Content should say so honestly rather than treat SC as uniformly warm."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The SC AG and SCDCA both handle home-repair and door-to-door complaints, and door-knock \"we noticed your chimney\" pitches are textbook SCUTPA matters (plus § 37-2-502 cancel rights if financed, or the FTC Cooling-Off Rule if cash). The national bait-and-switch pattern applies (a cheap \"special\" — e.g. a $49 sweep — then manufactured \"structural damage\"). Hiring an unregistered specialty contractor over $500 also means that contractor cannot lien or sue to enforce (§ 40-59-30(B)). **No SC chimney-sweep-specific enforcement action located — pattern language only; name no businesses.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Mostly warm — shorter burn season than NC, longer in the Upstate/mountains (~Nov–Feb Midlands/Lowcountry; Oct–Mar Upstate). Rush: OCT–DEC. Best booking: SPRING/SUMMER (APR–AUG)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Greenville and Charleston metros near national; Upstate demand real; rural Midlands/Lowcountry below national. Regionalize on the Upstate/metro vs rural split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **REGISTRATION — LLR Residential Specialty registration (\"masons\" named) > $500, no exam; Residential Builder license > $5,000 (S.C. Code Title 40, Ch. 59)** · Registration: **YES — LLR residential specialty (masonry), no exam; bond if > $5,000** · Disclosure law: **YES — § 27-50-40, form Q7 names fireplaces/chimneys/wood stoves; form instructions bar using \"No Representation\" to hide known conditions** · 3-day cancel: **PARTIAL — § 37-2-502 covers consumer-credit home solicitation only; cash doorstep sales rely on federal FTC Cooling-Off Rule** · CO law: **WEAK — code/new-construction only; no rental or pre-sale statute located** · Lookup: llr.sc.gov/res/"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "South Carolina **BREAKS the license⇄disclosure inverse correlation — and does so on both axes at once.** The inverse rule predicts that a state which regulates contractors more (registration reaching chimney masonry) would compensate with a weaker disclosure. SC does the opposite: it has **both** a real registration regime — masonry is a named residential specialty, licensable from as little as $500 — **and** a disclosure form that names chimneys with a narrower opt-out (via the form's instructions) than neighboring NC. Two \"protections\" stacked, not traded off. But the twist that saves the page from over-promising: **both protections are hollow at the core.** The specialty registration has **no competence exam** (it verifies signup, not skill), and the CO regime is the **weakest in the NC/SC pair** — pure IRC new-construction, no rental or existing-home statute at all. So SC breaks the correlation on paper while proving its deeper point: **more paperwork ≠ more competence.** The buyer's real leverage is SCUTPA treble damages (willful) and the § 37-2 cooling-off window (financed sales; FTC rule for cash) — plus getting your own inspection, because neither the registry nor the disclosure guarantees the flue was ever looked at."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "REGISTRATION — LLR Residential Specialty registration (masons named) >$500, no exam; Residential Builder license >$5,000 (S.C. Code 40-59-20)",
+    "registration_name": "LLR residential specialty (masonry), no exam; bond >$5,000",
+    "disclosure_law": "Residential Property Condition Disclosure Act (S.C. Code 27-50-40)",
+    "chimney_item_on_form": "Yes — Q7 names fireplaces, chimneys, wood stoves; form instructions bar No Representation to hide known conditions",
+    "three_day_cancel": "PARTIAL — 37-2-502 covers consumer-credit home solicitation only; cash sales via federal FTC Cooling-Off Rule",
+    "co_law": "WEAK — code/new-construction only; no rental or pre-sale CO statute located",
+    "lookup_url": "llr.sc.gov/res",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "REGISTRATION — LLR Residential Specialty registration (\"masons\" named) > $500, no exam; Residential Builder license > $5,000 (S.C. Code Title 40, Ch. 59)",
+    "registration_name": "YES — LLR residential specialty (masonry), no exam; bond if > $5,000",
+    "disclosure_law": "YES — § 27-50-40, form Q7 names fireplaces/chimneys/wood stoves; form instructions bar using \"No Representation\" to hide known conditions",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "PARTIAL — § 37-2-502 covers consumer-credit home solicitation only; cash doorstep sales rely on federal FTC Cooling-Off Rule",
+    "co_law": "WEAK — code/new-construction only; no rental or pre-sale statute located",
+    "lookup_url": "llr.sc.gov/res/"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "REGISTRATION ONLY",
+      "note": "— LLR Residential Specialty registration (\"masons\" named) > $500, no exam; Residential Builder…",
+      "anchor": "license",
+      "rule": "license:registration",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "Registration without a competency exam",
+      "anchor": "qualified-gap",
+      "rule": "exam:registration-no-exam",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "remedies",
+      "rule": "cancel:§4-sentence→caveat-downgrade",
+      "derivedFrom": "§4 text",
+      "evidence": "Three-day cancel — scope matters: the SC Consumer Protection Code, S.C."
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "WEAK — code/new-construction only; no rental or pre-sale statute located",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "South Carolina: registration, not a license, for chimney work.",
+  "metaDescription": "South Carolina chimney & fireplace laws: registration rules, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      10,
+      11,
+      12
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": false,
+    "note": "Mostly warm — shorter burn season than NC, longer in the Upstate/mountains (~Nov–Feb Midlands/Lowcountry; Oct–Mar Upstate). Rush: OCT–DEC. Best booking: SPRING/SUMMER (APR–AUG)."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in South Carolina?",
+      "a": "State licensing: REGISTRATION — LLR Residential Specialty registration (\"masons\" named) > $500, no exam; Residential Builder license > $5,000 (S.C. Code Title 40, Ch. 59). Registration or credential: YES — LLR residential specialty (masonry), no exam; bond if > $5,000. Seller disclosure at sale: YES — § 27-50-40, form Q7 names fireplaces/chimneys/wood stoves; form instructions bar using \"No Representation\" to hide known conditions. Right to cancel a sale made at your home: PARTIAL — § 37-2-502 covers consumer-credit home solicitation only; cash doorstep sales rely on federal FTC Cooling-Off Rule. Carbon monoxide alarm law: WEAK — code/new-construction only; no rental or pre-sale statute located. Where to check a contractor: llr.sc.gov/res/. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in South Carolina?",
+      "a": "STATE LAW: the Residential Property Condition Disclosure Act (S.C. Code § 27-50-10 et seq.) requires most residential sellers to deliver a disclosure statement; § 27-50-40(A)(2) requires it to cover \"the roof, chimneys, floors, foundation, basement, and other structural components.\" The current LLR Real Estate Commission form (Residential Property Condition Disclosure Statement, effective 6/1/2023) asks in Question 7 about \"Foundation, slab, fireplaces, chimneys, wood stoves, floors, basement, windows ...\" with Yes / No / No Representation boxes. Precision on the opt-out: the statute (§ 27-50-40(B)) simply requires the form to let the owner indicate actual knowledge or \"no representations\" — the statute text itself does not forbid a knowing seller from choosing it. The narrowing comes from the official form's instructions: \"No Representation\" means the owner lacks \"the current knowledge necessary to answer,\" it \"should not be selected if the owner simply wishes to not disclose information,\" and \"selecting 'No Representation' does not waive liability if owner is aware or subsequently becomes aware.\" Liability attaches under § 27-50-65 to an owner who \"knowingly violates or fails to perform any duty\" or discloses information \"he knows to be false, incomplete, or misleading\" (actual damages + court costs).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in South Carolina?",
+      "a": "STATE LAW: the SC Unfair Trade Practices Act (SCUTPA), S.C. Code § 39-5-10 et seq. A private plaintiff who suffers ascertainable loss may sue for actual damages (§ 39-5-140(a)); \"if the court finds that the use or employment of the unfair or deceptive method, act or practice was a willful or knowing violation ... the court shall award three times the actual damages\" (trebling only on willful/knowing, unlike NC's automatic § 75-16), and attorney's fees and costs are mandatory on any violation finding. Three-day cancel — scope matters: the SC Consumer Protection Code, S.C.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "georgia",
+    "neighborName": "Georgia",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "REGISTRATION ONLY",
+      "note": "— LLR Residential Specialty registration (\"masons\" named) > $500, no exam; Residential Builder…"
+    },
+    "b": {
+      "answer": "ONLY > $2,500",
+      "note": "NO chimney-sweep license; residential license only > $2,500 (O.C.G.A. § 43-41-2(9)) with…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

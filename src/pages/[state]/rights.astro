@@ -1,0 +1,323 @@
+---
+import Base from '../../layouts/Base.astro';
+import Chip from '../../components/Chip.astro';
+import Glyph from '../../components/Glyph.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import WhatToAsk from '../../components/WhatToAsk.astro';
+import BeforeYouRely from '../../components/BeforeYouRely.astro';
+import { getStates, getLicensing, type StatePage } from '../../lib/content';
+import { renderMd, plain, firstSentences } from '../../lib/markdown';
+import { extractSources } from '../../lib/sources';
+import { ORG_NAME, SITE_URL, abs, monthYear, MONTH_ABBR, RIGHTS_CSV, DISCLAIMER } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const states = await getStates();
+  return states.map((s) => ({ params: { state: s.slug }, props: { s } }));
+}
+
+interface Props { s: StatePage }
+const { s } = Astro.props;
+const path = `/${s.slug}/rights`;
+const year = (s.verified ?? s.researched ?? '2026').slice(0, 4);
+const title = `${s.name} Chimney & Fireplace Laws — Know Your Rights (${year}) | ${ORG_NAME}`;
+const researchedLabel = monthYear(s.researched);
+const passed = s.publishVerdict === 'READY' || s.publishVerdict === 'READY WITH CAVEATS';
+const verifiedLabel = passed ? monthYear(s.verified) : null;
+const checkedLabel = monthYear(s.verified);
+const citedAs = s.lawsCitedAs ?? researchedLabel;
+const noindex = s.publishVerdict === 'DO NOT PUBLISH';
+const hasLicensing = getLicensing().states.some((l) => l.slug === s.slug);
+
+// ---- Section spine: brief order 01–06, reads pulled from the research sections.
+const GROUPS = [
+  { id: 'licensing', num: '01', label: 'Licensing', q: `Does ${s.name} license chimney work?` },
+  { id: 'home-sale', num: '02', label: 'At home sale', q: `What does a ${s.name} seller have to tell you about the chimney?` },
+  { id: 'remedies', num: '03', label: 'Your remedies', q: `What can you do if a chimney job in ${s.name} goes wrong?` },
+  { id: 'permits', num: '04', label: 'Permits & codes', q: `Which chimney jobs need a permit in ${s.name}?` },
+  { id: 'co', num: '05', label: 'Carbon monoxide', q: `Is a carbon monoxide alarm required in ${s.name}?` },
+  { id: 'season', num: '06', label: 'Season calendar', q: `When should you book a chimney sweep in ${s.name}?` },
+] as const;
+const groupAnchor: Record<string, string> = {
+  licensing: 'licensing', 'home-sale': 'at-home-sale', remedies: 'your-remedies', permits: 'permits-codes', co: 'carbon-monoxide', season: 'season-calendar',
+};
+const readsFor = (g: string) => s.sections.filter((x) => x.group === g && x.group !== 'season');
+
+const isLocal = (t: string) => /\blocal\b|municipal|\bcity\b|\bcounty\b|home-rule/i.test(t);
+const isNational = (t: string) => /NFPA|\bIRC\b|NATIONAL|\bFTC\b|16 CFR|EPA/.test(t);
+const extraSources = (number: string) => (number === '1' && s.table?.lookup_url ? [s.table.lookup_url] : []);
+
+const season = s.season;
+const monthState = (m: number) => (season.rush.includes(m) ? 'rush' : season.best.includes(m) ? 'best' : '');
+
+const caveats = s.publishVerdictNote;
+const intro = s.story ? firstSentences(s.story.markdown, 2) : null;
+
+// ---- JSON-LD
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: s.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: plain(f.a) } })),
+};
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Chimney & fireplace laws by state', item: abs('/rights') },
+    { '@type': 'ListItem', position: 3, name: `${s.name} — know your rights`, item: abs(path) },
+  ],
+};
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: s.h1,
+  description: s.metaDescription,
+  mainEntityOfPage: abs(path),
+  datePublished: s.researched,
+  dateModified: s.lastVerified,
+  inLanguage: 'en-US',
+  author: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL },
+  publisher: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL, '@id': `${SITE_URL}/#organization` },
+  about: [{ '@type': 'State', name: s.name }, { '@type': 'Thing', name: 'Chimney and fireplace regulation' }],
+  isAccessibleForFree: true,
+};
+const jsonLd = [breadcrumbLd, articleLd, faqLd];
+
+const verdictClass = (a: string) => (a === 'SEE SECTION' ? 'verdict__answer verdict__answer--see' : 'verdict__answer');
+---
+<Base title={title} description={s.metaDescription} path={path} noindex={noindex} ogType="article" jsonLd={jsonLd} modified={s.lastVerified} citedAs={citedAs} section="rights">
+  <nav class="crumb" aria-label="Breadcrumb">
+    <a href="/rights">{s.name.toUpperCase()}</a> / KNOW YOUR RIGHTS
+  </nav>
+
+  <div class="layout">
+    <article>
+      <header>
+        <h1>{s.h1}</h1>
+        <p class="badge-date">
+          {researchedLabel ? `Researched ${researchedLabel}` : 'Research date not recorded'}<span class="dot">·</span>Laws as cited<span class="dot">·</span>{verifiedLabel ? `Verified ${verifiedLabel}` : s.publishVerdict === 'DO NOT PUBLISH' ? `Failed verification ${checkedLabel ?? ''}` : 'Not yet re-verified'}
+        </p>
+        <p class="chips"><Chip kind="muted">{s.provenance}</Chip><Chip kind="state" abbr={s.abbr} /></p>
+      </header>
+
+      {noindex && (
+        <section class="band band--review" aria-labelledby="under-review">
+          <p class="band__title" id="under-review">Under review</p>
+          <p>Our {checkedLabel ?? 'latest'} verification pass found problems with this page, so it is hidden from search engines while we fix it. Read it as unfinished research, not as a finding.</p>
+          {caveats && <p class="fineprint">Why: {caveats}</p>}
+        </section>
+      )}
+      {s.publishVerdict === 'UNVERIFIED' && (
+        <section class="band" aria-labelledby="not-verified">
+          <p class="band__title" id="not-verified">Not yet re-verified</p>
+          <p>This page reflects research from {researchedLabel ?? 'an earlier pass'}. It has not been through our verification pass against primary sources yet — treat every citation as unconfirmed until it has.</p>
+        </section>
+      )}
+      {s.publishVerdict === 'READY WITH CAVEATS' && (
+        <section class="band" aria-labelledby="caveats">
+          <p class="band__title" id="caveats">Verified with caveats</p>
+          {caveats ? (
+            <>
+              <p>Our verification pass ({verifiedLabel}) checked the load-bearing claims against primary sources and left these caveats:</p>
+              <p class="fineprint">{caveats}</p>
+            </>
+          ) : (
+            <p>Our verification pass ({verifiedLabel}) checked the load-bearing claims against primary sources; open items are listed in the <a href="#how-checked">verification log</a> below.</p>
+          )}
+        </section>
+      )}
+      {s.headerNote && (
+        <section class="band" aria-labelledby="correction">
+          <p class="band__title" id="correction">Research correction</p>
+          <div class="prose" set:html={renderMd(s.headerNote)} />
+        </section>
+      )}
+
+      {intro && <p class="lede">{intro}</p>}
+
+      <section aria-labelledby="short-answers" id="short-answers">
+        <h2 id="short-answers-h">The short answers</h2>
+        <div class="verdicts" role="list">
+          {s.verdictGrid.map((c) => (
+            <div class="verdict" role="listitem" id={c.id}>
+              <p class="verdict__label">{c.label}</p>
+              <p class={verdictClass(c.answer)}>{c.answer}</p>
+              <p class="verdict__note">
+                {c.note ?? ''} <a href={`#${c.anchor}`} aria-label={`Read the section behind: ${c.label}`}>#{c.anchor}</a>
+              </p>
+            </div>
+          ))}
+        </div>
+        <p class="fineprint">
+          Short answers are derived mechanically from our verified summary row and section text. Where the text doesn't support a one-word answer, the cell says SEE SECTION instead of guessing.
+        </p>
+      </section>
+
+      <div class="legend" aria-label="Legend">
+        <div><Chip kind="national" /> <span>A national standard or federal rule — true everywhere.</span></div>
+        <div><Chip kind="state" abbr={s.abbr} /> <span>{s.name} statute, regulation or registry.</span></div>
+        <div><Chip kind="local" /> <span>City or county rules — they vary by address.</span></div>
+      </div>
+
+      <aside class="box box--ink" aria-label="Municipal variance">
+        <p class="band__title">Cities can add rules</p>
+        {s.municipal.cities ? (
+          <p>In {s.name} that means {s.municipal.cities}. Check the building department for the home's address before relying on the statewide answer.</p>
+        ) : (
+          <p>In {s.name}, cities and counties can add permit, licensing and alarm rules on top of state law. Check the building department for the home's address; the sections below name the local regimes our research found.</p>
+        )}
+      </aside>
+
+      <nav class="jump" aria-label="Jump to section">
+        {GROUPS.map((g, i) => (
+          <a class={`chip${i === 0 ? ' chip--active' : ''}`} href={`#${groupAnchor[g.id]}`}>{g.num} {g.label}</a>
+        ))}
+        <a class="chip" href="#what-to-ask">Questions</a>
+        <a class="chip" href="#faq">FAQ</a>
+      </nav>
+
+      {s.story && (
+        <section class="spine-section" aria-labelledby="the-story">
+          <div class="spine-num" aria-hidden="true">00</div>
+          <div>
+            <p class="spine-label">The story</p>
+            <h2 id="the-story">What makes {s.name} different?</h2>
+            <div class="read" id="story">
+              <p class="read__meta"><a class="anchor-mark" href="#story">#story</a><span>{researchedLabel?.toUpperCase()}</span><Chip kind="muted">{s.provenance}</Chip></p>
+              <div class="prose" set:html={renderMd(s.story.markdown)} />
+            </div>
+          </div>
+        </section>
+      )}
+
+      {GROUPS.map((g) => (
+        <section class="spine-section" aria-labelledby={groupAnchor[g.id]}>
+          <div class="spine-num" aria-hidden="true">{g.num}</div>
+          <div>
+            <p class="spine-label">{g.label}</p>
+            <h2 id={groupAnchor[g.id]}>{g.q}</h2>
+
+            {g.id === 'season' ? (
+              <div class="read" id="season">
+                <p class="read__meta"><a class="anchor-mark" href="#season">#season</a><span>{researchedLabel?.toUpperCase()}</span></p>
+                <div class="season" role="list" aria-label="Month-by-month booking calendar">
+                  {MONTH_ABBR.map((m, i) => {
+                    const st = monthState(i + 1);
+                    return (
+                      <div class={`month${st ? ` month--${st}` : ''}`} role="listitem" aria-label={`${m}${st === 'rush' ? ': rush season' : st === 'best' ? ': best booking window' : ''}`}>
+                        {m.toUpperCase()}
+                      </div>
+                    );
+                  })}
+                </div>
+                <p class="season-key">
+                  <span><span class="swatch swatch--rush"></span>Rush {season.rushParsed ? '' : '(national pattern)'}</span>
+                  <span><span class="swatch"></span>Best booking {season.bestParsed ? '' : '(national pattern)'}</span>
+                </p>
+                {season.note && <p class="prose">{season.note}</p>}
+              </div>
+            ) : readsFor(g.id).length === 0 ? (
+              <p class="muted">Our research file for {s.name} has no section for this topic yet.</p>
+            ) : (
+              readsFor(g.id).map((r) => {
+                const text = r.markdown;
+                const sources = extractSources(text, extraSources(r.number));
+                return (
+                  <div class="read" id={r.anchor}>
+                    <h3>{r.title}</h3>
+                    <p class="read__meta">
+                      <a class="anchor-mark" href={`#${r.anchor}`}>#{r.anchor}</a>
+                      <span>{(verifiedLabel ? `VERIFIED ${verifiedLabel}` : `RESEARCHED ${researchedLabel ?? ''}`).toUpperCase()}</span>
+                      <Chip kind="muted">{s.provenance}</Chip>
+                      {isNational(text) && <Chip kind="national" />}
+                      <Chip kind="state" abbr={s.abbr} />
+                      {isLocal(text) && <Chip kind="local" />}
+                    </p>
+                    <div class="prose" set:html={renderMd(text)} />
+                    <div class="sources">
+                      <span class="sources__label">Sources</span>
+                      {r.evidence.map((e) => <Chip>{e}</Chip>)}
+                      {r.confidenceNote && <span class="muted">{r.confidenceNote}</span>}
+                      {sources.map((src) => (
+                        <span class="source"><Chip>{src.cls}</Chip><a href={src.href} rel="noopener" target="_blank">{src.label}</a></span>
+                      ))}
+                      {sources.length === 0 && <span class="muted">Citations are inline above; no web address was recorded for this read.</span>}
+                    </div>
+                  </div>
+                );
+              })
+            )}
+          </div>
+        </section>
+      ))}
+
+      {s.compare && (
+        <section class="compare" aria-labelledby="compare-h">
+          <div class="compare__head">
+            <p class="kicker">Across the border</p>
+            <h2 id="compare-h">{s.name} vs {s.compare.neighborName}: {s.compare.label.replace(/\?$/, '')}</h2>
+          </div>
+          <div>
+            <p class="kicker">{s.name}</p>
+            <p class="verdict__answer">{s.compare.a.answer}</p>
+            <p class="verdict__note">{s.compare.a.note}</p>
+          </div>
+          <div>
+            <p class="kicker">{s.compare.neighborName}</p>
+            <p class="verdict__answer">{s.compare.b.answer}</p>
+            <p class="verdict__note">{s.compare.b.note} <a href={`/${s.compare.neighborSlug}/rights`}>Read {s.compare.neighborName}</a></p>
+          </div>
+        </section>
+      )}
+
+      <WhatToAsk stateName={s.name} />
+
+      <section aria-labelledby="faq" class="faq-section">
+        <h2 id="faq">Frequently asked questions about {s.name} chimney law</h2>
+        <div class="faq">
+          {s.faq.map((f) => (
+            <details id={f.id} open={f.expanded}>
+              <summary><h3>{f.q}</h3></summary>
+              <div class="prose" set:html={renderMd(f.a)} />
+              <p class="fineprint">Answer drawn from: {f.derivedFrom}. <a class="anchor-mark" href={`#${f.id}`}>#{f.id}</a></p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {s.verification && (
+        <section class="box" aria-labelledby="how-checked">
+          <h2 id="how-checked">How we checked this page</h2>
+          <p class="fineprint">{s.verification.heading}{s.verification.checked ? ` · checked ${s.verification.checked}` : ''}. Items marked STILL OPEN are exactly that.</p>
+          <details id="verification-log">
+            <summary class="kicker">Show the verification log</summary>
+            <div class="prose" set:html={renderMd(s.verification.markdown)} />
+          </details>
+        </section>
+      )}
+
+      <BeforeYouRely dateLabel={verifiedLabel ?? researchedLabel} />
+    </article>
+
+    <aside class="rail" aria-label="About this page">
+      <div class="state-mark" role="img" aria-label={`${s.name} (${s.abbr})`}>{s.abbr}<span>{s.name}</span></div>
+      <div class="rail-card">
+        <p class="kicker">Coming to {s.name}</p>
+        <h2>A chimney directory that never sells placement</h2>
+        <p>Listings climb from public record to independently audited. Get one email when {s.name} launches.</p>
+        <EmailCapture id={`capture-${s.slug}`} state={s.abbr} />
+      </div>
+      <div class="rail-card">
+        <p class="kicker">Disclaimer</p>
+        <p>{DISCLAIMER}</p>
+      </div>
+      <div class="rail-card">
+        <p class="kicker">Open data</p>
+        <p><a class="button button--ghost" href={RIGHTS_CSV} download><Glyph name="download" /> State comparison table (CSV)</a></p>
+        <p class="fineprint">Cite as {SITE_URL}/rights</p>
+        {hasLicensing && <p><a href={`/${s.slug}/licensing`}>{s.name} licensing by trade</a></p>}
+        <p><a href="/rights">All states compared</a></p>
+      </div>
+    </aside>
+  </div>
+</Base>

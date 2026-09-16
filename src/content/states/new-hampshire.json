@@ -1,0 +1,317 @@
+{
+  "slug": "new-hampshire",
+  "name": "New Hampshire",
+  "abbr": "NH",
+  "sourceFile": "rights-research-new-hampshire.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": "**CORRECTED Sep 15, 2026: RSA 359-G is NOT a home-improvement written-contract statute (see §1); the 2026 State Building Code adopts the 2024 IRC, not 2021 (see §5).**",
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "do not quote the NH DOJ scam alert/case until read; 2024-vs-2021 code grace period through Dec 31, 2026 rests on a REF source",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- No statewide HIC registry/bond; RSA 332-B/310-A:188 debunk: RESOLVED (still holds) — no 2026 bill creating contractor registration found (HB 1271 of 2026 is third-party building inspections, \"Introduced - Dead,\" referred to interim study Feb 12, 2026); nothing in the file relies on RSA 332-B except the labeled debunk — https://legiscan.com/NH/text/HB1271/2026 — REF (legislative tracker mirror of GC record). Note: OPLC page 403 this pass; absence of GC licensing rests on the Jul 2026 pass.\n- RSA 359-G \"Home Improvement Contracts, written contract > $1,000\": CORRECTED — chapter is \"Residential Construction Defects; Dispute Resolution\"; 359-G:7 requires written notice of the pre-suit right-to-repair process on contracts over $5,000; no general written-contract duty; old blocker #4 ($1,000 vs $500) moot — https://gc.nh.gov/rsa/html/XXXI/359-G/359-G-mrg.htm and https://gc.nh.gov/rsa/html/XXXI/359-G/359-G-7.htm — GOV\n- RSA 358-A:10 remedies: RESOLVED — actual or $1,000 whichever greater; 2x–3x for willful/knowing; costs + attorney's fees; waiver void — https://gc.nh.gov/rsa/html/XXXI/358-A/358-A-10.htm — GOV\n- RSA 361-B:2 3-day cancel: RESOLVED (detail added) — chapter 361-B \"Retail Selling\"; home solicitation sale = goods or services ≥ $150 (361-B:1); boldface notice; refund within 15 days — https://gc.nh.gov/rsa/html/XXXIII-A/361-B/361-B-2.htm, https://gc.nh.gov/rsa/html/XXXIII-A/361-B/361-B-1.htm — GOV\n- Seller disclosure / no general defect form (old blocker #2): RESOLVED — RSA 477:4-a–4-h contain no general condition form and no chimney/fireplace item; 477:4-d amended eff. Aug 4, 2026 (flood zone, oil USTs); HB 1015 (2026, knotweed) ITL Mar 11, 2026 — https://gc.nh.gov/rsa/html/xlviii/477/477-mrg.htm, https://gc.nh.gov/rsa/html/xlviii/477/477-4-d.htm — GOV\n- State Building Code edition: CORRECTED — RSA 155-A:1, IV lists 2024 IBC, 2024 IRC, 2018 IECC, 2023 NEC (file said 2021 IRC/IBC); effective Jul 1, 2026 with Jul 1–Dec 31, 2026 grace period for 2021 or 2024 — https://gc.nh.gov/rsa/html/XII/155-A/155-A-1.htm (GOV); grace period https://nhboa.net/state-building-code-change-2026/ (REF)\n- CO law RSA 153:10-a: RESOLVED — NFPA 720 in rental/multi-unit and single-family built/substantially rehabbed after Jan 1, 2010, exempt only if no attached garage and no combustion appliance — https://gc.nh.gov/rsa/html/XII/153/153-10-a.htm — GOV\n- NH DOJ scam alert URL (old blocker #3): STILL OPEN — alert URL and a \"falsely claiming licensed and insured\" CPA case URL located but both 403 on fetch — https://www.doj.nh.gov/resources/press-releases/consumer-alert-attorney-general-encourages-public-take-steps-protect-0 — unread\n- Template-leakage sweep: clean — only other-state mentions are the labeled debunk strings."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high on absence; see caveat on the absence source)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on absence; see caveat on the absence source",
+      "markdown": "**No state license covers chimney work in New Hampshire — the state licenses only specialty trades.** The Office of Professional Licensure and Certification (OPLC) licenses **electricians, plumbers, and gas fitters (STATE LAW)** but does **not** license general contractors, carpenters, masons, or chimney sweeps. So chimney masonry, relining, and sweeping fall entirely outside occupational licensure. **There is also NO statewide home-improvement contractor registration and NO contractor bond.** *(Debunk, verified Jul 10, 2026 and still true Sep 2026: the \"RSA 310-A:188 registration / $10,000 bond under RSA 332-B\" claims circulating on SEO and bond-vendor sites are false — RSA 332-B is the NH Veterinary Practice Act. Nothing in this file relies on either citation; they appear only as the debunked claim.)*\n\n**CORRECTED Sep 15, 2026 — there is no general statutory written-contract duty for home improvements.** The prior draft said \"RSA 359-G, the Home Improvement Contracts statute, requires a written contract for any home improvement over $1,000.\" That was wrong. **RSA 359-G is titled \"Residential Construction Defects; Dispute Resolution\"** (gc.nh.gov). It is a right-to-repair statute: before suing a contractor over a construction defect, a homeowner must serve written notice of the alleged defects and give the contractor an opportunity to inspect and offer repair or settlement (RSA 359-G:4). **RSA 359-G:7** requires that, **where the contract amount exceeds $5,000**, the contractor give the owner conspicuous written notice of that pre-suit process (it may be in the contract). The $1,000/$500 threshold question is moot — neither number exists in 359-G. A written contract is good practice, not a statewide mandate, except that door-to-door sales need a written contract with a cancel notice (RSA 361-B, §4). Licensing that matters is **LOCAL** for permits — see §5. \"Licensed and bonded\" in NH usually means a trade license (electrical/plumbing/gas) or local permit standing, not a chimney credential."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "As wide as any no-license state. Statewide there is **nothing to verify for chimney competence** — no exam, no chimney registry, no contractor registry. Even the trade licenses NH does issue (electrical, plumbing, gas) don't test flue diagnosis or masonry. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a genuine vacuum here."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; NO chimney line item)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; NO chimney line item",
+      "markdown": "New Hampshire's mandatory seller disclosure is **narrow and does not name the chimney.** **RSA 477:4-c** requires disclosure of private water supply and sewage disposal information; **RSA 477:4-d** (1–4 family dwellings) requires written disclosure of private water and sewage systems, **insulation type/location, whether the property is in a federally designated flood hazard zone, and any residential heating-oil underground storage tanks** (amended effective Jul 19, 2024 and Aug 4, 2026); **RSA 477:4-a** requires radon, arsenic, lead, PFAS and flood-risk notices; 477:4-e (on-request history), 4-g (meth), 4-h (energy tariffs) round out the chapter. Checked Sep 15, 2026: **there is no statutory whole-house known-defect disclosure form and no chimney/fireplace/flue line item** anywhere in RSA 477:4-a–4-h. The one 2026 bill to add an item (HB 1015, Japanese knotweed) was voted Inexpedient to Legislate Mar 11, 2026. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Consumer Protection Act, RSA 358-A**, gives a private right of action and AG enforcement. **RSA 358-A:10, I** (verified): recovery of **actual damages or $1,000, whichever is greater**; for **willful or knowing** violations the court **shall award not less than 2 times and as much as 3 times** that amount; plus **costs and reasonable attorney's fees**; any attempted waiver of these damages is void; injunctions available. Door-to-door sales are governed by **RSA 361-B (Retail Selling)**: a \"home solicitation sale\" is a sale of **goods or services priced at $150 or more** solicited away from the seller's permanent place of business (RSA 361-B:1); **RSA 361-B:2** requires a signed contract with the boldface notice \"ANY BUYER MAY CANCEL THIS TRANSACTION ANY TIME PRIOR TO MIDNIGHT OF THE THIRD BUSINESS DAY AFTER THE DATE OF THIS TRANSACTION,\" and on cancellation the seller must return payments within 15 days — the exact mechanic against chimney scare-sales. Complaints: NH DOJ Consumer Protection & Antitrust Bureau (doj.nh.gov/citizens/consumer-protection-antitrust-bureau)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**CORRECTED Sep 15, 2026.** NH has a **statewide State Building Code (RSA 155-A)**. **RSA 155-A:1, IV** now defines it as the **2024 IBC, 2024 IRC, 2018 IECC, and 2023 NEC** (with amendments approved through Oct 10, 2025), effective **July 1, 2026**; a six-month grace period (Jul 1 – Dec 31, 2026) lets permits in queue follow either the 2021 or 2024 ICC codes (grace-period detail: NH Building Officials Association, REF; the State Fire Marshal page was not reachable). Enforcement is **LOCAL** — many NH towns have no building department, so in small towns there may be no permit process at all. Where a code and enforcing town exist, chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not. This state needs the local-variance disclaimer."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**RSA 153:10-a** (verified) requires CO detection per **NFPA 720** in every **rental/multi-unit dwelling** and in **single-family dwellings built or substantially rehabilitated after Jan 1, 2010** — except where the unit has **neither an attached garage nor a combustion fuel-burning appliance/device** (the requirement attaches if either is later added). A wood stove or fireplace triggers it. The owner of a rental unit maintains the device. No statewide pre-sale CO certificate. A permitted chimney or stove job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (REF/GOV — medium)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "medium",
+      "markdown": "NH has one of the **highest wood/pellet-heat shares in the nation**, so solid-fuel practice matters more than licensing. No statewide burn-ban or stove-emission regime beyond federal EPA new-stove standards (NATIONAL STANDARD). Some towns regulate outdoor wood boilers; **name the local ordinance if a listing town has one — VERIFY per town.**"
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV/REF — pattern confirmed; URLs located, text not re-fetched)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "pattern confirmed; URLs located, text not re-fetched",
+      "markdown": "The NH DOJ has issued a **consumer alert on home-improvement scams** (\"Consumer Alert – Attorney General Encourages the Public to Take Steps to Protect Themselves Against Home Improvement Scams in Recognition of National Consumer Protection Week,\" doj.nh.gov/resources/press-releases/consumer-alert-attorney-general-encourages-public-take-steps-protect-0) flagging the door-knock pitch, and has announced a case titled **\"Local Contractor Admits Violation of the Consumer Protection Act by Falsely Claiming He Was Licensed and Insured\"** (doj.nh.gov/news-and-media/local-contractor-admits-violation-consumer-protection-act-falsely-claiming-he-was). Both URLs were located Sep 15, 2026 but returned 403 to the fetcher, so dates, names and quotes are **not yet confirmed — do not quote them until read.** Specific NH *chimney-sweep* enforcement actions: NOT FOUND."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold northern-New-England climate; heavy wood heat. Burn season ~Oct–Apr (longer in the North Country/White Mountains). Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Seacoast and southern-tier towns (Portsmouth, Nashua, Manchester) run near/above national; North Country and rural towns nearer or below national. Regionalize on the southern-tier vs North Country split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (electrical/plumbing/gas only) — LOCAL permits** · Registration: **NONE — no HIC registry, no bond, and no general written-contract statute (RSA 359-G is a construction-defect right-to-repair law with a notice duty on contracts > $5,000)** · Disclosure law: **YES but narrow (RSA 477:4-c/4-d water, septic, insulation, flood zone, oil USTs) — NO chimney/fireplace line item** · 3-day cancel: **YES (RSA 361-B:2, home solicitation ≥ $150)** · CO law: **rentals + post-2010 single-family with fuel appliance/garage (RSA 153:10-a, NFPA 720)** · Lookup: oplc.nh.gov license lookup (trades only) + doj.nh.gov consumer complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "New Hampshire **BREAKS the master correlation, and does so cleanly.** The rule says weak licensing should buy strong seller disclosure — but NH licenses no chimney work AND gives buyers a disclosure form that never mentions the chimney, naming only water, septic, insulation, flood zone and oil tanks. It is a rare double-negative: caveat-emptor on both axes, softened only by a real 2x–3x consumer-fraud multiplier and a 3-day door-to-door cancel. There isn't even a statewide written-contract rule for home improvements — only a pre-lawsuit right-to-repair notice on jobs over $5,000. In a state with one of the nation's highest wood-heat shares, that vacuum is exactly what an independent inspection and individual certs exist to fill."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "No state license (electrical/plumbing/gas only); local permits",
+    "registration_name": "None (no HIC registry or bond; RSA 359-G is defect right-to-repair notice >$5,000 only)",
+    "disclosure_law": "Yes - narrow (RSA 477:4-a/4-c/4-d water, sewage, insulation, flood zone, oil USTs)",
+    "chimney_item_on_form": "No",
+    "three_day_cancel": "Yes (RSA 361-B:2, home solicitation >=$150)",
+    "co_law": "Rentals/multi-unit + single-family built/rehabbed after 1/1/2010 with fuel appliance or attached garage (RSA 153:10-a, NFPA 720); no at-sale rule",
+    "lookup_url": "https://www.doj.nh.gov/citizens/consumer-protection-antitrust-bureau",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (electrical/plumbing/gas only) — LOCAL permits",
+    "registration_name": "NONE — no HIC registry, no bond, and no general written-contract statute (RSA 359-G is a construction-defect right-to-repair law with a notice duty on contracts > $5,000)",
+    "disclosure_law": "YES but narrow (RSA 477:4-c/4-d water, septic, insulation, flood zone, oil USTs) — NO chimney/fireplace line item",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (RSA 361-B:2, home solicitation ≥ $150)",
+    "co_law": "rentals + post-2010 single-family with fuel appliance/garage (RSA 153:10-a, NFPA 720)",
+    "lookup_url": "oplc.nh.gov license lookup (trades only) + doj.nh.gov consumer complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing/gas only) — LOCAL permits",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (RSA 361-B:2, home solicitation ≥ $150)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "rentals + post-2010 single-family with fuel appliance/garage (RSA 153:10-a, NFPA 720)",
+      "anchor": "co-law",
+      "rule": "co:unmatched",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "New Hampshire: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "New Hampshire chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold northern-New-England climate; heavy wood heat. Burn season ~Oct–Apr (longer in the North Country/White Mountains). Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in New Hampshire?",
+      "a": "State licensing: NO state license (electrical/plumbing/gas only) — LOCAL permits. Registration or credential: NONE — no HIC registry, no bond, and no general written-contract statute (RSA 359-G is a construction-defect right-to-repair law with a notice duty on contracts > $5,000). Seller disclosure at sale: YES but narrow (RSA 477:4-c/4-d water, septic, insulation, flood zone, oil USTs) — NO chimney/fireplace line item. Right to cancel a sale made at your home: YES (RSA 361-B:2, home solicitation ≥ $150). Carbon monoxide alarm law: rentals + post-2010 single-family with fuel appliance/garage (RSA 153:10-a, NFPA 720). Where to check a contractor: oplc.nh.gov license lookup (trades only) + doj.nh.gov consumer complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in New Hampshire?",
+      "a": "New Hampshire's mandatory seller disclosure is narrow and does not name the chimney. RSA 477:4-c requires disclosure of private water supply and sewage disposal information; RSA 477:4-d (1–4 family dwellings) requires written disclosure of private water and sewage systems, insulation type/location, whether the property is in a federally designated flood hazard zone, and any residential heating-oil underground storage tanks (amended effective Jul 19, 2024 and Aug 4, 2026); RSA 477:4-a requires radon, arsenic, lead, PFAS and flood-risk notices; 477:4-e (on-request history), 4-g (meth), 4-h (energy tariffs) round out the chapter. Checked Sep 15, 2026: there is no statutory whole-house known-defect disclosure form and no chimney/fireplace/flue line item anywhere in RSA 477:4-a–4-h. The one 2026 bill to add an item (HB 1015, Japanese knotweed) was voted Inexpedient to Legislate Mar 11, 2026.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in New Hampshire?",
+      "a": "The Consumer Protection Act, RSA 358-A, gives a private right of action and AG enforcement. RSA 358-A:10, I (verified): recovery of actual damages or $1,000, whichever is greater; for willful or knowing violations the court shall award not less than 2 times and as much as 3 times that amount; plus costs and reasonable attorney's fees; any attempted waiver of these damages is void; injunctions available. Door-to-door sales are governed by RSA 361-B (Retail Selling): a \"home solicitation sale\" is a sale of goods or services priced at $150 or more solicited away from the seller's permanent place of business (RSA 361-B:1); RSA 361-B:2 requires a signed contract with the boldface notice \"ANY BUYER MAY CANCEL THIS TRANSACTION ANY TIME PRIOR TO MIDNIGHT OF THE THIRD BUSINESS DAY AFTER THE DATE OF THIS TRANSACTION,\" and on cancellation the seller must return payments within 15 days — the exact mechanic against chimney scare-sales. Complaints: NH DOJ Consumer Protection & Antitrust Bureau (doj.nh.gov/citizens/consumer-protection-antitrust-bureau).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "massachusetts",
+    "neighborName": "Massachusetts",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing/gas only) — LOCAL permits"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "YES for structural work — CSL (exam) + HIC registration for contracting"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

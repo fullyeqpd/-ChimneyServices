@@ -1,0 +1,300 @@
+{
+  "slug": "rhode-island",
+  "name": "Rhode Island",
+  "abbr": "RI",
+  "sourceFile": "rights-research-rhode-island.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "CO section and CO column must be labeled unverified or held; DLT license described as existing, not as universally required; no bond figure; no named enforcement",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- § 5-65-3 bond amount: CORRECTED — no bond in § 5-65-3 or § 5-65-7; § 5-65-7 requires $500,000 CSL liability insurance + workers' comp; § 5-65-3 lists \"Masons, including chimney installers, fireplace installers, and general masonry erectors\"; permit bar confirmed; last amended P.L. 2023 ch. 395 — http://webserver.rilegislature.gov/Statutes/TITLE5/5-65/5-65-3.htm ; http://webserver.rilegislature.gov/Statutes/TITLE5/5-65/5-65-7.htm — GOV\n- CRLB registration vs licensure line: RESOLVED — CRLB registers contractors; licenses only commercial roofers, home inspectors, underground utility, water filtration, well drilling, pump installers (no chimney license) — https://crb.ri.gov/ — GOV\n- 260-RICR-30-15-2.22(I): RESOLVED (new fact added) — DLT Decorative Heating Appliances Limited II; scope incl. wood/pellet/gas decorative appliances, flue connections/terminations, residential replacement flue liners; requires current NCSG or NFI certification + 2 yrs experience; no fuel piping — https://rules.sos.ri.gov/regulations/part/260-30-15-2 — GOV. Mandatory-vs-optional scope STILL OPEN.\n- Seller disclosure § 5-20.8-2 + chimney items: RESOLVED — Fireplaces (b)(3)(vi), Chimney (b)(3)(vii), Heating (b)(3)(xiv); penalty $1,000 per occurrence (§ 5-20.8-5) — http://webserver.rilegislature.gov/Statutes/TITLE5/5-20.8/5-20.8-2.htm ; http://webserver.rilegislature.gov/Statutes/TITLE5/5-20.8/5-20.8-5.htm — GOV\n- Building code cycle: RESOLVED — RISBC-2 adopts 2021 IRC, effective Dec 1, 2025 per SOS — https://rules.sos.ri.gov/regulations/part/510-00-00-2 — GOV\n- CO pre-sale certificate section: STILL OPEN — Title 23 index shows ch. 23-28 repealed; candidate ch. 23-28.1 not fetched; 60-day/$30 unverified — http://webserver.rilegislature.gov/Statutes/TITLE23/INDEX.HTM — GOV (index only)\n- Door-to-Door Sales Act 6-28-3/6-28-4: not re-verified this pass.\n- Enforcement actions: STILL OPEN.\n- Template-leakage sweep: clean (NH/VT/ME only as labeled comparisons)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; a real registration regime)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real registration regime",
+      "markdown": "**Rhode Island is the outlier of northern New England: it actually requires contractors to register with the state, and chimney work is covered.** The **Contractors' Registration and Licensing Board (CRLB)**, in the Dept. of Business Regulation, administers **R.I. Gen. Laws chapter 5-65**, which requires **every contractor, remodeler, and most subcontractors who build or repair residential/commercial structures and their appurtenances to register before working on a structure (§ 5-65-3)** — and the enumerated subcontractors who must register **explicitly include \"Masons, including chimney installers, fireplace installers, and general masonry erectors\"**, so chimney work is named in the statute itself. \"A city, town, or the state shall not issue a building permit to anyone required to be registered under this chapter who does not have a current, valid registration or valid license\" (§ 5-65-3). Registrants must carry **public liability and property damage insurance of $500,000 combined single limit** plus workers' comp as required (§ 5-65-7). **Neither § 5-65-3 nor § 5-65-7 imposes a bond** — do not publish a bond amount. The CRLB line: it **registers** general contractors (no competency exam) and **licenses** only commercial roofers, home inspectors, underground utility, water filtration, well drilling and pump installers — **there is no CRLB chimney license**, so chimney contractors register. Public lookup: **crb.ri.gov/consumer/search-registrantlicensee**.\n**A second, chimney-adjacent credential (DLT, not CRLB):** the Dept. of Labor and Training's pipefitter/sheet-metal rules (**260-RICR-30-15-2, § 2.22(I)**, authority R.I. Gen. Laws § 28-27-7) create a **Decorative Heating Appliances Limited II** license covering \"gas fired logs; gas, pellet, or wood decorative appliances and their related flue connections and terminations; replacement flue liners for residential installations only.\" Applicants **\"must hold a current certification from the National Chimney Sweep Guild or the National Fireplace Institute\"** plus a notarized statement of two years' experience; fuel piping is not allowed under it, and municipal permits are issued to the licensee. That makes RI one of the rare states where a state license **requires a chimney-industry certification** — but only for that limited appliance/liner scope. *(Whether this license is mandatory for every liner or stove install, versus one route among pipefitter/sheet-metal licenses, is not confirmed — say \"a state license for this work exists and requires NCSG or NFI certification,\" not \"required for all liner jobs.\")* This is the strongest chimney-relevant credential structure in the batch."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Narrower than the no-license states but still real. CRLB **registration** verifies identity, insurance, and a registry entry — **not flue diagnosis or masonry competence** (registration, unlike specialty licensure, requires no exam). A registered contractor may never have inspected a chimney. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal, but here \"check the registration at crb.ri.gov\" is a genuinely useful first step — more than it is in NH/VT/ME."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; explicit chimney + fireplace line items)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; explicit chimney + fireplace line items",
+      "markdown": "Rhode Island has a **genuinely strong, chimney-naming mandatory disclosure.** **R.I. Gen. Laws § 5-20.8-2** requires the seller of a 1–4 unit residence to deliver a written disclosure **\"as soon as practicable, but in any event no later than prior to signing any agreement to transfer\"** — and the statute's item list **separately itemizes \"Fireplaces — (Number, Working and Maintenance, Defects)\" (§ 5-20.8-2(b)(3)(vi)), \"Chimney — (Maintenance History, Defects)\" ((b)(3)(vii)), and \"Heating System — (Type, Imp. & Repairs, Underground Tanks, Zones, Supplemental Heating, Defects, Modifications)\" ((b)(3)(xiv)).** Actual-knowledge standard; each violation carries a **civil penalty up to $1,000 per occurrence (§ 5-20.8-5)**. That is a real, chimney-specific disclosure. No general inspection is mandated at transfer (but see §6's CO certificate); NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Deceptive Trade Practices Act (Unfair Trade Practice and Consumer Protection Act), R.I. Gen. Laws chapter 6-13.1**, gives AG enforcement and a private right of action for damages. Door-to-door sales are separately governed by the **Door-to-Door Sales Act, chapter 6-28**, which gives a **3-day right to cancel — written notice by midnight of the third day after signing, excluding Sundays/holidays (§ 6-28-3)** — and **failure to return a deposit exposes the seller to DOUBLE damages (§ 6-28-4)**. That is the exact mechanic against chimney scare-sales. Complaints: RI AG Consumer Protection Unit."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium; confirm cycle)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; confirm cycle",
+      "markdown": "Rhode Island has a **statewide State Building Code**; the one- and two-family code **RISBC-2 (510-RICR-00-00-2) adopts the 2021 IRC** with RI amendments (current version listed effective Dec 1, 2025 on the Secretary of State's rules site). Because registration is tied to permits (§ 5-65-3 bars permits to unregistered contractors), chimney relines, rebuilds, crowns, and solid-fuel appliance installs that require a permit also require a registered contractor. Routine sweeps and like-for-like caps generally are not permit work. RI is small and comparatively uniform, so less local patchwork than the other three states."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV/DOC — high on requirement; UNVERIFIED on exact section)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high on requirement; UNVERIFIED on exact section",
+      "markdown": "Unusually strong at transfer — **but the citation is unverified.** Under the **RI Fire Safety Code (R.I. Gen. Laws ch. 23-28.1 et seq. and the state fire code regulations; note ch. 23-28 itself is repealed)**, all occupied residential properties must have smoke and CO detectors (installed per NFPA 72 / NFPA 720), and — the standout — **at transfer of title the seller must give the buyer a certificate from the local fire department stating the smoke/CO systems were inspected within 60 days prior and found in good working order**, with a ~$30 inspection fee borne by the seller. CO alarms are required where there are fuel-burning appliances, fireplaces, or an attached garage. This is a genuine **pre-sale fire-department CO/smoke inspection certificate** — the strongest transfer-time CO regime in the batch and a direct tie-in to a chimney/stove check. *(The precise section for the pre-sale certificate, the 60-day window and the ~$30 fee are all UNVERIFIED — chapter 23-28 is repealed and the requirement likely lives in chapter 23-28.1 or the adopted fire code regulations; confirm before publish.)*"
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Rhode Island has meaningful but lower wood-heat share than NH/VT/ME. No statewide burn-ban or stove-emission regime beyond federal EPA new-stove standards (NATIONAL STANDARD). Not a material statutory section for RI; 1–2 sentences and move on."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The RI AG's Consumer Protection Unit pursues home-improvement fraud, and the door-knock \"we were in the neighborhood / noticed your chimney\" pitch is a textbook chapter 6-28 + 6-13.1 violation; here it is **also** an unregistered-contractor problem, since unregistered work is barred under § 5-65-3. Regional New England reporting has tied chimney-sweep scams to weak trade regulation elsewhere — but RI's CRLB is the counterexample. **Specific RI chimney-sweep enforcement actions: NOT YET CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Coastal southern-New-England climate, milder than NH/VT/ME. Burn season ~Nov–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Providence metro and the East Bay/coastal towns run near/above national; more uniform statewide given RI's small size. Regionalize modestly upward for the Providence ring."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES-ish — CRLB REGISTRATION required (R.I. Gen. Laws § 5-65-3; \"masons, including chimney installers, fireplace installers\"; no exam; no CRLB chimney license) + DLT Decorative Heating Appliances Limited II license requiring NCSG/NFI cert (260-RICR-30-15-2.22(I))** · Registration: **YES — CRLB registry, permits barred to unregistered contractors** · Disclosure law: **YES — § 5-20.8-2, form names Fireplaces + Chimney + Heating separately (penalty $1,000/occurrence)** · 3-day cancel: **YES (Door-to-Door Sales Act § 6-28-3; double damages § 6-28-4)** · CO law: **STRONG (reported) — pre-sale fire-dept smoke/CO certificate (exact section, 60-day window UNVERIFIED)** · Lookup: crb.ri.gov + riag.ri.gov complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Rhode Island **BREAKS the master correlation — and breaks it in the \"strong-on-both\" direction that's rarer than the weak-on-both cases.** The rule predicts a state either licenses hard and discloses little, or licenses nothing and discloses a lot. Rhode Island does **both**: it requires contractors (masons included) to register with the CRLB and bars permits to the unregistered, AND its seller-disclosure form names the chimney and the fireplace as separate line items, AND (reportedly — section still being verified) it demands a fire-department smoke/CO inspection certificate at the closing table. For a state this small, that is an unusually complete consumer stack. The catch the page should flag: CRLB **registration** carries no competency exam, so \"registered\" still is not \"qualified\" — which is exactly the gap individual certs and an independent audit fill."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "CRLB registration required (R.I. Gen. Laws 5-65-3 names chimney/fireplace installers; no exam, no bond, $500k insurance) + DLT Decorative Heating Appliances Limited II license requiring NCSG/NFI cert (260-RICR-30-15-2.22(I))",
+    "registration_name": "CRLB registry; permits barred to unregistered contractors",
+    "disclosure_law": "YES — 5-20.8-2, statute lists Fireplaces + Chimney + Heating separately",
+    "chimney_item_on_form": "Yes (Fireplaces, Chimney, Heating System items)",
+    "three_day_cancel": "YES (Door-to-Door Sales Act 6-28-3; not re-verified Sep 2026)",
+    "co_law": "STRONG (reported) — pre-sale fire-dept smoke/CO certificate; statute section UNVERIFIED",
+    "lookup_url": "crb.ri.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES-ish — CRLB REGISTRATION required (R.I. Gen. Laws § 5-65-3; \"masons, including chimney installers, fireplace installers\"; no exam; no CRLB chimney license) + DLT Decorative Heating Appliances Limited II license requiring NCSG/NFI cert (260-RICR-30-15-2.22(I))",
+    "registration_name": "YES — CRLB registry, permits barred to unregistered contractors",
+    "disclosure_law": "YES — § 5-20.8-2, form names Fireplaces + Chimney + Heating separately (penalty $1,000/occurrence)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (Door-to-Door Sales Act § 6-28-3; double damages § 6-28-4)",
+    "co_law": "STRONG (reported) — pre-sale fire-dept smoke/CO certificate (exact section, 60-day window UNVERIFIED)",
+    "lookup_url": "crb.ri.gov + riag.ri.gov complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "SEE SECTION",
+      "note": "YES-ish — CRLB REGISTRATION required (R.I. Gen. Laws § 5-65-3; \"masons, including chimney…",
+      "anchor": "license",
+      "rule": "license:qualified-yes→see",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "qualified-gap",
+      "rule": "exam:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated; a CO/smoke rule applies at sale",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No general inspection is mandated at transfer (but see §6's CO certificate); NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Door-to-Door Sales Act § 6-28-3; double damages § 6-28-4)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:yes→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Rhode Island chimney & fireplace laws: know your rights",
+  "metaDescription": "Rhode Island chimney & fireplace laws: licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Coastal southern-New-England climate, milder than NH/VT/ME. Burn season ~Nov–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Rhode Island?",
+      "a": "State licensing: YES-ish — CRLB REGISTRATION required (R.I. Gen. Laws § 5-65-3; \"masons, including chimney installers, fireplace installers\"; no exam; no CRLB chimney license) + DLT Decorative Heating Appliances Limited II license requiring NCSG/NFI cert (260-RICR-30-15-2.22(I)). Registration or credential: YES — CRLB registry, permits barred to unregistered contractors. Seller disclosure at sale: YES — § 5-20.8-2, form names Fireplaces + Chimney + Heating separately (penalty $1,000/occurrence). Right to cancel a sale made at your home: YES (Door-to-Door Sales Act § 6-28-3; double damages § 6-28-4). Carbon monoxide alarm law: STRONG (reported) — pre-sale fire-dept smoke/CO certificate (exact section, 60-day window UNVERIFIED). Where to check a contractor: crb.ri.gov + riag.ri.gov complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Rhode Island?",
+      "a": "Rhode Island has a genuinely strong, chimney-naming mandatory disclosure. R.I. Gen. Laws § 5-20.8-2 requires the seller of a 1–4 unit residence to deliver a written disclosure \"as soon as practicable, but in any event no later than prior to signing any agreement to transfer\" — and the statute's item list separately itemizes \"Fireplaces — (Number, Working and Maintenance, Defects)\" (§ 5-20.8-2(b)(3)(vi)), \"Chimney — (Maintenance History, Defects)\" ((b)(3)(vii)), and \"Heating System — (Type, Imp. & Repairs, Underground Tanks, Zones, Supplemental Heating, Defects, Modifications)\" ((b)(3)(xiv)).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Rhode Island?",
+      "a": "The Deceptive Trade Practices Act (Unfair Trade Practice and Consumer Protection Act), R.I. Gen. Laws chapter 6-13.1, gives AG enforcement and a private right of action for damages. Door-to-door sales are separately governed by the Door-to-Door Sales Act, chapter 6-28, which gives a 3-day right to cancel — written notice by midnight of the third day after signing, excluding Sundays/holidays (§ 6-28-3) — and failure to return a deposit exposes the seller to DOUBLE damages (§ 6-28-4).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": null
+}

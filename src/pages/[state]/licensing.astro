@@ -1,0 +1,110 @@
+---
+import Base from '../../layouts/Base.astro';
+import Chip from '../../components/Chip.astro';
+import WhatToAsk from '../../components/WhatToAsk.astro';
+import BeforeYouRely from '../../components/BeforeYouRely.astro';
+import { getLicensing, type LicensingState } from '../../lib/content';
+import { fixCertOrder as fx } from '../../lib/markdown';
+import { CATEGORY_LABEL, CATEGORY_ORDER, splitUrls, urlLabel, srcClass } from '../../lib/licensing';
+import { ORG_NAME, SITE_URL, abs, monthYear, LICENSING_CSV } from '../../lib/site';
+
+export function getStaticPaths() {
+  return getLicensing().states.map((st) => ({ params: { state: st.slug }, props: { st } }));
+}
+interface Props { st: LicensingState }
+const { st } = Astro.props;
+const path = `/${st.slug}/licensing`;
+const title = `${st.name} Chimney & Hearth Contractor Licensing by Trade (2026) | ${ORG_NAME}`;
+const description = `${st.name} chimney and hearth licensing: what sweeping, stove installs, flashing and gas fireplace work require, plus insurance rules and sources.`.slice(0, 155);
+const citedAs = monthYear(st.lastChecked);
+const rows = [...st.rows].sort((a, b) => CATEGORY_ORDER.indexOf(a.category_slug) - CATEGORY_ORDER.indexOf(b.category_slug));
+const ins = st.insurance;
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Chimney & hearth licensing by state', item: abs('/licensing') },
+      { '@type': 'ListItem', position: 3, name: `${st.name} licensing`, item: abs(path) },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: `${st.name} chimney & hearth contractor licensing, trade by trade`,
+    description,
+    mainEntityOfPage: abs(path),
+    dateModified: st.lastChecked,
+    author: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL, '@id': `${SITE_URL}/#organization` },
+  },
+];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd} modified={st.lastChecked} citedAs={citedAs} section="licensing">
+  <nav class="crumb" aria-label="Breadcrumb"><a href="/licensing">{st.name.toUpperCase()}</a> / LICENSING BY TRADE</nav>
+  <h1>{st.name}: who needs a license to work on your chimney or fireplace?</h1>
+  <p class="badge-date">Checked {citedAs ?? 'date not recorded'}<span class="dot">·</span>Laws as cited<span class="dot">·</span>Not in the Sep 2026 verification pass</p>
+  <p class="chips"><Chip kind="muted">Public record</Chip><Chip kind="state" abbr={st.abbr} /></p>
+  {st.hasRightsPage && (
+    <p>For consumer remedies, home-sale rules and carbon monoxide law, see <a href={`/${st.slug}/rights`}>{st.name} chimney & fireplace laws — know your rights</a>. That page was verified more recently than this matrix.</p>
+  )}
+
+  <nav class="jump" aria-label="Jump to trade">
+    {rows.map((r, i) => <a class={`chip${i === 0 ? ' chip--active' : ''}`} href={`#${r.category_slug}`}>{CATEGORY_LABEL[r.category_slug] ?? r.category_slug}</a>)}
+    {ins && <a class="chip" href="#insurance">Insurance</a>}
+  </nav>
+
+  {rows.map((r) => (
+    <section class="record" id={r.category_slug} aria-labelledby={`${r.category_slug}-h`}>
+      <div class="record__head">
+        <h2 id={`${r.category_slug}-h`} style="margin:0;font-size:1.25rem">{CATEGORY_LABEL[r.category_slug] ?? r.category_slug}: is a credential required in {st.name}?</h2>
+        <span class="chips"><a class="anchor-mark" href={`#${r.category_slug}`}>#{r.category_slug}</a><Chip>{r.credential_required.toUpperCase()}</Chip></span>
+      </div>
+      <dl>
+        <dt>Credential</dt><dd>{fx(r.credential_name || '—')}</dd>
+        <dt>Issuing body</dt><dd>{fx(r.issuing_body || '—')}</dd>
+        <dt>Statute</dt><dd>{fx(r.statute || '—')}</dd>
+        <dt>Dollar threshold</dt><dd class="mono">{fx(r.dollar_threshold || '—')}</dd>
+        <dt>Exam</dt><dd>{fx(r.exam || '—')}</dd>
+        <dt>Local overlay</dt><dd>{fx(r.local_overlay || '—')}</dd>
+        <dt>Confidence</dt><dd class="mono">{r.confidence || '—'} · checked {r.checked_date || '—'}</dd>
+        <dt>Sources</dt>
+        <dd>
+          <div class="sources" style="border:0;margin:0;padding:0">
+            {splitUrls(r.source_urls).map((u) => <span class="source"><Chip>{srcClass(u)}</Chip><a href={u} rel="noopener" target="_blank">{urlLabel(u)}</a></span>)}
+            {splitUrls(r.source_urls).length === 0 && <span class="muted">{r.source_urls || 'No web address recorded.'}</span>}
+          </div>
+        </dd>
+      </dl>
+    </section>
+  ))}
+
+  {ins && (
+    <section class="record" id="insurance" aria-labelledby="insurance-h">
+      <div class="record__head">
+        <h2 id="insurance-h" style="margin:0;font-size:1.25rem">What insurance does {st.name} require of contractors?</h2>
+        <span class="chips"><a class="anchor-mark" href="#insurance">#insurance</a></span>
+      </div>
+      <dl>
+        <dt>Regime</dt><dd>{fx(ins.context || '—')}</dd>
+        <dt>Liability minimum</dt><dd>{fx(ins.liability_min || '—')}</dd>
+        <dt>Bond</dt><dd>{fx(ins.bond || '—')}</dd>
+        <dt>Guaranty fund</dt><dd>{fx(ins.guaranty_fund || '—')}</dd>
+        <dt>Workers' comp threshold</dt><dd>{fx(ins.wc_threshold || '—')}</dd>
+        <dt>How to verify</dt><dd>{fx(ins.verification_mechanism || '—')}</dd>
+        <dt>Confidence</dt><dd class="mono">{ins.confidence || '—'} · checked {ins.date || '—'}</dd>
+        <dt>Sources</dt>
+        <dd>
+          <div class="sources" style="border:0;margin:0;padding:0">
+            {splitUrls(ins.sources).map((u) => <span class="source"><Chip>{srcClass(u)}</Chip><a href={u} rel="noopener" target="_blank">{urlLabel(u)}</a></span>)}
+          </div>
+        </dd>
+      </dl>
+    </section>
+  )}
+
+  <p class="fineprint"><a href={LICENSING_CSV} download>Download the full licensing matrix (CSV)</a> · <a href="/licensing">All states</a></p>
+  <WhatToAsk stateName={st.name} />
+  <BeforeYouRely dateLabel={citedAs} />
+</Base>

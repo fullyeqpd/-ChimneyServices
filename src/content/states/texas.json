@@ -1,0 +1,320 @@
+{
+  "slug": "texas",
+  "name": "Texas",
+  "abbr": "TX",
+  "sourceFile": "rights-research-texas.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "city registration/bond figures unverified; §5 code editions unverified; HB 2022 mention only after reading enrolled text",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- § 5.008 form chimney wording: CORRECTED — current form is TREC No. 55-1 (footer 05-04-2026; listing page 05/28/2026), not \"OP-H\"; line items as extracted: \"Fireplace(s) & Chimney (Wood burning)\" and \"Fireplace(s) & Chimney (Mock)\"; form also lists \"Carbon Monoxide Alarm\" — https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf — DOC\n- § 5.008 scope/exemptions: RESOLVED — one dwelling unit; (e) exemptions list expanded in file (co-owner, family, government, 5%-value); last amended HB 697 (2023) — https://texas.public.law/statutes/tex._prop._code_section_5.008 — GOV (statute via mirror; statutes.capitol.texas.gov fetch returned index only)\n- No state chimney/contractor license: RESOLVED — TDLR program list has no GC/home-improvement/chimney/hearth program — https://www.tdlr.texas.gov/ — GOV\n- DTPA remedies: CORRECTED (precision) — knowingly: mental anguish + up to 3x economic; intentionally: up to 3x economic + mental anguish (§ 17.50(b)(1)); 60-day notice (§ 17.505(a)) — https://law.justia.com/codes/texas/business-and-commerce-code/title-2/chapter-17/subchapter-e/section-17-50/ — GOV (mirror)\n- Ch. 601 3-day cancel: RESOLVED — §§ 601.002 scope (>$25 goods/services), 601.052 notice text (third business day); § 601.051/.053 citations replaced with the sections actually read — GOV (mirror)\n- HB 2022 CO: CORRECTED — no CO bill found under that number: HB 2022 (88R, 2023) = residential construction liability, eff. 9/1/2023; HB 2022 (89R, 2025) = limitations periods, died in committee — https://legiscan.com/TX/bill/HB2022/2023 ; https://legiscan.com/TX/bill/HB2022/2025 — REF (capitol.texas.gov blocked by robots)\n- CO law Hum. Res. Code § 42.060: RESOLVED — day-care centers, group day-care homes, family homes — GOV (mirror)\n- City registration details (Houston/SA/Dallas/Austin): STILL OPEN — not re-fetched.\n- Template leakage: none (Ohio/Illinois references are labeled comparisons)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; the \"Ohio pattern at Texas scale\")",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; the \"Ohio pattern at Texas scale\"",
+      "markdown": "**No state license covers chimney work in Texas — and there is no state general-contractor or home-improvement license at all.** Texas licenses only specific trades at the state level — **electricians and air-conditioning & refrigeration contractors** through the **Texas Department of Licensing and Regulation (TDLR)**, and plumbers through the Texas State Board of Plumbing Examiners. TDLR's own list of its regulated programs contains no general contractor, residential builder, home improvement, masonry, chimney, or hearth program (https://www.tdlr.texas.gov/, checked Sep 2026). A chimney sweep, mason, or reliner is none of these trades. There is no statewide contractor registry to look a chimney company up in. Licensing is entirely **LOCAL**, and the four big metros run different regimes (all city figures below are from July research and **not re-verified** — see blockers):\n- **Houston** — **no general-contractor registration** at the city level reported; permits issued job-by-job (verify against the Houston Permitting Center).\n- **San Antonio** — contractors must register with Development Services before pulling permits; residential building contractors reportedly post a **$25,000 surety bond** (verify at **sa.gov** → Development Services → Contractor Registration).\n- **Dallas** — contractor registration with Development Services; permits via the **DallasNow** portal.\n- **Austin** — registration with **Building and Trade Contractor Services (BTCS)** before being assigned to a building permit (austintexas.gov/development-services/contractor-registration).\n\nSo \"licensed and bonded\" in Texas almost always means a **city registration + a permit/surety bond valid only in that city** — not a state credential, and not proof anyone tested a flue."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "As wide as Ohio's (labeled comparison), at scale. Statewide there is **nothing to verify for chimney work** — no exam, no registry, no bond. Even the strictest city registration tests general building/permit compliance and financial responsibility, **not flue diagnosis, draft, or masonry skill.** A registered Dallas or Austin contractor may never have inspected a chimney. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit are the only real competence signal — and in Texas they fill a total statewide vacuum."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV/DOC — high confidence; real, explicit chimney line)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high confidence; real, explicit chimney line",
+      "markdown": "Texas has a **mandatory statutory seller disclosure that names the chimney.** **Tex. Property Code § 5.008** requires \"A seller of residential real property comprising not more than one dwelling unit located in this state\" to give the purchaser a written notice (last amended Acts 2023, 88th Leg., H.B. 697, eff. Sept. 1, 2023; https://texas.public.law/statutes/tex._prop._code_section_5.008). The current TREC form — **\"SELLER'S DISCLOSURE NOTICE CONCERNING THE PROPERTY AT …,\" TREC No. 55-1** (footer \"05-04-2026\"; TREC's listing page shows the form dated 05/28/2026), \"prepared by the Texas Real Estate Commission in accordance with Texas Property Code § 5.008(b)\" (https://www.trec.texas.gov/forms/sellers-disclosure-notice; PDF https://www.trec.texas.gov/sites/default/files/pdf-forms/55-1.pdf) — **lists \"Fireplace(s) & Chimney (Wood burning)\" and \"Fireplace(s) & Chimney (Mock)\"** among the items the seller marks, alongside **\"Smoke Detector,\" \"Smoke Detector-Hearing Impaired,\" and \"Carbon Monoxide Alarm.\"** (Wording as extracted from the PDF text layer; the July draft had \"Woodburning\" as one word, which was not confirmed — quote the live PDF when publishing.) The form states it \"IS NOT A SUBSTITUTE FOR ANY INSPECTIONS OR WARRANTIES THE PURCHASER MAY WISH TO OBTAIN.\" It is completed to the seller's actual knowledge. **Exemptions under § 5.008(e)** hollow it out at the edges: court-ordered and foreclosure sales, bankruptcy trustee transfers, mortgagee/beneficiary acquisitions, fiduciary estate administration (executors, guardians, trustees), co-owner transfers, family and marital-division transfers, government transfers, **new residences never occupied**, and properties where the dwelling is worth no more than 5% of the total value. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; the leverage)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; the leverage",
+      "markdown": "The **Texas Deceptive Trade Practices–Consumer Protection Act (DTPA), Tex. Bus. & Com. Code §§ 17.41–17.63**, gives consumers a private right of action for **economic damages; if the conduct was committed \"knowingly,\" the consumer may also recover mental-anguish damages and up to three times economic damages; if \"intentionally,\" up to three times economic plus mental-anguish damages** (§ 17.50(b)(1), https://law.justia.com/codes/texas/business-and-commerce-code/title-2/chapter-17/subchapter-e/section-17-50/), plus attorney's fees for a prevailing consumer. A **written notice at least 60 days before filing suit** is required, stating the specific complaint and the damages and expenses claimed (§ 17.505(a), https://law.justia.com/codes/texas/business-and-commerce-code/title-2/chapter-17/subchapter-e/section-17-505/). Separately, **Tex. Bus. & Com. Code ch. 601** gives a **3-business-day right to cancel** consumer transactions personally solicited and agreed to away from the merchant's place of business — **goods or services over $25** (real property over $100), cash or installments (§ 601.002; https://texas.public.law/statutes/tex._bus._and_com._code_section_601.002). The merchant must give a boldface notice: \"YOU, THE BUYER, MAY CANCEL THIS TRANSACTION AT ANY TIME PRIOR TO MIDNIGHT OF THE THIRD BUSINESS DAY AFTER THE DATE OF THIS TRANSACTION\" (§ 601.052, https://texas.public.law/statutes/tex._bus._and_com._code_section_601.052); no emergency-work exception appeared in the sections reached. This is the exact mechanic of the \"we noticed your chimney\" doorstep pitch. Related, not a CO law: **HB 2022 (88th Leg., 2023), \"relating to residential construction liability,\"** passed with a Sept 1, 2023 effective date (REF: https://legiscan.com/TX/bill/HB2022/2023) — it amends the defect-claim process against residential contractors; confirm its effect on chimney-contractor claims before citing. Complaints: **Texas Attorney General Consumer Protection Division (texasattorneygeneral.gov; hotline 800-621-0508).**"
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium; genuine patchwork)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; genuine patchwork",
+      "markdown": "Texas has **no unified statewide residential building-code enforcement.** State law sets the **IRC as the minimum residential code for municipalities** (Local Government Code; municipalities may adopt later editions and local amendments — verify current edition per city). **Enforcement is municipal:** inside a city, chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not. **In unincorporated county areas there is often no building code and no permit process at all.** This state needs the local-variance disclaimer as strongly as Ohio and Illinois (labeled comparisons). National fallbacks: **IRC Chapter 10 (chimneys/fireplaces) and NFPA 211** are the NATIONAL STANDARDS the codes reference. (This section was not re-verified in Sep 2026.)"
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — thin; the honest weak spot)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "thin; the honest weak spot",
+      "markdown": "Texas is **one of the thinnest CO-alarm states in the country.** There is **no general statewide CO-alarm mandate for existing single-family homes** located. The one clear statewide requirement found is **Human Resources Code § 42.060 (\"Carbon Monoxide Detectors\")**: \"Each day-care center, group day-care home, and family home must be equipped with carbon monoxide detectors in accordance with department rules\" (https://law.justia.com/codes/texas/human-resources-code/title-2/subtitle-d/chapter-42/subchapter-c/section-42-060/). Everything else flows from **local adoption of IRC R315 / IFC** — so coverage depends on which city you're in. At sale, the TREC 55-1 disclosure form now asks whether a **\"Carbon Monoxide Alarm\"** is present — a disclosure item, not a mandate. **HB 2022 is not a CO law**: the 2023 bill of that number concerns residential construction liability, and the 2025 HB 2022 (limitations periods for certain personal-injury suits) died in committee (REF: legiscan). A permitted chimney job is still the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV — high on structure; honest market note)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on structure; honest market note",
+      "markdown": "Texas has **no woodstove-emission or air-quality burn-ban regime** located. What Texas has instead is **county drought/wildfire burn bans**: under Local Government Code authority, a **county judge or commissioners court may prohibit or restrict outdoor burning during drought** (assessed via Texas A&M Forest Service using the Keetch-Byram Drought Index) — violation is a Class C misdemeanor. These bans target **outdoor burning, not indoor fireplaces/woodstoves**. Honest market note: **chimneys and wood-burning fireplaces are real in North Texas (DFW), the Hill Country, and the Panhandle, and much rarer on the humid Gulf Coast** — many Houston-area and coastal homes have gas log/decorative units, not working masonry flues. Say so plainly; don't pad Gulf Coast content."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF/GOV — partial; strong doorstep angle)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "partial; strong doorstep angle",
+      "markdown": "The Texas AG runs consumer-alert campaigns on **door-to-door and post-disaster \"storm chaser\" home-repair contractors**, reminding Texans of the **3-day right to cancel a door-to-door contract** and that contractors may not offer to waive or absorb an insurance deductible. After hail, wind, and freeze events, out-of-town crews pitch immediate repairs and large upfront payments — the same profile as the \"we noticed your chimney\" pitch. The AG's Consumer Protection hotline (800-621-0508) and TDI's contractor-scam guidance are the reporting channels. **Specific TX chimney-sweep enforcement actions: NOT CONFIRMED — name no companies.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Wide climate range. Burn season is short and concentrated: roughly **Nov–Feb** in North TX/Hill Country/Panhandle; minimal in the deep-south/Gulf Coast. Rush: **OCT–DEC.** Best booking: **MAR–AUG** (and mind county burn-ban windows in dry summers/falls)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "DFW, Austin, and Houston metros run **near-to-above national** on skilled masonry labor; rural North TX/Hill Country nearer national; deep-south TX is thin-market. Regionalize on the North-TX/Hill-Country vs Gulf-Coast split. (REF/editorial.)"
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (TDLR electricians/AC-refrigeration; plumbing board) — LOCAL city registration (San Antonio, Dallas, Austin; Houston none) — city details unverified** · Registration: **local, city-by-city; no statewide registry** · Disclosure law: **YES — Tex. Property Code § 5.008; TREC 55-1 (05-04-2026) lists \"Fireplace(s) & Chimney (Wood burning)\" and \"(Mock)\" + \"Carbon Monoxide Alarm\" (actual knowledge; § 5.008(e) exemptions)** · 3-day cancel: **YES (Bus. & Com. Code ch. 601, §§ 601.002, 601.052; solicited sales over $25)** · CO law: **THIN — no general statewide mandate; child-care only (Hum. Res. Code § 42.060) + local IRC R315** · Lookup: sa.gov / Dallas Development Services / austintexas.gov + texasattorneygeneral.gov complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Texas is the **Ohio pattern at Texas scale.** The state licenses electricians, AC techs and plumbers — a chimney company answers to **no state credential at all**, and \"licensed and bonded\" means a city registration that stops at the city line. By the license⇄disclosure inverse-correlation thesis, a no-license state should have a strong seller disclosure — and Texas **CONFIRMS**: § 5.008 is a mandatory statutory notice whose current TREC form names the wood-burning chimney by line item (and now asks about a CO alarm). What makes Texas its own animal is the **remedy**: the DTPA's knowing/intentional multiplier gives the consumer a bigger stick than almost any licensing state's fund, so the leverage lives in the deception statute, not in a license you can look up. The three messages write themselves: **there is no state license — verify the individual's certifications and the city registration; the § 5.008 form names your chimney — read it, but get your own inspection (the form itself says it's no substitute); and if you were knowingly deceived, the DTPA can treble your damages — after a 60-day notice letter.** The eternal gap survives even here — no exam anywhere in Texas asks whether the person can read your flue."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "NO state license (TDLR electricians/AC-refrigeration; plumbing board only) — LOCAL city registration (San Antonio, Dallas, Austin; Houston none — unverified)",
+    "registration_name": "city-by-city registration only",
+    "disclosure_law": "Tex. Property Code 5.008 — mandatory seller's disclosure notice (TREC 55-1)",
+    "chimney_item_on_form": "Yes — TREC 55-1 lists 'Fireplace(s) & Chimney (Wood burning)' + '(Mock)'; also 'Carbon Monoxide Alarm'",
+    "three_day_cancel": "YES (Bus. & Com. Code ch. 601, §§ 601.002/601.052)",
+    "co_law": "THIN — no general statewide mandate; child-care only (Hum. Res. Code 42.060) + local IRC R315",
+    "lookup_url": "local city registration + texasattorneygeneral.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (TDLR electricians/AC-refrigeration; plumbing board) — LOCAL city registration (San Antonio, Dallas, Austin; Houston none) — city details unverified",
+    "registration_name": "local, city-by-city; no statewide registry",
+    "disclosure_law": "YES — Tex. Property Code § 5.008; TREC 55-1 (05-04-2026) lists \"Fireplace(s) & Chimney (Wood burning)\" and \"(Mock)\" + \"Carbon Monoxide Alarm\" (actual knowledge; § 5.008(e) exemptions)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (Bus. & Com. Code ch. 601, §§ 601.002, 601.052; solicited sales over $25)",
+    "co_law": "THIN — no general statewide mandate; child-care only (Hum. Res. Code § 42.060) + local IRC R315",
+    "lookup_url": "sa.gov / Dallas Development Services / austintexas.gov + texasattorneygeneral.gov complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (TDLR electricians/AC-refrigeration; plumbing board) — LOCAL city…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Bus. & Com. Code ch. 601, §§ 601.002, 601.052; solicited sales over $25)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "THIN — no general statewide mandate; child-care only (Hum. Res. Code § 42.060) + local IRC R315",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Texas: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Texas chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "San Antonio, Dallas, Austin; Houston none",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      10,
+      11,
+      12
+    ],
+    "best": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Wide climate range. Burn season is short and concentrated: roughly Nov–Feb in North TX/Hill Country/Panhandle; minimal in the deep-south/Gulf Coast. Rush: OCT–DEC. Best booking: MAR–AUG (and mind county burn-ban windows in dry summers/falls)."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Texas?",
+      "a": "State licensing: NO state license (TDLR electricians/AC-refrigeration; plumbing board) — LOCAL city registration (San Antonio, Dallas, Austin; Houston none) — city details unverified. Registration or credential: local, city-by-city; no statewide registry. Seller disclosure at sale: YES — Tex. Property Code § 5.008; TREC 55-1 (05-04-2026) lists \"Fireplace(s) & Chimney (Wood burning)\" and \"(Mock)\" + \"Carbon Monoxide Alarm\" (actual knowledge; § 5.008(e) exemptions). Right to cancel a sale made at your home: YES (Bus. & Com. Code ch. 601, §§ 601.002, 601.052; solicited sales over $25). Carbon monoxide alarm law: THIN — no general statewide mandate; child-care only (Hum. Res. Code § 42.060) + local IRC R315. Where to check a contractor: sa.gov / Dallas Development Services / austintexas.gov + texasattorneygeneral.gov complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Texas?",
+      "a": "Texas has a mandatory statutory seller disclosure that names the chimney. Tex. Property Code § 5.008 requires \"A seller of residential real property comprising not more than one dwelling unit located in this state\" to give the purchaser a written notice (last amended Acts 2023, 88th Leg., H.B. 697, eff.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Texas?",
+      "a": "The Texas Deceptive Trade Practices–Consumer Protection Act (DTPA), Tex. Bus. & Com. Code §§ 17.41–17.63, gives consumers a private right of action for economic damages; if the conduct was committed \"knowingly,\" the consumer may also recover mental-anguish damages and up to three times economic damages; if \"intentionally,\" up to three times economic plus mental-anguish damages (§ 17.50(b)(1), https://law.justia.com/codes/texas/business-and-commerce-code/title-2/chapter-17/subchapter-e/section-17-50/), plus attorney's fees for a prevailing consumer. A written notice at least 60 days before filing suit is required, stating the specific complaint and the damages and expenses claimed (§ 17.505(a), https://law.justia.com/codes/texas/business-and-commerce-code/title-2/chapter-17/subchapter-e/section-17-505/).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "arkansas",
+    "neighborName": "Arkansas",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (TDLR electricians/AC-refrigeration; plumbing board) — LOCAL city…"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "Home Improvement license over $2,000 (§§ 17-25-505, -513), with a named \"Chimneys, Fireplaces\"…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

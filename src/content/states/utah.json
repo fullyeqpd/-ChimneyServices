@@ -1,0 +1,316 @@
+{
+  "slug": "utah",
+  "name": "Utah",
+  "abbr": "UT",
+  "sourceFile": "rights-research-utah.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "scam section stays an absence/pattern note; no-burn season dates/fine and WUI cycle unverified; rule lettering from official-text mirror",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked Sep 15, 2026 by verification agent. Laws cited as of Sep 2026.\n- Sweep-only exemption: RESOLVED — R156-55a-301(7)(n) \"chimney sweepers other than repairing masonry\" is on the list of activities not requiring a license — law.cornell.edu/regulations/utah/Utah-Admin-Code-R156-55a-301 (mirror; amended eff. 1/3/2023) — evidence class DOC (official-text mirror; official site unreachable)\n- S330 RMGA condition: RESOLVED with lettering note — the stove/firebox/venting text is in S330 subpart (3)(b) on the mirror, not \"(d)\"; condition is that the installer is RMGA-certified; natural-gas work excluded — same URL — DOC\n- Small-job threshold: CORRECTED (added) — file previously gave no threshold; § 58-55-305(1)(h) exempts < $7,000 with insurance affirmation above $3,000 — commerce.utah.gov/wp-content/uploads/2022/09/handyman-application.pdf — GOV (subsection letter REF)\n- Lookup URL: CORRECTED — old db.dopl.utah.gov/cbr → secure.utah.gov/llv/search/index.html (DOPL Licensee Lookup, live Sep 2026) — GOV; agency name corrected to Division of Professional Licensing\n- Utah IRC CO amendment: RESOLVED — § 15A-3-202 adds \"on each level of the dwelling unit and\" to R315.3 and ADUs to R315.2.2 — le.utah.gov/xcode/Title15A/Chapter3/C15A-3-P2_1800010118000101.pdf — GOV\n- HB 402 (2009): CORRECTED — old claim \"bars mandates for buildings built before 2004\" was wrong; the law bars local enforcement of CO-detector rules against anyone other than the occupant, except new-construction permits — le.utah.gov/~2009/bills/hbillenr/HB0402.pdf — GOV\n- Code cycle: CORRECTED — HB 65 (2026) moved IBC/IPC/IMC/IFGC/IECC/IEBC/ISPSC to 2024 eff. 7/1/2026; IRC stays 2021 — le.utah.gov/Session/2026/bills/enrolled/HB0065.pdf — GOV\n- CSPA damages: CORRECTED — old \"treble or $2,000\" → actual damages or $2,000, whichever greater, plus costs; no treble — § 13-11-19(2), le.utah.gov — GOV\n- 3-day home-solicitation cancel § 70C-5-102: RESOLVED — until midnight of third business day, written notice — le.utah.gov/xcode/Title70C/Chapter5/C70C-5-S102_1800010118000101.pdf — GOV\n- Seller disclosure: RESOLVED — § 57-27-201 meth disclosure only (le.utah.gov) — GOV; UAR Form 10 names \"fireplace insert, gas fireplace, gas fireplace starter, woodburning fireplace, potbelly/wood stove, or pellet stove\" (rev. 12.01.07 copy; UAR-copyrighted) — REF/DOC\n- No-burn rule: RESOLVED (subsection) — R307-302-3 — LII mirror — DOC; season dates and fine STILL OPEN\n- Template-leakage sweep: clean (no other-state statute strings used as Utah law)\n- Scam enforcement: STILL OPEN — not searched (search budget exhausted)"
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; genuine state license)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; genuine state license",
+      "markdown": "**Utah DOES license contractors statewide** through the **Division of Professional Licensing (DOPL — renamed from the Division of Occupational and Professional Licensing)**, Dept. of Commerce, under the **Construction Trades Licensing Act (Utah Code Title 58, Chapter 55; rules at Utah Admin. Code R156-55a).** Chimney/masonry work maps to a **specialty (S-class) license — S230, \"Masonry, Siding, Stucco, Glass, and Rain Gutter Contractor,\"** or, for whole-building work spanning trades, the general building **B100** classification. Licensure requires a **qualifier with experience, passing the trade/specialty exam plus the Utah Contractor Business & Law exam (and a pre-licensure business/law course), proof of insurance, and workers'-comp/registration compliance.** So unlike Colorado or Illinois, Utah gives you **a state credential to look up.** Public lookup: **secure.utah.gov/llv/search/index.html** (DOPL Licensee Lookup and Verification System; verified Sep 15, 2026); program info at commerce.utah.gov/dopl. Unlicensed contracting is a violation subject to DOPL enforcement. **Sweep-only work is exempt:** DOPL's rule lists \"chimney sweepers other than repairing masonry\" among activities determined not to significantly impact public health and therefore not requiring a contractor license — **Utah Admin. Code R156-55a-301(7)(n)** (LII mirror of the Utah Admin. Code, rule last amended eff. 1/3/2023; law.cornell.edu/regulations/utah/Utah-Admin-Code-R156-55a-301, checked Sep 15, 2026). Masonry repair by a sweep is NOT exempt. **Stove/fireplace installs:** the **S330 Landscape and Recreation** classification's construction scope (subpart (3)(b) as printed on the mirror) includes \"metal fireboxes, fireplaces, and wood or coal-burning stoves, including the installation of venting and exhaust systems, if the individual performing the installation is RMGA-certified,\" while S330 excludes electrical, plumbing and natural-gas-related work (same source). **Small-job exemption (statute):** Utah Code **§ 58-55-305(1)(h)** exempts alteration/repair/improvement with a contracted value **under $7,000** (labor + materials), with a one-time insurance affirmation filed with DOPL when the project exceeds $3,000; trade work (electrical, plumbing, gas/combustion, HVAC) is carved out (DOPL Handyman Exemption application, commerce.utah.gov/wp-content/uploads/2022/09/handyman-application.pdf — GOV DOC; subsection letter per LawServer mirror — REF)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Even Utah's real exam tests **Utah construction law, business practices, and trade scope — not flue diagnosis or masonry-defect competence.** An S230 masonry licensee may never have inspected a chimney flue. The B100/S230 credential attests legal and financial fitness, not hearth-safety skill. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal — the license is the floor, not the ceiling."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; Utah is caveat emptor, chimney line confirmed)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; Utah is caveat emptor, chimney line confirmed",
+      "markdown": "**Utah is a caveat-emptor (\"buyer beware\") state.** The **only disclosure statutorily mandated is meth-contamination (Utah Code § 57-27-201)**; there is **no statute requiring a general property-condition disclosure.** In practice sellers use the **Utah Association of Realtors \"Seller's Property Condition Disclosure\" (Form 10)**, which is **contract-customary, not legally required.** That form **does name the chimney/hearth explicitly** — asking about past/present problems with **fireplace inserts, gas fireplaces, gas fireplace starters, woodburning fireplaces, potbelly/wood stoves, and pellet stoves.** Utah common law (per the Utah Supreme Court) still requires disclosure of **known material defects a reasonable inspection wouldn't reveal.** No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. So the form is useful but voluntary — get your own inspection."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Utah Consumer Sales Practices Act (Utah Code Title 13, Chapter 11)**, enforced by the Division of Consumer Protection (Dept. of Commerce), prohibits deceptive and unconscionable acts and gives **actual damages or $2,000, whichever is greater, plus court costs — Utah Code § 13-11-19(2); no treble-damages multiplier appears in the section; attorney's fees are discretionary under § 13-11-19(5)** (le.utah.gov/xcode/Title13/Chapter11/, checked Sep 15, 2026). Home-solicitation sales — contracts signed at the buyer's home — carry a **3-business-day right to cancel under Utah Code § 70C-5-102** (Home Solicitation Sales, Title 70C Consumer Credit Code); cancellation is by written notice to the seller, and the seller can't keep performance/goods except under the emergency/substantial-beginning exceptions. Complaints: Utah Division of Consumer Protection (dcp.utah.gov)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; true statewide code)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; true statewide code",
+      "markdown": "Utah has a **genuine statewide code** under the **State Construction and Fire Codes Act (Utah Code Title 15A)**: the **2021 IRC remains the residential code**; **HB 65 (2026 General Session, \"Construction Code Amendments\") moved the IBC, IPC, IMC, IFGC, IECC, IEBC and ISPSC to the 2024 editions effective July 1, 2026, while keeping the 2021 IRC** (Utah Code § 15A-2-103 as amended; le.utah.gov/Session/2026/bills/enrolled/HB0065.pdf, checked Sep 15, 2026). IRC Chapter 10 governs chimneys and fireplaces. Chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work** through the local building department; routine sweeps and like-for-like caps generally are not. Statewide adoption means far less county-to-county variation than Colorado."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium-high; code-based, limited retrofit)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; code-based, limited retrofit",
+      "markdown": "CO alarms come through the **2021 IRC R315 as amended by Utah Code § 15A-3-202** (Part 2, Statewide Amendments to the IRC; amended by 2026 Gen. Sess. ch. 47): Utah adds \"on each level of the dwelling unit and\" to the R315.3 location rule and adds accessory dwelling units to the R315.2.2 alterations trigger (le.utah.gov/xcode/Title15A/Chapter3/C15A-3-P2_1800010118000101.pdf, checked Sep 15, 2026). Separately, § 15A-5-204 requires CO detectors in certain occupancies under the adopted IFC (NCSL CO-statute table — REF pointer). **HB 402 (2009)** enacted Utah Code §§ 10-8-53.5 (municipalities) and 17-50-327 (counties): a city or county **\"may not enforce an ordinance, rule, or regulation requiring the installation or maintenance of a carbon monoxide detector in a residential dwelling against anyone other than the occupant,\"** except for new-construction building-permit compliance (le.utah.gov/~2009/bills/hbillenr/HB0402.pdf; county section shown as renumbered 11/6/2025 in the Title 17 recodification — current number not confirmed). So local governments **cannot make landlords or sellers retrofit CO alarms**; there is **no statewide pre-sale or rental CO mandate** (a notable gap vs Colorado's sale-triggered law). A permitted chimney/appliance job is still the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV/DOC — high confidence; major section)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high confidence; major section",
+      "markdown": "Two live regimes. **(a) Wasatch Front winter no-burn:** the **Utah Division of Air Quality (DAQ)** issues **mandatory no-burn (Action) days** during winter **inversions (~Nov 1–Mar 1)** across **Box Elder, Cache, Davis, Salt Lake, Tooele, Utah, and Weber counties**; on a mandatory day **no solid-fuel device — fireplace, wood/pellet/coal stove, even EPA-certified — may burn** unless it is the **sole source of heat for an entire residence and registered with the director**. No-burn triggers: forecast PM2.5 ≥ 25 µg/m³ (15 under a contingency plan) in Box Elder, Cache, Davis, Salt Lake, Tooele, Utah or Weber counties — **Utah Admin. Code R307-302-3** (LII mirror, amended eff. 2/1/2017, checked Sep 15, 2026); R307-302-6 separately bars selling/installing non-EPA-certified wood stoves. Fine amount (~$150) and infrared enforcement: REF only. **(b) Wildfire/WUI:** the **International Wildland-Urban Interface Code is adopted** (the Utah WUIC via the Division of Forestry, Fire & State Lands is 2006-IWUIC-based; local AHJs map WUI areas); mapped WUI construction requires **ignition-resistant materials, defensible space, and spark arresters** on solid/liquid-fuel chimneys (IRC Ch. 10). *(Confirm current R307-302 subsection and whether a newer statewide WUI cycle applies.)*"
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "Utah's Division of Consumer Protection pursues deceptive home-solicitation and home-repair practices, and the door-knock \"we noticed your chimney\" pitch is a textbook § 70C-5 home-solicitation + Title 13-11 deceptive-practice violation. **Specific UT chimney-sweep enforcement actions: NOT YET CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold, dry, high-altitude; long heating season with intense Wasatch Front winter inversions. Burn season ~Oct–Apr, but wood burning is legally curtailed on inversion no-burn days. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Salt Lake City / Wasatch Front metro and mountain-resort corridors (Park City, Deer Valley) run **above national**; rural/southern Utah nearer national. Regionalize upward for the Wasatch Front and resort towns."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — DOPL state license (B100 general / S230 masonry-specialty), Utah Code Title 58 Ch. 55; <$7,000 exemption (§ 58-55-305(1)(h)); sweep-only exempt (R156-55a-301(7)(n))** · Registration: **state license regime (qualifier + exam + insurance)** · Disclosure law: **caveat-emptor; only meth mandated (§ 57-27-201); customary UAR Form 10 names fireplace/stove/chimney** · 3-day cancel: **YES (§ 70C-5-102, home solicitation)** · CO law: **code-based (2021 IRC R315 as amended, § 15A-3-202); HB 402 (2009) bars local enforcement against anyone but the occupant** · Lookup: secure.utah.gov/llv/search/index.html"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Utah is the **near-perfect confirming case, with one twist.** It **CONFIRMS** the license⇄disclosure inverse-correlation verdict cleanly: Utah runs a **real DOPL state contractor license** (exam, insurance, a public registry you can search) — and, exactly as the pattern predicts, it **pairs that with the weakest sale-side disclosure regime in the set: pure caveat emptor**, where the only statutorily required disclosure is meth contamination and the property-condition form is voluntary. Strong license, weak disclosure — the inverse correlation holds. The twist that makes the page: even under caveat emptor, the **customary Form 10 names the chimney and every stove type by name**, so a diligent buyer still gets a hearth line item — just one the seller was never legally forced to fill in. So the two messages are opposite and sharp: **you CAN look up a Utah contractor's DOPL license (do it — S230/B100), but you CANNOT trust the sale to protect you — Utah is buyer-beware, so get your own inspection.** And the oddball local fact — the Wasatch Front's mandatory infrared-enforced no-burn days — means a Utah fireplace is sometimes illegal to use at all in winter, a genuine content hook. The registered-vs-qualified gap survives even here: the DOPL exam tests law, not your flue."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — DOPL state license (B100 general / S230 masonry), Utah Code Title 58 Ch. 55; <$7,000 exempt (58-55-305(1)(h)); sweep-only exempt except masonry repair (R156-55a-301(7)(n))",
+    "registration_name": "state license regime (qualifier + exam + insurance)",
+    "disclosure_law": "caveat emptor; only meth disclosure mandated (57-27-201); customary UAR Form 10",
+    "chimney_item_on_form": "Yes — names fireplace insert/gas & woodburning fireplace/wood & pellet stove (customary Form 10)",
+    "three_day_cancel": "Yes — 3 business days (Utah Code 70C-5-102)",
+    "co_law": "code-based only — 2021 IRC R315 as amended (15A-3-202); HB 402 (2009) bars local enforcement against anyone but the occupant; no sale/rental mandate",
+    "lookup_url": "secure.utah.gov/llv/search/index.html",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — DOPL state license (B100 general / S230 masonry-specialty), Utah Code Title 58 Ch. 55; <$7,000 exemption (§ 58-55-305(1)(h)); sweep-only exempt (R156-55a-301(7)(n))",
+    "registration_name": "state license regime (qualifier + exam + insurance)",
+    "disclosure_law": "caveat-emptor; only meth mandated (§ 57-27-201); customary UAR Form 10 names fireplace/stove/chimney",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (§ 70C-5-102, home solicitation)",
+    "co_law": "code-based (2021 IRC R315 as amended, § 15A-3-202); HB 402 (2009) bars local enforcement against anyone but the occupant",
+    "lookup_url": "secure.utah.gov/llv/search/index.html"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "DOPL state license (B100 general / S230 masonry-specialty), Utah Code Title 58 Ch. 55; <$7,000…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Even Utah's real exam tests Utah construction law, business practices, and trade scope — not flue diagnosis or masonry-defect competence."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (§ 70C-5-102, home solicitation)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "code-based (2021 IRC R315 as amended, § 15A-3-202); HB 402 (2009) bars local enforcement…",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Utah: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Utah chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold, dry, high-altitude; long heating season with intense Wasatch Front winter inversions. Burn season ~Oct–Apr, but wood burning is legally curtailed on inversion no-burn days. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Utah?",
+      "a": "State licensing: YES — DOPL state license (B100 general / S230 masonry-specialty), Utah Code Title 58 Ch. 55; <$7,000 exemption (§ 58-55-305(1)(h)); sweep-only exempt (R156-55a-301(7)(n)). Registration or credential: state license regime (qualifier + exam + insurance). Seller disclosure at sale: caveat-emptor; only meth mandated (§ 57-27-201); customary UAR Form 10 names fireplace/stove/chimney. Right to cancel a sale made at your home: YES (§ 70C-5-102, home solicitation). Carbon monoxide alarm law: code-based (2021 IRC R315 as amended, § 15A-3-202); HB 402 (2009) bars local enforcement against anyone but the occupant. Where to check a contractor: secure.utah.gov/llv/search/index.html. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Utah?",
+      "a": "Utah is a caveat-emptor (\"buyer beware\") state. The only disclosure statutorily mandated is meth-contamination (Utah Code § 57-27-201); there is no statute requiring a general property-condition disclosure. In practice sellers use the Utah Association of Realtors \"Seller's Property Condition Disclosure\" (Form 10), which is contract-customary, not legally required. That form does name the chimney/hearth explicitly — asking about past/present problems with fireplace inserts, gas fireplaces, gas fireplace starters, woodburning fireplaces, potbelly/wood stoves, and pellet stoves.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Utah?",
+      "a": "The Utah Consumer Sales Practices Act (Utah Code Title 13, Chapter 11), enforced by the Division of Consumer Protection (Dept. of Commerce), prohibits deceptive and unconscionable acts and gives actual damages or $2,000, whichever is greater, plus court costs — Utah Code § 13-11-19(2); no treble-damages multiplier appears in the section; attorney's fees are discretionary under § 13-11-19(5) (le.utah.gov/xcode/Title13/Chapter11/, checked Sep 15, 2026). Home-solicitation sales — contracts signed at the buyer's home — carry a 3-business-day right to cancel under Utah Code § 70C-5-102 (Home Solicitation Sales, Title 70C Consumer Credit Code); cancellation is by written notice to the seller, and the seller can't keep performance/goods except under the emergency/substantial-beginning exceptions. Complaints: Utah Division of Consumer Protection (dcp.utah.gov).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "colorado",
+    "neighborName": "Colorado",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "DOPL state license (B100 general / S230 masonry-specialty), Utah Code Title 58 Ch. 55; <$7,000…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

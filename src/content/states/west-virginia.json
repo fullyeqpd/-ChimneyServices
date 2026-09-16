@@ -1,0 +1,313 @@
+{
+  "slug": "west-virginia",
+  "name": "West Virginia",
+  "abbr": "WV",
+  "sourceFile": "rights-research-west-virginia.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": "**CORRECTED July 10, 2026 (licensing-research batch 2): the Act was RECODIFIED — ch. 21 art. 11 is repealed; it now lives at ch. 30 art. 42, and the threshold rose from $2,500 to $5,000 residential / $25,000 commercial.**",
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) § 3 home-sale published only as \"no state disclosure statute located\" with an unverified label, (2) no masonry-classification detail, (3) § 8 pattern-only, (4) permits need local-variance disclaimer and no code edition named.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Contractor Licensing Act recodification + thresholds: RESOLVED — Art. 30-42 (§§ 30-42-1 to -20) is live; § 30-42-3(d) \"contractor\" covers undertakings costing \"$5,000 or more for residential work or $25,000 or more for commercial work\"; § 30-42-6 license requirement/exemptions; § 30-42-20 state licensing exclusive — https://code.wvlegislature.gov/30-42/ ; https://code.wvlegislature.gov/30-42-3/ ; https://code.wvlegislature.gov/30-42-6/ — GOV\n- \"Masonry\" tested classification (tuckpointing): CORRECTED/STILL OPEN — § 30-42-3 names electrical, general building, general engineering, HVAC, piping, plumbing, residential, and specialty classifications, with no masonry class in statute; Board rule not read, masonry-class claims removed — https://code.wvlegislature.gov/30-42-3/ — GOV\n- WV Residential Property Condition Disclosure Act current section: CORRECTED / STILL OPEN — no such article in Ch. 36 (Arts. 1–13, none on disclosure), Ch. 37 (Arts. 1–15), or Real Estate License Act Art. 30-40; no section number can be cited; the \"enacted 1999\" claim, the named Act, and the \"buyer can waive in writing\" rule are removed pending a full-code search — https://code.wvlegislature.gov/36/ ; https://code.wvlegislature.gov/37/ ; https://code.wvlegislature.gov/30-40/ — GOV\n- CO law cite: CORRECTED — the previously cited Ch. 29 section now shows \"[Repealed]\"; current law is § 15A-10-12 (new residential units with fuel-burning source, rentals of 1–2 family dwellings, hotels, motels, schools/daycares); penalties corrected to $250 / $750 / $2,000 misdemeanor fines (prior figures were outdated) — https://code.wvlegislature.gov/15A-10-12/ — GOV\n- 3-day cancel: RESOLVED — § 46A-2-132, until midnight of third business day; any written notice — https://code.wvlegislature.gov/46A-2-132/ — GOV\n- IRC cycle: STILL OPEN — not reached.\n- Enforcement actions: STILL OPEN — not searched.\n- Template-leakage sweep: clean (no other-state statute strings)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; a real statewide license that reaches masonry)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real statewide license that reaches masonry",
+      "markdown": "**West Virginia is a genuine statewide-license state — and its license reaches chimney repair work at $5,000+ residential.** STATE LAW: the **West Virginia Contractor Licensing Act — RECODIFIED at W. Va. Code ch. 30, art. 42 (§§ 30-42-1 to -20); former § 21-11 is repealed (§§ 21-11-3, -6, -7, -8 all \"[Repealed]\" verified on code.wvlegislature.gov Jul 10, 2026)** — run by the **WV Contractor Licensing Board (Division of Labor)**, requires a contractor license for work with total cost of **$5,000 or more residential / $25,000 commercial (§ 30-42-3(d), fetched)** — raised from the earlier $2,500. The statute's definitions (§ 30-42-3) name classifications — electrical, general building, general engineering, HVAC, piping, plumbing, residential, and **specialty** contractors — but **do not name a masonry classification; any \"Masonry\" specialty (and its tuckpointing scope) lives in Board rules that were NOT read in Sep 2026 — UNVERIFIED, do not publish the masonry-class detail.** Chimney rebuild, reline, and repointing at $5,000+ (residential) require an **active WV contractor license** in an appropriate classification. Exemptions (§ 30-42-6) include owner-occupant work and material suppliers; § 30-42-20 makes state licensing exclusive of local licensing. Public lookup: **labor.wv.gov** Contractor Licensing Board / license search. This is stronger than much of the mid-Atlantic norm."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Narrower than in no-license states but still real: the WV licensing exams test **contracting/business and trade knowledge** *(exam content not re-read Sep 2026)*, not flue diagnosis or NFPA 211 compliance. A licensed contractor can rebuild a chimney to code without ever being trained to inspect one. Also note the **SWEEP vs REPAIR split**: routine **chimney sweeping/cleaning** falls **below the $5,000 residential threshold** (now even more comfortably, after the raise), so a sweep-only operator lawfully needs **no** state contractor license — while a large *repair* that follows does. The raised floor also un-licenses more of the mid-size repair market (a $3,500 repoint no longer requires the license). Licensing-research batch 2 adds a second hole: **the HVAC technician certification (§ 21-16) expressly excludes decorative fireplaces/stoves not used as primary heat (§ 21-16-2(b)(1))** *(Jul 2026 batch-2 cite; not re-read Sep 2026)* — a gas-log service call on a decorative unit under $5,000 may lawfully need nothing. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal for the inspection itself."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV absence check on code article lists — no disclosure statute located; statute name/section UNVERIFIED)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "absence check on code article lists — no disclosure statute located; statute name/section UNVERIFIED",
+      "markdown": "STATE LAW: West Virginia is a **caveat emptor** state with **no statutory seller-disclosure article found in the current Code**. The prior draft cited a \"West Virginia Residential Property Condition Disclosure Act\" in Chapter 36; **the current Chapter 36 (Estates and Property, Arts. 1–13) and Chapter 37 (Real Property, Arts. 1–15) article lists on code.wvlegislature.gov contain no disclosure act** (checked Sep 15, 2026). Its existence and any codified section are **UNVERIFIED — do not publish that Act name or any section number.** Absence as finding (pending a full-code search): no mandatory state disclosure form was located. A Realtor-association **seller's disclosure statement** is reportedly the form in market use, with an \"as is\" option *(REF, not re-verified; the earlier \"buyer can waive in writing\" claim depended on the unverified Act and is withdrawn)*. So the chimney is disclosed only if the seller volunteers it. Fraud/active concealment remains actionable at common law. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: the **West Virginia Consumer Credit and Protection Act (WVCCPA), W. Va. Code Ch. 46A** — especially **Article 6 (General Consumer Protection)** — reaches unfair/deceptive home-repair practices and is enforced by the AG's Consumer Protection Division (with a private right of action). Door-to-door work carries a **3-business-day right to cancel** under **W. Va. Code § 46A-2-132 (home solicitation; buyer's right to cancel)**, with the required cancellation notice at **§ 46A-2-133** — cancellable until midnight of the third business day; notice may be in any written form. Home-improvement transactions have their own rule at **W. Va. C.S.R. § 142-5-3**. Complaints: WV AG Consumer Protection."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium; State Fire Commission base, local enforcement)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; State Fire Commission base, local enforcement",
+      "markdown": "STATE LAW/LOCAL: WV adopts the **State Building Code through the State Fire Commission** on an ICC/IRC base (**verify current IRC cycle before publish**), but **enforcement is local** — many rural counties have limited or no building-inspection apparatus, while cities (**Charleston, Huntington, Morgantown, Wheeling, Parkersburg**) run active departments. Chimney relines, rebuilds, and solid-fuel appliance installs are generally permit work where a department exists; in unincorporated rural areas there may be no permit process at all. This state needs the local-variance disclaimer."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; new construction + rentals, not owner-occupied resales)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; new construction + rentals, not owner-occupied resales",
+      "markdown": "STATE LAW: **W. Va. Code § 15A-10-12** (\"Smoke detectors in one- and two-family dwellings; carbon monoxide detectors\" — the State Fire Marshal article; the former fire-code section in Ch. 29 is now shown as repealed) requires an operational **CO detector in any newly constructed residential unit with a fuel-burning heating or cooking source**, in residential units connected to such a newly constructed building, in **one- and two-family dwellings intended to be rented or leased, hotels, and motels**, and in schools/daycares with fuel-burning devices; detectors plug into an unswitched outlet or are hardwired with battery backup (hardwired required in new construction). *(Smoke-detector coverage details not re-read Sep 2026.)* Coverage is triggered by **new construction and rental**, not by resale of an existing owner-occupied home — **no statewide pre-sale CO certificate.** Violation is a misdemeanor with graduated fines: **$250 first offense, $750 second, $2,000 third and subsequent**. A permitted chimney job is the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for WV."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The WV AG's Consumer Protection Division pursues home-repair contractors, and the door-knock \"we noticed your chimney\" pitch is a textbook § 46A-2-132 home-solicitation + WVCCPA violation; unlicensed $5,000+ residential work is separately actionable under the Contractor Licensing Act (ch. 30, art. 42). **Specific WV chimney-sweep enforcement actions: NOT YET CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold Appalachian climate, colder/longer in the eastern mountains and highlands. Heavy wood-heat state. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Charleston/Huntington and the Morgantown (WVU) corridor run **near or modestly above** the state baseline; deep-rural counties below national. Regionalize modestly upward for the metros; WV overall trends below the national labor midpoint."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — statewide WV Contractor Licensing Act (RECODIFIED: W. Va. Code ch. 30, art. 42; § 21-11 repealed), $5,000 residential / $25,000 commercial threshold (§ 30-42-3(d)); sweeps below it** · Registration: **license regime via Contractor Licensing Board** · Disclosure law: **NONE LOCATED — caveat emptor; no statutory seller-disclosure article in current Ch. 36/37 (named Act UNVERIFIED)** · Chimney item on form: **n/a (no state form)** · 3-day cancel: **YES (W. Va. Code § 46A-2-132)** · CO law: **new construction + rentals/hotels (W. Va. Code § 15A-10-12); no pre-sale certificate** · Lookup: labor.wv.gov Contractor Licensing Board"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "West Virginia **CONFIRMS the master finding, and does so almost to the letter.** It is one of the few states with a **real statewide contractor license that reaches chimney repair** ($5,000 residential threshold under ch. 30, art. 42 — recodified and raised; re-verified Sep 2026) — a strong-license regime — and, exactly as the correlation predicts, its **sale side is hollow: caveat emptor, with no statutory seller-disclosure article located in the current Code.** Strong on the credential, hollow on the sale. The notable operational quirk is the **sweep-vs-repair split at $5,000**: a sweep-only visit (and now most mid-size repairs) can be unlicensed while big repointing needs a licensed contractor — a clean line the page can teach consumers to watch for. Batch-2 addendum: despite the real license, **\"insured\" is meaningless at state level** — no liability minimum attaches to it, and the only bond (wage bond, § 21-5-14 — batch-2 cite, not re-read Sep 2026) protects employees, not homeowners."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES statewide — WV Contractor Licensing Act, W. Va. Code ch. 30 art. 42 (21-11 repealed); $5,000 residential / $25,000 commercial (30-42-3(d)); sweeps often below it",
+    "registration_name": "license regime via Contractor Licensing Board",
+    "disclosure_law": "NONE LOCATED — caveat emptor; no statutory seller-disclosure article in current Code Ch. 36/37 (UNVERIFIED pending full-code search)",
+    "chimney_item_on_form": "n/a (no state form)",
+    "three_day_cancel": "YES (W. Va. Code 46A-2-132)",
+    "co_law": "new construction + rentals/hotels/motels/schools (W. Va. Code 15A-10-12); no pre-sale certificate",
+    "lookup_url": "labor.wv.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — statewide WV Contractor Licensing Act (RECODIFIED: W. Va. Code ch. 30, art. 42; § 21-11 repealed), $5,000 residential / $25,000 commercial threshold (§ 30-42-3(d)); sweeps below it",
+    "registration_name": "license regime via Contractor Licensing Board",
+    "disclosure_law": "NONE LOCATED — caveat emptor; no statutory seller-disclosure article in current Ch. 36/37 (named Act UNVERIFIED)",
+    "chimney_item_on_form": "n/a (no state form)",
+    "three_day_cancel": "YES (W. Va. Code § 46A-2-132)",
+    "co_law": "new construction + rentals/hotels (W. Va. Code § 15A-10-12); no pre-sale certificate",
+    "lookup_url": "labor.wv.gov Contractor Licensing Board"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "statewide WV Contractor Licensing Act (RECODIFIED: W. Va. Code ch. 30, art. 42; § 21-11…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Narrower than in no-license states but still real: the WV licensing exams test contracting/business and trade knowledge (exam content not re-read Sep 2026), not flue diagnosis or NFPA 211 compliance."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (W. Va. Code § 46A-2-132)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "new construction + rentals/hotels (W. Va. Code § 15A-10-12); no pre-sale certificate",
+      "anchor": "co-law",
+      "rule": "co:unmatched",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "West Virginia: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "West Virginia chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold Appalachian climate, colder/longer in the eastern mountains and highlands. Heavy wood-heat state. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in West Virginia?",
+      "a": "State licensing: YES — statewide WV Contractor Licensing Act (RECODIFIED: W. Va. Code ch. 30, art. 42; § 21-11 repealed), $5,000 residential / $25,000 commercial threshold (§ 30-42-3(d)); sweeps below it. Registration or credential: license regime via Contractor Licensing Board. Seller disclosure at sale: NONE LOCATED — caveat emptor; no statutory seller-disclosure article in current Ch. 36/37 (named Act UNVERIFIED). Right to cancel a sale made at your home: YES (W. Va. Code § 46A-2-132). Carbon monoxide alarm law: new construction + rentals/hotels (W. Va. Code § 15A-10-12); no pre-sale certificate. Where to check a contractor: labor.wv.gov Contractor Licensing Board. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in West Virginia?",
+      "a": "STATE LAW: West Virginia is a caveat emptor state with no statutory seller-disclosure article found in the current Code. The prior draft cited a \"West Virginia Residential Property Condition Disclosure Act\" in Chapter 36; the current Chapter 36 (Estates and Property, Arts. 1–13) and Chapter 37 (Real Property, Arts. 1–15) article lists on code.wvlegislature.gov contain no disclosure act (checked Sep 15, 2026).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in West Virginia?",
+      "a": "STATE LAW: the West Virginia Consumer Credit and Protection Act (WVCCPA), W. Va. Code Ch. 46A — especially Article 6 (General Consumer Protection) — reaches unfair/deceptive home-repair practices and is enforced by the AG's Consumer Protection Division (with a private right of action).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "kentucky",
+    "neighborName": "Kentucky",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "statewide WV Contractor Licensing Act (RECODIFIED: W. Va. Code ch. 30, art. 42; § 21-11…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

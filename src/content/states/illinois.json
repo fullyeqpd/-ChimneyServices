@@ -1,0 +1,313 @@
+{
+  "slug": "illinois",
+  "name": "Illinois",
+  "abbr": "IL",
+  "sourceFile": "rights-research-illinois.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) statute texts verified via Justia copies (ilga.gov unreachable) — re-confirm on ilga.gov if possible; (2) AG section pattern-only; (3) do not publish Chicago GC upper-class dollar limits until the DOB page and code agree; (4) roofing-vs-chimney-flashing boundary labeled as interpretation.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Illinois Residential Building Code status/opt-outs: CORRECTED — old text called it a \"recent statewide minimum for municipalities without one\" with \"significant opt-outs.\" CDB: Act applies only to new residential construction; State does not enforce on private construction; contract-incorporated code in non-code jurisdictions; PA 103-0510 changes effective 1/1/2025. No \"opt-out\" framework found — removed — https://cdb.illinois.gov/business/codes/illinois-codes-faq.html ; https://cdb.illinois.gov/business/codes/buildingcodesregulations.html — GOV. PA 103-0510 summary: https://municipalminute.ancelglink.com/2024/05/in-zone-changes-to-building-code.html — REF.\n- Chicago GCL threshold: CORRECTED — old text implied a project-value threshold \"above\" which a GCL is required, plus \"4 yrs experience + written exam + bond, biennial + CE\" (not confirmed on DOB page; removed). DOB page: license required for work requiring DOB permits; classes cap maximum value (page shows E $500K, D $2M, C $5M, B $10M, A unlimited) — https://www.chicago.gov/city/en/depts/bldgs/supp_info/TLdetails/GC.html — GOV. Codified 4-36-030 (amended 5-20-26) shows E $500K, D $4M, C $10M, B $20M — https://codelibrary.amlegal.com/codes/chicago/latest/chicago_il/0-0-0-2611938 — GOV. Upper classes conflict (DOB \"2026 changes\" PDF returned 403); only Class E $500K cited in body since both agree.\n- Chicago Mason Contractor license (added): RESOLVED — required for most masonry; exempt if repair needs no permit; written mason exam; 1-yr license — https://www.chicago.gov/city/en/sites/guide-to-building-permits/home/help/faq/DOB/mason-license.html ; https://www.chicago.gov/city/en/depts/bldgs/supp_info/TLdetails/masoncontractor.html — GOV.\n- Disclosure Report chimney line: CORRECTED — quotes were paraphrased (\"leaks or defects\"; \"~22-item\"; \"2023 amendment\"). Current 765 ILCS 77/35: 24 items; item 6 \"leaks or material defects in the roof, ceilings, or chimney\"; item 13 \"material defects in the fireplace or woodburning stove\" — https://law.justia.com/codes/illinois/chapter-765/act-765-ilcs-77/article-2/ — REF copy of statute (ilga.gov unreachable: TLS error). Amendment year left unstated (REF says 2022).\n- AG chimney actions: STILL OPEN — web search budget exhausted before IL AG press releases could be searched.\n- Licensing: RESOLVED — 225 ILCS 335 roofing definition (https://law.justia.com/codes/illinois/chapter-225/act-225-ilcs-335/, REF copy); 815 ILCS 513/15 >$1,000 written contract and 513/20 pamphlet (https://law.justia.com/codes/illinois/chapter-815/act-815-ilcs-513/, REF copy). CORRECTED minor: pamphlet acknowledgment required only for >$1,000 contracts.\n- 3-day cancel: RESOLVED — 505/2B: 3 full business days, $25+, seller physically present at residence — https://law.justia.com/codes/illinois/chapter-815/act-815-ilcs-505/ — REF copy. 505/10a remedy detail not reached (STILL OPEN, minor; wording softened).\n- CO law: RESOLVED — 430 ILCS 135/10: every dwelling unit, within 15 ft of sleeping rooms, fossil-fuel/garage exemption, Class B misdemeanor — https://law.justia.com/codes/illinois/chapter-430/act-430-ilcs-135/ — REF copy.\n- 2026 changes: Chicago 4-36-030 amended May 20, 2026 (class limits); no state licensing change found.\n- Template-leakage sweep: clean — MD/VA/MA/NY/OH appear only as labeled comparisons."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**No state license covers chimney work in Illinois.** IDFPR licenses only specific trades — **roofing (Illinois Roofing Industry Licensing Act, 225 ILCS 335)**, plumbing, asbestos — and **there is no state general-contractor or home-improvement license.** The Roofing Act defines roofing work around roofs, roofing and waterproofing \"over an occupiable space\"; it does not mention chimneys, so chimney masonry, relining, and sweeping fall **outside** state licensure (our reading; chimney flashing at the roof line is a gray zone — label it). What the state does impose is consumer paperwork, not a credential: the **Home Repair and Remodeling Act (815 ILCS 513)** requires a **written contract or work order for home repair or remodeling work over $1,000 (513/15)**, and the contractor must provide the **\"Home Repair: Know Your Consumer Rights\" pamphlet (513/20)** — with a signed acknowledgment for contracts over $1,000. Licensing is **LOCAL**: **Chicago** requires a **General Contractor License** (Dept. of Buildings) for work requiring a building permit — there is **no minimum project value**; the classes cap the value a licensee may take on (Class E, the lowest, is limited to $500,000 per site under Municipal Code 4-36-030, amended May 20, 2026). Chicago also requires a separately licensed **Mason Contractor** (written mason exam, one-year license) for most masonry work — **masonry repairs that do not require a building permit are exempt** — which makes Chicago the one Illinois jurisdiction with a masonry-specific credential relevant to chimney rebuilds. Many suburbs run their own registration. \"Licensed and bonded\" in Illinois usually means a Chicago/suburban credential, valid only in that jurisdiction."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "As wide as Ohio's. Statewide, there is **nothing to verify for chimney work** beyond a written contract — no exam, no registry. Even Chicago's mason exam tests masonry, not flue diagnosis. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a real vacuum — and this is **ChimneyMonkey's home state**, operating in exactly that gap."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; real chimney line)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real chimney line",
+      "markdown": "Unlike the \"strong-license/weak-disclosure\" states, Illinois has a **genuinely useful mandatory disclosure.** The **Residential Real Property Disclosure Act (765 ILCS 77)** requires the seller of 1–4 unit residential property to complete the **Residential Real Property Disclosure Report** (765 ILCS 77/35) — a **24-item** known-defect form that includes **item 6: \"I am aware of leaks or material defects in the roof, ceilings, or chimney\"** and **item 13: \"I am aware of material defects in the fireplace or woodburning stove.\"** Actual-knowledge standard; flood-related questions were added in a recent amendment. New/unoccupied construction and foreclosures are excluded. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. This is a real chimney disclosure — stronger on this axis than MA/VA/MD (comparison)."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence on 2B; medium on 10a detail)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on 2B; medium on 10a detail",
+      "markdown": "The **Consumer Fraud and Deceptive Business Practices Act (815 ILCS 505)** gives both a private right of action (505/10a) and AG enforcement: actual damages, attorney's fees, and punitive damages available in egregious cases under Illinois case law (no automatic treble). Home Repair and Remodeling Act violations feed into it as unlawful practices. Home-solicitation sales of **$25 or more** made by a seller physically present at the consumer's residence carry a **right to cancel until 3 full business days after signing under 815 ILCS 505/2B** — the exact mechanic of chimney scare-sales. The Illinois AG takes complaints through its Consumer Fraud Bureau."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; genuine patchwork)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; genuine patchwork",
+      "markdown": "Illinois is a **code patchwork.** There is **no state-enforced building code for private residential construction** — the Capital Development Board states the State does not perform plan review, permits, or inspections for privately funded construction. Each municipality/county adopts its own code (or none). **Chicago enforces its own Chicago Building Code.** The **Illinois Residential Building Code Act (815 ILCS 670)** is not a statewide code in the usual sense: per the CDB it **\"only applies to new residential construction\"** — in jurisdictions without a code, the construction contract must incorporate an agreed residential code (IRC current or preceding edition, or a municipal/county code within 100 miles), with default provisions if the parties don't agree; PA 103-0510 (2023) added CDB code-reporting duties and made locally adopted codes subject to the Act from Jan 1, 2025. **It does not reach repairs to existing homes — i.e., chimney work.** Where a code and building department exist, chimney relines, rebuilds, and solid-fuel appliance installs are generally permit work; in areas without a code there may be no permit process at all. This state needs the local-variance disclaimer as much as Ohio."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Carbon Monoxide Alarm Detector Act (430 ILCS 135)** requires every dwelling unit to have at least one approved CO alarm **within 15 feet of every room used for sleeping** — exempting only units that neither rely on fossil-fuel combustion for heat, ventilation, or hot water nor connect to a garage; willful failure to install or maintain is a **Class B misdemeanor**. Broad statewide coverage (comparable to NY's Amanda's Law — comparison), enforced as a standing requirement — **no statewide mandatory pre-sale CO certificate** (Chicago may impose its own). A permitted chimney job is still the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for IL."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The Illinois AG's Consumer Fraud Bureau pursues home-repair contractors, and the door-knock \"we noticed your chimney\" pitch is a textbook 505/2B home-solicitation + Home Repair Act scenario. **Specific IL chimney-sweep enforcement actions: NOT CONFIRMED** — use patterns, not names."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold statewide, harsher/lake-effect in the Chicago and northern belt. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Chicago metro runs **above national**; downstate below national. Regionalize on the Chicago/downstate split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (roofing/plumbing only) — LOCAL (Chicago GC + Mason Contractor licenses, suburban registries)** · Registration: **local; statewide Home Repair Act duties (written contract > $1k + rights pamphlet)** · Disclosure law: **YES — 765 ILCS 77/35, item 6 (roof/ceilings/chimney) + item 13 (fireplace/woodburning stove)** · 3-day cancel: **YES (815 ILCS 505/2B, ≥$25)** · CO law: **broad (430 ILCS 135, within 15 ft of sleeping rooms)** · Lookup: Chicago licensed-contractor search + IDFPR (roofing) + IL AG complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Illinois is **ChimneyMonkey's backyard and the mirror image of Maryland** (comparison). Where MD/VA license hard but let sellers disclose little, **Illinois licenses nothing statewide for chimney work — only roofers and plumbers are state-licensed, and a chimney is neither — yet its seller-disclosure form asks about the chimney by name, twice.** Chicago runs its own General Contractor and Mason Contractor licenses and its own building code; step outside city limits and the credential, and sometimes the code itself, disappears. The inversion against Ohio: **both lack statewide chimney licensing, and both forms name the chimney — but Illinois's CO law covers every existing home.** The leverage lives in the Home Repair Act's paperwork and the Consumer Fraud Act — not in a license you can look up."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "no state license (roofing/plumbing only) — local (Chicago General Contractor + Mason Contractor licenses, suburban registries)",
+    "registration_name": "local; statewide Home Repair Act duties (815 ILCS 513, written contract >$1k + rights pamphlet)",
+    "disclosure_law": "Yes (765 ILCS 77, actual knowledge)",
+    "chimney_item_on_form": "Yes (item 6 roof/ceilings/chimney + item 13 fireplace/woodburning stove)",
+    "three_day_cancel": "Yes (815 ILCS 505/2B)",
+    "co_law": "Broad (430 ILCS 135, within 15 ft of sleeping rooms)",
+    "lookup_url": "Chicago licensed-contractor search + IDFPR (roofing) + IL AG",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (roofing/plumbing only) — LOCAL (Chicago GC + Mason Contractor licenses, suburban registries)",
+    "registration_name": "local; statewide Home Repair Act duties (written contract > $1k + rights pamphlet)",
+    "disclosure_law": "YES — 765 ILCS 77/35, item 6 (roof/ceilings/chimney) + item 13 (fireplace/woodburning stove)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (815 ILCS 505/2B, ≥$25)",
+    "co_law": "broad (430 ILCS 135, within 15 ft of sleeping rooms)",
+    "lookup_url": "Chicago licensed-contractor search + IDFPR (roofing) + IL AG complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (roofing/plumbing only) — LOCAL (Chicago GC + Mason Contractor licenses…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (815 ILCS 505/2B, ≥$25)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "(430 ILCS 135, within 15 ft of sleeping rooms)",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Illinois: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Illinois chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "Chicago GC + Mason Contractor licenses, suburban registries",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold statewide, harsher/lake-effect in the Chicago and northern belt. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Illinois?",
+      "a": "State licensing: NO state license (roofing/plumbing only) — LOCAL (Chicago GC + Mason Contractor licenses, suburban registries). Registration or credential: local; statewide Home Repair Act duties (written contract > $1k + rights pamphlet). Seller disclosure at sale: YES — 765 ILCS 77/35, item 6 (roof/ceilings/chimney) + item 13 (fireplace/woodburning stove). Right to cancel a sale made at your home: YES (815 ILCS 505/2B, ≥$25). Carbon monoxide alarm law: broad (430 ILCS 135, within 15 ft of sleeping rooms). Where to check a contractor: Chicago licensed-contractor search + IDFPR (roofing) + IL AG complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Illinois?",
+      "a": "Unlike the \"strong-license/weak-disclosure\" states, Illinois has a genuinely useful mandatory disclosure. The Residential Real Property Disclosure Act (765 ILCS 77) requires the seller of 1–4 unit residential property to complete the Residential Real Property Disclosure Report (765 ILCS 77/35) — a 24-item known-defect form that includes item 6: \"I am aware of leaks or material defects in the roof, ceilings, or chimney\" and item 13: \"I am aware of material defects in the fireplace or woodburning stove.\" Actual-knowledge standard; flood-related questions were added in a recent amendment. New/unoccupied construction and foreclosures are excluded. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Illinois?",
+      "a": "The Consumer Fraud and Deceptive Business Practices Act (815 ILCS 505) gives both a private right of action (505/10a) and AG enforcement: actual damages, attorney's fees, and punitive damages available in egregious cases under Illinois case law (no automatic treble). Home Repair and Remodeling Act violations feed into it as unlawful practices. Home-solicitation sales of $25 or more made by a seller physically present at the consumer's residence carry a right to cancel until 3 full business days after signing under 815 ILCS 505/2B — the exact mechanic of chimney scare-sales. The Illinois AG takes complaints through its Consumer Fraud Bureau.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "indiana",
+    "neighborName": "Indiana",
+    "label": "CO alarm required in your home?",
+    "verdictId": "verdict-co",
+    "a": {
+      "answer": "YES",
+      "note": "(430 ILCS 135, within 15 ft of sleeping rooms)"
+    },
+    "b": {
+      "answer": "LIMITED",
+      "note": "WEAK — new construction only; not required on alterations/repairs; none at sale (IRC-based R315)"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

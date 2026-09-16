@@ -1,0 +1,316 @@
+{
+  "slug": "montana",
+  "name": "Montana",
+  "abbr": "MT",
+  "sourceFile": "rights-research-montana.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "2024 code adoption pending; lookup URL unconfirmed; no named DOJ action",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Post-HB 239 credential name and exam status (load-bearing a): CORRECTED/RESOLVED — now \"Construction Contractor License\" under MCA § 37-45-201 (Title 37, ch. 45), eff. Jan 1, 2026; application = identity info + proof of workers'-comp compliance; no exam/experience/insurance in statute; exemptions § 37-45-104 (no-employee independent contractors; jobs < $2,500); rules ARM 24.227.401 ($70 fee, unchanged), no exam. Administered by DLI Business Standards Division, not ERD. Old text quoted DLI saying the CR \"is not a license and does not ensure quality of work\" — that quote is not carried into the new program and was removed. The prompt's \"Mont. Code 39-9\" is repealed. — https://mca.legmt.gov/bills/mca/title_0370/chapter_0450/part_0020/section_0010/0370-0450-0020-0010.html ; https://mca.legmt.gov/bills/mca/title_0370/chapter_0450/part_0010/section_0040/0370-0450-0010-0040.html ; https://erd.dli.mt.gov/_docs/work-comp-regs/HB-239-Notice-to-Construction-Contractors.pdf ; https://dli.mt.gov/_docs/rules/MAR-NOTICE-NO-2025-209.1pro-arm.pdf ; https://boards.bsd.dli.mt.gov/construction-contractor/ — GOV/DOC\n- Disclosure § 70-20-502 chimney line (load-bearing b): RESOLVED — statute lists categories, no prescribed form, no chimney/fireplace named; \"structural system or improvement, including … heating system\" is the hook. § 70-20-504 adds a 3-day buyer rescission if the statement comes after contract. — https://mca.legmt.gov/bills/mca/title_0700/chapter_0200/part_0050/section_0020/0700-0200-0050-0020.html ; …/section_0040/0700-0200-0050-0040.html — GOV\n- UTPCPA § 30-14-133: RESOLVED — greater of actual loss or $500; up to treble (if actual ≤ $100,000); discretionary attorney fees, $250/hr cap. — https://mca.legmt.gov/bills/mca/title_0300/chapter_0140/part_0010/section_0330/0300-0140-0010-0330.html — GOV\n- Personal solicitation cancel: RESOLVED — § 30-14-504: midnight of third business day after signing. — https://mca.legmt.gov/bills/mca/title_0300/chapter_0140/part_0050/section_0040/0300-0140-0050-0040.html — GOV\n- CO law § 70-24-303 (load-bearing c): RESOLVED with wording fix — landlord installs approved CO detector per DLI rules, verifies at lease start; landlord not liable for failure. Fuel-fired/attached-garage/UL 2034 placement specifics are not in the statute text (softened). — https://mca.legmt.gov/bills/mca/title_0700/chapter_0240/part_0030/section_0030/0700-0240-0030-0030.html ; NCSL CO table — GOV\n- Code adoption: CORRECTED — 2021 I-codes (incl. IEBC, 2021 WUI Code) effective June 11, 2022 (old: Jan 1, 2022); 2024 I-codes only in draft notice MAR 2026-95.2. — https://bsd.dli.mt.gov/building-codes-permits/current-codes/ ; https://bsd.dli.mt.gov/_docs/building-codes-permits/2024-BUILDING-CODE-ADOPTION-AMENDMENTS.pdf — GOV/DOC\n- DEQ/WUI local rules; DOJ enforcement: STILL OPEN.\n- Template-leakage sweep: clean (MD/NV/AZ guaranty-fund mention is a labeled comparison)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; renamed a \"license\" in 2026, but still no competency test)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; renamed a \"license\" in 2026, but still no competency test",
+      "markdown": "**Montana has no competency-based credential for chimney work — its contractor credential is tied to workers' comp, not skill.** STATE LAW: **HB 239 (Ch. 644, L. 2025)** converted the old Construction Contractor Registration (formerly Title 39, ch. 9) into a **Construction Contractor License (CCL)** under **Title 37, ch. 45 (MCA § 37-45-201 et seq.), effective Jan 1, 2026**; existing registrations converted automatically on that date with the same expiration dates and unchanged cost. The program now sits with the **DLI Business Standards Division (boards.bsd.dli.mt.gov/construction-contractor)**. **§ 37-45-201** requires an individual or business \"engag[ing] in business as a construction contractor\" to hold a current license; the application asks only for identifying information and **\"proof of compliance with workers' compensation laws\"** — **no exam, no experience requirement, no liability-insurance requirement appears in the statute**, and the implementing rules (ARM 24.227.401 et seq.; $70 application/renewal fee) add no exam or education. **Exemptions (§ 37-45-104):** an **independent contractor with no employees** (who may register voluntarily), and single jobs with an aggregate contract price **under $2,500**. Sole proprietors typically carry an **Independent Contractor Exemption Certificate (ICEC)** from DLI-ERD for workers'-comp purposes instead. Public lookup: via the BSD construction-contractor program page."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "**As wide as any state — arguably wider, because even the new Title 37 credential tests nothing.** A licensed Montana contractor may never have inspected a flue; the CCL (like the registration it replaced) attests to workers'-comp compliance, not masonry or diagnostic skill — and a one-person sweep with no employees is exempt from even that. There is **nothing statewide to verify about chimney competence.** Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a total vacuum. This is the pure \"registered ≠ qualified\" story."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; recently changed from caveat emptor)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; recently changed from caveat emptor",
+      "markdown": "**Montana was a caveat-emptor state until 2023 — now it has a statutory disclosure duty, but a thin one.** STATE LAW: **MCA § 70-20-502 (Title 70, Ch. 20, Part 5 — Residential Real Property Disclosure)**, enacted 2023, requires a seller of residential real property to give the buyer a **disclosure statement of adverse material facts of which the seller has *actual knowledge*** — covering title, water, wastewater, utilities, **\"any structural system or improvement, including any well, septic system, roof, foundation, plumbing, electrical system, heating system, windows, doors, or appliances,\"** unpermitted additions, hazardous materials/pests, drainage, and testing for radon/mold/meth etc. The seller is **not obligated to investigate.** **The statute prescribes no form and does not name chimney or fireplace** — a flue defect falls under \"structural system or improvement … heating system.\" If the statement is delivered after the contract is signed, the buyer gets **3 days to rescind** (§ 70-20-504; waivable in the offer). No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: the **Montana Unfair Trade Practices and Consumer Protection Act of 1973 (MCA § 30-14-101 et seq.)**, enforced by the **DOJ Office of Consumer Protection (dojmt.gov)**, gives a private right of action; under **§ 30-14-133** a consumer recovers **the greater of actual loss or $500**, the court **may award up to three times actual damages** (where actual damages do not exceed $100,000), and may award the prevailing party attorney fees (capped at $250/hour; not available if the consumer recovers $100,000 or more). Door-to-door/personal-solicitation sales carry a right to cancel **until midnight of the third business day after signing** (**§ 30-14-504**) under the **Personal Solicitation Sales part (MCA § 30-14-501 et seq.)**, with the mandatory notice-of-right-to-cancel language at **§ 30-14-505**. No home-improvement guaranty fund exists — unlike MD/NV/AZ, a wronged Montana homeowner has no state-funded backstop."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; genuine statewide code — unusual for the mountain west)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; genuine statewide code — unusual for the mountain west",
+      "markdown": "STATE LAW: Montana has a **real statewide building code.** It has adopted the **2021 I-Code series (IBC, IRC, IEBC, IMC, IFGC, IECC, and the 2021 Wildland-Urban Interface Code)** effective **June 11, 2022**, under ARM Title 24, ch. 301, administered by the **DLI Building Codes Program (bsd.dli.mt.gov)**. A **draft 2026 rule notice (MAR 2026-95.2) proposes moving to the 2024 I-codes** — not adopted as of Sep 2026; re-check before publish. The **2021 Montana IRC Chapter 10 (Chimneys & Fireplaces)** and **IMC Chapter 9 (solid-fuel-burning appliances)** govern chimney construction, clearances, and stove installs. Relines, rebuilds, crowns, and solid-fuel appliance installs are generally permit work; sweeps and like-for-like caps generally are not. Caveat: many rural counties and unincorporated areas have **not adopted local enforcement**, so the code exists statewide but building-department coverage is uneven."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; rental-focused, no sale trigger)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; rental-focused, no sale trigger",
+      "markdown": "STATE LAW: **MCA § 70-24-303** (Residential Landlord-Tenant Act) requires landlords to install an approved CO detector in each dwelling unit under the landlord's control, \"in accordance with rules adopted by the department of labor and industry,\" and verify it works at lease commencement; the tenant maintains it thereafter, and the landlord is not liable for detector failure. (Placement details — fuel-fired appliance/attached garage trigger, outside sleeping areas — come from the DLI rules/IRC, not the statute text.) New construction is covered via the adopted 2021 IRC. **No statewide pre-sale CO certificate** and no owner-occupied mandate. A permitted chimney job is the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV/REF — Montana-specific; material here)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "Montana-specific; material here",
+      "markdown": "Montana is a **high wood-heat, cold state** — this section matters. **Open burning** is regulated by **Montana DEQ (deq.mt.gov/air)**: allowed year-round but county-permitted in spring/summer, DEQ-restricted in fall by dispersion forecast, and case-by-case in winter (some valleys, e.g., Missoula, have historically had winter inversion/air-quality controls — verify current local rules). **WUI/wildfire** is a live concern across the forested west of the state; spark-arrestor caps are a code/insurance expectation in fire-prone country though not a distinct statewide statute; the state's adopted code set includes the **2021 Wildland-Urban Interface Code** (bsd.dli.mt.gov current codes), whose reach depends on local WUI mapping/enforcement *(confirm how it is applied locally)*. No statewide wood-stove-emission or change-out mandate confirmed."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The door-knock \"we noticed your chimney\" pitch is a textbook Personal Solicitation Sales (§ 30-14-501) + UTPCPA violation, and the DOJ Office of Consumer Protection is the complaint venue. **Specific Montana AG chimney-sweep enforcement actions: NOT CONFIRMED — no state-specific alert surfaced; re-run search before publish.** National pattern only (deposit-and-vanish; manufactured \"unsafe/CO\" urgency)."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold, long heating season statewide; harsher in the mountain valleys and eastern plains. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Bozeman/Missoula/Kalispell (resort-adjacent, higher cost of living) run **above** the rural-Montana baseline; eastern plains and small towns below. Regionalize on the resort-valley vs. rural split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026; replaced the registration) is workers'-comp-based, no exam; no-employee independents exempt** · Registration: **Construction Contractor License (DLI Business Standards Division) / ICEC (DLI-ERD)** · Disclosure law: **YES since 2023 — MCA § 70-20-502, actual-knowledge; no prescribed form; chimney not named (falls under structural system/heating system)** · 3-day cancel: **YES (Personal Solicitation Sales, MCA § 30-14-504 / notice § 30-14-505)** · CO law: **rentals only (MCA § 70-24-303) + new-construction via 2021 IRC; no pre-sale certificate** · Lookup: boards.bsd.dli.mt.gov/construction-contractor"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Montana **CONFIRMS the license⇄disclosure inverse-correlation verdict — as a weak/weak-to-moderate case that leans the expected way.** It has **no competency license at all** (only a workers'-comp-based credential, renamed a \"license\" in 2026, that tests nothing), and for decades it had **no disclosure duty either** — pure caveat emptor. So on the licensing axis it sits at the floor. The 2023 disclosure statute (§ 70-20-502) nudges it up on the sale axis, but only to a thin, actual-knowledge, no-duty-to-investigate standard — so the state stays **low-license / low-to-moderate-disclosure**, consistent with the rule that weak-licensing states don't over-protect at sale. The sharp content: **there is nothing about a Montana contractor's chimney competence to look up — the license tests workers'-comp compliance, not your flue — so an independent inspection and individual certs are the only real signal.** The oddball twist worth flagging on the page: Montana is a rare mountain-west state with a **genuine statewide building code (2021 IRC)**, yet rural enforcement is patchy — the code exists on paper more evenly than in practice."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "NO competency license — Construction Contractor License (MCA 37-45-201, eff. Jan 1 2026, replaced registration) is workers'-comp-based, no exam; no-employee independents and jobs under $2,500 exempt",
+    "registration_name": "Construction Contractor License (DLI Business Standards Division) / ICEC (DLI-ERD)",
+    "disclosure_law": "YES since 2023 — MCA 70-20-502 (actual knowledge, no duty to investigate, no prescribed form)",
+    "chimney_item_on_form": "No — not named; falls under structural system/heating system",
+    "three_day_cancel": "YES — Personal Solicitation Sales (MCA 30-14-504)",
+    "co_law": "rentals only (MCA 70-24-303) + new construction (2021 IRC); no pre-sale certificate",
+    "lookup_url": "boards.bsd.dli.mt.gov/construction-contractor",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026; replaced the registration) is workers'-comp-based, no exam; no-employee independents exempt",
+    "registration_name": "Construction Contractor License (DLI Business Standards Division) / ICEC (DLI-ERD)",
+    "disclosure_law": "YES since 2023 — MCA § 70-20-502, actual-knowledge; no prescribed form; chimney not named (falls under structural system/heating system)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (Personal Solicitation Sales, MCA § 30-14-504 / notice § 30-14-505)",
+    "co_law": "rentals only (MCA § 70-24-303) + new-construction via 2021 IRC; no pre-sale certificate",
+    "lookup_url": "boards.bsd.dli.mt.gov/construction-contractor"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "LICENSE, NO EXAM",
+      "note": "NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026…",
+      "anchor": "license",
+      "rule": "license:non-competency-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "The state credential has no competency exam",
+      "anchor": "qualified-gap",
+      "rule": "exam:non-competency-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Personal Solicitation Sales, MCA § 30-14-504 / notice § 30-14-505)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "rentals only (MCA § 70-24-303) + new-construction via 2021 IRC; no pre-sale certificate",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Montana chimney & fireplace laws: know your rights",
+  "metaDescription": "Montana chimney & fireplace laws: licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold, long heating season statewide; harsher in the mountain valleys and eastern plains. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Montana?",
+      "a": "State licensing: NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026; replaced the registration) is workers'-comp-based, no exam; no-employee independents exempt. Registration or credential: Construction Contractor License (DLI Business Standards Division) / ICEC (DLI-ERD). Seller disclosure at sale: YES since 2023 — MCA § 70-20-502, actual-knowledge; no prescribed form; chimney not named (falls under structural system/heating system). Right to cancel a sale made at your home: YES (Personal Solicitation Sales, MCA § 30-14-504 / notice § 30-14-505). Carbon monoxide alarm law: rentals only (MCA § 70-24-303) + new-construction via 2021 IRC; no pre-sale certificate. Where to check a contractor: boards.bsd.dli.mt.gov/construction-contractor. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Montana?",
+      "a": "Montana was a caveat-emptor state until 2023 — now it has a statutory disclosure duty, but a thin one. STATE LAW: MCA § 70-20-502 (Title 70, Ch. 20, Part 5 — Residential Real Property Disclosure), enacted 2023, requires a seller of residential real property to give the buyer a disclosure statement of adverse material facts of which the seller has actual knowledge — covering title, water, wastewater, utilities, \"any structural system or improvement, including any well, septic system, roof, foundation, plumbing, electrical system, heating system, windows, doors, or appliances,\" unpermitted additions, hazardous materials/pests, drainage, and testing for radon/mold/meth etc. The seller is not obligated to investigate.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Montana?",
+      "a": "STATE LAW: the Montana Unfair Trade Practices and Consumer Protection Act of 1973 (MCA § 30-14-101 et seq.), enforced by the DOJ Office of Consumer Protection (dojmt.gov), gives a private right of action; under § 30-14-133 a consumer recovers the greater of actual loss or $500, the court may award up to three times actual damages (where actual damages do not exceed $100,000), and may award the prevailing party attorney fees (capped at $250/hour; not available if the consumer recovers $100,000 or more). Door-to-door/personal-solicitation sales carry a right to cancel until midnight of the third business day after signing (§ 30-14-504) under the Personal Solicitation Sales part (MCA § 30-14-501 et seq.), with the mandatory notice-of-right-to-cancel language at § 30-14-505. No home-improvement guaranty fund exists — unlike MD/NV/AZ, a wronged Montana homeowner has no state-funded backstop.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "idaho",
+    "neighborName": "Idaho",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "LICENSE, NO EXAM",
+      "note": "NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026…"
+    },
+    "b": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

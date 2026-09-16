@@ -1,0 +1,260 @@
+---
+import Base from '../layouts/Base.astro';
+import Chip from '../components/Chip.astro';
+import Glyph from '../components/Glyph.astro';
+import WhatToAsk from '../components/WhatToAsk.astro';
+import BeforeYouRely from '../components/BeforeYouRely.astro';
+import { getStates, getRightsTable } from '../lib/content';
+import { ORG_NAME, SITE_URL, abs, monthYear, latest, RIGHTS_CSV } from '../lib/site';
+
+const states = await getStates();
+const bySlug = new Map(states.map((s) => [s.slug, s]));
+const table = getRightsTable();
+const path = '/rights';
+const title = `Chimney & Fireplace Laws by State — 50-State Comparison (2026) | ${ORG_NAME}`;
+const description = 'Chimney and fireplace laws by state: licensing, seller disclosure, 3-day cancellation and CO alarm rules for all 50 states + DC, with sources.';
+const lastVerified = latest(states.map((s) => s.lastVerified));
+const citedAs = monthYear(lastVerified);
+const verifiedCount = states.filter((s) => s.verified && (s.publishVerdict === 'READY' || s.publishVerdict === 'READY WITH CAVEATS')).length;
+const noSaleInspection = states.filter((s) => s.verdictGrid.find((c) => c.id === 'verdict-sale')?.answer === 'NO').length;
+
+const cols = [
+  ['license_regime', 'License regime'],
+  ['registration_name', 'Registration'],
+  ['disclosure_law', 'Disclosure law'],
+  ['chimney_item_on_form', 'Chimney item on form'],
+  ['three_day_cancel', '3-day cancel'],
+  ['co_law', 'CO law'],
+  ['lookup_url', 'Lookup'],
+] as const;
+
+// Only bare hostnames/paths are linked; free-text lookups stay text.
+const lookupHref = (v: string) => {
+  const t = v.trim();
+  if (/^https?:\/\/\S+$/.test(t)) return t;
+  if (/^[a-z0-9-]+(\.[a-z0-9-]+)+(\/[^\s]*)?$/i.test(t)) return `https://${t}`;
+  return null;
+};
+
+const faq = [
+  {
+    id: 'faq-sweep-license',
+    q: 'Does any state require a license to sweep a chimney?',
+    a: `Sweeping requires no state credential in 50 of the 51 jurisdictions our licensing research covers. The exception is Vermont, where the Division of Fire Safety issues a T4 Chimney Sweep Certificate of Fitness tied to a private certification (the rule accepts NCSG at the Certified Chimney Professional level, or CSIA) — and our verification found that certificate applies to public buildings, not owner-occupied single-family homes. Elsewhere, a contractor license — where one exists — usually covers masonry repair, relining or larger jobs, not the cleaning visit itself. Maryland's regulator says in its own FAQ that cleaning chimneys is not "home improvement," while caps and rebuilds need the license. So "licensed" on a sweep's truck rarely means anyone tested their chimney skills. That is why the questions about individual certifications matter more than the word "licensed."`,
+  },
+  {
+    id: 'faq-sale-inspection',
+    q: 'Is a chimney inspection required when a house is sold?',
+    a: `In ${noSaleInspection} of the ${states.length} state pages, our research found text stating that no chimney inspection is mandated at transfer; the remaining pages say to read the home-sale section rather than guess. What some states do require at sale is different: a seller disclosure form that may name the chimney or fireplace, or a smoke and carbon monoxide certificate. NFPA 211 recommends a Level 2 inspection when a property changes hands, but that is a national standard, not a law. If you are buying, the inspection is something you order and pay for yourself. Put it in your contract's inspection contingency window.`,
+  },
+  {
+    id: 'faq-cite',
+    q: 'Can I use or republish this table?',
+    a: `Yes. Download the CSV and cite it as ${SITE_URL}/rights. Each row carries the date our research last looked, and each state page links to the primary sources behind it. Laws change, so check the state page's verification date before relying on any cell. Where a detail isn't independently verified, the state page says so.`,
+  },
+];
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Chimney & fireplace laws by state', item: abs(path) },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Chimney & fireplace laws in all 50 states + DC, compared',
+    description,
+    mainEntityOfPage: abs(path),
+    dateModified: lastVerified,
+    author: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL, '@id': `${SITE_URL}/#organization` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Chimney & fireplace laws by state (Chimney.Services rights table)',
+    description:
+      'State-by-state comparison of contractor licensing regimes, registration, seller disclosure law, chimney items on disclosure forms, 3-day cancellation rights, carbon monoxide alarm law and public lookup URLs, with research dates.',
+    url: abs(path),
+    creator: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL },
+    dateModified: lastVerified,
+    isAccessibleForFree: true,
+    spatialCoverage: { '@type': 'Place', name: 'United States' },
+    variableMeasured: cols.map(([, label]) => label),
+    citation: abs(path),
+    distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: abs(RIGHTS_CSV) }],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd} modified={lastVerified} citedAs={citedAs} section="rights">
+  <nav class="crumb" aria-label="Breadcrumb">UNITED STATES / KNOW YOUR RIGHTS</nav>
+  <h1>Chimney &amp; fireplace laws in all 50 states + DC, compared</h1>
+  <p class="badge-date">Researched Jul 2026<span class="dot">·</span>Laws as cited<span class="dot">·</span>{verifiedCount} of {states.length} state pages passed verification {citedAs}</p>
+  <p class="chips"><Chip kind="muted">Public record</Chip><Chip kind="national" /></p>
+
+  <section aria-labelledby="master-finding-h" id="master-finding">
+    <h2 id="master-finding-h">What did we find?</h2>
+    <div class="prose">
+      <p class="lede">
+        In the East, the states that license contractors hardest tend to protect home buyers least — and several states with no license put the chimney on a mandatory seller disclosure.
+      </p>
+      <p>
+        Maryland and Virginia run exam-based contractor licenses, yet Maryland lets a seller disclaim instead of disclose and Virginia's mandatory form is a buyer-beware notice. Illinois, New York and Texas have no state license for chimney work, but their mandatory seller disclosures ask about the chimney. The pattern breaks as you move west and south: California, Oregon and Nevada pair a state license with a strong mandatory disclosure, while Missouri, Kansas, Georgia, Alabama and Wyoming are weak on both. Treat it as a regional tendency, not a national law.
+      </p>
+      <p>
+        One finding holds almost everywhere: <strong>sweeping requires no state credential in 50 of 51 jurisdictions.</strong> Vermont is the exception, and even there the certificate applies to public buildings rather than owner-occupied single-family homes. A state contractor license, where one exists, almost never tests whether someone can read a flue.
+      </p>
+    </div>
+  </section>
+
+  <section aria-labelledby="table-h" id="table">
+    <h2 id="table-h">How do the states compare?</h2>
+    <p class="chips">
+      <a class="button" href={RIGHTS_CSV} download><Glyph name="download" /> Download the table (CSV)</a>
+      <span class="fineprint">{table.csvRowCount} researched rows · cite as {SITE_URL}/rights · select a column heading to sort</span>
+    </p>
+    <div class="table-wrap">
+      <table class="data" id="rights-table">
+        <caption class="skip">Chimney and fireplace laws by state</caption>
+        <thead>
+          <tr>
+            <th scope="col" aria-sort="ascending"><button type="button" data-col="0">State</button></th>
+            {cols.map(([, label], i) => <th scope="col"><button type="button" data-col={i + 1}>{label}</button></th>)}
+            <th scope="col"><button type="button" data-col={cols.length + 1}>Researched</button></th>
+          </tr>
+        </thead>
+        <tbody>
+          {table.rows.map((r) => {
+            const st = r.slug ? bySlug.get(r.slug) : undefined;
+            return (
+              <tr id={r.abbr ? `row-${r.abbr.toLowerCase()}` : undefined}>
+                <th scope="row" data-sort={r.state}>
+                  {st ? <a href={`/${r.slug}/rights`}>{r.state}</a> : r.state}
+                  {st?.publishVerdict === 'DO NOT PUBLISH' && <div class="not-in-table">UNDER REVIEW</div>}
+                  {st?.publishVerdict === 'UNVERIFIED' && <div class="not-in-table">NOT YET RE-VERIFIED</div>}
+                  {r.rowStale && <div class="not-in-table">ROW DATED {r.researched_date}; PAGE VERIFIED {r.stateVerified}</div>}
+                </th>
+                {cols.map(([key]) => {
+                  const v = String((r as Record<string, unknown>)[key] ?? '');
+                  if (r.notInTable) return <td class="not-in-table">{key === 'lookup_url' ? '—' : 'NOT YET IN TABLE'}</td>;
+                  if (key === 'lookup_url') {
+                    const href = lookupHref(v);
+                    return <td class="mono">{href ? <a href={href} rel="noopener" target="_blank">{v}</a> : v || '—'}</td>;
+                  }
+                  return <td>{v || '—'}</td>;
+                })}
+                <td class="mono">{r.researched_date || '—'}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+    <p class="fineprint">
+      Rows marked NOT YET IN TABLE have a researched state page but no summary row in the table yet. Where a row is dated before its state page's verification, the verification may have corrected it — the state page is the source of record, and its short answers use the verified summary.
+    </p>
+  </section>
+
+  <section aria-labelledby="regions-h" id="regions">
+    <h2 id="regions-h">How do the regions differ?</h2>
+
+    <div class="read" id="northeast">
+      <h3>Northeast and Mid-Atlantic: the pattern at its strongest</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#northeast">#northeast</a><span>VERIFIED SEP 2026</span><Chip kind="muted">Public record</Chip></p>
+      <div class="prose">
+        <p>This is where license strength and disclosure strength pull hardest in opposite directions. <a href="/maryland/rights">Maryland</a> pairs an exam-based home-improvement license and a guaranty fund with a seller option to disclaim instead of disclose, and its disclosure form has no dedicated chimney line. <a href="/virginia/rights">Virginia</a> licenses contractors in tiers for work over $1,000, but its mandatory disclosure is a buyer-beware notice. <a href="/massachusetts/rights">Massachusetts</a> requires an exam-based license for structural chimney work and a fire-department carbon monoxide inspection when a home sells; our research reports no mandatory seller disclosure form there, an absence we have not yet re-verified. <a href="/new-jersey/rights">New Jersey</a> registers home-improvement contractors, and a licensing law has been enacted but is not yet operative. <a href="/new-york/rights">New York</a> has no state license, but its seller form has carried a mandatory chimney, fireplace or stove question since March 2024. <a href="/maine/rights">Maine</a>'s disclosure statute asks for the date of the most recent chimney and vent inspection, and <a href="/vermont/rights">Vermont</a> has the only state certificate written for chimney sweeps.</p>
+      </div>
+    </div>
+
+    <div class="read" id="midwest">
+      <h3>Midwest: no license, but the chimney is on the form</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#midwest">#midwest</a><span>VERIFIED SEP 2026</span><Chip kind="muted">Public record</Chip></p>
+      <div class="prose">
+        <p><a href="/illinois/rights">Illinois</a>, <a href="/indiana/rights">Indiana</a> and <a href="/ohio/rights">Ohio</a> have no state license for chimney work; oversight, where it exists, is city by city. Illinois's mandatory disclosure report asks about defects in the chimney and in the fireplace or woodburning stove. <a href="/michigan/rights">Michigan</a> is the regional contrast: repair work of $600 or more needs a state license, and an unlicensed contractor cannot sue to collect for work that required one. <a href="/minnesota/rights">Minnesota</a> runs an exam-based license that exempts contractors offering only one special skill, and its seller disclosure can be waived in writing. Our research found no statewide carbon monoxide requirement for existing homes in Indiana. The <a href="/wisconsin/rights">Wisconsin</a> page is under review after verification.</p>
+      </div>
+    </div>
+
+    <div class="read" id="plains">
+      <h3>Plains: the double-weak pocket</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#plains">#plains</a><span>VERIFIED SEP 2026</span><Chip kind="muted">Public record</Chip></p>
+      <div class="prose">
+        <p><a href="/missouri/rights">Missouri</a> and <a href="/kansas/rights">Kansas</a> are weak on both axes: no state chimney license and no statute requiring a seller disclosure form, so the homeowner's leverage lives in general consumer-protection law. Missouri also has no statewide building code. <a href="/iowa/rights">Iowa</a> requires contractor registration and a disclosure form that still has no chimney item, though it does license installers of hearth appliances. <a href="/nebraska/rights">Nebraska</a>'s form asks about chimney damage and cleaning, and its carbon monoxide law is triggered at sale. <a href="/north-dakota/rights">North Dakota</a> licenses contractors, without an exam, only for jobs over $4,000. <a href="/south-dakota/rights">South Dakota</a> has no state contractor license, but its statutory form asks whether the fireplace, wood stove or chimney flue has been cleaned.</p>
+      </div>
+    </div>
+
+    <div class="read" id="south">
+      <h3>South: licenses that switch off below a dollar line</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#south">#south</a><span>VERIFIED SEP 2026</span><Chip kind="muted">Public record</Chip></p>
+      <div class="prose">
+        <p>The dominant Southern fact is threshold-gated licensing. <a href="/north-carolina/rights">North Carolina</a>'s general contractor license starts at $40,000 and <a href="/tennessee/rights">Tennessee</a>'s at $25,000, so most chimney work falls below the line. <a href="/texas/rights">Texas</a> has no state license for chimney work, but its mandatory seller disclosure lists the fireplace and chimney. <a href="/florida/rights">Florida</a> has no statutory disclosure form; the seller's duty comes from the courts. <a href="/georgia/rights">Georgia</a> and <a href="/alabama/rights">Alabama</a> are close to buyer-beware at resale. In North Carolina, <a href="/south-carolina/rights">South Carolina</a>, Georgia and Alabama, the state's door-to-door cancellation law reaches only credit sales, so a cash sale at your door relies on the federal FTC Cooling-Off Rule. In <a href="/mississippi/rights">Mississippi</a>, <a href="/oklahoma/rights">Oklahoma</a> and <a href="/louisiana/rights">Louisiana</a>, asking for "emergency" work can cost you the right to cancel — the exact request a scare-sale operator wants. Louisiana also requires a working carbon monoxide detector when a one- or two-family home is sold or leased.</p>
+      </div>
+    </div>
+
+    <div class="read" id="west">
+      <h3>West: real licenses, and a third axis — smoke and wildfire</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#west">#west</a><span>VERIFIED SEP 2026</span><Chip kind="muted">Public record</Chip></p>
+      <div class="prose">
+        <p>The West licenses more than any other region — <a href="/california/rights">California</a>, <a href="/oregon/rights">Oregon</a>, <a href="/utah/rights">Utah</a>, <a href="/arizona/rights">Arizona</a>, <a href="/nevada/rights">Nevada</a>, <a href="/new-mexico/rights">New Mexico</a> and <a href="/hawaii/rights">Hawaii</a> all run state contractor licenses — yet the license-versus-disclosure pattern splits roughly evenly here. In California an unlicensed contractor cannot sue to collect, and a homeowner can recover what they paid one. <a href="/wyoming/rights">Wyoming</a> has no state license or registration of any kind and no statutory disclosure form. <a href="/idaho/rights">Idaho</a> registers contractors without an exam and bars cities and counties from running their own licensing. The West also regulates what may be burned or installed: air-district no-burn days, certified-stove rules, and Oregon's requirement that an uncertified used wood stove be removed before a home sale closes. In <a href="/alaska/rights">Alaska</a>, the Fairbanks area requires older, higher-emitting wood heaters to be removed before closing.</p>
+      </div>
+    </div>
+  </section>
+
+  <WhatToAsk />
+
+  <section aria-labelledby="faq" class="faq-section">
+    <h2 id="faq">Frequently asked questions</h2>
+    <div class="faq">
+      {faq.map((f, i) => (
+        <details id={f.id} open={i === 0}>
+          <summary><h3>{f.q}</h3></summary>
+          <div class="prose"><p>{f.a}</p></div>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section aria-labelledby="all-states-h">
+    <h2 id="all-states-h">State pages</h2>
+    <ul class="state-index">
+      {states.map((s) => (
+        <li><a href={`/${s.slug}/rights`}>{s.name}</a>{s.publishVerdict === 'DO NOT PUBLISH' && <span class="not-in-table"> · under review</span>}</li>
+      ))}
+    </ul>
+  </section>
+
+  <BeforeYouRely dateLabel={citedAs} />
+
+  <script is:inline>
+    (function () {
+      var table = document.getElementById('rights-table');
+      if (!table) return;
+      var tbody = table.tBodies[0];
+      var heads = table.tHead.rows[0].cells;
+      Array.prototype.forEach.call(heads, function (th, idx) {
+        var btn = th.querySelector('button');
+        if (!btn) return;
+        btn.addEventListener('click', function () {
+          var dir = th.getAttribute('aria-sort') === 'ascending' ? 'descending' : 'ascending';
+          Array.prototype.forEach.call(heads, function (h) { h.removeAttribute('aria-sort'); });
+          th.setAttribute('aria-sort', dir);
+          var rows = Array.prototype.slice.call(tbody.rows);
+          rows.sort(function (a, b) {
+            var x = (a.cells[idx].getAttribute('data-sort') || a.cells[idx].textContent || '').trim().toLowerCase();
+            var y = (b.cells[idx].getAttribute('data-sort') || b.cells[idx].textContent || '').trim().toLowerCase();
+            return dir === 'ascending' ? x.localeCompare(y) : y.localeCompare(x);
+          });
+          rows.forEach(function (r) { tbody.appendChild(r); });
+        });
+      });
+    })();
+  </script>
+</Base>

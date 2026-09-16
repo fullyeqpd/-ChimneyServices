@@ -1,0 +1,14 @@
+---
+import { CLOSING_RULE } from '../lib/site';
+interface Props { dateLabel?: string | null }
+const { dateLabel } = Astro.props;
+---
+<aside class="box box--ink" aria-labelledby="before-you-rely" id="before-you-rely-box">
+  <p class="band__title" id="before-you-rely">Before you rely on this</p>
+  <ul class="prose">
+    <li>This is not legal advice. For a dispute, talk to a lawyer licensed in your state or your state attorney general's consumer office.</li>
+    <li>Laws change. Statutes, thresholds and code editions can move after we look.</li>
+    <li>Every date on this page is only when we last looked{dateLabel ? ` (${dateLabel})` : ''} — not a promise that nothing has changed since.</li>
+    <li>{CLOSING_RULE}</li>
+  </ul>
+</aside>

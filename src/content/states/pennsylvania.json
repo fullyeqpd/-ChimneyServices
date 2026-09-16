@@ -1,0 +1,320 @@
+{
+  "slug": "pennsylvania",
+  "name": "Pennsylvania",
+  "abbr": "PA",
+  "sourceFile": "rights-research-pennsylvania.md",
+  "researched": "2026-09-01",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": null,
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "All checked 2026-09-15.\n\n| # | Source | URL | Class | Result |\n|---|---|---|---|---|\n| 1 | PA OAG — HIC Registration | https://www.attorneygeneral.gov/businesses-and-organizations/home-improvement-contractor-registration/ | GOV | $100/2 yrs; $5,000; not an endorsement of competency; lookup/complaint links |\n| 2 | PA OAG — Contractor FAQ | https://www.attorneygeneral.gov/resources/home-improvement-contractor-registration/contractor-frequently-asked-questions/ | GOV | $5,000; $50k/$50k insurance; civil penalties $1,000+; no exam mentioned |\n| 3 | PA OAG — HIC Updates | https://www.attorneygeneral.gov/businesses-and-organizations/home-improvement-contractor-registration/updates/ | GOV | 10/22/2014 amendments; no later statutory change listed |\n| 4 | PA OAG — Home Improvement Contractor Verification | https://www.attorneygeneral.gov/for-the-public/home-improvement/ | GOV | Registry, helpline, competency disclaimer |\n| 5 | PA OAG — site search \"chimney\" | https://www.attorneygeneral.gov/?s=chimney | GOV | No chimney-specific alert/action |\n| 6 | PA OAG — Apr 8, 2025 lawsuit release (Davis / 1st Choice Roofing) | https://www.attorneygeneral.gov/taking-action/ag-sunday-files-lawsuit-against-philadelphia-home-improvement-contractor-who-failed-to-complete-work-or-issue-refunds/ | GOV | Allegations; incidental chimney deposit |\n| 7 | PA Supreme Court — *Shafer Elec. & Constr. v. Mantia*, J-24-2014 | https://www.pacourts.us/assets/opinions/Supreme/out/J-24-2014mo.pdf | GOV | Quantum meruit survives § 517.7(a) non-compliance |\n| 8 | PA L&I — Uniform Construction Code home | https://www.pa.gov/agencies/dli/programs-services/labor-management-relations/bureau-of-occupational-and-industrial-safety/uniform-construction-code-home | GOV | Local enforcement >90%; third-party agencies (edition text on page stale: 2018) |\n| 9 | PA L&I — UCC Review and Advisory Council | https://www.pa.gov/agencies/dli/programs-services/labor-management-relations/bureau-of-occupational-and-industrial-safety/uniform-construction-code-home/ucc-review-and-advisory-council | GOV | 2021 ICC: IRRC 10/16/2025; Pa.B. 11/8/2025; effective 1/1/2026 |\n| 10 | Philadelphia L&I — Get a Contractor License | https://www.phila.gov/services/permits-violations-licenses/get-a-license/trade-licenses/get-a-contractor-license/ | GOV | $126; insurance; OSHA 30; HIC route for 1–2 family |\n| 11 | Pittsburgh PLI — Licensing | https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Licensing | GOV | GC license + RRP |\n| 12 | Pittsburgh PLI — Contractor Licenses | https://www.pittsburghpa.gov/Business-Development/Permits-Licenses-and-Inspections/Licensing/Contractor-Licenses | GOV | Scope triggers; $1M/$2M insurance |\n| 13 | PA OAG PDF — HICPA text, 73 P.S. § 517.1 et seq. (amended through 10/22/2014) | https://www.attorneygeneral.gov/wp-content/uploads/2018/01/Act_132_Home_Improvement.pdf | DOC | §§ 517.2, .3, .4, .5, .7, .8, .9, .10 quoted |\n| 14 | PA OAG PDF — UTPCPL, 73 P.S. §§ 201-1 – 201-9.2 | https://www.attorneygeneral.gov/wp-content/uploads/2018/02/Unfair_Trade_Practices_Consumer_Protection_Law.pdf | DOC | § 201-9.2 discretionary treble; § 201-7 3-day door-to-door |\n| 15 | PA DOS PDF — Residential Real Estate Transfers Law, 68 Pa.C.S. §§ 7101–7512 | https://www.pa.gov/content/dam/copapwp-pagov/en/dos/department-and-offices/bpoa/real-estate/Seller%20Disclosure%20Law.pdf | DOC | §§ 7102, 7302–7315 headings and text |\n| 16 | City of Reading PDF — Act 121 of 2013 text | https://www.readingpa.gov/images/pdfs/CARBON_MONOXIDE_ALARM_STANDARDS_ACT.pdf | DOC | §§ 1–7 read |\n| 17 | Philadelphia L&I Code Bulletin B-2501 | https://www.phila.gov/media/20251021080549/B-2501-Implementation-of-2021-International-Codes.pdf | DOC | 2021 codes 1/1/2026; 7/1/2026 transition |\n| 18 | Pittsburgh PLI EP-2025-01 | https://www.pittsburghpa.gov/files/assets/city/v/1/pli/documents/ep-2025-01_ucc-2021-code-adoption.pdf | DOC | Pre-adoption policy (superseded by #9) |\n| 19 | Cornell LII — 49 Pa. Code § 35.335a | https://law.cornell.edu/regulations/pennsylvania/49-Pa-Code-SS-35-335a | REF | 17 sections; no chimney/fireplace line |\n| 20 | Justia — 49 Pa. Code § 35.335a | https://regulations.justia.com/states/pennsylvania/title-49/part-i/subpart-a/chapter-35/subchapter-e/real-estate-documents/section-35-335a/ | REF | Corroborates #19 |\n| 21 | PAR Seller's Property Disclosure Statement (broker-hosted copy) | https://toddcostello.com/wp-content/uploads/2021/09/SellersPropertyDisclosureStatementPA-1.0.pdf | REF | § 13(D) Fireplaces and Chimneys; § 16(B) CO/smoke |\n| 22 | Cornell LII — 34 Pa. Code § 403.62 | https://www.law.cornell.edu/regulations/pennsylvania/34-Pa-Code-SS-403-62 | REF | Permit exemptions; ordinary repairs |\n| 23 | Cornell LII — 25 Pa. Code § 123.14 | https://www.law.cornell.edu/regulations/pennsylvania/25-Pa-Code-SS-123-14 | REF | Outdoor wood-fired boilers |\n| 24 | FindLaw — 35 P.S. § 7225 | https://codes.findlaw.com/pa/title-35-ps-health-and-safety/pa-st-sect-35-7225/ | REF | Rental CO section mapping |\n| 25 | Gibbons Law Alert (2013) — Superior Court *Shafer* | https://www.gibbonslawalert.com/2013/09/30/contractors-violation-of-pennsylvanias-hicpa-registration-requirement-does-not-bar-quantum-meruit-or-mechanics-lien-claims/ | REF | Unregistered-contractor framing |\n| 26 | Gawthrop Greenwood (Nov 3, 2025) | https://gawthrop.com/major-changes-to-pennsylvania-building-codes-affect-municipal-code-officials-designers-contractors-and-builders-starting-january-1-2026/ | REF | 1/1/2026; six-month transition |\n| 27 | Pennsylvania Builders Association (Jun 2025) | https://pabuilders.org/news/pa-uniform-construction-code-ucc-enforcement-update-on-the-changes-to-the-pa-ucc-enforcement-date-pushed-back/ | REF | July 13, 2025 date withdrawn (superseded by #9) |\n\nBlocked for automated fetch (not counted, retry manually): legis.state.pa.us (HICPA/UTPCPL/Act 121 HTML), palegis.us (bill status incl. SB 893/SB 1324 of 2025–26 — **pending-bill status not checked**), palrb.gov (Act 121 PDF), pacodeandbulletin.gov and pacode.com (49 Pa. Code § 35.335a). The Philadelphia contractor-license URL under /business-licenses/ returned 404 (the /trade-licenses/ URL worked).\n\nTotals: **GOV 12 · DOC 6 · REF 9** (27 sources)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV/DOC — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: Pennsylvania has **no chimney-specific license and no state contractor license.** It runs a mandatory **registration** under the **Home Improvement Consumer Protection Act (HICPA), Act 132 of 2008, 73 P.S. § 517.1 et seq.**, administered by the **Office of Attorney General**. \"No person shall hold himself out as a contractor, nor shall a person perform any home improvement without first registering with the bureau\" (§ 517.3(a)).\n- **Threshold:** the definition of \"contractor\" excludes a person whose home improvements totaled **less than $5,000 during the previous taxable year** (§ 517.2); the AG phrases it as \"less than $5,000 worth of home improvements in a calendar year.\" A \"home improvement\" is residential work where the total cash price is **more than $500** (§ 517.2).\n- **Scope:** § 517.2 covers \"repair, replacement, remodeling, demolition, removal, renovation, installation, alteration, conversion, modernization, improvement, rehabilitation or sandblasting\" and lists roofs, siding, insulation, etc. **Chimneys and fireplaces are not named.** Chimney repair, rebuild, and reline plainly fit \"repair/replacement/installation\"; whether a cleaning-only sweep is a \"home improvement\" is **our interpretive reading, not statute text** — flag it that way.\n- **What registration requires:** application + proof of **liability insurance ≥ $50,000 personal injury and ≥ $50,000 property damage** (§ 517.4(a)(1)(ix); AG FAQ). **No exam, no competency test, no bond** appears in the statute or AG materials. Fee per the AG today: **$100 every two years**, non-refundable (the AG-hosted consolidated statute text, amended through 10/22/2014, still reads $50 at § 517.5(a) — see Publish blockers).\n- **Lookup:** **hicsearch.attorneygeneral.gov** (AG \"Verify a Contractor's HICPA Registration\"); helpline 1-888-520-6680. New online filing system at hic.attorneygeneral.gov (AG: operational as of April 24, 2026).\n- **Penalties:** AG: unregistered contractors face legal action including **civil penalties of $1,000 or more**. Home improvement fraud (§ 517.8) is a **felony of the third degree if the amount exceeds $2,000, misdemeanor of the first degree if $2,000 or less** (§ 517.8(c)(1)); second offense is a **felony of the second degree** regardless of amount (§ 517.8(c)(5)); enhanced for victims 60+ (§ 517.8(c)(4)).\n\nLOCAL — **Philadelphia:** L&I requires a **Contractor License** ($126/yr; $500k general liability, $300k auto, workers' comp; supervisor **OSHA 30** within five years) for businesses doing construction/demolition/repair — but businesses working **only on existing one- or two-family dwellings may instead proceed as a state-registered Home Improvement Contractor** (phila.gov). **Pittsburgh:** PLI **General Contractor License** ($1M/$2M liability, EPA RRP certification) is required for commercial work, new 1–2 family dwellings, renovations/additions to 1–2 family dwellings **that are rental or investment property**, and demolition (pittsburghpa.gov). Owner-occupied 1–2 family renovation is not among the listed triggers. Neither city license tests chimney skill."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap (GOV — high confidence)",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The AG says it outright: **\"Registration under HICPA is not an endorsement, recommendation or approval by the Office of Attorney General of the contractor's competency or skill.\"** Registration attests to identity, disclosures, and $50k/$50k insurance — nothing about flues, clearances, or NFPA 211. Anyone under the $5,000/year line needs no registration at all. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) are the only competence signal (NATIONAL/industry, not PA law)."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (DOC/REF — high on statute; medium on form text)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "DOC",
+        "REF"
+      ],
+      "confidenceNote": "high on statute; medium on form text",
+      "markdown": "STATE LAW: **Real Estate Seller Disclosure Law, 68 Pa.C.S. §§ 7301–7315** (Chapter 73). Applies to transfers of property with **1 to 4 residential dwelling units**; exceptions in § 7302 (e.g., fiduciary transfers in estate administration; qualifying unoccupied new construction). The seller \"shall disclose to the buyer any material defects with the property known to the seller\" on a property disclosure statement (§ 7303), delivered **before the agreement of transfer is signed** (§ 7305). \"Material defect\" = a problem with \"a significant adverse impact on the value of the property or that involves an unreasonable risk to people on the property\" (§ 7102). No duty to investigate (§ 7308). Buyer remedy: **actual damages** for willful or negligent violation; **two-year** limitation from final settlement (§ 7311).\n**The form — hypothesis REFUTED.** The statutory form content list (§ 7304) and the State Real Estate Commission's form at **49 Pa. Code § 35.335a** have 17 sections; section (10) is \"Heating and air conditioning\" (type of heating: electric/fuel oil/natural gas/other; underground fuel tanks) — **no fireplace, chimney, flue, or wood-stove line** (checked on two mirrors of the code text; official pacodeandbulletin.gov blocked automated fetch). A chimney defect is still disclosable as a *known material defect* (§ 7303) and via \"Are you aware of any problems with any item in this section?\" under Heating.\nREF: the **Pennsylvania Association of Realtors® standard SPD form** — used in most brokered sales but not law — does ask in **Section 13(D) \"Fireplaces and Chimneys\"**: number of fireplaces, working?, type, professionally installed?, number of chimneys, **\"When were they last cleaned?\"**, working? It also has a CO/smoke detector line (16(B)).\n**No inspection is mandated at transfer.** NFPA 211's Level 2 inspection at sale is a NATIONAL STANDARD, not PA law. The form itself states it \"is not a substitute for any inspections or warranties that the buyer may wish to obtain.\""
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV/DOC — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "- **Contract requirements:** \"No home improvement contract shall be valid or enforceable against an owner unless it\" meets § 517.7(a) — including being written, signed, and showing the **contractor's registration number** (§ 517.7(a)(1)), full description of work, total price, and the $50k/$50k insurance undertaking (§ 517.7(a)(11)).\n- **Right to cancel:** the owner may \"rescind the contract without penalty regardless of where the contract was signed, **within three business days** of the date of signing\" (§ 517.7(b)). Separately, UTPCPL § 201-7 gives a **three full business day** cancellation for door-to-door/home sales of $25 or more.\n- **Deposit cap:** for contracts over $5,000, no deposit above **one-third** of the price (plus special-order materials) (§ 517.9(10)(i)).\n- **Treble:** any HICPA violation \"shall be deemed a violation of\" the **Unfair Trade Practices and Consumer Protection Law** (§ 517.10). UTPCPL private action: actual damages or $100, whichever is greater; the court \"may, **in its discretion**, award up to three times the actual damages,\" plus costs and reasonable attorney fees (**73 P.S. § 201-9.2**). Treble is **discretionary** in PA (contrast, labeled: NJ's CFA treble is mandatory).\n- **Can an unregistered contractor sue you?** The contract is **not enforceable against the owner** (§ 517.7(a)). But the **PA Supreme Court held in *Shafer Electric & Construction v. Mantia* (July 21, 2014)** that § 517.7(g) \"does not contemplate the preclusion of common law equitable remedies such as quantum meruit\" — so a non-compliant contractor can still sue for the **reasonable value** of work performed. The Supreme Court opinion addressed § 517.7(a) non-compliance generally, not registration specifically; the underlying Superior Court decision is reported (REF) as allowing quantum meruit for an unregistered contractor.\n- **Complaints:** attorneygeneral.gov/submit-a-complaint/; unregistered contractors reportable at HIC@attorneygeneral.gov."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on cycle and structure)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on cycle and structure",
+      "markdown": "STATE LAW: **Pennsylvania Construction Code Act (Act 45 of 1999)** → **Uniform Construction Code, 34 Pa. Code Chapters 401–405**, administered by the Department of Labor & Industry. **2021 I-Code series (with RAC amendments) adopted: IRRC approval Oct 16, 2025; final-omitted rulemaking published in the Pa. Bulletin Nov 8, 2025; effective January 1, 2026** (L&I RAC page). This **supersedes the 2018 I-Codes** (effective Feb 14, 2022) — prior note was stale. Transition (REF, Gawthrop): projects contracted before Jan 1, 2026 may use the prior code if permit application is filed within six months. Philadelphia's bulletin B-2501 allowed 2018 or 2021 for applications received before July 1, 2026.\n**Enforcement is local, not a free-for-all patchwork of codes:** the code is uniform statewide, but \"over 90% of Pennsylvania's 2,562 municipalities have elected to administer and enforce the UCC locally\"; in opt-out municipalities, \"certified third party agencies hired by property owners (or their contractors) enforce the residential requirements\" (L&I).\n**Permits:** 34 Pa. Code § 403.62 requires permits for construction, alteration, **repair**, etc. of residential buildings, but \"an ordinary repair does not require a permit\"; mechanical additions/relocations are not ordinary repairs. Chimneys are not named in the exempt list. Working reading (interpretive, confirm locally): relines, rebuilds, and solid-fuel appliance installs are generally permit work; sweeping and like-for-like cap replacement are generally not. NFPA 211 is a NATIONAL STANDARD; its incorporation via the adopted I-Codes was not separately confirmed in this pass."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO & smoke law (DOC — high confidence)",
+      "researchTitle": "CO & smoke law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "DOC"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: **Carbon Monoxide Alarm Standards Act, Act of Dec. 18, 2013, P.L. 1229, No. 121** (35 P.S. § 7221 et seq.; section mapping from FindLaw, REF). Covers \"residential buildings\" (detached 1–2 family and multiple single-family dwellings not over three stories) with a **fossil fuel-burning heater or appliance, fireplace, or attached garage** — \"fossil fuel\" expressly includes **wood**.\n- **At sale:** the seller must **disclose information regarding the installation of CO detectors** on the property disclosure statement (§ 4(a)) — a **disclosure duty, not an install mandate.**\n- **Multifamily:** operational, centrally located approved CO alarm required in apartments with fossil-fuel appliances/fireplaces/attached garages (§ 4(b)).\n- **Rentals:** owner provides/installs/replaces alarms; tenant maintains, tests, replaces batteries, reports defects (§ 5; 35 P.S. § 7225).\n- **Enforcement:** willful failure to install or maintain a required alarm is a **summary offense, fine up to $50** (§ 6). Municipalities may adopt stricter rules (§ 7).\n- **Owner-occupied existing homes:** no statewide retrofit mandate found. New construction/alterations follow the UCC (IRC CO provisions) — local code enforcement.\nEnforcement reality: a $50 summary offense; the real checkpoint is the disclosure form and the buyer's inspector."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV-mirror — medium-high)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "mirror — medium-high",
+      "markdown": "No statewide burn-day or indoor wood-stove emission regime found. **25 Pa. Code § 123.14 (Outdoor wood-fired boilers)**, effective Oct 2, 2010: new Phase 2 outdoor boilers must sit **≥ 50 ft from the nearest property line** with a **stack ≥ 10 ft above ground**; does not cover indoor fireplaces or stoves. Local ordinances may go further."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "No PA AG consumer alert or enforcement action **specific to chimney sweeps** found (attorneygeneral.gov site search for \"chimney,\" Sep 15, 2026). One public AG lawsuit touches chimney work incidentally: **April 8, 2025 — AG Sunday sued Michael Davis and 1st Choice Roofing, Inc. (Philadelphia County Court of Common Pleas)**, *alleging* incomplete work, ignored refund requests, and HICPA contract defects (missing Notice of Cancellation, duration, insurance terms); one consumer \"paid a $500 deposit for chimney work that was never started.\" These are allegations in a filed complaint, not findings. Pattern content (not accusations): door-step \"we noticed your chimney\" pitches → use the 3-business-day rescission, the one-third deposit cap, and the registry lookup."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold climate statewide (humid continental; colder northern tier/Laurel Highlands). Burn season ~OCT–APR. Rush: **SEP–NOV**. Best booking: **APR–JUN**. (Operational judgment, consistent with other cold-climate files; no statute.)"
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding (no primary source)",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": "no primary source",
+      "markdown": "No government price data for chimney services located. Context only: **Philadelphia** metro labor runs above national (NYC/NJ corridor influence); **Pittsburgh, Allentown–Bethlehem, Harrisburg** nearer national. Use national researched ranges, nudge Philadelphia upward, until listings data exists. Note Philadelphia license insurance minimums ($500k GL) raise overhead for non-HIC-route contractors."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO — no state license; mandatory HIC REGISTRATION ≥ $5,000/yr (no exam)** · Registration: **YES (HICPA, 73 P.S. § 517.3)** · Disclosure law: **YES (68 Pa.C.S. § 7303) — statutory form has NO chimney line; PAR form § 13(D) does** · 3-day cancel: **YES (73 P.S. § 517.7(b))** · Unregistered can sue: **Contract unenforceable against owner (§ 517.7(a)), but quantum meruit allowed (*Shafer v. Mantia*, Pa. 2014)** · CO law: **moderate — sale disclosure + rental/multifamily install; $50 summary offense (Act 121 of 2013)** · Lookup: hicsearch.attorneygeneral.gov · Local overlays: Philadelphia L&I Contractor License (HIC route for 1–2 family), Pittsburgh GC License (rental/investment 1–2 family)"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Pennsylvania is the **registration-only baseline**: in PA **anyone can legally sweep** — there is no chimney license, no contractor exam, and below $5,000 a year not even a registration — and the AG itself says registration says nothing about skill. Contrast (labeled, Michigan law, not PA): in **Michigan**, chimney **repair ≥ $600 requires a state license** and an unlicensed contractor **can't sue** for payment (MCL 339.2412). Pennsylvania's leverage is in the contract instead of the credential: no registration number means the contract can't be enforced against you, you get three business days to walk away, deposits are capped at one-third, and violations route into the UTPCPL's discretionary treble. But PA courts still let a non-compliant contractor recover the reasonable value of the work — so the homeowner's hammer is real, not absolute. And at sale, the state's own disclosure form never asks about the chimney; only the Realtors' form does."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "no state license — mandatory HIC registration (≥$5,000/yr, no exam)",
+    "registration_name": "Home Improvement Contractor (Home Improvement Consumer Protection Act, 73 P.S. 517.3)",
+    "disclosure_law": "Yes (Real Estate Seller Disclosure Law, 68 Pa.C.S. 7303)",
+    "chimney_item_on_form": "No on statutory form (49 Pa. Code 35.335a); Yes on PAR form 13(D)",
+    "three_day_cancel": "Yes",
+    "co_law": "Moderate (sale disclosure + rental/multifamily install; Act 121 of 2013)",
+    "lookup_url": "hicsearch.attorneygeneral.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO — no state license; mandatory HIC REGISTRATION ≥ $5,000/yr (no exam)",
+    "registration_name": "YES (HICPA, 73 P.S. § 517.3)",
+    "disclosure_law": "YES (68 Pa.C.S. § 7303) — statutory form has NO chimney line; PAR form § 13(D) does",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (73 P.S. § 517.7(b))",
+    "co_law": "moderate — sale disclosure + rental/multifamily install; $50 summary offense (Act 121 of 2013)",
+    "lookup_url": "hicsearch.attorneygeneral.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "REGISTRATION ONLY",
+      "note": "no state license; mandatory HIC REGISTRATION ≥ $5,000/yr (no exam)",
+      "anchor": "license",
+      "rule": "license:NO+registration",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "Registration without a competency exam",
+      "anchor": "qualified-gap",
+      "rule": "exam:registration-no-exam",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (73 P.S. § 517.7(b))",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "moderate — sale disclosure + rental/multifamily install; $50 summary offense (Act 121 of 2013)",
+      "anchor": "co-law",
+      "rule": "co:unmatched",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Pennsylvania: registration, not a license, for chimney work.",
+  "metaDescription": "Pennsylvania chimney & fireplace laws: registration rules, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold climate statewide (humid continental; colder northern tier/Laurel Highlands). Burn season ~OCT–APR. Rush: SEP–NOV. Best booking: APR–JUN. (Operational judgment, consistent with other cold-climate files; no statute.)"
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Pennsylvania?",
+      "a": "State licensing: NO — no state license; mandatory HIC REGISTRATION ≥ $5,000/yr (no exam). Registration or credential: YES (HICPA, 73 P.S. § 517.3). Seller disclosure at sale: YES (68 Pa.C.S. § 7303) — statutory form has NO chimney line; PAR form § 13(D) does. Right to cancel a sale made at your home: YES (73 P.S. § 517.7(b)). Carbon monoxide alarm law: moderate — sale disclosure + rental/multifamily install; $50 summary offense (Act 121 of 2013). Where to check a contractor: hicsearch.attorneygeneral.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Pennsylvania?",
+      "a": "STATE LAW: Real Estate Seller Disclosure Law, 68 Pa.C.S. §§ 7301–7315 (Chapter 73). Applies to transfers of property with 1 to 4 residential dwelling units; exceptions in § 7302 (e.g., fiduciary transfers in estate administration; qualifying unoccupied new construction). The seller \"shall disclose to the buyer any material defects with the property known to the seller\" on a property disclosure statement (§ 7303), delivered before the agreement of transfer is signed (§ 7305).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Pennsylvania?",
+      "a": "- Contract requirements: \"No home improvement contract shall be valid or enforceable against an owner unless it\" meets § 517.7(a) — including being written, signed, and showing the contractor's registration number (§ 517.7(a)(1)), full description of work, total price, and the $50k/$50k insurance undertaking (§ 517.7(a)(11)). - Right to cancel: the owner may \"rescind the contract without penalty regardless of where the contract was signed, within three business days of the date of signing\" (§ 517.7(b)). Separately, UTPCPL § 201-7 gives a three full business day cancellation for door-to-door/home sales of $25 or more. - Deposit cap: for contracts over $5,000, no deposit above one-third of the price (plus special-order materials) (§ 517.9(10)(i)). - Treble: any HICPA violation \"shall be deemed a violation of\" the Unfair Trade Practices and Consumer Protection Law (§ 517.10). UTPCPL private action: actual damages or $100, whichever is greater; the court \"may, in its discretion, award up to three times the actual damages,\" plus costs and reasonable attorney fees (73 P.S. § 201-9.2).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "delaware",
+    "neighborName": "Delaware",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "REGISTRATION ONLY",
+      "note": "no state license; mandatory HIC REGISTRATION ≥ $5,000/yr (no exam)"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state trade license — Division of Revenue contractor license (30 Del. C. § 2502, $75 +…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

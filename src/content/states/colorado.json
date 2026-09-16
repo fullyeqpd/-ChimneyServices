@@ -1,0 +1,317 @@
+{
+  "slug": "colorado",
+  "name": "Colorado",
+  "abbr": "CO",
+  "sourceFile": "rights-research-colorado.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "statutes read via Justia mirrors, 38-45 on 2022 text; cash-sale cancel right must be labeled federal; CDPHE/Denver/CWRC details unverified",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- No statewide contractor license (load-bearing a): RESOLVED — DORA DPO occupational programs list includes Electrical and Plumbing, no general contractor/home improvement/residential builder/roofing/masonry/chimney program. — https://dpo.colorado.gov/OccupationalProfessions — GOV\n- CREC Seller's Property Disclosure fireplace/stove wording (load-bearing b): CORRECTED — current SPD19 (for use on/after Jan 1, 2026) lists \"Fireplace\" (Masonry/Insert/Wood Burning/Direct Vent), \"Free Standing Heating Stove\" (Wood/Pellet/Corn/Gas), \"Fireplace insert,\" \"Fireplace starter,\" \"Heating Stove,\" \"Fuel tanks,\" \"Date fireplace/wood stove, chimney/flue last cleaned,\" plus \"Carbon monoxide alarm(s)\". Old quoted phrase \"Fireplaces, stoves, fuel tanks, or radiant heat systems\" not found on the form. DRE: brokers must use Commission-approved forms. — https://dre.colorado.gov/real-estate-broker-contracts-and-forms ; https://dre.colorado.gov/sites/dre/files/documents/Seller%27s%20Property%20Disclosure%20%28Residential%29%20%28fillable%29_for%20use%20on%20or%20after%20January%201%2C%202026_0.pdf — GOV/DOC\n- Home-solicitation cancellation statute: CORRECTED — C.R.S. 5-3-401 to 5-3-405 (UCCC Part 4); 5-3-401 limits \"home solicitation sale\" to consumer credit sales; 5-3-402 gives 3rd-business-day cancel with emergency exception. Cash door-to-door sales fall to FTC Cooling-Off Rule 16 CFR 429 ($25+ at home, $130+ elsewhere). Old text implied a general Colorado 3-day right for all home-solicitation sales. — https://law.justia.com/codes/colorado/title-5/consumer-credit-code/article-3/part-4/section-5-3-401/ ; …/section-5-3-402/ (2025, REF mirror) ; https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-429 — REF mirror + GOV\n- CO-alarm law C.R.S. 38-45-101+ (load-bearing c): RESOLVED with wording fix — § 102 single-family sale trigger (fuel-fired heater/appliance, fireplace, or attached garage; alarm within 15 ft of entrance to each sleeping room; permitted alterations); § 103 multi-family; § 104 rentals on tenant change after July 1, 2009. NCSL confirms citation range 38-45-101 to -106. — https://law.justia.com/codes/colorado/title-38/real-property/article-45/section-38-45-102/ (2022 text, REF mirror) ; NCSL CO table — REF\n- CDPHE Reg. 4 cite, Denver license classes, CWRC dates, AG enforcement: STILL OPEN (not re-checked; web-search budget exhausted).\n- 2026 changes: new SPD form version effective Jan 1, 2026 (captured above). Broader 2026 CO contractor-law search not run (search budget exhausted).\n- Template-leakage sweep: \"765 ILCS 77\" appears once as a labeled Illinois comparison — acceptable."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**Colorado has NO statewide general-contractor or home-improvement license — licensing is LOCAL.** The state (DORA Division of Professions and Occupations) licenses only **electrical and plumbing** among construction trades — its occupational-programs list (checked Sep 15, 2026) has no general-contractor, home-improvement, residential-builder, roofing, masonry, or chimney program; there is no state credential for masonry, chimney, or general construction. So a chimney sweep, reliner, or mason needs **whatever the local building department requires — and that varies city to city.** The two biggest regimes: **Denver** issues its own contractor licenses through Community Planning & Development, requiring a supervisor certificate first (Class C home-construction license needs ~2 years' experience); and **Colorado Springs** licensing runs through the **Pikes Peak Regional Building Department (PPRBD)**, which licenses contractors for the city and many surrounding El Paso County jurisdictions. Elsewhere, county and municipal building departments each set their own rules (or none in unincorporated areas). \"Licensed and bonded\" in Colorado almost always means a **local** registration valid only in that jurisdiction — verify which one. Denver lookup: denvergov.org (Contractor Licensing); Colorado Springs: pprbd.org. *(LOCAL · confirm current Denver class thresholds before publish.)*"
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Wide. Where a local license exists (Denver, PPRBD), the exam tests **general building/permit knowledge and local code — not flue diagnosis or masonry competence.** Across most of the state there is **nothing to verify at all** for chimney work. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a genuine vacuum here."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV/DOC — high; chimney lines confirmed on the 2026 form)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high; chimney lines confirmed on the 2026 form",
+      "markdown": "Colorado does **not statutorily mandate a seller disclosure form**, but the **Colorado Real Estate Commission (CREC) Seller's Property Disclosure (Residential) (SPD19, version for use on or after Jan 1, 2026)** is a Commission-approved form that brokers must use where appropriate (\"Applicable law requires real estate brokers to use Commission approved contracts and forms\"), completed to the seller's **current actual knowledge**. A FSBO seller with no broker is not bound to use it. Its **Ventilation, Air & Heat** section lists **\"Fireplace\" (type: Masonry / Insert / Wood Burning / Direct Vent / Other), \"Free Standing Heating Stove\" (fuel: Wood / Pellet / Corn / Gas / Other), \"Fireplace insert,\" \"Fireplace starter,\" \"Heating Stove,\" \"Fuel tanks,\"** and asks the **\"Date fireplace/wood stove, chimney/flue last cleaned\"**; the Electrical section separately lists **\"Carbon monoxide alarm(s)\"** and smoke/fire detectors — a real, named chimney/flue touchpoint. Common-law duty to disclose known latent defects also applies (C.R.S. Title 38 area governs conveyancing generally; no single \"must disclose chimney\" statute — the duty is **form-and-common-law-driven, not a disclosure statute like Illinois' 765 ILCS 77**). No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Colorado Consumer Protection Act (C.R.S. 6-1-101 et seq.)**, enforced by the AG, prohibits deceptive trade practices (C.R.S. 6-1-105) and gives a private right of action with **actual damages, and treble damages up to $500,000 for bad-faith conduct, plus attorney's fees** — a real multiplier. **The 3-day cancel right is split, and the split matters.** Colorado's statutory home-solicitation rule — **C.R.S. §§ 5-3-401 to 5-3-405** (Uniform Consumer Credit Code) — gives a right to cancel until **midnight of the third business day** after signing (§ 5-3-402), but § 5-3-401 defines a \"home solicitation sale\" as a **consumer credit sale** — so it covers **financed** door-to-door jobs, not cash/check payment; it has an emergency-request exception requiring a separate, dated, signed statement from the buyer (§ 5-3-402). For **cash** sales, the protection is the federal **FTC Cooling-Off Rule, 16 C.F.R. Part 429** (NATIONAL RULE): a **3-business-day** cancel right for door-to-door sales of **$25 or more at the buyer's home** ($130+ elsewhere), with a written-notice requirement and a narrow buyer-initiated emergency exception. *(Whether any other Colorado statute gives cash door-to-door buyers a state-law cancel right was not located — STILL OPEN.)* Complaints: Colorado AG / Stop Fraud Colorado."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium; genuine patchwork)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; genuine patchwork",
+      "markdown": "Colorado has **no mandatory statewide building code for general construction** — each municipality/county adopts its own (commonly IRC-based; **verify current cycle per jurisdiction**), and unincorporated areas may have none. Denver enforces the **Denver Building Code**; PPRBD enforces a regional code for the Pikes Peak area. Where a code and building department exist, chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work**; routine sweeps and like-for-like caps generally are not. This state needs the local-variance disclaimer prominently."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; sale trigger)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; sale trigger",
+      "markdown": "Colorado has a **strong sale-triggered CO law. C.R.S. 38-45-102** requires the seller of any existing single-family dwelling **offered for sale or transfer on/after July 1, 2009** that has a fuel-fired appliance, a **fireplace**, or an attached garage to assure an operational CO alarm is installed **within fifteen feet of the entrance to each room lawfully used for sleeping** (also triggered by permitted interior alterations or added bedrooms). **C.R.S. 38-45-103** applies the same sale trigger to **multi-family units**, and **C.R.S. 38-45-104** covers **rental properties** (on any change of tenant occupancy after July 1, 2009, or permitted work; owner replaces missing/non-working alarms before a new tenancy, tenant maintains). Enacted by HB 09-1091 (amended HB 19-1172); tampering with an alarm is prohibited. Unlike a pure code requirement, the **sale trigger** makes a chimney/fireplace the direct hook — a fireplace alone obligates the seller."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV/DOC — high confidence; material section)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "DOC"
+      ],
+      "confidenceNote": "high confidence; material section",
+      "markdown": "Two live regimes. **(a) Front Range winter no-burn:** CDPHE issues **Action Day Alerts** for the seven-county Denver metro; residential wood burning is **mandatorily restricted Nov 1–Mar 31** on Action Days (exemptions for Phase II EPA-certified/pellet stoves, Colorado-approved masonry heaters, devices above 7,000 ft, and sole-source-of-heat with a state exemption letter) — under CDPHE air-quality authority (C.R.S. 25-7 area; **verify exact reg cite**, Regulation No. 4 governs). **(b) Wildfire/WUI:** the new **Colorado Wildfire Resiliency Code (CWRC)**, effective July 1, 2025, requires local jurisdictions in the WUI to adopt minimum wildfire-resistant standards (adoption by Apr 1, 2026; enforcement by Jul 1, 2026) — before this, WUI codes were purely local (Boulder County, Vail, Colorado Springs led). Spark-arrestor/WUI construction rules attach in mapped fire-hazard areas."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The Colorado AG's Stop Fraud Colorado program pursues home-improvement/home-repair fraud, and the door-knock \"we noticed your chimney\" pitch is a textbook home-solicitation + CCPA deceptive-practice violation. **Specific CO chimney-sweep enforcement actions: NOT YET CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold, dry, high-altitude; long heating season, harsher in the mountains. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Denver–Boulder metro and mountain-resort corridors (Aspen, Vail, Summit County) run **well above national**; plains and southern Colorado nearer national. Regionalize upward for the Front Range and resort towns."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county building depts)** · Registration: **local only** · Disclosure law: **CREC Commission-approved SPD form, broker-required (not a seller disclosure statute); named Fireplace / Heating Stove items + \"Date fireplace/wood stove, chimney/flue last cleaned\"; actual knowledge** · 3-day cancel: **PARTIAL — state law for credit sales only (C.R.S. 5-3-401 to -405); cash door-to-door sales via federal FTC Cooling-Off Rule (16 CFR 429)** · CO law: **strong — sale trigger + rentals (C.R.S. 38-45-102/103/104)** · Lookup: denvergov.org + pprbd.org + coag.gov (Stop Fraud)"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Colorado is a **no-state-license state with a real CO backbone** — the mirror-image tension the directory lives to explain. **BREAKS** the license⇄disclosure inverse-correlation verdict: the pattern predicts that a state with *no* licensing would compensate with a *strong, statutory* seller disclosure (as Illinois does). Colorado does not — it has **neither a contractor license nor a true disclosure statute**; the CREC form is contract-customary, not legislatively mandated. So both protective axes are soft, and the leverage lives instead in (1) the Consumer Protection Act's treble damages plus a 3-day cancel right (state law for financed sales, the federal FTC rule for cash sales), and (2) the unusually strong **sale-triggered CO law**, where a fireplace alone forces the seller to install alarms. The content is sharp: **there is no license to look up for your chimney in Colorado — verify the local registration, get your own inspection because the disclosure is only as good as the seller's honesty, and know that the fireplace itself triggers a CO-alarm duty at sale.** The registered-vs-qualified vacuum is as wide as any state in the set."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "NO state license (DORA licenses electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county building depts)",
+    "registration_name": "local only",
+    "disclosure_law": "CREC Commission-approved Seller's Property Disclosure (SPD19, 2026), broker-required; NOT a disclosure statute; actual knowledge",
+    "chimney_item_on_form": "Yes — Fireplace, Heating Stove, Fireplace insert + \"Date fireplace/wood stove, chimney/flue last cleaned\"",
+    "three_day_cancel": "PARTIAL — state law for credit sales only (C.R.S. 5-3-401 to -405); cash door-to-door via federal FTC Cooling-Off Rule (16 CFR 429)",
+    "co_law": "strong — sale trigger + multi-family + rentals (C.R.S. 38-45-102/103/104, HB 09-1091)",
+    "lookup_url": "denvergov.org + pprbd.org + coag.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county building depts)",
+    "registration_name": "local only",
+    "disclosure_law": "CREC Commission-approved SPD form, broker-required (not a seller disclosure statute); named Fireplace / Heating Stove items + \"Date fireplace/wood stove, chimney/flue last cleaned\"; actual knowledge",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "PARTIAL — state law for credit sales only (C.R.S. 5-3-401 to -405); cash door-to-door sales via federal FTC Cooling-Off Rule (16 CFR 429)",
+    "co_law": "strong — sale trigger + rentals (C.R.S. 38-45-102/103/104)",
+    "lookup_url": "denvergov.org + pprbd.org + coag.gov (Stop Fraud)"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated; a CO/smoke rule applies at sale",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "remedies",
+      "rule": "cancel:§4-sentence→caveat-downgrade",
+      "derivedFrom": "§4 text",
+      "evidence": "The 3-day cancel right is split, and the split matters."
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "— sale trigger + rentals (C.R.S. 38-45-102/103/104)",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Colorado: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Colorado chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "Denver, Colorado Springs/PPRBD, county building depts",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold, dry, high-altitude; long heating season, harsher in the mountains. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Colorado?",
+      "a": "State licensing: NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county building depts). Registration or credential: local only. Seller disclosure at sale: CREC Commission-approved SPD form, broker-required (not a seller disclosure statute); named Fireplace / Heating Stove items + \"Date fireplace/wood stove, chimney/flue last cleaned\"; actual knowledge. Right to cancel a sale made at your home: PARTIAL — state law for credit sales only (C.R.S. 5-3-401 to -405); cash door-to-door sales via federal FTC Cooling-Off Rule (16 CFR 429). Carbon monoxide alarm law: strong — sale trigger + rentals (C.R.S. 38-45-102/103/104). Where to check a contractor: denvergov.org + pprbd.org + coag.gov (Stop Fraud). Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Colorado?",
+      "a": "Colorado does not statutorily mandate a seller disclosure form, but the Colorado Real Estate Commission (CREC) Seller's Property Disclosure (Residential) (SPD19, version for use on or after Jan 1, 2026) is a Commission-approved form that brokers must use where appropriate (\"Applicable law requires real estate brokers to use Commission approved contracts and forms\"), completed to the seller's current actual knowledge. A FSBO seller with no broker is not bound to use it. Its Ventilation, Air & Heat section lists \"Fireplace\" (type: Masonry / Insert / Wood Burning / Direct Vent / Other), \"Free Standing Heating Stove\" (fuel: Wood / Pellet / Corn / Gas / Other), \"Fireplace insert,\" \"Fireplace starter,\" \"Heating Stove,\" \"Fuel tanks,\" and asks the \"Date fireplace/wood stove, chimney/flue last cleaned\"; the Electrical section separately lists \"Carbon monoxide alarm(s)\" and smoke/fire detectors — a real, named chimney/flue touchpoint. Common-law duty to disclose known latent defects also applies (C.R.S.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Colorado?",
+      "a": "The Colorado Consumer Protection Act (C.R.S. 6-1-101 et seq.), enforced by the AG, prohibits deceptive trade practices (C.R.S. 6-1-105) and gives a private right of action with actual damages, and treble damages up to $500,000 for bad-faith conduct, plus attorney's fees — a real multiplier. The 3-day cancel right is split, and the split matters.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "arizona",
+    "neighborName": "Arizona",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county…"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "state ROC license, masonry class R-31/C-31 (exam + bond; metal chimneys R-45), A.R.S. Title 32…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

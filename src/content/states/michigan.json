@@ -1,0 +1,313 @@
+{
+  "slug": "michigan",
+  "name": "Michigan",
+  "abbr": "MI",
+  "sourceFile": "rights-research-michigan.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) re-confirm 2015 MRC still in force at publish time; (2) statute texts for 339.2412 / 565.957 / 125.1504f verified via FindLaw/Justia copies because legislature.mi.gov was unreachable; (3) reline/sweep licensure scope labeled as interpretation.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- MRC code cycle: RESOLVED — 2015 MRC remains in effect; Court of Claims order of July 7, 2025 paused the 2021 IRC-based Part 5 residential rules and residential energy rules (set for Aug 29, 2025) — https://www.michigan.gov/lara/-/media/Project/Websites/lara/bcc-media/ASD/2021-Code-Injunction-Residential-Part-5-and-Energy-Part-10.pdf — GOV. Supported by Troy building dept \"Codes currently in effect\" (https://troymi.gov/departments/building_inspections/codes_currently_in_effect.php, GOV-local) and Ann Arbor (https://www.a2gov.org/news/posts/enforcement-of-2021-michigan-building-code-begins-may-1-2025/, GOV-local); HBA of Michigan legal page shows litigation ongoing (https://hbaofmichigan.com/legal/, REF). Could not find a 2026 final ruling (search budget exhausted late in pass) — re-check before publish.\n- CO statute layer: CORRECTED — old text pointed to \"PA 54 of 2008 hotel rule\" (unverified, removed). Dwelling statute is MCL 125.1504f, effective Mar 23, 2009: CO device required at initial construction, permitted renovation of existing single-family dwelling, or bedroom addition — https://law.justia.com/codes/michigan/chapter-125/statute-act-230-of-1972/section-125-1504f/ — REF copy of statute text (legislature.mi.gov unreachable: TLS error).\n- AG chimney-scam actions: RESOLVED (absence) — no chimney-specific MI AG action found; AG home-improvement alert and Feb 17, 2026 Hummingbird Construction judgment confirmed — https://www.michigan.gov/consumerprotection/protect-yourself/consumer-alerts/home-health/building-and-remodeling-advice-for-homeowners ; https://www.michigan.gov/ag/news/press-releases/2026/02/17/ag-nessel-secures-judgment-against-construction-company-for-consumer-protection-violation — GOV.\n- Licensing statute + $600 threshold: RESOLVED — LARA homeowner page quotes $600 labor+materials; FAQ confirms <$600 exemption and anti-splitting; M&A trade list confirmed (masonry, roofing, concrete; no chimney) — https://www.michigan.gov/lara/bureau-list/bcc/sections/licensing-section/residential-builders/lic-info/helpful-information-for-homeowners ; https://www.michigan.gov/lara/bureau-list/bcc/sections/licensing-section/residential-builders/lic-info/maintenance-alteration-contractor-license-information ; Builders-FAQ.pdf — GOV/DOC. CORRECTED minor: \"$195 application\" clarified as company application fee ($185 individual relicensure).\n- MCL 339.2412 unlicensed-can't-sue: RESOLVED — subsection (1) text quoted above — https://codes.findlaw.com/mi/chapter-339-occupational-code/mi-comp-laws-339-2412 — REF copy of statute (legislature.mi.gov TLS failure); text is unambiguous and consistent with multiple MI law-firm summaries.\n- Seller disclosure chimney item: RESOLVED — MCL 565.957 statutory form lists \"Fireplace & chimney\" and \"Wood burning system\" — https://codes.findlaw.com/mi/chapter-565-conveyances-of-real-property/mi-comp-laws-565-957/ — REF copy of statute. HB 4110 (2025) in committee, tax-estimate only — https://www.billtrack50.com/billdetail/1845249 — REF.\n- 3-day cancel (added): RESOLVED — AG alert confirms 3 days for home-solicited sales (GOV); statute MCL 445.112 per Justia index of Act 227 of 1971 (REF).\n- 2026 changes: none found affecting licensing threshold or disclosure form; code cycle unchanged pending litigation.\n- Template-leakage sweep: clean — \"PA\" appears only in the labeled comparison section."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Michigan requires a STATE LICENSE for residential repair/alteration/improvement work where the aggregate contract price (labor + materials) is **$600 or more**: either **Residential Builder** or **Maintenance & Alteration (M&A) Contractor** (Occupational Code, Article 24, MCL 339.2401 et seq.). LARA's homeowner page: \"All contractors offering to do work which totals $600 or more in labor and materials must be licensed\"; LARA's FAQ adds that contracts may not be split to stay under $600. M&A licenses list specific trades; LARA's enumerated list is \"carpentry, concrete, excavation, insulation work, masonry, siding, roofing, screens and storm sash, gutters, tile & marble, house wrecking, swimming pools, basement waterproofing\" — **chimney is not named**, but chimney rebuilds, crowns, and tuckpointing are masonry, so ≥$600 masonry chimney repairs are licensed work (our reading; relines are not clearly an enumerated trade — flag as interpretive). Requirements: 60 hours of approved prelicensure education + exam; LARA FAQ lists a $195 company application fee and $185 individual relicensure fee. Public lookup: **michigan.gov/statelicensesearch**.\n**Sweeping-only caveat:** pure chimney cleaning is not an enumerated M&A trade; a cleaning-only visit arguably falls outside licensure → the certification gap still matters. (Interpretive point — flag as our reading, not statute text.)"
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The exam covers codes/business/law — nothing chimney-specific. A licensed mason may never have scanned a flue. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCJ/CCR) remain the competence signal."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**Seller Disclosure Act, Act 92 of 1993 (MCL 565.957)**: statutory disclosure form is mandatory in most 1–4 unit sales; the statutory form's systems checklist includes **\"Fireplace & chimney\" and \"Wood burning system\"** (Yes / No / Unknown / Not Available working-order columns). Limit: sellers disclose KNOWN conditions — never-looked = nothing to disclose. No statute mandates a chimney inspection at transfer; NFPA 211's Level 2-at-transfer remains a national standard, not MI law. (Pending bill HB 4110 of 2025 would add a property-tax estimate to the form; in committee, does not touch chimney items.)"
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence on 2412 and 3-day cancel; medium on MCPA scope)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on 2412 and 3-day cancel; medium on MCPA scope",
+      "markdown": "**MCL 339.2412(1): a residential builder or M&A contractor \"shall not bring or maintain an action in a court of this state for the collection of compensation for the performance of an act or contract for which a license is required by this article without alleging and proving that the person was licensed ... during the performance of the act or contract.\"** Enormous homeowner leverage. Unlicensed contracting may be a criminal violation (the AG's consumer alert says failure to obtain a required license \"may constitute a violation of criminal law\"). LARA takes complaints against licensees. **Home Solicitation Sales Act (Act 227 of 1971, MCL 445.111–445.117; cancellation right in MCL 445.112):** sales solicited at the home carry a 3-business-day right to cancel — the AG's building-and-remodeling alert confirms \"sales solicited at your home (three days to cancel).\" Michigan Consumer Protection Act (MCL 445.901+) exists but courts have narrowed its application to licensed activities — treat MCPA as secondary; flag for legal review."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Statewide code under the **Stille-DeRossett-Hale Single State Construction Code Act (PA 230 of 1972)**, enforced by local building departments. **The 2015 Michigan Residential Code (IRC 2015-based) remains in effect.** LARA filed rules adopting the 2021 Michigan Residential Code (2021 IRC) and residential energy provisions to take effect August 29, 2025, but a **Michigan Court of Claims order dated July 7, 2025** (posted by LARA) paused both rule sets, stating the 2015 versions \"will remain valid and in effect.\" The Home Builders Association of Michigan lawsuit was still in discovery as of its latest posted update; no source found showing the 2021 MRC in force. (Commercial side is different: 2021 Michigan Building Code took effect April 2025 — do not conflate.) Relines, rebuilds, and solid-fuel appliance installs are typically permit work (building/mechanical); routine sweeps and like-for-like cap swaps typically are not — local variation is real, say so."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO & smoke law (GOV — high confidence)",
+      "researchTitle": "CO & smoke law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The statute layer is **MCL 125.1504f (the \"Overbeck law,\" added to the Construction Code Act, effective March 23, 2009)**: an operational, approved CO device is required in a single-family or multifamily dwelling **at initial construction, at a renovation of an existing single-family dwelling for which a permit is required, or when a bedroom is added** — positioned near sleeping areas and fuel-burning appliances/attached garages. The Michigan Residential Code's R315 carries the same requirement at the code level. There is **no statewide retrofit or at-sale CO requirement** for existing homes — a permitted chimney job is exactly the trigger, and the natural moment to add alarms. Rental rules vary locally."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-day regime; outdoor wood boilers regulated locally in many townships. UP wood-heat density among the highest in the country."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV — patterns; no chimney-specific action found)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "patterns; no chimney-specific action found",
+      "markdown": "Michigan AG maintains a standing **Building and Remodeling — Advice for Homeowners** consumer alert (michigan.gov/consumerprotection) covering high-pressure sales, license verification, and the 3-day home-solicitation cancel. Recent AG home-improvement enforcement under the MCPA: Hummingbird Construction Co. — consent judgment February 17, 2026 (company dissolved, owner barred 10 years from Michigan construction businesses, refunds). **No Michigan AG chimney-specific enforcement action was found** — describe patterns, not names, for chimney content."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold climate statewide; burn season Oct–Apr (longer in UP). Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "MI labor ≈ national or slightly below; Detroit metro ≈ national. Use national researched ranges until listings data."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — state license ≥$600 (RB or M&A-masonry)** · Registration: — (licensure regime) · Disclosure law: **YES, \"Fireplace & chimney\" + \"Wood burning system\" items (MCL 565.957)** · Unlicensed can't sue: **YES (MCL 339.2412)** · 3-day cancel: **YES (MCL 445.112)** · CO law: **at construction/permitted renovation only (MCL 125.1504f + MRC R315)** · Lookup: michigan.gov/statelicensesearch"
+    }
+  ],
+  "story": {
+    "heading": "The story vs. PA",
+    "markdown": "Perfect regime contrast (comparison, not Michigan law): in PA anyone can legally sweep (registration only, no license); in Michigan chimney masonry REPAIR ≥$600 requires a state license and an unlicensed contractor can't even sue for payment. Two neighboring-market pages, opposite headlines — this is why per-state pages exist."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "state license >=$600 (Residential Builder or M&A Contractor - masonry), MCL 339.2401 et seq.; unlicensed can't sue (MCL 339.2412)",
+    "registration_name": "— (licensure regime)",
+    "disclosure_law": "Yes (Seller Disclosure Act, MCL 565.957, actual knowledge)",
+    "chimney_item_on_form": "Yes (Fireplace & chimney + Wood burning system)",
+    "three_day_cancel": "Yes (MCL 445.112)",
+    "co_law": "Moderate — construction/permitted renovation only (MCL 125.1504f + MRC R315)",
+    "lookup_url": "michigan.gov/statelicensesearch",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — state license ≥$600 (RB or M&A-masonry)",
+    "registration_name": "— (licensure regime)",
+    "disclosure_law": "YES, \"Fireplace & chimney\" + \"Wood burning system\" items (MCL 565.957)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (MCL 445.112)",
+    "co_law": "at construction/permitted renovation only (MCL 125.1504f + MRC R315)",
+    "lookup_url": "michigan.gov/statelicensesearch"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "state license ≥$600 (RB or M&A-masonry)",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "The exam covers codes/business/law — nothing chimney-specific."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No statute mandates a chimney inspection at transfer; NFPA 211's Level 2-at-transfer remains a national standard, not MI law."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (MCL 445.112)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "at construction/permitted renovation only (MCL 125.1504f + MRC R315)",
+      "anchor": "co-law",
+      "rule": "co:unmatched",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "remedies",
+      "rule": "sue:§11-field",
+      "derivedFrom": "§4 text",
+      "evidence": "YES (MCL 339.2412)"
+    }
+  ],
+  "h1": "Michigan: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Michigan chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold climate statewide; burn season Oct–Apr (longer in UP). Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Michigan?",
+      "a": "State licensing: YES — state license ≥$600 (RB or M&A-masonry). Registration or credential: — (licensure regime). Seller disclosure at sale: YES, \"Fireplace & chimney\" + \"Wood burning system\" items (MCL 565.957). Right to cancel a sale made at your home: YES (MCL 445.112). Carbon monoxide alarm law: at construction/permitted renovation only (MCL 125.1504f + MRC R315). Where to check a contractor: michigan.gov/statelicensesearch. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Michigan?",
+      "a": "Seller Disclosure Act, Act 92 of 1993 (MCL 565.957): statutory disclosure form is mandatory in most 1–4 unit sales; the statutory form's systems checklist includes \"Fireplace & chimney\" and \"Wood burning system\" (Yes / No / Unknown / Not Available working-order columns). Limit: sellers disclose KNOWN conditions — never-looked = nothing to disclose. No statute mandates a chimney inspection at transfer; NFPA 211's Level 2-at-transfer remains a national standard, not MI law. (Pending bill HB 4110 of 2025 would add a property-tax estimate to the form; in committee, does not touch chimney items.)",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Michigan?",
+      "a": "MCL 339.2412(1): a residential builder or M&A contractor \"shall not bring or maintain an action in a court of this state for the collection of compensation for the performance of an act or contract for which a license is required by this article without alleging and proving that the person was licensed ... during the performance of the act or contract.\" Enormous homeowner leverage. Unlicensed contracting may be a criminal violation (the AG's consumer alert says failure to obtain a required license \"may constitute a violation of criminal law\"). LARA takes complaints against licensees. Home Solicitation Sales Act (Act 227 of 1971, MCL 445.111–445.117; cancellation right in MCL 445.112): sales solicited at the home carry a 3-business-day right to cancel — the AG's building-and-remodeling alert confirms \"sales solicited at your home (three days to cancel).\" Michigan Consumer Protection Act (MCL 445.901+) exists but courts have narrowed its application to licensed activities — treat MCPA as secondary; flag for legal review.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "indiana",
+    "neighborName": "Indiana",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "state license ≥$600 (RB or M&A-masonry)"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (plumbers only) — LOCAL (Indianapolis + some cities); statewide…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

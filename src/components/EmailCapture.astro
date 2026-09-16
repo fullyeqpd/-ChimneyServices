@@ -1,0 +1,14 @@
+---
+import { FORM_ACTION } from '../lib/site';
+interface Props { id: string; label?: string; button?: string; state?: string }
+const { id, label = 'Email address', button = 'Notify me', state } = Astro.props;
+---
+<form class="capture" method="post" action={FORM_ACTION} data-placeholder-form>
+  <label for={id}>{label}</label>
+  <div class="capture-row">
+    <input id={id} name="email" type="email" autocomplete="email" required placeholder="you@example.com" />
+    {state && <input type="hidden" name="state" value={state} />}
+    <button class="button" type="submit">{button}</button>
+  </div>
+  <p class="fineprint">One email when we launch. No list sales, no sponsors.</p>
+</form>

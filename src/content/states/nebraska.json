@@ -1,0 +1,313 @@
+{
+  "slug": "nebraska",
+  "name": "Nebraska",
+  "abbr": "NE",
+  "sourceFile": "rights-research-nebraska.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) City licensing add-ons in Omaha and Lincoln unconfirmed; say \"may add requirements.\" (2) No enforcement names.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- **Carbon Monoxide Safety Act section numbers:** CORRECTED. The Act is **§§ 76-601 to 76-607** (§ 76-601), enacted by **Laws 2015, LB 34**; the file had \"76-602 to 76-606.\" The Jan 1, 2017 sale trigger was confirmed in §§ 76-604(1) and 76-605(1). Added the new-construction trigger (§ 76-603) and the **permit-triggered interior alteration / fuel-fired appliance replacement duty** (§§ 76-604(2), 76-605(2), exterior excluded) — https://nebraskalegislature.gov/laws/statutes.php?statute=76-601 ; https://nebraskalegislature.gov/laws/statutes.php?statute=76-603 ; https://nebraskalegislature.gov/laws/statutes.php?statute=76-604 ; https://nebraskalegislature.gov/laws/statutes.php?statute=76-605 — GOV\n- **NREC SPCD chimney wording:** RESOLVED, with an item added. Form (4/2017) includes \"Is there presently damage to the chimney?\", Fireplace/Fireplace Insert, Gas log, Gas starter, Wood-burning stove year installed, \"Cleaning of fireplace, including chimney,\" \"Cleaning of wood-burning stove, including chimney,\" and \"Carbon Monoxide Alarm\" — https://nrec.nebraska.gov/sites/default/files/doc/Legal/SPCDrevised3-16(3%20years).pdf — DOC\n- **§ 76-2,120(4)(k) CO item:** RESOLVED — https://nebraskalegislature.gov/laws/statutes.php?statute=76-2,120 — GOV\n- **Contractor Registration Act range + intent + fee:** RESOLVED range (§§ 48-2101 to 48-2117) and intent language (§ 48-2102). Fee CORRECTED: $25 → **$40 annual, effective Aug 1, 2026** (NDOL); statutory cap $40 (§ 48-2107) — https://nebraskalegislature.gov/laws/statutes.php?statute=48-2101 ; https://nebraskalegislature.gov/laws/statutes.php?statute=48-2102 ; https://nebraskalegislature.gov/laws/statutes.php?statute=48-2107 ; https://dol.nebraska.gov/conreg — GOV\n- **State building code edition / local enforcement:** RESOLVED. 2018 IBC/IRC (§ 71-6403, LB 348 2019). Local adoption options, with the state code applying by default after 2 years (§ 71-6406) — https://nebraskalegislature.gov/laws/statutes.php?statute=71-6403 ; https://nebraskalegislature.gov/laws/statutes.php?statute=71-6406 — GOV\n- **Home Solicitation Sales Act:** RESOLVED. §§ 69-1601–69-1607; $25 threshold; buyer-requested maintenance excluded; 3-business-day cancel in § 69-1603 — https://nebraskalegislature.gov/laws/statutes.php?statute=69-1601 ; https://nebraskalegislature.gov/laws/statutes.php?statute=69-1603 — GOV\n- **UDTPA § 87-303 fees:** RESOLVED — https://nebraskalegislature.gov/laws/statutes.php?statute=87-303 — GOV\n- **Comparative claims removed:** \"strongest of the three\" (a leftover from the earlier batch) and \"one of few states nationally with a sale-triggered CO mandate\" were unverified — n/a\n- **Omaha/Lincoln licensing:** STILL OPEN.\n- **AG enforcement:** STILL OPEN (chimney-specific).\n- **2026 changes:** NDOL registration fee increase to $40 effective 8/1/2026. A general 2026 news search could not be run (search budget exhausted).\n- **Template-leakage sweep:** clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; a registration, explicitly NOT a competency license)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a registration, explicitly NOT a competency license",
+      "markdown": "Nebraska has **no state general-contractor or home-improvement competency license.** Instead it runs a **registration**, and the statute itself says what that registration is not. Under the **Contractor Registration Act, Neb. Rev. Stat. §§ 48-2101 to 48-2117**, contractors and subcontractors doing business in Nebraska must **register with the Nebraska Department of Labor (NDOL)** (STATE LAW).\n\nThe Act is candid: **\"It is not the intent of the Legislature to endorse the quality or performance of services provided by any individual contractor\"** (§ 48-2102). What registration actually involves:\n- **Fee:** by statute, a fee \"not to exceed forty dollars\" per application or renewal (§ 48-2107). NDOL announced the **annual fee rose to $40.00 effective August 1, 2026**, up from $25.\n- **Workers'-comp proof:** contractors with one or more employees must file a current Workers' Comp certificate (ACORD 25) naming NDOL as holder.\n\nSo chimney sweeping, repair, relining, and rebuilding require **registration but no exam, no bond, no trade test.** Public lookup: **dol.nebraska.gov/conreg/Search**. Cities may add their own requirements. *(Omaha and Lincoln contractor licensing not confirmed; see blockers.)*"
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "As explicit as it gets: the statute itself disclaims vouching for competence. Registration proves a **workers'-comp certificate and a $40 fee, not that anyone can read a flue.** There is no state exam or trade credential for chimney work at all. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit are the only real competence signal. \"Registered with the state\" here means far less than a homeowner assumes."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; the chimney is named on the form)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; the chimney is named on the form",
+      "markdown": "Nebraska has a **mandatory statutory disclosure that names the chimney.** **Neb. Rev. Stat. § 76-2,120** requires \"each seller of residential real property\" (one to four dwelling units) to give the buyer a written disclosure of the property's condition, subject to exemptions in subsection (6) such as foreclosures and certain family transfers (STATE LAW). Subsection (4) lists what the statement must cover:\n- appliances, electrical, heating and cooling, water and sewer;\n- improvements and material defects, and hazardous conditions;\n- title conditions;\n- and **(k) \"information relating to compliance with the requirements for a carbon monoxide alarm as provided in sections 76-604 and 76-605.\"**\n\nThe **Nebraska Real Estate Commission's Seller Property Condition Disclosure Statement (form dated 4/2017)** carries these hearth lines:\n- **\"Is there presently damage to the chimney?\"**\n- **\"Fireplace / Fireplace Insert\"**, **\"Gas log (fireplace)\"**, **\"Gas starter (fireplace)\"**\n- **\"Wood-burning stove ___ year installed (if known)\"**\n- **\"Cleaning of fireplace, including chimney\"** and **\"Cleaning of wood-burning stove, including chimney\"**\n- **\"Carbon Monoxide Alarm (___ number)\"**\n\nDisclosure is on the seller's actual knowledge. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. This is a real, named chimney disclosure."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Nebraska offers three instruments:\n- **(1) Consumer Protection Act (Neb. Rev. Stat. § 59-1601 et seq.).** Bars unfair or deceptive acts affecting the public interest; private right of action and AG enforcement.\n- **(2) Uniform Deceptive Trade Practices Act (§ 87-301 et seq.).** Under § 87-303 a court may grant injunctions and other equitable relief, and \"may award attorneys' fees to the prevailing party\" where the defendant \"willfully engaged in the trade practice knowing it to be deceptive.\" These remedies add to common-law and other statutory remedies.\n- **(3) Home Solicitation Sales Act (§§ 69-1601 to 69-1607).** Covers a sale, lease, or rental of consumer goods or services of **$25 or more** solicited away from the seller's place of business (§ 69-1601). The buyer may cancel \"until midnight of the third business day after the seller has given notice to the buyer\" (§ 69-1603). **Caveat:** § 69-1601 excludes maintenance visits the buyer requested. The door-knock chimney scare-sale is covered; the sweep the homeowner called is not.\n\nComplaints: the AG's Consumer Protection Division (protectthegoodlife.nebraska.gov)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on edition; enforcement local)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on edition; enforcement local",
+      "markdown": "The **Nebraska State Building Code** adopts the **2018 IBC and 2018 IRC**, with listed exclusions (**Neb. Rev. Stat. § 71-6403**, as amended by Laws 2019, LB 348). Under **§ 71-6406**, counties, cities and villages may adopt either the state code or a code that \"conforms generally\" with it. If a political subdivision does not adopt an approved code within two years of a state code update, **the state building code applies there**, except to farm construction. **Enforcement is local.** Where a building department exists (Omaha, Lincoln, Grand Island), chimney relines, rebuilds and solid-fuel appliance installs are generally permit work. Rural areas may enforce little (LOCAL). The standard local-variance disclaimer applies."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; sale-triggered AND permit-triggered)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; sale-triggered AND permit-triggered",
+      "markdown": "The **Carbon Monoxide Safety Act, Neb. Rev. Stat. §§ 76-601 to 76-607** (Laws 2015, LB 34), sets three triggers. Each one fires only if the dwelling has a **fuel-fired heater or appliance, a fireplace, or an attached garage**:\n- **New construction (§ 76-603):** single-family and multifamily dwellings built on or after **Jan 1, 2017** need a CO alarm on each habitable floor, or where the adopted building code specifies.\n- **Sale or transfer (§ 76-604(1), § 76-605(1)):** the **seller** of a single-family dwelling, or of a unit in an existing multifamily dwelling, offered for sale or transfer on or after **Jan 1, 2017**, must ensure an operational CO alarm is on each habitable floor.\n- **Permitted interior work (§ 76-604(2), § 76-605(2)):** if the owner makes any **interior alteration, repair, fuel-fired appliance replacement, or addition** that requires a permit on or after Jan 1, 2017, the owner must ensure an operational CO alarm is installed. This does **not** apply to exterior alterations.\n\nThe permit trigger is directly chimney-relevant: a **permitted indoor stove or insert replacement or hearth repair triggers the CO-alarm duty.** Section 76-605(3) separately bars disabling a CO alarm except for maintenance. The sale trigger is cross-referenced on the disclosure statement at § 76-2,120(4)(k)."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or wood-stove emission regime. Wood and pellet heat is common in a cold plains climate, but there is no NE-specific stove rule. Not a material content section."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The AG's Consumer Protection Division pursues home-solicitation and deceptive-trade abuses under ch. 59, ch. 87, and the Home Solicitation Sales Act, all of which reach the door-knock \"we noticed your chimney\" pitch. **No NE chimney-sweep-specific enforcement action has been confirmed.** Use patterns, not names."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold continental climate with a long heating season, harsher in the west and panhandle. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: MAY–JUL."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The Omaha and Lincoln metros anchor labor cost, and travel surcharges in rural areas and the panhandle are real. Regionalize modestly around the two metros; expect trip fees elsewhere."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state competency license — state REGISTRATION only (Contractor Registration Act §§ 48-2101–48-2117, NDOL, workers'-comp tied, $40/yr from Aug 1 2026)** · Registration: **NDOL contractor registration (statute disclaims endorsing quality); city add-ons unconfirmed** · Disclosure law: **YES — § 76-2,120; NREC form asks \"Is there presently damage to the chimney?\" + fireplace/insert/wood-stove lines + \"Cleaning of fireplace/wood-burning stove, including chimney\" + CO alarm (4)(k)** · 3-day cancel: **YES (Home Solicitation Sales Act §§ 69-1601–69-1607; § 69-1603)** · CO law: **YES — Carbon Monoxide Safety Act §§ 76-601–76-607 (LB 34, 2015): new construction, sale/transfer, and permitted interior alteration/appliance replacement since Jan 1 2017; fireplace, fuel appliance or attached garage trigger** · Lookup: dol.nebraska.gov/conreg/Search"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Nebraska **CONFIRMS the master correlation** and is its cleanest example. It has **no competency license**, only a workers'-comp-tied registration whose own statute refuses to endorse contractor quality. Instead, it stacks protection onto the *house*:\n- **The seller form asks point-blank whether the chimney is damaged**, and lists fireplace and wood-stove cleaning \"including chimney.\"\n- **The CO law fires at sale.**\n- **The CO law also fires at any permitted indoor appliance replacement or repair.**\n\nThe oddball worth the page: because every CO trigger includes \"has a fireplace,\" a hearth home in Nebraska can't be sold, or get a permitted stove swap, without an operational CO alarm on each habitable floor."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "No competency license; statewide registration only (Contractor Registration Act, Neb. Rev. Stat. 48-2101 to 48-2117; statute disclaims endorsing quality)",
+    "registration_name": "NDOL Contractor Registration ($40/yr from Aug 1 2026; workers comp certificate)",
+    "disclosure_law": "Yes - mandatory, Neb. Rev. Stat. 76-2,120 (incl. CO alarm item (4)(k))",
+    "chimney_item_on_form": "Yes - NREC form: 'Is there presently damage to the chimney?', fireplace/insert, wood-burning stove, 'Cleaning of fireplace/wood-burning stove, including chimney'",
+    "three_day_cancel": "Yes - Home Solicitation Sales Act, Neb. Rev. Stat. 69-1603",
+    "co_law": "Yes - Carbon Monoxide Safety Act 76-601 to 76-607 (LB 34, 2015): new construction, sale/transfer, and permitted interior alteration/appliance replacement since Jan 1 2017; fireplace/fuel appliance/attached garage trigger",
+    "lookup_url": "https://dol.nebraska.gov/conreg/Search",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state competency license — state REGISTRATION only (Contractor Registration Act §§ 48-2101–48-2117, NDOL, workers'-comp tied, $40/yr from Aug 1 2026)",
+    "registration_name": "NDOL contractor registration (statute disclaims endorsing quality); city add-ons unconfirmed",
+    "disclosure_law": "YES — § 76-2,120; NREC form asks \"Is there presently damage to the chimney?\" + fireplace/insert/wood-stove lines + \"Cleaning of fireplace/wood-burning stove, including chimney\" + CO alarm (4)(k)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (Home Solicitation Sales Act §§ 69-1601–69-1607; § 69-1603)",
+    "co_law": "YES — Carbon Monoxide Safety Act §§ 76-601–76-607 (LB 34, 2015): new construction, sale/transfer, and permitted interior alteration/appliance replacement since Jan 1 2017; fireplace, fuel appliance or attached garage trigger",
+    "lookup_url": "dol.nebraska.gov/conreg/Search"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "REGISTRATION ONLY",
+      "note": "NO state competency license — state REGISTRATION only (Contractor Registration Act §§…",
+      "anchor": "license",
+      "rule": "license:NO+registration",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "Registration without a competency exam",
+      "anchor": "qualified-gap",
+      "rule": "exam:registration-no-exam",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Home Solicitation Sales Act §§ 69-1601–69-1607; § 69-1603)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "Carbon Monoxide Safety Act §§ 76-601–76-607 (LB 34, 2015): new construction, sale/transfer…",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Nebraska: contractors register, but no state license tests them. Here's what that means.",
+  "metaDescription": "Nebraska chimney & fireplace laws: registration rules, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      5,
+      6,
+      7
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold continental climate with a long heating season, harsher in the west and panhandle. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: MAY–JUL."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Nebraska?",
+      "a": "State licensing: NO state competency license — state REGISTRATION only (Contractor Registration Act §§ 48-2101–48-2117, NDOL, workers'-comp tied, $40/yr from Aug 1 2026). Registration or credential: NDOL contractor registration (statute disclaims endorsing quality); city add-ons unconfirmed. Seller disclosure at sale: YES — § 76-2,120; NREC form asks \"Is there presently damage to the chimney?\" + fireplace/insert/wood-stove lines + \"Cleaning of fireplace/wood-burning stove, including chimney\" + CO alarm (4)(k). Right to cancel a sale made at your home: YES (Home Solicitation Sales Act §§ 69-1601–69-1607; § 69-1603). Carbon monoxide alarm law: YES — Carbon Monoxide Safety Act §§ 76-601–76-607 (LB 34, 2015): new construction, sale/transfer, and permitted interior alteration/appliance replacement since Jan 1 2017; fireplace, fuel appliance or attached garage trigger. Where to check a contractor: dol.nebraska.gov/conreg/Search. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Nebraska?",
+      "a": "Nebraska has a mandatory statutory disclosure that names the chimney. Neb. Rev. Stat.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Nebraska?",
+      "a": "Nebraska offers three instruments: - (1) Consumer Protection Act (Neb. Rev. Stat. § 59-1601 et seq.).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "colorado",
+    "neighborName": "Colorado",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO state competency license — state REGISTRATION only (Contractor Registration Act §§…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing only) — LOCAL (Denver, Colorado Springs/PPRBD, county…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

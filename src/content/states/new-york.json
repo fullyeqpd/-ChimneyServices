@@ -1,0 +1,313 @@
+{
+  "slug": "new-york",
+  "name": "New York",
+  "abbr": "NY",
+  "sourceFile": "rights-research-new-york.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "local licensing list dated 2023; 2005 lawsuit presented as allegations only",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- No state HIC license / local list: RESOLVED — DOS: \"NYS does not license home improvement contractors, however, some counties and local municipalities do\" (NYC, Buffalo, Suffolk, Nassau, Westchester, Putnam, Rockland) — https://dos.ny.gov/news/consumer-alert-new-york-department-states-division-consumer-protection-releases-guide-tips-0 — GOV (dated 2023)\n- 2024 PCDA amendment: CORRECTED — chapter was \"Ch. 306 of 2023\"; correct is Chapter 484 of 2023 (S5400/A1967, signed 9/22/2023, eff. 180 days → Mar 20, 2024); $500 credit deleted; § 465 now \"Liability\" (actual damages for willful failure) — https://www.nysenate.gov/legislation/bills/2023/S5400 ; https://www.nysenate.gov/legislation/laws/RPP/465 — GOV\n- Chimney item on form: CORRECTED — was item 42 / heating item 46; current § 462 form has \"CHIMNEY/FIREPLACE OR STOVE?\" as item 50 and \"HEATING SYSTEM?\" as item 54. \"DOS-1614-f required July 2025\" claim removed (not verified) — https://www.nysenate.gov/legislation/laws/RPP/462 — GOV\n- RCNYS cycle: RESOLVED/CORRECTED — 2025 RCNYS (derivative of 2024 IRC) effective Dec 31, 2025 — https://dos.ny.gov/system/files/documents/2026/02/2025-uniform-code-adoption.pdf ; https://dos.ny.gov/system/files/documents/2025/07/2025rcnys_noa_2025-07-24_compressed.pdf — GOV/DOC\n- 3-day cancel: RESOLVED — GBL § 771, midnight of third business day — https://www.nysenate.gov/legislation/laws/GBS/771 — GOV\n- CO law: RESOLVED — Exec. Law § 378(5-a) as amended by Ch. 367 of 2009, applies without regard to date of construction or sale; \"eff. Feb 22, 2010\" softened to \"in effect 2010\" (exact date not confirmed on primary) — https://www.health.ny.gov/environmental/emergency/weather/docs/co_amandas_law.pdf — GOV\n- Enforcement: RESOLVED (historical) — NY AG Dec 12, 2005 lawsuit vs. chimney-sweep operators — https://ag.ny.gov/press-release/2005/lawsuit-filed-against-chimney-sweeps-targeting-seniors — GOV\n- GBL § 349 $1,000 treble cap: not re-fetched this pass (unchanged).\n- Template-leakage sweep: clean (NJ referenced only as labeled comparison)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**No state license covers chimney work — or any home improvement work — in New York.** The **NY Department of State states: \"NYS does not license home improvement contractors, however, some counties and local municipalities do\"** (DOS consumer alert, Apr 18, 2023), naming **New York City, Buffalo, and Suffolk, Nassau, Westchester, Putnam, and Rockland counties**. Oversight is a **municipal/county patchwork**: **NYC** (Dept. of Consumer & Worker Protection — HIC license; the written-exam detail is not re-verified), the five counties, and **Buffalo** each run their own HIC licensing; many towns and villages add their own registration. Where a locality requires a license, **an unlicensed contractor generally cannot enforce the contract or sue to recover payment** — real homeowner leverage, but only inside those borders. Elsewhere (much of upstate), **there may be nothing to check.** \"Licensed\" in NY marketing means \"licensed in the city/county where they work,\" not statewide."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Widest of the Northeast. Even NYC's exam is a general home-improvement/business test — **nothing chimney-specific** — and outside the licensed counties there is no credential at all. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a genuine vacuum, especially upstate."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; loophole just closed)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; loophole just closed",
+      "markdown": "**The Property Condition Disclosure Act (Real Property Law Art. 14, §§ 460–467; form at § 462) became genuinely mandatory only on March 20, 2024.** From 2002 until then, sellers could hand buyers a **$500 credit and skip the form entirely** — and nearly all did. **Chapter 484 of the Laws of 2023 (S5400/A1967, signed Sept 22, 2023, effective 180 days later)** **deleted the $500 credit** (§ 465 retitled \"Remedy\" → \"Liability\"; a seller is now liable for actual damages for a willful failure), repealed § 467, and added flood questions. The statutory form in § 462 (text last revised July 2025 on the Senate site) asks known-condition Yes/No/Unkn/NA items including **\"Chimney/fireplace or stove?\" (item 50)** and **\"Heating system?\" (item 54)** — actual-knowledge standard, no inspection required to answer. **No inspection is mandated at transfer**; NFPA 211 Level 2-at-sale stays a NATIONAL STANDARD, not NY law."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**General Business Law § 349 (deceptive acts)** and **§ 350 (false advertising)** give a private right of action, but the treble is **weak and discretionary — capped at $1,000** plus discretionary attorney's fees (contrast NJ's mandatory treble). Home improvement contracts are separately governed by **GBL Article 36-A (§§ 770–776)**: written contract required, with a **3-business-day right to cancel** (owner may cancel until midnight of the third business day after signing, GBL § 771; emergency-waiver exception in the owner's handwriting). The AG (ag.ny.gov) and local consumer-affairs offices take complaints; NYC DCWP is unusually active. Hiring outside the licensing regime can forfeit contract-enforcement leverage."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium-high; two-cycle + NYC carve-out)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; two-cycle + NYC carve-out",
+      "markdown": "Statewide **Uniform Fire Prevention & Building Code**; the **2025 Residential Code of New York State (a derivative of the 2024 IRC) took effect December 31, 2025** as part of the 2025 Uniform Code — permit applications from that date must comply (the 2020 RCNYS/2018 IRC is superseded). Chapter 10 governs masonry and factory-built chimneys and fireplaces. **NYC is exempt and runs its own NYC Construction Codes** (solid-fuel appliances tightly restricted under Title 27). Relines, rebuilds, and appliance installs are generally permit work through the local building department; sweeps and like-for-like caps generally are not. Local variation is real — say so."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**Amanda's Law (Executive Law § 378(5-a), as amended by Chapter 367 of the Laws of 2009; in effect 2010)** requires operable CO alarms in **one- and two-family dwellings, townhouses, condominium/cooperative units, and multiple dwellings \"without regard to the date of construction or sale\"** — wherever there is a fuel-burning appliance or attached garage. Broad coverage, but enforced as a standing requirement rather than a NJ-style pre-sale certificate. A permitted chimney job is still the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban regime; NYC restricts new solid-fuel installations under its own code. Upstate wood-heat density is high. Not a major content section outside NYC's install limits."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV — one historical action confirmed)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "one historical action confirmed",
+      "markdown": "NY AG and NYC DCWP both have active home-improvement-fraud enforcement histories, and the phone/door \"cheap cleaning, then scary repair\" pitch is the textbook GBL Art. 36-A / § 349 scenario. **Confirmed public action (allegations, 2005):** on Dec 12, 2005 the NY AG sued Flue Season, Inc. and All American Service Maintenance, Inc. (and previously operated entities including Chimney Care Corp. and Big Apple Chimney Sweeps, Inc.), alleging operators targeted elderly residents with low-ball cleaning offers, then used scare tactics about chimney fires/back-drafts to sell $1,200–$3,000 repairs and denied the legally required cooling-off period (Do Not Call Law; Home Improvement Contracts Law). The release describes a lawsuit — **present it as alleged, and do not state an outcome** (not verified). Frame it as a pattern with a 20-year history, not a current accusation."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold statewide; longer/lake-effect upstate. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN. NYC market milder and year-rounder."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "NYC metro + Westchester/Long Island run **well above national**; upstate near or below national. Regionalize sharply within the state."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license — LOCAL patchwork (NYC/Nassau/Suffolk/Westchester/Putnam/Rockland/Buffalo)** · Registration: **local only** · Disclosure law: **YES — mandatory since Mar 20, 2024 (Ch. 484 of 2023), \"Chimney/fireplace or stove?\" item 50 (RPL § 462)** · 3-day cancel: **YES (GBL § 771)** · CO law: **broad (Amanda's Law, Exec. Law § 378(5-a))** · Lookup: local consumer-affairs registries (NYC DCWP, county offices) + ag.ny.gov complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "New York is the **patchwork state**: no statewide license, so protection depends entirely on which city or county you're in — NYC and the big suburban counties license and test; much of upstate licenses nothing. **The gap between \"licensed in NYC\" and \"licensed in New York\" is the whole page.** The second beat is the 2024 disclosure fix: for two decades sellers paid $500 to reveal nothing about the chimney; that door just closed. But NY's consumer-fraud damages ($1,000-capped, discretionary) are far weaker than neighboring NJ — protection here lives in *local licensing* and *contract-enforcement forfeiture*, not in the damages statute."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "no state license — local patchwork (NYC/Buffalo/Nassau/Suffolk/Westchester/Putnam/Rockland)",
+    "registration_name": "local HIC licenses only",
+    "disclosure_law": "Yes (mandatory since Mar 20, 2024, Ch. 484 of 2023; RPL 462)",
+    "chimney_item_on_form": "Yes (chimney/fireplace or stove item 50)",
+    "three_day_cancel": "Yes (GBL 771)",
+    "co_law": "Broad (Amanda's Law, Exec. Law 378(5-a), all dwellings regardless of age)",
+    "lookup_url": "local registries + ag.ny.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license — LOCAL patchwork (NYC/Nassau/Suffolk/Westchester/Putnam/Rockland/Buffalo)",
+    "registration_name": "local only",
+    "disclosure_law": "YES — mandatory since Mar 20, 2024 (Ch. 484 of 2023), \"Chimney/fireplace or stove?\" item 50 (RPL § 462)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (GBL § 771)",
+    "co_law": "broad (Amanda's Law, Exec. Law § 378(5-a))",
+    "lookup_url": "local consumer-affairs registries (NYC DCWP, county offices) + ag.ny.gov complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license — LOCAL patchwork (NYC/Nassau/Suffolk/Westchester/Putnam/Rockland/Buffalo)",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "The statutory form in § 462 (text last revised July 2025 on the Senate site) asks known-condition Yes/No/Unkn/NA items including \"Chimney/fireplace or stove?\" (item 50) and \"Heating system?\" (item 54) — actual-knowledge standard, no…"
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (GBL § 771)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "(Amanda's Law, Exec. Law § 378(5-a))",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "New York: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "New York chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "NYC/Nassau/Suffolk/Westchester/Putnam/Rockland/Buffalo",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold statewide; longer/lake-effect upstate. Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN. NYC market milder and year-rounder."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in New York?",
+      "a": "State licensing: NO state license — LOCAL patchwork (NYC/Nassau/Suffolk/Westchester/Putnam/Rockland/Buffalo). Registration or credential: local only. Seller disclosure at sale: YES — mandatory since Mar 20, 2024 (Ch. 484 of 2023), \"Chimney/fireplace or stove?\" item 50 (RPL § 462). Right to cancel a sale made at your home: YES (GBL § 771). Carbon monoxide alarm law: broad (Amanda's Law, Exec. Law § 378(5-a)). Where to check a contractor: local consumer-affairs registries (NYC DCWP, county offices) + ag.ny.gov complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in New York?",
+      "a": "The Property Condition Disclosure Act (Real Property Law Art. 14, §§ 460–467; form at § 462) became genuinely mandatory only on March 20, 2024. From 2002 until then, sellers could hand buyers a $500 credit and skip the form entirely — and nearly all did. Chapter 484 of the Laws of 2023 (S5400/A1967, signed Sept 22, 2023, effective 180 days later) deleted the $500 credit (§ 465 retitled \"Remedy\" → \"Liability\"; a seller is now liable for actual damages for a willful failure), repealed § 467, and added flood questions.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in New York?",
+      "a": "General Business Law § 349 (deceptive acts) and § 350 (false advertising) give a private right of action, but the treble is weak and discretionary — capped at $1,000 plus discretionary attorney's fees (contrast NJ's mandatory treble). Home improvement contracts are separately governed by GBL Article 36-A (§§ 770–776): written contract required, with a 3-business-day right to cancel (owner may cancel until midnight of the third business day after signing, GBL § 771; emergency-waiver exception in the owner's handwriting). The AG (ag.ny.gov) and local consumer-affairs offices take complaints; NYC DCWP is unusually active. Hiring outside the licensing regime can forfeit contract-enforcement leverage.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "connecticut",
+    "neighborName": "Connecticut",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license — LOCAL patchwork (NYC/Nassau/Suffolk/Westchester/Putnam/Rockland/Buffalo)"
+    },
+    "b": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO license — mandatory HIC REGISTRATION (Home Improvement Act, § 20-418)"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

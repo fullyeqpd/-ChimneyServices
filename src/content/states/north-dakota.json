@@ -1,0 +1,313 @@
+{
+  "slug": "north-dakota",
+  "name": "North Dakota",
+  "abbr": "ND",
+  "sourceFile": "rights-research-north-dakota.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "REALTORS form chimney line unverified — keep \"not a named line\" framed as unconfirmed; no named AG enforcement action; CO rule cited via LII mirror",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Ch. 43-07 exam vs bond-only: CORRECTED — neither. § 43-07-04 requires a sworn statement of experience and qualifications, a certificate of liability insurance, and a WSI coverage statement; \"examination\" appears nowhere in the chapter; § 43-07-11 (contractor's bond) repealed by S.L. 1995, ch. 397, § 9; no financial statement required by § 43-07-04. Old text claimed a financial statement + $2,000–$10,000 surety bond. — https://ndlegis.gov/cencode/t43c07.pdf ; https://www.sos.nd.gov/business/licensing-registration/contractors — GOV\n- Bond subsections 43-07-11/-12: CORRECTED — § 43-07-11 is repealed; § 43-07-12 is \"Bids to show license,\" not a bond section. — https://ndlegis.gov/cencode/t43c07.pdf — GOV\n- License threshold/classes (load-bearing a): CORRECTED — trigger is a job that \"exceeds\" $4,000 (old: \"$4,000 or more\"); Class D cap is $100,000 (old: $200,000); C $300,000, B $500,000, A unlimited (§ 43-07-07); unlicensed work = class A misdemeanor (§ 43-07-02); renewal before March 2 per § 43-07-10, SOS says on or before March 1. — https://ndlegis.gov/cencode/t43c07.pdf ; SOS contractors page — GOV\n- Seller disclosure § 47-10-02.1 (load-bearing b): RESOLVED in part — statute applies when a broker/broker associate/salesperson represents or assists a party, 1–4-unit residential, disclosure before the parties sign final acceptance; lists latent defects, general condition, environmental, structural and mechanical categories; no chimney/fireplace item named in the statute. REALTORS form line wording STILL OPEN. — https://ndlegis.gov/cencode/t47c10.pdf — GOV\n- Ch. 51-15 remedies: RESOLVED — § 51-15-09: up to 3x actual damages if knowing, mandatory costs + reasonable attorney's fees; § 51-15-11: civil penalty up to $5,000 per violation (also for ch. 51-18). — https://ndlegis.gov/cencode/t51c15.pdf — GOV\n- Ch. 51-18 cancel right: RESOLVED — § 51-18-02(1): 3rd business day; buyers 65+ on purchases over $50: 15th business day. — https://ndlegis.gov/cencode/t51c18.pdf — GOV\n- CO law (load-bearing c): RESOLVED — N.D.A.C. 24.1-06-01-40 requires CO alarms in dwelling units with fuel-fired appliances or attached garages (outside sleeping areas, every habitable level, interconnected); no point-of-sale requirement. No standalone Century Code CO statute located. — https://www.law.cornell.edu/regulations/north-dakota/N-D-A-C-24.1-06-01-40 — REF mirror of admin code (not re-read on ndlegis.gov)\n- 2026 changes / code adoption: CORRECTED — 2024 IBC/IRC/IMC/IFGC (+2024 IECC/IEBC) adopted Sept 11, 2025; new ND State Building Code effective Jan 1, 2026 (old: 2021 IRC eff. Jan 1, 2023). No 2025 session change to ch. 43-07 found (SB 2395 created a separate universal-licensure chapter). — https://www.commerce.nd.gov/community-services/building-codes ; https://ndlegis.gov/assembly/69-2025/regular/bill-overview/bo2395.html — GOV\n- ND AG chimney enforcement: STILL OPEN — attorneygeneral.nd.gov \"unlicensed contractors banned\" news URL returned 404; only REF trade-press coverage of a 2020 roofer ban. — REF\n- Template-leakage sweep: clean — no other-state statute strings found."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; a real state credential, but a money-gate not a skill-gate)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real state credential, but a money-gate not a skill-gate",
+      "markdown": "North Dakota is the rare cold-belt state with a **statewide contractor license** — but it is a **registration keyed to project dollars, not a trade-competency exam.** Under **N.D.C.C. § 43-07-02**, a person may not act as a contractor \"when the cost, value, or price per job **exceeds** the sum of four thousand dollars\" without a **contractor's license issued by the Secretary of State** (STATE LAW); unlicensed contracting is a **class A misdemeanor** (§ 43-07-02). The license comes in **four classes by maximum single-project value (§ 43-07-07): Class D (up to $100,000), Class C (up to $300,000), Class B (up to $500,000), Class A (no limit)** — chimney rebuild, reline, or a solid-fuel appliance install over $4,000 falls squarely inside this. To get it, an applicant files (§ 43-07-04) **an application under oath with a statement of experience and qualifications, a certificate of liability insurance, and a Workforce Safety & Insurance coverage statement.** **There is no surety bond** — the former contractor's-bond section, § 43-07-11, was repealed by S.L. 1995, ch. 397, § 9 — and **no examination**: the word does not appear anywhere in ch. 43-07, and the Secretary of State's contractor page lists no exam or bond. Application fees run $100 (Class D) to $450 (Class A). Renewed annually on or before March 1 (§ 43-07-10). Public lookup: **firststop.sos.nd.gov/search/contractor**. A **routine chimney sweep of $4,000 or less needs no state license at all** — sweeping and small repair fall below the money-gate; only larger repair/rebuild work triggers it."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Wide, and unusually explicit here. The ND license attests **that you carry liability insurance and workers'-comp coverage and filed a sworn experience statement — not that you can diagnose a flue.** Chapter 43-07 contains **no competency exam and no bond requirement** (verified on the ndlegis statute text, Sep 2026). The license is a dollar-class credential, so individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the only real competence signal, and any job of $4,000 or less is entirely uncredentialed."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — medium-high; broker-triggered, chimney not a named line)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; broker-triggered, chimney not a named line",
+      "markdown": "North Dakota's seller disclosure lives in **N.D.C.C. § 47-10-02.1** but is **narrower than most: the mandatory-form duty is triggered when a real estate broker/salesperson represents or assists a party** to the sale of a 1–4-unit residential dwelling — a true **FSBO with no agent can fall outside the form requirement** (STATE LAW). The seller must disclose known material defects across structural, mechanical, heating, and environmental systems on an **actual-knowledge, good-faith** basis; **fireplace/heating condition is captured in the mechanical/heating items, but \"chimney\" is not called out as its own named line** on the standard ND Realtors form (confirm the exact wording before publish). Disclosure is also **before final acceptance and \"except as otherwise provided in the offer to purchase\"** — so it can be modified by agreement. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Two instruments. **(1) The Unlawful Sales or Advertising Practices Act — N.D.C.C. ch. 51-15** — bars any \"deceptive act or practice, fraud, false pretense, false promise, or misrepresentation\" in a sale; enforced by the **Attorney General's Consumer Protection Division**, with a private right of action under **§ 51-15-09**: if the defendant acted knowingly, the court may award **up to three times actual damages** and **must** award costs and actual reasonable attorney's fees; the AG may also seek a civil penalty of **up to $5,000 per violation** (§ 51-15-11, which also covers ch. 51-18 violations). **(2) Home-solicitation sales — N.D.C.C. ch. 51-18** — give a **3-business-day right to cancel** a door-to-door sale, and notably **15 business days for buyers 65 or older** on purchases over $50, the exact fact pattern of a chimney door-knock scare-sale. Complaints: attorneygeneral.nd.gov."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high on code, medium on local reach)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on code, medium on local reach",
+      "markdown": "The **North Dakota State Building Code was updated to the 2024 IBC, IRC, IMC and IFGC (plus 2024 IECC and IEBC), adopted Sept. 11, 2025 and effective Jan 1, 2026** (NATIONAL STANDARD via state adoption; replaces the 2023 code based on the 2021 I-codes). Local adoption is optional, but a jurisdiction that elects to enforce a building code must adopt the State Building Code (it may amend it). **IRC Chapter 10 governs chimneys and fireplaces.** Chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally permit work where a building department exists. The catch is reach: **many rural ND counties have no local code enforcement, so a permit may simply not exist there** — municipalities enforce and may amend the state code locally (LOCAL). Fargo, Bismarck, and Grand Forks run active building departments; unincorporated areas often do not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium-high; code-based, not a standalone statute)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; code-based, not a standalone statute",
+      "markdown": "North Dakota's CO-alarm requirement is **code-based, not a freestanding statute** — it flows from the **adopted IRC (2024 edition from Jan 1, 2026) and the State Fire Marshal rule N.D.A.C. 24.1-06-01-40**, which requires CO alarms in dwelling units with **fuel-fired appliances or an attached garage** — outside each sleeping area, on every habitable level, and in any bedroom containing a fuel-fired appliance, interconnected where more than one is required (STATE RULE + NATIONAL STANDARD via code adoption). There is **no statewide mandatory pre-sale CO certificate.** A permitted chimney or stove job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or wood-stove emission regime. Very high wood/pellet heat in a severe-cold plains climate, but no ND-specific stove rule — not a material content section."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The AG's Consumer Protection Division pursues home-repair and door-to-door abuses, and the ch. 51-18 elder 15-day window signals ND's specific concern with senior-targeted door-knock sales — the textbook \"we noticed your chimney\" pitch. **Specific ND chimney-sweep enforcement actions: NOT CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Severe cold, long heating season statewide (among the coldest in the launch/expansion set). Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: MAY–JUL."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Thin, spread-out market; Fargo and Bismarck metros anchor labor cost, rural travel surcharges are real. Regionalize modestly around the two metros; expect trip fees outside them."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — state contractor license by dollar class (N.D.C.C. ch. 43-07), required when a job exceeds $4,000; jobs of $4,000 or less unlicensed; no exam, no bond** · Registration: **SoS contractor license (liability insurance + WSI coverage + sworn experience statement; Classes A–D)** · Disclosure law: **YES but broker-triggered (§ 47-10-02.1), fireplace within mechanical/heating, \"chimney\" not a named line** · 3-day cancel: **YES (ch. 51-18; 15 days for 65+)** · CO law: **code/rule-based (2024 IRC eff. Jan 1, 2026 / N.D.A.C. 24.1-06-01-40); no pre-sale certificate** · Lookup: firststop.sos.nd.gov/search/contractor"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "North Dakota is a **cold-belt outlier that partly BREAKS the master correlation.** It has a genuine statewide contractor license — but the \"license\" is a **dollar-threshold insurance-and-paperwork credential — no exam, no bond**, and on the *other* axis its seller disclosure is comparatively **weak: broker-triggered, opt-outable in the offer, and without a named \"chimney\" line.** So ND lands as a state with a real (if shallow) credential AND a soft disclosure — the same \"strong-license / weak-disclosure\" pairing the correlation predicts, which is why I read it as CONFIRMING rather than breaking. The oddity worth the page: the $4,000 gate means **a chimney sweep or small repair is completely unlicensed here, while a rebuild is licensed** — the licensing line runs straight through the trade."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — state contractor license by dollar class (N.D.C.C. ch. 43-07), required when a job exceeds $4,000; no exam, no bond",
+    "registration_name": "SoS contractor license Classes A-D (liability insurance + WSI coverage + sworn experience statement)",
+    "disclosure_law": "YES but broker-triggered (N.D.C.C. 47-10-02.1); statute names no chimney item",
+    "chimney_item_on_form": "UNVERIFIED — statute names none; REALTORS form not checked",
+    "three_day_cancel": "YES (N.D.C.C. 51-18-02; 15 business days for 65+ over $50)",
+    "co_law": "rule/code-based (N.D.A.C. 24.1-06-01-40; 2024 IRC eff. Jan 1 2026); no pre-sale certificate",
+    "lookup_url": "firststop.sos.nd.gov/search/contractor",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — state contractor license by dollar class (N.D.C.C. ch. 43-07), required when a job exceeds $4,000; jobs of $4,000 or less unlicensed; no exam, no bond",
+    "registration_name": "SoS contractor license (liability insurance + WSI coverage + sworn experience statement; Classes A–D)",
+    "disclosure_law": "YES but broker-triggered (§ 47-10-02.1), fireplace within mechanical/heating, \"chimney\" not a named line",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (ch. 51-18; 15 days for 65+)",
+    "co_law": "code/rule-based (2024 IRC eff. Jan 1, 2026 / N.D.A.C. 24.1-06-01-40); no pre-sale certificate",
+    "lookup_url": "firststop.sos.nd.gov/search/contractor"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "state contractor license by dollar class (N.D.C.C. ch. 43-07), required when a job exceeds…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "The ND license attests that you carry liability insurance and workers'-comp coverage and filed a sworn experience statement — not that you can diagnose a flue."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (ch. 51-18; 15 days for 65+)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:limited→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "North Dakota: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "North Dakota chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      5,
+      6,
+      7
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Severe cold, long heating season statewide (among the coldest in the launch/expansion set). Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: MAY–JUL."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in North Dakota?",
+      "a": "State licensing: YES — state contractor license by dollar class (N.D.C.C. ch. 43-07), required when a job exceeds $4,000; jobs of $4,000 or less unlicensed; no exam, no bond. Registration or credential: SoS contractor license (liability insurance + WSI coverage + sworn experience statement; Classes A–D). Seller disclosure at sale: YES but broker-triggered (§ 47-10-02.1), fireplace within mechanical/heating, \"chimney\" not a named line. Right to cancel a sale made at your home: YES (ch. 51-18; 15 days for 65+). Carbon monoxide alarm law: code/rule-based (2024 IRC eff. Jan 1, 2026 / N.D.A.C. 24.1-06-01-40); no pre-sale certificate. Where to check a contractor: firststop.sos.nd.gov/search/contractor. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in North Dakota?",
+      "a": "North Dakota's seller disclosure lives in N.D.C.C. § 47-10-02.1 but is narrower than most: the mandatory-form duty is triggered when a real estate broker/salesperson represents or assists a party to the sale of a 1–4-unit residential dwelling — a true FSBO with no agent can fall outside the form requirement (STATE LAW). The seller must disclose known material defects across structural, mechanical, heating, and environmental systems on an actual-knowledge, good-faith basis; fireplace/heating condition is captured in the mechanical/heating items, but \"chimney\" is not called out as its own named line on the standard ND Realtors form (confirm the exact wording before publish). Disclosure is also before final acceptance and \"except as otherwise provided in the offer to purchase\" — so it can be modified by agreement.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in North Dakota?",
+      "a": "Two instruments. (1) The Unlawful Sales or Advertising Practices Act — N.D.C.C. ch. 51-15 — bars any \"deceptive act or practice, fraud, false pretense, false promise, or misrepresentation\" in a sale; enforced by the Attorney General's Consumer Protection Division, with a private right of action under § 51-15-09: if the defendant acted knowingly, the court may award up to three times actual damages and must award costs and actual reasonable attorney's fees; the AG may also seek a civil penalty of up to $5,000 per violation (§ 51-15-11, which also covers ch. 51-18 violations).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "montana",
+    "neighborName": "Montana",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "state contractor license by dollar class (N.D.C.C. ch. 43-07), required when a job exceeds…"
+    },
+    "b": {
+      "answer": "LICENSE, NO EXAM",
+      "note": "NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

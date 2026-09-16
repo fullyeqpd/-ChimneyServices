@@ -1,0 +1,320 @@
+{
+  "slug": "florida",
+  "name": "Florida",
+  "abbr": "FL",
+  "sourceFile": "rights-research-florida.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) Johnson v. Davis quote and the as-is point need a primary check; (2) masonry licensing copy must say \"local competency cards; no statewide masonry certification found\"; (3) no NFPA 211/chapter-number claims until verified.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- DBPR masonry classification scope: CORRECTED — no masonry category in § 489.105 and none among active 61G4-15 certification rules; \"Masonry Contractor\" permit-scope text and \"Certified Structural Masonry Specialty\" class removed as unconfirmed statewide — https://www.flsenate.gov/Laws/Statutes/2025/489.105 — GOV; https://www.flrules.org/gateway/ChapterHome.asp?Chapter=61G4-15 — GOV. Local category scope: STILL OPEN.\n- Handyman threshold: RESOLVED (added) — § 489.103(9) \"less than $2,500\", casual/minor/inconsequential, with anti-splitting and advertising limits — https://www.flsenate.gov/Laws/Statutes/2025/489.103 — GOV\n- Insurance proven by affidavit: RESOLVED — § 489.115(5)(a) — https://www.flsenate.gov/Laws/Statutes/2025/489.115 — GOV\n- Johnson v. Davis disclosure duty: STILL OPEN (primary text) — Justia/casetext/CourtListener unreachable (404/blocked/robots); citation and quote retained with a pending flag. \"Survives as-is\": STILL OPEN.\n- CO § 553.885: RESOLVED — still names \"a fireplace\"; new buildings/additions on or after July 1, 2008; within 10 feet of sleeping rooms — https://www.flsenate.gov/Laws/Statutes/2025/553.885 — GOV\n- FBC edition: RESOLVED — 8th Edition (2023) effective Dec 31, 2023; 2026 update in progress, effective date not confirmed — https://www.floridabuilding.org/c/default.aspx — GOV. NFPA 211 reference / chapter number: STILL OPEN (removed from copy).\n- 3-day cancel: RESOLVED + clarified — § 501.021 covers cash or credit, > $25, solicited away from seller's business — https://www.flsenate.gov/Laws/Statutes/2025/501.021 — GOV\n- FDUTPA remedies: RESOLVED — § 501.211 actual damages + fees per § 501.2105; no treble — https://www.flsenate.gov/Laws/Statutes/2025/501.211 — GOV\n- Enforcement action: STILL OPEN — none located; web-search budget exhausted.\n- 2026 changes: statutes read from the 2025 Florida Statutes (latest on flsenate.gov); 2026-session amendments to ch. 489/553/501 not swept — STILL OPEN (search budget exhausted).\n- Template-leakage sweep: Texas DTPA/Texas patchwork and Ohio appear only as labeled comparisons — OK."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; the certified-vs-registered outlier)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; the certified-vs-registered outlier",
+      "markdown": "Florida is the **two-tier outlier**: it licenses construction trades through the **Dept. of Business & Professional Regulation (DBPR) / Construction Industry Licensing Board (CILB) under Fla. Stat. ch. 489**, and every contractor is either **\"Certified\" or \"Registered.\"**\n- **Certified** — passes the **state DBPR exam**, may work **anywhere in Florida**; license numbers begin with **\"C\"** (e.g., a Certified General, Building, or Residential Contractor).\n- **Registered** — holds a **local competency card** (city/county exam) and registers it with the state; may work **only in that locality**; numbers begin with **\"R\"**.\n\n**Where chimney work lands.** Fla. Stat. § 489.105 defines a **Residential Contractor** as limited to \"construction, remodeling, repair, or improvement of one-family, two-family, or three-family residences not exceeding two habitable stories,\" and a **specialty contractor** as one limited to \"a particular phase of construction established in a category adopted by board rule.\" **No statewide certified masonry specialty category was found**: masonry is not named among the contractor categories in § 489.105, and the active CILB certification rules (Fla. Admin. Code ch. 61G4-15) list specialty categories such as specialty structure, pool, solar, and pollutant-storage — not masonry. Masonry-only contractors therefore generally operate on **local competency cards (\"Registered\")**, with scope defined county-by-county (an earlier draft quoted a \"Masonry Contractor\" permit-scope definition and a \"Certified Structural Masonry Specialty\" class — neither was confirmed as a statewide DBPR category, so both are removed). **Small jobs:** § 489.103(9) exempts \"work or operation of a casual, minor, or inconsequential nature in which the aggregate contract price for labor, materials, and all other items is **less than $2,500**,\" but not if the work is part of a larger operation, split to evade the limit, or done by someone who advertises as a contractor. **Insurance:** state-certified applicants prove public liability and property damage coverage by **affidavit** — § 489.115(5)(a): \"the applicant shall submit an affidavit on a form provided by the board attesting to the fact that the applicant has obtained workers' compensation insurance ..., public liability insurance, and property damage insurance\" — i.e., the state credential does not by itself mean a certificate of insurance was reviewed. **Sweeping** (cleaning/inspection) has **no license at all** in state law; **repair/rebuild/reline** is where contractor licensure (state or local) attaches. Public lookup: **myfloridalicense.com** (DBPR) + county building department for local cards."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Florida actually tests more than most no-license states — a Certified Residential/Building exam is a real trade/law exam — but the gap persists two ways. **First**, \"Registered\" only means someone passed a *local* competency card and can work in that locality; it is not statewide competence and is easy to confuse with a real state certification. **Second**, no state or local contractor exam tests **flue diagnosis, draft, or sweep/inspection technique** — and a sweep needs no license at all. Insurance is attested by affidavit (§ 489.115(5)(a)), not proven per job. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal, and the \"check whether it's a C-number or an R-number, and in which county\" nuance is itself Florida-specific page content."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV/case law — high confidence; judge-made, no statutory form)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "case law — high confidence; judge-made, no statutory form",
+      "markdown": "Florida is the **common-law-disclosure outlier: there is NO statutory seller-disclosure form and no statute requiring one.** The duty comes from **case law — Johnson v. Davis, 480 So. 2d 625 (Fla. 1985)** — which held that **\"where the seller of a home knows of facts materially affecting the value of the property which are not readily observable and are not known to the buyer, the seller is under a duty to disclose them.\"** (Primary opinion text not reached in the Sep 2026 pass — the citation and quote are standard but must be checked against the opinion before publish.) State this plainly: the seller's duty is **judge-made, not a statute or a fillable state form**. A cracked flue, chronic chimney leak, or unusable fireplace the seller knows about and the buyer can't readily see falls inside that duty. Florida appellate decisions are widely reported to hold that a general \"as-is\" clause does not bar a fraudulent-nondisclosure claim — case citation NOT yet verified; do not publish the \"survives as-is\" point without one. In practice sellers use Florida Realtors/association disclosure forms, but those are **private forms, not a statutory mandate**, and don't replace the common-law duty. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Florida Deceptive and Unfair Trade Practices Act (FDUTPA), Fla. Stat. §§ 501.201–501.213**, prohibits unfair/deceptive acts in trade or commerce; § 501.211 gives a private right of action for \"actual damages, plus attorney's fees and court costs as provided in s. 501.2105\" plus declaratory/injunctive relief, with civil penalties in AG actions and **enhanced penalties for victims 60 or older (§ 501.2077)** (not re-verified this pass). **FDUTPA provides no treble damages** — a weaker multiplier than Texas's DTPA (labeled comparison). Separately, Florida's **Home Solicitation Sale statute, Fla. Stat. §§ 501.021–501.055**, is unusually broad: § 501.021 covers a sale of consumer goods or services \"with a purchase price in excess of $25\" made by \"a cash transaction or other consumer credit transaction\" and personally solicited away from the seller's fixed business location — so, **unlike NC/SC/GA/AL, Florida's state cancel right reaches cash doorstep deals**, and it excludes sales resulting from the buyer's own request for specific goods or services. The buyer may cancel until midnight of the third business day (mechanics per §§ 501.025–501.055, not re-read this pass). This is the exact mechanic of the doorstep chimney pitch. Complaints: **Florida AG (myfloridalegal.com)** and **DBPR** for licensed-contractor discipline."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on edition; chapter details medium)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on edition; chapter details medium",
+      "markdown": "Unlike Texas's patchwork (labeled comparison), Florida has a **single, mandatory, statewide code — the Florida Building Code (FBC), Fla. Stat. ch. 553, Part IV**, administered by the Florida Building Commission and enforced by local building departments. The current edition is the **FBC 8th Edition (2023), effective December 31, 2023** (floridabuilding.org, Sep 2026); the Commission is working on a **2026 update** whose effective date was not confirmed this pass. **FBC-Residential** follows the IRC structure, with chimneys and fireplaces in its chimneys-and-fireplaces chapter (chapter number and any NFPA 211 reference not re-verified — do not cite a chapter or claim NFPA 211 adoption until checked). Chimney relines, rebuilds, crowns, and solid-fuel-appliance installs are generally **permit work statewide**; routine sweeps and like-for-like caps generally are not. Because Florida is hurricane country, the code layers in **high-velocity-hurricane-zone (HVHZ, Miami-Dade/Broward) and wind-load requirements** — relevant to chimney caps, crowns, and rooftop terminations, though not chimney-specific."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium; new-construction only, but names fireplaces)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; new-construction only, but names fireplaces",
+      "markdown": "Florida's CO-alarm mandate is **narrow but explicit about fireplaces.** **Fla. Stat. § 553.885(1)** (text confirmed Sep 2026): \"Every separate building or addition to an existing building, other than a hospital, an inpatient hospice facility, or a nursing home facility ..., constructed on or after July 1, 2008, and having a fossil-fuel-burning heater or appliance, **a fireplace**, an attached garage, or other feature, fixture, or element that emits carbon monoxide as a byproduct of combustion shall have an approved operational carbon monoxide alarm installed within 10 feet of each room used for sleeping purposes in the new building or addition, or at such other locations as required by the Florida Building Code.\" It applies to **new buildings/additions only — not existing homes undergoing ordinary repairs**. So there is **no statewide pre-sale or existing-home CO mandate**, but the statute is one of the few nationally that names \"a fireplace\" as a trigger. A permitted chimney/fireplace job in new construction or an addition is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV — thin; honest market note)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "thin; honest market note",
+      "markdown": "Florida has **no woodstove-emission program and no woodstove air-quality burn-ban regime** — the wet subtropical climate and low wood-heat reliance make it a non-issue statewide. Outdoor-burning authorization runs through the **Florida Forest Service** for wildfire/land-clearing purposes, not indoor appliances. Honest market note: **fireplaces and working chimneys are UNCOMMON in South Florida (Miami-Dade, Broward, the Keys — tropical Zone 10) and become progressively more common moving north into Central Florida, North Florida, and the Panhandle (Zones 8–9), where winter freezes actually occur.** Many South Florida \"fireplaces\" are decorative or gas. Say so plainly — this is a thin-market state south of Orlando; don't pad South Florida chimney content."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF/GOV — partial; hurricane/storm-chaser angle)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "partial; hurricane/storm-chaser angle",
+      "markdown": "Florida's dominant home-repair-scam pattern is **post-hurricane \"storm chaser\" and door-to-door contractor fraud**, targeted by the Florida AG and DBPR (unlicensed-activity enforcement). The door-knock \"we noticed your chimney/roof\" pitch is a textbook **Home Solicitation Sale (3-day cancel, cash or credit) + FDUTPA** matter, and doing structural repair above the § 489.103(9) exemption without the required state or local credential is **unlicensed contracting**. Reporting: Florida AG (myfloridalegal.com) and DBPR. **No FL chimney-sweep-specific enforcement action located — pattern language only.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Short, mild burn season concentrated **Dec–Feb**, and only meaningfully in Central/North FL and the Panhandle; negligible in South FL. Rush: **NOV–JAN.** Best booking: **MAR–SEP** (and note hurricane season Jun–Nov drives roof/chimney-cap repair demand independent of burn season)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Working-chimney demand and skilled-masonry supply concentrate in **North/Central FL and the Panhandle**; South FL is thin-market (few working flues → few specialists). Miami-Dade/Broward HVHZ code adds cost to any rooftop/cap work. Regionalize on the North-and-Central vs South-Florida split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — DBPR/CILB (Fla. Stat. ch. 489); Certified (\"C\", statewide exam) vs Registered (\"R\", local competency card); no statewide masonry specialty found — masonry via local cards; minor-work exemption < $2,500 (§ 489.103(9)); insurance by affidavit (§ 489.115(5)(a)); no sweep license** · Registration: **statewide DBPR + local competency cards (county-by-county)** · Disclosure law: **COMMON LAW ONLY — Johnson v. Davis (Fla. 1985), no statutory form** · 3-day cancel: **YES — cash or credit, > $25 (Fla. Stat. § 501.021 et seq.)** · CO law: **new construction/additions only, names \"a fireplace\" (Fla. Stat. § 553.885); no pre-sale mandate** · Lookup: myfloridalicense.com + county building dept + myfloridalegal.com complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Florida is the **double outlier of the whole project — and it BREAKS the license⇄disclosure inverse-correlation verdict.** On the licensing axis Florida actually has a *real* state regime (DBPR/CILB, Certified vs Registered exams under ch. 489) — more than Texas or Ohio — so the thesis predicts a *weak* seller disclosure to compensate. Instead Florida has **no statutory disclosure form at all, yet arguably the strongest disclosure duty in the country**, because **Johnson v. Davis imposes a judge-made duty to disclose known, non-obvious defects** (widely reported to survive \"as-is\" clauses — citation pending). So Florida runs a licensing regime AND a muscular disclosure duty at the same time — the inverse correlation doesn't hold here, and the reason it doesn't is that Florida's disclosure lives in *case law*, not on the statutory ledger the thesis was built from. The page's three messages: **check the C-number vs R-number and which county it's good in (and know a sweep needs no license); the seller owes you a common-law duty to disclose a known bad flue, but there's no form — so get your own inspection; and the statewide Florida Building Code plus § 553.885 mean any real chimney/fireplace job is permit-and-alarm work.** The eternal competence gap survives: neither Florida exam asks whether the person can read your flue, and the sweep needs no license at all."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — DBPR/CILB (Fla. Stat. ch. 489): Certified (statewide) vs Registered (local); no statewide masonry certification found (local cards); minor-work exemption <$2,500 (489.103(9)); insurance by affidavit (489.115(5)(a)); no sweep license",
+    "registration_name": "statewide DBPR + county competency cards",
+    "disclosure_law": "Johnson v. Davis (1985) — COMMON-LAW duty, NO statutory form (primary opinion check pending)",
+    "chimney_item_on_form": "No form; common-law duty covers known non-observable defects (incl. bad flue)",
+    "three_day_cancel": "YES — cash or credit >$25 (Fla. Stat. 501.021 et seq.)",
+    "co_law": "new construction/additions only; names a fireplace (Fla. Stat. 553.885); no pre-sale mandate",
+    "lookup_url": "myfloridalicense.com",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — DBPR/CILB (Fla. Stat. ch. 489); Certified (\"C\", statewide exam) vs Registered (\"R\", local competency card); no statewide masonry specialty found — masonry via local cards; minor-work exemption < $2,500 (§ 489.103(9)); insurance by affidavit (§ 489.115(5)(a)); no sweep license",
+    "registration_name": "statewide DBPR + local competency cards (county-by-county)",
+    "disclosure_law": "COMMON LAW ONLY — Johnson v. Davis (Fla. 1985), no statutory form",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES — cash or credit, > $25 (Fla. Stat. § 501.021 et seq.)",
+    "co_law": "new construction/additions only, names \"a fireplace\" (Fla. Stat. § 553.885); no pre-sale mandate",
+    "lookup_url": "myfloridalicense.com + county building dept + myfloridalegal.com complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "DBPR/CILB (Fla. Stat. ch. 489); Certified (\"C\", statewide exam) vs Registered (\"R\", local…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Second, no state or local contractor exam tests flue diagnosis, draft, or sweep/inspection technique — and a sweep needs no license at all."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "cash or credit, > $25 (Fla. Stat. § 501.021 et seq.)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "new construction/additions only, names \"a fireplace\" (Fla. Stat. § 553.885); no pre-sale mandate",
+      "anchor": "co-law",
+      "rule": "co:unmatched",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Florida: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Florida chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "§ 489.103(9",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      11,
+      12,
+      1
+    ],
+    "best": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Short, mild burn season concentrated Dec–Feb, and only meaningfully in Central/North FL and the Panhandle; negligible in South FL. Rush: NOV–JAN. Best booking: MAR–SEP (and note hurricane season Jun–Nov drives roof/chimney-cap repair demand independent of burn season)."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Florida?",
+      "a": "State licensing: YES — DBPR/CILB (Fla. Stat. ch. 489); Certified (\"C\", statewide exam) vs Registered (\"R\", local competency card); no statewide masonry specialty found — masonry via local cards; minor-work exemption < $2,500 (§ 489.103(9)); insurance by affidavit (§ 489.115(5)(a)); no sweep license. Registration or credential: statewide DBPR + local competency cards (county-by-county). Seller disclosure at sale: COMMON LAW ONLY — Johnson v. Davis (Fla. 1985), no statutory form. Right to cancel a sale made at your home: YES — cash or credit, > $25 (Fla. Stat. § 501.021 et seq.). Carbon monoxide alarm law: new construction/additions only, names \"a fireplace\" (Fla. Stat. § 553.885); no pre-sale mandate. Where to check a contractor: myfloridalicense.com + county building dept + myfloridalegal.com complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Florida?",
+      "a": "Florida is the common-law-disclosure outlier: there is NO statutory seller-disclosure form and no statute requiring one. The duty comes from case law — Johnson v. Davis, 480 So. 2d 625 (Fla.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Florida?",
+      "a": "The Florida Deceptive and Unfair Trade Practices Act (FDUTPA), Fla. Stat. §§ 501.201–501.213, prohibits unfair/deceptive acts in trade or commerce; § 501.211 gives a private right of action for \"actual damages, plus attorney's fees and court costs as provided in s. 501.2105\" plus declaratory/injunctive relief, with civil penalties in AG actions and enhanced penalties for victims 60 or older (§ 501.2077) (not re-verified this pass).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "georgia",
+    "neighborName": "Georgia",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "DBPR/CILB (Fla. Stat. ch. 489); Certified (\"C\", statewide exam) vs Registered (\"R\", local…"
+    },
+    "b": {
+      "answer": "ONLY > $2,500",
+      "note": "NO chimney-sweep license; residential license only > $2,500 (O.C.G.A. § 43-41-2(9)) with…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

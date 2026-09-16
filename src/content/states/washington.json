@@ -1,0 +1,316 @@
+{
+  "slug": "washington",
+  "name": "Washington",
+  "abbr": "WA",
+  "sourceFile": "rights-research-washington.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) no named enforcement action; (2) local clean-air agency specifics unverified; (3) \"registration, not a license\" framing confirmed.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- L&I registration bond: RESOLVED — RCW 18.27.040: $30,000 general, $15,000 specialty — https://app.leg.wa.gov/RCW/default.aspx?cite=18.27.040 — GOV\n- Insurance amounts: CORRECTED — file said \"$200k public liability + $50k property, or $250k CSL\"; RCW 18.27.050: $50,000 property damage, $100,000 one person, $200,000 more than one person — https://app.leg.wa.gov/RCW/default.aspx?cite=18.27.050 — GOV\n- Unregistered penalty: CORRECTED — file said \"infraction\"; RCW 18.27.020 makes unregistered advertising/bidding/work a gross misdemeanor (infractions also under 18.27.200); RCW 18.27.080 suit bar confirmed — https://app.leg.wa.gov/RCW/default.aspx?cite=18.27.020 ; https://app.leg.wa.gov/RCW/default.aspx?cite=18.27.080 — GOV\n- Specialties (WAC 296-200A-016): RESOLVED — 63 specialties incl. #36 Masonry (\"also includes chimney cleaning and repair\") and #63 Wood/pellet and gas stove (\"installs wood, pellet, or gas stoves, zero clearance and fire place inserts\") — https://app.leg.wa.gov/WAC/default.aspx?cite=296-200A-016 — GOV\n- Form 17 wood-stove wording (blocker 1): RESOLVED — RCW 64.06.020 form: wood burning appliances present (woodstove, fireplace insert, pellet stove, fireplace); EPA clean-burning certification question for woodstoves/inserts; chimneys as structural item; CO alarm question citing RCW 19.27.530; delivery within 5 business days of mutual acceptance — https://app.leg.wa.gov/RCW/default.aspx?cite=64.06.020 — GOV\n- Waiver: RESOLVED — RCW 64.06.010: buyer may expressly waive; Environmental section not waivable if any answer would be yes — https://app.leg.wa.gov/RCW/default.aspx?cite=64.06.010 — GOV\n- Rescission: RESOLVED — RCW 64.06.030: 3 business days after receipt — https://app.leg.wa.gov/RCW/default.aspx?cite=64.06.030 — GOV\n- WAC 51-51 code cycle (blocker 2): RESOLVED — WAC 51-51-003 adopts 2021 IRC; effective 3/15/2024 (WSR 23-12-104 et al.) with a 3/16/2024 amendment (WSR 23-23-104); no newer filing listed. Chapter 10 amendments not individually re-read — https://app.leg.wa.gov/WAC/default.aspx?cite=51-51-003 — GOV\n- CO law RCW 19.27.530: CORRECTED — file said seller duty \"since April 1, 2012\"; statute text: owner-occupied SFR legally occupied before 7/26/2009 exempt, but any such residence sold on or after July 26, 2009 must be equipped by the seller before the buyer may legally occupy; new construction by 1/1/2011, all other residential by 1/1/2013 — https://app.leg.wa.gov/RCW/default.aspx?cite=19.27.530 — GOV\n- CPA treble cap: RESOLVED — RCW 19.86.090: discretionary up to 3x actual damages, capped at $25,000 — https://app.leg.wa.gov/RCW/default.aspx?cite=19.86.090 — GOV\n- 3-day cancel: RESOLVED with nuance — RCW 63.14.154 applies to retail installment transactions from in-person solicitation away from seller's business; midnight of third day excluding Sundays/holidays; notice by certified mail — https://app.leg.wa.gov/RCW/default.aspx?cite=63.14.154 — GOV\n- Clean Air Act cites: CORRECTED — emission standards are RCW 70A.15.3530 (file said 3510, which is definitions); sale ban on unapproved new woodstoves is RCW 70A.15.3540; burn bans are RCW 70A.15.3580 (file said 3600, which covers prohibited materials and nonattainment-area device prohibitions); \"illegal to install or give away\" and 20% opacity removed pending WAC check — https://app.leg.wa.gov/RCW/default.aspx?cite=70A.15.3530 ; https://app.leg.wa.gov/RCW/default.aspx?cite=70A.15.3540 ; https://app.leg.wa.gov/RCW/default.aspx?cite=70A.15.3580 ; https://app.leg.wa.gov/RCW/default.aspx?cite=70A.15.3600 — GOV\n- Burn-ban authority language (blocker 4): PARTIAL — state statute confirmed; local agency pages STILL OPEN.\n- L&I scam article: RESOLVED — Sept. 8, 2025 release mentions \"chimney repairs\" — https://lni.wa.gov/news-events/article/25-23 — GOV\n- Enforcement action (blocker 3): STILL OPEN — not searched.\n- 2026 changes: no new WAC 51-51 adoption found; broader 2026 licensing search not run (web-search budget exhausted).\n- Template-leakage sweep: clean — MA/NJ/MD/IL appear only as labeled comparisons."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; registration, not a license)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; registration, not a license",
+      "markdown": "**Washington has no license for chimney work — it has registration.** Under the **Contractor Registration Act, RCW ch. 18.27**, anyone who contracts to improve real property for pay must **register with the Dept. of Labor & Industries (L&I)** as a general or specialty contractor — chimney masonry, relining, rebuild, and sweeping-for-hire all fall inside \"contractor.\" L&I's specialty list (**WAC 296-200A-016**) even names the trade: the **Masonry** specialty \"also includes chimney cleaning and repair,\" and a separate **Wood/pellet and gas stove** specialty \"installs wood, pellet, or gas stoves, zero clearance and fire place inserts.\" Registration attests **money, not skill**: per **RCW 18.27.040** a general contractor files a **$30,000 continuous surety bond** ($15,000 specialty), carries liability insurance (RCW 18.27.050: $100,000 per person / $200,000 per occurrence for bodily injury and $50,000 property damage), and holds a UBI number — **there is no competency exam** for general-contractor registration. Public lookup: **secure.lni.wa.gov / \"Verify a Contractor\"** (lni.wa.gov). Advertising, bidding, or working as a contractor while unregistered is a **gross misdemeanor** (RCW 18.27.020; some violations are also infractions under RCW 18.27.200), and an unregistered contractor cannot sue to collect (RCW 18.27.080). *(Confirm any city add-on registrations — see §5.)*"
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The gap here is unusually clean: L&I registration is a **bond-and-insurance filing with no test at all** for a general contractor, so \"registered, bonded, and insured\" — the phrase every WA contractor uses — says nothing about whether the person can read a flue. Verifying \"licensed and bonded\" in WA means confirming an **active L&I registration + bond**, not a passed exam. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the only competence signal."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; real named chimney/stove line)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real named chimney/stove line",
+      "markdown": "**RCW ch. 64.06 requires the seller to deliver the \"Form 17\" Seller Disclosure Statement** within 5 business days of mutual acceptance (RCW 64.06.020). It is **actual-knowledge, disclosure-only, not a warranty** — and it names the hearth: the statutory form asks **\"Are any of the following kinds of wood burning appliances present at the property?\" (woodstove, fireplace insert, pellet stove, fireplace)** and, if yes, **\"are all of the (1) woodstoves or (2) fireplace inserts certified by the U.S. Environmental Protection Agency as clean burning appliances…?\"**; **chimneys** are a listed structural component for defects, and the form asks whether the property has CO alarms, noting the seller's RCW 19.27.530 duty. The buyer gets a **statutory 3-business-day right to rescind** after delivery (RCW 64.06.030). Crucially, the buyer **may expressly waive** receipt of the statement (RCW 64.06.010), except that if any answer in the \"Environmental\" section would be \"yes,\" that section cannot be waived — so the disclosure is real but waivable. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Consumer Protection Act, RCW ch. 19.86**, gives a private action for actual damages, costs, and attorney's fees, with **discretionary treble damages capped at $25,000** (RCW 19.86.090) — a softer multiplier than MA/NJ. Enforced privately and by the AG's Consumer Protection Division. Door-to-door / in-person-solicited installment sales carry a **3-business-day right to cancel under RCW 63.14.154** (Retail Installment Sales Act) — plus the federal FTC cooling-off rule. The door-knock \"we noticed your chimney\" pitch is the textbook target. Complaints: **atg.wa.gov** (file online) and L&I for the contractor bond."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; statewide code)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; statewide code",
+      "markdown": "Washington runs a **statewide code**: the **State Building Code (RCW ch. 19.27)**, with the **2021 IRC adopted as the Washington State Residential Code (WAC 51-51-003), effective March 15, 2024** (latest amendment filing effective March 16, 2024; no 2024-IRC adoption appears in WAC 51-51 as of Sep 2026). Chimneys/fireplaces are **IRC Chapter 10 (R1001–R1005)** — a NATIONAL STANDARD carried into state law. Relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work**; routine sweeps and like-for-like caps generally are not. Cities/counties administer permits locally; verify the local building department."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; includes point of sale)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; includes point of sale",
+      "markdown": "**RCW 19.27.530** requires CO alarms in all residential occupancies (older owner-occupied single-family legally occupied before July 26, 2009 were phased in) — alarms outside each sleeping area, on each level. Existing owner-occupied single-family homes occupied before July 26, 2009 are exempt — **but for any such home sold on or after July 26, 2009, the seller must equip it with CO alarms per the state building code before the buyer or anyone else may legally occupy it** (RCW 19.27.530(2)(b)); new residential construction was covered by Jan 1, 2011 and all other residential occupancies by Jan 1, 2013 — a genuine point-of-sale duty (stronger than MD/IL, which have none). A permitted chimney or stove job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV — high confidence; the big WA section)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; the big WA section",
+      "markdown": "This is Washington's differentiator. Under the **Washington Clean Air Act, RCW ch. 70A.15**, **no new woodstove may be sold or advertised for sale to a Washington resident unless approved by Ecology (RCW 70A.15.3540)**, and solid fuel burning devices offered for sale must meet WA emission limits (**4.5 g/hr generally, 2.5 g/hr catalytic woodstoves; RCW 70A.15.3530**; definitions at RCW 70A.15.3510). **RCW 70A.15.3580 sets first-stage burn bans** (only EPA-certified or Oregon DEQ Phase II devices may burn when fine particulates are forecast to exceed 35 µg/m³ within 48 hours) **and second-stage bans** (no wood burning at all), with an emergency power-outage exception; **RCW 70A.15.3600** bans burning garbage/treated wood and lets authorities prohibit uncertified devices in areas failing federal fine-particulate standards. *(Install/give-away prohibitions and opacity limits live in Ecology rules, WAC 173-433 — not re-verified this pass.)* Enforcement is **STATE (Dept. of Ecology) + LOCAL clean-air agencies**: the **Puget Sound Clean Air Agency** (King/Kitsap/Pierce/Snohomish) issues Stage 1/Stage 2 bans (Stage 2 bars **all** wood burning), **Spokane Regional Clean Air Agency** covers the east, and **Northwest Clean Air Agency** the northwest counties. A **Tacoma-Pierce County** rule adds tighter local limits. This regime touches sweeping/repair indirectly (creosote, replacement-stove sales) — a real content section, unlike the Midwest states."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF/GOV — partial; pull more before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "partial; pull more before publish",
+      "markdown": "**L&I's Sept. 8, 2025 release \"Don't open your door to fraud: Beware of paving scams…\"** warns that \"similar schemes promote roof replacement, **chimney repairs** and other home improvement jobs\" (https://lni.wa.gov/news-events/article/25-23), and the AG runs Home-Improvement-Scam guidance (atg.wa.gov/home-improvement-scams). No WA-specific *chimney-sweep* enforcement action confirmed yet — **re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Two climates: wet, mild west (Puget Sound) vs. colder continental east (Spokane). Burn season ~Oct–Mar; burn-ban season overlaps it. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Seattle/Puget Sound metro runs **above national** on labor; Spokane and rural east nearer or below national. Regionalize upward for the Seattle ring."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license — L&I *registration* (bond + insurance, NO exam), RCW 18.27** · Registration: **YES — L&I contractor registration ($30k GC / $15k specialty bond; specialties incl. Masonry [chimney cleaning and repair] and Wood/pellet and gas stove)** · Disclosure law: **YES — Form 17, RCW 64.06.020, asks about woodstove/insert/pellet stove/fireplace + EPA certification; chimney listed as structural item (waivable except Environmental)** · 3-day cancel: **YES (RCW 63.14.154 + FTC)** · CO law: **broad + point-of-sale duty (RCW 19.27.530)** · Lookup: lni.wa.gov (Verify a Contractor)"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Washington **CONFIRMS the license⇄disclosure inverse-correlation verdict, in its weak-credential form.** WA has **no competency license** — only an L&I bond-and-insurance *registration* with no exam — and, matching the pattern, it pairs that thin front-end credential with a **real, named seller disclosure**: Form 17 asks about the wood stove and fireplace insert by name (RCW 64.06), and the sale even triggers a CO-alarm duty (RCW 19.27.530). Low credentialing, strong disclosure — the inverse-correlation holds. But WA's true story isn't the license axis at all: it's **RCW 70A.15**, the Clean Air Act, which makes selling a new, unapproved woodstove **illegal** and hands **Ecology plus regional clean-air agencies** the power to ban wood burning outright on bad-air nights. That environmental overlay — absent from every eastern launch state — is the page's real hook: in Washington the flue is regulated less as a contractor question than as an **air-quality** one."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "no state license — registration only (L&I, bond + insurance, no exam, RCW 18.27)",
+    "registration_name": "L&I Contractor Registration (specialties incl. Masonry [chimney cleaning and repair] and Wood/pellet and gas stove)",
+    "disclosure_law": "Yes (Form 17, RCW 64.06.020; buyer may waive except Environmental section)",
+    "chimney_item_on_form": "Yes (wood burning appliances present + EPA certification of woodstoves/inserts; chimneys as structural item)",
+    "three_day_cancel": "Yes (in-person solicited retail installment sales, RCW 63.14.154)",
+    "co_law": "Broad + point of sale (RCW 19.27.530)",
+    "lookup_url": "lni.wa.gov (Verify a Contractor)",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license — L&I registration (bond + insurance, NO exam), RCW 18.27",
+    "registration_name": "YES — L&I contractor registration ($30k GC / $15k specialty bond; specialties incl. Masonry [chimney cleaning and repair] and Wood/pellet and gas stove)",
+    "disclosure_law": "YES — Form 17, RCW 64.06.020, asks about woodstove/insert/pellet stove/fireplace + EPA certification; chimney listed as structural item (waivable except Environmental)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (RCW 63.14.154 + FTC)",
+    "co_law": "broad + point-of-sale duty (RCW 19.27.530)",
+    "lookup_url": "lni.wa.gov (Verify a Contractor)"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "REGISTRATION ONLY",
+      "note": "NO state license — L&I registration (bond + insurance, NO exam), RCW 18.27",
+      "anchor": "license",
+      "rule": "license:NO+registration",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "Registration without a competency exam",
+      "anchor": "qualified-gap",
+      "rule": "exam:registration-no-exam",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated; a CO/smoke rule applies at sale",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (RCW 63.14.154 + FTC)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "+ point-of-sale duty (RCW 19.27.530)",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "license",
+      "rule": "sue:§1-sentence",
+      "derivedFrom": "§1 text",
+      "evidence": "Advertising, bidding, or working as a contractor while unregistered is a gross misdemeanor (RCW 18.27.020; some violations are also infractions under RCW 18.27.200), and an unregistered contractor cannot sue to collect (RCW 18.27.080)."
+    }
+  ],
+  "h1": "Washington: contractors register, but no state license tests them. Here's what that means.",
+  "metaDescription": "Washington chimney & fireplace laws: registration rules, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Two climates: wet, mild west (Puget Sound) vs. colder continental east (Spokane). Burn season ~Oct–Mar; burn-ban season overlaps it. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Washington?",
+      "a": "State licensing: NO state license — L&I registration (bond + insurance, NO exam), RCW 18.27. Registration or credential: YES — L&I contractor registration ($30k GC / $15k specialty bond; specialties incl. Masonry [chimney cleaning and repair] and Wood/pellet and gas stove). Seller disclosure at sale: YES — Form 17, RCW 64.06.020, asks about woodstove/insert/pellet stove/fireplace + EPA certification; chimney listed as structural item (waivable except Environmental). Right to cancel a sale made at your home: YES (RCW 63.14.154 + FTC). Carbon monoxide alarm law: broad + point-of-sale duty (RCW 19.27.530). Where to check a contractor: lni.wa.gov (Verify a Contractor). Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Washington?",
+      "a": "RCW ch. 64.06 requires the seller to deliver the \"Form 17\" Seller Disclosure Statement within 5 business days of mutual acceptance (RCW 64.06.020). It is actual-knowledge, disclosure-only, not a warranty — and it names the hearth: the statutory form asks \"Are any of the following kinds of wood burning appliances present at the property?\" (woodstove, fireplace insert, pellet stove, fireplace) and, if yes, \"are all of the (1) woodstoves or (2) fireplace inserts certified by the U.S. Environmental Protection Agency as clean burning appliances…?\"; chimneys are a listed structural component for defects, and the form asks whether the property has CO alarms, noting the seller's RCW 19.27.530 duty.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Washington?",
+      "a": "The Consumer Protection Act, RCW ch. 19.86, gives a private action for actual damages, costs, and attorney's fees, with discretionary treble damages capped at $25,000 (RCW 19.86.090) — a softer multiplier than MA/NJ. Enforced privately and by the AG's Consumer Protection Division. Door-to-door / in-person-solicited installment sales carry a 3-business-day right to cancel under RCW 63.14.154 (Retail Installment Sales Act) — plus the federal FTC cooling-off rule.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "oregon",
+    "neighborName": "Oregon",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO state license — L&I registration (bond + insurance, NO exam), RCW 18.27"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "CCB license (16-hr training + exam + bond), ORS 701; exemption under $1,000 casual work (ORS…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

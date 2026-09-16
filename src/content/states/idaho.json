@@ -1,0 +1,313 @@
+{
+  "slug": "idaho",
+  "name": "Idaho",
+  "abbr": "ID",
+  "sourceFile": "rights-research-idaho.md",
+  "researched": "2026-07-10",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "tax-deduction cite must be dropped or verified; built-in appliance permit route and Boise WUI details unverified; AG enforcement stays an absence note",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked Sep 15, 2026 by verification agent. Laws cited as of Sep 2026.\n- DOPL lookup URL: RESOLVED — edopl.idaho.gov/OnlineServices/?link=PubSearch (\"Search for a License or Registration,\" linked from dopl.idaho.gov) — GOV\n- § 48-608 elderly/disabled enhancement: RESOLVED with CORRECTION of framing — it is § 48-608(2): $15,000 or treble, whichever greater, but requires knew/should-have-known targeting AND a listed serious loss (primary residence; >25% of income, retirement funds or pension; health/welfare assets); fees § 48-608(5) — legislature.idaho.gov/statutesrules/idstat/Title48/T48CH6/SECT48-608/ — GOV\n- Idaho Residential Code base after 2025/2026 amendments to § 39-4116: RESOLVED — still 2018 IRC Parts I–III & IX via IDAPA 24.39.30 (7-1-24 text); 2025 ch. 40 = H0104 agricultural buildings; 2026 ch. 320 = H0706 single-stairway exceptions (new § 39-4109C, eff. 7/1/2026); neither changes the IRC edition — files.dfm.idaho.gov/dfm-admin-website/rules/current/24/243930.pdf; legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4116/; legislature.idaho.gov/sessioninfo/2026/legislation/H0706/ — GOV. Old \"effective Jan 1, 2021\" date replaced with the current rule citation.\n- Registration threshold: RESOLVED — § 54-5205(2)(f), aggregate < $2,000, anti-splitting — legislature.idaho.gov …/SECT54-5205/ — GOV\n- Unregistered penalties: RESOLVED — § 54-5217(1) misdemeanor ≤ $1,000 / ≤ 6 months; (2) no suit for compensation — legislature.idaho.gov …/SECT54-5217/ — GOV\n- Disclosure form chimney item: RESOLVED — § 55-2508 item 4 lists \"fireplace/wood stove\" inside the appliance list; item 5 \"Heating\"; no chimney, smoke or CO line — legislature.idaho.gov …/SECT55-2508/ — GOV\n- CO law: RESOLVED — no standalone statute found; code-only via 2018 IRC R315 as amended by IDAPA 24.39.30; NCSL table (REF, Sep 2025) lists no Idaho statute — GOV + REF\n- HVAC permit for freestanding solid-fuel stove: RESOLVED (IDAPA 24.39.70.500 fee schedule also names factory-built gas fireplaces) — files.dfm.idaho.gov/…/243970.pdf — GOV; built-in split STILL OPEN\n- 2026 changes: none found affecting registration, disclosure or CO; H0706 only as above\n- Template-leakage sweep: clean (NV/MI/PA/NY/IL named only as labeled comparisons)\n- Tax deduction cite, Boise WUI text, AG enforcement search: STILL OPEN — not re-checked (search budget exhausted)"
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; registration only — no exam, no bond, and locals are BANNED from doing more)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; registration only — no exam, no bond, and locals are BANNED from doing more",
+      "markdown": "**Hypothesis confirmed: Idaho has contractor REGISTRATION, not a license — no exam, no competency test, no bond.** STATE LAW: the **Idaho Contractor Registration Act, Idaho Code § 54-5201 et seq.** (Title 54, ch. 52, enacted 2005, registration mandatory since Jan 1, 2006; full chapter text verified at legislature.idaho.gov/statutesrules/idstat/title54/t54ch52/, checked Jul 10, 2026). \"Construction\" is defined broadly — \"building, altering, repairing, adding to … improving, reconstructing … any building … or other structure\" (§ 54-5203(2)) — chimney rebuilds, crowns, relines, and repairs are squarely inside. Administered by the **Idaho Contractors Board** under the **Division of Occupational and Professional Licenses (DOPL)** (§ 54-5206). **What registration attests (§ 54-5210): an application under oath, proof of a $300,000 single-limit general liability policy, worker's comp proof (or an exemption statement), ownership disclosure, and a prior-revocation statement. That's the entire bar — no exam, no experience requirement, no surety bond. Fee capped at $150/year.** **Threshold:** exemption for \"casual, minor, or inconsequential\" work where the aggregate contract price (labor + materials) is **under $2,000**, with an anti-splitting clause (§ 54-5205(2)(f); text re-read Sep 15, 2026) — so most real chimney jobs require registration, but a cheap sweep-only visit may not. **Specialty trades are the real licenses:** electrical (Title 54, ch. 10, \"Electrical Contractors and Journeymen\"), plumbing (ch. 26), and **HVAC (ch. 50, \"Installation of Heating, Ventilation and Air Conditioning Systems\")** are exam-based DOPL licenses, and licensees are exempt from registration (§ 54-5205(1)) — gas fireplace/insert and freestanding stove installs touch the HVAC license (see § 5). **Penalties with real teeth:** unregistered contracting is a **misdemeanor (up to $1,000 fine / 6 months jail, § 54-5217(1))**; an unregistered contractor **cannot bring or maintain any action to collect payment (§ 54-5217(2))** and **conclusively waives all mechanic's lien rights (§ 54-5208)**; building permits require presentment of the registration number (§ 54-5209). **The oddball: § 54-5213(1) — since Jan 1, 2007, no Idaho city or county may run its own contractor registration or licensure program.** Idaho preempted local licensing while declining to license at the state level — there is structurally nowhere in Idaho where a chimney contractor takes a competency exam. Public lookup: **edopl.idaho.gov/OnlineServices/?link=PubSearch** (\"Search for a License or Registration,\" linked from the dopl.idaho.gov homepage; checked Sep 15, 2026)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Idaho registration attests to **insurance and identity — literally nothing about skill.** There is no exam of any kind (Michigan tests codes and business law; Nevada tests trade knowledge; Idaho tests whether your liability policy exists). A registered contractor has never been asked a single question about flues, clearances, crowns, or NFPA 211 — and because § 54-5213 bans local licensing, no Idaho jurisdiction can raise that bar. The HVAC/plumbing/electrical licenses do involve exams, but those test the mechanical trade, not chimney diagnosis; a masonry chimney contractor holds none of them. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) plus an independent inspection are the only competence signal available anywhere in the state."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; a real mandatory form, but chimney appears only inside a parenthetical appliance checklist)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real mandatory form, but chimney appears only inside a parenthetical appliance checklist",
+      "markdown": "STATE LAW: the **Idaho Property Condition Disclosure Act, Idaho Code § 55-2501 et seq.** (1994; full chapter text verified at legislature.idaho.gov/wp-content/uploads/statutesrules/idstat/Title55/T55CH25.pdf, checked Jul 10, 2026). Sellers of residential property of 1–4 dwelling units — **including nonowner-occupied rentals** — must complete the statutory disclosure form (§ 55-2504). The statutory form (§ 55-2508) lists **\"fireplace/wood stove\"** — but only as one example inside item 4's parenthetical appliance list (\"All appliances and service systems included in the sale … are functioning properly except: (please list and explain)\"), alongside item 5's \"Heating\" line. **There is no dedicated chimney/flue line item** — weaker than Nevada's named \"Fireplace & chimney\" row or Michigan's checklist. Mechanics: delivery within **10 days** of offer acceptance (§ 55-2509); the buyer may **rescind within 3 business days** of receiving the form, based on a specific objection to a disclosure, with deposits returned (§ 55-2515); willful/negligent violation yields **actual damages only** (§ 55-2517) and never invalidates the transfer. Actual-knowledge standard, expressly \"not a substitute for any inspections\" (§ 55-2507). Sixteen exemption categories (§ 55-2505: foreclosures, estates, intra-family, new construction, etc.). Alternative forms are permitted (§ 55-2506) — in practice agents use the Idaho REALTORS **RE-25** form (idl.idaho.gov copy verified, checked Jul 10, 2026). **No inspection is mandated at transfer**; NFPA 211 Level 2 at sale stays a NATIONAL STANDARD, not Idaho law."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; an AG rulebook that covers estimates, repairs, and door-knockers)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; an AG rulebook that covers estimates, repairs, and door-knockers",
+      "markdown": "STATE LAW: the **Idaho Consumer Protection Act, Idaho Code § 48-601 et seq.**, enforced by the AG's Consumer Protection Division. Private action under **§ 48-608**: **actual damages or $1,000, whichever is greater**, and the court **shall award attorney's fees** to a prevailing consumer; under **§ 48-608(2)**, an **elderly (62+) or disabled** victim may recover an **enhanced penalty of $15,000 or treble actual damages, whichever is greater** — but only where the court finds the offender knew or should have known the conduct targeted an elderly/disabled person **and** the conduct caused a listed serious harm (loss of primary residence, or loss of more than 25% of income, retirement funds or pension payments, or loss of assets essential to health/welfare); attorney's fees to a prevailing plaintiff are in § 48-608(5) (legislature.idaho.gov/statutesrules/idstat/Title48/T48CH6/SECT48-608/, checked Sep 15, 2026). Complaints: **ag.idaho.gov/consumer-protection/consumer-complaints/** (also ReportScamsIdaho.com). **Right to cancel:** the AG's **Idaho Rules of Consumer Protection (IDAPA 04.02.01), Subchapter Q — \"Cooling-Off Period for Door-to-Door Sales\"** — gives a **3-business-day right to cancel** door-to-door sales of **$25 or more**, with a mandatory 10-point-type notice and detachable NOTICE OF CANCELLATION form (adminrules.idaho.gov/rules/current/04/040201.pdf, checked Jul 10, 2026). The same rulebook regulates **Estimates (Subchapter L)** and **Repairs and Improvements (Subchapter M)** — directly applicable to chimney-repair upsells. The hooks interlock: the Contractors Board may discipline a registrant for **ICPA violations (§ 54-5215(2)(b))**, and hiring an unregistered contractor does **not** void the homeowner's remedies — it voids the *contractor's* (no suit for payment, no lien; § 54-5217(2), § 54-5208)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on structure; medium on current cycle; Idaho's opt-out politics are the story)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on structure; medium on current cycle; Idaho's opt-out politics are the story",
+      "markdown": "STATE LAW/LOCAL: the **Idaho Building Code Act, Idaho Code § 39-4101 et seq.** The **Idaho Residential Code** is still the **2018 IRC — Parts I, II, III and IX, for one- and two-family dwellings — with state amendments**, incorporated by reference in the Building Code Board's rule **IDAPA 24.39.30** (current rule text, section notations dated 7-1-24; files.dfm.idaho.gov/dfm-admin-website/rules/current/24/243930.pdf, checked Sep 15, 2026); Idaho Code § 39-4109 names \"the version of the International Residential Code adopted by the Idaho building code board\" as the Idaho residential code. Part III includes **IRC Chapter 10, Chimneys and Fireplaces** (no Idaho Chapter 10 amendments found in the rule). The 2025 and 2026 session amendments to § 39-4116 did **not** change the code edition: **2025 ch. 40 (H0104)** concerns the agricultural-building exemption, and **2026 ch. 320 (H0706, eff. July 1, 2026)** added new § 39-4109C (single-stairway apartment exceptions) and inserted \"Except as otherwise provided in this chapter\" into § 39-4116 (legislature.idaho.gov/sessioninfo/2025/legislation/ and …/2026/legislation/H0706, checked Sep 15, 2026). The twist is enforcement: under **§ 39-4116(1)**, local code enforcement is **elective** — cities/counties choose whether to run a permit program at all (text verified at legislature.idaho.gov/statutesrules/idstat/Title39/T39CH41/SECT39-4116/, checked Jul 10, 2026). Those that do must adopt the state-adopted codes, may amend only to an **equivalent-or-stronger** level (§ 39-4116(4)), and **may not adopt newer IRC versions than the board has approved** (§ 39-4116(2)) — Idaho's opt-out politics run in both directions (locals also can't require residential fire sprinklers, § 39-4116(3)). Practical map: Boise, Meridian, Nampa, Coeur d'Alene, Idaho Falls and essentially all metro jurisdictions enforce — relines, rebuilds, and solid-fuel appliance installs are permit work there; in non-enforcing rural areas **no local building permit exists for structural chimney work at all**. But the trades run statewide: where no local program exists, **DOPL issues electrical/plumbing/HVAC permits directly**, and DOPL's HVAC rules list a **\"free-standing solid-fuel stove, factory-built gas fireplace, or similar fixture or appliance, including ducts, vents, and flues attached thereto\"** in the HVAC permit fee schedule (**IDAPA 24.39.70.500**, current rule, notation 3-28-23; files.dfm.idaho.gov/dfm-admin-website/rules/current/24/243970.pdf, checked Sep 15, 2026) — while built-in solid-fuel appliances (fireplaces/inserts) go through the local building department where one exists (county practice, e.g., Canyon County — LOCAL) *(confirm the built-in vs. freestanding split on current DOPL guidance before publish)*. NFPA 211 is not referenced in Idaho statute — NATIONAL STANDARD only."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (code-based — high confidence in the absence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [],
+      "confidenceNote": "code-based — high confidence in the absence",
+      "markdown": "**Absence is the finding: Idaho has no standalone CO-alarm statute — no all-rental mandate, no at-sale requirement.** STATE LAW (code layer only): CO alarms are required via the Idaho Residential Code (2018 IRC **R315**, as amended in IDAPA 24.39.30, which modifies R315.2.2 (alterations/repairs/additions) by deleting its Exception 2) in **new construction and permit-triggering work** where the dwelling has a fuel-burning appliance or attached garage, outside each sleeping area (Idaho Residential Code, up.codes/viewer/idaho/irc-2018; corroborated by the Idaho Dept. of Insurance CO-alarm PSA, doi.idaho.gov/psa/co-alarms/, checked Jul 10, 2026). Existing homes are grandfathered; in non-enforcing rural jurisdictions even the code layer has no enforcer. A permitted chimney or stove job is the natural moment to add alarms — say so on the page."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV — high confidence; Idaho sits on BOTH western axes: WUI fire and airshed inversions)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; Idaho sits on BOTH western axes: WUI fire and airshed inversions",
+      "markdown": "**Two Idaho stories, both real.** **(a) Airsheds/inversions — where Idaho is genuinely strict:** DEQ holds burn-ban authority under its Air Pollution Emergency Rule and runs a daily **burn-decision map** (www2.deq.idaho.gov/air/CRB/BurnDecisionMap, checked Jul 10, 2026). Two wood-smoke nonattainment sagas anchor the section: the **West Silver Valley (Pinehurst/Kellogg, Shoshone County)** was designated PM2.5 nonattainment in 2015 **driven largely by residential wood heating** in winter inversions, attained the standard via a woodstove-changeout program and burn curtailment, and was redesignated attainment with a maintenance plan in 2021 (EPA newsroom + epa.gov/sips-id West Silver Valley maintenance plan, checked Jul 10, 2026); **Franklin County** (Idaho's share of the Logan UT-ID Cache Valley airshed) was PM2.5 nonattainment 2009–2021 with local wood-burning ordinances in towns like Clifton (DEQ Cache Valley SIP; EPA redesignation Dec 2021, checked Jul 10, 2026). DEQ's Coeur d'Alene office issues winter **woodstove-curtailment advisories** for Bonners Ferry, Sandpoint, St. Maries, Pinehurst, and Kootenai County; Treasure Valley (Boise) inversions bring their own advisories. DEQ runs **woodstove changeout rebates** as funding allows (currently St. Maries; deq.idaho.gov/funding/woodstove-funding-resources/, checked Jul 10, 2026) plus a state **income-tax deduction** for replacing a non-EPA-certified stove *(statute cite UNVERIFIED — confirm before publish)*. **(b) WUI/spark arrestors — real but LOCAL, not statewide:** Idaho has **no statewide WUI code**. LOCAL: the **City of Boise amended the International Fire Code to add a WUI chapter (Boise City Code 5-12-49)** requiring, in the WUI, that **chimneys serving solid- or liquid-fuel appliances have spark arresters** (12-gauge woven/welded wire, openings ≤ 1/2\", net free area ≥ 4x the chimney outlet) (codelibrary.amlegal.com Boise 5-12-49, checked Jul 10, 2026); other communities have adopted all or part of the IWUIC (EPA/ICC references; Idaho Firewise guidance is advisory). Rental units: no state solid-fuel rental rule found — NOT CONFIRMED beyond code baseline."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — absence finding; the leverage writes itself)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "absence finding; the leverage writes itself",
+      "markdown": "**No Idaho AG chimney-sweep alert or chimney-specific enforcement action surfaced (searched Jul 10, 2026) — absence noted; re-run before publish.** The AG maintains the general scam-reporting apparatus (ReportScamsIdaho.com; ag.idaho.gov/consumer-protection/alerts/) and has run recent Treasure Valley home-related fraud warnings (planning-and-zoning fee scheme, 2023). The page's leverage doesn't need a named villain: a door-knocking \"chimney inspector\" who isn't registered is committing a **misdemeanor (§ 54-5217(1))**, can be **stiffed lawfully** (no right to sue, § 54-5217(2); no lien, § 54-5208), owes a **3-business-day cooling-off** (IDAPA 04.02.01 Subch. Q), and is exposed to ICPA damages (§ 48-608) — with the § 48-608(2) $15,000/treble elderly enhancement available when a scam against an older homeowner causes one of the serious losses the statute lists."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold-winter state with a north–south gradient. Panhandle (Coeur d'Alene/Sandpoint/Bonners Ferry): heavy wood heat, burn season ~Oct–Apr, plus midwinter no-burn advisory days in the curtailment towns. Boise/Treasure Valley: semi-arid but real winters, burn season ~Oct–Mar, inversion advisories in Dec–Feb. Eastern Idaho (Idaho Falls/Pocatello/Teton): long, cold burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN (and note August wildfire-smoke season as a secondary awareness moment)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Idaho's cost index runs below national (MERIC), with fast-growing Boise metro near national on trade labor and rural north/east below it. Exception: **Sun Valley/Blaine County and resort towns (McCall, Coeur d'Alene lakefront) carry a resort premium above national.** Regionalize slightly below the national researched ranges except in resort markets until listings data exists."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed: HVAC/plumbing/electrical, Title 54 chs. 50/26/10)** · Registration: **YES — Idaho Contractor Registration Act, Idaho Code 54-5204; ≥$2,000 jobs; attests $300k liability insurance + workers' comp only; unregistered = misdemeanor, no suit, no lien (54-5217, 54-5208); locals preempted (54-5213)** · Disclosure law: **YES — Property Condition Disclosure Act, IC 55-2508; \"fireplace/wood stove\" inside the appliance checklist only; 3-business-day buyer rescission (55-2515)** · 3-day cancel: **YES (door-to-door ≥$25, IDAPA 04.02.01 Subch. Q)** · CO law: **code-only — IRC R315, new construction; no rental/at-sale statute** · Lookup: edopl.idaho.gov/OnlineServices/?link=PubSearch · Leverage: burn-ban/airshed curtailment towns + Boise WUI spark-arrestor rule."
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "**Correlation verdict: Idaho CONFIRMS the license⇄disclosure inverse correlation — a soft-but-clean confirm — nudging the West from its 4-4 coin flip toward the confirm side.** The licensing axis could hardly be weaker: registration with **no exam, no bond, nothing but an insurance certificate** — and Idaho uniquely **outlawed the local workaround** (§ 54-5213), so unlike NY or IL there is no city regime to route trust through; the state is uniformly credential-free for chimney work. And exactly as the inverse rule predicts, the sale side is where Idaho shows up: a **mandatory statutory disclosure form** that names \"fireplace/wood stove,\" runs on a 10-day clock, and hands the buyer a genuine **3-business-day rescission right** (§ 55-2515). The honest grading: the disclosure is **mid-strength** — the chimney lives in a parenthetical appliance list, not a named line item, and the remedy is actual damages only — so Idaho is a moderate confirm, not a poster child like PA. On the West's orthogonal **wildfire/cap-law axis**, Idaho sits on it twice, but locally rather than statewide: the fire half is municipal (Boise's WUI spark-arrestor ordinance, scattered IWUIC adoptions, no statewide WUI code), and Idaho adds the axis's *other* pole that most western states underweight — the **inversion airshed regime**, where entire towns (Pinehurst, the Cache Valley towns, the panhandle curtailment communities) have had their wood heat federally case-managed. Message for the page: **in Idaho, \"registered\" means insured, not qualified — verify the DOPL registration (it's what makes the contractor sueable and lienable), then demand individual certifications, because no Idaho government will ever have tested them; at sale, read the disclosure but treat \"fireplace/wood stove: functioning properly\" as a checkbox, not an inspection.**"
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed: HVAC/plumbing/electrical, Title 54 chs. 50/26/10)",
+    "registration_name": "YES — Idaho Contractor Registration Act, Idaho Code 54-5204; ≥$2,000 jobs (54-5205(2)(f)); attests $300k liability insurance + workers' comp only; unregistered = misdemeanor ≤$1,000/6 mo, no suit (54-5217), no lien (54-5208); locals preempted (54-5213)",
+    "disclosure_law": "YES — Property Condition Disclosure Act, IC 55-2508; \"fireplace/wood stove\" inside the appliance checklist only; 3-business-day buyer rescission (55-2515)",
+    "chimney_item_on_form": "Yes — only inside item 4 appliance list (no chimney line)",
+    "three_day_cancel": "YES (door-to-door ≥$25, IDAPA 04.02.01 Subch. Q)",
+    "co_law": "code-only — 2018 IRC R315 as amended by IDAPA 24.39.30; no standalone, rental or at-sale statute",
+    "lookup_url": "edopl.idaho.gov/OnlineServices/?link=PubSearch",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed: HVAC/plumbing/electrical, Title 54 chs. 50/26/10)",
+    "registration_name": "YES — Idaho Contractor Registration Act, Idaho Code 54-5204; ≥$2,000 jobs; attests $300k liability insurance + workers' comp only; unregistered = misdemeanor, no suit, no lien (54-5217, 54-5208); locals preempted (54-5213)",
+    "disclosure_law": "YES — Property Condition Disclosure Act, IC 55-2508; \"fireplace/wood stove\" inside the appliance checklist only; 3-business-day buyer rescission (55-2515)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (door-to-door ≥$25, IDAPA 04.02.01 Subch. Q)",
+    "co_law": "code-only — IRC R315, new construction; no rental/at-sale statute",
+    "lookup_url": "edopl.idaho.gov/OnlineServices/?link=PubSearch"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "REGISTRATION ONLY",
+      "note": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed…",
+      "anchor": "license",
+      "rule": "license:NO+registration",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "Registration without a competency exam",
+      "anchor": "qualified-gap",
+      "rule": "exam:registration-no-exam",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 at sale stays a NATIONAL STANDARD, not Idaho law."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (door-to-door ≥$25, IDAPA 04.02.01 Subch. Q)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "code-only — IRC R315, new construction; no rental/at-sale statute",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "remedies",
+      "rule": "sue:§4-sentence",
+      "derivedFrom": "§4 text",
+      "evidence": "The hooks interlock: the Contractors Board may discipline a registrant for ICPA violations (§ 54-5215(2)(b)), and hiring an unregistered contractor does not void the homeowner's remedies — it voids the contractor's (no suit for payment…"
+    }
+  ],
+  "h1": "Idaho: contractors register, but no state license tests them. Here's what that means.",
+  "metaDescription": "Idaho chimney & fireplace laws: registration rules, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold-winter state with a north–south gradient. Panhandle (Coeur d'Alene/Sandpoint/Bonners Ferry): heavy wood heat, burn season ~Oct–Apr, plus midwinter no-burn advisory days in the curtailment towns. Boise/Treasure Valley: semi-arid but real winters, burn season ~Oct–Mar, inversion advisories in Dec–Feb. Eastern…"
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Idaho?",
+      "a": "State licensing: NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed: HVAC/plumbing/electrical, Title 54 chs. 50/26/10). Registration or credential: YES — Idaho Contractor Registration Act, Idaho Code 54-5204; ≥$2,000 jobs; attests $300k liability insurance + workers' comp only; unregistered = misdemeanor, no suit, no lien (54-5217, 54-5208); locals preempted (54-5213). Seller disclosure at sale: YES — Property Condition Disclosure Act, IC 55-2508; \"fireplace/wood stove\" inside the appliance checklist only; 3-business-day buyer rescission (55-2515). Right to cancel a sale made at your home: YES (door-to-door ≥$25, IDAPA 04.02.01 Subch. Q). Carbon monoxide alarm law: code-only — IRC R315, new construction; no rental/at-sale statute. Where to check a contractor: edopl.idaho.gov/OnlineServices/?link=PubSearch. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Idaho?",
+      "a": "STATE LAW: the Idaho Property Condition Disclosure Act, Idaho Code § 55-2501 et seq. (1994; full chapter text verified at legislature.idaho.gov/wp-content/uploads/statutesrules/idstat/Title55/T55CH25.pdf, checked Jul 10, 2026). Sellers of residential property of 1–4 dwelling units — including nonowner-occupied rentals — must complete the statutory disclosure form (§ 55-2504). The statutory form (§ 55-2508) lists \"fireplace/wood stove\" — but only as one example inside item 4's parenthetical appliance list (\"All appliances and service systems included in the sale … are functioning properly except: (please list and explain)\"), alongside item 5's \"Heating\" line.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Idaho?",
+      "a": "STATE LAW: the Idaho Consumer Protection Act, Idaho Code § 48-601 et seq., enforced by the AG's Consumer Protection Division. Private action under § 48-608: actual damages or $1,000, whichever is greater, and the court shall award attorney's fees to a prevailing consumer; under § 48-608(2), an elderly (62+) or disabled victim may recover an enhanced penalty of $15,000 or treble actual damages, whichever is greater — but only where the court finds the offender knew or should have known the conduct targeted an elderly/disabled person and the conduct caused a listed serious harm (loss of primary residence, or loss of more than 25% of income, retirement funds or pension payments, or loss of assets essential to health/welfare); attorney's fees to a prevailing plaintiff are in § 48-608(5) (legislature.idaho.gov/statutesrules/idstat/Title48/T48CH6/SECT48-608/, checked Sep 15, 2026). Complaints: ag.idaho.gov/consumer-protection/consumer-complaints/ (also ReportScamsIdaho.com). Right to cancel: the AG's Idaho Rules of Consumer Protection (IDAPA 04.02.01), Subchapter Q — \"Cooling-Off Period for Door-to-Door Sales\" — gives a 3-business-day right to cancel door-to-door sales of $25 or more, with a mandatory 10-point-type notice and detachable NOTICE OF CANCELLATION form (adminrules.idaho.gov/rules/current/04/040201.pdf, checked Jul 10, 2026).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "montana",
+    "neighborName": "Montana",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed…"
+    },
+    "b": {
+      "answer": "LICENSE, NO EXAM",
+      "note": "NO competency license — Construction Contractor License (MCA § 37-45-201, eff. Jan 1, 2026…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

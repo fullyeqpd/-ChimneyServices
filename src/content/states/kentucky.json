@@ -1,0 +1,311 @@
+{
+  "slug": "kentucky",
+  "name": "Kentucky",
+  "abbr": "KY",
+  "sourceFile": "rights-research-kentucky.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": "**CORRECTED Sep 15, 2026: Kentucky did NOT enact a 2025 point-of-sale CO/smoke detector law — 2025 HB 339 died in House committee (§6). The residential code is 815 KAR 7:125 (2018 Kentucky Residential Code on the 2015 IRC), not 815 KAR 7:120 (§5).**",
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "confirm no 2026 detector law before stating \"no point-of-sale CO law\"; KRS 367.420 verified only via a Justia mirror; Louisville numbers unverified",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- KRS 324.360 FSBO scope (old blocker #1): RESOLVED — § 324.360(1) applies only \"if any person licensed under this chapter receives compensation\"; FSBO without a paid licensee is outside it — https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=31615 — GOV\n- Chimney item on the form: RESOLVED — KREC Form 402 (12/2022), incorporated by 201 KAR 11:121, item \"g. Chimneys, fireplaces, inserts\" — https://krec.ky.gov/Documents/KREC%20Form%20402%20-%20Sellers%20Disclosure%20of%20Property%20Condition.pdf, https://apps.legislature.ky.gov/law/kar/titles/201/011/121/ — GOV/DOC\n- Home Solicitation cancellation section (old blocker #2): RESOLVED — KRS 367.420, midnight of third business day, emergency exception — https://statecodesfiles.justia.com/kentucky/2013/chapter-367/section-367.420/section-367.420.pdf — REF mirror of LRC statute PDF (2013 compilation; LRC chapter-367 page not located). Prior claim that a seller performing early \"forfeits compensation\" was not verified and was removed.\n- 2025 HB 339 CO-at-sale law (old blocker #3): CORRECTED — not enacted; last action Feb 7, 2025 referral to House LOAR committee — https://apps.legislature.ky.gov/record/25rs/hb339.html — GOV. KRS ch. 227 section list contains no CO-detector section — https://apps.legislature.ky.gov/law/statutes/chapter.aspx?id=38346 — GOV\n- 2026 successor bill: STILL OPEN — 2026 RS bill index not reachable (403/404); web search budget exhausted\n- Kentucky Residential Code IRC cycle (old blocker #4): CORRECTED — regulation is 815 KAR 7:125 (not 7:120); 2015 IRC + 2018 KRC Third Edition (Aug 2024), amended eff. Dec 3, 2024 — https://apps.legislature.ky.gov/law/kar/titles/815/007/125/, https://apps.legislature.ky.gov/law/kar/titles/815/007/120/ — GOV\n- State licensing absence (HVAC/plumbing/electrical only): not re-fetched this pass (rests on Jul 2026 pass); Louisville Class C specifics not re-verified — flagged in §1\n- KY AG chimney enforcement actions (old blocker #5): STILL OPEN (non-blocking; pattern language only) — none found\n- Template-leakage sweep: clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence on state absence; local details from Jul 2026 pass, not re-fetched)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on state absence; local details from Jul 2026 pass, not re-fetched",
+      "markdown": "**No state license covers chimney work in Kentucky.** STATE LAW: the **Kentucky Board / Department of Housing, Buildings and Construction** (agency name not re-verified) licenses **HVAC, plumbing, and electrical** trades at the state level — there is **no statewide general-contractor and no masonry license**, so chimney masonry, relining, and sweeping fall **outside** state licensure. Licensing is **LOCAL**: **(1) Louisville Metro** (Codes & Regulations) licenses general contractors by class; the Jul 2026 pass reported a Class C masonry path with an experience requirement, insurance, and a Louisville Metro building-contractor exam (**details not re-verified — confirm before quoting numbers**); **(2) Lexington-Fayette Urban County Government** Building Inspection registers contractors separately. Other cities run their own registration. So \"licensed and bonded\" in Kentucky usually means a **Louisville or Lexington local credential** valid only in that jurisdiction — never a statewide chimney credential."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Wide statewide — there is **nothing to verify for chimney work** outside the metros: no state exam, no state registry. Even local contractor exams test building-code/permit knowledge, not flue diagnosis or NFPA 211. Chimney **sweeping** and **repair** are both unlicensed by the state, and outside Louisville/Lexington even the local check disappears. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent inspection are the real competence signal here."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; real chimney line, only when a paid licensee is involved)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real chimney line, only when a paid licensee is involved",
+      "markdown": "STATE LAW: **KRS 324.360(1)**: \"This section shall apply to sales and purchases involving single-family residential real estate dwellings if any person licensed under this chapter receives compensation.\" The seller completes and signs the form when executing a listing agreement (§ 324.360(4)); for unlisted property, any involved licensee must give the owner a blank form (§ 324.360(5)). Exempt: new homes sold with a warranty, auction sales, and court-supervised foreclosures (§ 324.360(7)); a seller's refusal must be communicated in writing to the buyer (§ 324.360(8)). The prescribed form is **KREC Form 402, \"Seller's Disclosure of Property Condition\" (12/2022)**, incorporated by reference in **201 KAR 11:121**, and it lists **\"g. Chimneys, fireplaces, inserts\"** plus \"j. Heating system age of system.\" **FSBO scope (RESOLVED): a sale with no compensated real-estate licensee is outside KRS 324.360** — the pure for-sale-by-owner buyer gets no statutory form. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence on cancel section)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on cancel section",
+      "markdown": "STATE LAW: the **Kentucky Consumer Protection Act, KRS 367.170**, bars \"unfair, false, misleading, or deceptive acts or practices in the conduct of any trade or commerce,\" with AG enforcement and a private right of action (KRS 367.220) *(not re-fetched this pass)*. Door-to-door work is governed by the **Home Solicitation Sales provisions, KRS 367.410 et seq.**; **KRS 367.420 (\"Buyer's right to cancel home solicitation sale -- Method of cancellation\")** lets the buyer \"cancel a home solicitation sale until midnight of the third business day after the day on which the buyer signs an agreement,\" by written notice to the seller's stated address (mail notice effective on deposit); where the buyer requests emergency goods/services and the seller has substantially performed before notice, the right does not apply. That is the exact mechanic against chimney scare-sales. Complaints: KY AG Office of Consumer Protection."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; statewide code)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; statewide code",
+      "markdown": "STATE LAW: unusually for a no-license state, Kentucky has a **mandatory statewide building code** under KRS 198B. One- and two-family dwellings and townhouses fall under **815 KAR 7:125, the Kentucky Residential Code**, which adopts the **2015 International Residential Code** as amended by the **2018 Kentucky Residential Code (Third Edition, August 2024)**, last amended effective **Dec 3, 2024**; other buildings fall under **815 KAR 7:120, the Kentucky Building Code** (2015 IBC as amended by the 2018 KBC, Fourth Edition). Local building departments enforce. Chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not. Rural counties vary in enforcement capacity, but the *code* itself is statewide."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (CORRECTED — no point-of-sale law; new-construction code only)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [],
+      "confidenceNote": "CORRECTED — no point-of-sale law; new-construction code only",
+      "markdown": "**CORRECTED Sep 15, 2026.** The prior draft said 2025 HB 339 created a detector requirement at sale/lease effective Dec 31, 2025. **That bill never became law.** The LRC record shows **2025 HB 339, \"AN ACT relating to residential detectors,\"** introduced Feb 5, 2025 and referred Feb 7, 2025 to House Licensing, Occupations, & Administrative Regulations — **no further action.** Kentucky therefore has **no statewide point-of-sale or point-of-lease CO requirement** found in statute. CO alarm requirements for **new one- and two-family construction** come through the **Kentucky Residential Code (815 KAR 7:125, on the 2015 IRC)**; the 2015 IRC model text requires CO alarms in new dwellings with fuel-fired appliances or attached garages (NATIONAL STANDARD model language — **Kentucky's amended R315 text not read this pass**). Existing homes: no state retrofit mandate found. A chimney/appliance job is still the natural moment to recommend alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for KY."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The KY AG's Office of Consumer Protection pursues home-repair contractors, and the door-knock \"we noticed your chimney\" pitch is a textbook home-solicitation (KRS 367.420) + KRS 367.170 problem. **Specific KY chimney-sweep enforcement actions: NOT FOUND.** Use pattern language only."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Mixed-humid climate; colder/longer in eastern (Appalachian) KY, milder in the west. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Louisville and Lexington metros run **at or modestly above** the state baseline; rural eastern/western KY below national. Regionalize modestly upward for the two metros."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro, Lexington-Fayette)** · Registration: **local only; no statewide contractor registry** · Disclosure law: **YES — KRS 324.360 / KREC Form 402 lists \"Chimneys, fireplaces, inserts\"; applies only when a licensee is compensated (FSBO excluded)** · 3-day cancel: **YES (KRS 367.420, home solicitation sales)** · CO law: **WEAK — no point-of-sale/lease law (2025 HB 339 died in committee); new construction via Kentucky Residential Code (815 KAR 7:125)** · Lookup: Louisville Metro Codes & Regulations + Lexington-Fayette Building Inspection + krec.ky.gov"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Kentucky **CONFIRMS the master finding**: with **no statewide chimney license** (only Louisville/Lexington local credentials), it delivers a **real seller disclosure form that names \"chimneys, fireplaces, inserts\"** — the weak-license / strong-disclosure inversion again. It pairs the missing license with a **mandatory statewide building code**, which is uncommon for a no-license state. Two catches belong on the page: the disclosure mandate applies **only when a real-estate licensee is paid**, so a pure FSBO buyer gets nothing statutory; and a 2025 bill to require CO and smoke detectors at sale or lease **died in committee**, so existing Kentucky homes carry no statewide CO duty at all. The chimney-inspection-at-purchase recommendation carries more weight here, not less."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "No state license (state licenses HVAC/plumbing/electrical only); local (Louisville Metro, Lexington-Fayette)",
+    "registration_name": "None statewide (local registration only)",
+    "disclosure_law": "Yes (KRS 324.360; KREC Form 402) - only when a licensee is compensated; FSBO excluded",
+    "chimney_item_on_form": "Yes - Chimneys, fireplaces, inserts",
+    "three_day_cancel": "Yes (KRS 367.420)",
+    "co_law": "Weak - no point-of-sale/lease law (2025 HB 339 died in committee); new construction via Kentucky Residential Code 815 KAR 7:125",
+    "lookup_url": "https://krec.ky.gov/new_docs.aspx?cat=47&menuid=58",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro, Lexington-Fayette)",
+    "registration_name": "local only; no statewide contractor registry",
+    "disclosure_law": "YES — KRS 324.360 / KREC Form 402 lists \"Chimneys, fireplaces, inserts\"; applies only when a licensee is compensated (FSBO excluded)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (KRS 367.420, home solicitation sales)",
+    "co_law": "WEAK — no point-of-sale/lease law (2025 HB 339 died in committee); new construction via Kentucky Residential Code (815 KAR 7:125)",
+    "lookup_url": "Louisville Metro Codes & Regulations + Lexington-Fayette Building Inspection + krec.ky.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (KRS 367.420, home solicitation sales)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:limited→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Kentucky: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Kentucky chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "Louisville Metro, Lexington-Fayette",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Mixed-humid climate; colder/longer in eastern (Appalachian) KY, milder in the west. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Kentucky?",
+      "a": "State licensing: NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro, Lexington-Fayette). Registration or credential: local only; no statewide contractor registry. Seller disclosure at sale: YES — KRS 324.360 / KREC Form 402 lists \"Chimneys, fireplaces, inserts\"; applies only when a licensee is compensated (FSBO excluded). Right to cancel a sale made at your home: YES (KRS 367.420, home solicitation sales). Carbon monoxide alarm law: WEAK — no point-of-sale/lease law (2025 HB 339 died in committee); new construction via Kentucky Residential Code (815 KAR 7:125). Where to check a contractor: Louisville Metro Codes & Regulations + Lexington-Fayette Building Inspection + krec.ky.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Kentucky?",
+      "a": "STATE LAW: KRS 324.360(1): \"This section shall apply to sales and purchases involving single-family residential real estate dwellings if any person licensed under this chapter receives compensation.\" The seller completes and signs the form when executing a listing agreement (§ 324.360(4)); for unlisted property, any involved licensee must give the owner a blank form (§ 324.360(5)). Exempt: new homes sold with a warranty, auction sales, and court-supervised foreclosures (§ 324.360(7)); a seller's refusal must be communicated in writing to the buyer (§ 324.360(8)). The prescribed form is KREC Form 402, \"Seller's Disclosure of Property Condition\" (12/2022), incorporated by reference in 201 KAR 11:121, and it lists \"g. Chimneys, fireplaces, inserts\" plus \"j.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Kentucky?",
+      "a": "STATE LAW: the Kentucky Consumer Protection Act, KRS 367.170, bars \"unfair, false, misleading, or deceptive acts or practices in the conduct of any trade or commerce,\" with AG enforcement and a private right of action (KRS 367.220) (not re-fetched this pass). Door-to-door work is governed by the Home Solicitation Sales provisions, KRS 367.410 et seq.; KRS 367.420 (\"Buyer's right to cancel home solicitation sale -- Method of cancellation\") lets the buyer \"cancel a home solicitation sale until midnight of the third business day after the day on which the buyer signs an agreement,\" by written notice to the seller's stated address (mail notice effective on deposit); where the buyer requests emergency goods/services and the seller has substantially performed before notice, the right does not apply. That is the exact mechanic against chimney scare-sales. Complaints: KY AG Office of Consumer Protection.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "tennessee",
+    "neighborName": "Tennessee",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (state licenses HVAC/plumbing/electrical only) — LOCAL (Louisville Metro…"
+    },
+    "b": {
+      "answer": "ONLY ≥ $25,000",
+      "note": "only — state contractor license at $25,000+ prime (masonry subs at $100,000+) (Tenn. Code…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "slug": "tennessee",
+  "name": "Tennessee",
+  "abbr": "TN",
+  "sourceFile": "rights-research-tennessee.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": "**CORRECTED Sep 15, 2026: Tenn. Code § 68-120-112 requires CO alarms only in pre-2016 HOTELS (apartments get smoke alarms only) — it is not a broad residential/rental CO law (§6). Statewide residential code confirmed as the 2018 IRC. Masonry subcontractor license threshold is $100,000 (§1).**",
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "statute text verified via Justia mirrors, not the official LexisNexis host; § 66-5-210 chimney/fireplace wording must stay unrendered until read; no opt-out list",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Adopted IRC edition (old blocker #1a): RESOLVED — IRC 2018 with amendments, effective 7/16/2020; other codes 2021 editions in adoption effective 4/17/2025 — https://www.tn.gov/commerce/fire/codes-enforcement/history.html — GOV\n- Opt-out mechanism and list (old blocker #1b): PARTIALLY RESOLVED / STILL OPEN — § 68-120-101 et seq., two-thirds vote, expires 180 days after next general municipal election unless renewed, certified copy to SFMO; no public opt-out list found; \"~20% of population\" removed as unverified — https://www.mtas.tennessee.edu/reference/statewide-building-standards — DOC (UT MTAS)\n- $25,000 contractor threshold: RESOLVED — before bidding, prime, materials+equipment+labor; ADDED masonry subcontractor $100,000 threshold — https://www.tn.gov/commerce/regboards/contractors/license/get/contractor.html — GOV\n- Home Improvement counties/range (old blocker #2): RESOLVED — $3,000–$24,999; Bradley, Davidson, Hamilton, Haywood, Knox, Marion, Robertson, Rutherford, Shelby; $10,000 bond; T.C.A. 62-6-501(4)(A) — https://www.tn.gov/commerce/regboards/contractors/license/get/home-improvement.html — GOV\n- Disclosure §§ 66-5-201/-202: RESOLVED — 1–4 units; disclosure or (on purchaser waiver) \"as is\" disclaimer — https://law.justia.com/codes/tennessee/title-66/chapter-5/part-2/section-66-5-202/, https://law.justia.com/codes/tennessee/title-66/chapter-5/part-2/section-66-5-201/ — REF mirror of statute text (official TN code host not fetchable)\n- \"Chimney\" on § 66-5-210 form (old blocker #3): STILL OPEN — Justia page shows statute text but form is behind an unresolved link — https://law.justia.com/codes/tennessee/title-66/chapter-5/part-2/section-66-5-210/\n- CO law § 68-120-112: CORRECTED — CO alarms required only in hotels with fuel-burning appliance/fireplace (within 10 ft of sleeping rooms); apartments smoke-only; applies only to buildings existing before Jan 1, 2016; the prior \"rentals + fireplaces covered, broad\" claim was wrong — https://law.justia.com/codes/tennessee/title-68/chapter-120/part-1/section-68-120-112/ (2025 code) — REF mirror of statute text\n- 3-day cancel § 47-18-704: RESOLVED — midnight of third business day; § 47-18-702 excludes cash sales < $25 — https://law.justia.com/codes/tennessee/title-47/chapter-18/part-7/section-47-18-704/, https://law.justia.com/codes/tennessee/title-47/chapter-18/part-7/section-47-18-702/ — REF mirror\n- TCPA § 47-18-109 treble damages: RESOLVED — discretionary treble for willful/knowing; discretionary fees; no punitive for same practice — https://law.justia.com/codes/tennessee/title-47/chapter-18/part-1/section-47-18-109/ — REF mirror\n- \"One-third up front\" rule: STILL OPEN — no statute located; removed from publishable copy\n- TN chimney/home-improvement enforcement action (old blocker #4): STILL OPEN (non-blocking; pattern language only)\n- Template-leakage sweep: removed a garbled cross-state comparison from §3 and the other-state comparisons from the story; no other-state statute strings remain."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Tennessee licenses contractors **only above a dollar threshold, plus a county-specific home-improvement tier.** The **Board for Licensing Contractors** (Dept. of Commerce & Insurance) states: \"A contractor's license is required before contracting, including bidding, offering to engage, or negotiating a price, for projects of **$25,000 or more** when acting as a prime contractor,\" counting **materials, equipment, and labor** (Tenn. Code Title 62, Chapter 6). Subcontractors need a license for electrical, mechanical, plumbing, HVAC or roofing portions of $25,000+, and **\"Masonry subcontractors must be licensed when the masonry portion is $100,000 or more.\"** Separately, a **Home Improvement license** covers \"residential remodeling projects from **$3,000 to $24,999**\" — only in **Bradley, Davidson, Hamilton, Haywood, Knox, Marion, Robertson, Rutherford, and Shelby** counties (TDCI, verified Sep 15, 2026; TDCI cites T.C.A. 62-6-501(4)(A)) — with a **$10,000 surety bond** (or cash/property bond or irrevocable letter of credit). **Below $25,000 statewide (and below $3,000 or outside those 9 counties), no state license is required** — so a routine chimney sweep, reline, cap, or small repair typically needs **no state license.** A rebuild of $25,000+ contracted directly with the homeowner would. Lookup: **search.cloud.commerce.tn.gov** (Verify a License)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "For the vast majority of chimney jobs (well under $25,000), **there is no state credential to verify** — and the contractor license tests business/law/trade breadth, not flue diagnosis. In the 9 Home-Improvement counties a $3k–$25k job needs an HI license, which attests a bond and business qualifications, not chimney competence. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) fill the vacuum. \"Licensed and bonded\" in TN usually means the $10k HI bond (in one of the 9 counties) or the $25k+ contractor license — verify the classification actually covers the work."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence on regime; chimney wording open)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on regime; chimney wording open",
+      "markdown": "Tennessee has a **mandatory disclose-or-disclaim regime — the Residential Property Disclosures Act, Tenn. Code § 66-5-201 et seq.**, applying to \"transfers by sale, exchange, installment land sales contract or lease with option to buy residential real property consisting of not less than one (1) nor more than four (4) dwelling units.\" Under **§ 66-5-202** the owner must furnish either (1) \"a residential property disclosure statement in the form provided in this part regarding the condition of the property, including any material defects known to the owner,\" or (2) — only where the purchaser waives the disclosure statement — \"a residential property disclaimer statement stating that the owner makes no representations or warranties … and that purchaser will be receiving the real property 'as is.'\" The statutory form is prescribed at **§ 66-5-210**; forms used need not be identical but must include all its items. Jul 2026 research reported the form lists \"Fireplace(s)\" and \"Gas Starter for Fireplace\" among included features plus roof and structural items — **the form itself was not reachable this pass, so whether it names \"fireplace\" and/or \"chimney\" is UNVERIFIED.** No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Two tracks. **(1) The Tennessee Consumer Protection Act of 1977 (Tenn. Code § 47-18-101 et seq.)**: under **§ 47-18-109(a)(3)**, for a \"willful or knowing violation,\" \"the court may award three (3) times the actual damages sustained\" (and may not also award punitive damages for the same practice); **§ 47-18-109(e)(1)** lets the court award reasonable attorney's fees and costs. **(2) The Home Solicitation Sales Act (Tenn. Code § 47-18-701 et seq.)**: **§ 47-18-704** gives the buyer until **midnight of the third business day** after signing to cancel by mailed notice; § 47-18-702 excludes cash sales under $25 from \"home solicitation sale.\" That is the exact mechanic against chimney scare-sales. Because most chimney work needs no license, hiring an unlicensed sweep doesn't by itself remove these remedies. Complaints: **Division of Consumer Affairs** and the AG."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on edition; opt-out list open)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on edition; opt-out list open",
+      "markdown": "Tennessee adopts statewide construction safety standards through the **State Fire Marshal's Office**. The currently adopted residential code is the **International Residential Code, 2018 edition, with Tennessee amendments, effective July 16, 2020** (prior: 2009 IRC, 2010); the other statewide codes (IBC, IFC, IMC, IPC, IFGC, IEBC) moved to 2021 editions in the adoption effective Apr 17, 2025, with the 2018 IECC for residential. TN has a **genuine opt-out patchwork: under Tenn. Code § 68-120-101 et seq., a local governing body may exempt one- and two-family dwellings from the statewide standards by a two-thirds vote; the exemption expires 180 days after the next general municipal election unless re-adopted, with a certified resolution sent to the State Fire Marshal** (MTAS, University of Tennessee). **No public list of current opt-out jurisdictions was located, and the \"~20% of population\" figure from the Jul 2026 draft is unverified and removed.** Local jurisdictions with their own codes may be on newer editions. Where a code and building department apply, chimney relines, rebuilds, and solid-fuel appliance installs are generally **permit work**; in opt-out areas there may be **no residential permit process at all.** Name the opt-out reality plainly."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — CORRECTED; narrow)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "CORRECTED; narrow",
+      "markdown": "**CORRECTED Sep 15, 2026.** **Tenn. Code § 68-120-112, \"Smoke alarms and carbon monoxide alarms in residential buildings,\"** makes it unlawful to (b)(1) operate a hotel without smoke alarms in sleeping rooms, (b)(2) operate an **apartment building** without a **smoke** alarm in every living unit, and (b)(3) operate a **hotel** that has \"a fossil-fuel-burning heater or appliance, a fireplace, or other feature … that emits carbon monoxide\" without \"an approved carbon monoxide alarm within ten feet (10′) of each room used for sleeping purposes.\" **Subsection (c)(3): the section \"shall apply only to buildings existing before January 1, 2016\"**; new buildings follow the adopted construction safety standards (§ 68-120-101). So **Tennessee statute imposes no CO-alarm requirement on existing single-family homes, rental houses, or apartments**, and there is **no pre-sale CO requirement.** New one- and two-family dwellings built under the adopted 2018 IRC pick up the model code's CO-alarm provisions (NATIONAL STANDARD model language; TN amendments not read) — and in opt-out jurisdictions not even that. A chimney or stove job is the natural moment to recommend alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide woodstove-emission or burn-ban regime material to hearths. **East Tennessee (the Great Smokies/Blue Ridge counties) and the Cumberland Plateau** carry real wood-heat and old-masonry density — the market core. Not a regulatory section, but a genuine demand note."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF/GOV — pattern material)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "pattern material",
+      "markdown": "Home-improvement complaints are a recurring category for the TN Division of Consumer Affairs, and state warnings about **door-to-door \"storm chaser\" contractors** urge consumers to verify licenses and never pay cash or sign over an insurance check. The Jul 2026 draft's statement that \"TN law bars asking for more than one-third of the project cost up front\" was **not verified to a statute this pass — do not publish it** until a citation is found. **A TN chimney-sweep-specific enforcement action was NOT found**; TDCI publishes contractor disciplinary actions (tn.gov/commerce/regboards/contractors/consumer/rbdar.html) — use pattern language only."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Temperate; colder/longer season in the East TN mountains and Cumberland Plateau, milder in West TN. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Nashville (Davidson) and the growing metro run **near-to-above national**; East TN mountain counties and rural West TN **near-to-below national.** Regionalize modestly upward for the Nashville and Chattanooga/Knoxville metros."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **Threshold-only — state contractor license at $25,000+ prime (masonry subs at $100,000+) (Tenn. Code Title 62 ch. 6); Home Improvement license $3,000–$24,999 in 9 counties only; most chimney work unlicensed** · Registration: **HI license + $10k bond in the 9 counties; else none** · Disclosure law: **YES, MANDATORY disclose-or-disclaim (§§ 66-5-201, -202; form § 66-5-210) — chimney/fireplace wording on form UNVERIFIED** · 3-day cancel: **YES (§ 47-18-704)** · CO law: **NARROW — statute covers pre-2016 hotels only (§ 68-120-112); no existing-home, rental, or at-sale CO requirement; new construction via 2018 IRC where not opted out** · Lookup: search.cloud.commerce.tn.gov (Board for Licensing Contractors)"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Tennessee is a **split verdict against the license⇄disclosure inverse-correlation.** It is only **half low-licensing** (no credential for the routine sub-$25k chimney job, but a real $25k+ contractor regime and a county home-improvement tier) yet has a **mandatory seller disclosure** (§ 66-5-201) — the \"wrong\" corner for the inverse rule. The catch that keeps it from fully breaking: the disclosure carries a lawful **\"as is\" disclaimer (§ 66-5-202)** if the buyer waives it, so a seller can end up revealing nothing. And its CO statute, often described as broad, turns out to cover only older hotels — existing Tennessee homes and rentals have no statutory CO-alarm duty. Net messages for the page: **most chimney sweeps need no TN license, so verify certifications yourself; the seller's disclosure can be waived to \"as is,\" so get your own inspection; there's no state CO requirement for your existing home; and outside code-adopting jurisdictions there may be no permit backstop at all.**"
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "Threshold - state contractor license $25,000+ prime (masonry subs $100,000+); Home Improvement license $3,000-$24,999 in 9 counties; most chimney work unlicensed",
+    "registration_name": "Home Improvement license + $10,000 bond (Bradley, Davidson, Hamilton, Haywood, Knox, Marion, Robertson, Rutherford, Shelby)",
+    "disclosure_law": "Yes - mandatory disclose-or-disclaim (Tenn. Code 66-5-201/-202; form 66-5-210)",
+    "chimney_item_on_form": "Unverified",
+    "three_day_cancel": "Yes (Tenn. Code 47-18-704)",
+    "co_law": "Narrow - statute covers pre-2016 hotels only (68-120-112); no existing-home/rental/at-sale CO rule; new construction via 2018 IRC where not opted out",
+    "lookup_url": "https://search.cloud.commerce.tn.gov/",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "Threshold-only — state contractor license at $25,000+ prime (masonry subs at $100,000+) (Tenn. Code Title 62 ch. 6); Home Improvement license $3,000–$24,999 in 9 counties only; most chimney work unlicensed",
+    "registration_name": "HI license + $10k bond in the 9 counties; else none",
+    "disclosure_law": "YES, MANDATORY disclose-or-disclaim (§§ 66-5-201, -202; form § 66-5-210) — chimney/fireplace wording on form UNVERIFIED",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (§ 47-18-704)",
+    "co_law": "NARROW — statute covers pre-2016 hotels only (§ 68-120-112); no existing-home, rental, or at-sale CO requirement; new construction via 2018 IRC where not opted out",
+    "lookup_url": "search.cloud.commerce.tn.gov (Board for Licensing Contractors)"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "ONLY ≥ $25,000",
+      "note": "only — state contractor license at $25,000+ prime (masonry subs at $100,000+) (Tenn. Code…",
+      "anchor": "license",
+      "rule": "license:THRESHOLD",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "For the vast majority of chimney jobs (well under $25,000), there is no state credential to verify — and the contractor license tests business/law/trade breadth, not flue diagnosis."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (§ 47-18-704)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "NARROW — statute covers pre-2016 hotels only (§ 68-120-112); no existing-home, rental, or…",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Tennessee: a state license applies only to jobs ≥ $25,000. What that means.",
+  "metaDescription": "Tennessee chimney & fireplace laws: threshold licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Temperate; colder/longer season in the East TN mountains and Cumberland Plateau, milder in West TN. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Tennessee?",
+      "a": "State licensing: Threshold-only — state contractor license at $25,000+ prime (masonry subs at $100,000+) (Tenn. Code Title 62 ch. 6); Home Improvement license $3,000–$24,999 in 9 counties only; most chimney work unlicensed. Registration or credential: HI license + $10k bond in the 9 counties; else none. Seller disclosure at sale: YES, MANDATORY disclose-or-disclaim (§§ 66-5-201, -202; form § 66-5-210) — chimney/fireplace wording on form UNVERIFIED. Right to cancel a sale made at your home: YES (§ 47-18-704). Carbon monoxide alarm law: NARROW — statute covers pre-2016 hotels only (§ 68-120-112); no existing-home, rental, or at-sale CO requirement; new construction via 2018 IRC where not opted out. Where to check a contractor: search.cloud.commerce.tn.gov (Board for Licensing Contractors). Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Tennessee?",
+      "a": "Tennessee has a mandatory disclose-or-disclaim regime — the Residential Property Disclosures Act, Tenn. Code § 66-5-201 et seq., applying to \"transfers by sale, exchange, installment land sales contract or lease with option to buy residential real property consisting of not less than one (1) nor more than four (4) dwelling units.\" Under § 66-5-202 the owner must furnish either (1) \"a residential property disclosure statement in the form provided in this part regarding the condition of the property, including any material defects known to the owner,\" or (2) — only where the purchaser waives the disclosure statement — \"a residential property disclaimer statement stating that the owner makes no representations or warranties … and that purchaser will be receiving the real property 'as is.'\" The statutory form is prescribed at § 66-5-210; forms used need not be identical but must include all its items. Jul 2026 research reported the form lists \"Fireplace(s)\" and \"Gas Starter for Fireplace\" among included features plus roof and structural items — the form itself was not reachable this pass, so whether it names \"fireplace\" and/or \"chimney\" is UNVERIFIED. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Tennessee?",
+      "a": "Two tracks. (1) The Tennessee Consumer Protection Act of 1977 (Tenn. Code § 47-18-101 et seq.): under § 47-18-109(a)(3), for a \"willful or knowing violation,\" \"the court may award three (3) times the actual damages sustained\" (and may not also award punitive damages for the same practice); § 47-18-109(e)(1) lets the court award reasonable attorney's fees and costs. (2) The Home Solicitation Sales Act (Tenn.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "alabama",
+    "neighborName": "Alabama",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "ONLY ≥ $25,000",
+      "note": "only — state contractor license at $25,000+ prime (masonry subs at $100,000+) (Tenn. Code…"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "YES for residential work > $10,000 — HBLB (Ala. Code § 34-14A-2(12); roofers > $2,500)…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

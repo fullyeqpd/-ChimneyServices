@@ -1,0 +1,313 @@
+{
+  "slug": "north-carolina",
+  "name": "North Carolina",
+  "abbr": "NC",
+  "sourceFile": "rights-research-north-carolina.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) cut or cite the unlicensed-contractor-cannot-sue sentence; (2) 3-day-cancel copy must say credit-only state right + federal FTC rule for cash; (3) code copy must say 2024 code not yet effective, date unset.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- $40,000 NCLBGC threshold: RESOLVED — § 87-1: \"the cost of the undertaking is forty thousand dollars ($40,000) or more\" — https://www.ncleg.net/enactedlegislation/statutes/html/bysection/chapter_87/gs_87-1.html — GOV\n- Masonry specialty class: RESOLVED — S(Masonry Construction) listed and defined in 21 NCAC 12A .0202 (amended eff. 12/1/2023) — https://www.law.cornell.edu/regulations/north-carolina/21-N-C-Admin-Code-12A-0202 and https://www.oah.nc.gov/11172022-general-contractors-final-revised-rules/open — GOV (OAH) / REF (LII mirror)\n- Unlicensed penalty: RESOLVED — Class 2 misdemeanor, § 87-13 — https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_87/GS_87-13.html — GOV. \"Bars suit to recover\": STILL OPEN (case law not reached).\n- Disclosure form chimney item: RESOLVED — 21 NCAC 58A .0114 Question 2 names \"fireplaces/chimneys\", Yes/No/No Representation — https://www.oah.nc.gov/062023-real-estate-final-revised-rules/open — GOV; same text on REC 4.22 REV 8/21 and REV 2/20 copies — DOC; revised form effective July 1, 2024 per https://bulletins.ncrec.gov/rolling-out-the-revised-rpoads/ — GOV. Live ncrec.gov PDF blocked by robots (STILL OPEN as to exact 2024 PDF read).\n- No Representation effect: RESOLVED — § 47E-4(c) \"no duty to disclose those conditions, whether or not the owner should have known of them\" — https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_47E/GS_47E-4.html — GOV\n- NC Residential Code edition: CORRECTED (framing) — 2018 NC Residential Code still in effect; 2024 code effective 12 months after SFM certification per S.L. 2025-2 § 5.12(b); earliest May 1, 2027 and unset — https://www.ncosfm.gov/codes/codes-current-and-past ; https://www.ncosfm.gov/letter-re-2024-state-building-code-effective-date/open ; https://nclicensing.org/wp-content/uploads/2026/05/2026-06-01-Code-Update.pdf — GOV. (The Mar 1, 2027 date in the task prompt is not supported; the June 2026 state document says earliest May 1, 2027.) 2015-IRC base lineage: REF only.\n- CO law: RESOLVED + detail — § 42-42(a)(7) text (fossil-fuel heater/appliance/fireplace or attached garage) and § 42-44(a1) $250 infraction — https://www.ncleg.net/enactedlegislation/statutes/html/bysection/chapter_42/gs_42-42.html ; https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_42/GS_42-44.html — GOV\n- 3-day cancel: CORRECTED — § 25A-38 limits home-solicitation sale to \"a consumer credit sale\"; \"cancel at any time if no notice\" claim not found in §§ 25A-39/-40 and removed — https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_25A/GS_25A-38.html ; .../GS_25A-39.html ; .../GS_25A-40.html — GOV. Federal fallback 16 CFR 429 ($25 at buyer residence) — https://www.law.cornell.edu/cfr/text/16/429.0 — REF mirror of federal reg.\n- Treble damages: RESOLVED — § 75-16 — https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_75/GS_75-16.html — GOV\n- Enforcement actions: PARTIAL — NC AG v. Canary General Contracting (Mar 4, 2024), unlicensed home renovation; no chimney-specific action — https://ncdoj.gov/attorney-general-josh-stein-takes-legal-actions-to-protect-north-carolina-homeowners/ — GOV\n- 2026 changes: no 2026 change to § 87-1 threshold seen in statute text; NCLBGC Winter 2026 bulletin blocked by robots; web-search budget exhausted before a dedicated 2026-legislation sweep — STILL OPEN (low risk).\n- Template-leakage sweep: clean (no other-state statute strings)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; a threshold regime, not a chimney credential)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a threshold regime, not a chimney credential",
+      "markdown": "**North Carolina licenses general contracting only above a dollar threshold — so most chimney work is legally unlicensed.** STATE LAW: the **NC Licensing Board for General Contractors (NCLBGC)**, under **N.C. Gen. Stat. Chapter 87, Article 1 (§ 87-1 et seq.)**, requires a GC license where \"the cost of the undertaking is forty thousand dollars ($40,000) or more\" (§ 87-1, text confirmed on ncleg.gov Sep 2026; raised from $30,000 in 2023). Below $40,000 — nearly every sweep, reline, cap, crown, or minor rebuild — **no state license is required at all.** There is **no chimney-sweep license and no state exam** to offer cleaning or Level 1 inspection. Masonry exists only as an NCLBGC **specialty classification, S(Masonry Construction)**, under **21 NCAC 12A .0202** (covers demolition and installation of brick, block, fire clay products, refractory construction, stone, etc.) — it applies only at the $40,000+ threshold and is not a chimney credential. Unlicensed contracting is a **Class 2 misdemeanor (§ 87-13)**. (NC case law is widely reported to bar unlicensed contractors from enforcing the contract — case citation NOT yet verified against a primary source; do not publish that point without it.) Public lookup: **nclbgc.org**."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "For the vast majority of chimney jobs (under $40k) there is **nothing to verify** — no registry, no exam, no bond. Even where the GC license applies, the NCLBGC exam tests building/administrative law and business practice, **not flue diagnosis or masonry competence.** A licensed GC may never have inspected a chimney. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a genuine vacuum here — the state credential, when it even applies, attests project scale, not skill."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; chimney named, but blanket opt-out)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; chimney named, but blanket opt-out",
+      "markdown": "STATE LAW: the **Residential Property and Owners' Association Disclosure Act (N.C. Gen. Stat. Chapter 47E)** requires most residential sellers to deliver a **Residential Property and Owners' Association Disclosure Statement** (NCREC form REC 4.22; the Commission approved a revised form for use beginning July 1, 2024) before contract. The statute itself lists \"the roof, chimneys, floors, foundation, basement, and other structural components\" among required subjects (§ 47E-4(a)), and the rule-prescribed form (**21 NCAC 58A .0114**) asks: \"Is there any problem, malfunction or defect with the dwelling's foundation, slab, **fireplaces/chimneys**, floors, windows (including storm windows and screens), doors, ceilings, interior and exterior walls, attached garage, patio, deck or other structural components including any modifications to them?\" with **Yes / No / No Representation** boxes. **BUT the seller may check \"No Representation\"** (§ 47E-4(c)): \"If the statement states that an owner makes no representations as to the conditions of the property, then the owner has no duty to disclose those conditions, whether or not the owner should have known of them.\" The form's own instructions say checking it means \"choosing not to disclose the conditions or characteristics of the property, even if you have actual knowledge of them or should have known of them.\" That makes the disclosure **functionally optional** on the chimney line. (Active misrepresentation remains actionable under general fraud law — not a § 47E point.) No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; automatic treble)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; automatic treble",
+      "markdown": "STATE LAW: the **Unfair and Deceptive Trade Practices Act (N.C. Gen. Stat. § 75-1.1)** declares unfair/deceptive acts in commerce unlawful, and **§ 75-16 makes trebling automatic** — \"judgment shall be rendered in favor of the plaintiff and against the defendant for treble the amount fixed by the verdict\" — plus attorney's fees under § 75-16.1. This is one of the stronger consumer multipliers in the launch set. **Three-day cancel — read the scope carefully:** NC's state **Home Solicitation Sales provisions (N.C. Gen. Stat. §§ 25A-38 to 25A-42)** give a right to cancel \"until midnight of the third business day after the day on which the buyer signs an agreement\" (§ 25A-39), BUT § 25A-38 defines a home-solicitation sale as \"a **consumer credit sale** of goods or services\" solicited at the buyer's residence — so the state right covers **financed/installment** doorstep deals only. A **cash** doorstep chimney sale of $25+ at the home is covered instead by the **federal FTC Cooling-Off Rule (16 CFR Part 429)** — NATIONAL, not state law. (Earlier draft said the buyer may cancel \"at any time\" if no notice is given — that was not found in § 25A-39/-40 and has been removed.) Complaints: **NC DOJ Consumer Protection Division (ncdoj.gov/protecting-consumers/).**"
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium-high)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high",
+      "markdown": "STATE LAW: the statewide **2018 North Carolina Residential Code** (NC's edition built on the 2015 IRC base — base-edition lineage per ICC/industry references, not re-verified on a state page) has been effective since **Jan 1, 2019 and is still the code in effect** (NC OSFM \"Codes – Current and Past\", Sep 2026). The **2024 NC State Building Code has NOT taken effect**: S.L. 2024-57 delayed it, and **S.L. 2025-2, § 5.12(b)** made it effective only **12 months after the State Fire Marshal certifies** that the 2024 codes are published/distributed and the Residential Code Council is fully constituted (OSFM letter, Mar 31, 2025). A June 2026 state-board code update states \"the earliest possible date is **May 1, 2027**, but that has not been set and may be further delayed.\" Owners may voluntarily use the 2024 code as an alternate method. Fireplaces and chimneys are governed by **Chapter 10** of the residential code. Relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work** administered by the **local** building department; routine sweeps and like-for-like caps generally are not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; genuine rental statute + code for new construction)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; genuine rental statute + code for new construction",
+      "markdown": "Two tracks. STATE LAW: **N.C. Gen. Stat. § 42-42(a)(7)** requires **landlords** to \"provide a minimum of one operable carbon monoxide alarm per rental unit per level,\" UL 2034/2075 listed, operable at the start of each tenancy, repaired/replaced within 15 days of written tenant notice; it \"applies only to dwelling units having a fossil-fuel burning heater, appliance, or **fireplace**, and in any dwelling unit having an attached garage.\" Under **§ 42-44(a1)**, a landlord who fails to fix within 30 days of written notice commits an infraction with a fine of \"not more than two hundred fifty dollars ($250.00) for each violation.\" Separately, the **NC Residential Code (via the Building Code Council)** requires CO alarms in **new construction** dwelling units containing a fuel-fired appliance or fireplace (code section not re-verified this pass). No statewide mandatory **pre-sale** CO certificate. A permitted chimney or stove job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (finding: no statewide burn regime; sharp intrastate split)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": "finding: no statewide burn regime; sharp intrastate split",
+      "markdown": "No statewide burn-ban or stove-emission program. The material geography: the **Appalachian west — Asheville, Boone, the Blue Ridge counties — has real wood-heat density and heavy old-masonry chimney stock**, while the **coastal plain and Piedmont are milder** with lighter wood use. Content should regionalize honestly rather than treat NC as one climate."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "NC DOJ runs an active **home-repair-scam** program (ncdoj.gov/protecting-consumers/), and the door-knock \"we noticed your chimney\" pitch is a textbook § 75-1.1 matter (plus § 25A cancel rights if financed, or the FTC Cooling-Off Rule if cash). Documented GOV example of the pattern (not chimney-specific): on **Mar 4, 2024** the NC Attorney General sued **Canary General Contracting and Design** (Charlotte) for operating without a license, skipping permits, and taking advance payments for unfinished renovations (ncdoj.gov press release). The national bait-and-switch pattern (a sub-$79 \"special\" to get inside, then manufactured \"hazards\") applies. **No NC chimney-sweep-specific enforcement action located — do not name any chimney business.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Split climate — colder mountain west (burn season ~Oct–Mar, longer at altitude), milder Piedmont/coast. Statewide rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Charlotte and Raleigh-Durham metros run near-to-above national; the mountain west (Asheville) has real demand but thinner supply; rural coastal plain below national. Regionalize on the metro/mountain vs rural split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **THRESHOLD — no chimney license; state GC license only ≥ $40,000 (§ 87-1); masonry is specialty class S(Masonry Construction), 21 NCAC 12A .0202** · Registration: **none for typical chimney work (< $40k unregulated)** · Disclosure law: **YES — Ch. 47E, form item names \"fireplaces/chimneys\", but \"No Representation\" opt-out with no duty even if seller should have known (§ 47E-4(c))** · 3-day cancel: **PARTIAL — state § 25A-39 covers consumer-credit home solicitation only; cash doorstep sales rely on federal FTC Cooling-Off Rule** · CO law: **strong — landlord statute (§ 42-42(a)(7), $250 infraction § 42-44) + new-construction code** · Lookup: nclbgc.org"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "North Carolina **CONFIRMS the license⇄disclosure inverse correlation — in the \"weak-license\" direction.** The state licenses almost nothing for chimney work: below $40,000 (virtually every job) there's no license, no exam, no bond, no registry — and no chimney-sweep credential exists at any price. Yet the seller-disclosure form **names \"fireplaces/chimneys\" outright.** By the inverse-correlation logic, weak licensing should pair with a strong disclosure — and NC does name the chimney. But NC also shows why the correlation is fraying in the South: the disclosure's teeth are pulled by the **\"No Representation\" opt-out**, which lets a seller decline to answer the chimney line entirely and owe no duty. So NC lands as a **soft confirm**: minimal licensing, a nominally chimney-naming disclosure, but one a seller can neuter line-by-line. The leverage for buyers lives not in a license (there rarely is one) but in **automatic treble damages under § 75-16** and the § 25A cooling-off window (credit sales only; the federal FTC Cooling-Off Rule covers cash doorstep sales) — remedies, not credentials."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "THRESHOLD — state GC license only >=$40,000 (N.C. Gen. Stat. 87-1); no chimney/sweep license; masonry specialty S(Masonry Construction) 21 NCAC 12A .0202",
+    "registration_name": "none for typical (<$40k) chimney work",
+    "disclosure_law": "Residential Property and Owners' Association Disclosure Act (N.C. Gen. Stat. Ch. 47E)",
+    "chimney_item_on_form": "Yes — Q2 names fireplaces/chimneys BUT No Representation opt-out, no duty even if should have known (47E-4(c))",
+    "three_day_cancel": "PARTIAL — state 25A-39 covers consumer-credit home solicitation only; cash sales via federal FTC Cooling-Off Rule",
+    "co_law": "strong — landlord CO statute 42-42(a)(7) ($250 infraction 42-44) + new-construction code",
+    "lookup_url": "nclbgc.org",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "THRESHOLD — no chimney license; state GC license only ≥ $40,000 (§ 87-1); masonry is specialty class S(Masonry Construction), 21 NCAC 12A .0202",
+    "registration_name": "none for typical chimney work (< $40k unregulated)",
+    "disclosure_law": "YES — Ch. 47E, form item names \"fireplaces/chimneys\", but \"No Representation\" opt-out with no duty even if seller should have known (§ 47E-4(c))",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "PARTIAL — state § 25A-39 covers consumer-credit home solicitation only; cash doorstep sales rely on federal FTC Cooling-Off Rule",
+    "co_law": "strong — landlord statute (§ 42-42(a)(7), $250 infraction § 42-44) + new-construction code",
+    "lookup_url": "nclbgc.org"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "ONLY ≥ $40,000",
+      "note": "no chimney license; state GC license only ≥ $40,000 (§ 87-1); masonry is specialty class…",
+      "anchor": "license",
+      "rule": "license:THRESHOLD",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Even where the GC license applies, the NCLBGC exam tests building/administrative law and business practice, not flue diagnosis or masonry competence."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "(Active misrepresentation remains actionable under general fraud law — not a § 47E point.) No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "remedies",
+      "rule": "cancel:§4-sentence→caveat-downgrade",
+      "derivedFrom": "§4 text",
+      "evidence": "Three-day cancel — read the scope carefully: NC's state Home Solicitation Sales provisions (N.C."
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "— landlord statute (§ 42-42(a)(7), $250 infraction § 42-44) + new-construction code",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "North Carolina: a state license applies only to jobs ≥ $40,000. What that means.",
+  "metaDescription": "North Carolina chimney & fireplace laws: threshold licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Split climate — colder mountain west (burn season ~Oct–Mar, longer at altitude), milder Piedmont/coast. Statewide rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in North Carolina?",
+      "a": "State licensing: THRESHOLD — no chimney license; state GC license only ≥ $40,000 (§ 87-1); masonry is specialty class S(Masonry Construction), 21 NCAC 12A .0202. Registration or credential: none for typical chimney work (< $40k unregulated). Seller disclosure at sale: YES — Ch. 47E, form item names \"fireplaces/chimneys\", but \"No Representation\" opt-out with no duty even if seller should have known (§ 47E-4(c)). Right to cancel a sale made at your home: PARTIAL — state § 25A-39 covers consumer-credit home solicitation only; cash doorstep sales rely on federal FTC Cooling-Off Rule. Carbon monoxide alarm law: strong — landlord statute (§ 42-42(a)(7), $250 infraction § 42-44) + new-construction code. Where to check a contractor: nclbgc.org. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in North Carolina?",
+      "a": "STATE LAW: the Residential Property and Owners' Association Disclosure Act (N.C. Gen. Stat. Chapter 47E) requires most residential sellers to deliver a Residential Property and Owners' Association Disclosure Statement (NCREC form REC 4.22; the Commission approved a revised form for use beginning July 1, 2024) before contract.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in North Carolina?",
+      "a": "STATE LAW: the Unfair and Deceptive Trade Practices Act (N.C. Gen. Stat. § 75-1.1) declares unfair/deceptive acts in commerce unlawful, and § 75-16 makes trebling automatic — \"judgment shall be rendered in favor of the plaintiff and against the defendant for treble the amount fixed by the verdict\" — plus attorney's fees under § 75-16.1.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "georgia",
+    "neighborName": "Georgia",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "ONLY ≥ $40,000",
+      "note": "no chimney license; state GC license only ≥ $40,000 (§ 87-1); masonry is specialty class…"
+    },
+    "b": {
+      "answer": "ONLY > $2,500",
+      "note": "NO chimney-sweep license; residential license only > $2,500 (O.C.G.A. § 43-41-2(9)) with…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

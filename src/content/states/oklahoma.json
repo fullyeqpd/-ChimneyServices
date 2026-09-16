@@ -1,0 +1,316 @@
+{
+  "slug": "oklahoma",
+  "name": "Oklahoma",
+  "abbr": "OK",
+  "sourceFile": "rights-research-oklahoma.md",
+  "researched": "2026-07-10",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "hearth-license scope quoted from CIB application, rule text unread; ch. 10 state amendments unchecked; roofing insurance/penalty figures unverified; city registration figures third-party",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- OUBCC 2024 code adoption: RESOLVED — 2024 IBC, IEBC, IFC, IFGC, IMC, IPC, IRC with amendments \"will go into effect on September 14, 2026\"; 2018 codes superseded; file's code citations updated to 2024 editions — https://oklahoma.gov/oubcc.html ; https://oklahoma.gov/cib/news/2026-updated-building-code.html — GOV\n- IRC R315 / ch. 10 under new edition: PARTLY RESOLVED — OK IRC amendments (OAC 748:20-6) reached through ch. 9 contain no R315 amendment; ch. 10 amendments STILL OPEN — https://oklahoma.gov/content/dam/ok/en/oubcc/documents/2024-pending-rules/2024%20IRC%20Pending%20Rules.pdf — DOC\n- Fueled Hearth Product Work license (OAC 158:50): CORRECTED — file said no state credential for chimney/stove work \"at any price\"; CIB mechanical page and application confirm a specialty for installation/service/repair of biomass-fueled or gas-fired fireplaces, inserts, stoves, log sets; NFI cert; contractor $50k CGL, $5k bond, Business/Law exam; CE per OAC 158:50-9-7 — https://oklahoma.gov/cib/your-industry/mechanical.html ; https://oklahoma.gov/content/dam/ok/en/cib/documents/your-industry/mechanical-industry/fueled_hearth_product_work_application.pdf — GOV/DOC\n- Roofing Contractor Registration Act / HB 1628: CORRECTED (dates) — CIB says the Residential Roofing Endorsement requires a PSI exam (70%); grandfathering period/citations begin Jan 1, 2027; endorsement mandatory Jan 1, 2028. CIB page does NOT support a July 1, 2026 exam effective date — https://oklahoma.gov/cib/news/new-residential-roofing-endorsement-required-by-house-bill-1628.html — GOV\n- Emergency exception to 3-day cancel: RESOLVED — 14A O.S. § 2-502 third business day; emergency request AND good-faith substantial beginning of performance both required — https://law.justia.com/codes/oklahoma/title-14a/section-14a-2-502/ — GOV (mirror)\n- Disclosure statute/form: RESOLVED — § 833 disclaimer only never-occupied + no knowledge; § 837 actual damages, no exemplary, 2 years; 01-01-2026 Appendix A names \"Fireplaces,\" no \"chimney\"; \"59 O.S. Section 832(9)\" typo confirmed — GOV/DOC\n- CPA § 761.1: RESOLVED — actual damages + costs + attorney fees, no multiplier; \"$10,000 against bad-faith litigants\" detail removed (not re-verified) — GOV (mirror)\n- Smoke statute 74 O.S. § 324.11a: RESOLVED — tenant testing responsibility; no CO — GOV (mirror)\n- CO statute absence: RESOLVED (no CO language in § 324.11a or disclosure form; no standalone statute located) — GOV\n- Template leakage: none (Tennessee references are labeled comparisons)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; CORRECTED Sep 2026)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; CORRECTED Sep 2026",
+      "markdown": "**Oklahoma has NO state general-contractor or home-improvement license — not threshold-gated, absent.** The **Construction Industries Board (CIB)** licenses electrical, plumbing, and mechanical trades, building and home inspectors, and administers roofing registration (https://oklahoma.gov/cib.html; rules chapters OAC 158:30 Plumbing, 158:40 Electrical, **158:50 Mechanical**, 158:85 Roofing Contractors, per https://oklahoma.gov/cib/rules-and-laws.html). Mechanical licensing sits under the **Mechanical Licensing Act, 59 O.S. § 1850.1 et seq.**\n**But hearth-appliance work IS state-licensed.** Under the mechanical program, CIB offers a reduced-requirement specialty, **Fueled Hearth Product Work**, \"instead of obtaining a full HVAC license\" (https://oklahoma.gov/cib/your-industry/mechanical.html). Its scope per the CIB application: **\"Installation, service or repair of biomass-fueled or natural gas-fired fireplace, fireplace insert, stove or log set\"** — gas piping and pressure regulators excluded. Requirements: **Journeyman** — National Fireplace Institute (NFI) certification + $75 fee; **Contractor** — NFI certification + $330 fee + Business/Law exam (or documented 5-year business competency), **$50,000 minimum commercial general liability**, **$5,000 corporate surety bond**; continuing education satisfied by NFI CE/retesting \"Per OAC 158:50-9-7\" (https://oklahoma.gov/content/dam/ok/en/cib/documents/your-industry/mechanical-industry/fueled_hearth_product_work_application.pdf). So in Oklahoma **installing or repairing a wood stove, pellet stove, insert, or gas fireplace/log set requires a CIB credential**, while **chimney sweeping, masonry repair, crowns, caps, and chimney rebuilds have no state credential at any price** (whether \"service\" of a stove extends to sweeping its flue is not addressed in the materials reached — do not assert either way).\n**Roofing:** the **Roofing Contractor Registration Act, 59 O.S. § 1151.1 et seq.** requires annual CIB registration (insurance-based; the July figures of $500k residential / $1M commercial liability and up-to-$500 misdemeanor were not re-verified this pass). **HB 1628 adds a Residential Roofing Endorsement with an exam**: per CIB, candidates must pass a CIB-approved PSI exam (70% minimum); a grandfathering period with citations possible for unregistered labor-only crews begins **January 1, 2027**, and the endorsement becomes **mandatory January 1, 2028**; eligible roofers must apply before that date to be grandfathered without the exam (https://oklahoma.gov/cib/news/new-residential-roofing-endorsement-required-by-house-bill-1628.html). Flashing-heavy chimney jobs can brush roofing rules. LOCAL: **Oklahoma City** and **Tulsa** require contractor registration to pull permits (fees/bonds from third-party sources — verify). Lookups: **cibverify.ok.gov** (CIB licenses) and **verifyroofing.cib.ok.gov** (roofing)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "For sweeping and masonry **there is literally nothing to look up.** The hearth specialty is the notable exception in the region: it is tied to **NFI certification**, a hearth-industry credential that tests appliance installation — though NFI is not a chimney-inspection (NFPA 211 Level I/II) credential. A second hook: **59 O.S. § 1850.2 defines \"mechanical work\"** as installation, maintenance, repair, or renovation of \"any heating system, exhaust system, cooling system, mechanical refrigeration system or ventilation system\" — a **reline or venting job serving a gas furnace or water heater plausibly IS mechanical work requiring a CIB mechanical license** (textual reading; enforcement practice UNVERIFIED). Roofing registration attests insurance (and, from 2028, an exam), not flue competence. CSIA/NCSG individual certs remain the only chimney-inspection-specific signal."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; mandatory, narrow escape)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; mandatory, narrow escape",
+      "markdown": "Oklahoma has a **MANDATORY seller-disclosure regime: the Residential Property Condition Disclosure Act, 60 O.S. §§ 831–839.** A seller must deliver either the disclosure statement or, if eligible, the disclaimer statement, completed and signed no more than **180 days** before the purchaser receives it. **The § 833 disclaimer is available only to a seller who has \"never occupied the property\" and has \"no actual knowledge of any defect\"** (https://law.justia.com/codes/oklahoma/title-60/section-60-833/) — an owner-occupant cannot opt out (contrast: Tennessee's \"as is\" waiver). The current OREC form, **\"APPENDIX A RPCD STATEMENT (01-01-2026)\"** (https://oklahoma.gov/content/dam/ok/en/orec/documents/contracts-and-forms-page/2026-contract-forms/2026%20Appendix%20A%20Residential%20Property%20Condition.pdf), **names \"Fireplaces\" as a line item** (alongside Smoke Detectors); the words **\"chimney,\" \"flue,\" and \"carbon monoxide\" do not appear** — chimney defects ride under structural or \"other defects\" questions. Remedy is tight: **§ 837 — \"actual damages, including the cost of repairing the defect,\" no exemplary damages, action within two years after transfer** (https://law.justia.com/codes/oklahoma/title-60/section-60-837/). No inspection is mandated at transfer. NFPA 211 Level 2 at sale stays a NATIONAL STANDARD, not law."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**Oklahoma Consumer Protection Act, 15 O.S. § 751 et seq.** Private right of action under **§ 761.1(A): \"actual damages sustained by the customer and costs of litigation including reasonable attorney's fees\"** — no treble multiplier (https://law.justia.com/codes/oklahoma/title-15/section-15-761-1/). The AG/DA can seek civil penalties (§ 756.1 et seq.; per-violation cap not re-verified Sep 2026). **Home solicitation: 14A O.S. §§ 2-501–2-502 (UCCC)** — \"the buyer has the right to cancel a home solicitation sale until midnight of the third business day after the day on which the buyer signs an agreement.\" **Critical trap, confirmed in text: the buyer \"may not cancel … if the buyer requests the seller to provide goods or services without delay because of an emergency; and the seller in good faith makes a substantial beginning of performance of the contract before the buyer gives notice of cancellation\"** (§ 2-502, 2025 Statutes, https://law.justia.com/codes/oklahoma/title-14a/section-14a-2-502/) — the exact sentence a scare-sale chimney operator wants signed, but note both halves must be true. Complaints: **AG Consumer Protection Unit, oklahoma.gov/oag, 1-833-681-1895.**"
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; 2024 codes now in force)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; 2024 codes now in force",
+      "markdown": "The **Oklahoma Uniform Building Code Commission (OUBCC)** sets statewide-minimum codes. **The 2024 editions of the IBC, IEBC, IFC, IFGC, IMC, IPC and IRC, with Oklahoma amendments, went into effect September 14, 2026**, replacing the 2018 editions (https://oklahoma.gov/oubcc.html; CIB notice with exam-transition windows: https://oklahoma.gov/cib/news/2026-updated-building-code.html). The IRC adoption is codified at **OAC 748:20-6** (pending-rules PDF: https://oklahoma.gov/content/dam/ok/en/oubcc/documents/2024-pending-rules/2024%20IRC%20Pending%20Rules.pdf). Chimney construction now rides the **2024 IRC ch. 10 (Chimneys and Fireplaces), 2024 IMC ch. 8 and 2024 IFGC ch. 5 (Chimneys and Vents)** as amended (STATE LAW via code adoption; chapter numbering is the ICC model structure — Oklahoma's amendments to IRC ch. 10 were not reached this pass). **NFPA 211 is not adopted statewide** (NATIONAL STANDARD). LOCAL reality: OKC and Tulsa permit chimney structural work, liners, and solid-fuel appliance installs through their building/mechanical desks; **rural and unincorporated Oklahoma often has no permitting office at all**, so the statewide minimum exists on paper with no local enforcer."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence that it's thin)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence that it's thin",
+      "markdown": "**Oklahoma has NO standalone CO-alarm statute.** CO alarms are required only via the adopted IRC — now **2024 IRC R315** (new dwellings with fuel-fired appliances or attached garages; the Oklahoma IRC amendment text reached contains no amendment to R315) — **new construction and permitted work only; no retrofit, rental, or point-of-sale mandate**, and the OREC disclosure form does not ask about CO alarms. Smoke detectors have a real statute — **74 O.S. § 324.11a** — and for rented one- or two-family dwellings \"the responsibility for checking a smoke detector … is with the tenant or lessee\" (landlord must explain the test method); it says nothing about CO (https://law.justia.com/codes/oklahoma/title-74/section-74-324-11a/). No sale-time certificate of any kind. Enforcement reality: near zero outside permitted new work — a chimney/stove job (now done by a CIB hearth licensee for installs) is the practical moment alarms get checked."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Oklahoma has a **real burn-ban machine (STATE LAW, Forestry Code): 2 O.S. § 16-26** lets the **Governor proclaim drought burn bans** (violation: misdemeanor, up to **$1,000** and/or a year) and county commissioners issue **14-day county bans** tied to drought criteria (up to $500 and/or a year); a Governor ban supersedes county bans (ag.ok.gov Burn Ban FAQ; not re-verified Sep 2026). Bans target **outdoor** burning — indoor fireplaces are generally outside their scope, but proclamations control. **No state woodstove-emission rule, no statewide spark-arrestor statute located.** No rental solid-fuel rules found."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV/REF — strong material)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "strong material",
+      "markdown": "This is the storm-chaser capital. **The Roofing Contractor Registration Act itself is the scam artifact: authored by Sen. Dan Newberry and signed June 2010 — within roughly 60 days of the May 2010 OKC hail storm — after out-of-state \"roofers\" flooded in** (oksenate.gov; industry accounts — REF-weight). HB 1628's exam-based endorsement is the next turn of that screw. **AG Gentner Drummond issues recurring post-storm contractor-fraud warnings**: unsolicited door-knockers, large cash deposits, and deductible-waiving offers. Report to the Consumer Protection Unit (1-833-681-1895) and the Insurance Department. **No chimney-specific public enforcement action located** — name no company."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Southern-plains humid subtropical; real but short heating season. Burn season ~**Nov–Mar**. Rush: **Oct–Dec** (first cold snaps hit fast). Best booking: **Apr–Aug**. Separate hazard rhythm: red-flag/wildfire season late winter–spring and post-tornado storm-chaser waves Apr–Jun."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "OKC and Tulsa run **below national**: Tulsa sweep averages ~**$220–$304**, OKC ~**$227–$313** (Homeyou 2026), with basic fireplace sweeps quoted $70–$200 and budget operators at $120–$140 — consistent with Oklahoma's bottom-decile cost of living (MERIC). Seed **10–20% under national** for both metros; rural OK lower still. (REF.)"
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **No general-contractor/home-improvement license at any amount; chimney sweeping & masonry unlicensed — BUT CIB \"Fueled Hearth Product Work\" mechanical specialty (NFI cert; contractor: $50k CGL + $5k bond) required to install/service/repair wood, pellet & gas fireplaces, inserts, stoves, log sets; gas-appliance venting may need full mechanical license (59 O.S. § 1850.1 et seq.)** · Registration: **roofers (CIB, 59 O.S. § 1151.1 et seq.; HB 1628 exam-based residential endorsement mandatory 1/1/2028); OKC/Tulsa city registration for permits** · Disclosure law: **YES, MANDATORY (60 O.S. § 831 et seq.); 01-01-2026 OREC form names \"Fireplaces\" (no \"chimney\"); disclaimer only if seller never occupied + no knowledge (§ 833); actual damages only, 2-yr limit (§ 837)** · 3-day cancel: **YES (14A O.S. § 2-502) — lost if buyer requests emergency work AND seller substantially begins performance** · CO law: **code-only (2024 IRC R315, eff. 9/14/2026, new construction; no retrofit/rental/sale statute)** · Lookup: cibverify.ok.gov"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Oklahoma **still CONFIRMS the license⇄disclosure inverse correlation — but less purely than first drafted.** There is no general-contractor or home-improvement license at any dollar amount, so for the classic chimney jobs — sweeping, crowns, masonry, caps, rebuilds — nobody needs a state credential; licensing is absent, not threshold-gated. The correction: Oklahoma is one of the few states that licenses **hearth-appliance** work directly — CIB's Fueled Hearth Product Work specialty ties wood/pellet/gas stove, insert and fireplace installs to NFI certification, insurance and a bond. And exactly as the inverse rule predicts, the disclosure side is **strong**: a mandatory OREC form naming Fireplaces, with a disclaimer escape so narrow (never-occupied sellers only, § 833) that an owner-occupant cannot dodge it. The page's four working messages: **no license exists for sweeping or masonry, so certifications and insurance are the screens; a stove, insert, or gas-fireplace install should be done by a CIB-licensed hearth or mechanical contractor — look them up; if the liner vents a gas furnace or water heater, ask about the mechanical license; and never sign an \"emergency work\" authorization at the door — combined with work starting, it erases your 3-day cancellation right under 14A O.S. § 2-502.** Copy-desk oddball (confirmed on the 01-01-2026 form): the OREC disclosure form cites the Act's definition of \"defect\" as \"59 O.S. Section 832(9)\" — the Act lives in Title 60."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "No GC/home-improvement license; sweeping & masonry unlicensed — BUT CIB 'Fueled Hearth Product Work' mechanical specialty (NFI cert) required to install/service/repair wood, pellet & gas fireplaces, inserts, stoves, log sets; gas venting may need mechanical license (59 O.S. § 1850.1 et seq.)",
+    "registration_name": "roofers (CIB, 59 O.S. § 1151.1 et seq.; HB 1628 exam-based residential endorsement mandatory 1/1/2028); OKC/Tulsa city registration",
+    "disclosure_law": "YES, MANDATORY (60 O.S. § 831 et seq.); disclaimer only if never occupied + no knowledge (§ 833); actual damages only, 2-yr limit (§ 837)",
+    "chimney_item_on_form": "Yes — 01-01-2026 OREC form names 'Fireplaces' (no 'chimney')",
+    "three_day_cancel": "YES (14A O.S. § 2-502) — lost if buyer requests emergency work and seller substantially begins",
+    "co_law": "code-only (2024 IRC R315 eff. 9/14/2026, new construction; no retrofit/rental/sale statute)",
+    "lookup_url": "cibverify.ok.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "No general-contractor/home-improvement license at any amount; chimney sweeping & masonry unlicensed — BUT CIB \"Fueled Hearth Product Work\" mechanical specialty (NFI cert; contractor: $50k CGL + $5k bond) required to install/service/repair wood, pellet & gas fireplaces, inserts, stoves, log sets; gas-appliance venting may need full mechanical license (59 O.S. § 1850.1 et seq.)",
+    "registration_name": "roofers (CIB, 59 O.S. § 1151.1 et seq.; HB 1628 exam-based residential endorsement mandatory 1/1/2028); OKC/Tulsa city registration for permits",
+    "disclosure_law": "YES, MANDATORY (60 O.S. § 831 et seq.); 01-01-2026 OREC form names \"Fireplaces\" (no \"chimney\"); disclaimer only if seller never occupied + no knowledge (§ 833); actual damages only, 2-yr limit (§ 837)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (14A O.S. § 2-502) — lost if buyer requests emergency work AND seller substantially begins performance",
+    "co_law": "code-only (2024 IRC R315, eff. 9/14/2026, new construction; no retrofit/rental/sale statute)",
+    "lookup_url": "cibverify.ok.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "SEE SECTION",
+      "note": "No general-contractor/home-improvement license at any amount; chimney sweeping & masonry…",
+      "anchor": "license",
+      "rule": "license:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "qualified-gap",
+      "rule": "exam:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (14A O.S. § 2-502) — lost if buyer requests emergency work AND seller substantially begins…",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "code-only (2024 IRC R315, eff. 9/14/2026, new construction; no retrofit/rental/sale statute)",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Oklahoma chimney & fireplace laws: know your rights",
+  "metaDescription": "Oklahoma chimney & fireplace laws: licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      10,
+      11,
+      12
+    ],
+    "best": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Southern-plains humid subtropical; real but short heating season. Burn season ~Nov–Mar. Rush: Oct–Dec (first cold snaps hit fast). Best booking: Apr–Aug. Separate hazard rhythm: red-flag/wildfire season late winter–spring and post-tornado storm-chaser waves Apr–Jun."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Oklahoma?",
+      "a": "State licensing: No general-contractor/home-improvement license at any amount; chimney sweeping & masonry unlicensed — BUT CIB \"Fueled Hearth Product Work\" mechanical specialty (NFI cert; contractor: $50k CGL + $5k bond) required to install/service/repair wood, pellet & gas fireplaces, inserts, stoves, log sets; gas-appliance venting may need full mechanical license (59 O.S. § 1850.1 et seq.). Registration or credential: roofers (CIB, 59 O.S. § 1151.1 et seq.; HB 1628 exam-based residential endorsement mandatory 1/1/2028); OKC/Tulsa city registration for permits. Seller disclosure at sale: YES, MANDATORY (60 O.S. § 831 et seq.); 01-01-2026 OREC form names \"Fireplaces\" (no \"chimney\"); disclaimer only if seller never occupied + no knowledge (§ 833); actual damages only, 2-yr limit (§ 837). Right to cancel a sale made at your home: YES (14A O.S. § 2-502) — lost if buyer requests emergency work AND seller substantially begins performance. Carbon monoxide alarm law: code-only (2024 IRC R315, eff. 9/14/2026, new construction; no retrofit/rental/sale statute). Where to check a contractor: cibverify.ok.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Oklahoma?",
+      "a": "Oklahoma has a MANDATORY seller-disclosure regime: the Residential Property Condition Disclosure Act, 60 O.S. §§ 831–839. A seller must deliver either the disclosure statement or, if eligible, the disclaimer statement, completed and signed no more than 180 days before the purchaser receives it. The § 833 disclaimer is available only to a seller who has \"never occupied the property\" and has \"no actual knowledge of any defect\" (https://law.justia.com/codes/oklahoma/title-60/section-60-833/) — an owner-occupant cannot opt out (contrast: Tennessee's \"as is\" waiver).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Oklahoma?",
+      "a": "Oklahoma Consumer Protection Act, 15 O.S. § 751 et seq. Private right of action under § 761.1(A): \"actual damages sustained by the customer and costs of litigation including reasonable attorney's fees\" — no treble multiplier (https://law.justia.com/codes/oklahoma/title-15/section-15-761-1/). The AG/DA can seek civil penalties (§ 756.1 et seq.; per-violation cap not re-verified Sep 2026).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "colorado",
+    "neighborName": "Colorado",
+    "label": "CO alarm required in your home?",
+    "verdictId": "verdict-co",
+    "a": {
+      "answer": "LIMITED",
+      "note": "code-only (2024 IRC R315, eff. 9/14/2026, new construction; no retrofit/rental/sale statute)"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "— sale trigger + rentals (C.R.S. 38-45-102/103/104)"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

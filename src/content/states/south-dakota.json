@@ -1,0 +1,313 @@
+{
+  "slug": "south-dakota",
+  "name": "South Dakota",
+  "abbr": "SD",
+  "sourceFile": "rights-research-south-dakota.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "CO \"no statute\" is a search-based absence; local city licensing examples not re-verified; no named AG action",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- CO-alarm question (load-bearing c): RESOLVED — no standalone SDCL CO-alarm statute located (sdlegislature.gov site search; NCSL table omits SD); requirement only via locally adopted IRC R315 under SDCL 11-10-12; state fire code ARSD 61:15:01 (2015 IFC) has no CO text. Absence finding rests on a site search, not an exhaustive code read. — https://sdlegislature.gov/api/Statutes/11-10-12.html ; https://sdlegislature.gov/api/Rules/Rule/61:15:01.html?all=true ; https://www.ncsl.org/research/environment-and-natural-resources/carbon-monoxide-detectors-state-statutes.aspx — GOV (+REF)\n- Statewide residential code posture: CORRECTED/UPDATED — SDCL 11-10-12 (SL 2026, ch 59, § 4) lets municipalities adopt the 2024 IRC and bars anything more stringent; 11-10-5 requires non-residential ordinances to follow the 2024 IBC. Old text said \"IBC/IPMC default\" with no residential cite. — https://sdlegislature.gov/api/Statutes/11-10-12.html ; https://sdlegislature.gov/api/Statutes/11-10-5.html — GOV\n- Disclosure form wording (load-bearing b): CORRECTED — statutory form items are \"Fireplace,\" \"Fireplace Insert,\" \"Wood Burning Stove,\" \"Smoke/Fire Alarm,\" and Misc. \"Has the fireplace/wood stove/chimney flue been cleaned?\" (old: \"Fireplaces, inserts, wood stoves, and smoke/fire alarms\" / \"Chimney, wood stove, or fireplace cleaning\"). No CO item. Seller furnishes before written offer (§ 43-4-38); exemptions § 43-4-43; liability § 43-4-42 (actual damages and repairs). — https://sdlegislature.gov/api/Statutes/43-4-44.html ; /43-4-38.html ; /43-4-42.html ; /43-4-43.html — GOV\n- Ch. 37-24 remedies: RESOLVED — § 37-24-27 civil penalty up to $2,000 per intentional violation; § 37-24-31 private action for actual damages; door-to-door §§ 37-24-5.1 ($25+), 5.3 (3rd-business-day cancel notice, 10-pt bold, oral notice). — https://sdlegislature.gov/api/Statutes/37-24.html and section pages — GOV\n- Licensing (load-bearing a): RESOLVED — DLR's occupational licensing list has Electrical and Plumbing Commissions but no general contractor/home-improvement/masonry board; excise-tax license is a tax registration (§ 10-46A-15; penalties § 10-46A-13.1: Class 1 misdemeanor, Class 6 felony after notice/revocation). — https://dlr.sd.gov/boards_commissions_councils_all.aspx ; https://dor.sd.gov/businesses/taxes/contractors-excise-tax/ ; https://sdlegislature.gov/api/Statutes/10-46A-13.1.html — GOV\n- 2026 changes: SL 2026 ch 59 moved the permitted residential code to the 2024 IRC (above). No new statewide contractor license found (search only surfaced REF guides and city pages). — REF/GOV\n- SD AG chimney enforcement: STILL OPEN — not searched to a GOV result.\n- Template-leakage sweep: clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**No state license covers chimney work in South Dakota.** The state licenses **only electricians and plumbers** at the state level; there is **no state general-contractor, residential-builder, or home-improvement license** — so chimney sweeping, repair, reline, and rebuild all fall entirely **outside** state licensure (STATE LAW; absence is the headline). The one statewide obligation is fiscal, not competency: every contractor must hold a **South Dakota Contractor's Excise Tax License from the Dept. of Revenue** (SDCL ch. 10-46A; license required by § 10-46A-15 for anyone contracting for construction services or installing/repairing a fixture to real property; 2% tax on gross receipts; operating without the license is a Class 1 misdemeanor, and a Class 6 felony if the contractor continues after written notice or revocation — § 10-46A-13.1) — that is a **tax registration, not a trade credential.** Real licensing is **LOCAL**: **Sioux Falls, Rapid City, Brookings, and Watertown** each run their own residential/building contractor licensing or registration (e.g., **Rapid City Municipal Code 15.04.140**), while many neighboring towns require nothing. \"Licensed and bonded\" in SD almost always means a **city registration valid only in that jurisdiction** — verify which city."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Total, statewide. There is **nothing to verify for chimney competence anywhere in South Dakota** — no state exam, no state registry, only a Dept. of Revenue tax number and, in a few cities, a local building registration that tests general building/permit knowledge at most. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a genuine vacuum here — this is one of the emptiest licensing landscapes in the expansion set."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; real, named chimney line)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real, named chimney line",
+      "markdown": "South Dakota flips the usual pattern with a **genuinely useful mandatory disclosure.** **SDCL § 43-4-44** codifies a **Seller's Property Condition Disclosure Statement** that the seller of residential real property must furnish before the buyer makes a written offer (**§ 43-4-38**) — **whether FSBO or agent-represented** (STATE LAW; broader trigger than North Dakota's broker-keyed form). Exempt transfers (§ 43-4-43) are court-ordered, foreclosure, fiduciary, family, co-owner, and never-occupied new construction. The statutory form **names the chimney explicitly**: the Systems/Utilities section lists separate items for **\"Fireplace,\" \"Fireplace Insert,\" \"Wood Burning Stove,\"** and **\"Smoke/Fire Alarm,\"** and the Miscellaneous section asks **\"Has the fireplace/wood stove/chimney flue been cleaned?\"** The form has **no carbon-monoxide-alarm item.** **§ 43-4-42**: a person who intentionally or negligently violates §§ 43-4-37 to 43-4-44.1 is liable to the buyer for actual damages and repairs; the transfer itself stays valid. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. This is a real, named chimney disclosure — stronger on this axis than most strong-license states."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Deceptive Trade Practices and Consumer Protection Act — SDCL ch. 37-24** — bars deceptive acts, false pretenses, and misrepresentations in a sale; enforced by the **Attorney General's Consumer Protection Division**, with a **private right of action for actual damages** (**§ 37-24-31**) and AG authority to seek injunctions (§ 37-24-23) plus a **civil penalty up to $2,000 per intentional violation** (**§ 37-24-27**; \"intentional\" = knew or should have known). Door-to-door sales are separately regulated: **SDCL §§ 37-24-5.1 to 37-24-5.7** define a \"door-to-door sale\" (goods/services **$25 or more**, solicited away from the seller's place of business) and require the seller to state in writing, in at least 10-point bold, that the buyer may cancel **\"at any time prior to midnight of the third business day after the date of this transaction,\"** to tell the buyer orally, and to furnish a cancellation-notice form (§§ 37-24-5.3, 5.4) — the exact mechanic of a chimney door-knock scare-sale. Complaints: consumer.sd.gov."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium; local patchwork, no mandatory statewide residential code)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; local patchwork, no mandatory statewide residential code",
+      "markdown": "South Dakota has **no mandatory statewide residential code.** Under **SDCL § 11-10-12** (as amended by SL 2026, ch 59, § 4), a municipality **may** regulate one- and two-family dwellings and townhouses by adopting the **2024 IRC**, may amend it, but **may not impose anything more stringent than the 2024 IRC** (and may not require residential sprinklers) — a code ceiling, not a floor. Non-residential ordinances must follow the **2024 IBC** (§ 11-10-5). Where no local code is adopted, **many rural areas enforce no residential building code at all** (LOCAL). Where a city building department exists (Sioux Falls, Rapid City), chimney relines, rebuilds, and solid-fuel appliance installs are generally permit work; in unincorporated/rural areas there may be no permit process. This state needs the local-variance disclaimer heavily."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium; code-based only, no standalone statute located)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; code-based only, no standalone statute located",
+      "markdown": "**No standalone South Dakota CO-alarm statute was found** in a September 2026 search of sdlegislature.gov (hits were only facility-specific administrative rules, e.g., health-care ventilation rules), and NCSL's CO-detector statute table does not list South Dakota. SD's residential CO requirement therefore arrives **only where a municipality has adopted the IRC (R315)** under SDCL § 11-10-12 — alarms for dwellings with fuel-fired appliances or attached garages in new construction and permitted work (NATIONAL STANDARD via local adoption). The state fire code (ARSD 61:15:01, 2015 IFC) contains no CO-alarm text for one- and two-family homes. **Rural areas with no adopted code have no CO-alarm requirement.** There is **no statewide pre-sale CO certificate**, and the statutory disclosure form has no CO item. A permitted chimney/stove job remains the moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or wood-stove emission regime. High wood/pellet heat in a severe-cold plains climate, but no SD-specific stove rule — not a material content section."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The AG's Consumer Protection Division pursues door-to-door and home-repair abuses under ch. 37-24, and the 3-day-cancel/Notice-of-Cancellation regime targets exactly the door-knock \"we noticed your chimney\" pitch. **Specific SD chimney-sweep enforcement actions: NOT CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Severe cold, long heating season statewide (Black Hills west, prairie east). Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: MAY–JUL."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Thin, spread-out market; Sioux Falls and Rapid City metros anchor labor cost, with real rural travel surcharges. Regionalize modestly around the two metros; expect trip fees elsewhere."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (electricians/plumbers only) — LOCAL (Sioux Falls, Rapid City, Brookings, Watertown registries)** · Registration: **local; statewide only a Dept. of Revenue Contractor's Excise Tax License (tax, not competency)** · Disclosure law: **YES — SDCL § 43-4-44, explicit \"Fireplace,\" \"Fireplace Insert,\" \"Wood Burning Stove\" items + \"Has the fireplace/wood stove/chimney flue been cleaned?\", FSBO or agent** · 3-day cancel: **YES (SDCL §§ 37-24-5.1–5.7, $25+ door-to-door)** · CO law: **none by statute — only locally adopted IRC R315 (SDCL 11-10-12 permits 2024 IRC); no pre-sale certificate** · Lookup: consumer.sd.gov + city building departments"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "South Dakota **CONFIRMS the master correlation cleanly and is the mirror image of North Dakota next door.** It licenses **nothing** for chimney work statewide — only electricians, plumbers, and a Dept. of Revenue tax number — yet its **statutory seller-disclosure form names the fireplace, insert, and wood stove as separate items, asks whether the fireplace/wood stove/chimney flue has been cleaned, and binds FSBO sellers too.** That is the textbook no-license / strong-disclosure pairing the correlation predicts. The oddball worth the page: **South Dakota disclosure asks specifically whether the chimney has been *cleaned*** — a maintenance question few states put on the form — so the seller's own paperwork is where a buyer's chimney diligence starts here, because there is no license to check."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "NO state license (electrical/plumbing commissions only) — LOCAL (Sioux Falls, Rapid City, Brookings, Watertown)",
+    "registration_name": "local; statewide only a Dept. of Revenue Contractor's Excise Tax License (SDCL 10-46A-15; tax, not competency)",
+    "disclosure_law": "YES — SDCL 43-4-44 statutory form, FSBO or agent (43-4-38)",
+    "chimney_item_on_form": "Yes — Fireplace, Fireplace Insert, Wood Burning Stove + \"Has the fireplace/wood stove/chimney flue been cleaned?\"",
+    "three_day_cancel": "YES (SDCL 37-24-5.1 to 5.7, $25+ door-to-door)",
+    "co_law": "none by statute — only locally adopted IRC R315 (SDCL 11-10-12 permits 2024 IRC); no pre-sale certificate",
+    "lookup_url": "consumer.sd.gov + city building departments",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (electricians/plumbers only) — LOCAL (Sioux Falls, Rapid City, Brookings, Watertown registries)",
+    "registration_name": "local; statewide only a Dept. of Revenue Contractor's Excise Tax License (tax, not competency)",
+    "disclosure_law": "YES — SDCL § 43-4-44, explicit \"Fireplace,\" \"Fireplace Insert,\" \"Wood Burning Stove\" items + \"Has the fireplace/wood stove/chimney flue been cleaned?\", FSBO or agent",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (SDCL §§ 37-24-5.1–5.7, $25+ door-to-door)",
+    "co_law": "none by statute — only locally adopted IRC R315 (SDCL 11-10-12 permits 2024 IRC); no pre-sale certificate",
+    "lookup_url": "consumer.sd.gov + city building departments"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (electricians/plumbers only) — LOCAL (Sioux Falls, Rapid City, Brookings…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (SDCL §§ 37-24-5.1–5.7, $25+ door-to-door)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:none→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "South Dakota: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "South Dakota chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "Sioux Falls, Rapid City, Brookings, Watertown registries",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      5,
+      6,
+      7
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Severe cold, long heating season statewide (Black Hills west, prairie east). Burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: MAY–JUL."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in South Dakota?",
+      "a": "State licensing: NO state license (electricians/plumbers only) — LOCAL (Sioux Falls, Rapid City, Brookings, Watertown registries). Registration or credential: local; statewide only a Dept. of Revenue Contractor's Excise Tax License (tax, not competency). Seller disclosure at sale: YES — SDCL § 43-4-44, explicit \"Fireplace,\" \"Fireplace Insert,\" \"Wood Burning Stove\" items + \"Has the fireplace/wood stove/chimney flue been cleaned?\", FSBO or agent. Right to cancel a sale made at your home: YES (SDCL §§ 37-24-5.1–5.7, $25+ door-to-door). Carbon monoxide alarm law: none by statute — only locally adopted IRC R315 (SDCL 11-10-12 permits 2024 IRC); no pre-sale certificate. Where to check a contractor: consumer.sd.gov + city building departments. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in South Dakota?",
+      "a": "South Dakota flips the usual pattern with a genuinely useful mandatory disclosure. SDCL § 43-4-44 codifies a Seller's Property Condition Disclosure Statement that the seller of residential real property must furnish before the buyer makes a written offer (§ 43-4-38) — whether FSBO or agent-represented (STATE LAW; broader trigger than North Dakota's broker-keyed form). Exempt transfers (§ 43-4-43) are court-ordered, foreclosure, fiduciary, family, co-owner, and never-occupied new construction. The statutory form names the chimney explicitly: the Systems/Utilities section lists separate items for \"Fireplace,\" \"Fireplace Insert,\" \"Wood Burning Stove,\" and \"Smoke/Fire Alarm,\" and the Miscellaneous section asks \"Has the fireplace/wood stove/chimney flue been cleaned?\" The form has no carbon-monoxide-alarm item.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in South Dakota?",
+      "a": "The Deceptive Trade Practices and Consumer Protection Act — SDCL ch. 37-24 — bars deceptive acts, false pretenses, and misrepresentations in a sale; enforced by the Attorney General's Consumer Protection Division, with a private right of action for actual damages (§ 37-24-31) and AG authority to seek injunctions (§ 37-24-23) plus a civil penalty up to $2,000 per intentional violation (§ 37-24-27; \"intentional\" = knew or should have known). Door-to-door sales are separately regulated: SDCL §§ 37-24-5.1 to 37-24-5.7 define a \"door-to-door sale\" (goods/services $25 or more, solicited away from the seller's place of business) and require the seller to state in writing, in at least 10-point bold, that the buyer may cancel \"at any time prior to midnight of the third business day after the date of this transaction,\" to tell the buyer orally, and to furnish a cancellation-notice form (§§ 37-24-5.3, 5.4) — the exact mechanic of a chimney door-knock scare-sale. Complaints: consumer.sd.gov.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "minnesota",
+    "neighborName": "Minnesota",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (electricians/plumbers only) — LOCAL (Sioux Falls, Rapid City, Brookings…"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "Residential Building Contractor/Remodeler license (exam) for 2+ special skills; one-skill…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

@@ -1,0 +1,20 @@
+---
+// Fixed eight questions, fixed order (DESIGN-BRIEF §10). Do not reorder.
+interface Props { stateName?: string; headingId?: string }
+const { stateName, headingId = 'what-to-ask' } = Astro.props;
+---
+<section aria-labelledby={headingId} class="box box--ink">
+  <p class="kicker">Before anyone goes on your roof</p>
+  <h2 id={headingId}>What should you ask a chimney company{stateName ? ` in ${stateName}` : ''}?</h2>
+  <ol class="questions">
+    <li><span>Is your company a member of the National Chimney Sweep Guild (NCSG)?</span></li>
+    <li><span>Does the technician coming to my home hold an individual NCSG certification, and which one?</span></li>
+    <li><span>Does the technician hold a National Fireplace Institute (NFI) certification — and for which fuel: wood, gas, or pellet?</span></li>
+    <li><span>What other certifications does the technician hold (for example, CSIA), and can I check them on the issuer's own roster?</span></li>
+    <li><span>What state or local license or registration covers this work here, and what is the number?</span></li>
+    <li><span>Will you send a certificate of insurance, dated and naming your company, before work starts?</span></li>
+    <li><span>Which NFPA 211 inspection level — Level 1, 2, or 3 — are you performing, and why that level?</span></li>
+    <li><span>Will you show me what you found — photos or video of the flue — in writing?</span></li>
+  </ol>
+  <p class="fineprint">We take no fee from any certification body, guild, or contractor, and are not paid to mention anyone named.</p>
+</section>

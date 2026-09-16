@@ -1,0 +1,18 @@
+---
+import Glyph from './Glyph.astro';
+interface Props {
+  kind?: 'evidence' | 'state' | 'national' | 'local' | 'provenance' | 'muted' | 'flag';
+  abbr?: string;
+  href?: string;
+  class?: string;
+}
+const { kind = 'evidence', abbr, href, class: cls } = Astro.props;
+const classes = ['chip', kind === 'state' && 'chip--state', kind === 'muted' && 'chip--muted', kind === 'flag' && 'chip--flag', cls].filter(Boolean).join(' ');
+const Tag = href ? 'a' : 'span';
+---
+<Tag class={classes} href={href}>
+  {kind === 'state' && <Glyph name="landmark" />}
+  {kind === 'national' && <Glyph name="globe" />}
+  {kind === 'local' && <Glyph name="pin" />}
+  {kind === 'state' ? `${abbr ?? ''} LAW` : kind === 'national' ? 'NATIONAL' : kind === 'local' ? 'LOCAL' : <slot />}
+</Tag>

@@ -1,0 +1,309 @@
+{
+  "slug": "kansas",
+  "name": "Kansas",
+  "abbr": "KS",
+  "sourceFile": "rights-research-kansas.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Jul 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) Omit or label the KAR® form \"last cleaned\" hook until verified. (2) Label the CO absence and the lodging rule as \"not confirmed against primary source.\" (3) County license classes and code editions unconfirmed; keep generic. (4) No enforcement names.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026 for statutory items only (header left at Jul 2026 because local, CO and form items were not re-verified).\n- **MABCD / Johnson County exam scope:** STILL OPEN. The MABCD page confirms roofers must be state-registered and MABCD-licensed, but gives no license classes or exam detail. The Johnson County licensing URL returned 404 — https://www.sedgwickcounty.org/mabcd/ — GOV (partial)\n- **Roofing registration \"$500/yr, $1M general liability\":** CORRECTED. Statute sets the fee by AG rule, capped at $500 (K.S.A. 50-6,128), and requires liability insurance of **not less than $500,000** (K.S.A. 50-6,125), not $1M. Registration is required by K.S.A. 50-6,123. The act spans 50-6,121 to 50-6,138 — https://ksrevisor.gov/statutes/chapters/ch50/050_006_0125.html ; https://ksrevisor.gov/statutes/chapters/ch50/050_006_0128.html ; https://ksrevisor.gov/statutes/chapters/ch50/050_006_0123.html ; https://ksrevisor.gov/statutes/chapters/ch50/050_006_0122.html — GOV\n- **3-day cancel K.S.A. 50-640:** RESOLVED, with caveat added. $25+ threshold; buyer-requested maintenance/repair visits excluded — https://ksrevisor.gov/statutes/chapters/ch50/050_006_0040.html — GOV\n- **KCPA penalties/remedy:** RESOLVED. Up to $10,000 per violation (50-636(a)), with continuing violations counted per day. Private remedy is damages or the civil penalty, whichever is greater (50-634(b)) — https://ksrevisor.gov/statutes/chapters/ch50/050_006_0036.html ; https://ksrevisor.gov/statutes/chapters/ch50/050_006_0034.html — GOV\n- **Special-assessment (12-6a20) and radon (58-3078a) seller duties:** RESOLVED — https://ksrevisor.gov/statutes/chapters/ch12/012_006a_0020.html ; https://ksrevisor.gov/statutes/chapters/ch58/058_030_0078a.html — GOV\n- **No mandatory general seller disclosure statute:** RESOLVED only to the extent that the statutory duties found are narrow (radon, assessments). No primary \"absence\" source was fetched — REF-supported\n- **KAR® form \"last cleaned\" item:** STILL OPEN. The form was not reached, so the file now labels it unverified.\n- **Statewide residential CO statute absence + K.A.R. 4-27-8:** STILL OPEN. No primary source reached this pass.\n- **IRC cycle per jurisdiction:** STILL OPEN.\n- **AG enforcement:** STILL OPEN.\n- **2026 changes:** none found in fetched statutes. A general 2026 search could not be run (search budget exhausted).\n- **Template-leakage sweep:** clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV on the state statutes; LOCAL detail partially unverified)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "on the state statutes; LOCAL detail partially unverified",
+      "markdown": "**No statewide license covers chimney work in Kansas, and there is no state contractor board for general construction.** Kansas has **no state general-contractor, residential-builder, or home-improvement license.** Licensing, testing and enforcement happen at the **city and county** level, and chimney masonry, relining and sweeping fall outside any state credential. The big local regimes:\n- **Wichita / Sedgwick County:** contractors are licensed through the **Metropolitan Area Building & Construction Dept. (MABCD)**. MABCD tells homeowners to verify roofers are \"registered with the State of Kansas and licensed with MABCD.\"\n- **Johnson County:** runs a county contractor-licensing program used by participating cities.\n- **Wyandotte County / Kansas City, KS:** reported to require only a business license.\n\n*(License classes, exam scope, and which cities participate were not confirmed in this pass. See blockers.)*\n\n**The one statewide exception is roofing.** Under the **Kansas Roofing Contractor Registration Act (K.S.A. 50-6,121 to 50-6,138)**, no one may act as a roofing contractor without an **Attorney General registration certificate** (K.S.A. 50-6,123). The application must include:\n- a certificate of liability insurance of **not less than $500,000** (K.S.A. 50-6,125);\n- proof of workers'-comp coverage or an exemption;\n- a Kansas tax clearance.\n\nThe AG sets the annual fee by rule, **capped at $500** (K.S.A. 50-6,128). A chimney is not roofing, so chimney work is neither AG-registered nor state-licensed. \"Licensed and bonded\" here means a county or city credential, valid only in that jurisdiction."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Statewide, there is **nothing to verify for chimney work**: no exam, no registry, no bond. County contractor exams (MABCD, Johnson County), where they apply, test general building and permit knowledge, not flue diagnosis or masonry skill. The AG roofing registry is verification-rich but does not touch chimneys. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) and an independent audit fill a total vacuum."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV on the narrow statutes; industry-form detail REF/unverified)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "on the narrow statutes; industry-form detail /unverified",
+      "markdown": "**Kansas has NO statute requiring a general seller property-condition disclosure form.** Sellers are held to common-law rules against concealing or misrepresenting known material defects. Two narrow *statutory* seller duties do exist, and neither touches the chimney:\n- **Special assessments (K.S.A. 12-6a20):** the seller must disclose that the property is subject to a special assessment or fee and get the buyer's written acknowledgment.\n- **Radon (K.S.A. 58-3078a):** residential sale contracts must carry the statutory radon notice, and sellers must disclose known elevated radon test results.\n\nIn practice most sales use the **Kansas Association of REALTORS® Seller's Property Condition Disclosure Statement**, a voluntary industry form. It reportedly names the fireplace and chimney and asks when they were last cleaned. *(That form's wording was NOT re-verified in this pass. Do not quote it until confirmed.)* Using it is contractual, not statutory. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Kansas Consumer Protection Act (KCPA), K.S.A. 50-623 et seq.**, bars deceptive and unconscionable acts in consumer transactions. It works on three levels:\n- **Public enforcement:** the **AG's Consumer Protection Division** and county or district attorneys can seek civil penalties of **up to $10,000 per violation** (K.S.A. 50-636(a)). A continuing practice counts as a separate violation each day, and willful violation of a court order costs up to $20,000.\n- **Private right of action:** a consumer may recover **actual damages or the § 50-636(a) civil penalty, whichever is greater** (K.S.A. 50-634(b)), plus attorney's fees as the Act provides. There are no automatic treble damages.\n- **Door-to-door cancellation (K.S.A. 50-640):** a consumer may cancel a door-to-door sale of **$25 or more** \"until midnight of the third business day after the day on which the consumer signs an agreement.\" **Caveat:** the section excludes maintenance or repair visits the buyer requested, unless additional goods or services are sold, and emergency sales with a signed waiver.\n\nComplaints: ag.ks.gov Consumer Protection."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (medium; genuine patchwork — local editions not verified)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [],
+      "confidenceNote": "medium; genuine patchwork — local editions not verified",
+      "markdown": "**Kansas has no statewide building code for general residential construction.** Each city or county adopts its own, usually an IRC/IBC edition with local amendments. Wichita/Sedgwick (MABCD), Johnson County jurisdictions, and Kansas City, KS each maintain their own adoptions. **Unincorporated rural counties may have no code and no permit process at all.** Where a building department exists, chimney relines, rebuilds, crowns and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not. *(Current IRC editions per jurisdiction not confirmed in this pass.)*"
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (medium — absence not re-verified against a primary source this pass)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [],
+      "confidenceNote": "medium — absence not re-verified against a primary source this pass",
+      "markdown": "**Kansas appears to have NO statewide residential carbon-monoxide-alarm statute**, meaning no state mandate for rentals, new construction or sale. CO requirements are **LOCAL**, through adopted building and fire codes. A narrow administrative CO-detector rule for **lodging establishments** with fuel-fired equipment, wood-burning fireplaces or attached garages has been reported (K.A.R. 4-27-8). That covers hotels, not homes. *(The regulation number and text were not re-fetched this pass; label as unconfirmed.)* There is no pre-sale CO certificate. A permitted chimney or solid-fuel job is still the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for KS."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The Kansas AG's Consumer Protection Division pursues home-repair and door-to-door contractors. The door-knock \"we noticed your chimney\" pitch is a textbook K.S.A. 50-640 + KCPA scenario, while a sweep the homeowner requested is excluded from § 50-640. **No KS chimney-sweep-specific enforcement action has been confirmed.** Use patterns, not names."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Continental climate, with cold windy winters and hot summers. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The Kansas City (KS) metro, Johnson County and Wichita run **near national**; rural counties run below national. Regionalize modestly upward for the KC-suburb ring."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (no state contractor board) — LOCAL (Wichita/Sedgwick MABCD; Johnson County; KCK). Statewide exception: roofers register with AG (K.S.A. 50-6,121 et seq.; $500k liability floor; fee capped at $500)** · Registration: **local only; AG roofing registration is the one statewide credential (not chimneys)** · Disclosure law: **NO statute requiring a general seller form (narrow statutory duties: special assessments K.S.A. 12-6a20, radon K.S.A. 58-3078a); voluntary KAR® form (chimney wording unverified)** · 3-day cancel: **YES (K.S.A. 50-640; $25+, buyer-requested repair visits excluded)** · CO law: **NONE statewide residential found (lodging-only rule reported; no pre-sale certificate)** · Lookup: MABCD (Wichita) + Johnson County contractor licensing + ag.ks.gov complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Kansas is a **double-weak state with one sharp exception.** It has no state contractor board, no statute requiring a seller condition form, and no statewide residential CO statute found. Yet it **registers roofers with the Attorney General, with a $500,000 insurance floor**, while leaving chimneys, which sit right next to the roof, entirely unregulated.\n\nOn the master-finding axis, Kansas **BREAKS the clean inverse.** The correlation predicts a no-license state should hand you *mandatory* disclosure, but Kansas mandates only radon and special-assessment notices. The real leverage is the KCPA:\n- up to $10,000 per violation;\n- actual damages or that penalty, whichever is greater;\n- a built-in 3-day cancel for door-to-door sales.\n\nThe messages: **nothing to look up statewide, and no condition form owed to you by law. Get your own inspection and lean on the KCPA.**"
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "No state license/contractor board; local only (Wichita/Sedgwick MABCD; Johnson County; KCK). Statewide exception: AG roofing contractor registration (K.S.A. 50-6,121 et seq.), not chimneys",
+    "registration_name": "Local only; AG Roofing Contractor Registration ($500k liability floor, fee capped at $500) is only statewide credential",
+    "disclosure_law": "No general seller disclosure statute (narrow duties: radon K.S.A. 58-3078a, special assessments 12-6a20); voluntary KAR form",
+    "chimney_item_on_form": "Unverified (voluntary KAR form reportedly names fireplace/chimney; not confirmed)",
+    "three_day_cancel": "Yes - K.S.A. 50-640 ($25+; buyer-requested repair visits excluded)",
+    "co_law": "None statewide residential found (lodging rule reported, unconfirmed; no pre-sale certificate)",
+    "lookup_url": "https://www.sedgwickcounty.org/mabcd/",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (no state contractor board) — LOCAL (Wichita/Sedgwick MABCD; Johnson County; KCK). Statewide exception: roofers register with AG (K.S.A. 50-6,121 et seq.; $500k liability floor; fee capped at $500)",
+    "registration_name": "local only; AG roofing registration is the one statewide credential (not chimneys)",
+    "disclosure_law": "NO statute requiring a general seller form (narrow statutory duties: special assessments K.S.A. 12-6a20, radon K.S.A. 58-3078a); voluntary KAR® form (chimney wording unverified)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (K.S.A. 50-640; $25+, buyer-requested repair visits excluded)",
+    "co_law": "NONE statewide residential found (lodging-only rule reported; no pre-sale certificate)",
+    "lookup_url": "MABCD (Wichita) + Johnson County contractor licensing + ag.ks.gov complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (no state contractor board) — LOCAL (Wichita/Sedgwick MABCD; Johnson County…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (K.S.A. 50-640; $25+, buyer-requested repair visits excluded)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:none→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Kansas: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Kansas chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": "Wichita/Sedgwick MABCD; Johnson County; KCK",
+    "derivedFrom": "§11 summary"
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Continental climate, with cold windy winters and hot summers. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Kansas?",
+      "a": "State licensing: NO state license (no state contractor board) — LOCAL (Wichita/Sedgwick MABCD; Johnson County; KCK). Statewide exception: roofers register with AG (K.S.A. 50-6,121 et seq.; $500k liability floor; fee capped at $500). Registration or credential: local only; AG roofing registration is the one statewide credential (not chimneys). Seller disclosure at sale: NO statute requiring a general seller form (narrow statutory duties: special assessments K.S.A. 12-6a20, radon K.S.A. 58-3078a); voluntary KAR® form (chimney wording unverified). Right to cancel a sale made at your home: YES (K.S.A. 50-640; $25+, buyer-requested repair visits excluded). Carbon monoxide alarm law: NONE statewide residential found (lodging-only rule reported; no pre-sale certificate). Where to check a contractor: MABCD (Wichita) + Johnson County contractor licensing + ag.ks.gov complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Kansas?",
+      "a": "Kansas has NO statute requiring a general seller property-condition disclosure form. Sellers are held to common-law rules against concealing or misrepresenting known material defects. Two narrow statutory seller duties do exist, and neither touches the chimney: - Special assessments (K.S.A. 12-6a20): the seller must disclose that the property is subject to a special assessment or fee and get the buyer's written acknowledgment. - Radon (K.S.A.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Kansas?",
+      "a": "The Kansas Consumer Protection Act (KCPA), K.S.A. 50-623 et seq., bars deceptive and unconscionable acts in consumer transactions. It works on three levels: - Public enforcement: the AG's Consumer Protection Division and county or district attorneys can seek civil penalties of up to $10,000 per violation (K.S.A. 50-636(a)).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "nebraska",
+    "neighborName": "Nebraska",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (no state contractor board) — LOCAL (Wichita/Sedgwick MABCD; Johnson County…"
+    },
+    "b": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO state competency license — state REGISTRATION only (Contractor Registration Act §§…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

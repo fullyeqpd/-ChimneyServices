@@ -1,0 +1,331 @@
+{
+  "slug": "vermont",
+  "name": "Vermont",
+  "abbr": "VT",
+  "sourceFile": "rights-research-vermont.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": "**CORRECTED July 10, 2026: Vermont DOES credential chimney sweeps — see §1a. CORRECTED Sep 15, 2026: the T4 certificate is a Fire & Building Safety Code requirement that reaches \"public buildings\" (including rentals) but NOT owner-occupied single-family homes (§1a); Vermont has no statewide IRC — the current code is the 2025 VFBSC on the 2021 IBC/NFPA 1/NFPA 101 (§5); the sweep rule now also accepts NCSG (§1a).**",
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "T4 scope is a two-text inference; SPIR \"customary\" rests on REF; H.718 status unconfirmed",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- T4 Chimney Sweep Certificate of Fitness requires CSIA or CCP: CORRECTED (expanded) — rule § 1:1.13.1(5) of the 2025 VFBSC accepts CSIA, CCP, OR NCSG at Certified Chimney Professional level, 8 hrs CE per 3-year renewal; DFS page lists CSIA/CCP and links the roster — https://firesafety.vermont.gov/sites/firesafety/files/Rules/VFBSC%202025%20Rules%20Final.pdf, https://firesafety.vermont.gov/licensing/t4-chimney-sweep — GOV/DOC\n- Public roster on data.vermont.gov: RESOLVED — DFS page links \"List of all certified Chimney Sweeps\" at data.vermont.gov/Government/T4-Certifications/tjh9-m65b — GOV\n- T4 scope vs owner-occupied single-family (publish blocker): RESOLVED — Code: \"These rules apply to 'public buildings' as defined by 20 V.S.A Chapter 173\"; § 2730 excludes \"an owner-occupied single-family residence, unless used for a purpose described in subsection (a)\"; therefore T4 is not required for owner-occupied single-family homes; covers rentals — https://legislature.vermont.gov/statutes/section/20/173/02730 + VFBSC PDF above — GOV/DOC (inference from two primary texts; flagged in copy)\n- Current adopted IRC cycle: CORRECTED — Vermont adopts no IRC; 2025 VFBSC effective 11/05/25 adopts NFPA 1 2021, NFPA 101 2021, IBC 2021, IEBC 2021 (plus NEC 2023, IPC 2024); prior 2015 Code; file's \"2012–2015 IRC\" removed — https://firesafety.vermont.gov/buildingcode/codes — GOV\n- SPIR mandatory vs customary: RESOLVED (as customary) — not mandated by statute; flood disclosure is statutory at 27 V.S.A. § 380 — https://www.peetlaw.com/understanding-the-sellers-property-information-report-spir-in-vermont-real-estate-transactions (REF), http://vtlegalhelp.com/new-disclosure-requirements-for-sales-of-residential-property/ (REF), https://floodready.vermont.gov/disclosure (GOV) — the \"not mandated\" point rests on REF + absence in Title 27 search; the /rights row now says \"customary\"\n- OPR registration threshold/insurance: RESOLVED — § 5501(a) > $10,000; § 5509 $1M/$2M; no 2026 amendment shown — https://legislature.vermont.gov/statutes/section/26/106/05501, https://legislature.vermont.gov/statutes/section/26/106/05509, https://legislature.vermont.gov/statutes/fullchapter/26/106 — GOV\n- DPS-certified exemption § 5502(2)(A): RESOLVED — verbatim text confirmed — https://legislature.vermont.gov/statutes/fullchapter/26/106 — GOV\n- CO at sale 9 V.S.A. §§ 2882–2883: RESOLVED (chapter 77 added; buyer 10-day certified-mail notice + seller 10-day cure; no title defect) — https://legislature.vermont.gov/statutes/fullchapter/09/077 — GOV\n- 3-day cancel 9 V.S.A. § 2454: RESOLVED — midnight of third business day; refund within 10 days — https://legislature.vermont.gov/statutes/section/09/063/02454 — GOV\n- H.718 (2026) contractor-registry task force: STILL OPEN (non-blocking) — VTDigger says Senate committee was considering it Apr 2026; the bill-status page returned as an energy-efficiency bill with only first reading; the bill PDF was robots-blocked — https://vtdigger.org/2026/04/16/regulators-think-few-contractors-are-registered-with-the-state-and-they-want-to-reel-them-in/ — REF\n- VT AG chimney enforcement actions: STILL OPEN (non-blocking; page uses pattern language) — none found\n- Template-leakage sweep: clean — \"NJ/CT\" and \"Nevada\" references removed or labeled comparisons only."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; light registration)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; light registration",
+      "markdown": "**Vermont credentials chimney sweeping for work in public buildings — see §1a.** For *contracting*, there is only a thin registration. Vermont historically licensed no general/residential contractors; **Act 182 (2021 Adj. Sess., eff. Jul 1, 2022), codified at 26 V.S.A. chapter 106**, created a **Residential Contractor Registration** administered by the Secretary of State's Office of Professional Regulation (OPR). Under **26 V.S.A. § 5501(a)** a person must **register with OPR before contracting with a homeowner to perform residential construction for more than $10,000**; **§ 5509** requires **$1,000,000 per-occurrence / $2,000,000 aggregate liability insurance** and a written contract for work over $10,000 (STATE LAW). **Registration is a registry entry + insurance/disclosure attestation — there is NO exam and no competence test**; chimney sweeping and small repairs of $10,000 or less fall outside it. Public registry: **sos.vermont.gov/residential-contractors**. Regulators told VTDigger in Apr 2026 that few contractors are registered and a bill (H.718) was under discussion; **no enacted change to chapter 106 was found** (statutes online show no amendment since Act 182)."
+    },
+    {
+      "number": "1a",
+      "key": "licensing-certificates",
+      "anchor": "sweep-certificates",
+      "group": "licensing",
+      "rawHeading": "1a · Sweep Certificate of Fitness (GOV — high confidence; scope resolved Sep 15, 2026)",
+      "researchTitle": "Sweep Certificate of Fitness",
+      "title": "Sweep Certificate of Fitness",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; scope resolved Sep 15, 2026",
+      "markdown": "**The Division of Fire Safety (Dept. of Public Safety) issues a T4 Chimney Sweep Certificate of Fitness (TQP)** for those who \"clean, maintain and evaluate chimneys and solid fuel burning appliances\" (firesafety.vermont.gov/licensing/t4-chimney-sweep). The rule text is **2025 Vermont Fire & Building Safety Code § 1:1.13.1(5)**: \"Sweeping, maintenance and evaluation of Chimneys and Solid Fuel Burning Appliances – A current certificate from the Chimney Safety Institute of America, Certified Chimney Professionals, OR National Chimney Sweep Guild (NCSG) at the Certified Chimney Professional Level. Eight hours of related instruction is required for certificate renewal every three years.\" (The DFS web page still lists only CSIA or CCP; the rule adds NCSG.) TQP certifications run three years. **Public roster: data.vermont.gov \"T4 Certifications\" (data.vermont.gov/Government/T4-Certifications/tjh9-m65b).** DFS also issues Gas Certificates of Fitness.\n\n**Scope — who actually has to hold it (RESOLVED from rule + statute text):** the Code states \"These rules apply to 'public buildings' as defined by 20 V.S.A. Chapter 173.\" **20 V.S.A. § 2730** defines public buildings to include rental accommodations, workplaces, offices, hotels, restaurants and similar, and **excludes \"an owner-occupied single-family residence, unless used for a purpose described in subsection (a)\"** (an owner-occupied home with an ADU is excluded unless the ADU is rented). So **the T4 requirement governs sweep work in public buildings — rentals, multi-family, commercial — and does not legally require a certificate to sweep an owner-occupied single-family home.** A related rule, **§ 1:11.5.1.7.1**, requires fuel-fired heating appliances in covered buildings to be inspected at least once every 2 years by persons certified under § 1.13 — so landlords, not homeowners, carry a recurring certified-inspection duty. *(This scope reading combines the Code's applicability clause with § 2730; DFS has not published a sentence stating it for T4 specifically. Page copy should say \"required for work in rentals and other public buildings; not required by state rule for an owner-occupied single-family home — though many sweeps who hold it work in both.\")*\n\nInterlock: **26 V.S.A. § 5502(2)(A)** exempts from OPR registration \"a tradesperson licensed, registered, or certified by the Department of Public Safety acting within the scope of his or her license, registration, or certification\" (and § 5502(2)(B) businesses working primarily through such people) — a certified sweep may lawfully be absent from the SOS registry, so check the DFS roster first."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Narrower than in most states, but not closed. The OPR registry verifies **insurance and identity, not competence**, and jobs of $10,000 or less need no registration. The **T4 certificate writes NCSG-CCP/CCP/CSIA certification into a state credential — but only for work in public buildings.** For an owner-occupied single-family home, the state requires no sweep credential at all, and no Vermont credential tests masonry *repair* competence. An independent audit still adds the layers the state doesn't check for homeowners (cert check, insurance below $10k, photo evidence, review integrity)."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (REF/GOV — SPIR customary, not statutory)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "SPIR customary, not statutory",
+      "markdown": "Vermont sellers owe a common-law duty not to conceal known material defects. The customary vehicle is the **Seller's Property Information Report (SPIR)**, the Vermont REALTORS form, which names \"chimney\" and \"fireplace\" in its structural section and asks heating-system type including wood and pellet (form content per Jul 2026 research). **The SPIR is NOT mandated by statute** — Vermont law does not require sellers to complete it; it is used voluntarily by the industry (REF: Peet Law; Bucknam Law). Statutory disclosures that do exist: **flood-risk disclosure, 27 V.S.A. § 380** (floodready.vermont.gov/disclosure, GOV), groundwater/testing information for homes not on public water, and federal lead-paint disclosure for pre-1978 homes (NATIONAL STANDARD). No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **Vermont Consumer Protection Act, 9 V.S.A. chapter 63 (§ 2453 prohibits unfair/deceptive acts)**, gives a private right of action and Attorney General enforcement, with damages and attorney's fees (and exemplary damages available). Home-solicitation sales carry a **3-business-day right to cancel under 9 V.S.A. § 2454 (\"Purchase contracts; rescission\")** — the consumer may cancel until midnight of the third business day; the seller must tender refunds within 10 days. That is the exact mechanic against chimney scare-sales. Complaints: Vermont AG Consumer Assistance Program (run with UVM)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; CORRECTED)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; CORRECTED",
+      "markdown": "**There is no statewide adopted IRC in Vermont.** The **2025 Vermont Fire & Building Safety Code (effective Nov 5, 2025)**, administered by the Division of Fire Safety, adopts **NFPA 1 (2021), NFPA 101 (2021), the 2021 IBC and 2021 IEBC**, with NFPA 70 (2023) and the 2024 International Plumbing Code; it replaced the 2015 Code (in effect Oct 10, 2016 – Nov 5, 2025). The DFS T4 page states NFPA 211 is adopted. **The Code applies only to public buildings (20 V.S.A. ch. 173)**, so owner-occupied single-family homes are outside the state building/fire code; rentals are inside it. A separate statewide Residential Building Energy Standard applies to homes (30 V.S.A. § 51, edition not re-verified). Some municipalities (e.g., Burlington) adopt and enforce local codes. Chimney relines, rebuilds, and solid-fuel appliance installs are permit/code work in public buildings and in municipalities that enforce locally; for a single-family owner-occupied home in a town without local enforcement there may be no permit process."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; strong at sale)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; strong at sale",
+      "markdown": "**9 V.S.A. chapter 77.** **§ 2882** requires CO alarms in the vicinity of bedrooms in single-family dwellings (alarms in dwellings constructed after July 1, 2005 powered by building electrical service plus battery). **§ 2883** — the standout — requires that **at closing of the sale of a single-family dwelling the seller certify in writing that the dwelling contains compliant smoke and CO alarms**; if the buyer notifies the seller by certified mail within 10 days after conveyance that an alarm is not operable, the seller must comply within 10 days; noncompliance does not create a title defect. § 2882 does not require an owner-occupant to maintain the devices afterward. Rentals and other public buildings are covered by the Fire & Building Safety Code (e.g., NFPA 101 § 24.3.4.2 placement). A genuine **pre-sale CO obligation** — a natural tie-in to a chimney/stove inspection at transfer."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (REF/GOV — medium)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "medium",
+      "markdown": "Vermont has among the **highest wood/pellet-heat shares in the nation**, so solid-fuel practice carries the content weight. No statewide burn-ban regime; federal EPA new-stove emission standards apply (NATIONAL STANDARD). Some towns regulate outdoor wood boilers — **name the local ordinance per listing town; VERIFY.**"
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The Vermont AG's Consumer Assistance Program pursues home-improvement fraud, and the door-knock \"we were in the neighborhood / noticed your chimney\" pitch is a textbook 9 V.S.A. § 2454 home-solicitation problem. VTDigger (Apr 16, 2026) reported regulators believe many contractors operate unregistered. **Specific VT chimney-sweep enforcement actions: NOT FOUND.** Use pattern language only."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold northern-New-England climate; heavy wood heat, long season. Burn season ~Oct–Apr (longer in the Northeast Kingdom/higher elevations). Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Chittenden County (Burlington) and resort towns (Stowe, Manchester) run near/above national; the Northeast Kingdom and rural towns nearer or below national. Regionalize on the Burlington/resort vs rural split."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES for sweep work in public buildings (rentals, multi-family, commercial) — DFS T4 Chimney Sweep Certificate of Fitness, requires NCSG-CCP/CCP/CSIA (VFBSC § 1:1.13.1(5)); NOT required for owner-occupied single-family homes; contracting layer is LIGHT registration only (26 V.S.A. ch. 106, > $10k, no exam)** · Registration: **YES — OPR Residential Contractor Registry (> $10k, $1M/$2M insurance); DPS-certified trades EXEMPT (§ 5502(2)(A))** · Disclosure law: **NO general statutory form — SPIR (names chimney/fireplace) is customary, not mandated; statutory flood disclosure (27 V.S.A. § 380)** · 3-day cancel: **YES (9 V.S.A. § 2454)** · CO law: **STRONG — seller certifies compliant CO/smoke alarms at closing of single-family sale (9 V.S.A. §§ 2882–2883)** · Lookup: data.vermont.gov T4 Certifications roster + sos.vermont.gov/residential-contractors + ago.vermont.gov"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "**Vermont is the state that checks the sweep — in the buildings the state already regulates — and checks the alarms at sale.** It is the only state found so far that writes NCSG-CCP/CCP/CSIA certification into a state credential, with a downloadable public roster. But the credential lives inside the Fire & Building Safety Code, which covers public buildings; a homeowner in an owner-occupied single-family house gets no state-required sweep credential, no state building code, and a seller disclosure form that is customary rather than required. What the homeowner does get is unusual: **a seller's written certification of CO alarms at closing.** Page headline: \"Vermont certifies sweeps for rentals and public buildings — for your own home, check the roster yourself.\" The roster being open data makes Vermont the cheapest audit in the country."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "DFS T4 Chimney Sweep Certificate of Fitness (NCSG CCP-level, CCP or CSIA) required for work in public buildings incl. rentals - not owner-occupied single-family; contracting = registration only",
+    "registration_name": "OPR Residential Contractor Registration (>$10,000, $1M/$2M insurance, no exam; DPS-certified trades exempt 26 V.S.A. 5502(2)(A))",
+    "disclosure_law": "No general statutory form - SPIR customary; statutory flood disclosure (27 V.S.A. 380)",
+    "chimney_item_on_form": "Yes on customary SPIR (not mandated)",
+    "three_day_cancel": "Yes (9 V.S.A. 2454)",
+    "co_law": "Strong - seller certifies smoke/CO alarms at closing of single-family sale (9 V.S.A. 2882-2883)",
+    "lookup_url": "https://firesafety.vermont.gov/licensing/t4-chimney-sweep",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES for sweep work in public buildings (rentals, multi-family, commercial) — DFS T4 Chimney Sweep Certificate of Fitness, requires NCSG-CCP/CCP/CSIA (VFBSC § 1:1.13.1(5)); NOT required for owner-occupied single-family homes; contracting layer is LIGHT registration only (26 V.S.A. ch. 106, > $10k, no exam)",
+    "registration_name": "YES — OPR Residential Contractor Registry (> $10k, $1M/$2M insurance); DPS-certified trades EXEMPT (§ 5502(2)(A))",
+    "disclosure_law": "NO general statutory form — SPIR (names chimney/fireplace) is customary, not mandated; statutory flood disclosure (27 V.S.A. § 380)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (9 V.S.A. § 2454)",
+    "co_law": "STRONG — seller certifies compliant CO/smoke alarms at closing of single-family sale (9 V.S.A. §§ 2882–2883)",
+    "lookup_url": "data.vermont.gov T4 Certifications roster + sos.vermont.gov/residential-contractors + ago.vermont.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "YES for sweep work in public buildings (rentals, multi-family, commercial) — DFS T4 Chimney…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "qualified-gap",
+      "rule": "exam:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated; a CO/smoke rule applies at sale",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (9 V.S.A. § 2454)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "— seller certifies compliant CO/smoke alarms at closing of single-family sale (9 V.S.A. §§…",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Vermont: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Vermont chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold northern-New-England climate; heavy wood heat, long season. Burn season ~Oct–Apr (longer in the Northeast Kingdom/higher elevations). Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Vermont?",
+      "a": "State licensing: YES for sweep work in public buildings (rentals, multi-family, commercial) — DFS T4 Chimney Sweep Certificate of Fitness, requires NCSG-CCP/CCP/CSIA (VFBSC § 1:1.13.1(5)); NOT required for owner-occupied single-family homes; contracting layer is LIGHT registration only (26 V.S.A. ch. 106, > $10k, no exam). Registration or credential: YES — OPR Residential Contractor Registry (> $10k, $1M/$2M insurance); DPS-certified trades EXEMPT (§ 5502(2)(A)). Seller disclosure at sale: NO general statutory form — SPIR (names chimney/fireplace) is customary, not mandated; statutory flood disclosure (27 V.S.A. § 380). Right to cancel a sale made at your home: YES (9 V.S.A. § 2454). Carbon monoxide alarm law: STRONG — seller certifies compliant CO/smoke alarms at closing of single-family sale (9 V.S.A. §§ 2882–2883). Where to check a contractor: data.vermont.gov T4 Certifications roster + sos.vermont.gov/residential-contractors + ago.vermont.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Vermont?",
+      "a": "Vermont sellers owe a common-law duty not to conceal known material defects. The customary vehicle is the Seller's Property Information Report (SPIR), the Vermont REALTORS form, which names \"chimney\" and \"fireplace\" in its structural section and asks heating-system type including wood and pellet (form content per Jul 2026 research). The SPIR is NOT mandated by statute — Vermont law does not require sellers to complete it; it is used voluntarily by the industry (REF: Peet Law; Bucknam Law). Statutory disclosures that do exist: flood-risk disclosure, 27 V.S.A.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Vermont?",
+      "a": "The Vermont Consumer Protection Act, 9 V.S.A. chapter 63 (§ 2453 prohibits unfair/deceptive acts), gives a private right of action and Attorney General enforcement, with damages and attorney's fees (and exemplary damages available). Home-solicitation sales carry a 3-business-day right to cancel under 9 V.S.A. § 2454 (\"Purchase contracts; rescission\") — the consumer may cancel until midnight of the third business day; the seller must tender refunds within 10 days. That is the exact mechanic against chimney scare-sales.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "new-hampshire",
+    "neighborName": "New Hampshire",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "YES for sweep work in public buildings (rentals, multi-family, commercial) — DFS T4 Chimney…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (electrical/plumbing/gas only) — LOCAL permits"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

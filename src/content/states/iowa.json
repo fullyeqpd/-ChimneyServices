@@ -1,0 +1,313 @@
+{
+  "slug": "iowa",
+  "name": "Iowa",
+  "abbr": "IA",
+  "sourceFile": "rights-research-iowa.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) Hearth license must be cited to DIAL page + Ch. 105 until the IAC rule number is pinned. (2) Local chimney/masonry licensing in Des Moines and Cedar Rapids is unconfirmed; say \"not confirmed.\" (3) No enforcement names.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- **IRC cycle (Ch. 103A) + major cities:** RESOLVED. State Building Code adopts 2024 IRC (481—301.8) and 2024 IBC (481—301.3), effective 9/10/25. Des Moines: 2024 IRC effective Jan 1 2026. Cedar Rapids: 2024 IRC — https://www.legis.iowa.gov/docs/iac/chapter/09-02-2026.481.301.pdf ; https://www.dsm.city/departments/development_services/permit_development_center/construction_codes.php ; https://www.cedar-rapids.org/local_government/departments_a_-_f/building_services/building_and_trades/codes.php — GOV\n- **Disclosure form chimney item:** RESOLVED, with a citation CORRECTED. The rule moved from 193E—14.1(7) to **481—2014.1(7)** (transfer noted IAC Supp. 6/10/26; ARC 0027D effective 4/22/26). The form now has **20 items, not 19**, with lead water service lines added as item 13. Still no chimney, fireplace, flue or wood-stove item — https://www.legis.iowa.gov/docs/iac/rule/481.2014.1.pdf ; https://www.legis.iowa.gov/docs/iac/rule/193E.14.1.pdf ; https://www.legis.iowa.gov/docs/aco/arc/9592C.pdf — GOV\n- **Disclosure statute section:** CORRECTED. Delivery duty is § 558A.2 (the file had § 558A.4). § 558A.4 sets content, including lead service lines per the 2025 amendment effective 1/1/26 — https://www.legis.iowa.gov/docs/code/558A.2.pdf ; https://www.legis.iowa.gov/docs/code/558A.4.pdf — GOV\n- **Hearth Systems Specialty License (§ 105.18):** CORRECTED. The old claim \"no chimney-specific credential\" was wrong for installs. DIAL issues a Hearth Systems Specialty License covering decorative-flame gas and solid-fuel appliances, venting systems, inserts and freestanding stoves; it requires NFI or board-approved certification. § 105.18 authorizes special restricted licenses for limited classes of work. Rule number STILL OPEN (see blockers) — https://dial.iowa.gov/licenses/building/plumbing-mechanical/plumbing-licensure/hearth ; https://www.legis.iowa.gov/docs/code/105.18.pdf ; https://law.cornell.edu/regulations/iowa/Iowa-Admin-Code-r-641-23-7 (REF mirror) ; https://rules.iowa.gov/Notice/Details/7995C — GOV/REF\n- **Ch. 91C registration:** RESOLVED. $2,000 threshold (§ 91C.1). $50 fee, and out-of-state contractors with employees need a $25,000 bond (DIAL; § 91C.2). Bond secures taxes and UI contributions (§ 91C.7). Lookup URL updated to DIAL's portal — https://www.legis.iowa.gov/docs/code/91C.1.pdf ; https://www.legis.iowa.gov/docs/code/91C.2.pdf ; https://dial.iowa.gov/licenses/building/contractors — GOV\n- **CO law § 10A.518:** RESOLVED. Rentals plus construction begun on or after July 1 2018; fuel-fired appliance, fireplace or attached garage; landlord 30-day repair — https://www.legis.iowa.gov/docs/code/10A.518.pdf — GOV\n- **Ch. 714H treble standard:** CORRECTED (detail). Treble requires \"willful and wanton disregard,\" shown by clear and convincing evidence, not just \"willful\"; 2-year limitations period — https://www.legis.iowa.gov/docs/code/714H.5.pdf — GOV\n- **Ch. 555A 3-day cancel:** RESOLVED — https://www.legis.iowa.gov/docs/code/555A.3.pdf — GOV\n- **Big-city chimney/masonry license:** STILL OPEN. City contractor-licensing pages were not reached in this pass.\n- **AG enforcement:** STILL OPEN (chimney-specific). Only general AG scam releases were found.\n- **2026 changes:** disclosure rule transferred to 481 IAC and lead-service-line item added (eff. 4/22/26); 2024 IRC adopted statewide (9/10/25); Des Moines 2024 IRC (1/1/26).\n- **Template-leakage sweep:** clean."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; registration for most chimney work, plus one real hearth-install license)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; registration for most chimney work, plus one real hearth-install license",
+      "markdown": "**Iowa's general contractor credential is a statewide REGISTRATION, not a competency license.** Under **Iowa Code Chapter 91C**, anyone \"engage[d] in the business of construction\" must register with the **Dept. of Inspections, Appeals & Licensing (DIAL)**; people earning **less than $2,000 a year** from construction, or working only on their own property, are excluded (§ 91C.1). DIAL charges a **$50 application fee**, and all registrants need an Iowa unemployment-insurance number. **Out-of-state contractors must file a $25,000 surety bond** (§ 91C.2), and DIAL says this applies to out-of-state contractors with employees; the bond secures **taxes and unemployment contributions**, not homeowners (§ 91C.7). **Registration tests no skill.** It is a labor and tax compliance filing. Lookup: DIAL's public contractor search (laborportal.iwd.iowa.gov/iwd_portal/publicSearch/public).\n\n**The exception, and it matters for hearth work: the Hearth Systems Specialty License (STATE LAW).** Iowa's Plumbing and Mechanical Systems Board, administered by DIAL, issues a **Hearth Systems Specialty License**. Iowa Code § 105.18 lets the board issue special licenses limited to specific classes of work.\n- **Scope:** \"installation of gas burning and solid fuel appliances that offer a decorative view of the flames, from the connector pipe to the shutoff valve located within 3 feet of the appliance,\" plus \"venting systems, log lighters, gas log sets, fireplace inserts, and freestanding stoves.\"\n- **Requirements:** age 18+, a completed application and fees, and **\"a valid certification issued by the National Fireplace Institute [NFI] or equivalent authority approved by the board.\"**\n- **What it does NOT cover:** chimney sweeping, chimney masonry, crowns or rebuilds.\n\nSo in Iowa, a **fireplace-insert, stove, or venting installer** works under a real trade license that requires an NFI certification. A **sweep or chimney mason** holds only the Ch. 91C registration. Local permit rules layer on top (LOCAL). No big-city chimney- or masonry-specific competency license has been confirmed; see blockers."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "For sweeps and masons, the gap is as wide as it gets. The state credential is a **labor-compliance registration** that verifies UI and workers'-comp compliance, and says nothing about masonry or flue diagnosis. The one real test sits on **installation**: the Hearth Systems license requires NFI certification. Nothing tests **inspection or repair** judgment. Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) and independent audits are the only competence signal for the diagnosis and upsell side of the trade."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; mandatory form but NO chimney line — re-confirmed on the 2026 form)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; mandatory form but NO chimney line — re-confirmed on the 2026 form",
+      "markdown": "**Iowa mandates seller disclosure under Iowa Code Chapter 558A, but the state form does NOT name chimney, fireplace, or flue.**\n- **Delivery (§ 558A.2):** the transferor or their broker must deliver a written disclosure statement before a written offer is made or accepted.\n- **Content (§ 558A.4):** statements cover property condition, including \"significant defects in the structural integrity\" and, since a 2025 amendment effective Jan 1, 2026, **lead service lines.** The Real Estate Commission sets the content by rule.\n- **Where the rule lives now:** the old 193E—14.1 rule was **transferred to 481 IAC 2014.1** (IAC Supplement 6/10/26). The form is at **subrule 2014.1(7)** (history: ARC 0027D, effective 4/22/26).\n- **What the form lists:** the current form has **20 numbered items**. Among them are Basement/Foundation, Roof, Heating System(s), Physical Problems and Structural Damage, plus a new **item 13: \"Are there currently, or have there ever been, any lead water service lines present?\"** **None names chimney, fireplace, flue or wood stove.** A chimney defect surfaces only under \"Roof,\" \"Heating System(s),\" \"Physical Problems,\" or \"Structural Damage,\" on an actual-knowledge basis.\n\nNo inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Iowa gives consumers two tracks, plus a cancellation right:\n- **(1) Iowa Consumer Fraud Act, § 714.16.** It bars deception, fraud, false promise, misrepresentation and concealment of material fact. **The AG enforces it.**\n- **(2) Private right of action, Ch. 714H.** Consumers recover **actual damages** plus **costs and reasonable attorney's fees**. For conduct showing **\"willful and wanton disregard for the rights or safety of another\"**, proven by clear and convincing evidence, courts may award **statutory damages up to three times actual damages** (§ 714H.5). The deadline is two years from violation or discovery.\n- **Door-to-door cancel.** The Door-to-Door Sales Act (Ch. 555A) gives a **3-business-day right to cancel** (notice form in § 555A.3), and a Ch. 555A violation is also a § 714.16 violation.\n\nComplaints: iowaattorneygeneral.gov Consumer Protection Division."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence on the state code; local adoption varies)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on the state code; local adoption varies",
+      "markdown": "The **Iowa State Building Code (Iowa Code Ch. 103A)** now adopts the **2024 IRC** (481 IAC 301.8) and **2024 IBC** (481 IAC 301.3), both **effective 9/10/25**. It governs buildings made subject to it by Ch. 103A, and projects under a local code follow local enforcement. **Most residential enforcement is LOCAL:**\n- **Des Moines** adopted the **2024 IRC, effective Jan 1, 2026.**\n- **Cedar Rapids** lists the **2024 IRC** as adopted.\n- Rural areas may have limited or no residential enforcement.\n\nWhere a building department exists, chimney relines, rebuilds, crowns and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; fireplace-triggered)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; fireplace-triggered",
+      "markdown": "**Iowa Code § 10A.518** requires CO alarms in **existing single-family rentals and multiple-unit residential buildings**, and in **single-family and multi-unit construction begun on or after July 1, 2018**, wherever the dwelling has a **\"fuel-fired heater or appliance, a fireplace, or an attached garage.\"** The statute names the **fireplace** as a trigger. For rentals, landlords must install alarms and fix inoperable ones **within 30 days of written notice**; placement follows rules set by the director. There is no statewide pre-sale CO certificate. A permitted chimney or solid-fuel job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for IA."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The Iowa AG's Consumer Protection Division publishes storm-chaser and home-repair scam warnings, plus annual top-10 complaint lists (iowaattorneygeneral.gov newsroom). A door-knock \"we noticed your chimney\" pitch is a textbook Ch. 555A + § 714.16 scenario. **No IA chimney-sweep-specific enforcement action has been confirmed.** Use patterns, not names."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold continental climate with harsh winters statewide. Burn season runs ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Des Moines and the Cedar Rapids/Iowa City corridor run **near national**; rural counties run below national. Regionalize modestly; overall spread is low."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **Mostly NO — Ch. 91C REGISTRATION for sweeps/masons ($2k/yr threshold, DIAL); BUT hearth appliance/insert/stove/venting installs need the state Hearth Systems Specialty License (NFI certification; Plumbing & Mechanical Systems Board under Ch. 105)** · Registration: **YES — Ch. 91C contractor registration ($50; $25k bond for out-of-state)** · Disclosure law: **YES mandatory (Ch. 558A / 481 IAC 2014.1(7)) BUT no chimney/fireplace/flue line item (20-item form, lead line added 2026)** · 3-day cancel: **YES (Ch. 555A)** · CO law: **YES — § 10A.518, fireplace-triggered, rentals + new construction since Jul 1 2018; no pre-sale certificate** · Lookup: DIAL contractor search + dial.iowa.gov hearth license + iowaattorneygeneral.gov complaints"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Iowa's general \"license\" is a **paper registration**: a $50 labor-compliance filing under Ch. 91C that proves you pay workers'-comp, nothing about whether you can read a flue. But Iowa has one twist most states lack. **Installing a fireplace insert, wood stove or its venting takes a real state Hearth Systems Specialty License backed by an NFI certification**, while sweeping and inspecting a chimney takes nothing. The person who *diagnoses* your chimney is the least regulated person in the chain.\n\nOn the master-finding axis, Iowa **partially BREAKS the correlation**:\n- As a weak-credential state it runs a genuinely mandatory disclosure (Ch. 558A), as the theory predicts.\n- **But the form, revised again in 2026 to add lead service lines, still has no chimney, fireplace or flue line.**\n- Its CO law (§ 10A.518) names the *fireplace* as a trigger, while the disclosure form ignores the chimney entirely.\n\nThe sharp content: check the hearth license for installs, get an independent inspection for everything else, and use the Ch. 714H treble-damages remedy if you're defrauded."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "Statewide registration only for sweeps/masons (Iowa Code Ch. 91C, $2k/yr threshold); state Hearth Systems Specialty License (NFI cert) required for hearth appliance/insert/stove/venting installs (Ch. 105)",
+    "registration_name": "DIAL contractor registration ($50; $25k bond out-of-state)",
+    "disclosure_law": "Yes - mandatory, Iowa Code 558A.2/558A.4; form at 481 IAC 2014.1(7)",
+    "chimney_item_on_form": "No (20-item form; lead service line added 2026; no chimney/fireplace/flue item)",
+    "three_day_cancel": "Yes - Door-to-Door Sales Act, Iowa Code Ch. 555A",
+    "co_law": "Yes - Iowa Code 10A.518, fireplace/fuel appliance/attached garage trigger; rentals + construction begun on/after Jul 1 2018; no pre-sale certificate",
+    "lookup_url": "https://dial.iowa.gov/licenses/building/contractors",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "Mostly NO — Ch. 91C REGISTRATION for sweeps/masons ($2k/yr threshold, DIAL); BUT hearth appliance/insert/stove/venting installs need the state Hearth Systems Specialty License (NFI certification; Plumbing & Mechanical Systems Board under Ch. 105)",
+    "registration_name": "YES — Ch. 91C contractor registration ($50; $25k bond for out-of-state)",
+    "disclosure_law": "YES mandatory (Ch. 558A / 481 IAC 2014.1(7)) BUT no chimney/fireplace/flue line item (20-item form, lead line added 2026)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (Ch. 555A)",
+    "co_law": "YES — § 10A.518, fireplace-triggered, rentals + new construction since Jul 1 2018; no pre-sale certificate",
+    "lookup_url": "DIAL contractor search + dial.iowa.gov hearth license + iowaattorneygeneral.gov complaints"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "SEE SECTION",
+      "note": "Mostly NO — Ch. 91C REGISTRATION for sweeps/masons ($2k/yr threshold, DIAL); BUT hearth…",
+      "anchor": "license",
+      "rule": "license:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "qualified-gap",
+      "rule": "exam:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Ch. 555A)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "§ 10A.518, fireplace-triggered, rentals + new construction since Jul 1 2018; no pre-sale…",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Iowa chimney & fireplace laws: know your rights",
+  "metaDescription": "Iowa chimney & fireplace laws: licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold continental climate with harsh winters statewide. Burn season runs ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Iowa?",
+      "a": "State licensing: Mostly NO — Ch. 91C REGISTRATION for sweeps/masons ($2k/yr threshold, DIAL); BUT hearth appliance/insert/stove/venting installs need the state Hearth Systems Specialty License (NFI certification; Plumbing & Mechanical Systems Board under Ch. 105). Registration or credential: YES — Ch. 91C contractor registration ($50; $25k bond for out-of-state). Seller disclosure at sale: YES mandatory (Ch. 558A / 481 IAC 2014.1(7)) BUT no chimney/fireplace/flue line item (20-item form, lead line added 2026). Right to cancel a sale made at your home: YES (Ch. 555A). Carbon monoxide alarm law: YES — § 10A.518, fireplace-triggered, rentals + new construction since Jul 1 2018; no pre-sale certificate. Where to check a contractor: DIAL contractor search + dial.iowa.gov hearth license + iowaattorneygeneral.gov complaints. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Iowa?",
+      "a": "Iowa mandates seller disclosure under Iowa Code Chapter 558A, but the state form does NOT name chimney, fireplace, or flue. - Delivery (§ 558A.2): the transferor or their broker must deliver a written disclosure statement before a written offer is made or accepted. - Content (§ 558A.4): statements cover property condition, including \"significant defects in the structural integrity\" and, since a 2025 amendment effective Jan 1, 2026, lead service lines. The Real Estate Commission sets the content by rule. - Where the rule lives now: the old 193E—14.1 rule was transferred to 481 IAC 2014.1 (IAC Supplement 6/10/26). The form is at subrule 2014.1(7) (history: ARC 0027D, effective 4/22/26). - What the form lists: the current form has 20 numbered items. Among them are Basement/Foundation, Roof, Heating System(s), Physical Problems and Structural Damage, plus a new item 13: \"Are there currently, or have there ever been, any lead water service lines present?\" None names chimney, fireplace, flue or wood stove.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Iowa?",
+      "a": "Iowa gives consumers two tracks, plus a cancellation right: - (1) Iowa Consumer Fraud Act, § 714.16. It bars deception, fraud, false promise, misrepresentation and concealment of material fact. The AG enforces it. - (2) Private right of action, Ch. 714H.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "missouri",
+    "neighborName": "Missouri",
+    "label": "CO alarm required in your home?",
+    "verdictId": "verdict-co",
+    "a": {
+      "answer": "YES",
+      "note": "§ 10A.518, fireplace-triggered, rentals + new construction since Jul 1 2018; no pre-sale…"
+    },
+    "b": {
+      "answer": "NO STATE LAW",
+      "note": "NONE statewide (local only; no pre-sale certificate)"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

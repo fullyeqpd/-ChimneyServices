@@ -1,0 +1,316 @@
+{
+  "slug": "mississippi",
+  "name": "Mississippi",
+  "abbr": "MS",
+  "sourceFile": "rights-research-mississippi.md",
+  "researched": "2026-07-10",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "name no specific IRC edition; state FSBO carve-out; 2026-session re-check of thresholds/CO before launch; city-level license absence unconfirmed",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- § 73-59-1 thresholds: CORRECTED (wording) / RESOLVED — Residential Builder: total cost \"exceeds Fifty Thousand Dollars ($50,000.00)\"; Remodeler: improvements \"exceeds Ten Thousand Dollars ($10,000.00)\" — file said \"≥ $10,000,\" now \"over $10,000\"; MSBOC FAQ matches and adds residential roofing over $10,000 — https://law.justia.com/codes/mississippi/title-73/chapter-59/section-73-59-1/ ; https://www.msboc.us/general-info/frequently-asked-questions/ — GOV\n- PCDS scope for FSBO (§ 89-1-501): RESOLVED — applies to 1–4-unit transfers only \"when the execution of such transfers is by, or with the aid of, a duly licensed real estate broker or salesperson\"; FSBO without a licensee is outside the statute — https://law.justia.com/codes/mississippi/title-89/chapter-1/real-estate-transfer-disclosure-requirements/section-89-1-501/ — GOV (statute via Justia mirror)\n- Remodeler exam/insurance/bond: CORRECTED — Law & Business Management exam (+ trade exam by classification); GL insurance mandatory with no minimum for residential; \"no bond required\" removed because the FAQ does not address bonding — https://www.msboc.us/general-info/frequently-asked-questions/ — GOV\n- § 73-59-9 penalty: CORRECTED — \"$100–$5,000 and/or 30–60 days\" → fine $100–$5,000 **or** 30–60 days; can't-sue bar confirmed — https://law.justia.com/codes/mississippi/title-73/chapter-59/section-73-59-9/ — GOV (mirror)\n- County code opt-outs: RESOLVED (statute) — § 17-2-4: one of last three adopted IBC/IRC editions; 120-day one-time opt-out by resolution; § 17-2-1 separate coastal-county rule. Share of counties that opted out rests on REF only (Insurance Journal 2014) — https://law.justia.com/codes/mississippi/title-17/chapter-2/section-17-2-4/ ; https://www.mid.ms.gov/sfmo/mississippi-uniform-building-codes/ — GOV\n- 3-day cancel § 75-66-3: RESOLVED — third business day; emergency exception confirmed — https://law.justia.com/codes/mississippi/title-75/chapter-66/section-75-66-3/ — GOV (mirror)\n- § 75-24-15 remedies: RESOLVED — individual actions only; AG-approved informal dispute settlement prerequisite — GOV (mirror)\n- § 97-23-103: RESOLVED — \"chimneys, chimney liners\" in definition; felony up to 10 years at $10,000+ — GOV (mirror)\n- CO law absence: RESOLVED as of July findings (SB 2782 died, NCSL absence); 2026-session check STILL OPEN (bill site unreachable).\n- Current Building Codes Council edition list: STILL OPEN — MID page does not list editions.\n- Template leakage: none found."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**No chimney or sweep license exists in Mississippi.** STATE LAW: the MS State Board of Contractors (MSBOC) licenses **Residential Builders (new residential construction when \"the total cost of the undertaking exceeds Fifty Thousand Dollars ($50,000.00)\")** and **Remodelers (improvements to an existing residence when \"the total cost of the improvements exceeds Ten Thousand Dollars ($10,000.00)\")** under **Miss. Code Ann. § 73-59-1 et seq.** (definitions, § 73-59-1, 2025 Code: https://law.justia.com/codes/mississippi/title-73/chapter-59/section-73-59-1/). The Board's FAQ states the same lines — a residential license is needed for \"new residential construction over $50,000, residential remodeling or additions over $10,000, or residential roofing over $10,000\" (https://www.msboc.us/general-info/frequently-asked-questions/). Commercial side is Title 31 ch. 3. **Most chimney work (sweeps $150–400, caps, crown/flashing repairs, many relines) sits at or under the $10,000 remodeler line — no state credential required at all.** Public lookup: **Contractor Search at https://www.msboc.us** (800-880-6161), confirmed as the AG's own recommended check (REF: https://magnoliatribune.com/2022/05/31/ag-fitch-and-ms-board-of-contractors-urge-mississippians-to-beware-of-contractor-schemes-as-hurricane-season-begins/). Unlicensed work over threshold: **misdemeanor, fine of $100–$5,000 or 30–60 days imprisonment** (§ 73-59-9, https://law.justia.com/codes/mississippi/title-73/chapter-59/section-73-59-9/). What the license rests on, per MSBOC's FAQ: all applicants take the **Mississippi Law and Business Management exam** (open book, PSI), plus a trade exam depending on classification; **general liability insurance is mandatory but \"no minimum coverage requirement for residential license holders\"**; the FAQ does not address a bond (do not publish a bond claim either way)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The residential license rests on a business/law exam plus classification trade exams — **none of it chimney-specific: no flue sizing, no NFPA 211 Level I/II inspection method, no clearance-to-combustibles**. Insurance is required but with no minimum amount for residential licensees. And since jobs of $10,000 or less need no credential whatsoever, the person on the roof may hold literally nothing. CSIA/NCSG individual certs are the only chimney-specific competence signal in the state (NATIONAL STANDARD framing; gap analysis medium confidence)."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: mandatory **Property Condition Disclosure Statement (PCDS)**, Miss. Code Ann. **§§ 89-1-501 through 89-1-527** (https://law.justia.com/codes/mississippi/title-89/chapter-1/real-estate-transfer-disclosure-requirements/section-89-1-509/), MREC-promulgated form that \"may not be altered or personalized.\" Fetched the actual form (https://www.mrec.ms.gov/wp-content/uploads/2022/10/mrec_forms_PCDS_2017_FINAL-LEGAL_WITH_PAGE_NUMBERS-03-27-2017.pdf): **Section E.2 asks about \"past or present problems, malfunctions or defects with … fireplace/chimneys … including any modifications to them\"**; E.3 covers **outdoor fireplaces**; the Section G appliance grid lists **SMOKE/MONOXIDE DETECTORS and FREE STANDING STOVE**; B.7–B.8 ask whether remodels were permitted and name the licensed contractor. **Scope (confirmed in statute text):** § 89-1-501 applies to transfers of real property with 1–4 dwelling units (sale, exchange, installment land contract, lease with option, etc.) only \"when the execution of such transfers is by, or with the aid of, a duly licensed real estate broker or salesperson\" (https://law.justia.com/codes/mississippi/title-89/chapter-1/real-estate-transfer-disclosure-requirements/section-89-1-501/). **A true FSBO sale with no licensee involved is outside the statute** — the page must say so. **No inspection mandated at transfer.** Buyer inspection window is contract-custom, not statute — UNVERIFIED, typically negotiated in the purchase contract."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: MS Consumer Protection Act, Miss. Code Ann. § 75-24-5 (UDAP). Private remedy (§ 75-24-15, https://law.justia.com/codes/mississippi/title-75/chapter-24/general-provisions/section-75-24-15/) is thin: **monetary loss only — NO treble damages, NO class actions (\"every private action must be maintained in the name of and for the sole use and benefit of the individual person\"), and plaintiff must FIRST make \"a reasonable attempt to resolve any claim through an informal dispute settlement program approved by the Attorney General.\"** Complaints: AG Consumer Protection Division portal, https://attorneygenerallynnfitch.com/divisions/consumer-protection/ / consumer@ago.ms.gov. Two sharper teeth elsewhere: (1) **§ 73-59-9 — unlicensed builders/remodelers \"may not bring any action, either at law or in equity, to enforce any contract\"**; recovery limited to actual documented labor/material expenses proven by clear and convincing evidence (applied in Lutz Homes v. Weston, Miss. 2009, https://caselaw.findlaw.com/court/ms-supreme-court/1422422.html). (2) **Criminal Home Repair Fraud, § 97-23-103** — the definition of \"home repair\" **explicitly lists \"chimneys, chimney liners\"**; first offense under $5,000 is a misdemeanor (up to $1,000 fine and/or 6 months), **felony up to 10 years when fraud is $10,000 or more**, mandatory restitution (https://law.justia.com/codes/mississippi/title-97/chapter-23/section-97-23-103/). 3-day cancel: **§ 75-66-3, home-solicitation sales, \"until midnight of the third business day\"** (https://law.justia.com/codes/mississippi/title-75/chapter-66/section-75-66-3/) — but cancellation is lost \"if the buyer requests the seller to provide goods or services without delay because of an emergency, and the seller in good faith makes a substantial beginning of performance,\" a loophole tailor-made for \"emergency chimney repair\" pitches."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — statute confirmed; current edition list STILL OPEN)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "statute confirmed; current edition list STILL OPEN",
+      "markdown": "STATE LAW: SB 2378 (2014) created a **State Uniform Construction Code**, Miss. Code Ann. **§ 17-2-4** (Council: § 17-2-3; chapter: https://law.justia.com/codes/mississippi/title-17/chapter-2/). Jurisdictions subject to it must adopt **\"one (1) of the last three (3) adopted editions\" of the IBC or IRC** as amended by the MS Building Codes Council (§ 17-2-4, https://law.justia.com/codes/mississippi/title-17/chapter-2/section-17-2-4/). The **opt-out was a one-time window**: within 120 days of the section taking effect, a county board of supervisors or municipal governing authority could resolve not to be subject to it (the Insurance Department describes the deadline as Nov. 30, 2014: https://www.mid.ms.gov/sfmo/mississippi-uniform-building-codes/). A separate, older rule, **§ 17-2-1 (2006, post-Katrina)**, requires the coastal-area counties named there (Jackson, Harrison, Hancock, Stone, Pearl River) and their municipalities to adopt the latest IBC/IRC editions, again with a one-time opt-out. Roughly half of counties reportedly opted out of the 2014 code (REF: https://www.insurancejournal.com/news/southeast/2014/03/19/323688.htm), so enforcement is a **patchwork**: LOCAL — Jackson, Gulfport, Biloxi, Hattiesburg and most cities permit and inspect; many rural counties have **no building department at all**. Adoption/opt-out lookup by jurisdiction: **https://apps.mid.ms.gov/ubc/ubc.aspx** (MID). Where codes apply, reline/rebuild/wood-stove installs are mechanical/building permits under IRC ch. 10; **NFPA 211 is a NATIONAL STANDARD here, not adopted state law**. State Fire Prevention Code (§§ 45-11-101 – 45-11-111) governs state-owned/public buildings, not private homes."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO & smoke law (GOV — high confidence on the absence)",
+      "researchTitle": "CO & smoke law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on the absence",
+      "markdown": "**Mississippi has NO statewide smoke-alarm statute and NO CO-alarm statute for private dwellings.** The \"Mississippi Smoke Detector Act\" (SB 2782, 1999) **died in committee** (verified bill history: https://billstatus.ls.state.ms.us/1999/pdf/history/SB/SB2782.htm) — yet multiple consumer sites still quote its text as if enacted. Mississippi is **absent from NCSL's CO-detector statute table** (checked https://www.ncsl.org/environment-and-natural-resources/carbon-monoxide-detector-installation-statutes). Requirements exist only where a jurisdiction adopted the IRC/IFC (new construction R314/R315: smoke alarms all bedrooms/levels; CO alarms with fuel-burning appliances or attached garages) — LOCAL, new-construction-focused. Rentals: § 89-8-23 landlord duty is only generic housing-code compliance. Enforcement reality: near zero outside permitted new builds. (2026-session check: the legislature's bill site could not be reached this pass — see blockers.)"
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "**No state wood-stove emission or certification program** — EPA NSPS Step 2 (NATIONAL) governs new stove sales. No statewide spark-arrestor rule found. Burn restrictions are county-by-county: under **Miss. Code Ann. § 49-19-351**, the Forestry Commission certifies drought and county supervisors ban outdoor burning (violation: misdemeanor, **$100–$500**; gas/charcoal grills exempt) — active bans listed at https://www.mfc.ms.gov/burning-info/burn-bans/ (statute: https://law.justia.com/codes/mississippi/title-49/chapter-19/restrictions-on-outdoor-burning/section-49-19-351/). Bans target outdoor fire, not indoor fireplaces."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV/REF — medium confidence)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "medium confidence",
+      "markdown": "No chimney-sweep-specific enforcement action found. The pattern is **storm-chaser home-repair fraud**: AG Fitch + Insurance Commissioner + MSBOC issue joint warnings each hurricane season and after tornado/winter events — verify license at msboc.us, written contract, never pay cash up front (2022 advisory: https://magnoliatribune.com/2022/05/31/ag-fitch-and-ms-board-of-contractors-urge-mississippians-to-beware-of-contractor-schemes-as-hurricane-season-begins/; AG storm-victim tips PDF: https://attorneygenerallynnfitch.com/wp-content/uploads/2025/06/Tips-for-Storm-Victims.pdf). Prosecutors also have the § 97-23-103 criminal hammer (chimneys named in the statute). Name no companies — no public chimney enforcement action surfaced."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Humid subtropical; short burn season roughly **Nov–Feb** (north MS hills colder than the Gulf Coast). Rush: **Oct–Dec** after first cold snaps. Best booking: **Apr–Aug** shoulder. Second scam-driven demand spike follows **hurricane season (Jun–Nov)** and spring tornado outbreaks — chimney/roof damage claims pull storm-chasers in (REF, seasonal inference from AG advisory cycle)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Mississippi runs the **cheapest-to-fourth-cheapest cost of living in the nation** (index ~83–87 vs US 100, MERIC series via https://meric.mo.gov/data/cost-living-data-series; https://worldpopulationreview.com/state-rankings/cost-of-living-index-by-state). Seed chimney prices **~13–17% below national**: sweeps toward the bottom of the national band, big-ticket relines/rebuilds discounted similarly; Jackson metro modestly above rural MS. REF — replace with direct quotes before ship (per price-research protocol)."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **None for chimney work — Remodeler license only when improvements exceed $10,000 (new residential builds over $50,000), § 73-59-1** · Registration: **None below threshold** · Disclosure law: **Yes — mandatory PCDS when a licensed broker/salesperson is involved (§ 89-1-501; FSBO without a licensee not covered), §§ 89-1-501–527; form E.2 names fireplace/chimneys** · 3-day cancel / unlicensed-can't-sue: **Both — § 75-66-3 home-solicitation cancel (lost on emergency request + substantial performance) AND § 73-59-9 unlicensed can't sue (documented expenses only)** · CO law: **None statewide (smoke or CO) — local IRC/IFC only** · Lookup: https://www.msboc.us"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Mississippi is the South's threshold-gate specimen in nearly pure form: a real board (MSBOC), a real misdemeanor penalty, a real can't-sue bar — all switched **off at $10,000 and below**, which is where almost every chimney job lives, so the practical answer to \"is my sweep licensed?\" is \"there is no license.\" Meanwhile the state runs a **mandatory, unalterable MREC disclosure form that asks about fireplace/chimney defects by name** — for any sale a licensed agent touches — and its consumer act is deliberately weak (no treble, no class actions, mandatory pre-suit informal dispute settlement through an AG-approved program); the legislature instead put its muscle in criminal law, uniquely writing **\"chimneys, chimney liners\" into the Home Repair Fraud statute** (§ 97-23-103, felony at $10,000+). CO/smoke law is a void: the 1999 Smoke Detector Act died in committee and nothing replaced it, leaving protection to the part of the state that didn't opt out of the 2014 uniform code. **CORRELATION VERDICT: CONFIRM.** For chimney-scale work the licensing switch is off ($10,000 gate, $50,000 for new construction) and disclosure law is strong and chimney-explicit — no-license ⇄ yes-disclosure is exactly the inverse pattern."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "None for chimney work — Remodeler license only when improvements exceed $10,000 (new residential builds over $50,000), § 73-59-1",
+    "registration_name": "None below threshold",
+    "disclosure_law": "Yes — mandatory PCDS (§§ 89-1-501–527) when a licensed broker/salesperson is involved; FSBO without licensee not covered",
+    "chimney_item_on_form": "Yes — form E.2 fireplace/chimneys",
+    "three_day_cancel": "Yes (§ 75-66-3; lost if buyer requests emergency work and seller substantially begins)",
+    "co_law": "None statewide (smoke or CO) — local IRC/IFC only",
+    "lookup_url": "https://www.msboc.us",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "None for chimney work — Remodeler license only when improvements exceed $10,000 (new residential builds over $50,000), § 73-59-1",
+    "registration_name": "None below threshold",
+    "disclosure_law": "Yes — mandatory PCDS when a licensed broker/salesperson is involved (§ 89-1-501; FSBO without a licensee not covered), §§ 89-1-501–527; form E.2 names fireplace/chimneys",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "",
+    "co_law": "None statewide (smoke or CO) — local IRC/IFC only",
+    "lookup_url": "https://www.msboc.us"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "ONLY > $10,000",
+      "note": "None for chimney work — Remodeler license only when improvements exceed $10,000 (new…",
+      "anchor": "license",
+      "rule": "license:NO+threshold",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "The residential license rests on a business/law exam plus classification trade exams — none of it chimney-specific: no flue sizing, no NFPA 211 Level I/II inspection method, no clearance-to-combustibles."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection mandated at transfer."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "3 day window — conditions in the remedies section",
+      "anchor": "remedies",
+      "rule": "cancel:§4-sentence",
+      "derivedFrom": "§4 text",
+      "evidence": "3-day cancel: § 75-66-3, home-solicitation sales, \"until midnight of the third business day\" (https://law.justia.com/codes/mississippi/title-75/chapter-66/section-75-66-3/) — but cancellation is lost \"if the buyer requests the seller to…"
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:none→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "remedies",
+      "rule": "sue:§4-sentence",
+      "derivedFrom": "§4 text",
+      "evidence": "Two sharper teeth elsewhere: (1) § 73-59-9 — unlicensed builders/remodelers \"may not bring any action, either at law or in equity, to enforce any contract\"; recovery limited to actual documented labor/material expenses proven by clear and…"
+    }
+  ],
+  "h1": "Mississippi chimney & fireplace laws: know your rights",
+  "metaDescription": "Mississippi chimney & fireplace laws: threshold licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      10,
+      11,
+      12
+    ],
+    "best": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Humid subtropical; short burn season roughly Nov–Feb (north MS hills colder than the Gulf Coast). Rush: Oct–Dec after first cold snaps. Best booking: Apr–Aug shoulder. Second scam-driven demand spike follows hurricane season (Jun–Nov) and spring tornado outbreaks — chimney/roof damage claims pull storm-chasers in…"
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Mississippi?",
+      "a": "State licensing: None for chimney work — Remodeler license only when improvements exceed $10,000 (new residential builds over $50,000), § 73-59-1. Registration or credential: None below threshold. Seller disclosure at sale: Yes — mandatory PCDS when a licensed broker/salesperson is involved (§ 89-1-501; FSBO without a licensee not covered), §§ 89-1-501–527; form E.2 names fireplace/chimneys. Right to cancel a sale made at your home: see the remedies section. Carbon monoxide alarm law: None statewide (smoke or CO) — local IRC/IFC only. Where to check a contractor: https://www.msboc.us. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Mississippi?",
+      "a": "STATE LAW: mandatory Property Condition Disclosure Statement (PCDS), Miss. Code Ann. §§ 89-1-501 through 89-1-527 (https://law.justia.com/codes/mississippi/title-89/chapter-1/real-estate-transfer-disclosure-requirements/section-89-1-509/), MREC-promulgated form that \"may not be altered or personalized.\" Fetched the actual form (https://www.mrec.ms.gov/wp-content/uploads/2022/10/mrec_forms_PCDS_2017_FINAL-LEGAL_WITH_PAGE_NUMBERS-03-27-2017.pdf): Section E.2 asks about \"past or present problems, malfunctions or defects with … fireplace/chimneys … including any modifications to them\"; E.3 covers outdoor fireplaces; the Section G appliance grid lists SMOKE/MONOXIDE DETECTORS and FREE STANDING STOVE; B.7–B.8 ask whether remodels were permitted and name the licensed contractor. Scope (confirmed in statute text): § 89-1-501 applies to transfers of real property with 1–4 dwelling units (sale, exchange, installment land contract, lease with option, etc.) only \"when the execution of such transfers is by, or with the aid of, a duly licensed real estate broker or salesperson\" (https://law.justia.com/codes/mississippi/title-89/chapter-1/real-estate-transfer-disclosure-requirements/section-89-1-501/).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Mississippi?",
+      "a": "STATE LAW: MS Consumer Protection Act, Miss. Code Ann. § 75-24-5 (UDAP). Private remedy (§ 75-24-15, https://law.justia.com/codes/mississippi/title-75/chapter-24/general-provisions/section-75-24-15/) is thin: monetary loss only — NO treble damages, NO class actions (\"every private action must be maintained in the name of and for the sole use and benefit of the individual person\"), and plaintiff must FIRST make \"a reasonable attempt to resolve any claim through an informal dispute settlement program approved by the Attorney General.\" Complaints: AG Consumer Protection Division portal, https://attorneygenerallynnfitch.com/divisions/consumer-protection/ / consumer@ago.ms.gov.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "alabama",
+    "neighborName": "Alabama",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "ONLY > $10,000",
+      "note": "None for chimney work — Remodeler license only when improvements exceed $10,000 (new…"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "YES for residential work > $10,000 — HBLB (Ala. Code § 34-14A-2(12); roofers > $2,500)…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "slug": "minnesota",
+  "name": "Minnesota",
+  "abbr": "MN",
+  "sourceFile": "rights-research-minnesota.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) Sweep-only exemption is an interpretation of the statute's skill list, and must be labeled that way. (2) Code-cycle line must say 2018 IRC, with the 2024 update pending. (3) No chimney-specific enforcement names.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- **IRC cycle:** CORRECTED. The old text called it \"mandatory statewide, confirm cycle.\" Current MN Residential Code = 2018 IRC (Minn. R. 1309.0010, published Mar 31, 2020). 2024 model-code rulemaking has begun, with no effective date on DLI's docket. The code is the statewide standard, but enforcement depends on local adoption (§ 326B.121) — https://www.revisor.mn.gov/rules/1309.0010/ ; https://www.revisor.mn.gov/statutes/cite/326B.121 ; https://dli.mn.gov/about-department/rulemaking/rulemaking-docket-minnesota-rules-chapter-1305 ; https://www.dli.mn.gov/business/codes-and-laws/overview-minnesota-state-building-code — GOV\n- **One-skill exemption boundary:** RESOLVED, with detail added. § 326B.805 subd. 6 exempts \"specialty contractors who provide only one special skill.\" § 326B.802 puts \"masonry fireplaces\" under Masonry and concrete, and \"fireplaces and wood stoves\" under General installation specialties. Roofers are always licensed. A $15,000 receipts certificate of exemption also applies. DLI's page says nothing about cleaning or sweeping; sweep-only status is our reading of the statute — https://www.revisor.mn.gov/statutes/cite/326B.805 ; https://www.revisor.mn.gov/statutes/cite/326B.802 ; https://www.dli.mn.gov/business/residential-contractors/who-needs-license — GOV\n- **Recovery Fund caps:** RESOLVED. \"$100,000 per licensee\" to an owner or lessee, \"$550,000 per licensee\" aggregate; history includes 2024 c 127 art 6 s 2 — https://www.revisor.mn.gov/statutes/cite/326B.89 — GOV\n- **Exam \"110 questions at 70%\":** CORRECTED (removed). DLI's license page does not state it. It now says the QP passes the exam and takes 14 hrs CE per 2 yrs — https://www.dli.mn.gov/business/residential-contractors/contractor-and-remodeler-license — GOV\n- **3-day cancel:** CORRECTED citation. The cancellation right is § 325G.07, not § 325G.06 (which is definitions: over $25, excludes buyer-requested maintenance visits) — https://www.revisor.mn.gov/statutes/cite/325G.07 ; https://www.revisor.mn.gov/statutes/cite/325G.06 — GOV\n- **Disclosure:** RESOLVED. § 513.55 subd. 1 material-facts duty before signing; § 513.60 written waiver. The claim that the \"MSBA/Realtor form itemizes fireplace/chimney\" was unverified and has been removed as a factual claim — https://www.revisor.mn.gov/statutes/cite/513.55 ; https://www.revisor.mn.gov/statutes/cite/513.60 — GOV\n- **CO law:** RESOLVED. § 299F.51 \"within ten feet of each room lawfully used for sleeping purposes\"; single-family, multifamily, lodging — https://www.revisor.mn.gov/statutes/cite/299F.51 — GOV\n- **AG enforcement:** STILL OPEN (chimney-specific). The Oct 2025 AG suits against two remodelers were found; they are not chimney cases — https://www.ag.state.mn.us/Office/Communications/2025/10/14_Contractors.asp — GOV\n- **2026 changes:** None found in the fetched statutes (§ 326B.805 last amended 2023; § 326B.89 2024). A general 2026 news search could not be run (search budget exhausted), so this check is limited to statute history notes.\n- **Template-leakage sweep:** clean. Maryland and Virginia appear only as a labeled comparison."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; exam license with a loophole)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; exam license with a loophole",
+      "markdown": "Minnesota runs a **real exam-based license, but it has a gap a chimney fits through.** The **Dept. of Labor & Industry (DLI)** licenses **residential building contractors** and **residential remodelers**, defined as anyone who contracts with an owner to build or improve 1–4 family residential real estate **\"by providing two or more special skills\"** (Minn. Stat. § 326B.802; licensing duty § 326B.805 subd. 1). The license names a **qualifying person (QP)**, who must pass the state exam and take **14 hours of continuing education every two years** (DLI). *(DLI's license page does not publish the exam's question count or passing score, so we don't cite them.)* **The catch:** § 326B.805 subd. 6 exempts **\"specialty contractors who provide only one special skill.\"** DLI puts it plainly: one-skill specialty contractors \"are not required to have a state license (except residential roofers).\" A second exemption covers anyone whose gross annual receipts from this work stay **at or under $15,000**. That person must file an affidavit for a **Certificate of Exemption** and renew it every year.\n\n**Where the boundary falls for chimney work (STATE LAW, from the statute's own lists).** § 326B.802 names eight special skills. Two of them name hearth work: **\"Masonry and concrete\"** includes **\"masonry fireplaces\"**, and **\"General installation specialties\"** includes **\"fireplaces and wood stoves.\"** Here is how that sorts out:\n- A **masonry-only** chimney or fireplace mason offers one skill and needs **no state license**.\n- A shop that does masonry fireplace or chimney work **and also** installs fireplaces, inserts or wood stoves offers **two skills** and **needs the license**.\n- Chimney **roof work**, such as re-flashing into the roof covering, can be \"residential roofing.\" Roofers need a **residential roofer license** whatever their skill count (§ 326B.805 subd. 1; DLI).\n- **Sweeping or cleaning alone** is not in any of the eight special-skill lists, and DLI's page doesn't mention cleaning or maintenance. On the statute's plain text, a sweep-only business falls outside the license. *(This is our reading of the statute's lists, not a DLI ruling.)*\n\nBonding is replaced by the **Contractor Recovery Fund** (§ 326B.89). Lookup: **dli.mn.gov** license search."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The exam tests building code and business, **nothing chimney-specific**. The one-skill and $15,000 exemptions mean many chimney contractors hold **no state credential at all.** Individual certifications (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; waivable)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; waivable",
+      "markdown": "**Minn. Stat. §§ 513.52–.60** impose a **narrative \"material facts\" duty**, not a fixed checklist. Under § 513.55 subd. 1, **\"before signing an agreement to sell or transfer residential real property,\"** the seller must disclose all material facts they are aware of that could **\"adversely and significantly affect\"** the buyer's use or enjoyment. The disclosure is made in good faith, to the best of the seller's knowledge. A known cracked flue or unsafe chimney qualifies. The statute itself names no chimney item. *(Industry disclosure forms may itemize fireplace or chimney; we have not verified the current form's wording, so we don't cite it.)* **The disclosure can be waived if seller and buyer agree in writing (§ 513.60).** That waiver does not waive disclosure duties created by other laws. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Minnesota's remedies come in layers:\n- **Home Solicitation Sales (Minn. Stat. §§ 325G.06–.09).** These cover personally solicited sales of goods, services or **improvements to real property over $25** (definition, § 325G.06). The buyer has a **right to cancel until midnight of the third business day** after the sale (§ 325G.07). **Caveat:** § 325G.06 excludes home maintenance visits the buyer requested, so a sweep the homeowner called in is not a \"solicited\" sale. The door-knock upsell is.\n- **Consumer fraud statutes.** The **Prevention of Consumer Fraud Act (§ 325F.69)** and the Deceptive Trade Practices Act can be enforced privately through the AG private-remedy statute (§ 8.31), with attorney's fees.\n- **Contractor Recovery Fund (§ 326B.89).** It covers losses from contractors **licensed** as residential contractors or remodelers. Limits are **$100,000 per owner or lessee per licensee**, and **$550,000 total per licensee** (subd. 5, as amended 2024 c 127 art 6 s 2). The older $75k/$150k figures are stale.\n\nThese interlock with §1: the fund only pays on *licensed* contractors, so the one-skill exemption that un-licenses chimney-only shops also shuts their customers out of the fund. Complaints go to DLI and the AG."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; corrected Sep 2026)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; corrected Sep 2026",
+      "markdown": "The **Minnesota State Building Code \"is the standard that applies statewide\"** (Minn. Stat. § 326B.121). **Enforcement is not universal**, though. A municipality that had adopted the code as of Jan 1, 2008 must keep enforcing it, except municipalities under 2,500 people outside a metropolitan county. Every other municipality **may** adopt it by ordinance. DLI: the code \"isn't enforceable by municipalities unless it is adopted by local ordinance.\" Small rural townships can therefore have little or no permit enforcement (LOCAL).\n\n**Current residential code:** the **2018 IRC**, incorporated by Minn. R. 1309.0010 (published Mar 31, 2020). DLI has started rulemaking toward the **2024** International codes (Request for Comments, Jan 21, 2025, for ch. 1305), but the docket lists **no adoption or effective date yet**. Where the code is enforced, chimney relines, rebuilds and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**Minn. Stat. § 299F.51** requires an operational CO alarm **\"within ten feet of each room lawfully used for sleeping purposes\"** in every single-family dwelling and every multifamily unit, with hotel and lodging rooms also covered. Coverage is broad and standing. There is **no statewide pre-sale certificate.** A permitted chimney job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban regime; outdoor wood boilers are regulated locally. **Northern Minnesota has among the highest wood-heat density in the country**, making it a core market. *(Market characterization, REF.)*"
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF/GOV — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "The MN AG publishes standing home-improvement and door-to-door sales guidance. On Oct 14, 2025, the AG sued two remodeling contractors (High Road Builders LLC; Affordable Home Remodeling LLC) under the Prevention of Consumer Fraud Act and Deceptive Trade Practices Act. Those were remodeling prepayment cases, **not chimney work** (ag.state.mn.us/Office/Communications/2025/10/14_Contractors.asp). **No MN chimney-sweep-specific enforcement action has been confirmed.** A door-knock \"we noticed your chimney\" pitch is a textbook § 325G.06 solicited sale; a sweep the buyer requested is not."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold statewide and severe in the north. Burn season runs ~Oct–Apr, longer up north. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The Twin Cities metro runs near or slightly above national prices; greater Minnesota runs below. Use national ranges until listings data exists."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — Residential Building Contractor/Remodeler license (exam) for 2+ special skills; one-skill specialty contractors EXEMPT (§ 326B.805 subd. 6), as are those at or under $15k/yr receipts with a certificate; roofers always licensed** · Registration: **license + Contractor Recovery Fund ($100k per owner per licensee, $550k aggregate — § 326B.89, 2024 c 127)** · Disclosure law: **YES — material-facts duty (§ 513.55), WAIVABLE (§ 513.60); statute names no chimney item** · 3-day cancel: **YES (§ 325G.07; buyer-requested maintenance excluded)** · CO law: **broad (§ 299F.51, within 10 ft of sleeping rooms)** · Lookup: dli.mn.gov"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Minnesota looks like a strong-license state, with a genuine exam and a Contractor Recovery Fund; for comparison, Maryland and Virginia run similar regimes. But two escape hatches undercut it exactly where chimneys live.\n- **The license only reaches contractors offering two or more special skills.** A masonry-only chimney mason can operate **fully unlicensed and legally**, and a sweep-only business isn't on the statute's skill list at all. The moment a shop both rebuilds masonry fireplaces *and* installs stoves or inserts, it needs the license.\n- **The seller's material-facts disclosure can be waived in writing.**\n\nSo the credential you'd look up may not exist for your chimney contractor, and the disclosure you'd rely on may have been waived. That is why certification and independent audits matter. And it's one of the highest wood-heat markets in the country."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "State exam license (Residential Building Contractor/Remodeler) for 2+ special skills; one-skill specialty contractors and <=$15k certificate holders exempt (Minn. Stat. 326B.805 subd. 6); roofers always licensed",
+    "registration_name": "DLI residential contractor license + Contractor Recovery Fund ($100k per owner/licensee, $550k aggregate, 326B.89)",
+    "disclosure_law": "Yes - material-facts duty Minn. Stat. 513.55, waivable in writing 513.60",
+    "chimney_item_on_form": "No (statute names no chimney item; industry form unverified)",
+    "three_day_cancel": "Yes - Minn. Stat. 325G.07 (buyer-requested maintenance excluded)",
+    "co_law": "Broad - 299F.51 CO alarm within 10 ft of sleeping rooms, all dwellings; no pre-sale certificate",
+    "lookup_url": "https://www.dli.mn.gov/business/residential-contractors/who-needs-license",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — Residential Building Contractor/Remodeler license (exam) for 2+ special skills; one-skill specialty contractors EXEMPT (§ 326B.805 subd. 6), as are those at or under $15k/yr receipts with a certificate; roofers always licensed",
+    "registration_name": "license + Contractor Recovery Fund ($100k per owner per licensee, $550k aggregate — § 326B.89, 2024 c 127)",
+    "disclosure_law": "YES — material-facts duty (§ 513.55), WAIVABLE (§ 513.60); statute names no chimney item",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (§ 325G.07; buyer-requested maintenance excluded)",
+    "co_law": "broad (§ 299F.51, within 10 ft of sleeping rooms)",
+    "lookup_url": "dli.mn.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "Residential Building Contractor/Remodeler license (exam) for 2+ special skills; one-skill…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "The exam tests building code and business, nothing chimney-specific."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (§ 325G.07; buyer-requested maintenance excluded)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "(§ 299F.51, within 10 ft of sleeping rooms)",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Minnesota: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Minnesota chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold statewide and severe in the north. Burn season runs ~Oct–Apr, longer up north. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Minnesota?",
+      "a": "State licensing: YES — Residential Building Contractor/Remodeler license (exam) for 2+ special skills; one-skill specialty contractors EXEMPT (§ 326B.805 subd. 6), as are those at or under $15k/yr receipts with a certificate; roofers always licensed. Registration or credential: license + Contractor Recovery Fund ($100k per owner per licensee, $550k aggregate — § 326B.89, 2024 c 127). Seller disclosure at sale: YES — material-facts duty (§ 513.55), WAIVABLE (§ 513.60); statute names no chimney item. Right to cancel a sale made at your home: YES (§ 325G.07; buyer-requested maintenance excluded). Carbon monoxide alarm law: broad (§ 299F.51, within 10 ft of sleeping rooms). Where to check a contractor: dli.mn.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Minnesota?",
+      "a": "Minn. Stat. §§ 513.52–.60 impose a narrative \"material facts\" duty, not a fixed checklist. Under § 513.55 subd.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Minnesota?",
+      "a": "Minnesota's remedies come in layers: - Home Solicitation Sales (Minn. Stat. §§ 325G.06–.09). These cover personally solicited sales of goods, services or improvements to real property over $25 (definition, § 325G.06).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "south-dakota",
+    "neighborName": "South Dakota",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "Residential Building Contractor/Remodeler license (exam) for 2+ special skills; one-skill…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state license (electricians/plumbers only) — LOCAL (Sioux Falls, Rapid City, Brookings…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

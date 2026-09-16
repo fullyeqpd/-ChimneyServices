@@ -1,0 +1,316 @@
+{
+  "slug": "nevada",
+  "name": "Nevada",
+  "abbr": "NV",
+  "sourceFile": "rights-research-nevada.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) CO section must stay labeled \"no statewide existing-home/rental statute confirmed\"; (2) no Washoe or Tahoe ordinance specifics; (3) county code dates unverified.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- C-18 / C-13 scopes (blocker 1a): RESOLVED — NAC 624.350 (C-18 Masonry: brick, baked clay, stone, artificial stone, precast block, glass block, with or without mortar; chimneys not named); NAC 624.300 (C-13 Sheet Metal: includes \"patented chimneys, flues\") — https://www.leg.state.nv.us/NAC/NAC-624.html — GOV\n- Sub-$1,000 exemption (blocker 1b): RESOLVED/CORRECTED — NRS 624.031(6) (2025): repair/maintain property under $1,000 incl. labor and materials, UNLESS permit required, heating/plumbing/electrical/refrigeration/AC-type work, health-safety classification, part of larger project of $500+, or done by licensee. File's \"$1,000 or more (or where a permit is required)\" omitted the heating-work and $500-project carve-outs — https://law.justia.com/codes/nevada/chapter-624/statute-624-031/ — GOV (statute text)\n- DTPA remedies (blocker 2): CORRECTED — file suggested treble/punitive; NRS 41.600 provides damages, equitable relief, costs and attorney's fees, and includes NRS 598.0915–.0925 deceptive trade practices; no treble multiplier — https://law.justia.com/codes/nevada/chapter-41/statute-41-600/ — GOV\n- Door-to-door cancel: RESOLVED — NRS 598.230: sales of $25+, midnight of third business day — https://law.justia.com/codes/nevada/chapter-598/statute-598-230/ — GOV\n- Recovery Fund: CORRECTED cite — limits are NRS 624.510(3)(a) ($40,000 per claim) and 624.510(7) (lesser of $750,000 or 20% per contractor); NRS 624.470 only creates the account — https://law.justia.com/codes/nevada/chapter-624/statute-624-510/ — GOV\n- Disclosure NRS 113.130 waiver: CORRECTED — file said buyer may waive in a signed notarized writing; statute (2025) says \"A purchaser of residential property may not waive any of the requirements of subsection 1\" and seller may not require waiver; delivery at least 10 days before conveyance — https://law.justia.com/codes/nevada/chapter-113/statute-113-130/ — GOV\n- Disclosure form chimney item: RESOLVED — Form 547 (rev. 6/1/2023) lists \"Fireplace & chimney\" and \"Wood burning system\"; no CO line — https://red.nv.gov/uploadedFiles/rednvgov/Content/Forms/547.pdf — DOC\n- CO law (blocker 3): STILL OPEN — no CO section title in NRS 118A (landlord-tenant) or NRS 477 (State Fire Marshal); a full-text search was not possible — https://law.justia.com/codes/nevada/chapter-118a/ ; https://law.justia.com/codes/nevada/chapter-477/ — GOV (negative, titles only)\n- Washoe woodstove removal-at-sale: STILL OPEN — Northern Nevada Public Health air-quality page unreachable (SSL/robots failure); no claim of such a rule is made in the file.\n- Tahoe spark-arrestor (blocker 4), county code adoptions (blocker 5), enforcement action (blocker 6): STILL OPEN — not reached (web-search budget exhausted).\n- 2026 changes: NSCB homepage shows only a proposed NAC 624.130 amendment (small-business impact survey); no statute change found — https://www.nvcontractorsboard.com/ — GOV. Lookup: https://app.nvcontractorsboard.com/Clients/NVSCB/Public/ContractorLicenseSearch/ContractorLicenseSearch.aspx\n- Template-leakage sweep: clean — AZ/MD/MT appear only as labeled comparisons."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; real license, classifications, and a fund)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real license, classifications, and a fund",
+      "markdown": "**Nevada has a genuine state contractor license with masonry classification, a qualifying exam, and a recovery fund.** STATE LAW: the **Nevada State Contractors Board (NSCB, nvcontractorsboard.com)** licenses under **NRS Chapter 624** / **NAC Chapter 624**. Masonry — the relevant trade for a masonry chimney — is **Classification C-18 (Masonry)** (**NAC 624.350**: may \"select, cut and lay brick, other baked clay products, rough cut and dressed stone, artificial stone, precast blocks and structural glass brick or block at random or in courses, with or without mortar\"; chimneys are not named, but a masonry chimney is brick/stone work within it). A **metal/\"patented\" chimney or flue** falls under **Classification C-13 (Sheet Metal)** (**NAC 624.300**: may \"fabricate and install sheet metal, including, without limitation, … patented chimneys, flues and metal roof systems\") — so **NV cleanly splits masonry chimney (C-18) from prefab metal chimney (C-13)** in the code. **Threshold:** **NRS 624.031(6)** exempts repair/maintenance work valued **under $1,000 including labor and materials — unless** (a) a building permit is required, (b) the work is of a type performed by a plumbing, electrical, refrigeration, **heating** or air-conditioning contractor, (c) it is in a Board classification that significantly affects public health/safety, (d) it is part of a larger project worth $500 or more (or split to evade), or (e) it is done by a licensee or employee. Note (b): stove/heating-appliance work likely cannot use the exemption at any price. Unlicensed contracting is criminalized (NRS 624.700 et seq.) and bars suit to collect. Public lookup: **nvcontractorsboard.com**."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Even Nevada's real exam tests **Nevada contracting law, business/finance, and general trade knowledge — not flue diagnosis or whether the licensee can read *your* chimney.** A C-18 masonry license attests to masonry generally; a C-13 to sheet-metal venting — neither is a chimney-inspection or NFPA-211 credential. And in the Las Vegas desert most \"fireplace\" contractors are general or gas trades, not chimney specialists. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) plus an independent audit remain the competence signal on top of the license."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; a *mandatory*, non-waivable form that names the chimney)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a *mandatory*, non-waivable form that names the chimney",
+      "markdown": "**This is Nevada's strongest consumer feature: a mandatory statutory disclosure form that names the chimney — and the buyer cannot waive it.** STATE LAW: **NRS § 113.130 et seq. (Ch. 113, Sales of Real Property)** requires the seller of residential property to complete and serve the state **Seller's Real Property Disclosure Form** before conveyance, disclosing defects of which the seller is aware, **at least 10 days before conveyance**. The state form (Real Estate Division **Form 547, rev. 6/1/2023**) **explicitly lists \"Fireplace & chimney\" and \"Wood burning system\"** as line items (it has no separate CO-alarm line). Waiver is barred outright: **\"A purchaser of residential property may not waive any of the requirements of subsection 1. A seller of residential property may not require a purchaser to waive any of the requirements of subsection 1 as a condition of sale or for any other purpose\"** (NRS 113.130(3)). Exempt transfers include foreclosures, sales between co-owners/spouses/close relatives, the first sale of a home built by a licensed contractor, and certain relocation/fiduciary sales (NRS 113.130(2)). Actual-knowledge standard, no duty to investigate; NRS 113.150 gives remedies for nondisclosure. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. This is a **real, chimney-naming, non-waivable disclosure** — stronger on this axis than AZ (case-law/SPDS) or MT."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "STATE LAW: the **Nevada Deceptive Trade Practices Act (NRS Chapter 598)**, enforced by the **AG's Bureau of Consumer Protection**, bars deceptive practices and supports public enforcement and a private action: under **NRS 41.600** a victim of consumer fraud (which expressly includes deceptive trade practices under NRS 598.0915–598.0925) may recover **damages, equitable relief, and costs plus reasonable attorney's fees** — no statutory treble multiplier appears in NRS 41.600. Door-to-door/**door-to-door sale** contracts of **$25 or more** carry a **3-business-day right to rescind** under **NRS § 598.230** (written notice by midnight of the third business day; the seller must give the cancellation notice). **Consumer backstop that sets NV apart:** the **NSCB Residential Recovery Fund (NRS 624.400–624.560; account at NRS 624.470)** pays an eligible owner-occupant actual damages up to **$40,000 per claim** for a *licensed* residential contractor's failure to properly perform (**NRS 624.510(3)(a)**; claims against any single contractor capped at the lesser of $750,000 or 20% of the account balance, **NRS 624.510(7)**) — the highest single-claim cap of the launch set alongside stronger MD. Leverage: the fund only pays when you hired a **licensed** contractor — \"check the NSCB license\" carries real money."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence; no statewide code, strong local departments)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; no statewide code, strong local departments",
+      "markdown": "STATE LAW/LOCAL: **Nevada has no single statewide residential building code** — the State Fire Marshal sets baseline standards, but building permits are issued and enforced by local jurisdictions. The two that matter are dense and modern: **Clark County (Las Vegas metro)** adopted the **2024 I-Codes effective Jan 11, 2026**, and **Washoe County (Reno/Sparks)** adopted the **2024 ICC codes effective July 1, 2025 (compliance Jan 1, 2026)**; **Carson City** and Tahoe-basin jurisdictions run their own. Where a code and department exist (essentially all metro NV), chimney relines, rebuilds, and solid-fuel appliance installs are generally permit work; sweeps and like-for-like caps generally are not. Local-variance disclaimer applies, but coverage is strong in the populated areas."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium; new-construction-focused, no all-rental/pre-sale statute)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium; new-construction-focused, no all-rental/pre-sale statute",
+      "markdown": "STATE LAW/LOCAL: Nevada requires CO alarms in **new residential construction** via the adopted residential code (IRC) where the unit has a fuel-fired appliance or attached garage, outside each sleeping area — enforced through local building codes rather than a single comprehensive statewide CO statute. **No statewide all-rental mandate and no pre-sale CO certificate** confirmed. *(Confirm any NRS rental CO provision before publish; references point to code-based, not statute-based, requirements.)* A permitted chimney/stove job is the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV/REF — Nevada-specific and material in the north)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "Nevada-specific and material in the north",
+      "markdown": "**Two Nevadas.** In the **desert south (Las Vegas/Clark County)** wood-burning fireplaces and masonry chimneys are relatively uncommon (gas or none) — say so honestly; chimney demand is thin there. In the **north — Reno/Sparks/Carson and especially the Lake Tahoe basin — real winters and heavy wood heat make chimneys standard.** The **Tahoe basin** is high-consequence WUI: **defensible-space** requirements (30–100 ft, per **TRPA** and the local fire districts — North Lake Tahoe FPD, Tahoe-Douglas) explicitly call for clearing vegetation within ~10 ft of chimneys/roofs, and spark-arrestor caps are a code/insurance expectation in the basin *(confirm the specific spark-arrestor ordinance vs. general defensible-space guidance before publish — search returned defensible-space clearly, spark-arrestor rule less clearly)*. Washoe County also runs winter wood-burning/air-quality controls (Reno inversions). NFPA 211 governs where chimneys exist."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The door-knock \"we noticed your chimney\" pitch is a textbook NRS 598.230 door-to-door + Deceptive Trade Practices violation; the AG's Bureau of Consumer Protection and NSCB (unlicensed-contractor stings) are the venues, and NSCB actively pursues unlicensed work. Because chimneys cluster in the north, scam exposure concentrates in the Reno/Tahoe belt. **Specific Nevada chimney-sweep enforcement actions: NOT CONFIRMED — no state-specific alert surfaced; re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Two climates. Desert south (Las Vegas): mild, minimal burn season, low chimney demand. North (Reno/Carson/Tahoe): real winter, burn season ~Oct–Apr, Tahoe longer. Rush where chimneys exist: SEP–NOV. Best booking: SPRING/summer."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Lake Tahoe basin and Reno resort markets run **above** Las Vegas metro labor; Vegas is the population center but chimney work is a niche there. Regionalize on the north/Tahoe vs. Las Vegas split, not a single NV number."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — NSCB state license, masonry class C-18 (metal/prefab chimney = C-13), NRS Ch. 624; exemption only for repair/maintenance under $1,000 with no permit and not heating-type work (NRS 624.031(6))** · Registration: **license regime + NSCB Residential Recovery Fund ($40k/claim, NRS 624.510)** · Disclosure law: **YES — mandatory Seller's Real Property Disclosure Form, NRS 113.130; names \"fireplace & chimney\" + \"wood burning system\"; non-waivable (NRS 113.130(3))** · 3-day cancel: **YES (door-to-door, NRS 598.230, $25+)** · CO law: **limited — new construction via local code; no all-rental/pre-sale statute confirmed** · Lookup: nvcontractorsboard.com"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Nevada is the **partial BREAK / boundary case in the license⇄disclosure inverse-correlation verdict — it protects strongly on *both* axes.** On licensing it sits **high**: a real NSCB license that even splits **masonry chimney (C-18)** from **metal/patented chimney (C-13)** in the rulebook, plus a **$40,000 Residential Recovery Fund** — among the strongest contractor-side regimes in the launch set. The inverse-correlation rule predicts such a strong-license state would go *soft* on disclosure (the AZ/MD pattern). **Nevada doesn't** — it also has one of the **strongest sale-side protections**: a **mandatory** NRS 113.130 disclosure form that names the chimney by line item **and makes it non-waivable by the buyer.** So Nevada breaks the trade-off: strong license *and* strong disclosure. It joins the small set of \"both-strong\" states that limit the inverse correlation to a tendency, not a law. The honest counterweight the page must carry: **most of Nevada's population lives in Las Vegas, where wood chimneys are rare** — the real chimney market (and the real WUI/Tahoe defensible-space and spark-arrestor stakes) is the northern Reno–Carson–Tahoe belt. Message: **hire an NSCB-licensed C-18/C-13 contractor (key to the $40k fund) — and here, unlike most states, the seller's disclosure is genuinely worth reading, but still get your own inspection.**"
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "state license (NSCB, NRS ch. 624; exemption only for repair/maintenance under $1,000 with no permit and not heating-type work, NRS 624.031(6))",
+    "registration_name": "NSCB contractor license (C-18 Masonry; C-13 Sheet Metal incl. patented chimneys/flues) + Residential Recovery Fund ($40k/claim, NRS 624.510)",
+    "disclosure_law": "Yes (mandatory, non-waivable Seller's Real Property Disclosure, NRS 113.130)",
+    "chimney_item_on_form": "Yes (Form 547: Fireplace & chimney; Wood burning system)",
+    "three_day_cancel": "Yes (door-to-door $25+, NRS 598.230)",
+    "co_law": "Limited (new construction via local code; no statewide statute confirmed)",
+    "lookup_url": "nvcontractorsboard.com",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — NSCB state license, masonry class C-18 (metal/prefab chimney = C-13), NRS Ch. 624; exemption only for repair/maintenance under $1,000 with no permit and not heating-type work (NRS 624.031(6))",
+    "registration_name": "license regime + NSCB Residential Recovery Fund ($40k/claim, NRS 624.510)",
+    "disclosure_law": "YES — mandatory Seller's Real Property Disclosure Form, NRS 113.130; names \"fireplace & chimney\" + \"wood burning system\"; non-waivable (NRS 113.130(3))",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (door-to-door, NRS 598.230, $25+)",
+    "co_law": "limited — new construction via local code; no all-rental/pre-sale statute confirmed",
+    "lookup_url": "nvcontractorsboard.com"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "NSCB state license, masonry class C-18 (metal/prefab chimney = C-13), NRS Ch. 624; exemption…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Even Nevada's real exam tests Nevada contracting law, business/finance, and general trade knowledge — not flue diagnosis or whether the licensee can read your chimney."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (door-to-door, NRS 598.230, $25+)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:limited→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Nevada: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Nevada chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": false,
+    "bestParsed": false,
+    "note": "Two climates. Desert south (Las Vegas): mild, minimal burn season, low chimney demand. North (Reno/Carson/Tahoe): real winter, burn season ~Oct–Apr, Tahoe longer. Rush where chimneys exist: SEP–NOV. Best booking: SPRING/summer."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Nevada?",
+      "a": "State licensing: YES — NSCB state license, masonry class C-18 (metal/prefab chimney = C-13), NRS Ch. 624; exemption only for repair/maintenance under $1,000 with no permit and not heating-type work (NRS 624.031(6)). Registration or credential: license regime + NSCB Residential Recovery Fund ($40k/claim, NRS 624.510). Seller disclosure at sale: YES — mandatory Seller's Real Property Disclosure Form, NRS 113.130; names \"fireplace & chimney\" + \"wood burning system\"; non-waivable (NRS 113.130(3)). Right to cancel a sale made at your home: YES (door-to-door, NRS 598.230, $25+). Carbon monoxide alarm law: limited — new construction via local code; no all-rental/pre-sale statute confirmed. Where to check a contractor: nvcontractorsboard.com. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Nevada?",
+      "a": "This is Nevada's strongest consumer feature: a mandatory statutory disclosure form that names the chimney — and the buyer cannot waive it. STATE LAW: NRS § 113.130 et seq. (Ch. 113, Sales of Real Property) requires the seller of residential property to complete and serve the state Seller's Real Property Disclosure Form before conveyance, disclosing defects of which the seller is aware, at least 10 days before conveyance.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Nevada?",
+      "a": "STATE LAW: the Nevada Deceptive Trade Practices Act (NRS Chapter 598), enforced by the AG's Bureau of Consumer Protection, bars deceptive practices and supports public enforcement and a private action: under NRS 41.600 a victim of consumer fraud (which expressly includes deceptive trade practices under NRS 598.0915–598.0925) may recover damages, equitable relief, and costs plus reasonable attorney's fees — no statutory treble multiplier appears in NRS 41.600. Door-to-door/door-to-door sale contracts of $25 or more carry a 3-business-day right to rescind under NRS § 598.230 (written notice by midnight of the third business day; the seller must give the cancellation notice). Consumer backstop that sets NV apart: the NSCB Residential Recovery Fund (NRS 624.400–624.560; account at NRS 624.470) pays an eligible owner-occupant actual damages up to $40,000 per claim for a licensed residential contractor's failure to properly perform (NRS 624.510(3)(a); claims against any single contractor capped at the lesser of $750,000 or 20% of the account balance, NRS 624.510(7)) — the highest single-claim cap of the launch set alongside stronger MD. Leverage: the fund only pays when you hired a licensed contractor — \"check the NSCB license\" carries real money.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "idaho",
+    "neighborName": "Idaho",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "NSCB state license, masonry class C-18 (metal/prefab chimney = C-13), NRS Ch. 624; exemption…"
+    },
+    "b": {
+      "answer": "REGISTRATION ONLY",
+      "note": "NO for chimney/masonry work — registration only, no exam/bond (specialty trades licensed…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

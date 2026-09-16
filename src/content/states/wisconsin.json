@@ -1,0 +1,299 @@
+{
+  "slug": "wisconsin",
+  "name": "Wisconsin",
+  "abbr": "WI",
+  "sourceFile": "rights-research-wisconsin.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "DO NOT PUBLISH",
+  "publishVerdictNote": "the disclosure item (a load-bearing claim) and the 3-day cancel window both rest only on the July pass, the Dwelling Contractor scope was materially wrong and its chimney application is still interpretive, and no 2026-change check was possible. Re-run with docs.legis.wisconsin.gov access.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- UDC/IRC alignment: CORRECTED — old text called UDC \"its own IRC-derived residential code.\" DSPS: UDC is the statewide code for 1–2 family dwellings built since June 1, 1980; IRC derivation not supported by the DSPS page — removed; pre-1980 scope limit added — https://dsps.wi.gov/Pages/Programs/UDC/Default.aspx — GOV. SPS 320 text STILL OPEN (docs.legis.wisconsin.gov robots/timeout failures, retried).\n- Dwelling Contractor cert scope for existing-dwelling chimney rebuilds: CORRECTED/PARTIAL — old text said the cert applies only to NEW 1–2 family construction. § 101.654(1)(a) conditions obtaining \"a building permit\" on certification; (1)(b) exempts owner-occupants doing work on their dwelling — implying permitted work on existing dwellings is covered — https://law.justia.com/codes/wisconsin/chapter-101/section-101-654/ (REF copy of statute); DSPS: \"No person may obtain a building permit for a one- and two-family dwelling unless...\" — https://dsps.wi.gov/Pages/Professions/DwellingContractor/Default.aspx — GOV. Application to chimney rebuilds specifically: STILL OPEN (interpretation). Bond/insurance amounts and DCQ 12-hour course: STILL OPEN (not shown on DSPS page).\n- Disclosure report fireplace/woodstove item: STILL OPEN — § 709.03 form table not rendered on Justia (https://law.justia.com/codes/wisconsin/chapter-709/section-709-03/) and docs.legis unreachable.\n- CO law: RESOLVED — § 101.647 text as summarized — https://law.justia.com/codes/wisconsin/chapter-101/section-101-647/ — REF copy of 2025 statute.\n- ATCP 110 remedies: RESOLVED (damages) — § 100.20(5) twice pecuniary loss + costs + reasonable attorney fee — https://law.justia.com/codes/wisconsin/chapter-100/section-100-20/ — REF copy. ATCP 110.05/110.07 section titles confirmed from ATCP 110 table of contents — https://docs.legis.wisconsin.gov/code/admin_code/atcp/090/110 — GOV; 3-day cancel window STILL OPEN.\n- AG/DATCP chimney actions: STILL OPEN — not searched (search budget exhausted).\n- 2026 changes: not checked (search budget exhausted) — STILL OPEN.\n- Template-leakage sweep: clean — IL appears only as a labeled comparison."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence on scope; medium on amounts)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on scope; medium on amounts",
+      "markdown": "Wisconsin credentials **permit-pullers on 1–2 family dwellings, not chimney contractors.** Under **Wis. Stat. § 101.654(1)(a)**, \"no person may obtain a building permit\" under the one- and two-family dwelling code unless the person annually holds a DSPS certificate of financial responsibility (the **Dwelling Contractor** certification) and completes continuing education; DSPS says the certificate holder must employ a certified **Dwelling Contractor Qualifier (DCQ)**. **§ 101.654(1)(b) exempts an owner who resides (or will reside) in the dwelling and pulls a permit for work on it.** The requirement is tied to the permit, not to new construction only — so if a chimney rebuild or reline on a UDC-covered dwelling requires a building permit, the contractor pulling it needs the Dwelling Contractor certification (our reading of the statute text; confirm with DSPS before stating it as settled). Bond/insurance options (July pass: $25,000 bond or $250,000 liability insurance) and the DCQ course (July pass: 12 hours + test) were **not re-verified**. Work that needs no permit — sweeping, most repairs, and work on pre-June-1980 dwellings outside UDC scope — needs **no state credential at all**; **Wisconsin has no home-improvement or chimney license**, only consumer rules (ATCP 110). Lookup: DSPS credential search."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "The Dwelling Contractor credential is about financial responsibility and code accountability — **nothing chimney-specific** — and chimney sweeping/non-permit repair needs no credential. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) are the only competence signal."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV statute — high; form wording — medium, not re-fetched)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "statute — high; form wording — medium, not re-fetched",
+      "markdown": "**Real Estate Condition Report, Wis. Stat. §§ 709.02–.03**: the owner must furnish a completed statutory report for most residential transfers. The July research reported that the report asks whether the owner is aware of defects in a **woodburning stove or fireplace**, defects caused by a fire in a stove or fireplace, and smoke-detector-law violations — **the item wording sits in a table not rendered in the sources reachable in September and was not re-confirmed.** Actual-knowledge basis. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high on damages; medium on cancel details)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on damages; medium on cancel details",
+      "markdown": "**Home Improvement Practices, ATCP 110** (DATCP) sets home improvement contract requirements (ATCP 110.05) and contract cancellation and return-of-payment rules (ATCP 110.07); the July research reported a **3-business-day right to cancel** for solicited contracts — exact scope not re-verified. ATCP 110 is an order under **Wis. Stat. § 100.20**, and **§ 100.20(5)** gives any person suffering pecuniary loss from a violation **twice the amount of the pecuniary loss, plus costs including a reasonable attorney fee**. Complaints: DATCP + AG."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Wisconsin runs a **statewide Uniform Dwelling Code (UDC), SPS 320–325** — per DSPS, \"the statewide building code for one- and two-family dwellings built since June 1, 1980,\" enforced in all municipalities. It is Wisconsin's own administrative code (not a straight IRC adoption; exact model-code references in SPS 320 not re-verified). **Key limit for chimney content: homes built before June 1, 1980 sit outside UDC scope** — permit rules for them are local. On UDC-covered homes, chimney relines, rebuilds, and solid-fuel appliance installs are generally permit work; routine sweeps and like-for-like caps generally are not."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**Wis. Stat. § 101.647** requires the owner of a residential building (dwellings with an attached garage, fireplace, or fuel-burning appliance; tourist rooming houses excluded) to install a functional CO detector **\"in the basement of the dwelling and on each floor level except the attic, garage, or storage area\"**; buildings permitted after Feb 1, 2011 with utility service need electrically powered detectors with battery backup; owners must respond within 5 days to written notice of a non-functional detector, and occupants must maintain detectors in their units. Broad standing coverage; **no statewide pre-sale certificate** found. A permitted chimney job is the natural moment to verify alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban regime; outdoor wood boilers regulated locally in many towns. **Northern Wisconsin has among the highest wood-heat density in the country** — a core market."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial",
+      "markdown": "DATCP and the AG pursue home-improvement fraud under ATCP 110 / § 100.20; the door-knock \"we noticed your chimney\" pitch is a textbook solicited-contract scenario. **Specific WI chimney-sweep enforcement actions: NOT CONFIRMED** — patterns, not names."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold statewide, severe in the north. Burn season ~Oct–Apr (longer up north). Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "WI labor near or slightly below national; Milwaukee/Madison metros near national. Use national ranges until listings data."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **Dwelling Contractor cert required to pull a 1–2 family dwelling building permit (Wis. Stat. 101.654; owner-occupants exempt); NO home-improvement/chimney license** · Registration: **cert regime + ATCP 110 duties** · Disclosure law: **YES — § 709.02–.03 (fireplace/woodstove item per July pass)** · 3-day cancel: **YES per July pass (ATCP 110.07 — details not re-verified)** · CO law: **broad (§ 101.647, basement + every floor)** · Lookup: DSPS credential search"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Wisconsin credentials the people who **pull permits** on your house, not the ones who **clean and repair the chimney** — the Dwelling Contractor certificate is about financial responsibility and code accountability, and sweeping or non-permit repair sits entirely outside it. The state pairs that gap with real protections: a **uniform statewide dwelling code** (for homes built since mid-1980), **double damages for home-improvement rule violations**, and a **seller condition report that names the fireplace and woodstove.** It lands in the same family as Illinois (comparison) — no chimney license, but a disclosure that actually discloses — in one of the highest wood-heat markets in the country."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "Dwelling Contractor cert required to pull a 1-2 family dwelling building permit (Wis. Stat. 101.654; owner-occupants exempt); NO home-improvement/chimney license",
+    "registration_name": "Dwelling Contractor cert + ATCP 110 duties",
+    "disclosure_law": "Yes (Wis. Stat. 709.02-.03, actual knowledge)",
+    "chimney_item_on_form": "Unconfirmed Sep 2026 (fireplace/woodstove item per Jul 2026 research)",
+    "three_day_cancel": "Unconfirmed Sep 2026 (ATCP 110.07 — 3-day per Jul 2026 research)",
+    "co_law": "Broad (Wis. Stat. 101.647, basement + every floor)",
+    "lookup_url": "DSPS credential search",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "Dwelling Contractor cert required to pull a 1–2 family dwelling building permit (Wis. Stat. 101.654; owner-occupants exempt); NO home-improvement/chimney license",
+    "registration_name": "cert regime + ATCP 110 duties",
+    "disclosure_law": "YES — § 709.02–.03 (fireplace/woodstove item per July pass)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES per July pass (ATCP 110.07 — details not re-verified)",
+    "co_law": "broad (§ 101.647, basement + every floor)",
+    "lookup_url": "DSPS credential search"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "SEE SECTION",
+      "note": "Dwelling Contractor cert required to pull a 1–2 family dwelling building permit (Wis. Stat.…",
+      "anchor": "license",
+      "rule": "license:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "qualified-gap",
+      "rule": "exam:unmatched",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "remedies",
+      "rule": "cancel:YES→caveat-downgrade",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "(§ 101.647, basement + every floor)",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Wisconsin chimney & fireplace laws: know your rights",
+  "metaDescription": "Wisconsin chimney & fireplace laws: licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold statewide, severe in the north. Burn season ~Oct–Apr (longer up north). Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Wisconsin?",
+      "a": "State licensing: Dwelling Contractor cert required to pull a 1–2 family dwelling building permit (Wis. Stat. 101.654; owner-occupants exempt); NO home-improvement/chimney license. Registration or credential: cert regime + ATCP 110 duties. Seller disclosure at sale: YES — § 709.02–.03 (fireplace/woodstove item per July pass). Right to cancel a sale made at your home: YES per July pass (ATCP 110.07 — details not re-verified). Carbon monoxide alarm law: broad (§ 101.647, basement + every floor). Where to check a contractor: DSPS credential search. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Wisconsin?",
+      "a": "Real Estate Condition Report, Wis. Stat. §§ 709.02–.03: the owner must furnish a completed statutory report for most residential transfers. The July research reported that the report asks whether the owner is aware of defects in a woodburning stove or fireplace, defects caused by a fire in a stove or fireplace, and smoke-detector-law violations — the item wording sits in a table not rendered in the sources reachable in September and was not re-confirmed.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Wisconsin?",
+      "a": "Home Improvement Practices, ATCP 110 (DATCP) sets home improvement contract requirements (ATCP 110.05) and contract cancellation and return-of-payment rules (ATCP 110.07); the July research reported a 3-business-day right to cancel for solicited contracts — exact scope not re-verified. ATCP 110 is an order under Wis. Stat. § 100.20, and § 100.20(5) gives any person suffering pecuniary loss from a violation twice the amount of the pecuniary loss, plus costs including a reasonable attorney fee.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": null
+}

@@ -1,0 +1,306 @@
+{
+  "slug": "hawaii",
+  "name": "Hawaii",
+  "abbr": "HI",
+  "sourceFile": "rights-research-hawaii.md",
+  "researched": "2026-07-10",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "statute text read via Justia mirror, not capitol.hawaii.gov; code editions, ch. 521 CO check, current HAR form revision and \"only provider\" claim unverified",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked Sep 15, 2026 by verification agent. Laws cited as of Sep 2026.\n- HRS ch. 444 licensing / $1,500 exemption: CORRECTED — paragraph is § 444-2(4), not (7) (¶ 7 is owner-builders); permit-required and larger-project conditions confirmed; \"electrical/plumbing\" carve-out not in ¶ (4), removed — law.justia.com/codes/hawaii/title-25/chapter-444/section-444-2/ — DOC (statute mirror; capitol.hawaii.gov 403)\n- C-44 / C-25 / C-31 / C-31c scopes: RESOLVED — C-44 \"free standing fireplaces and chimneys\" and \"metal flues\"; C-25 \"factory built stoves, fireplaces, and prefabricated steel chimneys\"; C-31 \"fire clay products and refractories\"; C-31c refractory — cca.hawaii.gov/wp-content/uploads/2026/01/DescriptionofContractorLicenseClassifications.pdf — GOV/DOC\n- Recovery fund § 444-26: CORRECTED — $12,500 per contract confirmed; the \"$25,000 per contractor\" aggregate cap does NOT appear in § 444-26 or § 444-28 and was removed; court order, licensed-contractor, bond-first and 6-year limits added — law.justia.com …/section-444-26/, …/section-444-28/ — DOC\n- Unlicensed penalties: RESOLVED (was open) — § 444-23: $2,500/$3,500/$5,000 or 40% of contract price, whichever greater; § 444-23.5 forfeiture — law.justia.com …/section-444-23/ — DOC\n- § 444-22 unlicensed can't recover: RESOLVED — law.justia.com …/section-444-22/ — DOC\n- MyPVL lookup URL: RESOLVED — mypvl.dcca.hawaii.gov/public-license-search/ (PVL public search; stale posting-date banner noted) — GOV\n- HRS 508D disclosure / rescission: RESOLVED with cite refinement — 15 calendar days from receipt, § 508D-5(b); modifiable by written agreement § 508D-5(c) — law.justia.com/codes/hawaii/title-28/chapter-508d/section-508d-5/ — DOC; chimney item is on the HAR form (industry DOC), not a state form\n- CO law: RESOLVED as absence — NCSL CO-statute table (Sep 2025) lists no Hawaii statute — REF only; code-layer R315 claim not re-read; ch. 521 check STILL OPEN\n- 2026 changes: none found in sources reached (no web search available for a 2026 session sweep)\n- Template-leakage sweep: Nevada's fund was cited with a figure ($40k) that is another state's number — reworded to a labeled comparison without the number"
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; real license, exam, experience, and a recovery fund)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; real license, exam, experience, and a recovery fund",
+      "markdown": "**Hawaii has one of the stronger contractor-license regimes in the country — and its classification rulebook explicitly names fireplaces and chimneys.** STATE LAW: the **Contractors License Board** under DCCA's Professional & Vocational Licensing Division (cca.hawaii.gov/pvl/boards/contractor/, checked Jul 10, 2026) licenses under **HRS Chapter 444** and **HAR Chapter 16-77**, in three classes: **A (general engineering), B (general building), C (specialty)**. There is **no chimney-specific classification**, but the work is cleanly mapped in the Board's own scope descriptions (DCCA \"Description of Contractor License Classifications,\" cca.hawaii.gov/wp-content/uploads/2026/01/DescriptionofContractorLicenseClassifications.pdf, checked Jul 10, 2026):\n- **C-31 Masonry** — \"brick and other baked clay products … installation of **fire clay products and refractories** … tuckpointing … mortar\" → the masonry chimney/fireplace trade (subclass **C-31c Refractory** covers \"high temperature fire clay and refractory products\"; **C-31b Stone masonry**, **C-31d Tuckpointing and caulking** also touch chimney repair). *Note: C-31a is cement concrete, NOT masonry chimney — don't confuse the subclass letters.*\n- **C-44 Sheet metal** — scope includes \"**metal flues, and free standing fireplaces and chimneys**.\"\n- **C-25 Institutional and commercial equipment** — scope includes \"to install **factory built stoves, fireplaces, and prefabricated steel chimneys**\" (the oddball home of the prefab-fireplace trade).\n- **C-4 Boiler** — chimneys/flues appurtenant to boiler installs.\n\n**Threshold (the handyman exemption):** licensure is required for any project where the aggregate price of labor + materials exceeds **$1,500** — **HRS § 444-2(4)** exempts \"any project or operation for which the aggregate contract price for labor and materials is not more than $1,500,\" but \"this exemption shall not apply in any case where a building permit is required regardless of the aggregate contract price, nor where the undertaking is only a part of a larger or major project or operation\" (2025 HRS text, law.justia.com/codes/hawaii/title-25/chapter-444/section-444-2/, checked Sep 15, 2026 — capitol.hawaii.gov returned 403; the earlier \"electrical/plumbing\" carve-out was not found in ¶ (4) and has been removed; the threshold was raised from $1,000 — hawaiilife.com \"Handyman Exemption Raised from $1,000 to $1,500\"). A 2025 bill (HB846) proposed raising it to $2,500 — **not enacted as of Jul 2026** (legiscan.com/HI/text/HB846).\n\n**What the license attests:** a real bar — **4 years of full-time supervisory experience in the classification within the last 10 years** (3 notarized experience certificates) plus a **two-part exam (Business & Law + Trade)** (DCCA \"Requirements for License — Contractor/RME,\" cca.hawaii.gov/wp-content/uploads/2026/01/Require-App-for-Contractor-RME_10.25.pdf, checked Jul 10, 2026). Public lookup: **businesscheck.hawaii.gov** (the DCCA-promoted one-stop check — cited in the state's own Maui-rebuild release, cca.hawaii.gov/pvl/release-protecting-mauis-rebuilding…, checked Jul 10, 2026); complaints/unlicensed-contractor reports go to **RICO (Regulated Industries Complaints Office), 808-587-4272**. DCCA PVL's own license search is **mypvl.dcca.hawaii.gov/public-license-search/** (PVL public search page reached Sep 15, 2026; its banner text carried a stale \"as of 01/26/2022\" posting note — confirm results are live when building the page)."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Hawaii's exam is real, but Part 1 is contracting law/business and Part 2 is the **general trade** — masonry for C-31, sheet metal for C-44 — **not flue diagnosis, draft physics, or NFPA 211 inspection practice**. A C-31 mason has proven four years of supervisory masonry, not that they can read your flue; a C-25 licensee proved institutional-equipment competence, of which factory-built fireplaces are one line. And the deeper Hawaii-specific gap: with so few chimneys in the state (see §7/§9), **almost no Hawaii contractor accumulates chimney reps** — mainland-style specialization barely exists. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) plus an independent inspection remain the competence signal, arguably more so here than anywhere, because local experience is structurally scarce."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence on the statute; DOC on the form — and the form DOES name the chimney)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence on the statute; on the form — and the form DOES name the chimney",
+      "markdown": "STATE LAW: **HRS Chapter 508D (Mandatory Seller Disclosures in Real Estate Transactions)** obligates a seller of residential real property to \"fully and accurately disclose in writing … all material facts\" — any fact/defect/condition, past or present, that would measurably affect value to a reasonable person (capitol.hawaii.gov/hrscurrent/vol12_ch0501-0588/hrs0508d/, checked Jul 10, 2026). The statute does **not prescribe a state form** (HRS § 508D-11 addresses the disclosure form generally); in practice the market-universal instrument is the **Hawaii Association of REALTORS Seller's Real Property Disclosure Statement (form RR109)** — and, against our going-in hypothesis, **Section E \"Defects, Repairs or Replacements\" line item (69) is literally \"Fireplace/Chimney\"** (item 73 \"Heating Systems\" and 79 \"Smoke Detectors\" also apply) (form PDF via oahure.com/oahu-real-estate/wp-content/uploads/2020/05/Disclosure.pdf, checked Jul 10, 2026 — DOC/industry form, not statute text). **Unique Hawaii lever: \"upon receipt of the disclosure statement, the buyer shall have fifteen calendar days\" to examine it and decide whether to rescind the purchase contract, by written notice, with deposits returned — HRS § 508D-5(b)**; silence past the deadline is acceptance, and the parties may agree in writing to a different period under § 508D-5(c) (2025 HRS text, law.justia.com/codes/hawaii/title-28/chapter-508d/section-508d-5/, checked Sep 15, 2026). Actual-knowledge standard; seller need not inspect inaccessible areas. **No inspection is mandated at transfer** — NFPA 211's Level 2-at-sale remains a NATIONAL STANDARD, not Hawaii law. Customary buyer contingency: the standard HAR purchase contract's inspection window (typically ~10–14 days — REF, confirm current J-1 default before publish)."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; treble damages and a stack of levers)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; treble damages and a stack of levers",
+      "markdown": "STATE LAW, four layers deep:\n1. **HRS § 480-2** bans unfair/deceptive acts and practices; **HRS § 480-13(b)** gives an injured consumer **the greater of $1,000 or treble damages, plus attorney's fees** (capitol.hawaii.gov/hrscurrent/vol11_ch0476-0490/hrs0480/hrs_0480-0013.htm, checked Jul 10, 2026). Enforcement: DCCA **Office of Consumer Protection** (cca.hawaii.gov/ocp/).\n2. **Door-to-door: HRS Chapter 481C** — a 3-business-day right to cancel; the contract must carry the \"YOU, THE BUYER, MAY CANCEL…\" language and a Notice of Cancellation form, and failure to provide it **is itself a deceptive practice** feeding into ch. 480 remedies (HRS §§ 481C-1, 481C-2; law.justia.com/codes/hawaii/title-26/chapter-481c/, checked Jul 10, 2026). Threshold is unusually low: a covered \"sale\" is **$5 or more ($25 if the goods are deliverable at one time)** — HRS § 481C-1 definition, verified on the 2025 Justia text. Buyer-initiated repair visits are excluded, but upsells during that visit are NOT excluded — exactly the \"we found cracks in your flue\" pattern.\n3. **HRS § 444-25.5** — before contracting for home improvements a licensed contractor must **verbally explain all lien rights, verbally explain the homeowner's option to demand a bond**, and provide a **written contract**; these rights are **non-waivable**, and violation **is deemed an unfair or deceptive practice under ch. 480** — i.e., a paperwork failure alone can open treble damages (capitol.hawaii.gov/hrscurrent/vol10_ch0436-0474/HRS0444/HRS_0444-0025_0005.htm, checked Jul 10, 2026).\n4. **Unlicensed can't sue: HRS § 444-22** — a person who failed to obtain a license before contracting **cannot recover in a civil action for the work, materials, or their reasonable value**, even if the homeowner knew there was no license; \"the failure of any person to comply with any provision of this chapter shall prevent such person from recovering for work done, or materials or supplies furnished\" (2025 text re-read Sep 15, 2026); case law confirms the homeowner can still sue the unlicensed contractor (Hiraga v. Baldonado, ICA) (law.justia.com/codes/hawaii/title-25/chapter-444/section-444-22/, checked Jul 10, 2026).\n\n**Backstop: the Contractors Recovery Fund, HRS § 444-26** — a person injured by a **licensed** contractor may recover, **by order of the circuit or district court**, \"not more than **$12,500 per contract**, regardless of the number of persons injured under the contract\" — covering actual damages, court costs and reasonable attorney's fees; \"injured person\" is limited to owners/lessees of private residences who contracted with a licensed contractor; no recovery if the license was suspended, revoked, forfeited, terminated or inactive at contracting (§ 444-26(a)–(b)). Claimants must first obtain a judgment, exhaust appeals, and proceed against any existing bond; action must be commenced within six years (§ 444-28). (2025 HRS text, law.justia.com/codes/hawaii/title-25/chapter-444/section-444-26/ and …/section-444-28/, checked Sep 15, 2026.) **No per-contractor aggregate cap appears in §§ 444-26 or 444-28.** Smaller than Nevada's recovery-fund ceiling (labeled comparison) but real — and, as everywhere, it only pays if you hired **licensed**. DCCA also warns that unlicensed work **may jeopardize homeowners-insurance coverage** (Maui-rebuild release above). **Penalties for unlicensed contracting (HRS § 444-23):** a fine of **$2,500 or 40% of the total contract price, whichever is greater** (first violation), **$3,500 or 40%** (second), **$5,000 or 40%** (subsequent), with forfeiture of tools and materials in department actions (§ 444-23; § 444-23.5) (law.justia.com/codes/hawaii/title-25/chapter-444/section-444-23/, checked Sep 15, 2026). Complaints: RICO 808-587-4272; lookup mypvl.dcca.hawaii.gov/public-license-search/ or businesscheck.hawaii.gov."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium-high; statewide baseline code, four-county enforcement)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; statewide baseline code, four-county enforcement",
+      "markdown": "STATE LAW/LOCAL — **Hawaii's unusual structure: a statewide baseline code enforced by only four counties.** The **State Building Code Council** (DAGS, ags.hawaii.gov/bcc/, checked Jul 10, 2026; established under HRS ch. 107, part II — exact section number NOT VERIFIED this session) adopts the Hawaii State Building Code and **Hawaii State Residential Code**; the current statewide baseline is the **2018 IBC/IRC with Hawaii amendments** — Hawaii had **not** adopted 2021+ editions as of this research (ICC adoption page iccsafe.org/advocacy/adoptions-map/hawaii/; up.codes/codes/hawaii; both checked Jul 10, 2026). Counties must adopt within **two years**, may amend more restrictively, and all four — **Honolulu (City & County), Hawaii, Maui, Kauai** — run their own building departments; Honolulu completed its amended adoption of the 2018-based code in mid-2024 (ROH art. 1, codelibrary.amlegal.com/codes/honolulu/…/0-0-0-14009; Grassroot Institute, grassrootinstitute.org 2/2026 — REF on the timeline critique). The adoption lag is a known statewide sore point. Practical rule: **fireplace/stove installs, chimney construction, relines and structural rebuilds are county building-permit work** — and remember the $1,500 handyman exemption **evaporates whenever a permit is required** (HRS § 444-2(4)), so essentially all real chimney construction in Hawaii is licensed-contractor work. Sweeping and like-for-like caps are generally not permit work (LOCAL variation applies — say so). **NFPA 211 is not referenced in any Hawaii statute we found — NATIONAL STANDARD only (absence finding).**"
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO & smoke-alarm law (GOV/REF — medium; the absence IS the law)",
+      "researchTitle": "CO & smoke-alarm law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "medium; the absence IS the law",
+      "markdown": "**Hawaii has NO statewide carbon-monoxide-alarm statute** — no all-dwelling, all-rental, or at-sale CO mandate surfaced (NCSL CO-statutes tracker, ncsl.org/environment-and-natural-resources/carbon-monoxide-detector-installation-statutes; cannonlaw.com 50-state guide — both REF, checked Jul 10, 2026). The only layer is **code-based**: the Hawaii State Residential Code (2018 IRC, § R315) requires CO alarms in **new construction/permit-triggering alterations of dwellings with fuel-burning appliances or attached garages** — which in Hawaii is a small slice, since most homes have neither combustion heat nor ducted gas furnaces. Smoke detectors: county-level rules exist (e.g., ROH § 20-5.2, Honolulu — codelibrary.amlegal.com, checked Jul 10, 2026). This is coherent with the market reality (§7) but worth stating plainly: **a Hawaii home with a wood stove in Volcano or Waimea has no statute forcing a CO alarm — only the code moment when a permit is pulled.** Rental layer: no CO provision confirmed in the Landlord-Tenant Code (HRS 521) — mark NOT CONFIRMED, re-check before publish."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental / wildfire (GOV — the state-defining section)",
+      "researchTitle": "Solid fuel / environmental / wildfire",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "the state-defining section",
+      "markdown": "**The central finding: chimneys and fireplaces are structurally rare in Hawaii.** The tropical marine climate eliminates heating demand at sea level, where nearly everyone lives. Real wood-heat pockets exist only at **cool elevation**: **Waimea/Kamuela (~2,700 ft) and the Volcano/Hilo-highlands and Ocean View areas on Hawaii Island**, and **upcountry Maui (Kula, ~3,000+ ft)** — confirmed indirectly by where the state's only dedicated hearth business operates (§8/§10) and by Yelp/Angi service listings clustering in Waimea, Volcano, and Ocean View (REF, checked Jul 10, 2026). No statewide wood-smoke/burn-ban regime for residential heating was found (Hawaii's famous air-quality problem is volcanic vog, not wood smoke) — absence finding, lightly verified only.\n\n**The wildfire axis is where Hawaii moved, hard, after Lahaina (Aug 2023).** STATE LAW: **Act 209 (2024)** re-established the **Office of the State Fire Marshal** — abolished in 1979, vacant for 46 years — to oversee the state fire code and coordinate county fire departments (Act 209 report, labor.hawaii.gov/wp-content/uploads/2024/11/State-Fire-Marshal-Report-ACT209-part-1-signed.pdf; first marshal appointed June 2025, law.hawaii.gov/blog/2025/06/02/…; staradvertiser.com 6/3/2025 — checked Jul 10, 2026). 2025 amendments (HB1064) moved the office to the Department of Law Enforcement and created a selection commission (legiscan.com/HI/text/HB1064). Statewide **spark-arrestor or WUI-specific chimney rules: NOT CONFIRMED** — no Hawaii statute or county ordinance mandating spark arrestors surfaced this session (the IRC-based code's standard cap/termination provisions apply where permits are pulled); re-search before publish, because post-Lahaina rulemaking is actively evolving."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV — high confidence, and unusually current)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence, and unusually current",
+      "markdown": "Hawaii's contractor-fraud story is **wildfire-rebuild fraud, not chimney fraud** — and it's GOV-documented top to bottom. The Governor and DCCA issued a joint release, \"Protecting Maui's Rebuilding: A Call for Vigilance in Contractor Hiring Amid Wildfire Aftermath,\" warning that DCCA receives **hundreds of unlicensed-contractor tips and complaints yearly**, directing consumers to **businesscheck.hawaii.gov** and **RICO (808-587-4272)**, and warning that unlicensed work can jeopardize insurance (governor.hawaii.gov/newsroom/… and cca.hawaii.gov/pvl/release-…, checked Jul 10, 2026). FEMA issued its own contractor-fraud warning to Maui survivors (fema.gov/press-release/20250630/…, Jun 2025). It is still live news: a Lahaina community leader who paid ~$200,000 for defective, unpermitted repairs went public **July 2, 2026** (hawaiinewsnow.com, checked Jul 10, 2026). **Chimney-sweep-specific enforcement actions: NONE FOUND — consistent with there being almost no chimney-sweep market to defraud (absence finding).** The page's scam section should carry the Maui-rebuild playbook: license check, HRS 444-25.5 paperwork rights, 481C cancellation, 444-22 leverage."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar (REF — honest low-volume market)",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "honest low-volume market",
+      "markdown": "No winter in the mainland sense; burn use is **evening/overnight comfort heat in the cool uplands, roughly Nov–Apr** (Waimea, Volcano, Ocean View, Kula sit at 2,500–4,000+ ft where nights drop into the 40s–50s°F). Any rush is small and pre-holiday (OCT–DEC). Best booking: anytime — supply, not demand, is the constraint: with essentially one dedicated hearth-service company in the state (§10), the wait IS the calendar. Sea-level Honolulu/Kailua/Hilo: effectively no burn season and near-zero chimney stock (decorative and legacy chimneys only)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding (REF)",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": null,
+      "markdown": "Hawaii has the **highest cost of living and among the highest construction labor costs in the country** (MERIC top-cost state per our national price research), plus island freight on every liner, cap, and stove. But the dominant price driver is **scarcity of providers**: the visible dedicated operator is **Hawaii Fireplaces** (Kamuela/Waimea, Hawaii Island — hawaiifireplaces.com, \"the only full-service fireplace store in Hawaii,\" offering sales, service, chimney sweep, inspection; serves neighbor areas and inter-island — REF, checked Jul 10, 2026); everything else in search results is lead-gen listings or general masons/sheet-metal shops. Seed prices well **above** national ranges with an explicit scarcity/travel-fee caveat, and expect inter-island travel charges. Do not present a competitive-market price band — there isn't one."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — state contractor license >$1,500 (HRS ch. 444; masonry chimney = C-31 (+C-31c refractory), metal/free-standing = C-44, factory-built fireplace/prefab chimney = C-25; exam + 4 yrs experience)** · Registration: **licensure regime + Contractors Recovery Fund ($12,500/contract, court order required, HRS 444-26/444-28); unlicensed penalty $2,500 / $3,500 / $5,000 or 40% of contract price (HRS 444-23); unlicensed can't sue (HRS 444-22)** · Disclosure law: **YES — mandatory material-fact disclosure (HRS ch. 508D); universal HAR form names \"Fireplace/Chimney\" (item 69); buyer gets 15-day rescission after receipt (508D-5(b); modifiable by written agreement, 508D-5(c))** · 3-day cancel: **YES (door-to-door, HRS 481C, sales ≥$5/$25; violation = UDAP → treble under 480-13)** · CO law: **NONE statewide — code-only (2018 IRC R315, new construction/permits)** · Lookup: **mypvl.dcca.hawaii.gov/public-license-search/** (also businesscheck.hawaii.gov) · State-specific leverage: **HRS 444-25.5 — non-waivable verbal lien-rights + bond-option explanation and written contract; violation is per-se UDAP (treble damages)**."
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "**Hawaii BREAKS the license⇄disclosure inverse correlation — it is a both-strong state.** On licensing it sits near the top of the launch set: a genuine exam-and-experience license from $1,500 up, a classification rulebook so granular it **names \"free standing fireplaces and chimneys\" (C-44) and \"factory built stoves, fireplaces, and prefabricated steel chimneys\" (C-25) in the scope text**, an unlicensed-can't-sue rule (444-22), a recovery fund (444-26), and a non-waivable consumer-paperwork statute (444-25.5) whose violation is per-se deceptive practice feeding **automatic treble-or-$1,000 damages (480-13)**. The inverse-correlation rule says a state this strong on licensing should be soft at the point of sale. **It isn't:** HRS 508D imposes a mandatory material-fact disclosure duty, the universal HAR form carries a literal **\"Fireplace/Chimney\"** checkbox, and Hawaii adds a lever no other launch state has — a **15-day post-disclosure rescission right with full deposit return**. That extends the master finding: the inverse correlation is an **East-Coast phenomenon**; in the West it's now worse than a coin flip (was 4-4; Hawaii makes it **4-5 against**). On the West's orthogonal **wildfire/cap-law axis**, Hawaii lands emphatically on it post-Lahaina — not via spark-arrestor rules (none confirmed) but institutionally: **Act 209 (2024) resurrected the State Fire Marshal after 46 years**, and the state's entire consumer-protection machinery is currently aimed at **unlicensed rebuild contractors on Maui**, a GOV-documented, still-running story as of July 2026.\n\nAnd yet the page's most honest sentence is about the market, not the law: **almost nobody in Hawaii has a chimney.** The regime above protects a tiny population of hearth owners clustered at elevation — Waimea/Kamuela, Volcano and Ocean View on Hawaii Island, Kula in upcountry Maui — served by what appears to be **one dedicated fireplace/chimney company in the entire state**. Hawaii is the inverse of Michigan: there the market is huge and the license is the story; here the license regime is arguably stronger than Michigan's, guarding a market that barely exists. The absence is the content — and the reason the CO-law absence (§6) is coherent rather than negligent. Message for the page: **any chimney or fireplace job over $1,500 (or needing a permit) requires a state-licensed C-31/C-44/C-25 contractor — check businesscheck.hawaii.gov, make them recite your lien rights (they must, by law), and know that your seller's disclosure has an actual chimney checkbox plus a 15-day escape hatch.**"
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — state contractor license >$1,500 or any permit job (HRS 444-2(4); masonry chimney = C-31 (+C-31c refractory), metal/free-standing = C-44, factory-built fireplace/prefab chimney = C-25; exam + 4 yrs experience)",
+    "registration_name": "licensure regime + Contractors Recovery Fund ($12,500/contract, court order required, HRS 444-26/444-28); unlicensed can't sue (HRS 444-22); unlicensed fine $2,500–$5,000 or 40% of contract (HRS 444-23)",
+    "disclosure_law": "YES — mandatory material-fact disclosure (HRS ch. 508D); universal HAR form names \"Fireplace/Chimney\" (item 69); buyer 15-day rescission after receipt (508D-5(b))",
+    "chimney_item_on_form": "Yes — HAR industry form item 69 (no state form)",
+    "three_day_cancel": "YES (door-to-door, HRS 481C, sales ≥$5/$25; violation = UDAP → treble under 480-13)",
+    "co_law": "NONE statewide — code-only (2018 IRC R315, new construction/permits)",
+    "lookup_url": "mypvl.dcca.hawaii.gov/public-license-search/",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — state contractor license >$1,500 (HRS ch. 444; masonry chimney = C-31 (+C-31c refractory), metal/free-standing = C-44, factory-built fireplace/prefab chimney = C-25; exam + 4 yrs experience)",
+    "registration_name": "licensure regime + Contractors Recovery Fund ($12,500/contract, court order required, HRS 444-26/444-28); unlicensed penalty $2,500 / $3,500 / $5,000 or 40% of contract price (HRS 444-23); unlicensed can't sue (HRS 444-22)",
+    "disclosure_law": "YES — mandatory material-fact disclosure (HRS ch. 508D); universal HAR form names \"Fireplace/Chimney\" (item 69); buyer gets 15-day rescission after receipt (508D-5(b); modifiable by written agreement, 508D-5(c))",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (door-to-door, HRS 481C, sales ≥$5/$25; violation = UDAP → treble under 480-13)",
+    "co_law": "NONE statewide — code-only (2018 IRC R315, new construction/permits)",
+    "lookup_url": "mypvl.dcca.hawaii.gov/public-license-search/ (also businesscheck.hawaii.gov)"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "state contractor license >$1,500 (HRS ch. 444; masonry chimney = C-31 (+C-31c refractory)…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Hawaii's exam is real, but Part 1 is contracting law/business and Part 2 is the general trade — masonry for C-31, sheet metal for C-44 — not flue diagnosis, draft physics, or NFPA 211 inspection practice."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer — NFPA 211's Level 2-at-sale remains a NATIONAL STANDARD, not Hawaii law."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (door-to-door, HRS 481C, sales ≥$5/$25; violation = UDAP → treble under 480-13)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:none→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "remedies",
+      "rule": "sue:§4-sentence",
+      "derivedFrom": "§4 text",
+      "evidence": "Unlicensed can't sue: HRS § 444-22 — a person who failed to obtain a license before contracting cannot recover in a civil action for the work, materials, or their reasonable value, even if the homeowner knew there was no license; \"the…"
+    }
+  ],
+  "h1": "Hawaii: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Hawaii chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": false,
+    "bestParsed": false,
+    "note": "No winter in the mainland sense; burn use is evening/overnight comfort heat in the cool uplands, roughly Nov–Apr (Waimea, Volcano, Ocean View, Kula sit at 2,500–4,000+ ft where nights drop into the 40s–50s°F). Any rush is small and pre-holiday (OCT–DEC). Best booking: anytime — supply, not demand, is the constraint…"
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Hawaii?",
+      "a": "State licensing: YES — state contractor license >$1,500 (HRS ch. 444; masonry chimney = C-31 (+C-31c refractory), metal/free-standing = C-44, factory-built fireplace/prefab chimney = C-25; exam + 4 yrs experience). Registration or credential: licensure regime + Contractors Recovery Fund ($12,500/contract, court order required, HRS 444-26/444-28); unlicensed penalty $2,500 / $3,500 / $5,000 or 40% of contract price (HRS 444-23); unlicensed can't sue (HRS 444-22). Seller disclosure at sale: YES — mandatory material-fact disclosure (HRS ch. 508D); universal HAR form names \"Fireplace/Chimney\" (item 69); buyer gets 15-day rescission after receipt (508D-5(b); modifiable by written agreement, 508D-5(c)). Right to cancel a sale made at your home: YES (door-to-door, HRS 481C, sales ≥$5/$25; violation = UDAP → treble under 480-13). Carbon monoxide alarm law: NONE statewide — code-only (2018 IRC R315, new construction/permits). Where to check a contractor: mypvl.dcca.hawaii.gov/public-license-search/ (also businesscheck.hawaii.gov). Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Hawaii?",
+      "a": "STATE LAW: HRS Chapter 508D (Mandatory Seller Disclosures in Real Estate Transactions) obligates a seller of residential real property to \"fully and accurately disclose in writing … all material facts\" — any fact/defect/condition, past or present, that would measurably affect value to a reasonable person (capitol.hawaii.gov/hrscurrent/vol12_ch0501-0588/hrs0508d/, checked Jul 10, 2026). The statute does not prescribe a state form (HRS § 508D-11 addresses the disclosure form generally); in practice the market-universal instrument is the Hawaii Association of REALTORS Seller's Real Property Disclosure Statement (form RR109) — and, against our going-in hypothesis, Section E \"Defects, Repairs or Replacements\" line item (69) is literally \"Fireplace/Chimney\" (item 73 \"Heating Systems\" and 79 \"Smoke Detectors\" also apply) (form PDF via oahure.com/oahu-real-estate/wp-content/uploads/2020/05/Disclosure.pdf, checked Jul 10, 2026 — DOC/industry form, not statute text). Unique Hawaii lever: \"upon receipt of the disclosure statement, the buyer shall have fifteen calendar days\" to examine it and decide whether to rescind the purchase contract, by written notice, with deposits returned — HRS § 508D-5(b); silence past the deadline is acceptance, and the parties may agree in writing to a different period under § 508D-5(c) (2025 HRS text, law.justia.com/codes/hawaii/title-28/chapter-508d/section-508d-5/, checked Sep 15, 2026). Actual-knowledge standard; seller need not inspect inaccessible areas.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Hawaii?",
+      "a": "STATE LAW, four layers deep: 1. HRS § 480-2 bans unfair/deceptive acts and practices; HRS § 480-13(b) gives an injured consumer the greater of $1,000 or treble damages, plus attorney's fees (capitol.hawaii.gov/hrscurrent/vol11_ch0476-0490/hrs0480/hrs_0480-0013.htm, checked Jul 10, 2026). Enforcement: DCCA Office of Consumer Protection (cca.hawaii.gov/ocp/). 2.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": null
+}

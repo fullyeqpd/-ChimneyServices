@@ -1,0 +1,45 @@
+---
+import { ORG_NAME, SAME_AS, SITE_URL, abs } from '../lib/site';
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  noindex?: boolean;
+  ogType?: 'website' | 'article';
+  jsonLd?: Record<string, unknown>[];
+  modified?: string | null;
+}
+const { title, description, path, noindex = false, ogType = 'website', jsonLd = [], modified } = Astro.props;
+const canonical = abs(path);
+const organization = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${SITE_URL}/#organization`,
+  name: ORG_NAME,
+  url: SITE_URL,
+  logo: `${SITE_URL}/chimney-services-logo.png`,
+  description: 'Independent reference for chimney and hearth services. Recommends no one, takes no fees, and labels the provenance of every fact.',
+  founder: { '@type': 'Person', name: 'Art Kalina' },
+  ...(SAME_AS.length ? { sameAs: SAME_AS } : {}),
+};
+const blocks = [organization, ...jsonLd];
+const ogImage = `${SITE_URL}/chimney-services-logo.png`;
+---
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-snippet:-1, max-image-preview:large'} />
+<meta property="og:site_name" content={ORG_NAME} />
+<meta property="og:type" content={ogType} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:alt" content="Chimney.Services logo: fireplace, chimney stack and flame" />
+<meta property="og:locale" content="en_US" />
+{modified && <meta property="article:modified_time" content={modified} />}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />
+{blocks.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b).replace(/</g, '\\u003c')} />)}

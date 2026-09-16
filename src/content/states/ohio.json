@@ -1,0 +1,297 @@
+{
+  "slug": "ohio",
+  "name": "Ohio",
+  "abbr": "OH",
+  "sourceFile": "rights-research-ohio.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) CO section must say existing-home coverage is unconfirmed (or resolve R315/fire-code reach); (2) re-check RCO review; (3) city registry claims carried from July, not re-fetched.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- RCO edition: RESOLVED — 2019 RCO based on 2018 IRC, eff. July 1, 2019 (https://www.icc-nta.org/states/ohio/, REF); BBS page shows five-year review of the \"2019 Residential Code of Ohio,\" comments due Sep 15, 2026 — https://com.ohio.gov/divisions-and-programs/industrial-compliance/boards/board-of-building-standards/building-codes-and-interpretations/proposed-obc-opc-and+rco-rules-amendments — GOV.\n- CO layer: STILL OPEN — Ohio R315 text not reachable (codes.ohio.gov PDF fetched was a different section; UpCodes blocked); SFM TB 18-001 found (https://www.csb.org/cdn/files-Carbon-Monoxide-Detectors-Ohio-Fire-Code.pdf, DOC hosted by third party) but applicability to owner-occupied 1–2 family dwellings unconfirmed.\n- CSPA damage caps: CORRECTED — old text said \"treble damages (verify caps)\"; R.C. 1345.09(A): rescission or actual economic damages + up to $5,000 noneconomic; (B): treble or $200 (greater) + up to $5,000 noneconomic, only for acts previously declared deceptive by rule or published court decision — https://codes.ohio.gov/ohio-revised-code/section-1345.09 — GOV.\n- HSSA 3-day cancel: RESOLVED — R.C. 1345.22 (midnight of third business day), 1345.23 (clock starts only upon compliant notice), 1345.21 ($25 minimum; emergency-repair waiver exclusion) — https://codes.ohio.gov/ohio-revised-code/section-1345.22 ; /section-1345.23 ; /section-1345.21 — GOV.\n- AG chimney enforcement: RESOLVED (absence) — no chimney-specific action found; March 24, 2026 home-improvement suits confirmed — https://www.ohioattorneygeneral.gov/Media/News-Releases/March-2026/AG-Yost-Sues-Businesses-for-$564K-in-Damages — GOV; Nov 2025 Wood County suit (search listing on ohioattorneygeneral.gov, not opened).\n- Licensing (no state license): RESOLVED — R.C. 4740.01 five trades only — https://codes.ohio.gov/ohio-revised-code/section-4740.01 — GOV. Municipal registries not re-fetched (carried from July pass).\n- Disclosure chimney item: CORRECTED/strengthened — old text said chimney defects fall under \"structural items\"; the statute itself does not say \"chimney,\" but the official form has G) Mechanical Systems item 6 \"Fireplace/chimney\" — https://dam.assets.ohio.gov/image/upload/com.ohio.gov/REPL/repl_ResidentialPropertyDisclosureForm.pdf (DOC) ; https://codes.ohio.gov/ohio-revised-code/section-5302.30 (GOV).\n- 2026 changes: no statewide contractor-licensing change found; RCO review in progress.\n- Template-leakage sweep: clean — \"HSSA\" is Ohio's own act here; PA/MI mentioned only in the labeled comparison."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**No state license covers chimney work in Ohio.** The Ohio Construction Industry Licensing Board (OCILB, Ohio Dept. of Commerce) licenses exactly five trades under R.C. 4740.01: **heating/ventilating/air-conditioning, refrigeration, electrical, plumbing, and hydronics** contractors — masonry and general contracting are outside OCILB jurisdiction. Oversight is **municipal**: Columbus, Cleveland, and Cincinnati each run their own contractor registration/licensing programs (city sources confirmed in July pass); townships and many suburbs have nothing. \"Licensed and bonded\" in Ohio marketing usually means a city registration plus an insurance certificate — no exam, no state registry to check."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Bigger than anywhere: in unincorporated Ohio there may be NOTHING to verify. Individual certifications (CSIA/NCSG/NFI) and the independent audit fill a genuine vacuum — this is the strongest \"why this directory exists\" state so far."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "**R.C. 5302.30**: Residential Property Disclosure Form required for 1–4 unit sales, delivered before the purchase contract. The official Department of Commerce form (OAC 1301:5-6-10, form eff. 6/2022) has a **Mechanical Systems section (G) whose item 6 is \"Fireplace/chimney\"** — the owner marks whether they know of previous or current problems or defects. Disclosure is within the seller's knowledge only; the statute says the statement \"is not a substitute for any inspections\" and encourages the buyer to get a professional inspection. No inspection mandate at transfer; NFPA 211 Level 2 remains standard-not-law."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Ohio's strength. **Home Solicitation Sales Act (R.C. 1345.21–.28):** sales of $25 or more solicited at your home — the exact mechanics of chimney scare-sales — may be cancelled until **midnight of the third business day** after signing (R.C. 1345.22); the three-day clock does not start until the seller provides the required written agreement and cancellation notice, and until then the buyer may cancel (R.C. 1345.23). Exclusion to know: a buyer-initiated emergency repair where the buyer signs a written waiver (R.C. 1345.21). **CSPA (R.C. 1345.01+) damages, R.C. 1345.09:** for an ordinary violation, rescission or actual economic damages **plus up to $5,000 in noneconomic damages**; where the act was already declared deceptive by rule or by a prior published court decision, **three times actual economic damages or $200, whichever is greater, plus up to $5,000 noneconomic damages**. The Ohio AG sues home-improvement contractors regularly; complaints via ohioattorneygeneral.gov. Door-knock \"we noticed your chimney\" repairs are the textbook HSSA scenario."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "The **2019 Residential Code of Ohio (RCO, OAC 4101:8), based on the 2018 IRC, effective July 1, 2019**, remains the current edition. The Board of Building Standards has opened a five-year rule review of the 2019 RCO (stakeholder meeting July 22, 2026; comment deadline September 15, 2026) — a newer edition may follow; re-check before publish. Enforcement is local. Relines/rebuilds/appliance installs generally permit work; municipal variation significant (this state NEEDS the local-variance disclaimer most)."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (medium — statute layer unconfirmed)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [],
+      "confidenceNote": "medium — statute layer unconfirmed",
+      "markdown": "**No Ohio Revised Code section imposing a general CO-alarm requirement on owner-occupied homes was found.** The RCO carries an IRC-style R315 for new construction (exact Ohio R315 text not reached this pass). The State Fire Marshal's Technical Bulletin TB 18-001 (Feb 2018) says the Ohio Fire Code required CO alarms in existing R occupancies with fuel-burning appliances/fireplaces or attached garages by Jan 1, 2019 — but how far the fire code reaches owner-occupied 1–2 family dwellings is not confirmed. Rental rules vary by city. Treat as: code-based, new construction; existing-home coverage unclear — say so on the page."
+    },
+    {
+      "number": "7-8",
+      "key": "environment-scams",
+      "anchor": "environment-scams",
+      "group": "remedies",
+      "rawHeading": "7–8 · Environmental / scams",
+      "researchTitle": "Environmental / scams",
+      "title": "Environmental rules and scam patterns",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn regime. Ohio AG enforcement against home-improvement contractors is frequent: e.g., March 24, 2026 AG release announcing suits against four businesses including **Acme Restoration (CSPA + Home Solicitation Sales Act)**, KB Co. Builders, United Log Homes, and Atlas Exteriors; November 2025 suit against a Wood County contractor for shoddy/incomplete work. **No Ohio AG chimney-specific enforcement action found** — patterns, not names, for chimney content."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season",
+      "researchTitle": "Season",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Rush SEP–NOV; best booking APR–JUN; burn season Oct–Mar (lake-effect north skews longer)."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "OH labor below national average; Columbus/Cleveland metros near national."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO state license (OCILB covers HVAC/refrigeration/electrical/plumbing/hydronics only; local registries: Columbus/Cleveland/Cincinnati)** · Disclosure law: **YES — \"Fireplace/chimney\" item G6 on the official form (R.C. 5302.30)** · 3-day cancel: **YES (R.C. 1345.22)** · CO law: code-based, new construction; existing homes unclear · Lookup: city registries + Ohio AG"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "The triangle completes (comparison): PA registers, Michigan licenses, **Ohio does neither statewide** — its protections live in consumer law (HSSA 3-day cancel, CSPA damages, an active AG) rather than licensure. Headline: the absence, and where the leverage actually lives."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "no state license (OCILB: HVAC/refrigeration/electrical/plumbing/hydronics only) — local (Columbus, Cleveland, Cincinnati)",
+    "registration_name": "local city registrations only",
+    "disclosure_law": "Yes (R.C. 5302.30, actual knowledge)",
+    "chimney_item_on_form": "Yes (Fireplace/chimney — form Section G item 6)",
+    "three_day_cancel": "Yes (R.C. 1345.22)",
+    "co_law": "Unclear — code-based new construction; existing-home coverage unconfirmed",
+    "lookup_url": "city registries + ohioattorneygeneral.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO state license (OCILB covers HVAC/refrigeration/electrical/plumbing/hydronics only; local registries: Columbus/Cleveland/Cincinnati)",
+    "registration_name": "",
+    "disclosure_law": "YES — \"Fireplace/chimney\" item G6 on the official form (R.C. 5302.30)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (R.C. 1345.22)",
+    "co_law": "code-based, new construction; existing homes unclear",
+    "lookup_url": "city registries + Ohio AG"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "NO",
+      "note": "NO state license (OCILB covers HVAC/refrigeration/electrical/plumbing/hydronics only; local…",
+      "anchor": "license",
+      "rule": "license:NO",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO STATE EXAM",
+      "note": "No state license covers this work statewide",
+      "anchor": "qualified-gap",
+      "rule": "exam:no-license",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection mandate at transfer; NFPA 211 Level 2 remains standard-not-law."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (R.C. 1345.22)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "co-law",
+      "rule": "co:limited→caveat-downgrade",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "Ohio: no state license covers chimney work. Here's what that means.",
+  "metaDescription": "Ohio chimney & fireplace laws: no state license, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Rush SEP–NOV; best booking APR–JUN; burn season Oct–Mar (lake-effect north skews longer)."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Ohio?",
+      "a": "State licensing: NO state license (OCILB covers HVAC/refrigeration/electrical/plumbing/hydronics only; local registries: Columbus/Cleveland/Cincinnati). Registration or credential: not stated in the table. Seller disclosure at sale: YES — \"Fireplace/chimney\" item G6 on the official form (R.C. 5302.30). Right to cancel a sale made at your home: YES (R.C. 1345.22). Carbon monoxide alarm law: code-based, new construction; existing homes unclear. Where to check a contractor: city registries + Ohio AG. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Ohio?",
+      "a": "R.C. 5302.30: Residential Property Disclosure Form required for 1–4 unit sales, delivered before the purchase contract. The official Department of Commerce form (OAC 1301:5-6-10, form eff. 6/2022) has a Mechanical Systems section (G) whose item 6 is \"Fireplace/chimney\" — the owner marks whether they know of previous or current problems or defects.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Ohio?",
+      "a": "Ohio's strength. Home Solicitation Sales Act (R.C. 1345.21–.28): sales of $25 or more solicited at your home — the exact mechanics of chimney scare-sales — may be cancelled until midnight of the third business day after signing (R.C. 1345.22); the three-day clock does not start until the seller provides the required written agreement and cancellation notice, and until then the buyer may cancel (R.C.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "michigan",
+    "neighborName": "Michigan",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "NO",
+      "note": "NO state license (OCILB covers HVAC/refrigeration/electrical/plumbing/hydronics only; local…"
+    },
+    "b": {
+      "answer": "YES",
+      "note": "state license ≥$600 (RB or M&A-masonry)"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "slug": "new-jersey",
+  "name": "New Jersey",
+  "abbr": "NJ",
+  "sourceFile": "rights-research-new-jersey.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "scam section limited to patterns until AG release is read; licensing described strictly as enacted-not-operative",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- Licensing board / full-license status: CORRECTED — P.L. 2023 c.237 (approved Jan 8, 2024; C.45:5AAA-1 et seq.) makes licensing operative six months after the Board promulgates rules, not \"~2027 / two years after board seated\"; no rules found as of June 2026 (REF: browntriallaw.com, 2026-06-13) — https://pub.njleg.state.nj.us/Bills/2022/PL23/237_.PDF — evidence class GOV (statute) + REF (status)\n- Registration statute and threshold: RESOLVED — N.J.S.A. 56:8-136 et seq.; $500,000 per occurrence CGL (56:8-142); fourth-degree crime (56:8-146); fee set by Director (56:8-138). \"$110 fee\" removed as unverified (DCA pages return 403) — https://www.nj.gov/dep/exams/docs/contractor_reg_act.pdf — GOV/DOC\n- Seller disclosure: CORRECTED — was \"Real Estate Consumer Protection Enhancement Act, N.J.S.A. 46:3C-10, effective Aug 1, 2024\" (neither the act name nor that section was found as the disclosure mandate). Correct: P.L. 2023 c.93, C.56:8-19.2, approved July 3, 2023; new form required from March 20, 2024 per AG — https://pub.njleg.state.nj.us/Bills/2022/PL23/93_.PDF ; https://www.njoag.gov/murphy-administration-announces-tools-to-protect-new-jerseyans-from-increasing-flood-risks-brought-by-climate-change/ — GOV\n- Chimney item on form: RESOLVED — \"Woodburning Stove or Fireplace\" section Q56–59 (usable, flue last cleaned, permits, problems) — https://www.nj.gov/oag/newsreleases23/2023-1220_SELLERS-PROPERTY-CONDITION-DISCLOSURE-STATEMENT.pdf — DOC\n- 3-day cancel / $500 writing threshold: CORRECTED citation — was N.J.A.C. 13:45A-16.2; statute is N.J.S.A. 56:8-151 (midnight of third business day; 30-day refund) — https://law.justia.com/codes/new-jersey/title-56/section-56-8-151/ — REF mirror of statute\n- Code cycle: CORRECTED — was \"2021 I-Codes\"; DCA adopted 2024 I-Codes (N.J.A.C. 5:23-3.14–3.22) on Aug 17, 2026 — https://www.nj.gov/dca/codes/codreg/rule_proposals_adoptions.shtml — GOV\n- CO law: RESOLVED — N.J.A.C. 5:70-2.3 CSACMAPFEC before sale/lease/change of occupancy of 1–2 family — https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-5-70-2-3 — REF mirror of regulation\n- Enforcement actions: STILL OPEN — AG release headline found, text 403.\n- Template-leakage sweep: clean (PA/MI/OH mentioned only as labeled comparisons)."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; licensing enacted but NOT yet operative)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; licensing enacted but NOT yet operative",
+      "markdown": "New Jersey has **no chimney-specific license and no operative state contractor license today — it runs a mandatory STATE REGISTRATION** for home improvement work. The **Contractors' Registration Act (N.J.S.A. 56:8-136 et seq.)** requires anyone selling or making home improvements to register with the **Division of Consumer Affairs** (AG's office). Registration requires **commercial general liability insurance of at least $500,000 per occurrence (N.J.S.A. 56:8-142)**; the fee is set by the Director (N.J.S.A. 56:8-138) — **no exam, no competency test**. There is **no dollar threshold** for registration. Knowingly violating the Act is a **crime of the fourth degree (N.J.S.A. 56:8-146)**; Consumer Fraud Act civil penalties also apply. Public lookup: **njconsumeraffairs.gov** → HIC registration search.\n**Transition to licensing (flag):** the **Home Improvement and Home Elevation Contractor Licensing Act, P.L. 2023, c.237 (N.J.S.A. 45:5AAA-1 et seq.)**, approved **January 8, 2024**, creates a nine-member State Board and requires compliance bonds ($10,000–$50,000 depending on contract value/volume). Under the Act, the individual licensing mandate becomes operative **six months after the Board promulgates implementing rules** — not on a calendar date. As of mid-2026 no Board rules had been published and the Board was reported as not fully constituted (REF only). **Do not describe a license or exam regime as live in NJ; do not publish a \"~2027\" date.** Home improvement contracts must already carry the license number \"when required\" under the amended N.J.S.A. 56:8-151."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Registration attests to **insurance and a clean/disclosed record — not skill, and nothing chimney-specific.** Even the future license (general home-improvement) will not test flue competence. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the only real competence signal."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high confidence; recently upgraded)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; recently upgraded",
+      "markdown": "**P.L. 2023, c.93 (N.J.S.A. 56:8-19.2), approved July 3, 2023, requires a seller of real property in New Jersey to complete the Division of Consumer Affairs' Seller's Property Condition Disclosure Statement** — including new flood-risk questions — before the buyer becomes obligated under a purchase contract. Per the AG, sellers were required to use the new form **beginning March 20, 2024** (DCA later issued an August 2024 revision of the form instructions). The form's **\"Woodburning Stove or Fireplace\"** section asks whether there is a wood-burning stove, fireplace, or insert; whether it is usable; **when the flue was last cleaned (professionally or not)**; whether required permits were obtained; and whether the seller is aware of any problems. Heating-system questions (type, furnace age, last service) are separate. Standard is **the seller's knowledge**. **No inspection is mandated at transfer**; NFPA 211 Level 2-at-sale remains a NATIONAL STANDARD, not NJ law."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "NJ has **one of the strongest consumer-fraud hammers in the country.** The **Consumer Fraud Act (N.J.S.A. 56:8-1 et seq.)** plus the **Home Improvement Practices regulations (N.J.A.C. 13:45A-16.1 et seq.)** make regulatory breaches unlawful practices — and treble damages plus attorneys' fees are **mandatory, not discretionary**, for a proven violation causing ascertainable loss. Under **N.J.S.A. 56:8-151**, every home improvement contract over **$500 must be written** and the consumer may cancel **before midnight of the third business day** after receiving a copy; refund due within 30 days of cancellation. A missing cancellation notice or registration number is itself an actionable violation regardless of workmanship quality. Complaints: Division of Consumer Affairs (njconsumeraffairs.gov/ocp)."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high confidence)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "NJ has a **statewide Uniform Construction Code (N.J.A.C. 5:23)** — no home-rule patchwork. DCA adopted the **2024 I-Codes (amending N.J.A.C. 5:23-3.14 through 3.22, including the one- and two-family dwelling subcode at 3.21, i.e., the 2024 IRC with NJ amendments) on August 17, 2026**; the prior cycle was the 2021 I-Codes. Projects already permitted under the prior edition generally continue under it; check the DCA adoption notice for any grace period before stating one. Relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work** enforced by the municipal construction official; routine sweeps and like-for-like cap swaps generally are not. The statewide-uniform code is itself a selling point vs. home-rule states."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high confidence; point-of-sale teeth)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; point-of-sale teeth",
+      "markdown": "Stronger than most states at the moment of sale. Under **N.J.A.C. 5:70-2.3**, before any one- and two-family or attached single-family structure is sold, leased, or otherwise subject to a change of occupancy for residential purposes, the owner must obtain a **Certificate of Smoke Alarm, Carbon Monoxide Alarm, and Portable Fire Extinguisher Compliance (CSACMAPFEC)** from the local fire official. CO alarms are excepted only where there is no fuel-burning appliance and no attached garage. This is an actual **pre-sale enforcement checkpoint**, not just a code aspiration. (Alarm-placement detail cited at N.J.A.C. 5:70-4.19 was not re-verified in the Sep 2026 pass.)"
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime; outdoor wood boilers regulated locally where at all. Not a material content section for NJ."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV headlines only — pull release text before naming anyone)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "headlines only — pull release text before naming anyone",
+      "markdown": "The Division of Consumer Affairs and the AG actively enforce against home-improvement fraud, and the door-to-door \"we noticed your chimney\" repair pitch is squarely covered by the CFA and the home improvement regulations. The NJ AG has published at least one release titled \"Consumer Affairs Legal Action Results in $137,000 Being Returned to Homeowners Whose Roofs, Chimneys and Gutters Were Damaged By Contractors\" (njoag.gov) — **release text could not be fetched (403); do not name businesses or amounts beyond the headline until read.** The mandatory-treble + registration angle carries the section regardless."
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Cold climate statewide; burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "NJ labor runs **above national average**, sharply so in North Jersey / NYC-metro counties (Bergen, Essex, Hudson); South Jersey nearer national. Adjust national ranges upward for the northern metro until listings data exists."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **NO operative state license — mandatory REGISTRATION (HIC); licensing enacted (P.L. 2023 c.237) but not operative until 6 months after Board rules** · Registration: **YES (Contractors' Registration Act, N.J.S.A. 56:8-136)** · Disclosure law: **YES — mandatory DCA form since Mar 20, 2024 (N.J.S.A. 56:8-19.2), woodburning stove/fireplace section incl. flue-cleaning date** · 3-day cancel: **YES (N.J.S.A. 56:8-151)** · CO law: **strong — pre-sale compliance certificate (N.J.A.C. 5:70-2.3)** · Lookup: njconsumeraffairs.gov (HIC search)"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "New Jersey is the **consumer-protection heavyweight** of the launch set: registration today, a full license enacted but still waiting on its Board's rules, a seller-disclosure form made mandatory by statute in 2024 that asks when the flue was last cleaned, a **mandatory-treble Consumer Fraud Act**, and a **pre-sale fire-safety certificate** that actually gets checked at closing. Contrast the ladder: PA registers, MI licenses, OH does neither statewide — **NJ registers *and* out-punishes everyone through the CFA.** The gap that still matters: none of it — not registration, not the coming license — tests whether the person on your roof can read a flue."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "registration (licensing enacted P.L.2023 c.237, not operative until 6 months after Board rules)",
+    "registration_name": "Home Improvement Contractor (Contractors' Registration Act, N.J.S.A. 56:8-136)",
+    "disclosure_law": "Yes (N.J.S.A. 56:8-19.2, mandatory DCA form since Mar 20, 2024)",
+    "chimney_item_on_form": "Yes (woodburning stove/fireplace section incl. flue last cleaned)",
+    "three_day_cancel": "Yes (N.J.S.A. 56:8-151)",
+    "co_law": "Strong (pre-sale CSACMAPFEC certificate, N.J.A.C. 5:70-2.3)",
+    "lookup_url": "njconsumeraffairs.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "NO operative state license — mandatory REGISTRATION (HIC); licensing enacted (P.L. 2023 c.237) but not operative until 6 months after Board rules",
+    "registration_name": "YES (Contractors' Registration Act, N.J.S.A. 56:8-136)",
+    "disclosure_law": "YES — mandatory DCA form since Mar 20, 2024 (N.J.S.A. 56:8-19.2), woodburning stove/fireplace section incl. flue-cleaning date",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (N.J.S.A. 56:8-151)",
+    "co_law": "strong — pre-sale compliance certificate (N.J.A.C. 5:70-2.3)",
+    "lookup_url": "njconsumeraffairs.gov (HIC search)"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "SEE SECTION",
+      "note": "Flagged in the verification caveats — read the section",
+      "anchor": "license",
+      "rule": "license:NO+registration→caveat-downgrade",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Even the future license (general home-improvement) will not test flue competence."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated; a CO/smoke rule applies at sale",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2-at-sale remains a NATIONAL STANDARD, not NJ law."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (N.J.S.A. 56:8-151)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "YES",
+      "note": "— pre-sale compliance certificate (N.J.A.C. 5:70-2.3)",
+      "anchor": "co-law",
+      "rule": "co:yes",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "SEE SECTION",
+      "note": "Not derivable from the summary row — read the section",
+      "anchor": "remedies",
+      "rule": "sue:unmatched",
+      "derivedFrom": "§1/§4 text",
+      "evidence": null
+    }
+  ],
+  "h1": "New Jersey chimney & fireplace laws: know your rights",
+  "metaDescription": "New Jersey chimney & fireplace laws: licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Cold climate statewide; burn season ~Oct–Apr. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in New Jersey?",
+      "a": "State licensing: NO operative state license — mandatory REGISTRATION (HIC); licensing enacted (P.L. 2023 c.237) but not operative until 6 months after Board rules. Registration or credential: YES (Contractors' Registration Act, N.J.S.A. 56:8-136). Seller disclosure at sale: YES — mandatory DCA form since Mar 20, 2024 (N.J.S.A. 56:8-19.2), woodburning stove/fireplace section incl. flue-cleaning date. Right to cancel a sale made at your home: YES (N.J.S.A. 56:8-151). Carbon monoxide alarm law: strong — pre-sale compliance certificate (N.J.A.C. 5:70-2.3). Where to check a contractor: njconsumeraffairs.gov (HIC search). Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in New Jersey?",
+      "a": "P.L. 2023, c.93 (N.J.S.A. 56:8-19.2), approved July 3, 2023, requires a seller of real property in New Jersey to complete the Division of Consumer Affairs' Seller's Property Condition Disclosure Statement — including new flood-risk questions — before the buyer becomes obligated under a purchase contract. Per the AG, sellers were required to use the new form beginning March 20, 2024 (DCA later issued an August 2024 revision of the form instructions).",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in New Jersey?",
+      "a": "NJ has one of the strongest consumer-fraud hammers in the country. The Consumer Fraud Act (N.J.S.A. 56:8-1 et seq.) plus the Home Improvement Practices regulations (N.J.A.C. 13:45A-16.1 et seq.) make regulatory breaches unlawful practices — and treble damages plus attorneys' fees are mandatory, not discretionary, for a proven violation causing ascertainable loss.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "delaware",
+    "neighborName": "Delaware",
+    "label": "CO alarm required in your home?",
+    "verdictId": "verdict-co",
+    "a": {
+      "answer": "YES",
+      "note": "— pre-sale compliance certificate (N.J.A.C. 5:70-2.3)"
+    },
+    "b": {
+      "answer": "LIMITED",
+      "note": "NARROW — lodging establishments only (16 Del. C. Ch. 66C); owner-occupied homes excluded"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

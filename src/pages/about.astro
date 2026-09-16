@@ -1,0 +1,68 @@
+---
+import Base from '../layouts/Base.astro';
+import Chip from '../components/Chip.astro';
+import { ORG_NAME, SITE_URL, abs, FOUNDER_LINE, CLOSING_RULE, DISCLAIMER } from '../lib/site';
+
+const path = '/about';
+const title = `About Chimney.Services — What We Verify and What We Don't | ${ORG_NAME}`;
+const description = 'About Chimney.Services: what we verify, what we do not, why we take no fees, and why placement is never sold.';
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'About', item: abs(path) },
+    ],
+  },
+  { '@context': 'https://schema.org', '@type': 'AboutPage', name: title, url: abs(path), about: { '@id': `${SITE_URL}/#organization` } },
+];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd} section="about">
+  <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / ABOUT</nav>
+  <h1>What Chimney.Services checks, what it doesn't, and who pays for it</h1>
+  <p class="lede">The chimney trade runs on things a homeowner can't see. This site exists to show its work.</p>
+
+  <section aria-labelledby="provenance-h" id="provenance">
+    <h2 id="provenance-h">How is every fact labeled?</h2>
+    <p>Every fact block carries one of three labels, and the label never changes without the evidence changing:</p>
+    <ul class="topic-list">
+      <li><Chip kind="muted">Public record</Chip> — from a statute, regulation, government registry or official form. Everything on the laws site is public record, with the date we last looked.</li>
+      <li><Chip kind="muted">Reported by business</Chip> — what a company tells us about itself. We show it, labeled, and don't vouch for it.</li>
+      <li><Chip kind="muted">Verified by Chimney.Services</Chip> — something we independently checked, with the date and method. It will only appear once the directory's audits exist.</li>
+    </ul>
+    <p>Sources carry an evidence class: <Chip>GOV</Chip> for statute text, regulators and registries; <Chip>DOC</Chip> for official PDFs and adopted code text; <Chip>REF</Chip> for news, associations and law-firm summaries. A REF source can support a claim but never proves one on its own.</p>
+  </section>
+
+  <section aria-labelledby="verify-h" id="what-we-verify">
+    <h2 id="verify-h">What do we verify on the laws pages?</h2>
+    <ul class="prose">
+      <li>Each state file is researched against primary sources, then re-checked in a separate verification pass that works through every open question and spot-checks the licensing, seller-disclosure and carbon monoxide claims.</li>
+      <li>Every state page shows its research date, its verification date, and any caveats the verification pass left open.</li>
+      <li>Pages whose verification found a load-bearing problem stay online, marked "Under review," and are hidden from search engines until fixed.</li>
+      <li>The one-word short answers on each state page are derived mechanically from the research; where the text doesn't support one word, the answer reads SEE SECTION.</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="dont-h" id="what-we-dont">
+    <h2 id="dont-h">What don't we check?</h2>
+    <ul class="prose">
+      <li>We don't give legal advice, and nothing here replaces a lawyer licensed in your state.</li>
+      <li>We don't track every city and county rule; where local rules matter, the page says so and names the places our research found.</li>
+      <li>We don't check any individual contractor on these pages — not identity, background, work quality, insurance, or certifications.</li>
+      <li>We don't guarantee a law hasn't changed since the date shown.</li>
+    </ul>
+    <p>{DISCLAIMER}</p>
+  </section>
+
+  <section aria-labelledby="money-h" id="no-fees">
+    <h2 id="money-h">Who pays for this?</h2>
+    <p>No one who is named on it. We take no fee from any certification body, guild, or contractor, and are not paid to mention anyone named. There are no ads. Placement is never sold, at any tier, ever. When the directory launches, businesses will be able to claim a free listing to correct their data, and a paid verification tier will buy an audit that can fail — never a better position in results.</p>
+  </section>
+
+  <section aria-labelledby="who-h" id="founder">
+    <h2 id="who-h">Who is behind it?</h2>
+    <p>{FOUNDER_LINE}</p>
+    <p>{CLOSING_RULE}</p>
+  </section>
+</Base>

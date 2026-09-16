@@ -1,0 +1,313 @@
+{
+  "slug": "maryland",
+  "name": "Maryland",
+  "abbr": "MD",
+  "sourceFile": "rights-research-maryland.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) § 8 scam landscape stays pattern-only, (2) no 2026-session change search was possible, (3) form revision date should be re-confirmed.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- CO law cite (Public Safety Title 12, Subtitle 11): RESOLVED — Subtitle 11 \"Carbon Monoxide Alarms,\" §§ 12-1101 to 12-1106; no trace of any other (wrong) CO section number remains in this file (grep confirmed). CORRECTED scope: new-construction coverage is triggered by fossil-fuel reliance + permit on/after Jan 1, 2008 (the \"or attached garage\" trigger was wrong and is removed); rentals need alarms on every level since Apr 1, 2018 — https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gps&section=12-1102 and ...section=12-1104 — GOV\n- MHIC Guaranty Fund cap: RESOLVED — § 8-405(e): max $30,000 to one claimant for one contractor; $250,000 aggregate per contractor unless contractor reimburses; FAQ adds \"or the amount paid to the contractor, whichever is less\" — https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gbr&section=8-405 ; https://labor.maryland.gov/license/mhic/mhicfaqgf.shtml — GOV\n- MHIC license requirements: CORRECTED — old text claimed a single mandatory bond-or-fund-deposit amount that no primary source supports; MHIC says applicants meet financial-solvency guidelines or use an indemnitor / $30,000 or $100,000 surety bond; $100 Guaranty Fund fee; $500,000 GL insurance required since June 1, 2024 — https://labor.maryland.gov/license/mhic/mhicapply.shtml ; https://labor.maryland.gov/license/mhic/ — GOV\n- Disclosure (§ 10-702) + chimney item: CORRECTED — statute categories list no chimney/fireplace; MREC form Rev 07/31/2018 has no chimney/fireplace/flue/stove line (old text said \"structural section covers chimneys\") — https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=grp&section=10-702 ; https://dsd.maryland.gov/regulations/artwork/09110701.pdf — GOV/DOC\n- MBPS code cycle: RESOLVED — 2021 IBC/IRC effective May 29, 2023; local enforcement required by May 29, 2024 — https://labor.maryland.gov/labor/build/buildadmin.shtml — GOV\n- 3-day cancel (Door-to-Door Sales Act): RESOLVED — Com. Law § 14-302: cancel before midnight of third business day; refund within 10 business days — https://mgaleg.maryland.gov/mgawebsite/Laws/StatuteText?article=gcl&section=14-302 — GOV\n- Enforcement actions: STILL OPEN — not searched (search budget exhausted).\n- Template-leakage sweep: clean — \"MHIC\" is Maryland's own agency; no other-state statute strings found."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; strongest regime of the launch set)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; strongest regime of the launch set",
+      "markdown": "Maryland has **the real thing: a state license with an exam and a funded backstop.** The **Maryland Home Improvement Commission (MHIC)**, in the Dept. of Labor, licenses anyone who solicits or performs home improvement under **Md. Code, Business Regulation, Title 8 (§ 8-101 et seq.)** — chimney repair/rebuild/reline for a homeowner is home improvement and needs an MHIC license. The license requires passing the **PSI MHIC exam**, meeting the Commission's **financial-solvency guidelines** (applicants who don't qualify may use an indemnitor or buy a **surety bond of $30,000 or $100,000** — labor.maryland.gov/license/mhic/mhicapply.shtml), paying the **$100 Guaranty Fund fee** ($175 at renewal), and — since June 1, 2024 — carrying **general liability insurance of at least $500,000** (labor.maryland.gov/license/mhic). *(Experience requirement and exam pass mark not re-read on a primary page in Sep 2026 — do not publish specific figures.)* Salespeople are separately licensed. Public lookup: **labor.maryland.gov/license/mhic**. Unlicensed home-improvement work is barred from recovery and is an offense."
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Even Maryland's genuine exam tests **Maryland home-improvement law, contracts, trade practices, and consumer-protection rules — not flue diagnosis or masonry skill.** A licensed contractor may never have inspected a chimney. Individual certs (CSIA CCS, C-DET; NCSG CCP/CCR) remain the competence signal. The MD twist: because **hiring a *licensed* contractor is what unlocks the Guaranty Fund**, \"check the license\" carries more weight here than in any other launch state."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high on structure; confirm exact chimney line)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on structure; confirm exact chimney line",
+      "markdown": "**Md. Real Property § 10-702 gives sellers a choice: DISCLOSE or DISCLAIM.** They may furnish a **Residential Property Disclosure Statement** (disclosing known defects across the statutory categories — water/sewer, insulation, structural systems \"including the roof, walls, floors, foundation, and any basement,\" plumbing/electrical/heating/AC, and more, on an actual-knowledge basis). **Neither § 10-702 nor the MREC form (Rev 07/31/2018, dsd.maryland.gov/regulations/artwork/09110701.pdf) has any chimney, fireplace, flue, or wood-stove line item** — a chimney defect surfaces only through the general \"Other Structural Systems\" and heating-system questions (item 6: is heat supplied to all finished rooms / is the system operating) or the catch-all \"other material defects.\" The form does ask (item 15) whether a CO alarm is installed if the home burns fossil fuel **or** a **Residential Property Disclaimer Statement** selling the home **\"as is,\"** disclosing only latent defects posing a direct health/safety threat. Because the disclaimer route is fully lawful, **Maryland's disclosure is functionally optional** — a seller can hand over an \"as-is\" disclaimer and reveal almost nothing about the chimney. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence",
+      "markdown": "Two-track. **(1) The MHIC Guaranty Fund** compensates homeowners for **actual losses up to $30,000 per claimant for one contractor's acts or omissions (or the amount paid to the contractor, if less), with a $250,000 cap on total payouts per contractor unless the contractor reimburses the Fund** (Business Regulation § 8-405(e), mgaleg.maryland.gov; MHIC Guaranty Fund FAQ) from a *licensed* contractor's unworkmanlike, incomplete, or abandoned work — the strongest fund of the launch set (vs CT $25k, MA $10k). **(2) The Maryland Consumer Protection Act (Md. Code, Commercial Law, Title 13)**, enforced by the AG's Consumer Protection Division, gives private actions for damages plus attorney's fees (no automatic treble — weaker multiplier than NJ/MA). Home-improvement and door-to-door sales carry a **3-business-day right to cancel** (Door-to-Door Sales Act, Commercial Law § 14-301 et seq.; MHIC contract rules). Complaints: MHIC + AG."
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — medium-high; confirm cycle)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; confirm cycle",
+      "markdown": "Statewide **Maryland Building Performance Standards (MBPS)** adopt the **2021 IBC and IRC (COMAR 09.12.50 / 09.12.51), effective May 29, 2023, with local jurisdictions required to implement and enforce by May 29, 2024** (labor.maryland.gov/labor/build/buildadmin.shtml); counties and municipalities may still amend locally. Chimney relines, rebuilds, crowns, and solid-fuel appliance installs are generally **permit work**; routine sweeps and like-for-like caps generally are not. Local adoption means real county-to-county variation."
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — medium-high; code/rental-based, not pre-sale certificate)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "medium-high; code/rental-based, not pre-sale certificate",
+      "markdown": "**Md. Code, Public Safety, Title 12, Subtitle 11 (§ 12-1101 et seq.)** applies (§ 12-1102) to **(1) a dwelling that relies on combustion of a fossil fuel for heat, ventilation, hot water, or clothes-dryer operation AND is newly constructed with a building permit issued on or after Jan 1, 2008**, and **(2) any hotel, lodging or rooming house, or rental dwelling unit**. § 12-1104: alarm in a central location outside each sleeping area; **rental dwelling units (since Apr 1, 2018) need an alarm outside each sleeping area AND on every level including the basement**; hotels/rooming houses have room-by-room rules (since Apr 1, 2017). § 12-1106 lets localities go stricter. (mgaleg.maryland.gov, Public Safety §§ 12-1102, 12-1104.) Unlike NJ/MA, MD has **no statewide mandatory pre-sale CO certificate** (some counties add their own). A permitted chimney job remains the natural moment to add alarms."
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "No statewide burn-ban or stove-emission regime. Not a material content section for MD."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (REF — partial; pull specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "REF"
+      ],
+      "confidenceNote": "partial; pull specifics before publish",
+      "markdown": "The MHIC's disciplinary docket and the AG's Consumer Protection Division both pursue home-improvement contractors, and the door-knock \"we noticed your chimney\" pitch is a textbook Door-to-Door / CPA violation. **Specific MD chimney-sweep enforcement actions: NOT YET CONFIRMED — re-run search before publish.**"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Mixed climate — colder western MD, milder Chesapeake/DC-suburb belt. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "DC-suburb counties (Montgomery, Prince George's, Howard) run **above national**; western MD and the Eastern Shore nearer national. Regionalize upward for the DC ring."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — MHIC state license (PSI exam, financial solvency or $30k/$100k bond, $500k GL insurance), Business Regulation Title 8** · Registration: **license regime (+ salesperson license) + Guaranty Fund up to $30k/claimant** · Disclosure law: **YES but disclose-OR-disclaimer \"as-is\" option (§ 10-702)** · Chimney item on form: **NO dedicated chimney/fireplace/flue line (general structural + heating questions only)** · 3-day cancel: **YES (Door-to-Door Sales Act § 14-301)** · CO law: **code + all rentals (Pub. Safety Title 12, Subtitle 11); no pre-sale certificate** · Lookup: labor.maryland.gov/license/mhic"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "Maryland is the **anti-Ohio**: where Ohio licenses nothing statewide, Maryland runs the strongest regime in the launch set — a genuine exam, financial-solvency screening (or a bond), mandatory liability insurance, and a **Guaranty Fund that actually pays homeowners up to $30,000** when a licensed contractor fails. The catch that makes the page: Maryland front-loads all its protection onto the *contractor* relationship and almost none onto the *sale* — because § 10-702 lets a seller hand over an \"as-is\" **disclaimer** and reveal nothing. So the two messages are sharp and opposite: **hire only an MHIC-licensed contractor (it's the key to the $30k fund), and never trust the seller's disclosure — get your own inspection.** And the eternal gap survives even here: the MHIC exam tests law, not whether the licensee can read your flue."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "YES — MHIC state license (PSI exam; financial solvency or $30k/$100k bond; $500k GL insurance)",
+    "registration_name": "MHIC license (Business Regulation Title 8) + Guaranty Fund up to $30k/claimant ($250k/contractor)",
+    "disclosure_law": "Yes but disclose-OR-disclaimer (as-is) option (10-702)",
+    "chimney_item_on_form": "No dedicated chimney/fireplace/flue line (general structural + heating items only)",
+    "three_day_cancel": "Yes (Door-to-Door Sales Act, Com. Law 14-302)",
+    "co_law": "Fossil-fuel new construction (permit on/after 1/1/2008) + all rentals/hotels (Pub. Safety 12-1102, 12-1104); no pre-sale cert",
+    "lookup_url": "labor.maryland.gov/license/mhic",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — MHIC state license (PSI exam, financial solvency or $30k/$100k bond, $500k GL insurance), Business Regulation Title 8",
+    "registration_name": "license regime (+ salesperson license) + Guaranty Fund up to $30k/claimant",
+    "disclosure_law": "YES but disclose-OR-disclaimer \"as-is\" option (§ 10-702)",
+    "chimney_item_on_form": "NO dedicated chimney/fireplace/flue line (general structural + heating questions only)",
+    "three_day_cancel": "YES (Door-to-Door Sales Act § 14-301)",
+    "co_law": "code + all rentals (Pub. Safety Title 12, Subtitle 11); no pre-sale certificate",
+    "lookup_url": "labor.maryland.gov/license/mhic"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "MHIC state license (PSI exam, financial solvency or $30k/$100k bond, $500k GL insurance)…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "Even Maryland's genuine exam tests Maryland home-improvement law, contracts, trade practices, and consumer-protection rules — not flue diagnosis or masonry skill."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD."
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Door-to-Door Sales Act § 14-301)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "LIMITED",
+      "note": "code + all rentals (Pub. Safety Title 12, Subtitle 11); no pre-sale certificate",
+      "anchor": "co-law",
+      "rule": "co:limited",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "license",
+      "rule": "sue:§1-sentence",
+      "derivedFrom": "§1 text",
+      "evidence": "Unlicensed home-improvement work is barred from recovery and is an offense."
+    }
+  ],
+  "h1": "Maryland: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "Maryland chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      9,
+      10,
+      11
+    ],
+    "best": [
+      4,
+      5,
+      6
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Mixed climate — colder western MD, milder Chesapeake/DC-suburb belt. Burn season ~Oct–Mar. Rush: SEP–NOV. Best booking: APR–JUN."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in Maryland?",
+      "a": "State licensing: YES — MHIC state license (PSI exam, financial solvency or $30k/$100k bond, $500k GL insurance), Business Regulation Title 8. Registration or credential: license regime (+ salesperson license) + Guaranty Fund up to $30k/claimant. Seller disclosure at sale: YES but disclose-OR-disclaimer \"as-is\" option (§ 10-702). Right to cancel a sale made at your home: YES (Door-to-Door Sales Act § 14-301). Carbon monoxide alarm law: code + all rentals (Pub. Safety Title 12, Subtitle 11); no pre-sale certificate. Where to check a contractor: labor.maryland.gov/license/mhic. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in Maryland?",
+      "a": "Md. Real Property § 10-702 gives sellers a choice: DISCLOSE or DISCLAIM. They may furnish a Residential Property Disclosure Statement (disclosing known defects across the statutory categories — water/sewer, insulation, structural systems \"including the roof, walls, floors, foundation, and any basement,\" plumbing/electrical/heating/AC, and more, on an actual-knowledge basis). Neither § 10-702 nor the MREC form (Rev 07/31/2018, dsd.maryland.gov/regulations/artwork/09110701.pdf) has any chimney, fireplace, flue, or wood-stove line item — a chimney defect surfaces only through the general \"Other Structural Systems\" and heating-system questions (item 6: is heat supplied to all finished rooms / is the system operating) or the catch-all \"other material defects.\" The form does ask (item 15) whether a CO alarm is installed if the home burns fossil fuel or a Residential Property Disclaimer Statement selling the home \"as is,\" disclosing only latent defects posing a direct health/safety threat.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in Maryland?",
+      "a": "Two-track. (1) The MHIC Guaranty Fund compensates homeowners for actual losses up to $30,000 per claimant for one contractor's acts or omissions (or the amount paid to the contractor, if less), with a $250,000 cap on total payouts per contractor unless the contractor reimburses the Fund (Business Regulation § 8-405(e), mgaleg.maryland.gov; MHIC Guaranty Fund FAQ) from a licensed contractor's unworkmanlike, incomplete, or abandoned work — the strongest fund of the launch set (vs CT $25k, MA $10k). (2) The Maryland Consumer Protection Act (Md. Code, Commercial Law, Title 13), enforced by the AG's Consumer Protection Division, gives private actions for damages plus attorney's fees (no automatic treble — weaker multiplier than NJ/MA).",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": {
+    "neighborSlug": "delaware",
+    "neighborName": "Delaware",
+    "label": "License required?",
+    "verdictId": "verdict-license",
+    "a": {
+      "answer": "YES",
+      "note": "MHIC state license (PSI exam, financial solvency or $30k/$100k bond, $500k GL insurance)…"
+    },
+    "b": {
+      "answer": "NO",
+      "note": "NO state trade license — Division of Revenue contractor license (30 Del. C. § 2502, $75 +…"
+    },
+    "neighborPublishVerdict": "READY WITH CAVEATS"
+  }
+}

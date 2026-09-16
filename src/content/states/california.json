@@ -1,0 +1,307 @@
+{
+  "slug": "california",
+  "name": "California",
+  "abbr": "CA",
+  "sourceFile": "rights-research-california.md",
+  "researched": "2026-07-06",
+  "lawsCitedAs": "Sep 2026",
+  "headerNote": null,
+  "verified": "2026-09-15",
+  "publishVerdict": "READY WITH CAVEATS",
+  "publishVerdictNote": "(1) spark-arrestor language must stay non-mandatory until adopted CRC text is read; (2) no named enforcement case; (3) Rule 445 unverified.",
+  "verification": {
+    "heading": "Verification pass — September 2026",
+    "checked": "2026-09-15",
+    "markdown": "Checked 2026-09-15 by verification agent. Laws cited as of Sep 2026.\n- CSLB licensing threshold: CORRECTED — file said \"$500 or more (§ 7028)\"; current law is the minor-work exemption for jobs under $1,000 with no permit and no employees (Bus. & Prof. Code § 7048, raised from $500 by AB 2622, effective Jan 1, 2025). § 7028 is the misdemeanor penalty section ($5,000 / 6 months first offense) — https://www.cslb.ca.gov/Resources/IndustryBulletins/2024/AB%202622%20Implementation.FINAL.pdf (GOV); § 7048 text https://codes.findlaw.com/ca/business-and-professions-code/bpc-sect-7048/ (REF, matches GOV bulletin); § 7028 https://law.justia.com/codes/california/code-bpc/division-3/chapter-9/article-2/section-7028/ — evidence class GOV\n- C-29 Masonry scope: RESOLVED — CSLB scope includes \"fire brick or other material for refractory work\" (Title 16 CCR Art. 3) — https://www.cslb.ca.gov/about_us/library/licensing_classifications/Licensing_Classifications_Detail.aspx?Class=C29 — GOV\n- C-61/D-34 class: RESOLVED/CORRECTED label — D-34 is \"Prefabricated Equipment\" (file said \"Limited Specialty\"; C-61 is Limited Specialty, D-34 its subcategory); scope includes \"factory built fireplaces and accessories (no masonry facing)\"; does not mention chimneys or stoves — https://www.cslb.ca.gov/About_Us/Library/Licensing_Classifications/Licensing_Classifications_Detail.aspx?Class=D34 — GOV\n- 2026 CSLB changes: RESOLVED — CSLB \"New Laws 2026\" bulletin: AB 1327 (email in HI contracts, cancel by email), SB 779 (min. $1,500 unlicensed civil penalty from 7/1/2026), SB 517, SB 291, AB 1002, AB 521, SB 456; no threshold change — https://www.cslb.ca.gov/Resources/IndustryBulletins/2026/New%20Laws.FINAL.pdf — GOV\n- § 7031 shield/sword: RESOLVED — (a) bars suit without alleging licensure; (b) user of unlicensed contractor may \"recover all compensation paid\" — https://law.justia.com/codes/california/code-bpc/division-3/chapter-9/article-2/section-7031/ — GOV (statute text via Justia)\n- Home-solicitation cancel: RESOLVED — § 1689.6: 3 business days; 5 business days for senior citizens (contracts on/after 1/1/2021); 7 days for disaster-repair contracts — https://law.justia.com/codes/california/code-civ/division-3/part-2/title-5/chapter-2/section-1689-6/ — GOV\n- Title 24 edition in force (blocker 1): RESOLVED — 2025 California Building Standards Code published July 1, 2025, effective January 1, 2026 — https://www.dgs.ca.gov/bsc/codes — GOV\n- Spark-arrestor statewide mandate (CRC R1003.9 / Ch. 7A): STILL OPEN / claim WITHDRAWN — could not reach adopted 2025 CRC Ch. 10 text (ICC paywall, UpCodes robots-blocked). Model IRC R1003.9.2 governs arrestors \"where installed.\" PRC § 4291 (2025) contains only the 10-ft tree clearance from a chimney outlet, no screen requirement. File no longer claims a statewide mandate — https://law.justia.com/codes/california/code-prc/division-4/part-2/chapter-3/section-4291/ — GOV (PRC); CRC unreached\n- TDS fireplace/chimney line (blocker 2): RESOLVED (DOC) — TDS §1102 et seq. form (rev. 6/24 C.A.R. copy of statutory form) lists \"Fireplace(s) in ___\" and \"Carbon Monoxide Device(s)\" in II.A; II.B defect list has no chimney line; no \"chimney sweep\" text found (removed from file). Official Justia page shows form only by reference (Stats. 2020 ch. 370 § 25) — https://www.themls.com/DocManager/api/Documents/25528965/file/MSc-TgtMtaE1/download ; https://www.epsten.com/civil-code-2014-1102-6-transfer-disclosure-statement/ — DOC/REF\n- CO law § 17926: RESOLVED — owner must install SFM-approved CO device; SFD by 7/1/2011, other units 1/1/2013, hotels 1/1/2017; $200 infraction after 30-day notice; SB 183 defines dwelling unit to include fireplace/attached garage and fossil fuel to include wood — https://law.justia.com/codes/california/code-hsc/division-13/part-1-5/chapter-2/section-17926/ ; https://www.leginfo.ca.gov/pub/09-10/bill/sen/sb_0151-0200/sb_183_bill_20100507_chaptered.pdf — GOV\n- BAAQMD Reg 6-3 threshold (blocker 4a): RESOLVED — Oct 1, 2025 amendments lowered 24-hr forecast PM2.5 mandatory burn-ban trigger to 25 µg/m³ — https://www.baaqmd.gov/en/rules-and-compliance/rules/reg-6-rule-3-woodburning-devices — GOV\n- SJV Rule 4901 point-of-sale (blocker 4b): CORRECTED — not \"must be replaced with EPA-certified\"; § 5.2.2.1: no sale/transfer unless each wood burning heater is NSPS-certified, an exempt pellet heater, or rendered permanently inoperable and removed (rule amended 5/18/2023) — https://ww2.valleyair.org/media/h0eliaec/rule-4901.pdf — DOC\n- Named CA chimney enforcement action (blocker 3): STILL OPEN — not searched (session web-search budget exhausted).\n- Template-leakage sweep: clean — MD/VA/IL/OH appear only as labeled comparisons."
+  },
+  "sections": [
+    {
+      "number": "1",
+      "key": "licensing",
+      "anchor": "license",
+      "group": "licensing",
+      "rawHeading": "1 · Licensing (GOV — high confidence; a real license, real threshold)",
+      "researchTitle": "Licensing",
+      "title": "State licensing and registration",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; a real license, real threshold",
+      "markdown": "**California has genuine statewide contractor licensing — the Contractors State License Board (CSLB).** Under **Business & Professions Code § 7000 et seq.**, anyone who bids or performs a construction job must hold a CSLB license unless the aggregate contract price for labor, materials, and all other items is **less than $1,000** and the work is casual/minor and **requires no building permit** (the \"minor work\" exemption, **Bus. & Prof. Code § 7048**, raised from $500 to $1,000 by **AB 2622, effective Jan 1, 2025**; the exemption is also lost if the unlicensed person employs anyone on the job). Contracting without a license is a misdemeanor under **§ 7028** (first conviction: up to $5,000 fine and/or up to 6 months county jail; escalating on repeat), and SB 779 raises minimum administrative civil penalties for unlicensed activity to $1,500 from July 1, 2026. For chimneys there is **no chimney-specific classification** — masonry chimney/fireplace build, rebuild, repoint, reline, and crown work fall under the **C-29 Masonry** specialty (CSLB C-29 scope expressly covers \"fire brick or other material for refractory work\"); factory-built fireplace work can fall under **C-61/D-34 Prefabricated Equipment** (scope includes \"factory built fireplaces and accessories (no masonry facing)\") or a **B General Building** license. Public lookup: **cslb.ca.gov** (license-status search). STATE LAW. Unlicensed persons relying on the exemption may not take jobs of $1,000 or more (or any permit job).\n- CSLB C-29 scope: https://www.cslb.ca.gov/about_us/library/licensing_classifications/Licensing_Classifications_Detail.aspx?Class=C29\n- CSLB AB 2622 bulletin ($1,000, eff. 1/1/2025): https://www.cslb.ca.gov/Resources/IndustryBulletins/2024/AB%202622%20Implementation.FINAL.pdf\n- Bus. & Prof. Code § 7028: https://law.justia.com/codes/california/code-bpc/division-3/chapter-9/article-2/section-7028/\n\n**Sweeping vs. repair — the $1,000 line does the work.** A pure clean-and-inspect sweep that alters nothing structural generally sits **below** the $1,000 contractor threshold and does **not** require a CSLB license (there is no state chimney-sweep license at all — CSIA/NCSG certs are private). The moment the job becomes **repair** — relining, firebox rebuild, repointing, crown or masonry cap work — it is C-29 contractor work needing a license once it reaches $1,000 or needs a permit. So a homeowner should expect the sweep to be uncredentialed by the state but the **repair** contractor to be CSLB-licensed. *(The sweep-only exemption rests on the § 7048 $1,000 minor-work threshold, not a named sweep carve-out — a threshold reading, not a statutory sweep exemption.)*"
+    },
+    {
+      "number": "2",
+      "key": "qualified-gap",
+      "anchor": "qualified-gap",
+      "group": "licensing",
+      "rawHeading": "2 · Registered-vs-qualified gap (GOV/REF)",
+      "researchTitle": "Registered-vs-qualified gap",
+      "title": "What the credential does not test",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": null,
+      "markdown": "The CSLB C-29 exam tests **masonry trade knowledge plus California law, safety, and business** — not flue diagnosis, draft, or NFPA 211 inspection method. A C-29 holder may be a competent bricklayer who has never performed a Level 2 chimney inspection. And \"licensed and bonded\" is marketing shorthand: the CSLB **contractor bond is only $25,000** and exists to backstop code/consumer violations, not to certify chimney competence. Individual certifications (CSIA CCS/C-DET; NCSG CCP/CCR) remain the real competence signal on top of the license. NATIONAL STANDARD (NFPA 211) fills the gap the license leaves."
+    },
+    {
+      "number": "3",
+      "key": "home-sale",
+      "anchor": "home-sale",
+      "group": "home-sale",
+      "rawHeading": "3 · Home sale (GOV — high on structure; form lines checked Sep 2026 against a form copy)",
+      "researchTitle": "Home sale",
+      "title": "Seller disclosure when a home sells",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on structure; form lines checked Sep 2026 against a form copy",
+      "markdown": "California has a **strong, non-waivable disclosure.** The **Transfer Disclosure Statement (TDS)**, **Civil Code § 1102 et seq.**, is mandatory on sales of **1–4 residential units** and **cannot be waived even in an \"as is\" sale** (§ 1102.1 legislative intent). The TDS feature checklist (Section II.A) lists **\"Fireplace(s) in ___\"** and **\"Carbon Monoxide Device(s)\"** among home features; the Section II.B defect list (walls, roof, foundation, electrical, plumbing, \"other structural components,\" etc.) has **no discrete chimney line** — a chimney defect is disclosed, on an **actual-knowledge** basis, only via the general structural/explanation prose. (Earlier drafts said the form mentions a \"chimney sweep\" — not found on the current TDS; removed.) Separately, the **Natural Hazard Disclosure Statement (Civil Code § 1103 et seq.)** requires disclosure of whether the home sits in a **Fire Hazard Severity Zone** (Gov. Code § 51178/§ 51182) — directly relevant to the WUI rules below. No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD.\n- TDS statute: https://law.justia.com/codes/california/2009/civ/1102-1102.17.html\n- NHD § 1103.2: https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1103.2."
+    },
+    {
+      "number": "4",
+      "key": "remedies",
+      "anchor": "remedies",
+      "group": "remedies",
+      "rawHeading": "4 · Consumer remedies (GOV — high confidence; § 7031 is the lever)",
+      "researchTitle": "Consumer remedies",
+      "title": "Consumer remedies and cancellation rights",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high confidence; § 7031 is the lever",
+      "markdown": "The homeowner's biggest weapon is **Bus. & Prof. Code § 7031**: an **unlicensed** contractor **cannot sue to collect payment** (the \"shield\"), and a homeowner may **sue to disgorge ALL compensation already paid** to an unlicensed contractor — labor and materials, even if the work was good and even if the homeowner knew (the \"sword,\" § 7031(b)). No comparable homeowner lever exists in the launch set. On top: **home-solicitation (door-to-door) contracts carry a 3-business-day right to cancel — 5 business days for senior citizens on contracts since Jan 1, 2021 — under Civil Code § 1689.5–1689.7 (§ 1689.6)**; from Jan 1, 2026, **AB 1327** requires home-improvement contracts to include an email address and lets buyers cancel by email. This is the exact mechanic that defeats a \"we noticed your chimney\" scare-sale. Broader fraud remedies run through the **Consumers Legal Remedies Act (Civil Code § 1750 et seq.; § 1780 allows actual + punitive damages, up to $5,000 extra for seniors/disabled, plus fees)** and the **Unfair Competition Law (Bus. & Prof. Code § 17200; restitution + injunction, no punitive)**. Complaints: CSLB and the AG. STATE LAW.\n- § 7031: https://law.justia.com/codes/california/code-bpc/division-3/chapter-9/article-2/section-7031/\n- 3-day/5-day cancel § 1689.6: https://law.justia.com/codes/california/code-civ/division-3/part-2/title-5/chapter-2/section-1689-6/"
+    },
+    {
+      "number": "5",
+      "key": "permits",
+      "anchor": "permits",
+      "group": "permits",
+      "rawHeading": "5 · Permits & codes (GOV — high on code edition; spark-arrestor mandate unverified)",
+      "researchTitle": "Permits & codes",
+      "title": "Permits and building codes",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high on code edition; spark-arrestor mandate unverified",
+      "markdown": "California has a **statewide, mandatory building-standards code — Title 24 (California Building Standards Code)** — including the **California Residential Code (CRC)** and **California Building Code (CBC)**, IRC/IBC-based with state amendments, updated on a triennial cycle — the **2025 edition (CRC based on the 2024 IRC) has been in effect since January 1, 2026** (Building Standards Commission). **CRC Chapter 10 governs chimneys and fireplaces.** In the model IRC, **R1003.9.1 requires masonry chimneys to have a concrete/metal/stone cap** with a drip edge, and **R1003.9.2 sets specifications for a spark arrestor where one is installed**. *Whether California's adopted CRC amends R1003.9.2 into a statewide mandate on every solid-fuel chimney is NOT VERIFIED (adopted text is paywalled) — do not publish \"spark arresters are mandatory statewide\" until confirmed; many local fire codes and fire districts do require them.* Relines, rebuilds, crowns, and solid-fuel appliance installs are permit work; a routine sweep is not. Masonry chimneys also carry **seismic anchorage/reinforcement requirements** (CRC R1003 / CBC Ch. 21) unusual outside the West. STATE LAW.\n- 2025 Title 24 effective 1/1/2026: https://www.dgs.ca.gov/bsc/codes\n- CRC Ch. 10 (2025): https://up.codes/viewer/california/ca-residential-code-2025/chapter/10/chimneys-and-fireplaces"
+    },
+    {
+      "number": "6",
+      "key": "co-law",
+      "anchor": "co-law",
+      "group": "co",
+      "rawHeading": "6 · CO law (GOV — high; covers existing homes and resale)",
+      "researchTitle": "CO law",
+      "title": "Carbon monoxide and smoke alarm law",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high; covers existing homes and resale",
+      "markdown": "The **Carbon Monoxide Poisoning Prevention Act of 2010 (SB 183; Health & Safety Code § 13260 et seq.; owner duty at § 17926)** requires a State-Fire-Marshal-approved **CO device in every existing dwelling unit with a fossil-fuel burning heater or appliance, a fireplace, or an attached garage** (\"fossil fuel\" expressly includes wood) — single-family since **July 1, 2011**, other units since **Jan 1, 2013**, hotel/motel units since Jan 1, 2017. Because it is a standing requirement on **existing** homes, it surfaces at **resale** (the TDS asks about \"Carbon Monoxide Device(s)\") and at permit/remodel; § 17926 limits a buyer's remedy for noncompliance at transfer to actual damages up to $100. Violation is an infraction (max $200) after a 30-day cure notice. A permitted chimney job is the natural moment to confirm alarms outside each sleeping area. STATE LAW.\n- § 17926: https://law.justia.com/codes/california/code-hsc/division-13/part-1-5/chapter-2/section-17926/\n- SB 183 chaptered: https://www.leginfo.ca.gov/pub/09-10/bill/sen/sb_0151-0200/sb_183_bill_20100507_chaptered.pdf"
+    },
+    {
+      "number": "7",
+      "key": "solid-fuel",
+      "anchor": "solid-fuel",
+      "group": "permits",
+      "rawHeading": "7 · Solid fuel / environmental (GOV — high; California's differentiator, and it's huge)",
+      "researchTitle": "Solid fuel / environmental",
+      "title": "Solid fuel and environmental rules",
+      "evidence": [
+        "GOV"
+      ],
+      "confidenceNote": "high; California's differentiator, and it's huge",
+      "markdown": "This is where California is unlike every other launch state — **wildfire law is real AND burn law is real.** Two overlapping regimes:\n\n**(a) Wildfire / WUI.** Homes in **Fire Hazard Severity Zones** and **Wildland-Urban Interface (WUI) Fire Areas** must meet **CBC Chapter 7A / CRC R337** ignition-resistant construction (ember-resistant vents, roofing, etc.), and owners must maintain **defensible space to 100 ft under Public Resources Code § 4291**, which also requires removing any part of a tree **within 10 feet of the outlet of a chimney or stovepipe** (PRC § 4291, 2025 text; https://law.justia.com/codes/california/code-prc/division-4/part-2/chapter-3/section-4291/). (The current § 4291 text contains **no chimney-screen/spark-arrester requirement**; a spark arrester is a wildfire best practice and a local-code requirement in many fire districts — statewide mandate unverified, see § 5.) STATE LAW · applies most in SRA/VHFHSZ foothill and mountain counties.\n\n**(b) No-burn-day air-district regimes (LOCAL — name the three big ones).** Wood burning is banned on forecast bad-air days, enforced by air districts, not the state:\n- **Bay Area AQMD — \"Spare the Air\"** winter burn bans under **Regulation 6, Rule 3** (October 1, 2025 amendments lowered the mandatory-burn-ban trigger to a 24-hour forecast PM2.5 of 25 µg/m³; open-hearth fireplaces cannot qualify for the sole-heat exemption). https://www.baaqmd.gov/en/rules-and-compliance/rules/reg-6-rule-3-woodburning-devices\n- **South Coast AQMD (LA basin) — \"Check Before You Burn,\" Rule 445** (Nov–Feb no-burn days; Rule 445 also bars permanently installed wood-burning devices in new construction). https://www.aqmd.gov/docs/default-source/rule-book/rule-iv/rule-445.pdf\n- **San Joaquin Valley APCD — \"Check Before You Burn,\" Rule 4901** (Nov–Feb curtailment; notably, under Rule 4901 § 5.2.2 (amended May 18, 2023) **no one may sell or transfer real property containing a wood burning heater unless each heater is EPA/NSPS-certified, an exempt pellet heater, or rendered permanently inoperable and removed**). https://ww2.valleyair.org/media/h0eliaec/rule-4901.pdf\n\nEPA/AQMD woodstove **change-out rebate** programs run across these districts. NATIONAL STANDARD (EPA woodstove certification) underpins all three. This section alone justifies a California-specific page."
+    },
+    {
+      "number": "8",
+      "key": "scams",
+      "anchor": "scams",
+      "group": "remedies",
+      "rawHeading": "8 · Scam landscape (GOV/REF — partial; pull city specifics before publish)",
+      "researchTitle": "Scam landscape",
+      "title": "Scam patterns and enforcement",
+      "evidence": [
+        "GOV",
+        "REF"
+      ],
+      "confidenceNote": "partial; pull city specifics before publish",
+      "markdown": "The enforcement hook is real and citable: **CSLB's Statewide Investigative Fraud Team (SWIFT)** runs weekly undercover stings on unlicensed contractors and partners with county DAs; unlicensed bidding on jobs of $1,000+ (or any permit job) is the target. The door-knock \"we noticed your chimney\" pitch is a textbook **home-solicitation (§ 1689) + § 7028 unlicensed** violation, and § 7031 lets the homeowner claw back everything paid. **Specific CA chimney-sweep-named enforcement actions: NOT YET CONFIRMED — re-run search for a named case before publish.** https://www.cslb.ca.gov/consumers/report_unlicensed_activity/What_Is_Illegal_Contractor_Activity.aspx"
+    },
+    {
+      "number": "9",
+      "key": "season",
+      "anchor": "season",
+      "group": "season",
+      "rawHeading": "9 · Season calendar",
+      "researchTitle": "Season calendar",
+      "title": "Season calendar",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "Wide climate spread. Coastal/SoCal burn season is short (~Nov–Feb) and overlaps directly with air-district no-burn season; Sierra/foothill/mountain counties burn ~Oct–Apr. Rush: OCT–DEC (pre-holiday + burn-ban onset). Best booking: APR–AUG. Flag no-burn-day calendars alongside the sweep calendar — unique to CA content."
+    },
+    {
+      "number": "10",
+      "key": "price-seeding",
+      "anchor": "price-seeding",
+      "group": null,
+      "rawHeading": "10 · Price seeding",
+      "researchTitle": "Price seeding",
+      "title": "Price seeding (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "California labor runs **well above national** across the board; **San Francisco Bay Area, coastal, and Los Angeles metros are the highest** in the country, Central Valley and inland lower but still above national. Regionalize sharply upward for coastal metros."
+    },
+    {
+      "number": "11",
+      "key": "table-row",
+      "anchor": "table-row",
+      "group": null,
+      "rawHeading": "11 · /rights table row",
+      "researchTitle": "/rights table row",
+      "title": "/rights table row (internal)",
+      "evidence": [],
+      "confidenceNote": null,
+      "markdown": "License: **YES — CSLB state license, required for jobs of $1,000+ or any permit job (minor-work exemption, Bus. & Prof. Code § 7048, per AB 2622 eff. 1/1/2025); chimney = C-29 Masonry or C-61/D-34 (factory-built fireplaces); no sweep license** · Registration: **CSLB license regime (bond $25k); § 7031 disgorgement lever** · Disclosure law: **YES, non-waivable TDS (Civ. Code § 1102) — \"Fireplace(s)\" and \"Carbon Monoxide Device(s)\" on feature checklist; no discrete chimney defect line; plus fire-zone NHD (§ 1103)** · 3-day cancel: **YES (Civ. Code § 1689.5–1689.7; 5 days seniors)** · CO law: **existing homes + resale (H&S § 17926)** · Lookup: cslb.ca.gov"
+    }
+  ],
+  "story": {
+    "heading": "The story",
+    "markdown": "California is the **flagship, and it BREAKS the master finding.** Everywhere else the pattern held: strong license ⇄ weak disclosure (MD, VA) or no license ⇄ strong disclosure (IL, OH). California **has both** — a genuine CSLB license with the punishing § 7031 disgorgement remedy **and** a mandatory, non-waivable Transfer Disclosure Statement that names the fireplace. The inverse correlation simply does not bind here, because California layers a third axis the correlation never contemplated: **the hearth is regulated as a wildfire and air-quality question** — WUI ignition-resistant construction (CBC Ch. 7A / CRC R337), defensible-space law that reaches the chimney outlet (PRC § 4291's 10-foot tree clearance), and then piled on top are the air-district no-burn-day regimes (Spare the Air, Check Before You Burn), with San Joaquin Valley even policing uncertified stoves at the point of sale. So the two consumer messages are unusually strong and mutually reinforcing: **hire a CSLB-licensed C-29 (unlicensed work means you can claw every dollar back under § 7031), and in fire country treat the cap/arrester and clearance around the chimney as wildfire defense** — check your local fire district's arrester rule."
+  },
+  "faqSeeds": null,
+  "table": {
+    "license_regime": "state license (CSLB; required for jobs $1,000+ or any permit job, Bus. & Prof. Code § 7048)",
+    "registration_name": "CSLB contractor license (C-29 Masonry; C-61/D-34 factory-built fireplaces)",
+    "disclosure_law": "Yes (mandatory, non-waivable TDS, Civ. Code § 1102)",
+    "chimney_item_on_form": "Partial (Fireplace(s) and CO Device(s) on feature checklist; no discrete chimney defect line)",
+    "three_day_cancel": "Yes (3 business days; 5 for seniors, Civ. Code § 1689.6)",
+    "co_law": "Broad (all existing dwellings with fossil-fuel appliance/fireplace/attached garage, H&S § 17926)",
+    "lookup_url": "cslb.ca.gov",
+    "researched_date": "2026-09-15"
+  },
+  "tableStatus": "IN TABLE",
+  "summary": {
+    "source": "§11",
+    "license_regime": "YES — CSLB state license, required for jobs of $1,000+ or any permit job (minor-work exemption, Bus. & Prof. Code § 7048, per AB 2622 eff. 1/1/2025); chimney = C-29 Masonry or C-61/D-34 (factory-built fireplaces); no sweep license",
+    "registration_name": "CSLB license regime (bond $25k); § 7031 disgorgement lever",
+    "disclosure_law": "YES, non-waivable TDS (Civ. Code § 1102) — \"Fireplace(s)\" and \"Carbon Monoxide Device(s)\" on feature checklist; no discrete chimney defect line; plus fire-zone NHD (§ 1103)",
+    "chimney_item_on_form": "",
+    "three_day_cancel": "YES (Civ. Code § 1689.5–1689.7; 5 days seniors)",
+    "co_law": "existing homes + resale (H&S § 17926)",
+    "lookup_url": "cslb.ca.gov"
+  },
+  "tableRowStale": false,
+  "lastVerified": "2026-09-15",
+  "provenance": "PUBLIC RECORD",
+  "verdictGrid": [
+    {
+      "id": "verdict-license",
+      "label": "License required?",
+      "answer": "YES",
+      "note": "CSLB state license, required for jobs of $1,000+ or any permit job (minor-work exemption, Bus.…",
+      "anchor": "license",
+      "rule": "license:YES",
+      "derivedFrom": "§11: license_regime",
+      "evidence": null
+    },
+    {
+      "id": "verdict-exam",
+      "label": "Exam tests chimney skill?",
+      "answer": "NO",
+      "note": "The credential does not test chimney or flue work",
+      "anchor": "qualified-gap",
+      "rule": "exam:§2-negative",
+      "derivedFrom": "§2 text",
+      "evidence": "The CSLB C-29 exam tests masonry trade knowledge plus California law, safety, and business — not flue diagnosis, draft, or NFPA 211 inspection method."
+    },
+    {
+      "id": "verdict-sale",
+      "label": "Inspection required at sale?",
+      "answer": "NO",
+      "note": "No chimney inspection mandated at transfer",
+      "anchor": "home-sale",
+      "rule": "inspection:§3-negative",
+      "derivedFrom": "§3 text",
+      "evidence": "No inspection is mandated at transfer; NFPA 211 Level 2 stays a NATIONAL STANDARD. - TDS statute: https://law.justia.com/codes/california/2009/civ/1102-1102.17.html - NHD § 1103.2…"
+    },
+    {
+      "id": "verdict-cancel",
+      "label": "Right to cancel",
+      "answer": "YES",
+      "note": "YES (Civ. Code § 1689.5–1689.7; 5 days seniors)",
+      "anchor": "remedies",
+      "rule": "cancel:YES",
+      "derivedFrom": "§11: three_day_cancel",
+      "evidence": null
+    },
+    {
+      "id": "verdict-co",
+      "label": "CO alarm required in your home?",
+      "answer": "SEE SECTION",
+      "note": "existing homes + resale (H&S § 17926)",
+      "anchor": "co-law",
+      "rule": "co:unmatched",
+      "derivedFrom": "§11: co_law",
+      "evidence": null
+    },
+    {
+      "id": "verdict-sue",
+      "label": "Can an unregistered contractor sue you?",
+      "answer": "NO",
+      "note": "Where a license or registration is required, an unlicensed contractor cannot sue to collect",
+      "anchor": "remedies",
+      "rule": "sue:§4-sentence",
+      "derivedFrom": "§4 text",
+      "evidence": "Code § 7031: an unlicensed contractor cannot sue to collect payment (the \"shield\"), and a homeowner may sue to disgorge ALL compensation already paid to an unlicensed contractor — labor and materials, even if the work was good and even if…"
+    }
+  ],
+  "h1": "California: some chimney work needs a state license. Here's what that means.",
+  "metaDescription": "California chimney & fireplace laws: state licensing, seller disclosure, right to cancel and CO alarm rules, with statutes cited.",
+  "municipal": {
+    "cities": null,
+    "derivedFrom": null
+  },
+  "season": {
+    "rush": [
+      10,
+      11,
+      12
+    ],
+    "best": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "rushParsed": true,
+    "bestParsed": true,
+    "note": "Wide climate spread. Coastal/SoCal burn season is short (~Nov–Feb) and overlaps directly with air-district no-burn season; Sierra/foothill/mountain counties burn ~Oct–Apr. Rush: OCT–DEC (pre-holiday + burn-ban onset). Best booking: APR–AUG. Flag no-burn-day calendars alongside the sweep calendar — unique to CA content."
+  },
+  "faq": [
+    {
+      "id": "faq-what-to-do",
+      "q": "What should I check before hiring a chimney company in California?",
+      "a": "State licensing: YES — CSLB state license, required for jobs of $1,000+ or any permit job (minor-work exemption, Bus. & Prof. Code § 7048, per AB 2622 eff. 1/1/2025); chimney = C-29 Masonry or C-61/D-34 (factory-built fireplaces); no sweep license. Registration or credential: CSLB license regime (bond $25k); § 7031 disgorgement lever. Seller disclosure at sale: YES, non-waivable TDS (Civ. Code § 1102) — \"Fireplace(s)\" and \"Carbon Monoxide Device(s)\" on feature checklist; no discrete chimney defect line; plus fire-zone NHD (§ 1103). Right to cancel a sale made at your home: YES (Civ. Code § 1689.5–1689.7; 5 days seniors). Carbon monoxide alarm law: existing homes + resale (H&S § 17926). Where to check a contractor: cslb.ca.gov. Then ask the eight questions below, get the inspection findings in writing with photos, and never sign for \"emergency\" work on the day of a door-knock.",
+      "expanded": true,
+      "derivedFrom": "verified summary row (§11)"
+    },
+    {
+      "id": "faq-home-sale",
+      "q": "Is a chimney inspection required when a home sells in California?",
+      "a": "California has a strong, non-waivable disclosure. The Transfer Disclosure Statement (TDS), Civil Code § 1102 et seq., is mandatory on sales of 1–4 residential units and cannot be waived even in an \"as is\" sale (§ 1102.1 legislative intent). The TDS feature checklist (Section II.A) lists \"Fireplace(s) in _\" and \"Carbon Monoxide Device(s)\" among home features; the Section II.B defect list (walls, roof, foundation, electrical, plumbing, \"other structural components,\" etc.) has no discrete chimney line — a chimney defect is disclosed, on an actual-knowledge basis, only via the general structural/explanation prose. (Earlier drafts said the form mentions a \"chimney sweep\" — not found on the current TDS; removed.) Separately, the Natural Hazard Disclosure Statement (Civil Code § 1103 et seq.) requires disclosure of whether the home sits in a Fire Hazard Severity Zone (Gov.",
+      "expanded": false,
+      "derivedFrom": "§3 text"
+    },
+    {
+      "id": "faq-cancel",
+      "q": "Can I cancel a chimney contract I signed at my door in California?",
+      "a": "The homeowner's biggest weapon is Bus. & Prof. Code § 7031: an unlicensed contractor cannot sue to collect payment (the \"shield\"), and a homeowner may sue to disgorge ALL compensation already paid to an unlicensed contractor — labor and materials, even if the work was good and even if the homeowner knew (the \"sword,\" § 7031(b)). No comparable homeowner lever exists in the launch set. On top: home-solicitation (door-to-door) contracts carry a 3-business-day right to cancel — 5 business days for senior citizens on contracts since Jan 1, 2021 — under Civil Code § 1689.5–1689.7 (§ 1689.6); from Jan 1, 2026, AB 1327 requires home-improvement contracts to include an email address and lets buyers cancel by email.",
+      "expanded": false,
+      "derivedFrom": "§4 text"
+    }
+  ],
+  "compare": null
+}

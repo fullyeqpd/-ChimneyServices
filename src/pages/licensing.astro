@@ -1,0 +1,171 @@
+---
+import Base from '../layouts/Base.astro';
+import Chip from '../components/Chip.astro';
+import Glyph from '../components/Glyph.astro';
+import BeforeYouRely from '../components/BeforeYouRely.astro';
+import { getLicensing } from '../lib/content';
+import { fixCertOrder as fx } from '../lib/markdown';
+import { CATEGORY_LABEL, CATEGORY_ORDER, splitUrls, urlLabel } from '../lib/licensing';
+import { ORG_NAME, SITE_URL, abs, monthYear, latest, LICENSING_CSV } from '../lib/site';
+
+const lic = getLicensing();
+const path = '/licensing';
+const title = `Chimney & Hearth Contractor Licensing by State — Trade-by-Trade (2026) | ${ORG_NAME}`;
+const description = 'Chimney and hearth licensing by state and trade: sweeping, stove installs, flashing and gas work, with insurance rules and statute sources.';
+const lastChecked = latest(lic.states.map((s) => s.lastChecked));
+const citedAs = monthYear(lastChecked);
+const sortRows = <T extends { category_slug: string }>(rows: T[]) =>
+  [...rows].sort((a, b) => CATEGORY_ORDER.indexOf(a.category_slug) - CATEGORY_ORDER.indexOf(b.category_slug));
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Chimney & hearth licensing by state', item: abs(path) },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Chimney & hearth contractor licensing by state and trade',
+    description,
+    mainEntityOfPage: abs(path),
+    dateModified: lastChecked,
+    author: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL },
+    publisher: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL, '@id': `${SITE_URL}/#organization` },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Chimney & hearth licensing matrix (Chimney.Services)',
+    description:
+      'State × trade matrix of credentials required for chimney sweeping, stove installation, chimney flashing, gas fireplace service and gas log installation: credential, issuing body, statute, dollar threshold, exam, local overlay, sources, confidence and check date.',
+    url: abs(path),
+    creator: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL },
+    dateModified: lastChecked,
+    isAccessibleForFree: true,
+    spatialCoverage: { '@type': 'Place', name: 'United States' },
+    variableMeasured: ['credential_required', 'credential_name', 'issuing_body', 'statute', 'dollar_threshold', 'exam', 'local_overlay', 'confidence'],
+    distribution: [{ '@type': 'DataDownload', encodingFormat: 'text/csv', contentUrl: abs(LICENSING_CSV) }],
+  },
+];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd} modified={lastChecked} citedAs={citedAs} section="licensing">
+  <nav class="crumb" aria-label="Breadcrumb">UNITED STATES / LICENSING BY TRADE</nav>
+  <h1>Who needs a license to work on your chimney? Every state, trade by trade</h1>
+  <p class="badge-date">Checked {citedAs}<span class="dot">·</span>Laws as cited<span class="dot">·</span>{lic.rowCount} records · {lic.states.length} jurisdictions</p>
+  <p class="chips"><Chip kind="muted">Public record</Chip><Chip kind="national" /></p>
+  <div class="band">
+    <p class="band__title">How to read this</p>
+    <p>This matrix comes from our July 2026 licensing research. It has not been through the September verification pass that the state rights pages have — where a rights page and this table disagree, the rights page is newer. Confidence and check date are shown on every record.</p>
+  </div>
+
+  <section aria-labelledby="findings" id="headline-findings">
+    <h2 id="findings">What did the licensing research find?</h2>
+
+    <div class="read" id="gas-vs-chimney">
+      <h3>Gas work is often licensed harder than chimney work</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#gas-vs-chimney">#gas-vs-chimney</a><span>CHECKED JUL 2026</span></p>
+      <div class="prose">
+        <p>In every Southern state we researched, the gas side of hearth work is licensed more tightly than the chimney side. Texas licenses gas work through its plumbing and propane regulators while chimney work needs no state credential at any price, and North Carolina has no dollar threshold for gas licensure but a $40,000 threshold for its general contractor license. Most Northeastern and Midwestern states show the same mismatch, while Maryland and Michigan license both sides and Indiana neither. On the Plains the pattern inverts: Missouri, Kansas, South Dakota and Nebraska have no statewide license on either side, so "licensed" there is usually a city fact. In the West, Washington and Montana show no mismatch, for opposite reasons. The corollary holds nationally: sweeping requires no state credential in 50 of 51 jurisdictions, with Vermont's sweep certificate as the exception.</p>
+      </div>
+    </div>
+
+    <div class="read" id="certifications-in-law">
+      <h3>Where private certifications are written into law</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#certifications-in-law">#certifications-in-law</a><span>CHECKED JUL 2026</span></p>
+      <div class="prose">
+        <p>In a handful of jurisdictions an industry certification is part of the state credential itself. Rhode Island's Decorative Heating Appliances Limited II license requires a current certification from the National Chimney Sweep Guild (NCSG) or the National Fireplace Institute (NFI). New Jersey's Master Hearth Specialist license requires NFI Master Hearth Professional certification plus five years of experience. Connecticut uses an NFI hearth course as an eligibility requirement for a gas license, and Iowa's Hearth Systems Specialty License lets NFI certification stand in for the state exam. Oklahoma goes furthest: for its Fueled Hearth Product Work license, the NFI exam is the licensing exam. Vermont's sweep certificate requires a private chimney certification such as CSIA. In these states a certification badge is the engine of the license, not an extra.</p>
+      </div>
+    </div>
+
+    <div class="read" id="named-credentials">
+      <h3>Credentials that name the chimney are rarely the rigorous ones</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#named-credentials">#named-credentials</a><span>CHECKED JUL 2026</span></p>
+      <div class="prose">
+        <p>Eight jurisdictions name chimney or hearth work in a credential. Nevada splits masonry chimneys (C-18) from metal and prefab chimneys (C-13). Washington has a "Wood/pellet and gas stove" specialty registration, and its masonry specialty expressly includes chimney cleaning and repair — both without an exam. Arkansas has a named "Chimneys, Fireplaces" home-improvement classification, and Hawaii's C-44 and C-25 classes name free-standing fireplaces, chimneys and prefabricated steel chimneys. Utah names chimney sweepers only to exempt them. The pattern: the credentials that name the trade are registration-grade or built on outside certifications, while exam-grade licenses tend to be generic trades that never mention flues.</p>
+      </div>
+    </div>
+
+    <div class="read" id="licensed-and-insured">
+      <h3>"Licensed and insured" usually means less than it sounds</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#licensed-and-insured">#licensed-and-insured</a><span>CHECKED JUL 2026</span></p>
+      <div class="prose">
+        <p>In roughly 30 of 51 jurisdictions, no state rule gives "insured" any legal content for chimney-scope work — including states with real exam licenses such as Massachusetts, Virginia, Michigan, Arizona and Nevada. Where a minimum exists it is sometimes only attested: Pennsylvania and Connecticut take the contractor's word on the application, and Florida's contractor insurance minimums are proven by signed affidavit with no certificate on file. Hawaii is the strictest: a lapse in liability or workers' compensation coverage forfeits the license automatically. Workers' compensation is the one instrument that can be checked online in every jurisdiction. That is why the "What to ask" list asks for a dated certificate of insurance rather than a promise.</p>
+      </div>
+    </div>
+
+    <div class="read" id="three-countries">
+      <h3>Each region regulates a different thing</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#three-countries">#three-countries</a><span>CHECKED JUL 2026</span></p>
+      <div class="prose">
+        <p>The East tends to regulate the installer, through trade credentials. The South tends to regulate the price of the job, through a ladder of dollar thresholds that runs from Arkansas at $2,000 to North Carolina at $40,000, with Texas and Georgia never licensing chimney work at all. The West tends to regulate the device: which wood stoves may be sold, installed or left in place when a home changes hands. For a homeowner, that means the right first question depends on where you live — who the person is, how big the job is, or what is being installed.</p>
+      </div>
+    </div>
+
+    <div class="read" id="codes-not-national">
+      <h3>The building code is not national either</h3>
+      <p class="read__meta"><a class="anchor-mark" href="#codes-not-national">#codes-not-national</a><span>CHECKED JUL 2026</span></p>
+      <div class="prose">
+        <p>It is common to say that manufacturer's installation instructions are law everywhere through the International Residential Code. That premise fails or changes in a long list of places. Missouri has no statewide building code at all, and Wyoming has no statewide baseline. Vermont has no residential code for owner-occupied single-family homes, Wisconsin uses its own Uniform Dwelling Code, and New Mexico's mechanical side follows the Uniform Mechanical Code. Several states also sit on older code editions than their neighbors, so the edition that applies has to be pinned state by state — and sometimes county by county.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="matrix-h" id="matrix">
+    <h2 id="matrix-h">What does each state require, trade by trade?</h2>
+    <p class="chips">
+      <a class="button" href={LICENSING_CSV} download><Glyph name="download" /> Download the matrix (CSV)</a>
+      <span class="fineprint">Cite as {SITE_URL}/licensing</span>
+    </p>
+    <div class="table-wrap">
+      <table class="data">
+        <caption class="skip">Chimney and hearth licensing by state and trade</caption>
+        <thead>
+          <tr>
+            <th scope="col">Trade</th>
+            <th scope="col">Credential required</th>
+            <th scope="col">Credential</th>
+            <th scope="col">Issuing body</th>
+            <th scope="col">Statute</th>
+            <th scope="col">Threshold</th>
+            <th scope="col">Exam</th>
+            <th scope="col">Local overlay</th>
+            <th scope="col">Confidence · checked</th>
+          </tr>
+        </thead>
+        <tbody>
+          {lic.states.map((st) => (
+            <>
+              <tr class="group" id={`state-${st.abbr.toLowerCase()}`}>
+                <th colspan="9" scope="rowgroup">
+                  <a href={`/${st.slug}/licensing`}>{st.name}</a>
+                  {st.hasRightsPage && <span class="not-in-table"> · <a href={`/${st.slug}/rights`}>rights page</a></span>}
+                </th>
+              </tr>
+              {sortRows(st.rows).map((r) => (
+                <tr>
+                  <th scope="row" style="font-size:.9rem">{CATEGORY_LABEL[r.category_slug] ?? r.category_slug}</th>
+                  <td class="mono">{r.credential_required.toUpperCase()}</td>
+                  <td>{fx(r.credential_name)}</td>
+                  <td>{fx(r.issuing_body)}</td>
+                  <td>{fx(r.statute)}</td>
+                  <td class="mono">{fx(r.dollar_threshold)}</td>
+                  <td>{fx(r.exam)}</td>
+                  <td>{fx(r.local_overlay)}</td>
+                  <td class="mono">{r.confidence} · {r.checked_date}
+                    {splitUrls(r.source_urls).slice(0, 3).map((u) => <div><a href={u} rel="noopener" target="_blank">{urlLabel(u)}</a></div>)}
+                  </td>
+                </tr>
+              ))}
+            </>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <BeforeYouRely dateLabel={citedAs} />
+</Base>
