@@ -4,7 +4,7 @@ import Chip from '../components/Chip.astro';
 import Glyph from '../components/Glyph.astro';
 import EmailCapture from '../components/EmailCapture.astro';
 import { getStates } from '../lib/content';
-import { ORG_NAME, SITE_URL, FOUNDER_LINE, CLOSING_RULE, monthYear, latest, RIGHTS_CSV } from '../lib/site';
+import { ORG_NAME, SITE_URL, CLOSING_RULE, monthYear, latest, RIGHTS_CSV } from '../lib/site';
 
 const states = await getStates();
 const lastVerified = latest(states.map((s) => s.lastVerified));
@@ -46,11 +46,6 @@ const jsonLd = [
     </section>
   </div>
 
-  <section class="box" aria-labelledby="who-h" style="margin-top:32px">
-    <p class="kicker">Who is behind this</p>
-    <h2 id="who-h">Built by Art Kalina</h2>
-    <p>{FOUNDER_LINE} Art has spent years on roofs and in flues, and has seen the fear-based upsell from the inside. This site exists so homeowners can check the law themselves before anyone quotes them a crown repair. <a href="/about#founder">More about the founder and the rules we work by.</a></p>
-  </section>
 
   <section aria-labelledby="how-h" style="margin-top:40px">
     <h2 id="how-h">How does Chimney.Services work?</h2>

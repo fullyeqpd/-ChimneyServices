@@ -1,5 +1,5 @@
 ---
-import { DISCLAIMER, CLOSING_RULE } from '../lib/site';
+import { DISCLAIMER, CLOSING_RULE, PROJECT_OF } from '../lib/site';
 interface Props { citedAs?: string | null }
 const { citedAs } = Astro.props;
 ---
@@ -9,8 +9,8 @@ const { citedAs } = Astro.props;
       <p><strong>Chimney.Services</strong> — the independent reference to chimney and fireplace law, state by state. We recommend no one and take no fees.</p>
       <p class="muted">{DISCLAIMER}</p>
       <p class="muted">{CLOSING_RULE}</p>
-      <p class="muted">Founded by <a href="/about#founder">Art Kalina</a>, founder of ChimneyMonkey.</p>
       <p class="cited">{citedAs ? `Laws cited as of ${citedAs}` : 'Laws cited as of the dates shown on each page'}</p>
+      <p class="muted">{PROJECT_OF}</p>
     </div>
     <nav aria-label="Footer">
       <a href="/rights">Rights</a>

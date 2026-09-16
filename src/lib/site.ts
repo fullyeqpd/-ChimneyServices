@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://www.chimney.services';
 export const ORG_NAME = 'Chimney.Services';
-export const FOUNDER_LINE = 'Founded by Art Kalina, founder of ChimneyMonkey — built by someone who has run the trade, not just scraped it.';
+export const PROJECT_OF = 'A project of Fully EQPD';
 export const CLOSING_RULE = "Where a detail isn't independently verified, we'll always say so.";
 export const DISCLAIMER =
   'Chimney.Services is not a licensing body, certifying body, background screener, or consumer reporting agency. Information only — not legal or professional advice.';

@@ -1,7 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Chip from '../components/Chip.astro';
-import { ORG_NAME, SITE_URL, abs, FOUNDER_LINE, CLOSING_RULE, DISCLAIMER } from '../lib/site';
+import { ORG_NAME, SITE_URL, abs, CLOSING_RULE, DISCLAIMER } from '../lib/site';
 
 const path = '/about';
 const title = `About Chimney.Services — What We Verify and What We Don't | ${ORG_NAME}`;
@@ -60,9 +60,9 @@ const jsonLd = [
     <p>No one who is named on it. We take no fee from any certification body, guild, or contractor, and are not paid to mention anyone named. There are no ads, no sponsored mentions, and no one can pay to appear on or be left off a page.</p>
   </section>
 
-  <section aria-labelledby="who-h" id="founder">
+  <section aria-labelledby="who-h" id="who">
     <h2 id="who-h">Who is behind it?</h2>
-    <p>{FOUNDER_LINE}</p>
+    <p>Chimney.Services is a project of Fully EQPD. It is researched and maintained independently of any chimney company, certification body or contractor.</p>
     <p>{CLOSING_RULE}</p>
   </section>
 </Base>
