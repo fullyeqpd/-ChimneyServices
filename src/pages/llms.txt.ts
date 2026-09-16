@@ -1,11 +1,13 @@
 // Generated at build: every page with a one-line summary, for AI crawlers.
 import type { APIRoute } from 'astro';
 import { getStates, getLicensing } from '../lib/content';
+import { getLearnHubs } from '../lib/learn';
 import { SITE_URL, monthYear, latest } from '../lib/site';
 
 export const GET: APIRoute = async () => {
   const states = await getStates();
   const lic = getLicensing();
+  const hubs = getLearnHubs();
   const last = monthYear(latest(states.map((s) => s.lastVerified)));
   const lines: string[] = [];
   lines.push('# Chimney.Services');
@@ -22,8 +24,19 @@ export const GET: APIRoute = async () => {
   lines.push(`- [Licensing by state and trade](${SITE_URL}/licensing): credentials for sweeping, stove installs, flashing and gas hearth work, plus insurance rules.`);
   lines.push(`- [Licensing matrix CSV](${SITE_URL}/data/licensing-matrix.csv): the licensing matrix as open data.`);
   lines.push(`- [About](${SITE_URL}/about): what Chimney.Services verifies, what it does not, and who pays for it.`);
-  lines.push(`- [Learn](${SITE_URL}/learn): planned chimney guides (not yet published).`);
+  lines.push(
+    hubs.length
+      ? `- [Learn](${SITE_URL}/learn): plain-English chimney guides — short, dated, sourced reads on national standards (NFPA 211, IRC, manufacturer instructions).`
+      : `- [Learn](${SITE_URL}/learn): chimney guides being written (none published yet).`,
+  );
   lines.push('');
+  if (hubs.length) {
+    lines.push('## Learn guides');
+    for (const h of hubs) {
+      lines.push(`- [${h.title}](${SITE_URL}/learn/${h.slug}): ${h.description} (updated ${monthYear(h.updated)})`);
+    }
+    lines.push('');
+  }
   lines.push('## State rights pages');
   for (const s of states) {
     if (s.publishVerdict === 'DO NOT PUBLISH') continue;

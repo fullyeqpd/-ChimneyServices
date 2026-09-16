@@ -5,8 +5,10 @@ interface Props {
   abbr?: string;
   href?: string;
   class?: string;
+  /** Optional glyph for slot-text chips (e.g. a "NATIONAL · NFPA 211" tag). */
+  glyph?: 'landmark' | 'globe' | 'pin';
 }
-const { kind = 'evidence', abbr, href, class: cls } = Astro.props;
+const { kind = 'evidence', abbr, href, class: cls, glyph } = Astro.props;
 const classes = ['chip', kind === 'state' && 'chip--state', kind === 'muted' && 'chip--muted', kind === 'flag' && 'chip--flag', cls].filter(Boolean).join(' ');
 const Tag = href ? 'a' : 'span';
 ---
@@ -14,5 +16,6 @@ const Tag = href ? 'a' : 'span';
   {kind === 'state' && <Glyph name="landmark" />}
   {kind === 'national' && <Glyph name="globe" />}
   {kind === 'local' && <Glyph name="pin" />}
+  {glyph && !['state', 'national', 'local'].includes(kind) && <Glyph name={glyph} />}
   {kind === 'state' ? `${abbr ?? ''} LAW` : kind === 'national' ? 'NATIONAL' : kind === 'local' ? 'LOCAL' : <slot />}
 </Tag>

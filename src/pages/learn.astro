@@ -1,19 +1,19 @@
 ---
 import Base from '../layouts/Base.astro';
-import { ORG_NAME, SITE_URL, abs } from '../lib/site';
+import { getLearnHubs, LEARN_TOPICS } from '../lib/learn';
+import { ORG_NAME, SITE_URL, abs, monthYear } from '../lib/site';
 
 const path = '/learn';
-const title = `Learn: Chimney Guides, Planned Topics | ${ORG_NAME}`;
-const description = 'Chimney.Services Learn: planned guides to chimney inspections, sweeping, rain caps, crowns, flue liners and creosote. Not yet published.';
-const topics = [
-  { slug: 'chimney-inspection', t: 'Chimney inspections', d: 'What NFPA 211 Level 1, 2 and 3 inspections cover, when each is appropriate, and how to read a report.' },
-  { slug: 'chimney-sweeping', t: 'Chimney sweeping', d: 'What a sweep visit includes, how often to schedule one, and what to expect to be shown.' },
-  { slug: 'rain-caps', t: 'Chimney rain caps', d: 'Types, materials, and when a cap needs replacing rather than repair.' },
-  { slug: 'chimney-crown', t: 'Chimney crowns', d: 'What a crown does, how cracks are diagnosed, and repair versus rebuild.' },
-  { slug: 'flue-liners', t: 'Flue liners', d: 'Clay, stainless and cast-in-place liners, and when relining is actually needed.' },
-  { slug: 'creosote', t: 'Creosote', d: 'How creosote builds up, the stages, and how it is removed.' },
-];
-const jsonLd = [
+const hubs = getLearnHubs();
+const publishedSlugs = new Set(hubs.map((h) => h.slug));
+const pending = LEARN_TOPICS.filter((t) => !publishedSlugs.has(t.slug));
+
+const title = `Chimney Guides: Inspections, Sweeping, Caps, Crowns, Liners | ${ORG_NAME}`;
+const description = hubs.length
+  ? 'Plain-English chimney guides: inspections, sweeping, rain caps, crowns, flue liners and creosote. Dated, sourced reads with researched national costs.'
+  : 'Chimney.Services Learn: plain-English guides to chimney inspections, sweeping, rain caps, crowns, flue liners and creosote. First guides coming soon.';
+
+const jsonLd: Record<string, unknown>[] = [
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -23,19 +23,50 @@ const jsonLd = [
     ],
   },
 ];
+if (hubs.length) {
+  jsonLd.push({
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Chimney.Services Learn guides',
+    itemListElement: hubs.map((h, i) => ({ '@type': 'ListItem', position: i + 1, name: h.title, url: abs(`/learn/${h.slug}`) })),
+  });
+}
 ---
 <Base title={title} description={description} path={path} jsonLd={jsonLd} section="learn">
   <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / LEARN</nav>
-  <h1>Chimney guides we're writing next</h1>
-  <p class="lede">One page per topic, grown in place, each read dated and sourced. None of these guides is published yet — this list is the plan, not a table of contents.</p>
-  <ul class="topic-list" aria-label="Planned topics">
-    {topics.map((x, i) => (
-      <li id={x.slug}>
-        <p class="kicker">Planned · {String(i + 1).padStart(2, '0')}</p>
-        <h2 style="font-size:1.35rem;margin:0 0 4px">{x.t}</h2>
-        <p style="margin:0">{x.d}</p>
-      </li>
-    ))}
-  </ul>
-  <p style="margin-top:24px">Until then, the <a href="/rights">state-by-state laws reference</a> is live.</p>
+  <h1>Chimney guides, in short dated reads</h1>
+  <p class="lede">One page per topic. Each read is dated, anchored and sourced to the standard behind it — NFPA 211, the IRC or the manufacturer's instructions. We recommend no one and take no fees.</p>
+
+  {hubs.length > 0 ? (
+    <ul class="topic-list" aria-label="Published guides">
+      {hubs.map((h) => (
+        <li id={h.slug}>
+          <p class="kicker">Updated {monthYear(h.updated)} · {h.reads.length} reads</p>
+          <h2 class="topic-list__title"><a href={`/learn/${h.slug}`}>{h.title}</a></h2>
+          <p>{h.description}</p>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <section class="box" aria-labelledby="no-guides">
+      <h2 id="no-guides">No guides are published yet</h2>
+      <p>The first guides are being written and source-checked now. Until then, the <a href="/rights">state-by-state laws reference</a> is live.</p>
+    </section>
+  )}
+
+  {pending.length > 0 && (
+    <section aria-labelledby="being-written" class="related">
+      <h2 id="being-written">{hubs.length ? 'Still being written' : 'Guides being written'}</h2>
+      <ul class="topic-list">
+        {pending.map((t) => (
+          <li id={t.slug}>
+            <h3 class="topic-list__title">{t.name}</h3>
+            <p>{t.blurb}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <p style="margin-top:24px">For licensing, permits and home-sale rules, see the <a href="/rights">chimney laws by state</a>.</p>
 </Base>

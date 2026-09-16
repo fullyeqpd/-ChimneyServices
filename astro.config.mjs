@@ -14,6 +14,20 @@ const states = fs.existsSync(statesDir)
 const licensingFile = path.resolve('./src/data/licensing.json');
 const licensing = fs.existsSync(licensingFile) ? JSON.parse(fs.readFileSync(licensingFile, 'utf8')) : { states: [] };
 
+// Learn hubs: lastmod = frontmatter `updated` (files starting with "_" are fixtures, skipped unless LEARN_FIXTURES=1).
+const learnDir = path.resolve('./src/content/learn');
+const learnLastmod = Object.fromEntries(
+  (fs.existsSync(learnDir) ? fs.readdirSync(learnDir) : [])
+    .filter((f) => f.endsWith('.md') && (process.env.LEARN_FIXTURES === '1' || !f.startsWith('_')))
+    .filter((f) => !process.env.LEARN_ONLY || process.env.LEARN_ONLY.split(',').map((x) => x.trim()).includes(f))
+    .map((f) => {
+      const fm = fs.readFileSync(path.join(learnDir, f), 'utf8').match(/^---\r?\n([\s\S]*?)\r?\n---/)?.[1] ?? '';
+      const slug = fm.match(/^slug:\s*["']?([a-z0-9-]+)/m)?.[1] ?? f.replace(/^_/, '').replace(/\.md$/, '');
+      const updated = fm.match(/^updated:\s*["']?(\d{4}-\d{2}-\d{2})/m)?.[1];
+      return [`${SITE}/learn/${slug}`, updated];
+    }),
+);
+
 const noindex = new Set(states.filter((s) => s.publishVerdict === 'DO NOT PUBLISH').map((s) => `${SITE}/${s.slug}/rights`));
 const stateLastmod = Object.fromEntries(states.map((s) => [`${SITE}/${s.slug}/rights`, s.lastVerified]));
 const licLastmod = Object.fromEntries(licensing.states.map((s) => [`${SITE}/${s.slug}/licensing`, s.lastChecked]));
@@ -41,7 +55,12 @@ export default defineConfig({
           if (/\/[a-z-]+\/licensing$/.test(u)) return withLastmod(item, licLastmod[u]);
           return undefined;
         },
-        learn: (item) => (/\/learn(\/|$)/.test(strip(item.url)) ? withLastmod(item, rightsLastmod) : undefined),
+        learn: (item) => {
+          const u = strip(item.url);
+          if (u === `${SITE}/learn`) return withLastmod(item, maxDate(Object.values(learnLastmod)) ?? rightsLastmod);
+          if (/\/learn\/[a-z0-9-]+$/.test(u)) return withLastmod(item, learnLastmod[u]);
+          return undefined;
+        },
       },
     }),
   ],

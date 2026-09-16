@@ -1,0 +1,39 @@
+---
+import Chip from './Chip.astro';
+import { getPrices, describeSourceTypes } from '../lib/learn';
+import { monthYear } from '../lib/site';
+interface Props { slug: string; id?: string }
+const { slug, id } = Astro.props;
+const row = getPrices().get(slug);
+if (!row) throw new Error(`[learn] PriceBlock: unknown price slug "${slug}"`);
+const usd = (n: number) => `$${n.toLocaleString('en-US')}`;
+const checked = monthYear(row.checked);
+const sourceSummary = describeSourceTypes(row.sourceTypes);
+---
+<figure class="price-block" id={id} data-price-slug={row.slug}>
+  <figcaption class="price-block__head">
+    <span class="price-block__name">{row.name}</span>
+    <span class="chips">
+      <Chip glyph="globe">NATIONAL RANGE · RESEARCHED</Chip>
+      {checked && <span class="price-block__date">CHECKED {checked.toUpperCase()}</span>}
+    </span>
+  </figcaption>
+  {row.quoteOnly ? (
+    <p class="price-block__quote">Quote after inspection — no reliable national range</p>
+  ) : (
+    <dl class="price-block__range">
+      <div><dt>Low</dt><dd>{usd(row.low!)}</dd></div>
+      <div class="price-block__median"><dt>Median</dt><dd>{usd(row.median!)}</dd></div>
+      <div><dt>High</dt><dd>{usd(row.high!)}</dd></div>
+      <div class="price-block__unit"><dt>Unit</dt><dd>{row.unitLabel}</dd></div>
+    </dl>
+  )}
+  <details class="price-block__how">
+    <summary>How we researched this · {row.sourceCount} {row.sourceCount === 1 ? 'source' : 'sources'}</summary>
+    {row.quoteOnly ? (
+      <p>We checked {row.sourceCount} published {row.sourceCount === 1 ? 'source' : 'sources'}{sourceSummary ? ` (${sourceSummary})` : ''}. They either price this job case by case or disagree too widely to give an honest national number, so we show none. Expect a written quote after someone has looked at the chimney.</p>
+    ) : (
+      <p>Low, median and high are drawn from {row.sourceCount} published {row.sourceCount === 1 ? 'source' : 'sources'}{sourceSummary ? ` (${sourceSummary})` : ''}, checked {checked ?? 'on the date recorded'}. This is a national range, not a quote and not data from listings on this site. Region, roof pitch, access and what an inspection finds all move the real price.</p>
+    )}
+  </details>
+</figure>

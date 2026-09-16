@@ -116,6 +116,98 @@ for (const f of htmlFiles) {
   }
 }
 
+// ---- Learn hubs (/learn/*)
+const learnPages = htmlFiles.filter((f) => /^learn\/[a-z0-9-]+\.html$/.test(path.relative(DIST, f).split(path.sep).join('/')));
+for (const f of learnPages) {
+  const rel = '/' + path.relative(DIST, f).split(path.sep).join('/');
+  const slug = rel.replace(/^\/learn\//, '').replace(/\.html$/, '');
+  const html = fs.readFileSync(f, 'utf8');
+  const text = stripTags(html);
+  const ids = idsByFile.get(rel);
+
+  if (!html.includes(`<link rel="canonical" href="https://www.chimney.services/learn/${slug}"`)) err(f, `canonical is not https://www.chimney.services/learn/${slug}`);
+  if (/\bundefined\b|\bNaN\b|\[object Object\]/.test(text)) err(f, 'visible text contains "undefined", "NaN" or "[object Object]"');
+
+  const types = [];
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      const obj = JSON.parse(m[1]);
+      types.push(obj['@type']);
+      if (obj['@type'] === 'Article') {
+        if (obj.author?.name !== 'Chimney.Services' || obj.author?.['@type'] !== 'Organization') err(f, 'Article author must be Organization Chimney.Services');
+        if (!/^\d{4}-\d{2}-\d{2}$/.test(obj.dateModified ?? '')) err(f, `Article dateModified invalid: ${obj.dateModified}`);
+        for (const part of obj.hasPart ?? []) {
+          const frag = String(part.url).split('#')[1];
+          if (!frag || !ids.has(frag)) err(f, `Article hasPart anchor does not resolve: ${part.url}`);
+        }
+      }
+      if (obj['@type'] === 'FAQPage') {
+        for (const q of obj.mainEntity ?? []) if (!q.name || !q.acceptedAnswer?.text) err(f, 'FAQPage question missing name or answer text');
+      }
+    } catch {
+      /* parse errors already reported above */
+    }
+  }
+  for (const t of ['BreadcrumbList', 'Article']) if (!types.includes(t)) err(f, `missing ${t} JSON-LD`);
+  const detailsCount = (html.match(/<details id="/g) ?? []).length;
+  if (detailsCount > 0 && !types.includes('FAQPage')) err(f, 'FAQ rendered but no FAQPage JSON-LD');
+
+  const reads = [...html.matchAll(/<article class="read learn-read" id="([^"]+)"[\s\S]*?<\/article>/g)];
+  if (reads.length === 0) err(f, 'no reads rendered');
+  for (const [block, anchor] of reads) {
+    if (!block.includes(`<h2 id="${anchor}-title"`)) err(f, `read #${anchor}: missing H2`);
+    if (!block.includes(`class="anchor-mark" href="#${anchor}"`)) err(f, `read #${anchor}: missing anchor mark`);
+    if (!/class="sources"[\s\S]*?<a href="https?:\/\//.test(block)) err(f, `read #${anchor}: no external source link`);
+    if (!/class="jump"/.test(html) || !html.includes(`href="#${anchor}" title=`)) err(f, `read #${anchor}: no jump chip`);
+    if (block.includes('VARIES BY STATE') && !block.includes('class="state-line"')) err(f, `read #${anchor}: VARIES BY STATE without the /rights line`);
+    const outsidePrices = stripTags(block.replace(/<figure class="price-block"[\s\S]*?<\/figure>/g, ''));
+    if (/\$\s?\d/.test(outsidePrices)) warnings.push(`${rel}#${anchor}: dollar figure outside a price block`);
+  }
+  const blockSlugs = new Map();
+  for (const pb of html.matchAll(/<figure class="price-block"([^>]*)>[\s\S]*?<\/figure>/g)) {
+    const b = pb[0];
+    const slugM = pb[1].match(/data-price-slug="([^"]+)"/);
+    const idM = pb[1].match(/\bid="([^"]+)"/);
+    if (!slugM || !idM) err(f, 'price block missing id or data-price-slug');
+    else if (blockSlugs.has(slugM[1])) err(f, `price block "${slugM[1]}" rendered more than once`);
+    else blockSlugs.set(slugM[1], idM[1]);
+    if (!b.includes('NATIONAL RANGE · RESEARCHED')) err(f, 'price block missing NATIONAL RANGE · RESEARCHED chip');
+    const quote = b.includes('Quote after inspection');
+    if (quote && /\$\d/.test(stripTags(b))) err(f, 'quote-only price block shows a dollar figure');
+    if (!quote && (b.match(/<dd>\$[\d,]+<\/dd>/g) ?? []).length !== 3) err(f, 'price block does not show low/median/high');
+  }
+  for (const m of html.matchAll(/<p class="price-ref" data-price-slug="([^"]+)">[\s\S]*?href="#([^"]+)"[\s\S]*?<\/p>/g)) {
+    const at = m.index ?? 0;
+    const blockAt = html.indexOf(`id="${m[2]}"`);
+    if (blockSlugs.get(m[1]) !== m[2]) err(f, `price link for "${m[1]}" does not point at its rendered block`);
+    else if (blockAt === -1 || blockAt > at) err(f, `price link for "${m[1]}" points at a block that is not above it`);
+    if (!m[0].includes('See the researched range above')) err(f, `price link for "${m[1]}" has the wrong text`);
+  }
+}
+const learnIndex = path.join(DIST, 'learn.html');
+if (fs.existsSync(learnIndex)) {
+  const idx = fs.readFileSync(learnIndex, 'utf8');
+  for (const f of learnPages) {
+    const slug = path.basename(f, '.html');
+    if (!idx.includes(`href="/learn/${slug}"`)) errors.push(`learn.html: does not list /learn/${slug}`);
+  }
+  if (/\bplanned\b/i.test(stripTags(idx)) && learnPages.length) errors.push('learn.html: still calls published guides "planned"');
+}
+const llmsText = fs.readFileSync(path.join(DIST, 'llms.txt'), 'utf8');
+for (const f of learnPages) {
+  const slug = path.basename(f, '.html');
+  if (!llmsText.includes(`/learn/${slug})`)) errors.push(`llms.txt: missing /learn/${slug}`);
+}
+const learnSitemap = files.find((f) => /sitemap-learn-\d+\.xml$/.test(f));
+if (learnPages.length) {
+  const xml = learnSitemap ? fs.readFileSync(learnSitemap, 'utf8') : '';
+  for (const f of learnPages) {
+    const slug = path.basename(f, '.html');
+    if (!xml.includes(`<loc>https://www.chimney.services/learn/${slug}</loc>`)) errors.push(`learn sitemap: missing /learn/${slug}`);
+  }
+}
+console.log(`Checked ${learnPages.length} Learn hub page(s).`);
+
 // JSON / txt artifacts
 const llms = fs.readFileSync(path.join(DIST, 'llms.txt'), 'utf8');
 for (const m of llms.matchAll(/\]\(https:\/\/www\.chimney\.services([^)]*)\)/g)) {
