@@ -17,9 +17,18 @@
         "height": 640
       },
       "supplied": [
-        { "label": "Job title", "value": "Chimney technician · owner-operator" },
-        { "label": "Service area", "value": "Chicago North Shore and northwest suburbs" },
-        { "label": "Employer", "value": "Chimney Monkey, 741 Hastings Dr, Buffalo Grove, IL 60089" }
+        {
+          "label": "Job title",
+          "value": "Chimney technician · owner-operator"
+        },
+        {
+          "label": "Service area",
+          "value": "Chicago North Shore and northwest suburbs"
+        },
+        {
+          "label": "Employer",
+          "value": "Chimney Monkey, 741 Hastings Dr, Buffalo Grove, IL 60089"
+        }
       ],
       "suppliedStatement": "Everything in this section is what the person told us about themselves. We have not checked any of it — not the employer, not the address, not the service area, not the photograph — and we do not repeat it as fact.",
       "credentials": [
@@ -46,23 +55,29 @@
           "issuerName": "Society of Professional Rope Access Technicians",
           "title": "Level 1 Rope Access Technician",
           "certNumber": "2602623",
-          "certNumberStatus": "supplied-not-checked",
-          "certNumberNote": "supplied by this person — not checked against the roster",
-          "checkedAt": null,
-          "checkedBy": null,
-          "evidenceClass": "REF",
-          "evidenceNote": "Number supplied by this person; roster search not yet run. SPRAT's verification system runs as a scripted application that cannot be searched without a browser, so no roster check has been completed for this record.",
-          "issuerListedExpiry": null,
-          "expiryNote": "no roster search has been run",
+          "certNumberStatus": "shown",
+          "certNumberNote": "matches the issuer's verification system",
+          "checkedAt": "2026-09-18",
+          "checkedBy": "Chimney.Services",
+          "evidenceClass": "DOC",
+          "evidenceNote": "Searched SPRAT's public Certification Verification System (sprat.org → technician verification application) by SPRAT number 2602623 and last name. Result: First name Artjoms, last name Kalinicenko, SPRAT number 2602623, Rope Access Certification Level 1, Rope Access Expiration 18 September 2029, Work-at-Height certification none.",
+          "issuerListedExpiry": "2029-09-18",
+          "expiryNote": "as displayed by SPRAT's verification system on 2026-09-18",
           "lookupUrl": "https://sprat.org/technician-verification-system/",
           "lookupLabel": "SPRAT — Certification Verification System",
-          "lookupNote": "SPRAT runs a public certification verification system for technicians, at an application linked from that page. It is the place to check the number this record carries — and we have not checked it yet, so a reader who wants it checked has to run it themselves.",
+          "lookupNote": "SPRAT runs a public certification verification system for technicians, linked from that page. It searches by SPRAT number and last name and returns the certification level and the issuer's expiry date — the same search anyone can repeat with the number on this record.",
           "relevance": "Rope access is a way of reaching work on a steep or tall roof safely. It says nothing about chimney knowledge — it is about getting to the flue, not about what happens at it."
         }
       ],
       "noneOnRecord": [
-        { "issuer": "NCSG", "issuerName": "National Chimney Sweep Guild" },
-        { "issuer": "CSIA", "issuerName": "Chimney Safety Institute of America" }
+        {
+          "issuer": "NCSG",
+          "issuerName": "National Chimney Sweep Guild"
+        },
+        {
+          "issuer": "CSIA",
+          "issuerName": "Chimney Safety Institute of America"
+        }
       ],
       "notChecked": [
         {
