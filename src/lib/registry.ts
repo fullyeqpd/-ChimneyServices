@@ -367,12 +367,12 @@ export function aiVerifyPrompt(r: RegistryRecord): string {
     const site = r.companyUrl ? ` (${r.companyUrl})` : '';
     const rights = r.companyRightsPath ? ` (see ${SITE_URL}${r.companyRightsPath})` : '';
     parts.push(
-      `Review the company: ${where}${site} — its public presence, reviews and any state licensing or registration that applies${rights}.`,
+      `Then look up the company, ${where}${site}: how long it has been operating, its Google review count and rating, and any guild membership or state licensing that applies${rights}.`,
     );
   }
 
   parts.push(
-    'Report what you could and could not confirm, with dates. A roster match is not proof of identity, competence, insurance or honesty; do not conclude "safe to hire" or call anyone "verified".',
+    'Answer in at most six short lines, no preamble. One line per certification: CONFIRMED or NOT FOUND, with what the issuer\'s page showed and today\'s date. One line on the company: how established it is, in plain facts (years operating, review count and rating, memberships). If a certification cannot be confirmed, say so first. State facts, not a hiring verdict.',
   );
 
   return parts.join('\n\n');

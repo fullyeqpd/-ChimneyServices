@@ -145,11 +145,8 @@ export function aiReviewPrompt(c: Company): string {
   if (!r) return '';
   const where = `${c.name} (${c.address.city}, ${c.address.region})`;
   return [
-    `Open the ${r.platform} Maps listing for ${where}: ${r.url} — read the most recent reviews and the lowest-rated reviews, not the summary score.`,
-    'Look for patterns across them: upselling or scare-selling of repairs, no-shows and missed appointment windows, complaints about pricing or added charges, and praise that reads as templated or repeated word for word.',
-    'Check how the owner replies to negative reviews — whether a reply answers the complaint or attacks the reviewer.',
-    `Cross-check the company's own site (${c.website}) against this page (${companyUrl(c)}); where the two disagree, say so.`,
-    `Read ${abs(c.statePath)} for what ${c.address.regionName} law does and does not require of a chimney contractor, so you can tell a bad review from a broken rule.`,
-    'Report back plainly: what the reviews show, what they do not, and what you could not check. You cannot confirm that any reviewer is a real customer — say so. Do not conclude "safe to hire", do not call this company "verified", and do not recommend it. Summarize the evidence and leave the decision to the reader.',
+    `Open the ${r.platform} Maps listing for ${where}: ${r.url}. Note the review count and rating, and read the most recent reviews and the lowest-rated ones.`,
+    `Check the company's own site (${c.website}) and this page (${companyUrl(c)}) for how long it has been operating and any guild membership. Read ${abs(c.statePath)} for what ${c.address.regionName} law does and does not require of a chimney contractor.`,
+    'Answer in at most five short lines, no preamble. Line 1: how established this company is, in plain facts — years operating, review count and rating as of today, memberships. Line 2: the strongest pattern in recent positive reviews. Line 3: the most common complaint, if any, and how the owner responds to it. Line 4: anything you could not check. Do not invent numbers; if a figure is not on the page, say so. State facts, not a hiring verdict.',
   ].join('\n\n');
 }
