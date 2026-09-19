@@ -392,6 +392,69 @@ for (const rel of ['/companies.html', '/professionals.html']) {
   if (!llmsRaw.includes(`${SITE_ORIGIN}/${slug})`)) errors.push(`llms.txt: missing /${slug}`);
 }
 
+// ---- /professionals: two audiences, homeowner first. The search is not open,
+// so the records that exist today have to be readable with the script off, and
+// the card has to be orderable without a price being taken on the page.
+{
+  const f = path.join(DIST, 'professionals.html');
+  if (!fs.existsSync(f)) errors.push('/professionals.html: the page is missing from dist');
+  else {
+    const html = fs.readFileSync(f, 'utf8');
+    const text = stripTags(html);
+    const ids = idsByFile.get('/professionals.html');
+    for (const id of ['find', 'order', 'join']) if (!ids.has(id)) err(f, `professionals: no id="${id}"`);
+    // #join predates the split. Anything already pointing at it must still land.
+    if (html.indexOf('id="join"') > html.indexOf('id="order"')) err(f, 'professionals: the #join alias is below the order section');
+    if (html.indexOf('id="find"') > html.indexOf('id="order"')) err(f, 'professionals: the homeowner search is below the order form');
+
+    const findSelect = html.match(/<select[^>]*id="find-state"[\s\S]*?<\/select>/)?.[0];
+    if (!findSelect) err(f, 'professionals: no <select id="find-state"> state picker');
+    else {
+      const options = [...findSelect.matchAll(/<option value="([^"]*)"/g)].map((m) => m[1]).filter(Boolean);
+      if (options.length !== 51) err(f, `professionals: the search picker has ${options.length} states, expected 51`);
+    }
+    if (!/<input[^>]*id="find-zip"/.test(html)) err(f, 'professionals: no optional ZIP field on the search');
+    if (!/>Search<\/button>/.test(html)) err(f, 'professionals: no "Search" button');
+    if (!text.includes('Search opens when the first records are in your state. Records that exist today:')) {
+      err(f, 'professionals: the search result panel does not say when search opens');
+    }
+    // Every record that exists is in the panel, linked, with the script off.
+    const panel = html.match(/<div class="find__panel"[\s\S]*?<\/div>/)?.[0] ?? '';
+    const listed = [...panel.matchAll(/class="find__name" href="\/pro\/([a-z0-9-]+)"/g)].map((m) => m[1]);
+    const recordSlugs = htmlFiles
+      .map((x) => path.relative(DIST, x).split(path.sep).join('/'))
+      .filter((x) => /^pro\/[a-z0-9-]+\.html$/.test(x))
+      .map((x) => path.basename(x, '.html'));
+    for (const slug of recordSlugs) if (!listed.includes(slug)) err(f, `professionals: the search panel does not list /pro/${slug}`);
+    if (!/no fee|take no fee/i.test(text)) err(f, 'professionals: the search does not say there is no fee');
+
+    // The order. A price, an address, an attestation — and no way to pay here.
+    if (!text.includes('Order your ID card — $25')) err(f, 'professionals: the order form is not titled "Order your ID card — $25"');
+    if (!text.includes('$25 · ONE CARD · RECORD PAGE INCLUDED · RENEWS WHEN YOUR CERTIFICATION DOES')) {
+      err(f, 'professionals: the mono price line is missing or reworded');
+    }
+    for (const name of ['addressStreet', 'addressCity', 'addressZip', 'certAttest', 'wantsCard']) {
+      if (!html.includes(`name="${name}"`)) err(f, `professionals: the order form has no ${name} field`);
+    }
+    for (const req of ['wl-street', 'wl-city', 'wl-pro-state', 'wl-zip', 'wl-attest']) {
+      const field = html.match(new RegExp(`<(?:input|select)[^>]*id="${req}"[^>]*>`))?.[0];
+      if (!field) err(f, `professionals: no #${req} field`);
+      else if (!/\srequired\b/.test(field)) err(f, `professionals: #${req} is not required`);
+    }
+    if (!/>Order card — pay after we confirm your certification<\/button>/.test(html)) {
+      err(f, 'professionals: the submit button does not say payment comes after the certification check');
+    }
+    if (!/nothing is ever charged for the record page/i.test(text)) {
+      err(f, 'professionals: does not say the record page is never charged for');
+    }
+    if (!/we email you for one after you order/i.test(text)) err(f, 'professionals: no note about the photo being asked for later');
+    // No payment is processed on this site, so no payment processor may load.
+    for (const bad of [/js\.stripe\.com/, /paypal\.com\/sdk/, /checkout\.[a-z]+\.com/, /<form[^>]*action="https?:/]) {
+      if (bad.test(html)) err(f, `professionals: payment processing on the page (${bad})`);
+    }
+  }
+}
+
 // ---- Home (/): "go to your state" is the first step. The select and its
 // button need JavaScript, so the four-column state index has to stay on the
 // page as the no-JS path to every state.

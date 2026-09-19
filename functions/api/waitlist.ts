@@ -37,7 +37,9 @@ const EMAIL_RE = /^[^\s@,;:<>()[\]\\]+@[^\s@.,;:<>()[\]\\]+(\.[^\s@.,;:<>()[\]\\
 
 const REQUIRED: Record<ListType, string[]> = {
   company: ['company', 'contact', 'email', 'state', 'city'],
-  professional: ['name', 'email', 'state'],
+  // A card has to be posted somewhere, so the address is required with the
+  // order. `state` is the address state — the form asks for it once.
+  professional: ['name', 'email', 'state', 'addressStreet', 'addressCity', 'addressZip'],
 };
 
 /** Every field either list may store, in the order the CSV prints them. */
@@ -50,11 +52,16 @@ const FIELDS = [
   'email',
   'phone',
   'employer',
+  'addressStreet',
+  'addressCity',
   'state',
+  'addressZip',
   'city',
   'website',
   'credentials',
   'certNumbers',
+  'certAttest',
+  'wantsCard',
   'ip',
   'ua',
 ] as const;
@@ -156,6 +163,16 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     return json({ ok: false, error: 'choose at least one certification' }, 400);
   }
 
+  // An order says, in the person's own words, that they hold one of the
+  // certifications they ticked. Nothing is printed or charged on the strength
+  // of it — it is the roster search that decides — but the sentence is on the
+  // record before we go looking.
+  const certAttest = str(body.certAttest, 10) === 'yes';
+  const wantsCard = type === 'professional' && str(body.wantsCard, 10) === 'true';
+  if (wantsCard && !certAttest) {
+    return json({ ok: false, error: 'confirm you hold at least one certification' }, 400);
+  }
+
   const ip = request.headers.get('CF-Connecting-IP') ?? '';
   const ipHash = await hashIp(ip, env.WAITLIST_SALT ?? 'cs');
   if (await overRateLimit(env.WAITLIST, ipHash)) {
@@ -172,11 +189,19 @@ export const onRequestPost: PagesFunction<Env> = async ({ request, env }) => {
     email,
     phone: str(body.phone, 40),
     employer: str(body.employer, 120),
+    addressStreet: str(body.addressStreet, 160),
+    addressCity: str(body.addressCity, 80),
     state: str(body.state, 40),
+    addressZip: str(body.addressZip, 12),
     city: str(body.city, 80),
     website: str(body.website, 200),
     credentials,
     certNumbers: str(body.certNumbers, 200),
+    certAttest,
+    // The card is ordered, never sold on this page: no payment is taken here,
+    // and none is taken at all until a roster search has found the
+    // certification. This flag only says a card was asked for.
+    wantsCard,
     ip: ipHash,
     ua: str(request.headers.get('User-Agent'), 300),
   };

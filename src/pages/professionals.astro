@@ -1,23 +1,41 @@
 ---
-// /professionals — the waiting list for a registry record.
+// /professionals — two audiences, in the order they arrive.
+//
+// A homeowner comes here to find somebody. A technician comes here to be
+// findable. The homeowner goes first, because there are more of them and
+// because the honest answer to their question — "not yet, here is everything
+// that exists today" — is short.
 //
 // A record is an ID card for one claim and no more: a certification appears on
 // the issuer's own public roster under this name, on the date shown. It is not
-// a status, not a badge, and not for sale.
+// a status, not a badge, and not for sale. The $25 buys a printed card and the
+// postage; it buys no place, no rank and no opinion of anybody.
 import Base from '../layouts/Base.astro';
 import BeforeYouRely from '../components/BeforeYouRely.astro';
 import WaitlistForm from '../components/WaitlistForm.astro';
 import { ORG_NAME, SITE_URL, abs } from '../lib/site';
 import { US_STATES, CREDENTIAL_OPTIONS, NO_FEE_LINE, NEVER_SOLD_LINE } from '../lib/waitlist';
-import { getRecords, recordPath } from '../lib/registry';
+import { getRecords, recordPath, orderedCredentials, certifiedLabel, specialtyLabel } from '../lib/registry';
 
 const path = '/professionals';
-const title = `Chimney technician waiting list — get a registry record | ${ORG_NAME}`;
+const title = `Find a chimney professional, or order your ID card | ${ORG_NAME}`;
 const description =
-  "Join the waiting list for a registry record: your NCSG, NFI, CSIA or SPRAT certification checked against the issuer's own roster. No fee, no ranking.";
+  "Find a certified chimney professional near you, or order a $25 ID card and a record page: your certification checked against the issuer's own roster.";
 
-const sample = getRecords()[0];
+const records = getRecords();
+const sample = records[0];
 const samplePath = sample ? recordPath(sample) : '/pro';
+
+/** What each existing record shows in the results list: who, what, where. */
+const found = records.map((r) => ({
+  name: r.name,
+  href: recordPath(r),
+  credentials: orderedCredentials(r).map((c) => `${certifiedLabel(c)} · ${specialtyLabel(c)}`),
+  employer: r.employer ?? null,
+  where: r.employerLocation ?? null,
+}));
+
+const CARD_PRICE_LINE = '$25 · ONE CARD · RECORD PAGE INCLUDED · RENEWS WHEN YOUR CERTIFICATION DOES';
 
 const jsonLd = [
   {
@@ -25,7 +43,7 @@ const jsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: 'Chimney technician waiting list' },
+      { '@type': 'ListItem', position: 2, name: 'Chimney professionals' },
     ],
   },
   {
@@ -47,25 +65,100 @@ const jsonLd = [
 ];
 ---
 <Base title={title} description={description} path={path} jsonLd={jsonLd} section="professionals">
-  <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / TECHNICIAN WAITING LIST</nav>
+  <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / CHIMNEY PROFESSIONALS</nav>
 
   <div class="wl-page">
-    <h1>Technician waiting list — a registry record anyone can check, for the certifications you hold</h1>
+    <h1>Chimney professionals — find one near you, or order your ID card</h1>
     <p class="lede">
-      We are building one record per certified person: an ID-card page that names your certification, says which
-      issuer's own public roster we found it on, and gives any reader a way to run that same search themselves. This is
-      the queue. It costs nothing, and nothing about it is for sale.
+      Two things live on this page. A search for homeowners, which opens state by state as records are made. And the
+      way a technician gets a record: a page naming the certifications you hold, with the issuer's own public roster
+      named as where we found each one — plus a $25 card you can hand to somebody standing in their own hallway.
     </p>
 
-    <section class="wl-section" aria-labelledby="join-h" id="join">
-      <h2 id="join-h">Join the waiting list</h2>
-      <p>Four required answers. We write to you once, when records open.</p>
+    <!-- ================= A. Homeowners ================= -->
+    <section class="wl-section" aria-labelledby="find-h" id="find">
+      <p class="kicker">For homeowners</p>
+      <h2 id="find-h">Find a professional near you</h2>
+      <p>
+        Pick your state. Nobody pays to appear in this search, nobody can pay to be higher in it, and we take no fee
+        from anyone it returns.
+      </p>
+
+      <form class="find" id="find-form" method="get" action="/professionals" data-find>
+        <div class="find__row">
+          <p class="wl-field find__field">
+            <label for="find-state">Your state<span class="wl-req" aria-hidden="true">*</span></label>
+            <select id="find-state" name="state" required>
+              <option value="">Choose your state</option>
+              {US_STATES.map((s) => <option value={s.abbr}>{s.name}</option>)}
+            </select>
+          </p>
+          <p class="wl-field find__field find__field--zip">
+            <label for="find-zip">ZIP <span class="wl-opt">(optional)</span></label>
+            <input
+              id="find-zip"
+              name="zip"
+              type="text"
+              inputmode="numeric"
+              maxlength="10"
+              autocomplete="postal-code"
+              pattern="[0-9]{5}(-[0-9]{4})?"
+            />
+          </p>
+          <p class="find__action">
+            <button class="button" type="submit">Search</button>
+          </p>
+        </div>
+      </form>
+
+      <!-- The answer, in the DOM whether or not the script runs. The button
+           names the state that was chosen; the list below it is the same list
+           either way, because there is nothing to filter yet. -->
+      <div class="find__panel" id="find-results" aria-live="polite">
+        <p class="find__status mono" id="find-status">COMING SOON</p>
+        <p class="find__lead">Search opens when the first records are in your state. Records that exist today:</p>
+        <ul class="find__list">
+          {found.map((r) => (
+            <li class="find__record">
+              <a class="find__name" href={r.href}>{r.name}</a>
+              <span class="find__creds mono">{r.credentials.join(' · ')}</span>
+              {(r.employer || r.where) && (
+                <span class="find__where">{[r.employer, r.where].filter(Boolean).join(' · ')}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+        <p class="fineprint">
+          Each name above links to its record, which says what was checked, on what date, and what was not checked at
+          all. {NEVER_SOLD_LINE}
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= B. Professionals ================= -->
+    <!-- #join was this page's only anchor before there were two audiences.
+         Anything already pointing at it still lands on the order section. -->
+    <span id="join" class="anchor-alias" aria-hidden="true"></span>
+    <section class="wl-section" aria-labelledby="order-h" id="order">
+      <p class="kicker">For professionals</p>
+      <h2 id="order-h">Get your registry record and ID card</h2>
+      <p>
+        Your record page is free and always will be. The card is the physical version of it: one printed card with
+        your record number and a QR code that opens the page, for the doorstep conversation that happens before
+        anyone gets out a phone.
+      </p>
+      <p class="price-line mono">{CARD_PRICE_LINE}</p>
+
+      <h3 class="order-h3" id="order-form-h">Order your ID card — $25</h3>
+      <p>
+        We search the issuer's own public roster for the certifications you name before anything is printed or paid.
+      </p>
 
       <WaitlistForm
         type="professional"
         id="professional-waitlist"
         opensLabel="registry records"
-        button="Join the waiting list"
+        button="Order card — pay after we confirm your certification"
         fieldsClass="wl-fields--two"
       >
         <p class="wl-field">
@@ -80,13 +173,6 @@ const jsonLd = [
         <p class="wl-field">
           <label for="wl-employer">Employer <span class="wl-opt">(optional)</span></label>
           <input id="wl-employer" name="employer" type="text" maxlength="120" autocomplete="organization" />
-        </p>
-        <p class="wl-field">
-          <label for="wl-pro-state">State<span class="wl-req" aria-hidden="true">*</span></label>
-          <select id="wl-pro-state" name="state" required>
-            <option value="">Choose a state</option>
-            {US_STATES.map((s) => <option value={s.abbr}>{s.name}</option>)}
-          </select>
         </p>
 
         <fieldset class="wl-checks wl-field--wide" id="wl-credentials">
@@ -104,13 +190,79 @@ const jsonLd = [
           <input id="wl-certnums" name="certNumbers" type="text" maxlength="200" placeholder="SPRAT 2602623" />
           <span class="wl-hint">Only where the issuer publishes one. Several can go on one line, separated by commas.</span>
         </p>
+
+        <fieldset class="wl-address wl-field--wide">
+          <legend class="wl-legend">Where the card is posted<span class="wl-req" aria-hidden="true">*</span></legend>
+          <div class="wl-address__grid">
+            <p class="wl-field wl-field--wide">
+              <label for="wl-street">Street address<span class="wl-req" aria-hidden="true">*</span></label>
+              <input
+                id="wl-street"
+                name="addressStreet"
+                type="text"
+                required
+                maxlength="160"
+                autocomplete="street-address"
+              />
+            </p>
+            <p class="wl-field">
+              <label for="wl-city">City<span class="wl-req" aria-hidden="true">*</span></label>
+              <input id="wl-city" name="addressCity" type="text" required maxlength="80" autocomplete="address-level2" />
+            </p>
+            <p class="wl-field">
+              <label for="wl-pro-state">State<span class="wl-req" aria-hidden="true">*</span></label>
+              <select id="wl-pro-state" name="state" required autocomplete="address-level1">
+                <option value="">Choose a state</option>
+                {US_STATES.map((s) => <option value={s.abbr}>{s.name}</option>)}
+              </select>
+            </p>
+            <p class="wl-field">
+              <label for="wl-zip">ZIP<span class="wl-req" aria-hidden="true">*</span></label>
+              <input
+                id="wl-zip"
+                name="addressZip"
+                type="text"
+                required
+                inputmode="numeric"
+                maxlength="10"
+                autocomplete="postal-code"
+                pattern="[0-9]{5}(-[0-9]{4})?"
+              />
+            </p>
+          </div>
+          <p class="wl-hint wl-address__note">
+            No photograph is asked for here. We email you for one after you order, and it is printed under the same
+            label the record page uses: supplied — not checked.
+          </p>
+        </fieldset>
+
+        <p class="wl-field--wide wl-attest">
+          <label class="wl-check" for="wl-attest">
+            <input id="wl-attest" name="certAttest" type="checkbox" value="yes" required />
+            <span>
+              I hold at least one certification listed above and will provide the certificate number(s).<span
+                class="wl-req"
+                aria-hidden="true">*</span
+              >
+            </span>
+          </label>
+        </p>
+
+        <input type="hidden" name="wantsCard" value="true" />
       </WaitlistForm>
 
+      <p class="fineprint">
+        Nothing is charged now, and nothing is ever charged for the record page — that is free at every stage. We
+        search the issuer's own public roster first. If the certification is found there, we email you a way to pay
+        the $25 and the card is printed and posted. If it is not found, we write and tell you what the issuer's page
+        showed, and there is nothing to pay.
+      </p>
       <p class="fineprint">{NO_FEE_LINE}</p>
+
     </section>
 
     <section class="wl-section" aria-labelledby="what-h" id="what-you-get">
-      <h2 id="what-h">What are you waiting for, exactly?</h2>
+      <h2 id="what-h">What are you ordering, exactly?</h2>
       <p>
         A record like <a href={samplePath}>{samplePath}</a> — open it first, then decide whether you want one. It makes
         a single claim, printed on the page: a certification appears on the issuer's own public roster under this name,
@@ -132,6 +284,12 @@ const jsonLd = [
           <span class="wl-list__label">Your own words, labeled</span>
           Employer, role, years in the trade and a photograph are shown under a heading that says they were supplied by
           you and not checked by us. We do not repeat them as fact.
+        </li>
+        <li>
+          <span class="wl-list__label">The card, for $25</span>
+          One printed card carrying your record number, the certifications as the issuers name them, the date the
+          rosters were checked, and a QR code that opens your record page. It renews when your certification does. It
+          is a card, not a licence and not a permission to work.
         </li>
         <li>
           <span class="wl-list__label">Verification anyone can repeat</span>
@@ -159,24 +317,161 @@ const jsonLd = [
   </div>
 </Base>
 
+<style>
+  /* ---------- A. Find a professional ---------- */
+  .find {
+    margin: 18px 0 0;
+  }
+  .find__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: 12px 16px;
+  }
+  .find__field {
+    margin: 0;
+    min-width: 220px;
+  }
+  .find__field--zip {
+    min-width: 120px;
+    max-width: 160px;
+  }
+  .find__action {
+    margin: 0;
+  }
+  .find__action .button {
+    padding: 11px 20px;
+  }
+  .find__panel {
+    border-top: 1px solid var(--ink);
+    margin: 22px 0 0;
+    padding: 14px 0 0;
+  }
+  .find__panel:focus-visible {
+    outline: 2px solid var(--ember);
+    outline-offset: 4px;
+  }
+  .find__status {
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ember);
+    margin: 0 0 6px;
+  }
+  .find__lead {
+    margin: 0 0 12px;
+  }
+  .find__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .find__record {
+    display: grid;
+    gap: 2px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .find__name {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  .find__creds {
+    font-size: 0.78rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+  .find__where {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+
+  /* ---------- B. Order the card ---------- */
+  .anchor-alias {
+    display: block;
+    height: 0;
+  }
+  .price-line {
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 0;
+    margin: 16px 0 22px;
+  }
+  .order-h3 {
+    margin-bottom: 6px;
+  }
+  .wl-address {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 4px 0 0;
+    padding: 12px 0 0;
+    min-width: 0;
+  }
+  .wl-address__grid {
+    display: grid;
+    gap: 14px 20px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 620px) {
+    .wl-address__grid {
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+  }
+  .wl-address__note {
+    margin-top: 12px;
+  }
+  .wl-attest {
+    margin: 4px 0 0;
+  }
+  .wl-attest .wl-check {
+    font-size: 0.92rem;
+  }
+
+</style>
+
 <script is:inline>
   (function () {
     // "Certifications held" is a group, and HTML has no required attribute for
     // a group. The first box carries the message so reportValidity has
     // somewhere to point.
     var group = document.getElementById('wl-credentials');
-    if (!group) return;
-    var boxes = [].slice.call(group.querySelectorAll('[data-credential]'));
-    if (!boxes.length) return;
-    function sync() {
-      var any = boxes.some(function (b) {
-        return b.checked;
-      });
-      boxes[0].setCustomValidity(any ? '' : 'Choose at least one certification, or "Other body".');
+    if (group) {
+      var boxes = [].slice.call(group.querySelectorAll('[data-credential]'));
+      if (boxes.length) {
+        var sync = function () {
+          var any = boxes.some(function (b) {
+            return b.checked;
+          });
+          boxes[0].setCustomValidity(any ? '' : 'Choose at least one certification, or "Other body".');
+        };
+        boxes.forEach(function (b) {
+          b.addEventListener('change', sync);
+        });
+        sync();
+      }
     }
-    boxes.forEach(function (b) {
-      b.addEventListener('change', sync);
+
+    // The search. There is nothing to search yet, so the button's whole job is
+    // to say so in the reader's own state and move them to the answer. With
+    // the script off the form is a plain GET back to this page, and the answer
+    // is already sitting below it.
+    var form = document.querySelector('[data-find]');
+    var status = document.getElementById('find-status');
+    var panel = document.getElementById('find-results');
+    if (!form || !status || !panel) return;
+    var sel = form.querySelector('#find-state');
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      if (form.reportValidity && !form.reportValidity()) return;
+      var opt = sel && sel.options[sel.selectedIndex];
+      var where = opt && opt.value ? opt.text : null;
+      status.textContent = where ? 'COMING SOON · ' + where.toUpperCase() : 'COMING SOON';
+      panel.setAttribute('tabindex', '-1');
+      panel.focus();
     });
-    sync();
   })();
 </script>
