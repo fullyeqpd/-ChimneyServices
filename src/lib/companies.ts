@@ -6,7 +6,7 @@
 // provenance — PUBLIC RECORD or REPORTED BY BUSINESS — and nothing on the page
 // is an endorsement. Placement is never sold, here or anywhere on this site.
 import companiesData from '../data/companies.json';
-import { abs } from './site';
+import { MONTH_ABBR, abs } from './site';
 
 /** Where a fact came from. There is no third option on a company page: we
  *  publish nothing here as "verified by Chimney.Services" yet. */
@@ -31,6 +31,23 @@ export interface CompanyPerson {
   role: string | null;
   provenance: Provenance;
   note: string;
+}
+
+/**
+ * A public rating as one platform displayed it on the day we looked. It is a
+ * count of what strangers chose to post, nothing more: we do not read the
+ * reviews, we cannot tell which reviewers were customers, and the numbers move.
+ * It is never used as JSON-LD review markup — this site publishes none.
+ */
+export interface CompanyReviews {
+  platform: string;
+  rating: number;
+  count: number;
+  scale: number;
+  checkedAt: string;
+  checkedAtLabel: string;
+  url: string;
+  provenance: Provenance;
 }
 
 export interface CompanyServiceGroup {
@@ -77,6 +94,7 @@ export interface Company {
     note: string;
     reportedSince: string;
   } | null;
+  reviews: CompanyReviews | null;
   serviceGroups: CompanyServiceGroup[];
   serviceStandardNote: string;
   serviceArea: { counties: string[]; summary: string; towns: string[] };
@@ -102,3 +120,36 @@ export const addressLine = (c: Company) =>
 
 /** Everywhere the company is served, flattened for JSON-LD `areaServed`. */
 export const areaServed = (c: Company) => [...c.serviceArea.counties, ...c.serviceArea.towns];
+
+/** "1097" → "1,097". Counts are read, not computed, so they get thousands marks. */
+export const reviewCount = (n: number) => n.toLocaleString('en-US');
+
+/** "2026-09-19" → "19 SEP 2026", for the mono line under a rating. */
+export function shortDateUpper(iso: string): string {
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return iso.toUpperCase();
+  return `${Number(m[3])} ${MONTH_ABBR[Number(m[2]) - 1].toUpperCase()} ${m[1]}`;
+}
+
+/**
+ * The prompt behind "Check the reviews with your AI".
+ *
+ * It sends the AI to the platform's own listing rather than to us, tells it
+ * which reviews to read (newest and worst, not the summary), names the patterns
+ * worth looking for, and points it at the state rights page so it can tell a
+ * bad review from a broken rule. It closes the same door the registry prompt
+ * closes: summarize evidence, never endorse.
+ */
+export function aiReviewPrompt(c: Company): string {
+  const r = c.reviews;
+  if (!r) return '';
+  const where = `${c.name} (${c.address.city}, ${c.address.region})`;
+  return [
+    `Open the ${r.platform} Maps listing for ${where}: ${r.url} — read the most recent reviews and the lowest-rated reviews, not the summary score.`,
+    'Look for patterns across them: upselling or scare-selling of repairs, no-shows and missed appointment windows, complaints about pricing or added charges, and praise that reads as templated or repeated word for word.',
+    'Check how the owner replies to negative reviews — whether a reply answers the complaint or attacks the reviewer.',
+    `Cross-check the company's own site (${c.website}) against this page (${companyUrl(c)}); where the two disagree, say so.`,
+    `Read ${abs(c.statePath)} for what ${c.address.regionName} law does and does not require of a chimney contractor, so you can tell a bad review from a broken rule.`,
+    'Report back plainly: what the reviews show, what they do not, and what you could not check. You cannot confirm that any reviewer is a real customer — say so. Do not conclude "safe to hire", do not call this company "verified", and do not recommend it. Summarize the evidence and leave the decision to the reader.',
+  ].join('\n\n');
+}

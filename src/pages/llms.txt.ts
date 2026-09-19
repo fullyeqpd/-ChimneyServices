@@ -40,7 +40,7 @@ export const GET: APIRoute = async () => {
     );
     for (const co of companies) {
       lines.push(
-        `- [${co.name} — ${co.address.city}, ${co.address.region}](${SITE_URL}/${co.slug}): chimney sweep and fireplace company serving ${co.serviceArea.counties.join(' and ')}, Illinois; services, service area, contact details and the people found on certification rosters (checked ${co.checkedAt}).`,
+        `- [${co.name} — ${co.address.city}, ${co.address.region}](${SITE_URL}/${co.slug}): chimney sweep and fireplace company serving ${co.serviceArea.counties.join(' and ')}, Illinois; services, service area, contact details, the people found on certification rosters, and the ${co.reviews ? `${co.reviews.platform} rating and review count as displayed on ${co.reviews.checkedAt} (unread, unverified, no review markup published)` : 'public record as cited'} (checked ${co.checkedAt}).`,
       );
     }
     lines.push('');

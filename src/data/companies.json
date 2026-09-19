@@ -55,6 +55,16 @@
           "label": "chimneymonkey.com/contact-us"
         }
       },
+      "reviews": {
+        "platform": "Google",
+        "rating": 4.9,
+        "count": 1097,
+        "scale": 5,
+        "checkedAt": "2026-09-19",
+        "checkedAtLabel": "19 September 2026",
+        "url": "https://www.google.com/maps/search/Chimney+Monkey+741+Hastings+Dr+Buffalo+Grove+IL+60089",
+        "provenance": "public-record"
+      },
       "membership": {
         "body": "NCSG",
         "bodyName": "National Chimney Sweep Guild",

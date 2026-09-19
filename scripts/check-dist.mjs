@@ -261,6 +261,15 @@ for (const rel of ['/chicago.html']) {
     }
   }
   for (const t of ['BreadcrumbList', 'LocalBusiness']) if (!types.includes(t)) err(f, `company page missing ${t} JSON-LD`);
+  // The public rating is quoted once, as a number on a day. Never as markup:
+  // this site publishes no review or rating schema anywhere.
+  for (const needle of ['1,097', '4.9']) {
+    const hits = text.split(needle).length - 1;
+    if (hits !== 1) err(f, `company page: expected "${needle}" exactly once in visible text, found ${hits}`);
+  }
+  if (/AggregateRating|"Review"|"@type"\s*:\s*"Review|ClaimReview|reviewRating|ratingValue/.test(html)) {
+    err(f, 'company page: review or rating markup is forbidden');
+  }
   if (!llmsRaw.includes(`${SITE_ORIGIN}/chicago)`)) errors.push('llms.txt: missing /chicago');
   const pagesSitemap = files.find((x) => /sitemap-pages-\d+\.xml$/.test(x));
   const xml = pagesSitemap ? fs.readFileSync(pagesSitemap, 'utf8') : '';

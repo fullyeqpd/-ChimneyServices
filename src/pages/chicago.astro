@@ -16,6 +16,9 @@ import {
   companyUrl,
   addressLine,
   areaServed,
+  aiReviewPrompt,
+  reviewCount,
+  shortDateUpper,
   PROVENANCE_LABEL,
 } from '../lib/companies';
 import { ORG_NAME, SITE_URL, abs } from '../lib/site';
@@ -23,6 +26,19 @@ import { ORG_NAME, SITE_URL, abs } from '../lib/site';
 const c = getCompany('chicago');
 const path = companyPath(c);
 const addr = addressLine(c);
+
+// ---- Google reviews: one platform's number, on one day, and nothing inferred
+// from it. "Check the reviews with your AI" hands the reader the same prompt the
+// buttons carry — the registry record's mechanism, a different question.
+const rv = c.reviews;
+const reviewPrompt = aiReviewPrompt(c);
+const encodedReviewPrompt = encodeURIComponent(reviewPrompt);
+const reviewAiLinks = [
+  { name: 'ChatGPT', href: `https://chatgpt.com/?q=${encodedReviewPrompt}` },
+  { name: 'Claude', href: `https://claude.ai/new?q=${encodedReviewPrompt}` },
+  { name: 'Perplexity', href: `https://www.perplexity.ai/search?q=${encodedReviewPrompt}` },
+  { name: 'Copilot', href: `https://copilot.microsoft.com/?q=${encodedReviewPrompt}` },
+];
 
 const title = `Chimney Monkey — Chimney Sweep & Fireplace Services, Buffalo Grove IL | ${ORG_NAME}`;
 const description =
@@ -171,6 +187,68 @@ const jsonLd = [breadcrumbLd, businessLd];
         <a class="chip" href={c.sources.siteContact.url} rel="noopener" target="_blank">REF · {c.sources.siteContact.label}</a>
       </p>
     </section>
+
+    <!-- ---------- Google reviews: a number on a day, not a verdict ---------- -->
+    {rv && (
+      <section class="co-section" aria-labelledby="reviews-h" id="reviews">
+        <h2 id="reviews-h">What does {rv.platform} show for this company?</h2>
+
+        <div class="rating">
+          <p class="rating__score">{rv.rating} / {rv.scale}</p>
+          <p class="rating__meta">
+            <span class="mono rating__count">{reviewCount(rv.count)} REVIEWS</span>
+            <Chip kind="muted">{PROVENANCE_LABEL[rv.provenance]}</Chip>
+          </p>
+          <p class="mono rating__line">
+            AS SHOWN ON {rv.platform.toUpperCase()} MAPS<span class="dot">·</span>CHECKED {shortDateUpper(rv.checkedAt)}<span class="dot">·</span>
+            <a href={rv.url} rel="noopener" target="_blank">OPEN THE LISTING</a>
+          </p>
+        </div>
+
+        <p class="co-note">
+          A {rv.platform} rating is a snapshot of what reviewers chose to post on the day we looked: we did not read the
+          reviews, we cannot tell which reviewers were customers, we cannot see what was removed, and both the average and
+          the count will have moved since {rv.checkedAtLabel}.
+        </p>
+      </section>
+    )}
+
+    <!-- ---------- Check the reviews with your AI ---------- -->
+    {rv && (
+      <section class="co-section" aria-labelledby="ai-reviews-h" id="check-reviews">
+        <h2 id="ai-reviews-h">Check the reviews yourself</h2>
+        <p>
+          We are not going to summarize a thousand-odd strangers for you, and you should not take a star average as an answer.
+          Hand the prompt below to an AI assistant: it opens the listing, reads the newest and the worst reviews, looks for
+          the patterns that matter, and reports what it found. It is told not to recommend anybody.
+        </p>
+
+        <div class="aiverify" id="ai-reviews" data-prompt={reviewPrompt}>
+          <p class="aiverify__label" id="ai-reviews-label">Check the reviews with your AI</p>
+          <ul class="aiverify__row" aria-labelledby="ai-reviews-label">
+            {reviewAiLinks.map((a) => (
+              <li>
+                <a class="button button--ghost aiverify__btn" href={a.href} rel="noopener nofollow" target="_blank">
+                  {a.name}
+                </a>
+              </li>
+            ))}
+            <li>
+              <button type="button" class="button button--ghost aiverify__btn" id="ai-reviews-gemini">Gemini (copies prompt)</button>
+            </li>
+            <li>
+              <button type="button" class="button button--ghost aiverify__btn" id="ai-reviews-copy">Copy prompt</button>
+            </li>
+          </ul>
+          <p class="fineprint aiverify__status" id="ai-reviews-status" role="status" aria-live="polite"></p>
+        </div>
+
+        <p class="fineprint">
+          An AI can read faster than you can, and it can still be wrong. Whatever it reports is its reading of other
+          people's words — not a check we ran, and not an endorsement by us.
+        </p>
+      </section>
+    )}
 
     <!-- ---------- Services ---------- -->
     <section class="co-section" aria-labelledby="services-h" id="services">
@@ -415,6 +493,91 @@ const jsonLd = [breadcrumbLd, businessLd];
     margin: 18px 0;
   }
 
+  /* ---------- Google reviews ---------- */
+  .rating {
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 0 12px;
+    margin: 0 0 4px;
+  }
+  .rating__score {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+    line-height: 1;
+    margin: 0 0 8px;
+  }
+  .rating__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 10px;
+    margin: 0 0 8px;
+  }
+  .rating__count {
+    font-size: 0.82rem;
+    letter-spacing: 0.1em;
+  }
+  .rating__line {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0;
+    max-width: var(--measure);
+  }
+  .rating__line .dot {
+    color: var(--ember);
+    padding: 0 6px;
+  }
+  .rating__line a {
+    text-decoration-color: var(--rule);
+  }
+  .rating__line a:hover,
+  .rating__line a:focus-visible {
+    color: var(--ember);
+    text-decoration-color: currentColor;
+  }
+
+  /* ---------- Check the reviews with your AI ----------
+     Same markup, classes and look as the registry record's verify block. */
+  .aiverify {
+    margin: 18px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+  .aiverify__label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .aiverify__row {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+  .aiverify__btn {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    padding: 7px 12px;
+    min-height: 0;
+    white-space: nowrap;
+  }
+  .aiverify__status:empty {
+    display: none;
+  }
+  .aiverify__status {
+    margin: 10px 0 0;
+    color: var(--muted);
+  }
+
   /* ---------- Services ---------- */
   .cogroups {
     display: grid;
@@ -571,3 +734,36 @@ const jsonLd = [breadcrumbLd, businessLd];
     color: var(--ember);
   }
 </style>
+
+<script is:inline>
+  (function () {
+    // Gemini publishes no prefill parameter, so its button copies the prompt and
+    // opens Gemini. "Copy prompt" does the same without opening anything. Same
+    // mechanism as the registry record's verify block.
+    var box = document.getElementById('ai-reviews');
+    var status = document.getElementById('ai-reviews-status');
+    function say(msg) {
+      if (status) status.textContent = msg;
+    }
+    function copyPrompt(then) {
+      var text = box ? box.getAttribute('data-prompt') : '';
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { say('Prompt copied. Paste it in.'); if (then) then(); },
+          function () { say('Could not copy — select the prompt text and copy it by hand.'); },
+        );
+      } else {
+        say('Could not copy — select the prompt text and copy it by hand.');
+      }
+    }
+    var gem = document.getElementById('ai-reviews-gemini');
+    if (gem) {
+      gem.addEventListener('click', function () {
+        copyPrompt(function () { window.open('https://gemini.google.com/app', '_blank', 'noopener'); });
+      });
+    }
+    var copy = document.getElementById('ai-reviews-copy');
+    if (copy) copy.addEventListener('click', function () { copyPrompt(null); });
+  })();
+</script>
