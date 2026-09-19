@@ -184,6 +184,64 @@ for (const f of learnPages) {
     if (!m[0].includes('See the researched range above')) err(f, `price link for "${m[1]}" has the wrong text`);
   }
 }
+// ---- Registry records (/pro/*): one H1, valid JSON-LD, and never the words
+// "verified professional" — a record confers no status on anybody.
+const proPages = htmlFiles.filter((f) => path.relative(DIST, f).split(path.sep)[0] === 'pro');
+const llmsRaw = fs.readFileSync(path.join(DIST, 'llms.txt'), 'utf8');
+for (const f of proPages) {
+  const rel = '/' + path.relative(DIST, f).split(path.sep).join('/');
+  const html = fs.readFileSync(f, 'utf8');
+  const text = stripTags(html);
+  if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'registry page: expected exactly 1 <h1>');
+  if (!/<meta name="robots" content="noindex, follow"/.test(html)) err(f, 'registry page must be noindex, follow');
+  for (const bad of ['verified professional', 'verified pro', 'approved professional', 'trusted professional']) {
+    if (text.toLowerCase().includes(bad)) err(f, `registry page contains "${bad}"`);
+  }
+  const types = [];
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    let obj;
+    try {
+      obj = JSON.parse(m[1]);
+    } catch (e) {
+      err(f, `registry JSON-LD parse error: ${e.message}`);
+      continue;
+    }
+    types.push(obj['@type']);
+    if (obj['@type'] === 'Person') {
+      if (!obj['@id']?.startsWith('https://www.chimney.services/pro/')) err(f, 'Person JSON-LD @id is not the record URL');
+      if (!Array.isArray(obj.hasCredential) || obj.hasCredential.length === 0) err(f, 'Person JSON-LD has no hasCredential');
+      for (const c of obj.hasCredential ?? []) {
+        if (c['@type'] !== 'EducationalOccupationalCredential') err(f, 'hasCredential is not an EducationalOccupationalCredential');
+        if (c.recognizedBy?.['@type'] !== 'Organization' || !c.recognizedBy?.name) err(f, 'credential recognizedBy is not a named Organization');
+      }
+    }
+  }
+  if (!types.includes('Organization')) err(f, 'registry page missing Organization JSON-LD');
+  if (!/\/card\.html$/.test(rel)) {
+    for (const t of ['BreadcrumbList', 'Person']) if (!types.includes(t)) err(f, `registry record missing ${t} JSON-LD`);
+  }
+}
+if (proPages.length) {
+  for (const sm of files.filter((x) => /sitemap-.*\.xml$/.test(x))) {
+    if (/\/pro\//.test(fs.readFileSync(sm, 'utf8'))) errors.push(`${path.basename(sm)}: registry records must be excluded from sitemaps`);
+  }
+  const recordPages = proPages.filter((f) => /^pro\/[a-z0-9-]+\.html$/.test(path.relative(DIST, f).split(path.sep).join('/')));
+  for (const f of recordPages) {
+    const slug = path.basename(f, '.html');
+    if (!fs.existsSync(path.join(DIST, 'pro', `${slug}.json`))) errors.push(`pro/${slug}: machine-readable record /pro/${slug}.json is missing`);
+    else {
+      const rec = JSON.parse(fs.readFileSync(path.join(DIST, 'pro', `${slug}.json`), 'utf8'));
+      if (!Array.isArray(rec.whatWeDidNotCheck) || rec.whatWeDidNotCheck.length === 0) errors.push(`pro/${slug}.json: whatWeDidNotCheck is missing`);
+      for (const c of rec.credentials ?? []) if (!c.issuerLookupUrl) errors.push(`pro/${slug}.json: credential ${c.issuer} has no issuerLookupUrl`);
+    }
+    for (const side of ['front', 'back']) {
+      if (!fs.existsSync(path.join(DIST, 'pro', 'cards', `${slug}-${side}.svg`))) errors.push(`pro/${slug}: card SVG ${side} is missing`);
+    }
+    if (!llmsRaw.includes(`/pro/${slug})`)) errors.push(`llms.txt: missing /pro/${slug}`);
+  }
+}
+console.log(`Checked ${proPages.length} registry page(s).`);
+
 const learnIndex = path.join(DIST, 'learn.html');
 if (fs.existsSync(learnIndex)) {
   const idx = fs.readFileSync(learnIndex, 'utf8');

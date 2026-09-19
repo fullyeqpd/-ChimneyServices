@@ -1,0 +1,592 @@
+---
+import Base from '../../layouts/Base.astro';
+import Chip from '../../components/Chip.astro';
+import BeforeYouRely from '../../components/BeforeYouRely.astro';
+import {
+  getRecords,
+  ISSUER_ORDER,
+  RECORD_CLAIM,
+  recordPath,
+  recordUrl,
+  recordJsonPath,
+  recordCardPath,
+  cardSvgPath,
+  dateOrDash,
+  verifyPrompt,
+  type RegistryRecord,
+  type RegistryCredential,
+} from '../../lib/registry';
+import { ORG_NAME, SITE_URL, abs, DISCLAIMER } from '../../lib/site';
+
+export function getStaticPaths() {
+  return getRecords().map((record) => ({ params: { slug: record.slug }, props: { record } }));
+}
+
+interface Props { record: RegistryRecord }
+const { record: rec } = Astro.props;
+const path = recordPath(rec);
+
+// Certification bodies always render in the fixed order, with the empty ones
+// left visible so a reader can see what is missing as easily as what is there.
+const byIssuer = new Map(rec.credentials.map((c) => [c.issuer, c]));
+const noneByIssuer = new Map(rec.noneOnRecord.map((n) => [n.issuer, n]));
+type Row =
+  | { kind: 'credential'; credential: RegistryCredential }
+  | { kind: 'none'; issuer: string; issuerName: string };
+const orderedRows: Row[] = ISSUER_ORDER.map((issuer) => {
+  const credential = byIssuer.get(issuer);
+  if (credential) return { kind: 'credential', credential } as Row;
+  const none = noneByIssuer.get(issuer);
+  return { kind: 'none', issuer, issuerName: none?.issuerName ?? issuer } as Row;
+});
+const otherRows = rec.credentials.filter((c) => !ISSUER_ORDER.includes(c.issuer as (typeof ISSUER_ORDER)[number]));
+const credAnchor = (c: RegistryCredential) => `credential-${c.issuer.toLowerCase()}`;
+
+const prompt = verifyPrompt(rec);
+const jsonPath = recordJsonPath(rec);
+const cardPath = recordCardPath(rec);
+
+const title = `Registry record ${rec.recordNumber} — ${rec.name} | ${ORG_NAME}`;
+const description = `Registry record ${rec.recordNumber}: what ${ORG_NAME} found when it searched issuer rosters for ${rec.name}. Not an endorsement.`;
+
+// ---- JSON-LD
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: `Registry record ${rec.recordNumber}`, item: recordUrl(rec) },
+  ],
+};
+const personLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': recordUrl(rec),
+  name: rec.name,
+  alternateName: rec.nameOnRosters,
+  givenName: rec.preferredName,
+  identifier: rec.recordNumber,
+  mainEntityOfPage: recordUrl(rec),
+  url: recordUrl(rec),
+  disambiguatingDescription: RECORD_CLAIM,
+  hasCredential: rec.credentials.map((c) => ({
+    '@type': 'EducationalOccupationalCredential',
+    name: c.title,
+    credentialCategory: 'certification',
+    identifier: c.certNumber,
+    url: c.lookupUrl,
+    recognizedBy: { '@type': 'Organization', name: c.issuerName, alternateName: c.issuer, url: c.lookupUrl },
+    ...(c.issuerListedExpiry ? { expires: c.issuerListedExpiry } : {}),
+    ...(c.checkedAt ? { dateCreated: c.checkedAt } : {}),
+  })),
+  subjectOf: {
+    '@type': 'WebPage',
+    '@id': `${recordUrl(rec)}#record`,
+    url: recordUrl(rec),
+    name: `Registry record ${rec.recordNumber}`,
+    description: RECORD_CLAIM,
+    dateCreated: rec.recordCreated,
+    publisher: { '@type': 'Organization', name: ORG_NAME, url: SITE_URL, '@id': `${SITE_URL}/#organization` },
+    encoding: { '@type': 'MediaObject', contentUrl: abs(jsonPath), encodingFormat: 'application/json' },
+  },
+};
+const jsonLd = [breadcrumbLd, personLd];
+---
+<Base title={title} description={description} path={path} noindex jsonLd={jsonLd} modified={rec.recordCreated}>
+  <nav class="crumb" aria-label="Breadcrumb">
+    REGISTRY / RECORD {rec.recordNumber}
+  </nav>
+
+  <div class="layout">
+    <div class="rec-main">
+      <header class="rec-head">
+        <div class="rec-head__text">
+          <p class="rec-number">{rec.recordNumber}</p>
+          <h1>{rec.name}</h1>
+          <p class="rec-roster">
+            <span class="rec-roster__label">Name on issuer rosters</span>
+            <span class="rec-roster__value">{rec.nameOnRosters}</span>
+          </p>
+          <p class="badge-date">
+            Record created {rec.recordCreated}<span class="dot">·</span>Last checked {dateOrDash(rec.lastChecked)}
+          </p>
+          <aside class="band band--claim" aria-labelledby="the-claim">
+            <p class="band__title" id="the-claim">What this record claims</p>
+            <p>{RECORD_CLAIM}</p>
+            <p class="fineprint">No status is conferred here. This is a record of dated facts, not a rating, a badge or a recommendation.</p>
+          </aside>
+        </div>
+        <figure class="photo">
+          <div class="photo__box" role="img" aria-label="No photograph has been supplied for this record.">
+            <span aria-hidden="true">NO PHOTO<br />ON RECORD</span>
+          </div>
+          <figcaption class="photo__label">{rec.photo.label}</figcaption>
+          <p class="photo__why">A photograph is supplied by the person named and proves nothing. We do not check that a face belongs to a name.</p>
+        </figure>
+      </header>
+
+      <section aria-labelledby="rosters" class="rec-section">
+        <h2 id="rosters">Checked against issuer rosters</h2>
+        <p class="lede">
+          Certification bodies are listed in a fixed order — NCSG, then NFI, then CSIA, then any other body — so that what is
+          missing is as visible as what is present.
+        </p>
+
+        {orderedRows.map((row) =>
+          row.kind === 'credential' ? (
+            <article class="cred" id={credAnchor(row.credential)}>
+              <p class="cred__head">
+                <span class="cred__abbr">{row.credential.issuer}</span>
+                <span class="cred__issuer">{row.credential.issuerName}</span>
+                {row.credential.checkedAt ? <Chip>Roster checked</Chip> : <Chip class="chip--flag">Not checked yet</Chip>}
+              </p>
+              <h3>{row.credential.title}</h3>
+              <dl class="cred__facts">
+                <dt>Certificate number</dt>
+                <dd class="mono">{row.credential.certNumber}</dd>
+                <dt>Roster check</dt>
+                <dd>
+                  Found on the {row.credential.issuer} roster, <span class="mono">{dateOrDash(row.credential.checkedAt)}</span>
+                  {!row.credential.checkedAt && (
+                    <span class="cred__pending">No roster search has been run for this record yet, so nothing here has been found.</span>
+                  )}
+                </dd>
+                <dt>Expiry</dt>
+                <dd>
+                  Issuer lists expiry as <span class="mono">{dateOrDash(row.credential.issuerListedExpiry)}</span>
+                  <span class="cred__pending">That date is the issuer's claim, copied from the issuer. It is not ours.</span>
+                </dd>
+              </dl>
+              <p class="cred__line"><span class="cred__line-label">What it is relevant to</span> {row.credential.relevance}</p>
+              <p class="cred__line"><span class="cred__line-label">Check it yourself</span> {row.credential.lookupNote}</p>
+              <p class="sources">
+                <span class="sources__label">Issuer lookup</span>
+                <span class="source"><Chip>REF</Chip><a href={row.credential.lookupUrl} rel="noopener" target="_blank">{row.credential.lookupLabel}</a></span>
+              </p>
+            </article>
+          ) : (
+            <p class="cred cred--empty">
+              <span class="cred__abbr cred__abbr--empty">{row.issuer}</span>
+              <span>{row.issuerName} individual certification: none on record.</span>
+            </p>
+          ),
+        )}
+
+        {otherRows.length > 0 && (
+          <>
+            <h3 class="rec-subhead">Other bodies</h3>
+            {otherRows.map((c) => (
+              <article class="cred" id={credAnchor(c)}>
+                <p class="cred__head">
+                  <span class="cred__abbr">{c.issuer}</span>
+                  <span class="cred__issuer">{c.issuerName}</span>
+                  {c.checkedAt ? <Chip>Roster checked</Chip> : <Chip class="chip--flag">Not checked yet</Chip>}
+                </p>
+                <h4>{c.title}</h4>
+                <dl class="cred__facts">
+                  <dt>Certificate number</dt>
+                  <dd class="mono">{c.certNumber}</dd>
+                  <dt>Roster check</dt>
+                  <dd>
+                    Found on the {c.issuer} roster, <span class="mono">{dateOrDash(c.checkedAt)}</span>
+                    {!c.checkedAt && (
+                      <span class="cred__pending">No roster search has been run for this record yet, so nothing here has been found.</span>
+                    )}
+                  </dd>
+                  <dt>Expiry</dt>
+                  <dd>
+                    Issuer lists expiry as <span class="mono">{dateOrDash(c.issuerListedExpiry)}</span>
+                    <span class="cred__pending">That date is the issuer's claim, copied from the issuer. It is not ours.</span>
+                  </dd>
+                </dl>
+                <p class="cred__line"><span class="cred__line-label">What it is relevant to</span> {c.relevance}</p>
+                <p class="cred__line"><span class="cred__line-label">Check it yourself</span> {c.lookupNote}</p>
+                <p class="sources">
+                  <span class="sources__label">Issuer lookup</span>
+                  <span class="source"><Chip>REF</Chip><a href={c.lookupUrl} rel="noopener" target="_blank">{c.lookupLabel}</a></span>
+                </p>
+              </article>
+            ))}
+          </>
+        )}
+      </section>
+
+      <section aria-labelledby="supplied" class="rec-section">
+        <h2 id="supplied">Supplied by this person — not checked</h2>
+        <p class="lede">Everything below came from the person named. We have not checked any of it and we do not repeat it as fact.</p>
+        <div class="record">
+          <dl>
+            {rec.supplied.map((f) => (
+              <>
+                <dt>{f.label}</dt>
+                <dd>{f.value}</dd>
+              </>
+            ))}
+            <dt>Statement</dt>
+            <dd>{rec.suppliedStatement}</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section aria-labelledby="not-checked" class="rec-section">
+        <h2 id="not-checked">Not checked</h2>
+        <p class="lede">Four things a reader might assume a registry record covers. It covers none of them.</p>
+        <ul class="notchecked">
+          {rec.notChecked.map((n) => (
+            <li>
+              <span class="notchecked__label">{n.label}</span>
+              <span>{n.why}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section aria-labelledby="verify" class="rec-section">
+        <h2 id="verify">Verify this with your own AI</h2>
+        <p class="lede">
+          Do not take our word for it. Copy the prompt below, paste it into whatever AI assistant you use, and have it do the
+          roster checks in front of you — including the ones we have not run.
+        </p>
+        <div class="verify">
+          <label class="verify__label" for="verify-prompt">Prompt — copy and paste</label>
+          <textarea id="verify-prompt" class="verify__text" readonly rows="18" spellcheck="false">{prompt}</textarea>
+          <p class="verify__actions">
+            <button type="button" class="button" id="verify-copy" data-copy-target="verify-prompt">Copy the prompt</button>
+            <span class="fineprint" id="verify-copy-status" role="status" aria-live="polite"></span>
+          </p>
+          <p class="fineprint">
+            If the copy button does not work, select the text above and copy it by hand — it is plain text and nothing is hidden in it.
+            Machine-readable version of this record: <a href={jsonPath}>{jsonPath}</a>.
+          </p>
+        </div>
+      </section>
+
+      <BeforeYouRely dateLabel={rec.lastChecked ?? rec.recordCreated} variant="record" />
+    </div>
+
+    <aside class="rail" aria-label="About this record">
+      <div class="rail-card">
+        <p class="kicker">What this is</p>
+        <h2>What this record is — and isn't</h2>
+        <p><strong>It is</strong> a dated note of what we found when we searched a certification issuer's own public roster for a number and a name.</p>
+        <p><strong>It isn't</strong> an identity document, an endorsement, a licence, a background check, or a statement that anybody is good at their job.</p>
+        <p>We check certification against name. We do not check person against name, and nobody should treat this page as if we had.</p>
+        <p><a class="button button--ghost" href="/about">How Chimney.Services works</a></p>
+      </div>
+      <div class="rail-card">
+        <p class="kicker">Card</p>
+        <h2>The card that points here</h2>
+        <a href={cardPath} class="card-thumb">
+          <img src={cardSvgPath(rec, 'front')} alt={`Front of the registry card for record ${rec.recordNumber}, showing the name ${rec.name} and the line "Not an ID. Not an endorsement. Not proof of anything."`} width="342" height="216" />
+        </a>
+        <p class="fineprint">A card carries an address and nothing else. <a href={cardPath}>Print sheet and SVG files</a>.</p>
+      </div>
+      <div class="rail-card">
+        <p class="kicker">Disclaimer</p>
+        <p>{DISCLAIMER}</p>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .rec-head {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(0, 1fr);
+    border-bottom: 1px solid var(--ink);
+    padding-bottom: 20px;
+    margin-bottom: 8px;
+  }
+  @media (min-width: 640px) {
+    .rec-head {
+      grid-template-columns: minmax(0, 1fr) 150px;
+      gap: 28px;
+    }
+  }
+  .rec-number {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+  .rec-head h1 {
+    margin-bottom: 10px;
+  }
+  .rec-roster {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+    align-items: baseline;
+    margin: 0 0 12px;
+  }
+  .rec-roster__label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .rec-roster__value {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+  }
+  .photo {
+    margin: 0;
+  }
+  .photo__box {
+    border: 1px solid var(--ink);
+    aspect-ratio: 4 / 5;
+    display: grid;
+    place-items: center;
+    background: var(--panel);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.7;
+  }
+  .photo__label {
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    line-height: 1.5;
+    border: 1px solid var(--ember);
+    color: var(--ember);
+    padding: 3px 5px;
+    margin-top: 6px;
+  }
+  .photo__why {
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.45;
+    margin: 8px 0 0;
+  }
+  .band--claim {
+    margin: 18px 0 0;
+  }
+  .band--claim p {
+    max-width: var(--measure);
+  }
+  .rec-section {
+    margin-top: 40px;
+    border-top: 1px solid var(--ink);
+    padding-top: 18px;
+  }
+  .rec-section > h2 {
+    margin-bottom: 8px;
+  }
+  .rec-section > .lede {
+    color: var(--muted);
+    font-size: 1rem;
+    margin-bottom: 18px;
+  }
+  .rec-subhead {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 28px 0 10px;
+  }
+  .cred {
+    border: 1px solid var(--rule);
+    padding: 14px 16px;
+    margin: 0 0 12px;
+  }
+  .cred--empty {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 12px;
+    align-items: baseline;
+    border-style: dashed;
+    color: var(--muted);
+    padding: 10px 16px;
+  }
+  .cred__head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    align-items: center;
+    margin: 0 0 6px;
+  }
+  .cred__abbr {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    border: 1px solid var(--ink);
+    padding: 3px 6px;
+  }
+  .cred__abbr--empty {
+    border-color: var(--rule);
+    color: var(--muted);
+  }
+  .cred__issuer {
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .cred h3,
+  .cred h4 {
+    font-family: var(--font-display);
+    font-size: 1.22rem;
+    font-weight: 600;
+    margin: 0 0 10px;
+  }
+  .cred__facts {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin: 0 0 10px;
+    border-top: 1px solid var(--rule);
+  }
+  @media (min-width: 620px) {
+    .cred__facts {
+      grid-template-columns: 170px minmax(0, 1fr);
+    }
+  }
+  .cred__facts dt {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 9px 0 0;
+  }
+  .cred__facts dd {
+    margin: 0;
+    padding: 2px 0 9px;
+    font-size: 0.95rem;
+    overflow-wrap: anywhere;
+  }
+  @media (min-width: 620px) {
+    .cred__facts dt,
+    .cred__facts dd {
+      padding: 9px 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .cred__facts dt:last-of-type,
+    .cred__facts dd:last-of-type {
+      border-bottom: 0;
+    }
+  }
+  .cred__pending {
+    display: block;
+    color: var(--muted);
+    font-size: 0.86rem;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+  .cred__line {
+    font-size: 0.92rem;
+    max-width: var(--measure);
+    margin: 0 0 8px;
+    padding-left: 10px;
+    border-left: 1px solid var(--rule);
+  }
+  .cred__line-label {
+    font-family: var(--font-mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: block;
+  }
+  .cred .sources {
+    margin-bottom: 0;
+  }
+  .notchecked {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid var(--ink);
+    max-width: var(--measure);
+  }
+  .notchecked li {
+    display: grid;
+    gap: 2px 20px;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 620px) {
+    .notchecked li {
+      grid-template-columns: 170px minmax(0, 1fr);
+    }
+  }
+  .notchecked__label {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ember);
+  }
+  .verify {
+    border: 1px solid var(--ink);
+    padding: 14px 16px;
+    max-width: var(--measure);
+  }
+  .verify__label {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .verify__text {
+    width: 100%;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    line-height: 1.65;
+    padding: 12px;
+    border: 1px solid var(--rule);
+    background: var(--panel);
+    color: var(--ink);
+    border-radius: 0;
+    resize: vertical;
+  }
+  .verify__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 14px;
+    align-items: center;
+    margin: 12px 0 8px;
+  }
+  .card-thumb {
+    display: block;
+    border: 1px solid var(--rule);
+    line-height: 0;
+  }
+  .card-thumb img {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<script is:inline>
+  (function () {
+    var btn = document.getElementById('verify-copy');
+    if (!btn) return;
+    var status = document.getElementById('verify-copy-status');
+    btn.addEventListener('click', function () {
+      var field = document.getElementById(btn.getAttribute('data-copy-target'));
+      if (!field) return;
+      var done = function (msg) {
+        if (status) status.textContent = msg;
+      };
+      var text = field.value;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { done('Copied. Paste it into your AI assistant.'); },
+          function () { field.select(); done('Could not copy for you — the text is selected, press Ctrl/Cmd+C.'); },
+        );
+      } else {
+        field.select();
+        done('The text is selected — press Ctrl/Cmd+C to copy.');
+      }
+    });
+  })();
+</script>

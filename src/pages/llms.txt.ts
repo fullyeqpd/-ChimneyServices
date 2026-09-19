@@ -2,6 +2,7 @@
 import type { APIRoute } from 'astro';
 import { getStates, getLicensing } from '../lib/content';
 import { getLearnHubs } from '../lib/learn';
+import { getRecords } from '../lib/registry';
 import { SITE_URL, monthYear, latest } from '../lib/site';
 
 export const GET: APIRoute = async () => {
@@ -48,6 +49,20 @@ export const GET: APIRoute = async () => {
   for (const s of lic.states) {
     lines.push(`- [${s.name} licensing by trade](${SITE_URL}/${s.slug}/licensing): what sweeping, stove installation, flashing and gas fireplace work require in ${s.name}.`);
   }
+  const records = getRecords();
+  if (records.length) {
+    lines.push('');
+    lines.push('## Registry records');
+    lines.push(
+      '> A registry record says one thing: a certification number appears on the issuer’s own public roster under this name, checked on the date shown. It is not an endorsement, an identity check, a licence, or a background check, and it confers no status on anyone.',
+    );
+    for (const r of records) {
+      lines.push(
+        `- [Registry record ${r.recordNumber} — ${r.name}](${SITE_URL}/pro/${r.slug}): certifications listed for this person and what we found on each issuer's public roster; machine-readable copy at ${SITE_URL}/pro/${r.slug}.json (created ${r.recordCreated}, last checked ${r.lastChecked ?? 'not yet'}).`,
+      );
+    }
+  }
+
   const under = states.filter((s) => s.publishVerdict === 'DO NOT PUBLISH');
   if (under.length) {
     lines.push('');

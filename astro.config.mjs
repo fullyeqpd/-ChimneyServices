@@ -45,7 +45,9 @@ export default defineConfig({
   build: { format: 'file' },
   integrations: [
     sitemap({
-      filter: (page) => !noindex.has(strip(page)),
+      // Registry records (/pro/*) are noindex while the registry is unlaunched,
+      // so they stay out of every sitemap. The JSON endpoint stays reachable.
+      filter: (page) => !noindex.has(strip(page)) && !/^https:\/\/www\.chimney\.services\/pro(\/|$)/.test(strip(page)),
       chunks: {
         rights: (item) => (strip(item.url) === `${SITE}/rights` ? withLastmod(item, rightsLastmod) : undefined),
         states: (item) => (/\/[a-z-]+\/rights$/.test(strip(item.url)) ? withLastmod(item, stateLastmod[strip(item.url)]) : undefined),

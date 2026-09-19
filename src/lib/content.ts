@@ -5,12 +5,17 @@ import { getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import rightsTable from '../data/rights-table.json';
 import licensing from '../data/licensing.json';
+import { RESERVED_SLUGS } from './site';
 
 export type StatePage = CollectionEntry<'states'>['data'];
 
 export async function getStates(): Promise<StatePage[]> {
   const entries = await getCollection('states'); // SANITY SWAP line 1: const entries = await sanity.fetch(STATE_PAGES_QUERY)
-  return entries.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name)); // SANITY SWAP line 2: return entries.sort(...)
+  const states = entries.map((e) => e.data).sort((a, b) => a.name.localeCompare(b.name)); // SANITY SWAP line 2: return entries.sort(...)
+  for (const s of states) {
+    if (RESERVED_SLUGS.has(s.slug)) throw new Error(`State slug "${s.slug}" collides with a reserved URL namespace.`);
+  }
+  return states;
 }
 
 export type RightsRow = (typeof rightsTable.rows)[number] & { notInTable?: boolean };

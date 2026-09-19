@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "ingest": "node scripts/ingest.mjs && node scripts/copy-prices.mjs",
+    "ingest": "node scripts/ingest.mjs && node scripts/copy-prices.mjs && node scripts/gen-cards.mjs",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -15,7 +15,8 @@
     "astro": "^7.3.2",
     "csv-parse": "^7.0.2",
     "gray-matter": "^4.0.3",
-    "marked": "^18.0.13"
+    "marked": "^18.0.13",
+    "qrcode": "^1.5.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",

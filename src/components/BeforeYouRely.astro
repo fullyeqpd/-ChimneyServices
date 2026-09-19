@@ -1,12 +1,19 @@
 ---
 import { CLOSING_RULE } from '../lib/site';
-interface Props { dateLabel?: string | null; variant?: 'law' | 'guide' }
+interface Props { dateLabel?: string | null; variant?: 'law' | 'guide' | 'record' }
 const { dateLabel, variant = 'law' } = Astro.props;
 ---
 <aside class="box box--ink" aria-labelledby="before-you-rely" id="before-you-rely-box">
   <p class="band__title" id="before-you-rely">Before you rely on this</p>
   <ul class="prose">
-    {variant === 'law' ? (
+    {variant === 'record' ? (
+      <>
+        <li>A record is not an endorsement, a recommendation, or an approval. Appearing here means a certification number was searched for on an issuer's own roster — nothing else, and nobody is vouched for.</li>
+        <li>A certification is not a guarantee of competence or honesty. It is a test somebody passed on a day, recorded by the body that set it.</li>
+        <li>Facts go stale. Certifications lapse, people change employers, and rosters are corrected without telling us.</li>
+        <li>Hiring is your decision. Ask for the certificate, check the issuer's roster yourself, and get a written inspection report before money changes hands.</li>
+      </>
+    ) : variant === 'law' ? (
       <>
         <li>This is not legal advice. For a dispute, talk to a lawyer licensed in your state or your state attorney general's consumer office.</li>
         <li>Laws change. Statutes, thresholds and code editions can move after we look.</li>

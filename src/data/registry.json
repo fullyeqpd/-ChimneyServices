@@ -1,0 +1,68 @@
+{
+  "records": [
+    {
+      "slug": "art-kalinicenko-00001",
+      "recordNumber": "CS-P-00001",
+      "name": "Art Kalinicenko",
+      "preferredName": "Art",
+      "nameOnRosters": "Artjoms Kalinicenko",
+      "recordCreated": "2026-09-18",
+      "lastChecked": null,
+      "photo": { "label": "SUPPLIED BY THIS PERSON — NOT CHECKED", "url": null },
+      "supplied": [
+        { "label": "Job title", "value": "SUPPLIED BY THIS PERSON — to be filled in" },
+        { "label": "Service area", "value": "SUPPLIED BY THIS PERSON — to be filled in" },
+        { "label": "Employer", "value": "SUPPLIED BY THIS PERSON — to be filled in" }
+      ],
+      "suppliedStatement": "SUPPLIED BY THIS PERSON — to be filled in. Everything in this section is what the person told us about themselves. We have not checked any of it, and we do not repeat it as fact.",
+      "credentials": [
+        {
+          "issuer": "NFI",
+          "issuerName": "National Fireplace Institute",
+          "title": "NFI Certified — specialty to confirm",
+          "certNumber": "NFI-•••••",
+          "checkedAt": null,
+          "issuerListedExpiry": null,
+          "lookupUrl": "https://www.nficertified.org/public/find-an-nfi-pro/",
+          "lookupLabel": "NFI — Find an NFI Pro",
+          "lookupNote": "NFI's public tool searches by location and by specialty (wood, gas, pellet, hearth design). It does not take a certificate number, so the strongest check a reader can run there is a name match against the list it returns.",
+          "relevance": "NFI certifies knowledge of hearth appliances — the installation and service of wood, gas and pellet equipment."
+        },
+        {
+          "issuer": "SPRAT",
+          "issuerName": "Society of Professional Rope Access Technicians",
+          "title": "Level 1 Rope Access Technician",
+          "certNumber": "SPRAT-•••••",
+          "checkedAt": null,
+          "issuerListedExpiry": null,
+          "lookupUrl": "https://sprat.org/technician-verification-system/",
+          "lookupLabel": "SPRAT — Certification Verification System",
+          "lookupNote": "SPRAT runs a public certification verification system for technicians. It is the place to check the status this record claims.",
+          "relevance": "Rope access is a way of reaching work on a steep or tall roof safely. It says nothing about chimney knowledge — it is about getting to the flue, not about what happens at it."
+        }
+      ],
+      "noneOnRecord": [
+        { "issuer": "NCSG", "issuerName": "National Chimney Sweep Guild" },
+        { "issuer": "CSIA", "issuerName": "Chimney Safety Institute of America" }
+      ],
+      "notChecked": [
+        {
+          "label": "Identity",
+          "why": "We matched a certification number to a name on an issuer's roster. We did not check that the person standing in front of you is that person, and we have no way to."
+        },
+        {
+          "label": "Criminal background",
+          "why": "We ran no background check of any kind. Chimney.Services is not a background screener or a consumer reporting agency."
+        },
+        {
+          "label": "Work quality",
+          "why": "We inspected no work, called no customer, and read no complaint history. A certification is a test result, not a record of jobs done well."
+        },
+        {
+          "label": "Insurance",
+          "why": "We checked no policy. Liability and workers' compensation cover a company, not a person — insurance belongs on a company record, and there is no company record behind this one."
+        }
+      ]
+    }
+  ]
+}

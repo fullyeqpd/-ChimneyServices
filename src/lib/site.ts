@@ -11,6 +11,24 @@ export const SAME_AS: string[] = [];
 export const RIGHTS_CSV = '/data/rights-table.csv';
 export const LICENSING_CSV = '/data/licensing-matrix.csv';
 
+/**
+ * Top-level URL namespaces the site owns. Content slugs (states, guides,
+ * registry records) may never take one of these, or a data row would silently
+ * shadow a page. `pro` is reserved for registry records (/pro/{slug}).
+ */
+export const RESERVED_SLUGS = new Set([
+  'about',
+  'api',
+  'data',
+  'learn',
+  'licensing',
+  'llms.txt',
+  'pro',
+  'rights',
+  'robots.txt',
+  'sitemap-index.xml',
+]);
+
 export const abs = (p: string) => `${SITE_URL}${p === '/' ? '' : p}`;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
