@@ -55,6 +55,13 @@ export interface RegistryCredential {
   /** The issuer's own public lookup page. */
   lookupUrl: string;
   lookupLabel: string;
+  /**
+   * The issuer's own page explaining what this certification is — linked from
+   * the ID block so the record never has to explain the issuer in our words.
+   */
+  explainerUrl?: string | null;
+  /** How the AI prompt should search this issuer's lookup, in the issuer's own terms. */
+  lookupSearch?: string | null;
   /** The issuer's own mark, used as the lookup link on the ID block. Optional. */
   logo?: string | null;
   /** true when the issuer only publishes a light/reverse logo that needs a dark backing chip */
@@ -95,6 +102,10 @@ export interface RegistryRecord {
   employer?: string | null;
   /** Where that employer is, e.g. "Buffalo Grove, IL". Supplied, not checked. */
   employerLocation?: string | null;
+  /** The employer's own site, supplied by this person. A link, not a claim. */
+  companyUrl?: string | null;
+  /** Our state rights page for where that employer works, e.g. "/illinois/rights". */
+  companyRightsPath?: string | null;
   photo: { label: string; url: string | null; thumbUrl?: string | null; alt?: string | null; width?: number; height?: number };
   supplied: SuppliedField[];
   suppliedStatement: string;
@@ -146,6 +157,19 @@ export function monthYear(iso: string | null | undefined): string | null {
   const m = /^(\d{4})-(\d{2})/.exec(iso);
   if (!m) return iso;
   return `${MONTHS[Number(m[2]) - 1]} ${m[1]}`;
+}
+
+/**
+ * The two lines a credential shows on the ID block.
+ *  - "NFI Certified"        — who ran the test.
+ *  - "Woodburning Specialist" — which one, linked to the issuer's own page.
+ * The specialty is the issuer's title with the issuer's own prefix removed, so
+ * the row never reads "NFI NFI Woodburning Specialist".
+ */
+export const certifiedLabel = (c: RegistryCredential) => `${c.issuer} Certified`;
+export function specialtyLabel(c: RegistryCredential): string {
+  const prefix = `${c.issuer} `;
+  return c.title.startsWith(prefix) ? c.title.slice(prefix.length) : c.title;
 }
 
 /** The one line an ID block can carry about role and employer, or null. */
@@ -200,6 +224,7 @@ export function recordJson(r: RegistryRecord) {
         : `No expiry is recorded — ${c.expiryNote ?? 'the issuer does not publish one'}.`,
       issuerLookupUrl: c.lookupUrl,
       issuerLookupNote: c.lookupNote,
+      issuerExplainerUrl: c.explainerUrl ?? null,
       relevance: c.relevance,
     })),
     noCertificationOnRecord: r.noneOnRecord.map((n) => ({ issuer: n.issuer, issuerName: n.issuerName })),
@@ -210,47 +235,51 @@ export function recordJson(r: RegistryRecord) {
       role: r.role ?? null,
       employerName: r.employer ?? null,
       employerLocation: r.employerLocation ?? null,
+      employerUrl: r.companyUrl ?? null,
       statement: r.suppliedStatement,
     },
     whatWeDidNotCheck: r.notChecked.map((n) => `${n.label}: ${n.why}`),
+    aiVerifyPrompt: aiVerifyPrompt(r),
     notAnEndorsement:
       'A record is not an endorsement, a recommendation, or an approval. A certification is not a guarantee of competence or honesty. Every date here is only when we last looked.',
   };
 }
 
-/** The prompt a homeowner can paste into any AI assistant. */
-export function verifyPrompt(r: RegistryRecord): string {
-  const lookups = r.credentials
-    .map((c, i) => `   ${String.fromCharCode(97 + i)}. ${c.issuerName} (${c.issuer}) — ${c.lookupUrl}`)
-    .join('\n');
-  const certs = r.credentials
-    .map((c) => {
-      const number = hasCertNumber(c)
-        ? `certificate number ${c.certNumber}${c.certNumberStatus === 'supplied-not-checked' ? ' (supplied by the person, not yet checked against the roster)' : ''}`
-        : `no certificate number — ${certNumberLine(c)}`;
-      const checked = c.checkedAt
-        ? `we searched the ${c.issuer} roster on ${c.checkedAt}`
-        : `we have NOT searched the ${c.issuer} roster`;
-      return `   - ${c.issuer}: "${c.title}", ${number}. ${checked}.`;
-    })
-    .join('\n');
-  return [
-    'You are checking a public registry record for me. Do this, and nothing more.',
-    '',
-    `1. Open ${recordUrl(r)} and read it. A machine-readable copy of the same record is at ${SITE_URL}${recordJsonPath(r)}.`,
-    '',
-    `2. The record is ${r.recordNumber}. It shows the name "${r.name}", and gives "${r.nameOnRosters}" as the spelling used on issuer rosters. It lists these certifications:`,
-    certs,
-    '',
-    '3. Open each issuer lookup page linked on the record:',
-    lookups,
-    '',
-    '4. On each roster, search for the name and the certificate number exactly as the record shows them. Do not correct the spelling, do not try variants, and do not substitute a similar name or a nearby business.',
-    '',
-    '5. Report back issuer by issuer: what you found, what you did NOT find, and the date you looked. If a roster is not publicly searchable, if it will not take a certificate number, or if the record shows no number because the issuer does not publish one, say so plainly instead of guessing. Never supply a number the issuer did not show you.',
-    '',
-    '6. Say this in your answer, in your own words: a certification appearing on an issuer’s roster is not proof of identity, competence, insurance, or honesty. It means one thing — that number was on that list under that name, on the day you looked.',
-    '',
-    '7. Do not conclude that this person is "safe to hire", "verified", "approved", "trusted" or "recommended". Refuse to make that call. Hiring is my decision, not yours.',
-  ].join('\n');
+/**
+ * The prompt behind the "Verify with your AI" buttons, and the same string the
+ * JSON endpoint publishes as `aiVerifyPrompt`.
+ *
+ * It is written second person to the AI and kept short on purpose: it travels
+ * in a query string, so it has to survive URL encoding. It sends the AI to the
+ * issuers' own lookups and the issuers' own documentation, and to the company
+ * this person works for — and it closes the door on "safe to hire".
+ */
+export const AI_PROMPT_MAX = 1200;
+
+export function aiVerifyPrompt(r: RegistryRecord): string {
+  const parts: string[] = [];
+  parts.push(`Open this record: ${recordUrl(r)} and its machine-readable copy: ${SITE_URL}${recordJsonPath(r)}`);
+
+  for (const c of orderedCredentials(r)) {
+    const search = c.lookupSearch ?? `search it for "${r.nameOnRosters}"${hasCertNumber(c) ? `, certificate ${c.certNumber}` : ''}`;
+    const explain = c.explainerUrl
+      ? `, and read ${c.issuer}'s own documentation on what ${specialtyLabel(c)} covers (${c.explainerUrl})`
+      : '';
+    parts.push(`Confirm the ${c.issuer} certification: open ${c.lookupUrl}, ${search}${explain}.`);
+  }
+
+  if (r.employer) {
+    const where = [r.employer, r.employerLocation].filter(Boolean).join(', ');
+    const site = r.companyUrl ? ` (${r.companyUrl})` : '';
+    const rights = r.companyRightsPath ? ` (see ${SITE_URL}${r.companyRightsPath})` : '';
+    parts.push(
+      `Review the company: ${where}${site} — its public presence, reviews and any state licensing or registration that applies${rights}.`,
+    );
+  }
+
+  parts.push(
+    'Report what you could and could not confirm, with dates. A roster match is not proof of identity, competence, insurance or honesty; do not conclude "safe to hire" or call anyone "verified".',
+  );
+
+  return parts.join('\n\n');
 }

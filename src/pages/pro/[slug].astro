@@ -11,9 +11,9 @@ import {
   recordJsonPath,
   dateOrDash,
   shortDate,
-  roleLine,
+  monthYear,
   orderedCredentials,
-  verifyPrompt,
+  aiVerifyPrompt,
   type RegistryRecord,
   type RegistryCredential,
 } from '../../lib/registry';
@@ -45,10 +45,37 @@ const orderedRows: Row[] = ISSUER_ORDER.map((issuer) => {
 });
 const otherRows = rec.credentials.filter((c) => !ISSUER_ORDER.includes(c.issuer as (typeof ISSUER_ORDER)[number]));
 
-const prompt = verifyPrompt(rec);
+const prompt = aiVerifyPrompt(rec);
 const jsonPath = recordJsonPath(rec);
-const role = roleLine(rec);
 const photoSrc = rec.photo.thumbUrl ?? rec.photo.url;
+
+// One quiet line under the credentials: where we looked, when, and whatever
+// expiry the issuer itself publishes. No per-row dates, no checkmarks.
+const checkedIssuers = idCredentials.filter((c) => c.checkedAt).map((c) => c.issuer);
+const issuerList =
+  checkedIssuers.length > 1
+    ? `${checkedIssuers.slice(0, -1).join(', ')} and ${checkedIssuers[checkedIssuers.length - 1]}`
+    : (checkedIssuers[0] ?? null);
+const checkBits: string[] = [];
+if (issuerList) checkBits.push(`Checked against ${issuerList} public rosters`);
+const checkedOn = shortDate(rec.lastChecked);
+if (checkedOn) checkBits.push(checkedOn);
+for (const c of idCredentials) {
+  const exp = monthYear(c.issuerListedExpiry);
+  if (exp) checkBits.push(`issuer lists ${c.issuer} expiry ${exp}`);
+}
+// Kept as parts: a wrap may fall between them, never inside a date.
+
+
+// "Verify with your AI": the same prompt, prefilled where the service takes a
+// query parameter. Gemini publishes no such parameter, so its button copies.
+const encodedPrompt = encodeURIComponent(prompt);
+const aiLinks = [
+  { name: 'ChatGPT', href: `https://chatgpt.com/?q=${encodedPrompt}` },
+  { name: 'Claude', href: `https://claude.ai/new?q=${encodedPrompt}` },
+  { name: 'Perplexity', href: `https://www.perplexity.ai/search?q=${encodedPrompt}` },
+  { name: 'Grok', href: `https://grok.com/?q=${encodedPrompt}` },
+];
 
 const title = `Registry record ${rec.recordNumber} — ${rec.name} | ${ORG_NAME}`;
 const description = `Registry record ${rec.recordNumber}: what ${ORG_NAME} found when it searched issuer rosters for ${rec.name}. Not an endorsement.`;
@@ -79,6 +106,7 @@ const personLd = {
         worksFor: {
           '@type': 'Organization',
           name: rec.employer,
+          ...(rec.companyUrl ? { url: rec.companyUrl } : {}),
           ...(rec.employerLocation ? { address: rec.employerLocation } : {}),
         },
       }
@@ -138,22 +166,23 @@ const jsonLd = [breadcrumbLd, personLd];
         <div class="idcard__who">
           <p class="idcard__kicker">REGISTRY RECORD · {rec.recordNumber}</p>
           <h1 id="record-name">{rec.name}</h1>
-          <p class="idcard__alt">Legal name: {rec.nameOnRosters} (as it appears on issuer rosters)</p>
+          <p class="idcard__alt">{rec.nameOnRosters} on issuer rosters</p>
 
-          <dl class="idfacts">
-            {rec.activeSince && (
-              <div class="idfact">
-                <dt>Active in chimney services since</dt>
-                <dd>{rec.activeSince}</dd>
-              </div>
+          <p class="idline">
+            {rec.activeSince && <span>ACTIVE IN CHIMNEY SERVICES SINCE {rec.activeSince}</span>}
+            {(rec.role || rec.employer) && (
+              <span>
+                {rec.role && <>{rec.role.toUpperCase()}{rec.employer ? ' · ' : ''}</>}
+                {rec.employer &&
+                  (rec.companyUrl ? (
+                    <a href={rec.companyUrl} rel="noopener" target="_blank">{rec.employer}</a>
+                  ) : (
+                    <>{rec.employer}</>
+                  ))}
+                {rec.employerLocation && <>, {rec.employerLocation}</>}
+              </span>
             )}
-            {role && (
-              <div class="idfact">
-                <dt>Role</dt>
-                <dd>{role}</dd>
-              </div>
-            )}
-          </dl>
+          </p>
         </div>
       </div>
 
@@ -163,14 +192,36 @@ const jsonLd = [breadcrumbLd, personLd];
         ))}
       </ul>
 
-      <p class="idcard__note">
-        Certifications checked against the issuers' public rosters on the dates shown. Photo, role and history supplied by
-        this person.
-      </p>
+      {checkBits.length > 0 && (
+        <p class="idcard__checked">
+          {checkBits.map((bit, i) => (
+            <>
+              {i > 0 && <span class="idcard__checked-sep" aria-hidden="true"> · </span>}
+              <span class="idcard__checked-bit">{bit}</span>
+            </>
+          ))}
+        </p>
+      )}
 
-      <p class="idcard__actions">
-        <button type="button" class="button button--ghost" id="open-details">Verify with your AI</button>
-      </p>
+      <div class="aiverify" id="ai-verify" data-prompt={prompt}>
+        <p class="aiverify__label" id="ai-verify-label">Verify with your AI</p>
+        <ul class="aiverify__row" aria-labelledby="ai-verify-label">
+          {aiLinks.map((a) => (
+            <li>
+              <a class="button button--ghost aiverify__btn" href={a.href} rel="noopener nofollow" target="_blank">
+                {a.name}
+              </a>
+            </li>
+          ))}
+          <li>
+            <button type="button" class="button button--ghost aiverify__btn" id="ai-gemini">Gemini (copies prompt)</button>
+          </li>
+          <li>
+            <button type="button" class="button button--ghost aiverify__btn" id="ai-copy">Copy prompt</button>
+          </li>
+        </ul>
+        <p class="fineprint aiverify__status" id="ai-status" role="status" aria-live="polite"></p>
+      </div>
     </section>
 
     <!-- ---------- Details: the evidence, collapsed by default ---------- -->
@@ -194,8 +245,8 @@ const jsonLd = [breadcrumbLd, personLd];
             missing is as visible as what is present.
           </p>
           <p class="fineprint issuer-marks">
-            Issuer logos and names are the issuers' trademarks, shown only to identify where the check was run; no endorsement
-            by NFI or SPRAT is implied.
+            Photo, role and history on this record were supplied by this person. Issuer logos and names are the issuers'
+            trademarks, shown only to identify where the check was run; no endorsement by NFI or SPRAT is implied.
           </p>
 
           {orderedRows.map((row) =>
@@ -264,21 +315,20 @@ const jsonLd = [breadcrumbLd, personLd];
         </section>
 
         <section aria-labelledby="verify" class="rec-section">
-          <h2 id="verify">Verify this with your own AI</h2>
+          <h2 id="verify">The prompt those buttons send</h2>
           <p class="lede">
-            Do not take our word for it. Copy the prompt below, paste it into whatever AI assistant you use, and have it do the
-            roster checks in front of you — including the ones we have not run.
+            Nothing is hidden in it. This is the whole text the buttons above hand to an AI — read it, edit it, or paste it
+            wherever you like.
           </p>
           <div class="verify">
-            <label class="verify__label" for="verify-prompt">Prompt — copy and paste</label>
-            <textarea id="verify-prompt" class="verify__text" readonly rows="18" spellcheck="false">{prompt}</textarea>
+            <label class="verify__label" for="verify-prompt">Prompt — plain text</label>
+            <textarea id="verify-prompt" class="verify__text" readonly rows="12" spellcheck="false">{prompt}</textarea>
             <p class="verify__actions">
               <button type="button" class="button" id="verify-copy" data-copy-target="verify-prompt">Copy the prompt</button>
               <span class="fineprint" id="verify-copy-status" role="status" aria-live="polite"></span>
             </p>
             <p class="fineprint">
-              If the copy button does not work, select the text above and copy it by hand — it is plain text and nothing is hidden in it.
-              Machine-readable version of this record: <a href={jsonPath}>{jsonPath}</a>.
+              Machine-readable version of this record, including this prompt: <a href={jsonPath}>{jsonPath}</a>.
             </p>
           </div>
         </section>
@@ -366,55 +416,89 @@ const jsonLd = [breadcrumbLd, personLd];
   }
   .idcard__alt {
     color: var(--muted);
-    font-size: 0.95rem;
-    margin: 0 0 16px;
+    font-size: 0.92rem;
+    margin: 0 0 14px;
   }
-  .idfacts {
-    margin: 0;
-  }
-  .idfact {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 2px 8px;
-    padding: 4px 0;
-  }
-  .idfacts dt {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin: 0;
-  }
-  .idfacts dd {
+  /* Two mono lines, all caps: the facts this person supplied, stated flat. */
+  .idline {
     margin: 0;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.78rem;
     font-weight: 500;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
-    line-height: 1.5;
+    line-height: 1.7;
+  }
+  .idline span {
+    display: block;
+  }
+  .idline a {
+    color: inherit;
+    text-decoration-color: var(--rule);
+    text-underline-offset: 3px;
+  }
+  .idline a:hover,
+  .idline a:focus-visible {
+    color: var(--ember);
+    text-decoration-color: currentColor;
   }
   .idcreds {
     list-style: none;
-    margin: 22px 0 0;
-    padding: 18px 0 0;
+    margin: 24px 0 0;
+    padding: 20px 0 0;
     border-top: 1px solid var(--ink);
   }
-  .idcard__note {
-    font-size: 0.8rem;
+  .idcard__checked {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    line-height: 1.6;
     color: var(--muted);
-    line-height: 1.5;
-    margin: 16px 0 0;
+    margin: 18px 0 0;
     padding-top: 14px;
     border-top: 1px solid var(--rule);
   }
-  .idcard__actions {
+  /* A wrap may fall between the parts of this line, never inside a date. */
+  .idcard__checked-bit {
+    white-space: nowrap;
+  }
+
+  /* ---------- Verify with your AI ---------- */
+  .aiverify {
+    margin: 18px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+  .aiverify__label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+  }
+  .aiverify__row {
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 16px 0 0;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+  .aiverify__btn {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+    text-transform: none;
+    padding: 7px 12px;
+    min-height: 0;
+    white-space: nowrap;
+  }
+  .aiverify__status:empty {
+    display: none;
+  }
+  .aiverify__status {
+    margin: 10px 0 0;
+    color: var(--muted);
   }
 
   /* ---------- Details ---------- */
@@ -577,14 +661,6 @@ const jsonLd = [breadcrumbLd, personLd];
 <script is:inline>
   (function () {
     var details = document.getElementById('record-details');
-    var open = document.getElementById('open-details');
-    if (details && open) {
-      open.addEventListener('click', function () {
-        details.open = true;
-        var target = document.getElementById('verify');
-        if (target && target.scrollIntoView) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      });
-    }
     // A link into Details from anywhere else must not land on a closed box.
     if (details) {
       var openForHash = function () {
@@ -597,14 +673,44 @@ const jsonLd = [breadcrumbLd, personLd];
       window.addEventListener('hashchange', openForHash);
     }
 
+    // ---- Verify with your AI: Gemini publishes no prefill parameter, so its
+    // button copies the prompt and opens Gemini. "Copy prompt" does the same
+    // without opening anything.
+    var box = document.getElementById('ai-verify');
+    var status = document.getElementById('ai-status');
+    function say(msg) {
+      if (status) status.textContent = msg;
+    }
+    function copyPrompt(then) {
+      var text = box ? box.getAttribute('data-prompt') : '';
+      if (!text) return;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(
+          function () { say('Prompt copied. Paste it in.'); if (then) then(); },
+          function () { say('Could not copy — open Details below and copy the prompt by hand.'); },
+        );
+      } else {
+        say('Could not copy — open Details below and copy the prompt by hand.');
+      }
+    }
+    var gem = document.getElementById('ai-gemini');
+    if (gem) {
+      gem.addEventListener('click', function () {
+        copyPrompt(function () { window.open('https://gemini.google.com/app', '_blank', 'noopener'); });
+      });
+    }
+    var copy = document.getElementById('ai-copy');
+    if (copy) copy.addEventListener('click', function () { copyPrompt(null); });
+
+    // ---- The plain-text copy in Details, for anyone who wants to read it first.
     var btn = document.getElementById('verify-copy');
     if (!btn) return;
-    var status = document.getElementById('verify-copy-status');
+    var vstatus = document.getElementById('verify-copy-status');
     btn.addEventListener('click', function () {
       var field = document.getElementById(btn.getAttribute('data-copy-target'));
       if (!field) return;
       var done = function (msg) {
-        if (status) status.textContent = msg;
+        if (vstatus) vstatus.textContent = msg;
       };
       var text = field.value;
       if (navigator.clipboard && navigator.clipboard.writeText) {

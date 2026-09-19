@@ -12,6 +12,8 @@
       "role": "Owner",
       "employer": "Chimney Monkey",
       "employerLocation": "Buffalo Grove, IL",
+      "companyUrl": "https://chimneymonkey.com",
+      "companyRightsPath": "/illinois/rights",
       "photo": {
         "label": "SUPPLIED BY THIS PERSON — NOT CHECKED",
         "url": "/pro/photos/art-kalinicenko-00001.jpg",
@@ -54,7 +56,9 @@
           "lookupNote": "NFI's public tool searches by location and by specialty (wood, gas, pellet, hearth design). It does not take a certificate number, so the strongest check a reader can run there is a name match against the list it returns — search near 60089 and look for this name.",
           "relevance": "NFI certifies knowledge of hearth appliances — the installation and service of wood, gas and pellet equipment. The Woodburning Specialist credential covers wood-burning appliances specifically.",
           "logo": "/pro/issuers/nfi.png",
-          "logoOnDark": false
+          "logoOnDark": false,
+          "explainerUrl": "https://www.nficertified.org/industry/nfi-woodburning-specialist/",
+          "lookupSearch": "search near ZIP 60089 for \"Artjoms Kalinicenko\""
         },
         {
           "issuer": "SPRAT",
@@ -74,7 +78,9 @@
           "lookupNote": "SPRAT runs a public certification verification system for technicians, linked from that page. It searches by SPRAT number and last name and returns the certification level and the issuer's expiry date — the same search anyone can repeat with the number on this record.",
           "relevance": "Rope access is a way of reaching work on a steep or tall roof safely. It says nothing about chimney knowledge — it is about getting to the flue, not about what happens at it.",
           "logo": "/pro/issuers/sprat.png",
-          "logoOnDark": true
+          "logoOnDark": true,
+          "explainerUrl": "https://sprat.org/certification/",
+          "lookupSearch": "search SPRAT number 2602623 with last name Kalinicenko and note the level and expiry SPRAT reports"
         }
       ],
       "noneOnRecord": [
