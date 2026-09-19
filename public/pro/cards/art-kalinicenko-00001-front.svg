@@ -13,9 +13,10 @@
 <line x1="5" y1="12.4" x2="80.6" y2="12.4" stroke="#d9d6cf" stroke-width="0.3"/>
 <line x1="5" y1="12.4" x2="12" y2="12.4" stroke="#ea1818" stroke-width="0.6"/>
 <text x="5" y="17.6" font-family="'IBM Plex Mono', 'Courier New', ui-monospace, monospace" font-size="2.6" font-weight="500" fill="#5c5a55" letter-spacing="0.5">REGISTRY RECORD</text>
-<text x="5" y="26.8" font-family="'Zilla Slab', 'Zilla Slab Medium', Georgia, 'Times New Roman', serif" font-size="7" font-weight="700" fill="#111111">Art Kalinicenko</text>
-<text x="5" y="33.4" font-family="'IBM Plex Mono', 'Courier New', ui-monospace, monospace" font-size="3.6" font-weight="500" fill="#111111" letter-spacing="0.3">CS-P-00001</text>
-<text x="5" y="39.2" font-family="'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="2.3" font-weight="400" fill="#5c5a55">Certifications checked against issuer rosters — see record</text>
-<line x1="5" y1="43.6" x2="80.6" y2="43.6" stroke="#d9d6cf" stroke-width="0.3"/>
-<text x="5" y="47.9" font-family="'IBM Plex Mono', 'Courier New', ui-monospace, monospace" font-size="2.2" font-weight="500" fill="#111111">Not an ID. Not an endorsement. Not proof of anything.</text>
+<text x="5" y="25.4" font-family="'Zilla Slab', 'Zilla Slab Medium', Georgia, 'Times New Roman', serif" font-size="6.8" font-weight="700" fill="#111111">Art Kalinicenko</text>
+<text x="5" y="30.3" font-family="'IBM Plex Mono', 'Courier New', ui-monospace, monospace" font-size="2.3" font-weight="500" fill="#5c5a55">In chimney services since 2017 · Chimney Monkey</text>
+<text x="5" y="36.2" font-family="'IBM Plex Mono', 'Courier New', ui-monospace, monospace" font-size="3.6" font-weight="500" fill="#111111" letter-spacing="0.3">CS-P-00001</text>
+<text x="5" y="41.2" font-family="'Archivo', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="2.3" font-weight="400" fill="#5c5a55">Certifications checked against issuer rosters — see record</text>
+<line x1="5" y1="44.4" x2="80.6" y2="44.4" stroke="#d9d6cf" stroke-width="0.3"/>
+<text x="5" y="48.6" font-family="'IBM Plex Mono', 'Courier New', ui-monospace, monospace" font-size="2.2" font-weight="500" fill="#111111">Not an ID. Not an endorsement. Not proof of anything.</text>
 </svg>

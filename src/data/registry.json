@@ -8,6 +8,10 @@
       "nameOnRosters": "Artjoms Kalinicenko",
       "recordCreated": "2026-09-18",
       "lastChecked": "2026-09-18",
+      "activeSince": "2017",
+      "role": "Owner",
+      "employer": "Chimney Monkey",
+      "employerLocation": "Buffalo Grove, IL",
       "photo": {
         "label": "SUPPLIED BY THIS PERSON — NOT CHECKED",
         "url": "/pro/photos/art-kalinicenko-00001.jpg",
@@ -19,7 +23,7 @@
       "supplied": [
         {
           "label": "Job title",
-          "value": "Chimney technician · owner-operator"
+          "value": "Owner · chimney technician"
         },
         {
           "label": "Service area",

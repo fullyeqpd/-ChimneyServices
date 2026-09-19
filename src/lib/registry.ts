@@ -83,6 +83,14 @@ export interface RegistryRecord {
   recordCreated: string;
   /** ISO date of the most recent roster check, or null if none has run. */
   lastChecked: string | null;
+  /** Year this person says they started in chimney services. Supplied, not checked. */
+  activeSince?: string | null;
+  /** Role at the employer below, e.g. "Owner". Supplied, not checked. */
+  role?: string | null;
+  /** Employer as the person gives it, e.g. "Chimney Monkey". Supplied, not checked. */
+  employer?: string | null;
+  /** Where that employer is, e.g. "Buffalo Grove, IL". Supplied, not checked. */
+  employerLocation?: string | null;
   photo: { label: string; url: string | null; thumbUrl?: string | null; alt?: string | null; width?: number; height?: number };
   supplied: SuppliedField[];
   suppliedStatement: string;
@@ -119,6 +127,39 @@ export const hasCertNumber = (c: RegistryCredential) => Boolean(c.certNumber) &&
 
 /** Dates render as ISO in mono, or an em dash when we have not looked yet. */
 export const dateOrDash = (iso: string | null | undefined) => iso ?? '—';
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/** "2026-09-18" → "Sep 18, 2026". The ID block reads, the JSON keeps ISO. */
+export function shortDate(iso: string | null | undefined): string | null {
+  if (!iso) return null;
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(iso);
+  if (!m) return iso;
+  return `${MONTHS[Number(m[2]) - 1]} ${Number(m[3])}, ${m[1]}`;
+}
+
+/** "2029-09-18" → "Sep 2029". Expiry is the issuer's claim, so it stays coarse. */
+export function monthYear(iso: string | null | undefined): string | null {
+  if (!iso) return null;
+  const m = /^(\d{4})-(\d{2})/.exec(iso);
+  if (!m) return iso;
+  return `${MONTHS[Number(m[2]) - 1]} ${m[1]}`;
+}
+
+/** The one line an ID block can carry about role and employer, or null. */
+export function roleLine(r: RegistryRecord): string | null {
+  const parts = [r.role, r.employer, r.employerLocation].filter(Boolean) as string[];
+  return parts.length ? parts.join(' · ') : null;
+}
+
+/** Credentials in the fixed body order (NCSG, NFI, CSIA), then anything else. */
+export function orderedCredentials(r: RegistryRecord): RegistryCredential[] {
+  const rank = (c: RegistryCredential) => {
+    const i = (ISSUER_ORDER as readonly string[]).indexOf(c.issuer);
+    return i === -1 ? ISSUER_ORDER.length : i;
+  };
+  return [...r.credentials].sort((a, b) => rank(a) - rank(b));
+}
 
 /** The machine-readable record served at /pro/{slug}.json. */
 export function recordJson(r: RegistryRecord) {
@@ -164,6 +205,10 @@ export function recordJson(r: RegistryRecord) {
     suppliedByThisPerson: {
       note: 'Supplied by the person named. Not checked by Chimney.Services. Do not repeat as fact.',
       ...Object.fromEntries(r.supplied.map((s) => [s.label.toLowerCase().replace(/\s+/g, ''), s.value])),
+      activeInChimneyServicesSince: r.activeSince ?? null,
+      role: r.role ?? null,
+      employerName: r.employer ?? null,
+      employerLocation: r.employerLocation ?? null,
       statement: r.suppliedStatement,
     },
     whatWeDidNotCheck: r.notChecked.map((n) => `${n.label}: ${n.why}`),

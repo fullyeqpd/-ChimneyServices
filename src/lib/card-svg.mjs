@@ -55,26 +55,34 @@ ${body}
 export function frontSvg(record) {
   const M = 5;
   const R = CARD_W - M;
+  // One supplied line — trade history and employer — only when both are on the
+  // record, and only because it fits on one line at card size.
+  const sinceBits = [
+    record.activeSince ? `In chimney services since ${record.activeSince}` : null,
+    record.employer || null,
+  ].filter(Boolean);
+  const sinceLine = sinceBits.length ? sinceBits.join(' · ') : null;
   const body = [
     mark(M, 3.6, 6.6),
     text(M + 5.6, 9.1, 'Chimney.Services', { font: SERIF, size: 4.3, weight: 700 }),
     rule(M, R, 12.4, RULE, 0.3),
     rule(M, M + 7, 12.4, EMBER, 0.6),
     text(M, 17.6, 'REGISTRY RECORD', { font: MONO, size: 2.6, fill: MUTED, weight: 500, track: 0.5 }),
-    text(M, 26.8, record.name, { font: SERIF, size: 7, weight: 700 }),
-    text(M, 33.4, record.recordNumber, { font: MONO, size: 3.6, weight: 500, track: 0.3 }),
-    text(M, 39.2, 'Certifications checked against issuer rosters — see record', {
+    text(M, 25.4, record.name, { font: SERIF, size: 6.8, weight: 700 }),
+    sinceLine ? text(M, 30.3, sinceLine, { font: MONO, size: 2.3, fill: MUTED, weight: 500 }) : '',
+    text(M, sinceLine ? 36.2 : 33.4, record.recordNumber, { font: MONO, size: 3.6, weight: 500, track: 0.3 }),
+    text(M, sinceLine ? 41.2 : 39.2, 'Certifications checked against issuer rosters — see record', {
       font: SANS,
       size: 2.3,
       fill: MUTED,
     }),
-    rule(M, R, 43.6, RULE, 0.3),
-    text(M, 47.9, 'Not an ID. Not an endorsement. Not proof of anything.', {
+    rule(M, R, sinceLine ? 44.4 : 43.6, RULE, 0.3),
+    text(M, sinceLine ? 48.6 : 47.9, 'Not an ID. Not an endorsement. Not proof of anything.', {
       font: MONO,
       size: 2.2,
       weight: 500,
     }),
-  ].join('\n');
+  ].filter(Boolean).join('\n');
   return shell(
     'card-front',
     `Chimney.Services registry card, front — ${record.recordNumber}`,
