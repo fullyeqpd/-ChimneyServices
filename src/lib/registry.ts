@@ -57,6 +57,8 @@ export interface RegistryCredential {
   lookupLabel: string;
   /** The issuer's own mark, used as the lookup link on the ID block. Optional. */
   logo?: string | null;
+  /** true when the issuer only publishes a light/reverse logo that needs a dark backing chip */
+  logoOnDark?: boolean;
   /** What that lookup actually lets a reader search by. */
   lookupNote: string;
   /** One honest line on what the credential is relevant to. */

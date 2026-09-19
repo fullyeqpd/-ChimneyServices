@@ -52,7 +52,9 @@
           "lookupUrl": "https://www.nficertified.org/public/find-an-nfi-pro/",
           "lookupLabel": "NFI — Find an NFI Pro",
           "lookupNote": "NFI's public tool searches by location and by specialty (wood, gas, pellet, hearth design). It does not take a certificate number, so the strongest check a reader can run there is a name match against the list it returns — search near 60089 and look for this name.",
-          "relevance": "NFI certifies knowledge of hearth appliances — the installation and service of wood, gas and pellet equipment. The Woodburning Specialist credential covers wood-burning appliances specifically."
+          "relevance": "NFI certifies knowledge of hearth appliances — the installation and service of wood, gas and pellet equipment. The Woodburning Specialist credential covers wood-burning appliances specifically.",
+          "logo": "/pro/issuers/nfi.png",
+          "logoOnDark": false
         },
         {
           "issuer": "SPRAT",
@@ -70,7 +72,9 @@
           "lookupUrl": "https://sprat.org/technician-verification-system/",
           "lookupLabel": "SPRAT — Certification Verification System",
           "lookupNote": "SPRAT runs a public certification verification system for technicians, linked from that page. It searches by SPRAT number and last name and returns the certification level and the issuer's expiry date — the same search anyone can repeat with the number on this record.",
-          "relevance": "Rope access is a way of reaching work on a steep or tall roof safely. It says nothing about chimney knowledge — it is about getting to the flue, not about what happens at it."
+          "relevance": "Rope access is a way of reaching work on a steep or tall roof safely. It says nothing about chimney knowledge — it is about getting to the flue, not about what happens at it.",
+          "logo": "/pro/issuers/sprat.png",
+          "logoOnDark": true
         }
       ],
       "noneOnRecord": [
