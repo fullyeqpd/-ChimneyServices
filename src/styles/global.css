@@ -168,10 +168,41 @@ code {
   text-decoration: none;
   padding: 4px 0;
   border-bottom: 1px solid transparent;
+  white-space: nowrap;
 }
 .nav a:hover,
 .nav a[aria-current='page'] {
   border-bottom-color: var(--ink);
+}
+/* Not open yet. Muted ink and a small ember tag — no fill, no pill, and the
+   link still works, because it goes somewhere that says when it will open. */
+.nav__link--soon {
+  color: var(--muted);
+}
+.nav__link--soon:hover,
+.nav__link--soon:focus-visible {
+  color: var(--ink);
+}
+.nav__soon {
+  font-family: var(--font-mono);
+  font-size: 0.68em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ember);
+  margin-left: 3px;
+  top: -0.55em;
+}
+/* Five items in mono do not sit on one line beside the wordmark on a phone.
+   Below 480px the nav takes the full width on its own row and the type comes
+   down far enough that the five wrap onto two lines rather than three. */
+@media (max-width: 480px) {
+  .nav {
+    width: 100%;
+    gap: 5px 11px;
+    font-size: 0.63rem;
+    letter-spacing: 0.02em;
+  }
 }
 
 /* ---------- Chips ---------- */

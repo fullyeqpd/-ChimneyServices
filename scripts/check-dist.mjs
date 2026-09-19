@@ -412,6 +412,38 @@ for (const rel of ['/companies.html', '/professionals.html']) {
     if (!/<button[^>]*id="state-go-btn"[^>]*>Go to my state<\/button>/.test(html)) err(f, 'home: no "Go to my state" button');
     if (!/class="state-index"/.test(html)) err(f, 'home: the no-JS state index is gone');
     if (!/<a href="\/sitemap">Site map<\/a>/.test(html)) err(f, 'home: the footer "Site map" link is missing');
+
+    // ---- The masthead: five tasks, in order, and the two that are not open
+    // yet say so in the link rather than being hidden behind it.
+    const masthead = html.match(/<nav class="nav"[\s\S]*?<\/nav>/)?.[0];
+    if (!masthead) err(f, 'home: no masthead <nav class="nav">');
+    else {
+      const wanted = [
+        ['/#start', 'Pick a state', false],
+        ['/services', 'Review a service', false],
+        ['/professionals', 'Find a professional', true],
+        ['/companies', 'Find a company', true],
+        ['/learn', 'Learn', false],
+      ];
+      const links = [...masthead.matchAll(/<a\s[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)];
+      if (links.length !== wanted.length) err(f, `home: masthead has ${links.length} links, expected ${wanted.length}`);
+      wanted.forEach(([href, label, soon], i) => {
+        const link = links[i];
+        if (!link) return;
+        if (link[1] !== href) err(f, `home: masthead link ${i + 1} is ${link[1]}, expected ${href}`);
+        if (!stripTags(link[2]).includes(label)) err(f, `home: masthead link ${href} does not read "${label}"`);
+        const isSoon = link[0].includes('nav__link--soon');
+        if (isSoon !== soon) err(f, `home: masthead link ${href} ${isSoon ? 'is' : 'is not'} marked "soon"`);
+        if (soon && !/class="nav__soon">Soon</.test(link[0])) err(f, `home: masthead link ${href} has no SOON tag`);
+      });
+      for (const gone of ['/rights', '/licensing', '/about']) {
+        if (masthead.includes(`href="${gone}"`)) err(f, `home: ${gone} is still in the masthead — it belongs in the footer`);
+      }
+    }
+    const footerNav = html.match(/<footer class="footer"[\s\S]*?<nav aria-label="Footer">([\s\S]*?)<\/nav>/)?.[1] ?? '';
+    for (const needed of ['/rights', '/licensing', '/services', '/learn', '/about', '/companies', '/professionals', '/sitemap']) {
+      if (!footerNav.includes(`href="${needed}"`)) err(f, `home: footer nav is missing ${needed}`);
+    }
     const stateIndexLinks = [...html.matchAll(/<ul class="state-index"[\s\S]*?<\/ul>/g)]
       .flatMap((m) => [...m[0].matchAll(/href="\/([a-z-]+)\/rights"/g)].map((x) => x[1]));
     if (stateIndexLinks.length !== 51) err(f, `home: state index lists ${stateIndexLinks.length} states, expected 51`);
@@ -519,8 +551,10 @@ for (const rel of ['/rights.html', '/licensing.html']) {
 
     if (!pagesXml.includes(`<loc>${SITE_ORIGIN}/services</loc>`)) errors.push('pages sitemap: missing /services');
     if (!llmsRaw.includes(`${SITE_ORIGIN}/services)`)) errors.push('llms.txt: missing /services');
+    // Rights, Licensing and About moved to the footer when the masthead became
+    // five tasks. Every page still reaches all five, wherever they sit.
     for (const nav of ['/rights', '/licensing', '/services', '/learn', '/about']) {
-      if (!html.includes(`href="${nav}"`)) err(f, `services: masthead nav link ${nav} is missing`);
+      if (!html.includes(`href="${nav}"`)) err(f, `services: site nav link ${nav} is missing`);
     }
   }
 }

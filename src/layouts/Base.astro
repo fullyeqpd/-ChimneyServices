@@ -12,19 +12,25 @@ interface Props {
   jsonLd?: Record<string, unknown>[];
   modified?: string | null;
   citedAs?: string | null;
-  section?: 'rights' | 'licensing' | 'services' | 'learn' | 'about' | 'home';
+  section?: 'rights' | 'licensing' | 'services' | 'learn' | 'about' | 'home' | 'professionals' | 'companies';
   /** A page-specific share image, when the site mark is not the right one. */
   ogImage?: string | null;
   ogImageAlt?: string | null;
 }
 const { title, description, path, noindex, ogType, jsonLd, modified, citedAs, section, ogImage, ogImageAlt } =
   Astro.props;
+// The masthead carries the five things a reader came to do, in the order they
+// do them: find your state, read what the job is, then the two pages that are
+// not open yet. "Soon" is said in the link itself — muted ink and a small
+// ember tag — rather than by hiding the link, so nobody clicks expecting a
+// search and finds a waiting list. Rights, Licensing and About are reference
+// rather than tasks, and live in the footer.
 const nav = [
-  ['rights', '/rights', 'Rights'],
-  ['licensing', '/licensing', 'Licensing'],
-  ['services', '/services', 'Services'],
-  ['learn', '/learn', 'Learn'],
-  ['about', '/about', 'About'],
+  { key: 'home', href: '/#start', label: 'Pick a state' },
+  { key: 'services', href: '/services', label: 'Review a service' },
+  { key: 'professionals', href: '/professionals', label: 'Find a professional', soon: true },
+  { key: 'companies', href: '/companies', label: 'Find a company', soon: true },
+  { key: 'learn', href: '/learn', label: 'Learn' },
 ] as const;
 ---
 <!doctype html>
@@ -62,7 +68,16 @@ const nav = [
           <span>Chimney.Services</span>
         </a>
         <nav class="nav" aria-label="Primary">
-          {nav.map(([key, href, label]) => <a href={href} aria-current={section === key ? 'page' : undefined}>{label}</a>)}
+          {nav.map((item) => (
+            <a
+              href={item.href}
+              class={'soon' in item && item.soon ? 'nav__link nav__link--soon' : 'nav__link'}
+              aria-current={section === item.key ? 'page' : undefined}
+            >
+              {item.label}
+              {'soon' in item && item.soon && <sup class="nav__soon">Soon</sup>}
+            </a>
+          ))}
         </nav>
       </div>
     </header>
