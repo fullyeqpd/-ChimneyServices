@@ -328,6 +328,12 @@ for (const rel of ['/companies.html', '/professionals.html']) {
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'waiting-list page: expected exactly 1 <h1>');
   if (/noindex/.test(html)) err(f, 'waiting-list page must be indexable');
   if (!/<form\b/.test(html)) err(f, 'waiting-list page: no <form>');
+  // The form is the point of the page, so it comes before the explanation of
+  // what the list is — not after it.
+  const formAt = html.search(/<form\b/);
+  const whatAt = html.indexOf('id="what-you-get"');
+  if (whatAt === -1) err(f, 'waiting-list page: no id="what-you-get" section');
+  else if (formAt > whatAt) err(f, 'waiting-list page: the form is below the "what you get" section');
   if (!/name="website2"/.test(html)) err(f, 'waiting-list page: no honeypot field');
   if (!/<noscript>/.test(html)) err(f, 'waiting-list page: no <noscript> note');
   for (const [label, re] of [
