@@ -3,7 +3,7 @@
 // Two short forms, one endpoint. Nothing on either list is for sale: there is
 // no ranking to buy, no placement to buy, and no page that can be bought. The
 // pages describe concretely what a person is waiting for — a company summary
-// like /chicago, or a registry record like /pro/art-kalinicenko-00001 — and
+// like /chicago, or a registry record like /pro/art-kalina — and
 // say plainly what is never checked.
 import licensingData from '../data/licensing.json';
 

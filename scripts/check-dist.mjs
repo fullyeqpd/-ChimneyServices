@@ -246,6 +246,29 @@ if (proPages.length) {
 }
 console.log(`Checked ${proPages.length} registry page(s).`);
 
+// ---- Redirects (dist/_redirects): the CS-P-00001 record moved to a shorter
+// slug, so the old page and its machine-readable twin must still redirect.
+{
+  const redirectsFile = path.join(DIST, '_redirects');
+  if (!fs.existsSync(redirectsFile)) errors.push('_redirects: missing from dist');
+  else {
+    const rules = fs.readFileSync(redirectsFile, 'utf8');
+    const has = (from, to) =>
+      rules.split('\n').some((line) => {
+        const [f, t, code] = line.trim().split(/\s+/);
+        return f === from && t === to && code === '301';
+      });
+    for (const [from, to] of [
+      ['/pro/art-kalinicenko-00001', '/pro/art-kalina'],
+      ['/pro/art-kalinicenko-00001.json', '/pro/art-kalina.json'],
+    ]) {
+      if (!has(from, to)) errors.push(`_redirects: missing 301 ${from} -> ${to}`);
+    }
+  }
+  if (!fs.existsSync(path.join(DIST, 'pro', 'art-kalina.html'))) errors.push('pro/art-kalina.html: renamed record page is missing');
+  if (fs.existsSync(path.join(DIST, 'pro', 'art-kalinicenko-00001.html'))) errors.push('pro/art-kalinicenko-00001.html: old record page must no longer be built');
+}
+
 // ---- Company summary pages (/chicago): indexable, one H1, JSON-LD parses,
 // no status language, and never CSIA in connection with this company.
 for (const rel of ['/chicago.html']) {

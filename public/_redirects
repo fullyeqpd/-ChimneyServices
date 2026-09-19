@@ -1,0 +1,4 @@
+# Cloudflare Pages redirects. Read from the build output root (dist/_redirects).
+# Registry record CS-P-00001 moved to a shorter slug; the old URLs keep working.
+/pro/art-kalinicenko-00001  /pro/art-kalina  301
+/pro/art-kalinicenko-00001.json  /pro/art-kalina.json  301
