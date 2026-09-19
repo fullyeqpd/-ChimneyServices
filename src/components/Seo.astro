@@ -8,8 +8,21 @@ interface Props {
   ogType?: 'website' | 'article';
   jsonLd?: Record<string, unknown>[];
   modified?: string | null;
+  /** Absolute-from-root path to a page-specific share image, e.g. a company's own mark. */
+  ogImage?: string | null;
+  ogImageAlt?: string | null;
 }
-const { title, description, path, noindex = false, ogType = 'website', jsonLd = [], modified } = Astro.props;
+const {
+  title,
+  description,
+  path,
+  noindex = false,
+  ogType = 'website',
+  jsonLd = [],
+  modified,
+  ogImage: pageImage,
+  ogImageAlt: pageImageAlt,
+} = Astro.props;
 const canonical = abs(path);
 const organization = {
   '@context': 'https://schema.org',
@@ -22,7 +35,10 @@ const organization = {
   ...(SAME_AS.length ? { sameAs: SAME_AS } : {}),
 };
 const blocks = [organization, ...jsonLd];
-const ogImage = `${SITE_URL}/chimney-services-logo.png`;
+const ogImage = pageImage ? abs(pageImage) : `${SITE_URL}/chimney-services-logo.png`;
+const ogImageAlt = pageImage
+  ? (pageImageAlt ?? '')
+  : 'Chimney.Services logo: fireplace, chimney stack and flame';
 ---
 <title>{title}</title>
 <meta name="description" content={description} />
@@ -34,7 +50,7 @@ const ogImage = `${SITE_URL}/chimney-services-logo.png`;
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogImage} />
-<meta property="og:image:alt" content="Chimney.Services logo: fireplace, chimney stack and flame" />
+<meta property="og:image:alt" content={ogImageAlt} />
 <meta property="og:locale" content="en_US" />
 {modified && <meta property="article:modified_time" content={modified} />}
 <meta name="twitter:card" content="summary" />

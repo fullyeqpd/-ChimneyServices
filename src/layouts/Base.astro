@@ -13,8 +13,12 @@ interface Props {
   modified?: string | null;
   citedAs?: string | null;
   section?: 'rights' | 'licensing' | 'services' | 'learn' | 'about' | 'home';
+  /** A page-specific share image, when the site mark is not the right one. */
+  ogImage?: string | null;
+  ogImageAlt?: string | null;
 }
-const { title, description, path, noindex, ogType, jsonLd, modified, citedAs, section } = Astro.props;
+const { title, description, path, noindex, ogType, jsonLd, modified, citedAs, section, ogImage, ogImageAlt } =
+  Astro.props;
 const nav = [
   ['rights', '/rights', 'Rights'],
   ['licensing', '/licensing', 'Licensing'],
@@ -37,7 +41,17 @@ const nav = [
       href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Zilla+Slab:wght@600;700&display=swap"
     />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <Seo title={title} description={description} path={path} noindex={noindex} ogType={ogType} jsonLd={jsonLd} modified={modified} />
+    <Seo
+      title={title}
+      description={description}
+      path={path}
+      noindex={noindex}
+      ogType={ogType}
+      jsonLd={jsonLd}
+      modified={modified}
+      ogImage={ogImage}
+      ogImageAlt={ogImageAlt}
+    />
   </head>
   <body>
     <a class="skip" href="#main">Skip to content</a>

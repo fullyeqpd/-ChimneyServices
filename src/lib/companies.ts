@@ -79,6 +79,13 @@ export interface Company {
   email: string;
   website: string;
   websiteLabel: string;
+  /**
+   * The company's own mark, served from /public. Shown to identify the company
+   * and nothing else: a trademark is not evidence, and it is never a badge this
+   * site awarded. Null for a company that has given us no logo.
+   */
+  logo: string | null;
+  logoAlt: string | null;
   hours: string;
   statePath: string;
   licensingPath: string;

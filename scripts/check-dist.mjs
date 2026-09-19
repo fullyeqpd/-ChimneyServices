@@ -292,6 +292,41 @@ for (const rel of ['/chicago.html']) {
     }
   }
   for (const t of ['BreadcrumbList', 'LocalBusiness', 'FAQPage']) if (!types.includes(t)) err(f, `company page missing ${t} JSON-LD`);
+  // The company's own mark: on the page as a real <img>, and in LocalBusiness
+  // as an absolute URL, so a machine reading the page gets the same picture a
+  // person does. It identifies the company; it is never a badge we awarded.
+  {
+    const logoImg = html.match(/<img[^>]*class="cocard__logo"[^>]*>/)?.[0];
+    if (!logoImg) err(f, 'company page: no <img class="cocard__logo"> company mark');
+    else {
+      if (!/src="\/companies\/chimney-monkey-logo\.png"/.test(logoImg)) err(f, 'company page: the mark is not /companies/chimney-monkey-logo.png');
+      if (!/\salt="Chimney Monkey logo"/.test(logoImg)) err(f, 'company page: the mark has no "Chimney Monkey logo" alt text');
+      for (const attr of ['width=', 'height=', 'loading="eager"']) {
+        if (!logoImg.includes(attr)) err(f, `company page: the mark is missing ${attr}`);
+      }
+      if (!fs.existsSync(path.join(DIST, 'companies', 'chimney-monkey-logo.png'))) {
+        errors.push('companies/chimney-monkey-logo.png: the company mark is missing from dist');
+      }
+    }
+    if (!/Logo is the company's trademark|Logo is the company&#39;s trademark/.test(html)) {
+      err(f, 'company page: no trademark note under the mark');
+    }
+    const business = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+      .map((m) => {
+        try {
+          return JSON.parse(m[1]);
+        } catch {
+          return null;
+        }
+      })
+      .find((o) => o && o['@type'] === 'LocalBusiness');
+    if (business && business.logo !== `${SITE_ORIGIN}/companies/chimney-monkey-logo.png`) {
+      err(f, `company page: LocalBusiness.logo is ${business.logo ?? 'missing'}`);
+    }
+    if (!html.includes(`<meta property="og:image" content="${SITE_ORIGIN}/companies/chimney-monkey-logo.png"`)) {
+      err(f, 'company page: og:image is not the company mark');
+    }
+  }
   const faqQuestions = (html.match(/class="faq__q"/g) ?? []).length;
   if (faqQuestions < 3) err(f, `company page: expected 3 FAQ questions in the DOM, found ${faqQuestions}`);
   if (!/href="\/companies"/.test(html)) err(f, 'company page: missing the /companies waiting-list link');

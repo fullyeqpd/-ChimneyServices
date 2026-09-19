@@ -107,6 +107,7 @@ const businessLd = {
     postalCode: c.address.postalCode,
     addressCountry: c.address.country,
   },
+  ...(c.logo ? { logo: abs(c.logo), image: abs(c.logo) } : {}),
   areaServed: areaServed(c).map((name) => ({ '@type': 'Place', name })),
   ...(c.membership
     ? {
@@ -129,7 +130,15 @@ const businessLd = {
 };
 const jsonLd = [breadcrumbLd, businessLd, faqLd];
 ---
-<Base title={title} description={description} path={path} jsonLd={jsonLd} modified={c.checkedAt}>
+<Base
+  title={title}
+  description={description}
+  path={path}
+  jsonLd={jsonLd}
+  modified={c.checkedAt}
+  ogImage={c.logo}
+  ogImageAlt={c.logoAlt}
+>
   <nav class="crumb" aria-label="Breadcrumb">{c.crumb}</nav>
 
   <div class="co-page">
@@ -143,8 +152,28 @@ const jsonLd = [breadcrumbLd, businessLd, faqLd];
 
     <!-- ---------- Summary card: the whole company at a glance ---------- -->
     <section class="cocard" aria-labelledby="summary-h">
-      <p class="cocard__kicker">COMPANY SUMMARY · {c.address.city.toUpperCase()}, {c.address.region}</p>
-      <h2 id="summary-h" class="cocard__name">{c.name}</h2>
+      <div class="cocard__head">
+        <div class="cocard__headings">
+          <p class="cocard__kicker">COMPANY SUMMARY · {c.address.city.toUpperCase()}, {c.address.region}</p>
+          <h2 id="summary-h" class="cocard__name">{c.name}</h2>
+        </div>
+        {c.logo && (
+          <img
+            class="cocard__logo"
+            src={c.logo}
+            alt={c.logoAlt ?? `${c.name} logo`}
+            width="96"
+            height="96"
+            loading="eager"
+            decoding="async"
+          />
+        )}
+      </div>
+      {c.logo && (
+        <p class="fineprint cocard__logo-note">
+          Logo is the company's trademark, shown to identify the company; no endorsement implied.
+        </p>
+      )}
 
       <dl class="cofacts">
         <div class="cofact">
@@ -442,10 +471,42 @@ const jsonLd = [breadcrumbLd, businessLd, faqLd];
     color: var(--muted);
     margin: 0 0 8px;
   }
+  /* The company's own mark sits top-right of the card on a wide screen and
+     left of the name on a narrow one, where a 96px block beside a wrapping
+     headline would push the name into a column two words wide. */
+  .cocard__head {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .cocard__headings {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  .cocard__logo {
+    order: -1;
+    flex: none;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+  }
+  @media (min-width: 620px) {
+    .cocard__logo {
+      order: 0;
+      width: 96px;
+      height: 96px;
+    }
+  }
+  .cocard__logo-note {
+    margin: 10px 0 0;
+  }
   .cocard__name {
     font-size: clamp(1.7rem, 3.6vw, 2.2rem);
-    margin: 0 0 18px;
+    margin: 0;
     line-height: 1.1;
+  }
+  .cocard .cofacts {
+    margin-top: 18px;
   }
   .cofacts {
     margin: 0;
