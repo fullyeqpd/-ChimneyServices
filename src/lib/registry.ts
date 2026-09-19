@@ -55,6 +55,8 @@ export interface RegistryCredential {
   /** The issuer's own public lookup page. */
   lookupUrl: string;
   lookupLabel: string;
+  /** The issuer's own mark, used as the lookup link on the ID block. Optional. */
+  logo?: string | null;
   /** What that lookup actually lets a reader search by. */
   lookupNote: string;
   /** One honest line on what the credential is relevant to. */
