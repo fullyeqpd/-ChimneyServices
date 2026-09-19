@@ -217,9 +217,7 @@ for (const f of proPages) {
     }
   }
   if (!types.includes('Organization')) err(f, 'registry page missing Organization JSON-LD');
-  if (!/\/card\.html$/.test(rel)) {
-    for (const t of ['BreadcrumbList', 'Person']) if (!types.includes(t)) err(f, `registry record missing ${t} JSON-LD`);
-  }
+  for (const t of ['BreadcrumbList', 'Person']) if (!types.includes(t)) err(f, `registry record missing ${t} JSON-LD`);
 }
 if (proPages.length) {
   for (const sm of files.filter((x) => /sitemap-.*\.xml$/.test(x))) {
@@ -233,9 +231,6 @@ if (proPages.length) {
       const rec = JSON.parse(fs.readFileSync(path.join(DIST, 'pro', `${slug}.json`), 'utf8'));
       if (!Array.isArray(rec.whatWeDidNotCheck) || rec.whatWeDidNotCheck.length === 0) errors.push(`pro/${slug}.json: whatWeDidNotCheck is missing`);
       for (const c of rec.credentials ?? []) if (!c.issuerLookupUrl) errors.push(`pro/${slug}.json: credential ${c.issuer} has no issuerLookupUrl`);
-    }
-    for (const side of ['front', 'back']) {
-      if (!fs.existsSync(path.join(DIST, 'pro', 'cards', `${slug}-${side}.svg`))) errors.push(`pro/${slug}: card SVG ${side} is missing`);
     }
     if (!llmsRaw.includes(`/pro/${slug})`)) errors.push(`llms.txt: missing /pro/${slug}`);
   }

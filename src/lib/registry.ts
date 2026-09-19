@@ -110,8 +110,6 @@ export const getRecord = (slug: string) => RECORDS.find((r) => r.slug === slug);
 export const recordPath = (r: RegistryRecord) => `/pro/${r.slug}`;
 export const recordUrl = (r: RegistryRecord) => `${SITE_URL}/pro/${r.slug}`;
 export const recordJsonPath = (r: RegistryRecord) => `/pro/${r.slug}.json`;
-export const recordCardPath = (r: RegistryRecord) => `/pro/${r.slug}/card`;
-export const cardSvgPath = (r: RegistryRecord, side: 'front' | 'back') => `/pro/cards/${r.slug}-${side}.svg`;
 
 /**
  * What goes on the "Certificate number" line. A number only when there is a
@@ -167,7 +165,6 @@ export function recordJson(r: RegistryRecord) {
     $schema: 'https://schema.org/Person',
     record: r.recordNumber,
     recordUrl: recordUrl(r),
-    cardUrl: `${SITE_URL}${recordCardPath(r)}`,
     claim: RECORD_CLAIM,
     issuedBy: {
       name: 'Chimney.Services',

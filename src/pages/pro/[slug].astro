@@ -9,7 +9,6 @@ import {
   recordPath,
   recordUrl,
   recordJsonPath,
-  recordCardPath,
   dateOrDash,
   shortDate,
   roleLine,
@@ -48,7 +47,6 @@ const otherRows = rec.credentials.filter((c) => !ISSUER_ORDER.includes(c.issuer 
 
 const prompt = verifyPrompt(rec);
 const jsonPath = recordJsonPath(rec);
-const cardPath = recordCardPath(rec);
 const role = roleLine(rec);
 const photoSrc = rec.photo.thumbUrl ?? rec.photo.url;
 
@@ -140,7 +138,7 @@ const jsonLd = [breadcrumbLd, personLd];
         <div class="idcard__who">
           <p class="idcard__kicker">REGISTRY RECORD · {rec.recordNumber}</p>
           <h1 id="record-name">{rec.name}</h1>
-          <p class="idcard__alt">{rec.nameOnRosters} on issuer rosters</p>
+          <p class="idcard__alt">Legal name: {rec.nameOnRosters} (as it appears on issuer rosters)</p>
 
           <dl class="idfacts">
             {rec.activeSince && (
@@ -172,7 +170,6 @@ const jsonLd = [breadcrumbLd, personLd];
 
       <p class="idcard__actions">
         <button type="button" class="button button--ghost" id="open-details">Verify with your AI</button>
-        <a class="button button--ghost" href={cardPath}>Printable card</a>
       </p>
     </section>
 
@@ -195,6 +192,10 @@ const jsonLd = [breadcrumbLd, personLd];
           <p class="lede">
             Certification bodies are listed in a fixed order — NCSG, then NFI, then CSIA, then any other body — so that what is
             missing is as visible as what is present.
+          </p>
+          <p class="fineprint issuer-marks">
+            Issuer names and marks are the issuers' trademarks, shown only to identify where the check was run; no endorsement
+            by NFI or SPRAT is implied.
           </p>
 
           {orderedRows.map((row) =>
@@ -470,6 +471,11 @@ const jsonLd = [breadcrumbLd, personLd];
     color: var(--muted);
     font-size: 1rem;
     margin-bottom: 18px;
+  }
+  .issuer-marks {
+    color: var(--muted);
+    max-width: var(--measure);
+    margin: -8px 0 18px;
   }
   .rec-subhead {
     font-family: var(--font-mono);
