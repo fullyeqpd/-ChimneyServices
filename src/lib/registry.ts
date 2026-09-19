@@ -10,13 +10,22 @@
 //   "certification #X appears on the issuer's public roster under this name,
 //    checked on this date."
 import registryData from '../data/registry.json';
-import { SITE_URL } from './site';
+import { SITE_URL, abs } from './site';
 
 /** Fixed order for certification bodies, everywhere they are listed. */
 export const ISSUER_ORDER = ['NCSG', 'NFI', 'CSIA'] as const;
 
 export const RECORD_CLAIM =
-  "A certification number appears on the issuer's own public roster under this name, on the date shown. That is the whole claim.";
+  "A certification appears on the issuer's own public roster under this name, on the date shown — with the certificate number where the issuer publishes one. That is the whole claim.";
+
+/**
+ * Where a certificate number stands.
+ *  - "shown"                → the issuer's public lookup displays it and we copied it.
+ *  - "not-shown-by-issuer"  → the issuer's public lookup displays no number at all.
+ *  - "supplied-not-checked" → the person gave us the number; no roster search has run.
+ *  - "placeholder"          → a stand-in, not a real number. Never rendered as fact.
+ */
+export type CertNumberStatus = 'shown' | 'not-shown-by-issuer' | 'supplied-not-checked' | 'placeholder';
 
 export interface RegistryCredential {
   /** Short issuer name, e.g. "NFI". */
@@ -25,12 +34,24 @@ export interface RegistryCredential {
   issuerName: string;
   /** Certification as the issuer names it. */
   title: string;
-  /** Certificate number exactly as it should be searched. */
-  certNumber: string;
+  /** Certificate number exactly as it should be searched, or null when there is none to show. */
+  certNumber: string | null;
+  /** Where that number stands — never invent one, and never render a stand-in as fact. */
+  certNumberStatus: CertNumberStatus;
+  /** The line shown in place of, or beneath, the number. */
+  certNumberNote?: string | null;
   /** ISO date we searched the issuer's roster, or null if we have not yet. */
   checkedAt: string | null;
+  /** Who ran the roster search, when one has run. */
+  checkedBy?: string | null;
+  /** Evidence class for the roster check, same scale as the rest of the site. */
+  evidenceClass?: 'GOV' | 'DOC' | 'REF';
+  /** What we actually saw on the issuer's own page, in plain words. */
+  evidenceNote?: string | null;
   /** Expiry as the issuer lists it — the issuer's claim, not ours. */
   issuerListedExpiry: string | null;
+  /** Why no expiry is shown, when the issuer does not publish one. */
+  expiryNote?: string | null;
   /** The issuer's own public lookup page. */
   lookupUrl: string;
   lookupLabel: string;
@@ -62,7 +83,7 @@ export interface RegistryRecord {
   recordCreated: string;
   /** ISO date of the most recent roster check, or null if none has run. */
   lastChecked: string | null;
-  photo: { label: string; url: string | null };
+  photo: { label: string; url: string | null; thumbUrl?: string | null; alt?: string | null; width?: number; height?: number };
   supplied: SuppliedField[];
   suppliedStatement: string;
   /** On the record, in ISSUER_ORDER, then anything else. */
@@ -83,6 +104,18 @@ export const recordUrl = (r: RegistryRecord) => `${SITE_URL}/pro/${r.slug}`;
 export const recordJsonPath = (r: RegistryRecord) => `/pro/${r.slug}.json`;
 export const recordCardPath = (r: RegistryRecord) => `/pro/${r.slug}/card`;
 export const cardSvgPath = (r: RegistryRecord, side: 'front' | 'back') => `/pro/cards/${r.slug}-${side}.svg`;
+
+/**
+ * What goes on the "Certificate number" line. A number only when there is a
+ * real one; otherwise the plain reason there is not, never a stand-in.
+ */
+export function certNumberLine(c: RegistryCredential): string {
+  if (c.certNumber && c.certNumberStatus !== 'placeholder') return c.certNumber;
+  return c.certNumberNote ?? "not shown by issuer's public lookup";
+}
+
+/** True when the line above is a real number rather than a reason there isn't one. */
+export const hasCertNumber = (c: RegistryCredential) => Boolean(c.certNumber) && c.certNumberStatus !== 'placeholder';
 
 /** Dates render as ISO in mono, or an em dash when we have not looked yet. */
 export const dateOrDash = (iso: string | null | undefined) => iso ?? '—';
@@ -105,18 +138,24 @@ export function recordJson(r: RegistryRecord) {
     nameOnIssuerRosters: r.nameOnRosters,
     recordCreated: r.recordCreated,
     lastChecked: r.lastChecked,
-    photo: { url: r.photo.url, label: r.photo.label },
+    photo: { url: r.photo.url ? abs(r.photo.url) : null, label: r.photo.label, alt: r.photo.alt ?? null },
     certificationBodyOrder: [...ISSUER_ORDER, 'other bodies'],
     credentials: r.credentials.map((c) => ({
       issuer: c.issuer,
       issuerName: c.issuerName,
       certification: c.title,
       certificateNumber: c.certNumber,
-      certificateNumberIsPlaceholder: c.certNumber.includes('•'),
+      certificateNumberStatus: c.certNumberStatus,
+      certificateNumberNote: c.certNumberNote ?? null,
       checkedAt: c.checkedAt,
+      checkedBy: c.checkedAt ? (c.checkedBy ?? 'Chimney.Services') : null,
       foundOnIssuerRoster: c.checkedAt ? true : null,
+      rosterCheckEvidenceClass: c.evidenceClass ?? null,
+      rosterCheckEvidence: c.evidenceNote ?? null,
       issuerListedExpiry: c.issuerListedExpiry,
-      issuerListedExpiryNote: "The expiry date is the issuer's claim, copied from the issuer's roster. It is not ours.",
+      issuerListedExpiryNote: c.issuerListedExpiry
+        ? "The expiry date is the issuer's claim, copied from the issuer's roster. It is not ours."
+        : `No expiry is recorded — ${c.expiryNote ?? 'the issuer does not publish one'}.`,
       issuerLookupUrl: c.lookupUrl,
       issuerLookupNote: c.lookupNote,
       relevance: c.relevance,
@@ -138,7 +177,17 @@ export function verifyPrompt(r: RegistryRecord): string {
   const lookups = r.credentials
     .map((c, i) => `   ${String.fromCharCode(97 + i)}. ${c.issuerName} (${c.issuer}) — ${c.lookupUrl}`)
     .join('\n');
-  const certs = r.credentials.map((c) => `   - ${c.issuer}: "${c.title}", certificate number ${c.certNumber}`).join('\n');
+  const certs = r.credentials
+    .map((c) => {
+      const number = hasCertNumber(c)
+        ? `certificate number ${c.certNumber}${c.certNumberStatus === 'supplied-not-checked' ? ' (supplied by the person, not yet checked against the roster)' : ''}`
+        : `no certificate number — ${certNumberLine(c)}`;
+      const checked = c.checkedAt
+        ? `we searched the ${c.issuer} roster on ${c.checkedAt}`
+        : `we have NOT searched the ${c.issuer} roster`;
+      return `   - ${c.issuer}: "${c.title}", ${number}. ${checked}.`;
+    })
+    .join('\n');
   return [
     'You are checking a public registry record for me. Do this, and nothing more.',
     '',
@@ -152,7 +201,7 @@ export function verifyPrompt(r: RegistryRecord): string {
     '',
     '4. On each roster, search for the name and the certificate number exactly as the record shows them. Do not correct the spelling, do not try variants, and do not substitute a similar name or a nearby business.',
     '',
-    '5. Report back issuer by issuer: what you found, what you did NOT find, and the date you looked. If a roster is not publicly searchable, if it will not take a certificate number, or if the record shows a placeholder instead of a real number, say so plainly instead of guessing.',
+    '5. Report back issuer by issuer: what you found, what you did NOT find, and the date you looked. If a roster is not publicly searchable, if it will not take a certificate number, or if the record shows no number because the issuer does not publish one, say so plainly instead of guessing. Never supply a number the issuer did not show you.',
     '',
     '6. Say this in your answer, in your own words: a certification appearing on an issuer’s roster is not proof of identity, competence, insurance, or honesty. It means one thing — that number was on that list under that name, on the day you looked.',
     '',

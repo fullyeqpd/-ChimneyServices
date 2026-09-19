@@ -54,7 +54,7 @@ export const GET: APIRoute = async () => {
     lines.push('');
     lines.push('## Registry records');
     lines.push(
-      '> A registry record says one thing: a certification number appears on the issuer’s own public roster under this name, checked on the date shown. It is not an endorsement, an identity check, a licence, or a background check, and it confers no status on anyone.',
+      '> A registry record says one thing: a certification appears on the issuer’s own public roster under this name, checked on the date shown — with the certificate number where the issuer publishes one. It is not an endorsement, an identity check, a licence, or a background check, and it confers no status on anyone.',
     );
     for (const r of records) {
       lines.push(

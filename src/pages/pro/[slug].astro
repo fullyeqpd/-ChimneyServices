@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
-import Chip from '../../components/Chip.astro';
 import BeforeYouRely from '../../components/BeforeYouRely.astro';
+import CredentialRow from '../../components/CredentialRow.astro';
 import {
   getRecords,
   ISSUER_ORDER,
@@ -40,7 +40,6 @@ const orderedRows: Row[] = ISSUER_ORDER.map((issuer) => {
   return { kind: 'none', issuer, issuerName: none?.issuerName ?? issuer } as Row;
 });
 const otherRows = rec.credentials.filter((c) => !ISSUER_ORDER.includes(c.issuer as (typeof ISSUER_ORDER)[number]));
-const credAnchor = (c: RegistryCredential) => `credential-${c.issuer.toLowerCase()}`;
 
 const prompt = verifyPrompt(rec);
 const jsonPath = recordJsonPath(rec);
@@ -73,7 +72,7 @@ const personLd = {
     '@type': 'EducationalOccupationalCredential',
     name: c.title,
     credentialCategory: 'certification',
-    identifier: c.certNumber,
+    ...(c.certNumber && c.certNumberStatus !== 'placeholder' ? { identifier: c.certNumber } : {}),
     url: c.lookupUrl,
     recognizedBy: { '@type': 'Organization', name: c.issuerName, alternateName: c.issuer, url: c.lookupUrl },
     ...(c.issuerListedExpiry ? { expires: c.issuerListedExpiry } : {}),
@@ -117,9 +116,22 @@ const jsonLd = [breadcrumbLd, personLd];
           </aside>
         </div>
         <figure class="photo">
-          <div class="photo__box" role="img" aria-label="No photograph has been supplied for this record.">
-            <span aria-hidden="true">NO PHOTO<br />ON RECORD</span>
-          </div>
+          {rec.photo.url ? (
+            <div class="photo__box photo__box--image">
+              <img
+                src={rec.photo.url}
+                alt={rec.photo.alt ?? `Photo supplied by ${rec.name}`}
+                width={rec.photo.width ?? 640}
+                height={rec.photo.height ?? 640}
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          ) : (
+            <div class="photo__box" role="img" aria-label="No photograph has been supplied for this record.">
+              <span aria-hidden="true">NO PHOTO<br />ON RECORD</span>
+            </div>
+          )}
           <figcaption class="photo__label">{rec.photo.label}</figcaption>
           <p class="photo__why">A photograph is supplied by the person named and proves nothing. We do not check that a face belongs to a name.</p>
         </figure>
@@ -134,36 +146,7 @@ const jsonLd = [breadcrumbLd, personLd];
 
         {orderedRows.map((row) =>
           row.kind === 'credential' ? (
-            <article class="cred" id={credAnchor(row.credential)}>
-              <p class="cred__head">
-                <span class="cred__abbr">{row.credential.issuer}</span>
-                <span class="cred__issuer">{row.credential.issuerName}</span>
-                {row.credential.checkedAt ? <Chip>Roster checked</Chip> : <Chip class="chip--flag">Not checked yet</Chip>}
-              </p>
-              <h3>{row.credential.title}</h3>
-              <dl class="cred__facts">
-                <dt>Certificate number</dt>
-                <dd class="mono">{row.credential.certNumber}</dd>
-                <dt>Roster check</dt>
-                <dd>
-                  Found on the {row.credential.issuer} roster, <span class="mono">{dateOrDash(row.credential.checkedAt)}</span>
-                  {!row.credential.checkedAt && (
-                    <span class="cred__pending">No roster search has been run for this record yet, so nothing here has been found.</span>
-                  )}
-                </dd>
-                <dt>Expiry</dt>
-                <dd>
-                  Issuer lists expiry as <span class="mono">{dateOrDash(row.credential.issuerListedExpiry)}</span>
-                  <span class="cred__pending">That date is the issuer's claim, copied from the issuer. It is not ours.</span>
-                </dd>
-              </dl>
-              <p class="cred__line"><span class="cred__line-label">What it is relevant to</span> {row.credential.relevance}</p>
-              <p class="cred__line"><span class="cred__line-label">Check it yourself</span> {row.credential.lookupNote}</p>
-              <p class="sources">
-                <span class="sources__label">Issuer lookup</span>
-                <span class="source"><Chip>REF</Chip><a href={row.credential.lookupUrl} rel="noopener" target="_blank">{row.credential.lookupLabel}</a></span>
-              </p>
-            </article>
+            <CredentialRow credential={row.credential} level={3} />
           ) : (
             <p class="cred cred--empty">
               <span class="cred__abbr cred__abbr--empty">{row.issuer}</span>
@@ -176,36 +159,7 @@ const jsonLd = [breadcrumbLd, personLd];
           <>
             <h3 class="rec-subhead">Other bodies</h3>
             {otherRows.map((c) => (
-              <article class="cred" id={credAnchor(c)}>
-                <p class="cred__head">
-                  <span class="cred__abbr">{c.issuer}</span>
-                  <span class="cred__issuer">{c.issuerName}</span>
-                  {c.checkedAt ? <Chip>Roster checked</Chip> : <Chip class="chip--flag">Not checked yet</Chip>}
-                </p>
-                <h4>{c.title}</h4>
-                <dl class="cred__facts">
-                  <dt>Certificate number</dt>
-                  <dd class="mono">{c.certNumber}</dd>
-                  <dt>Roster check</dt>
-                  <dd>
-                    Found on the {c.issuer} roster, <span class="mono">{dateOrDash(c.checkedAt)}</span>
-                    {!c.checkedAt && (
-                      <span class="cred__pending">No roster search has been run for this record yet, so nothing here has been found.</span>
-                    )}
-                  </dd>
-                  <dt>Expiry</dt>
-                  <dd>
-                    Issuer lists expiry as <span class="mono">{dateOrDash(c.issuerListedExpiry)}</span>
-                    <span class="cred__pending">That date is the issuer's claim, copied from the issuer. It is not ours.</span>
-                  </dd>
-                </dl>
-                <p class="cred__line"><span class="cred__line-label">What it is relevant to</span> {c.relevance}</p>
-                <p class="cred__line"><span class="cred__line-label">Check it yourself</span> {c.lookupNote}</p>
-                <p class="sources">
-                  <span class="sources__label">Issuer lookup</span>
-                  <span class="source"><Chip>REF</Chip><a href={c.lookupUrl} rel="noopener" target="_blank">{c.lookupLabel}</a></span>
-                </p>
-              </article>
+              <CredentialRow credential={c} level={4} />
             ))}
           </>
         )}
@@ -348,6 +302,19 @@ const jsonLd = [breadcrumbLd, personLd];
     text-align: center;
     line-height: 1.7;
   }
+  .photo__box--image {
+    display: block;
+    padding: 0;
+    background: var(--panel);
+    overflow: hidden;
+  }
+  .photo__box--image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
   .photo__label {
     font-family: var(--font-mono);
     font-size: 0.62rem;
@@ -405,13 +372,6 @@ const jsonLd = [breadcrumbLd, personLd];
     color: var(--muted);
     padding: 10px 16px;
   }
-  .cred__head {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px 10px;
-    align-items: center;
-    margin: 0 0 6px;
-  }
   .cred__abbr {
     font-family: var(--font-mono);
     font-size: 0.72rem;
@@ -423,78 +383,6 @@ const jsonLd = [breadcrumbLd, personLd];
   .cred__abbr--empty {
     border-color: var(--rule);
     color: var(--muted);
-  }
-  .cred__issuer {
-    font-size: 0.9rem;
-    color: var(--muted);
-  }
-  .cred h3,
-  .cred h4 {
-    font-family: var(--font-display);
-    font-size: 1.22rem;
-    font-weight: 600;
-    margin: 0 0 10px;
-  }
-  .cred__facts {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    margin: 0 0 10px;
-    border-top: 1px solid var(--rule);
-  }
-  @media (min-width: 620px) {
-    .cred__facts {
-      grid-template-columns: 170px minmax(0, 1fr);
-    }
-  }
-  .cred__facts dt {
-    font-family: var(--font-mono);
-    font-size: 0.68rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    padding: 9px 0 0;
-  }
-  .cred__facts dd {
-    margin: 0;
-    padding: 2px 0 9px;
-    font-size: 0.95rem;
-    overflow-wrap: anywhere;
-  }
-  @media (min-width: 620px) {
-    .cred__facts dt,
-    .cred__facts dd {
-      padding: 9px 0;
-      border-bottom: 1px solid var(--rule);
-    }
-    .cred__facts dt:last-of-type,
-    .cred__facts dd:last-of-type {
-      border-bottom: 0;
-    }
-  }
-  .cred__pending {
-    display: block;
-    color: var(--muted);
-    font-size: 0.86rem;
-    line-height: 1.5;
-    margin-top: 2px;
-  }
-  .cred__line {
-    font-size: 0.92rem;
-    max-width: var(--measure);
-    margin: 0 0 8px;
-    padding-left: 10px;
-    border-left: 1px solid var(--rule);
-  }
-  .cred__line-label {
-    font-family: var(--font-mono);
-    font-size: 0.66rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--muted);
-    display: block;
-  }
-  .cred .sources {
-    margin-bottom: 0;
   }
   .notchecked {
     list-style: none;

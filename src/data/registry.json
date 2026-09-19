@@ -7,37 +7,56 @@
       "preferredName": "Art",
       "nameOnRosters": "Artjoms Kalinicenko",
       "recordCreated": "2026-09-18",
-      "lastChecked": null,
-      "photo": { "label": "SUPPLIED BY THIS PERSON — NOT CHECKED", "url": null },
+      "lastChecked": "2026-09-18",
+      "photo": {
+        "label": "SUPPLIED BY THIS PERSON — NOT CHECKED",
+        "url": "/pro/photos/art-kalinicenko-00001.jpg",
+        "thumbUrl": "/pro/photos/art-kalinicenko-00001-160.jpg",
+        "alt": "Photo supplied by Art Kalinicenko",
+        "width": 640,
+        "height": 640
+      },
       "supplied": [
-        { "label": "Job title", "value": "SUPPLIED BY THIS PERSON — to be filled in" },
-        { "label": "Service area", "value": "SUPPLIED BY THIS PERSON — to be filled in" },
-        { "label": "Employer", "value": "SUPPLIED BY THIS PERSON — to be filled in" }
+        { "label": "Job title", "value": "Chimney technician · owner-operator" },
+        { "label": "Service area", "value": "Chicago North Shore and northwest suburbs" },
+        { "label": "Employer", "value": "Chimney Monkey, 741 Hastings Dr, Buffalo Grove, IL 60089" }
       ],
-      "suppliedStatement": "SUPPLIED BY THIS PERSON — to be filled in. Everything in this section is what the person told us about themselves. We have not checked any of it, and we do not repeat it as fact.",
+      "suppliedStatement": "Everything in this section is what the person told us about themselves. We have not checked any of it — not the employer, not the address, not the service area, not the photograph — and we do not repeat it as fact.",
       "credentials": [
         {
           "issuer": "NFI",
           "issuerName": "National Fireplace Institute",
-          "title": "NFI Certified — specialty to confirm",
-          "certNumber": "NFI-•••••",
-          "checkedAt": null,
+          "title": "NFI Woodburning Specialist",
+          "certNumber": null,
+          "certNumberStatus": "not-shown-by-issuer",
+          "certNumberNote": "not shown by issuer's public lookup",
+          "checkedAt": "2026-09-18",
+          "checkedBy": "Chimney.Services",
+          "evidenceClass": "REF",
+          "evidenceNote": "Listed on NFI's public Find-an-NFI-Pro search (nficertified.org), searched by location 60089, as Woodburning Specialist under this name and Chimney Monkey. NFI's public lookup displays no certificate number and no expiry, so none is recorded.",
           "issuerListedExpiry": null,
+          "expiryNote": "not shown by public lookup",
           "lookupUrl": "https://www.nficertified.org/public/find-an-nfi-pro/",
           "lookupLabel": "NFI — Find an NFI Pro",
-          "lookupNote": "NFI's public tool searches by location and by specialty (wood, gas, pellet, hearth design). It does not take a certificate number, so the strongest check a reader can run there is a name match against the list it returns.",
-          "relevance": "NFI certifies knowledge of hearth appliances — the installation and service of wood, gas and pellet equipment."
+          "lookupNote": "NFI's public tool searches by location and by specialty (wood, gas, pellet, hearth design). It does not take a certificate number, so the strongest check a reader can run there is a name match against the list it returns — search near 60089 and look for this name.",
+          "relevance": "NFI certifies knowledge of hearth appliances — the installation and service of wood, gas and pellet equipment. The Woodburning Specialist credential covers wood-burning appliances specifically."
         },
         {
           "issuer": "SPRAT",
           "issuerName": "Society of Professional Rope Access Technicians",
           "title": "Level 1 Rope Access Technician",
-          "certNumber": "SPRAT-•••••",
+          "certNumber": "2602623",
+          "certNumberStatus": "supplied-not-checked",
+          "certNumberNote": "supplied by this person — not checked against the roster",
           "checkedAt": null,
+          "checkedBy": null,
+          "evidenceClass": "REF",
+          "evidenceNote": "Number supplied by this person; roster search not yet run. SPRAT's verification system runs as a scripted application that cannot be searched without a browser, so no roster check has been completed for this record.",
           "issuerListedExpiry": null,
+          "expiryNote": "no roster search has been run",
           "lookupUrl": "https://sprat.org/technician-verification-system/",
           "lookupLabel": "SPRAT — Certification Verification System",
-          "lookupNote": "SPRAT runs a public certification verification system for technicians. It is the place to check the status this record claims.",
+          "lookupNote": "SPRAT runs a public certification verification system for technicians, at an application linked from that page. It is the place to check the number this record carries — and we have not checked it yet, so a reader who wants it checked has to run it themselves.",
           "relevance": "Rope access is a way of reaching work on a steep or tall roof safely. It says nothing about chimney knowledge — it is about getting to the flue, not about what happens at it."
         }
       ],
@@ -48,7 +67,7 @@
       "notChecked": [
         {
           "label": "Identity",
-          "why": "We matched a certification number to a name on an issuer's roster. We did not check that the person standing in front of you is that person, and we have no way to."
+          "why": "We matched a name to an issuer's public roster. We did not check that the person standing in front of you is that person, and we have no way to. The photograph on this record was supplied by the person named and proves nothing."
         },
         {
           "label": "Criminal background",
