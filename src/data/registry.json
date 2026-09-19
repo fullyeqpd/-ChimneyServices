@@ -22,6 +22,11 @@
         "width": 640,
         "height": 640
       },
+      "card": {
+        "front": "/pro/cards/art-kalina-front.png",
+        "back": "/pro/cards/art-kalina-back.png",
+        "alt": "Front of the Chimney.Services ID card for record CS-P-00001, Art Kalina: photograph, the NFI and SPRAT certification lines, the date the rosters were checked, and a QR code that opens this page."
+      },
       "supplied": [
         {
           "label": "Job title",

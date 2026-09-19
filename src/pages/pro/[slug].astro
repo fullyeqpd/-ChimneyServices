@@ -283,6 +283,26 @@ const jsonLd = [breadcrumbLd, personLd, faqLd];
               ))}
             </>
           )}
+
+          {rec.card && (
+            <figure class="rec-card">
+              <a href={rec.card.front}>
+                <img
+                  src={rec.card.front}
+                  alt={rec.card.alt}
+                  width="1012"
+                  height="638"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+              <figcaption class="fineprint">
+                The printed card carries the same lines as this page and a QR code that opens it. It is not a licence,
+                an insurance certificate or a background check, and the back of the card says so.
+                <a href="/professionals#order">How to order one</a>.
+              </figcaption>
+            </figure>
+          )}
         </section>
 
         <section aria-labelledby="supplied" class="rec-section">
@@ -593,6 +613,20 @@ const jsonLd = [breadcrumbLd, personLd, faqLd];
     color: var(--muted);
     max-width: var(--measure);
     margin: -8px 0 18px;
+  }
+  /* The printed card, small: the same record in the form somebody is handed. */
+  .rec-card {
+    margin: 26px 0 0;
+    max-width: 420px;
+  }
+  .rec-card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+  }
+  .rec-card figcaption {
+    margin-top: 8px;
   }
   .rec-subhead {
     font-family: var(--font-mono);

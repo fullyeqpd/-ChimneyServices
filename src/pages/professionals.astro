@@ -259,6 +259,57 @@ const jsonLd = [
       </p>
       <p class="fineprint">{NO_FEE_LINE}</p>
 
+      <!-- What is being ordered, shown rather than described. -->
+      <figure class="cards">
+        <figcaption class="cards__caption"><span class="kicker">What the card looks like</span></figcaption>
+        <div class="cards__row">
+          <div class="cards__item">
+            <a href="/pro/cards/art-kalina-front.png">
+              <img
+                src="/pro/cards/art-kalina-front.png"
+                alt="Front of a Chimney.Services ID card, record CS-P-00001, Art Kalina: photograph, the NFI and SPRAT certification lines, the date the rosters were checked, and a QR code."
+                width="1012"
+                height="638"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <p class="cards__label mono">REAL RECORD &#183; CS-P-00001 &#183; FRONT</p>
+          </div>
+          <div class="cards__item">
+            <a href="/pro/cards/sample-front.png">
+              <img
+                src="/pro/cards/sample-front.png"
+                alt="Front of a made-up sample card, record CS-P-00000, Sample Technician, with NCSG, NFI and CSIA certification lines, a silhouette in place of a photograph, and a QR code."
+                width="1012"
+                height="638"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <p class="cards__label mono">SAMPLE &#183; CS-P-00000 &#183; FRONT</p>
+          </div>
+          <div class="cards__item">
+            <a href="/pro/cards/sample-back.png">
+              <img
+                src="/pro/cards/sample-back.png"
+                alt="Back of the sample card: a large QR code, the record number, and the line saying the card confirms a roster check on the date shown."
+                width="1012"
+                height="638"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+            <p class="cards__label mono">SAMPLE &#183; CS-P-00000 &#183; BACK</p>
+          </div>
+        </div>
+        <figcaption class="fineprint cards__note">
+          The first card is a real record. The second and third are a made-up example &#8212; "Sample Technician",
+          record CS-P-00000, Example Chimney Co. &#8212; drawn to show the layout, watermarked, and with a silhouette
+          instead of anybody's face. No such person and no such company exist. The QR code opens the record page; it
+          proves nothing by itself.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="wl-section" aria-labelledby="what-h" id="what-you-get">
@@ -426,6 +477,41 @@ const jsonLd = [
   }
   .wl-attest {
     margin: 4px 0 0;
+  }
+
+  /* ---------- What the card looks like ---------- */
+  .cards {
+    margin: 30px 0 0;
+    border-top: 1px solid var(--ink);
+    padding-top: 14px;
+  }
+  .cards__caption {
+    margin-bottom: 12px;
+  }
+  .cards__row {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  @media (min-width: 620px) {
+    .cards__row {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .cards__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+  }
+  .cards__label {
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin: 6px 0 0;
+  }
+  .cards__note {
+    margin-top: 14px;
   }
   .wl-attest .wl-check {
     font-size: 0.92rem;

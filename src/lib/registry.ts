@@ -107,6 +107,11 @@ export interface RegistryRecord {
   /** Our state rights page for where that employer works, e.g. "/illinois/rights". */
   companyRightsPath?: string | null;
   photo: { label: string; url: string | null; thumbUrl?: string | null; alt?: string | null; width?: number; height?: number };
+  /**
+   * The printed card for this record, drawn by scripts/gen-sample-cards.mjs.
+   * Absent until a card has been made, which is most records.
+   */
+  card?: { front: string; back?: string | null; alt: string } | null;
   supplied: SuppliedField[];
   suppliedStatement: string;
   /** On the record, in ISSUER_ORDER, then anything else. */

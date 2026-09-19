@@ -452,6 +452,40 @@ for (const rel of ['/companies.html', '/professionals.html']) {
     for (const bad of [/js\.stripe\.com/, /paypal\.com\/sdk/, /checkout\.[a-z]+\.com/, /<form[^>]*action="https?:/]) {
       if (bad.test(html)) err(f, `professionals: payment processing on the page (${bad})`);
     }
+
+    // ---- The sample cards. Both formats shipped, three faces shown, and the
+    // fictional one named as fictional on the page that shows it.
+    for (const name of ['art-kalina-front', 'art-kalina-back', 'sample-front', 'sample-back']) {
+      for (const ext of ['png', 'svg']) {
+        const file = path.join(DIST, 'pro', 'cards', `${name}.${ext}`);
+        if (!fs.existsSync(file)) errors.push(`pro/cards/${name}.${ext}: sample card is missing from dist`);
+      }
+    }
+    for (const shown of ['art-kalina-front', 'sample-front', 'sample-back']) {
+      const img = html.match(new RegExp(`<img[^>]*src="/pro/cards/${shown}\\.png"[^>]*>`))?.[0];
+      if (!img) err(f, `professionals: /pro/cards/${shown}.png is not shown on the page`);
+      else {
+        for (const attr of ['alt="', 'width="', 'height="', 'loading="lazy"']) {
+          if (!img.includes(attr)) err(f, `professionals: the ${shown} image is missing ${attr}`);
+        }
+      }
+    }
+    if (!/No such person and no such company exist/i.test(text)) {
+      err(f, 'professionals: the caption does not say the sample card is fictional');
+    }
+  }
+}
+
+// ---- The card on the record page itself: the same record, in the form
+// somebody is handed at a door.
+{
+  const f = path.join(DIST, 'pro', 'art-kalina.html');
+  if (fs.existsSync(f)) {
+    const html = fs.readFileSync(f, 'utf8');
+    const img = html.match(/<img[^>]*src="\/pro\/cards\/art-kalina-front\.png"[^>]*>/)?.[0];
+    if (!img) err(f, 'record page: the printed card is not shown');
+    else if (!/alt="[^"]{20,}"/.test(img)) err(f, 'record page: the card image has no real alt text');
+    if (!/href="\/pro\/cards\/art-kalina-front\.png"/.test(html)) err(f, 'record page: the card is not linked to the PNG');
   }
 }
 
