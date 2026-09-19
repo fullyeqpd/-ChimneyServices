@@ -351,6 +351,55 @@ for (const rel of ['/companies.html', '/professionals.html']) {
   if (!llmsRaw.includes(`${SITE_ORIGIN}/${slug})`)) errors.push(`llms.txt: missing /${slug}`);
 }
 
+// ---- Home (/): "go to your state" is the first step. The select and its
+// button need JavaScript, so the four-column state index has to stay on the
+// page as the no-JS path to every state.
+{
+  const f = path.join(DIST, 'index.html');
+  if (!fs.existsSync(f)) errors.push('index.html: the home page is missing from dist');
+  else {
+    const html = fs.readFileSync(f, 'utf8');
+    if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'home: expected exactly 1 <h1>');
+    const select = html.match(/<select[^>]*id="state-go"[\s\S]*?<\/select>/)?.[0];
+    if (!select) err(f, 'home: no <select id="state-go"> state picker');
+    else {
+      const options = [...select.matchAll(/<option value="([^"]*)"/g)].map((m) => m[1]).filter(Boolean);
+      if (options.length !== 51) err(f, `home: state picker has ${options.length} state options, expected 51`);
+      for (const slug of options) if (!resolveInternal(`/${slug}/rights`)) err(f, `home: state option "${slug}" has no /${slug}/rights page`);
+      if (!/<option value="">Choose your state<\/option>/.test(select)) err(f, 'home: state picker has no "Choose your state" placeholder');
+    }
+    if (!/<button[^>]*id="state-go-btn"[^>]*>Go to my state<\/button>/.test(html)) err(f, 'home: no "Go to my state" button');
+    if (!/class="state-index"/.test(html)) err(f, 'home: the no-JS state index is gone');
+    const stateIndexLinks = [...html.matchAll(/<ul class="state-index"[\s\S]*?<\/ul>/g)]
+      .flatMap((m) => [...m[0].matchAll(/href="\/([a-z-]+)\/rights"/g)].map((x) => x[1]));
+    if (stateIndexLinks.length !== 51) err(f, `home: state index lists ${stateIndexLinks.length} states, expected 51`);
+    const types = [];
+    for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      try {
+        types.push(JSON.parse(m[1])['@type']);
+      } catch {
+        /* parse errors already reported above */
+      }
+    }
+    for (const t of ['Organization', 'WebSite']) if (!types.includes(t)) err(f, `home: missing ${t} JSON-LD`);
+  }
+}
+// The 50-state comparison keeps its Dataset JSON-LD, wherever it sits in the page order.
+for (const rel of ['/rights.html', '/licensing.html']) {
+  const f = path.join(DIST, rel.slice(1));
+  if (!fs.existsSync(f)) continue;
+  const html = fs.readFileSync(f, 'utf8');
+  const types = [];
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      types.push(JSON.parse(m[1])['@type']);
+    } catch {
+      /* parse errors already reported above */
+    }
+  }
+  if (!types.includes('Dataset')) err(f, 'missing Dataset JSON-LD');
+}
+
 const learnIndex = path.join(DIST, 'learn.html');
 if (fs.existsSync(learnIndex)) {
   const idx = fs.readFileSync(learnIndex, 'utf8');

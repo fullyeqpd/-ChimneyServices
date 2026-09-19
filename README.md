@@ -1,6 +1,15 @@
 # Chimney.Services laws site
 
-A static Astro site: `/`, `/rights`, `/{state}/rights`, `/licensing`, `/{state}/licensing`, `/about`, `/learn`, `/chicago`, `/pro/{slug}`, `/companies`, `/professionals`, plus `llms.txt`, segmented sitemaps (rights / states / licensing / learn / pro / pages) and CSV downloads. One Cloudflare Pages Function, `functions/api/waitlist.ts`, backs the two waiting lists.
+A static Astro site: `/`, `/rights`, `/{state}/rights`, `/licensing`, `/{state}/licensing`, `/about`, `/learn`, `/chicago`, `/pro/{slug}`, `/companies`, `/professionals`, plus `llms.txt`, segmented sitemaps (rights / states / licensing / learn / pro / pages) and CSV downloads.
+
+## Pages Functions (`functions/`)
+
+Cloudflare Pages picks these up automatically; none is built into `dist/`. Both are same-origin only and answer `Cache-Control: no-store`.
+
+| Route | File | What it does |
+|---|---|---|
+| `/api/waitlist` | `functions/api/waitlist.ts` | POST stores one waiting-list entry in KV; GET with `ADMIN_KEY` exports the CSV. |
+| `/api/geo` | `functions/api/geo.ts` | GET returns `{ country, regionCode, region }` from Cloudflare's own request metadata, so the home page can pre-select a state. `regionCode` is the 2-letter state code inside the US and `null` everywhere else. The reader's IP is never read, echoed or stored, and nobody is ever redirected on the guess. |
 
 ## Commands
 

@@ -1,4 +1,10 @@
 ---
+// Home. The first step is "go to your state", not "compare fifty".
+//
+// A reader arrives with one state in mind — their own — so the state control
+// sits directly under the H1, above the national comparison. The four-column
+// state index sits under the control: the select and its button need
+// JavaScript, the index does not, so every state is one click away either way.
 import Base from '../layouts/Base.astro';
 import Chip from '../components/Chip.astro';
 import Glyph from '../components/Glyph.astro';
@@ -23,15 +29,41 @@ const jsonLd = [
 <Base title={title} description={description} path="/" jsonLd={jsonLd} modified={lastVerified} citedAs={monthYear(lastVerified)} section="home">
   <p class="crumb">CHIMNEY.SERVICES / STATE LAWS REFERENCE</p>
   <h1>Before anyone goes on your roof, know what the law in your state actually says.</h1>
+
+  <section class="state-start" aria-labelledby="start-h">
+    <p class="kicker">Start here</p>
+    <h2 id="start-h">Start with your state</h2>
+    <p>Chimney law is state law. Pick yours and read it: who needs a license, what a seller must tell you, how long you have to cancel a door-knock sale, and when a carbon monoxide alarm is required.</p>
+
+    <div class="state-start__row">
+      <p class="wl-field state-start__field">
+        <label for="state-go">Your state</label>
+        <select id="state-go" name="state" autocomplete="address-level1">
+          <option value="">Choose your state</option>
+          {states.map((s) => <option value={s.slug} data-abbr={s.abbr}>{s.name}</option>)}
+        </select>
+      </p>
+      <p class="state-start__action">
+        <button class="button" type="button" id="state-go-btn">Go to my state</button>
+      </p>
+    </div>
+    <p class="state-start__note" id="state-go-note" hidden></p>
+
+    <h3 id="state-index-h" class="state-start__index-h">Or pick your state from the list</h3>
+    <ul class="state-index" aria-labelledby="state-index-h">
+      {states.map((s) => <li><a href={`/${s.slug}/rights`}>{s.name}</a></li>)}
+    </ul>
+  </section>
+
   <p class="lede">
     Chimney.Services is an independent, state-by-state reference to chimney and fireplace law: who needs a license, what a seller must tell you, how to cancel a door-knock sale, and when a carbon monoxide alarm is required.
   </p>
   <p class="chips"><Chip kind="muted">Public record</Chip><Chip kind="national" /><span class="fineprint">Laws cited as of {monthYear(lastVerified)}</span></p>
 
   <div class="grid-2" style="margin-top:32px">
-    <section class="box box--ink" aria-labelledby="start-h">
-      <p class="kicker">Start here</p>
-      <h2 id="start-h">Compare all 50 states + DC</h2>
+    <section class="box box--ink" aria-labelledby="compare-h">
+      <p class="kicker">Every state at once</p>
+      <h2 id="compare-h">Or compare all 50 states + DC</h2>
       <p>The comparison table, the national findings, and a page for each state with statutes cited and primary sources linked.</p>
       <p class="chips">
         <a class="button" href="/rights">See the laws by state <Glyph name="arrow" /></a>
@@ -56,11 +88,83 @@ const jsonLd = [
     </ul>
   </section>
 
-  <section aria-labelledby="states-h" style="margin-top:40px">
-    <h2 id="states-h">Which state are you in?</h2>
-    <ul class="state-index">
-      {states.map((s) => <li><a href={`/${s.slug}/rights`}>{s.name}</a></li>)}
-    </ul>
-  </section>
-
 </Base>
+
+<script is:inline>
+  (function () {
+    var sel = document.getElementById('state-go');
+    var btn = document.getElementById('state-go-btn');
+    var note = document.getElementById('state-go-note');
+    if (!sel || !btn) return;
+
+    function say(text) {
+      if (!note) return;
+      note.textContent = text;
+      note.hidden = false;
+    }
+    function setLabel() {
+      var opt = sel.options[sel.selectedIndex];
+      btn.textContent = opt && opt.value ? 'Go to ' + opt.text + ' →' : 'Go to my state';
+    }
+    function remember(slug) {
+      try {
+        localStorage.setItem('cs.state', slug);
+      } catch (e) {
+        /* private mode, or storage switched off: the control still works. */
+      }
+    }
+
+    // Nobody is redirected on a guess. A network-level guess is wrong often
+    // enough that sending a reader straight to the wrong state's law would
+    // strand them there, wondering why they are reading about Ohio. We
+    // pre-select, say where the guess came from, and wait for the click.
+    btn.addEventListener('click', function () {
+      var slug = sel.value;
+      if (!slug) {
+        sel.focus();
+        say('Choose a state first.');
+        return;
+      }
+      remember(slug);
+      window.location.href = '/' + slug + '/rights';
+    });
+
+    sel.addEventListener('change', function () {
+      setLabel();
+      if (sel.value) {
+        remember(sel.value);
+        say('Your choice · remembered on this device');
+      }
+    });
+
+    var stored = null;
+    try {
+      stored = localStorage.getItem('cs.state');
+    } catch (e) {
+      stored = null;
+    }
+    if (stored && sel.querySelector('option[value="' + String(stored).replace(/[^a-z-]/g, '') + '"]')) {
+      sel.value = stored;
+      setLabel();
+      say('Your last choice · change it any time');
+      return;
+    }
+
+    fetch('/api/geo', { headers: { Accept: 'application/json' } })
+      .then(function (res) {
+        return res.ok ? res.json() : null;
+      })
+      .then(function (geo) {
+        if (!geo || geo.country !== 'US' || typeof geo.regionCode !== 'string') return;
+        if (!/^[A-Z]{2}$/.test(geo.regionCode)) return;
+        var opt = sel.querySelector('option[data-abbr="' + geo.regionCode + '"]');
+        if (!opt) return;
+        sel.value = opt.value;
+        setLabel();
+        say('Detected from your connection · change if wrong');
+      })
+      .catch(function () {
+        /* No answer, or no network: the select stays on "Choose your state". */
+      });
+  })();
+</script>
