@@ -12,8 +12,13 @@ interface Props {
   id: string;
   /** Extra class on the field grid, e.g. "wl-fields--two". */
   fieldsClass?: string;
+  /**
+   * The whole success line, when the default one does not fit. `{email}` is
+   * replaced with the address that was sent.
+   */
+  success?: string;
 }
-const { type, opensLabel, button, id, fieldsClass } = Astro.props;
+const { type, opensLabel, button, id, fieldsClass, success } = Astro.props;
 ---
 <form
   class="wl-form"
@@ -24,6 +29,7 @@ const { type, opensLabel, button, id, fieldsClass } = Astro.props;
   data-type={type}
   data-opens={opensLabel}
   data-min-ms={String(MIN_FILL_MS)}
+  data-success={success}
 >
   <div class={['wl-fields', fieldsClass].filter(Boolean).join(' ')} data-waitlist-fields>
     <slot />
@@ -62,6 +68,7 @@ const { type, opensLabel, button, id, fieldsClass } = Astro.props;
     var submit = form.querySelector('[data-waitlist-submit]');
     var minMs = Number(form.getAttribute('data-min-ms') || '3000');
     var opens = form.getAttribute('data-opens') || 'this';
+    var successLine = form.getAttribute('data-success') || '';
     var byHand = "email hello@chimney.services and we'll add you by hand.";
 
     function say(msg, kind) {
@@ -114,12 +121,15 @@ const { type, opensLabel, button, id, fieldsClass } = Astro.props;
             if (fields) fields.setAttribute('hidden', 'hidden');
             var actions = form.querySelector('[data-waitlist-actions]');
             if (actions) actions.setAttribute('hidden', 'hidden');
+            var who = data.email || 'you';
             say(
-              "You're on the list. We'll email " +
-                (data.email || 'you') +
-                ' when ' +
-                opens +
-                ' open. No fee, no ranking, nothing to buy.',
+              successLine
+                ? successLine.replace('{email}', who)
+                : "You're on the list. We'll email " +
+                    who +
+                    ' when ' +
+                    opens +
+                    ' open. No fee, no ranking, nothing to buy.',
               'ok',
             );
             return;

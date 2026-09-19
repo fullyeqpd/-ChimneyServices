@@ -8,8 +8,9 @@
 //
 // A record is an ID card for one claim and no more: a certification appears on
 // the issuer's own public roster under this name, on the date shown. It is not
-// a status, not a badge, and not for sale. The $25 buys a printed card and the
-// postage; it buys no place, no rank and no opinion of anybody.
+// a status, not a badge, and not for sale. Cards are not open yet: this is the
+// waiting list for them. When they open a card will be $25, which buys the
+// printed card and the postage — no place, no rank and no opinion of anybody.
 import Base from '../layouts/Base.astro';
 import BeforeYouRely from '../components/BeforeYouRely.astro';
 import WaitlistForm from '../components/WaitlistForm.astro';
@@ -18,9 +19,9 @@ import { US_STATES, CREDENTIAL_OPTIONS, NO_FEE_LINE, NEVER_SOLD_LINE } from '../
 import { getRecords, recordPath, orderedCredentials, certifiedLabel, specialtyLabel } from '../lib/registry';
 
 const path = '/professionals';
-const title = `Find a chimney professional, or order your ID card | ${ORG_NAME}`;
+const title = `Find a chimney professional, or join the ID card waiting list | ${ORG_NAME}`;
 const description =
-  "Find a certified chimney professional near you, or order a $25 ID card and a record page: your certification checked against the issuer's own roster.";
+  "Find a certified chimney professional near you, or join the waiting list for an ID card: your certification checked against the issuer's own roster.";
 
 const records = getRecords();
 const sample = records[0];
@@ -35,7 +36,7 @@ const found = records.map((r) => ({
   where: r.employerLocation ?? null,
 }));
 
-const CARD_PRICE_LINE = '$25 · ONE CARD · RECORD PAGE INCLUDED · RENEWS WHEN YOUR CERTIFICATION DOES';
+const CARD_PRICE_LINE = 'COMING SOON · ID CARDS WILL BE $25 EACH · RECORD PAGE INCLUDED';
 
 const jsonLd = [
   {
@@ -68,11 +69,12 @@ const jsonLd = [
   <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / CHIMNEY PROFESSIONALS</nav>
 
   <div class="wl-page">
-    <h1>Chimney professionals — find one near you, or order your ID card</h1>
+    <h1>Chimney professionals — find one near you, or join the waiting list for your ID card</h1>
     <p class="lede">
       Two things live on this page. A search for homeowners, which opens state by state as records are made. And the
       way a technician gets a record: a page naming the certifications you hold, with the issuer's own public roster
-      named as where we found each one — plus a $25 card you can hand to somebody standing in their own hallway.
+      named as where we found each one — plus, when cards open, a card you can hand to somebody standing in their own
+      hallway.
     </p>
 
     <!-- ================= A. Homeowners ================= -->
@@ -137,11 +139,11 @@ const jsonLd = [
 
     <!-- ================= B. Professionals ================= -->
     <!-- #join was this page's only anchor before there were two audiences.
-         Anything already pointing at it still lands on the order section. -->
+         Anything already pointing at it still lands on the waiting list. -->
     <span id="join" class="anchor-alias" aria-hidden="true"></span>
     <section class="wl-section" aria-labelledby="order-h" id="order">
       <p class="kicker">For professionals</p>
-      <h2 id="order-h">Get your registry record and ID card</h2>
+      <h2 id="order-h">Join the waiting list for your registry record and ID card</h2>
       <p>
         Your record page is free and always will be. The card is the physical version of it: one printed card with
         your record number and a QR code that opens the page, for the doorstep conversation that happens before
@@ -149,16 +151,17 @@ const jsonLd = [
       </p>
       <p class="price-line mono">{CARD_PRICE_LINE}</p>
 
-      <h3 class="order-h3" id="order-form-h">Order your ID card — $25</h3>
       <p>
-        We search the issuer's own public roster for the certifications you name before anything is printed or paid.
+        When cards open, you'll get an email with a link to order; nothing is charged now, and nothing is charged for
+        the record page itself.
       </p>
 
       <WaitlistForm
         type="professional"
         id="professional-waitlist"
-        opensLabel="registry records"
-        button="Order card — pay after we confirm your certification"
+        opensLabel="ID cards"
+        button="Join the waiting list"
+        success="You're on the list. We'll email {email} when ID cards open — $25 each, record page included."
         fieldsClass="wl-fields--two"
       >
         <p class="wl-field">
@@ -173,6 +176,13 @@ const jsonLd = [
         <p class="wl-field">
           <label for="wl-employer">Employer <span class="wl-opt">(optional)</span></label>
           <input id="wl-employer" name="employer" type="text" maxlength="120" autocomplete="organization" />
+        </p>
+        <p class="wl-field">
+          <label for="wl-pro-state">State<span class="wl-req" aria-hidden="true">*</span></label>
+          <select id="wl-pro-state" name="state" required autocomplete="address-level1">
+            <option value="">Choose a state</option>
+            {US_STATES.map((s) => <option value={s.abbr}>{s.name}</option>)}
+          </select>
         </p>
 
         <fieldset class="wl-checks wl-field--wide" id="wl-credentials">
@@ -191,71 +201,13 @@ const jsonLd = [
           <span class="wl-hint">Only where the issuer publishes one. Several can go on one line, separated by commas.</span>
         </p>
 
-        <fieldset class="wl-address wl-field--wide">
-          <legend class="wl-legend">Where the card is posted<span class="wl-req" aria-hidden="true">*</span></legend>
-          <div class="wl-address__grid">
-            <p class="wl-field wl-field--wide">
-              <label for="wl-street">Street address<span class="wl-req" aria-hidden="true">*</span></label>
-              <input
-                id="wl-street"
-                name="addressStreet"
-                type="text"
-                required
-                maxlength="160"
-                autocomplete="street-address"
-              />
-            </p>
-            <p class="wl-field">
-              <label for="wl-city">City<span class="wl-req" aria-hidden="true">*</span></label>
-              <input id="wl-city" name="addressCity" type="text" required maxlength="80" autocomplete="address-level2" />
-            </p>
-            <p class="wl-field">
-              <label for="wl-pro-state">State<span class="wl-req" aria-hidden="true">*</span></label>
-              <select id="wl-pro-state" name="state" required autocomplete="address-level1">
-                <option value="">Choose a state</option>
-                {US_STATES.map((s) => <option value={s.abbr}>{s.name}</option>)}
-              </select>
-            </p>
-            <p class="wl-field">
-              <label for="wl-zip">ZIP<span class="wl-req" aria-hidden="true">*</span></label>
-              <input
-                id="wl-zip"
-                name="addressZip"
-                type="text"
-                required
-                inputmode="numeric"
-                maxlength="10"
-                autocomplete="postal-code"
-                pattern="[0-9]{5}(-[0-9]{4})?"
-              />
-            </p>
-          </div>
-          <p class="wl-hint wl-address__note">
-            No photograph is asked for here. We email you for one after you order, and it is printed under the same
-            label the record page uses: supplied — not checked.
-          </p>
-        </fieldset>
-
-        <p class="wl-field--wide wl-attest">
-          <label class="wl-check" for="wl-attest">
-            <input id="wl-attest" name="certAttest" type="checkbox" value="yes" required />
-            <span>
-              I hold at least one certification listed above and will provide the certificate number(s).<span
-                class="wl-req"
-                aria-hidden="true">*</span
-              >
-            </span>
-          </label>
-        </p>
-
-        <input type="hidden" name="wantsCard" value="true" />
       </WaitlistForm>
 
       <p class="fineprint">
-        Nothing is charged now, and nothing is ever charged for the record page — that is free at every stage. We
-        search the issuer's own public roster first. If the certification is found there, we email you a way to pay
-        the $25 and the card is printed and posted. If it is not found, we write and tell you what the issuer's page
-        showed, and there is nothing to pay.
+        Nothing is charged now, and nothing is ever charged for the record page — that is free at every stage. Before
+        any card is printed we search the issuer's own public roster for the certifications you name. If the
+        certification is found there, we email you a way to pay the $25. If it is not found, we write and tell you
+        what the issuer's page showed, and there is nothing to pay.
       </p>
       <p class="fineprint">{NO_FEE_LINE}</p>
 
@@ -313,7 +265,7 @@ const jsonLd = [
     </section>
 
     <section class="wl-section" aria-labelledby="what-h" id="what-you-get">
-      <h2 id="what-h">What are you ordering, exactly?</h2>
+      <h2 id="what-h">What are you waiting for, exactly?</h2>
       <p>
         A record like <a href={samplePath}>{samplePath}</a> — open it first, then decide whether you want one. It makes
         a single claim, printed on the page: a certification appears on the issuer's own public roster under this name,
@@ -337,10 +289,10 @@ const jsonLd = [
           you and not checked by us. We do not repeat them as fact.
         </li>
         <li>
-          <span class="wl-list__label">The card, for $25</span>
+          <span class="wl-list__label">The card, when it opens — $25</span>
           One printed card carrying your record number, the certifications as the issuers name them, the date the
-          rosters were checked, and a QR code that opens your record page. It renews when your certification does. It
-          is a card, not a licence and not a permission to work.
+          rosters were checked, and a QR code that opens your record page. Cards are not open yet; the price will be
+          $25 each when they are. It is a card, not a licence and not a permission to work.
         </li>
         <li>
           <span class="wl-list__label">Verification anyone can repeat</span>
@@ -452,33 +404,6 @@ const jsonLd = [
     padding: 10px 0;
     margin: 16px 0 22px;
   }
-  .order-h3 {
-    margin-bottom: 6px;
-  }
-  .wl-address {
-    border: 0;
-    border-top: 1px solid var(--rule);
-    margin: 4px 0 0;
-    padding: 12px 0 0;
-    min-width: 0;
-  }
-  .wl-address__grid {
-    display: grid;
-    gap: 14px 20px;
-    grid-template-columns: minmax(0, 1fr);
-  }
-  @media (min-width: 620px) {
-    .wl-address__grid {
-      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    }
-  }
-  .wl-address__note {
-    margin-top: 12px;
-  }
-  .wl-attest {
-    margin: 4px 0 0;
-  }
-
   /* ---------- What the card looks like ---------- */
   .cards {
     margin: 30px 0 0;
@@ -513,10 +438,6 @@ const jsonLd = [
   .cards__note {
     margin-top: 14px;
   }
-  .wl-attest .wl-check {
-    font-size: 0.92rem;
-  }
-
 </style>
 
 <script is:inline>

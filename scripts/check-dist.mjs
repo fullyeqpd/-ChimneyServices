@@ -428,26 +428,31 @@ for (const rel of ['/companies.html', '/professionals.html']) {
     for (const slug of recordSlugs) if (!listed.includes(slug)) err(f, `professionals: the search panel does not list /pro/${slug}`);
     if (!/no fee|take no fee/i.test(text)) err(f, 'professionals: the search does not say there is no fee');
 
-    // The order. A price, an address, an attestation — and no way to pay here.
-    if (!text.includes('Order your ID card — $25')) err(f, 'professionals: the order form is not titled "Order your ID card — $25"');
-    if (!text.includes('$25 · ONE CARD · RECORD PAGE INCLUDED · RENEWS WHEN YOUR CERTIFICATION DOES')) {
+    // The waiting list. A future price, said as a future price, and no way to
+    // pay or to order anything here.
+    if (!text.includes('Join the waiting list for your registry record and ID card')) {
+      err(f, 'professionals: the second section is not headed "Join the waiting list for your registry record and ID card"');
+    }
+    if (!text.includes('COMING SOON · ID CARDS WILL BE $25 EACH · RECORD PAGE INCLUDED')) {
       err(f, 'professionals: the mono price line is missing or reworded');
     }
-    for (const name of ['addressStreet', 'addressCity', 'addressZip', 'certAttest', 'wantsCard']) {
-      if (!html.includes(`name="${name}"`)) err(f, `professionals: the order form has no ${name} field`);
-    }
-    for (const req of ['wl-street', 'wl-city', 'wl-pro-state', 'wl-zip', 'wl-attest']) {
+    for (const req of ['wl-name', 'wl-pro-email', 'wl-pro-state']) {
       const field = html.match(new RegExp(`<(?:input|select)[^>]*id="${req}"[^>]*>`))?.[0];
       if (!field) err(f, `professionals: no #${req} field`);
       else if (!/\srequired\b/.test(field)) err(f, `professionals: #${req} is not required`);
     }
-    if (!/>Order card — pay after we confirm your certification<\/button>/.test(html)) {
-      err(f, 'professionals: the submit button does not say payment comes after the certification check');
+    if (!/>Join the waiting list<\/button>/.test(html)) {
+      err(f, 'professionals: the submit button does not say "Join the waiting list"');
+    }
+    if (/Order card\b/i.test(text) || /Order your ID card/i.test(text)) {
+      err(f, 'professionals: the page still offers to order a card');
+    }
+    for (const gone of ['addressStreet', 'addressCity', 'addressZip', 'certAttest', 'wantsCard']) {
+      if (html.includes(`name="${gone}"`)) err(f, `professionals: the waiting-list form still carries ${gone}`);
     }
     if (!/nothing is ever charged for the record page/i.test(text)) {
       err(f, 'professionals: does not say the record page is never charged for');
     }
-    if (!/we email you for one after you order/i.test(text)) err(f, 'professionals: no note about the photo being asked for later');
     // No payment is processed on this site, so no payment processor may load.
     for (const bad of [/js\.stripe\.com/, /paypal\.com\/sdk/, /checkout\.[a-z]+\.com/, /<form[^>]*action="https?:/]) {
       if (bad.test(html)) err(f, `professionals: payment processing on the page (${bad})`);

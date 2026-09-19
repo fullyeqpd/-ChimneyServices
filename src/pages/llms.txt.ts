@@ -36,7 +36,7 @@ export const GET: APIRoute = async () => {
     `- [Company waiting list](${SITE_URL}/companies): form for a chimney company owner to ask for a company page — a provenance-labeled summary of services, service area, contacts, certified people and a dated public rating snapshot. No fee, no ranking, and placement is never sold.`,
   );
   lines.push(
-    `- [Chimney professionals](${SITE_URL}/professionals): two things — a state search for a homeowner looking for a certified person near them, not yet open, and the order form for a technician's own registry record: an NCSG, NFI, CSIA or other certification checked against the issuing body's own public roster and dated. The record page is free; a printed ID card is $25, charged only after the certification is found on the roster. Confers no status, and placement is never sold.`,
+    `- [Chimney professionals](${SITE_URL}/professionals): two things — a state search for a homeowner looking for a certified person near them, not yet open, and the waiting list for a technician's own registry record: an NCSG, NFI, CSIA or other certification checked against the issuing body's own public roster and dated. The record page is free. Printed ID cards are not open yet; when they are they will be $25 each, and nothing is charged now. Confers no status, and placement is never sold.`,
   );
   lines.push(
     hubs.length
