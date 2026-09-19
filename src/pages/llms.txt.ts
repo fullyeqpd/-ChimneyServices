@@ -27,6 +27,12 @@ export const GET: APIRoute = async () => {
   lines.push(`- [Licensing matrix CSV](${SITE_URL}/data/licensing-matrix.csv): the licensing matrix as open data.`);
   lines.push(`- [About](${SITE_URL}/about): what Chimney.Services verifies, what it does not, and who pays for it.`);
   lines.push(
+    `- [Company waiting list](${SITE_URL}/companies): form for a chimney company owner to ask for a company page — a provenance-labeled summary of services, service area, contacts, certified people and a dated public rating snapshot. No fee, no ranking, and placement is never sold.`,
+  );
+  lines.push(
+    `- [Technician waiting list](${SITE_URL}/professionals): form for a chimney technician to ask for a registry record — an NCSG, NFI, CSIA or other certification checked against the issuing body's own public roster and dated. No fee, confers no status, nothing for sale.`,
+  );
+  lines.push(
     hubs.length
       ? `- [Learn](${SITE_URL}/learn): plain-English chimney guides — short, dated, sourced reads on national standards (NFPA 211, IRC, manufacturer instructions).`
       : `- [Learn](${SITE_URL}/learn): chimney guides being written (none published yet).`,

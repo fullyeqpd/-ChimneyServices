@@ -14,6 +14,9 @@ import {
   monthYear,
   orderedCredentials,
   aiVerifyPrompt,
+  recordTitleBase,
+  recordDescription,
+  recordFaqs,
   type RegistryRecord,
   type RegistryCredential,
 } from '../../lib/registry';
@@ -77,8 +80,9 @@ const aiLinks = [
   { name: 'Grok', href: `https://grok.com/?q=${encodedPrompt}` },
 ];
 
-const title = `Registry record ${rec.recordNumber} — ${rec.name} | ${ORG_NAME}`;
-const description = `Registry record ${rec.recordNumber}: what ${ORG_NAME} found when it searched issuer rosters for ${rec.name}. Not an endorsement.`;
+const title = `${recordTitleBase(rec)} | ${ORG_NAME}`;
+const description = recordDescription(rec);
+const faqs = recordFaqs(rec);
 
 // ---- JSON-LD
 const breadcrumbLd = {
@@ -133,9 +137,21 @@ const personLd = {
     encoding: { '@type': 'MediaObject', contentUrl: abs(jsonPath), encodingFormat: 'application/json' },
   },
 };
-const jsonLd = [breadcrumbLd, personLd];
+// FAQ: three questions, answered only from fields already on this record. No
+// review or rating markup is published here or anywhere on this site.
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': `${recordUrl(rec)}#faq`,
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+};
+const jsonLd = [breadcrumbLd, personLd, faqLd];
 ---
-<Base title={title} description={description} path={path} noindex jsonLd={jsonLd} modified={rec.recordCreated}>
+<Base title={title} description={description} path={path} jsonLd={jsonLd} modified={rec.recordCreated}>
   <nav class="crumb" aria-label="Breadcrumb">
     REGISTRY / {rec.recordNumber}
   </nav>
@@ -334,9 +350,27 @@ const jsonLd = [breadcrumbLd, personLd];
       </div>
     </details>
 
+    <!-- ---------- FAQ: the three questions a record gets, answered from the
+         record itself. Nothing here is new — it is the Details box, said once
+         more in the open. ---------- -->
+    <section class="faq" aria-labelledby="faq-h" id="faq">
+      <h2 id="faq-h">Questions about this record</h2>
+      {faqs.map((f, i) => (
+        <div class="faq__item" id={`faq-${i + 1}`}>
+          <h3 class="faq__q">{f.q}</h3>
+          <p class="faq__a">{f.a}</p>
+        </div>
+      ))}
+    </section>
+
     <div class="rely-compact">
       <BeforeYouRely dateLabel={rec.lastChecked ?? rec.recordCreated} variant="record" />
     </div>
+
+    <p class="wl-crosslink">
+      Are you a chimney technician? <a href="/professionals">Join the waiting list</a> — a record like this one, checked
+      against the issuer's own roster, nothing for sale.
+    </p>
   </div>
 </Base>
 

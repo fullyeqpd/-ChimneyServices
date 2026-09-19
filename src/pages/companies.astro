@@ -1,0 +1,174 @@
+---
+// /companies — the waiting list for a company page.
+//
+// What a company gets is described concretely, because the alternative is the
+// thing this site exists against: a vague promise of exposure, sold. There is
+// nothing to buy here. Placement is never sold, and there is no ranking to
+// rank in.
+import Base from '../layouts/Base.astro';
+import BeforeYouRely from '../components/BeforeYouRely.astro';
+import WaitlistForm from '../components/WaitlistForm.astro';
+import { ORG_NAME, SITE_URL, abs } from '../lib/site';
+import { US_STATES, NO_FEE_LINE, NEVER_SOLD_LINE } from '../lib/waitlist';
+
+const path = '/companies';
+const title = `Company waiting list — a page for your chimney company | ${ORG_NAME}`;
+const description =
+  'Join the waiting list for a company page on Chimney.Services: services, service area, contacts and certified people, each fact labeled. No fee, no ranking.';
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Company waiting list' },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${abs(path)}#page`,
+    url: abs(path),
+    name: title,
+    description,
+    isPartOf: { '@id': `${SITE_URL}/#organization` },
+    publisher: { '@id': `${SITE_URL}/#organization` },
+    about: {
+      '@type': 'Thing',
+      name: 'Chimney company pages on Chimney.Services',
+      description:
+        'A provenance-labeled summary of what a chimney company says it does and what public record shows, which the company can correct and cannot buy.',
+    },
+  },
+];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd}>
+  <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / COMPANY WAITING LIST</nav>
+
+  <div class="wl-page">
+    <h1>Company waiting list — a page for your chimney company, every fact labeled</h1>
+    <p class="lede">
+      We are building one page per chimney company, in the same shape for every company, with a label on every fact
+      saying where it came from. This is the queue to have yours built. It costs nothing, and nothing about it is for
+      sale.
+    </p>
+
+    <section class="wl-section" aria-labelledby="what-h" id="what-you-get">
+      <h2 id="what-h">What are you waiting for, exactly?</h2>
+      <p>
+        A page like <a href="/chicago">the one we built for Chimney Monkey</a> — read it first, then decide whether you
+        want one. Every block on it carries one of two labels: <strong>PUBLIC RECORD</strong> for something taken from a
+        public source we name, or <strong>REPORTED BY BUSINESS</strong> for something the company itself says. The page
+        holds:
+      </p>
+      <ul class="wl-list">
+        <li>
+          <span class="wl-list__label">Services</span>
+          What the company says it does, grouped for reading, taken from its own pages and labeled as the company's own
+          words. Nothing on that list has been watched, tested or priced by us.
+        </li>
+        <li>
+          <span class="wl-list__label">Service area</span>
+          The counties and towns the company names itself. A town on that list is a place a company says it goes, not a
+          promise that it will.
+        </li>
+        <li>
+          <span class="wl-list__label">Contacts and hours</span>
+          Address, phone, email, website and opening hours, each labeled with where we found it.
+        </li>
+        <li>
+          <span class="wl-list__label">Certified people</span>
+          Anyone at the company found on a certification body's own public roster, with the date we looked. Bodies are
+          always in the same order — NCSG, then NFI, then CSIA, then any other body — so what is missing is as visible
+          as what is there.
+        </li>
+        <li>
+          <span class="wl-list__label">Google rating</span>
+          The rating and review count as Google Maps displayed them on the day we looked, dated, with the plain caveat
+          that we did not read the reviews and both numbers will have moved since. We publish no rating markup anywhere.
+        </li>
+      </ul>
+      <p>
+        You can correct any of it. Send us what is wrong and what the right answer is, and the page changes or the page
+        says you disagree. What you cannot do is buy your way onto it, or up it. {NEVER_SOLD_LINE}
+      </p>
+    </section>
+
+    <section class="wl-section" aria-labelledby="join-h" id="join">
+      <h2 id="join-h">Join the waiting list</h2>
+      <p>
+        Seven fields, five of them required. We write to you once, when company pages open in your state.
+      </p>
+
+      <WaitlistForm
+        type="company"
+        id="company-waitlist"
+        opensLabel="company pages"
+        button="Join the waiting list"
+        fieldsClass="wl-fields--two"
+      >
+          <p class="wl-field wl-field--wide">
+            <label for="wl-company">Company name<span class="wl-req" aria-hidden="true">*</span></label>
+            <input id="wl-company" name="company" type="text" required maxlength="120" autocomplete="organization" />
+          </p>
+          <p class="wl-field">
+            <label for="wl-contact">Your name<span class="wl-req" aria-hidden="true">*</span></label>
+            <input id="wl-contact" name="contact" type="text" required maxlength="120" autocomplete="name" />
+          </p>
+          <p class="wl-field">
+            <label for="wl-email">Email<span class="wl-req" aria-hidden="true">*</span></label>
+            <input id="wl-email" name="email" type="email" required maxlength="160" autocomplete="email" />
+          </p>
+          <p class="wl-field">
+            <label for="wl-phone">Phone <span class="wl-opt">(optional)</span></label>
+            <input id="wl-phone" name="phone" type="tel" maxlength="40" autocomplete="tel" />
+          </p>
+          <p class="wl-field">
+            <label for="wl-state">State<span class="wl-req" aria-hidden="true">*</span></label>
+            <select id="wl-state" name="state" required>
+              <option value="">Choose a state</option>
+              {US_STATES.map((s) => <option value={s.abbr}>{s.name}</option>)}
+            </select>
+          </p>
+          <p class="wl-field">
+            <label for="wl-city">City<span class="wl-req" aria-hidden="true">*</span></label>
+            <input id="wl-city" name="city" type="text" required maxlength="80" autocomplete="address-level2" />
+          </p>
+          <p class="wl-field wl-field--wide">
+            <label for="wl-website">Website <span class="wl-opt">(optional)</span></label>
+            <input id="wl-website" name="website" type="text" maxlength="200" inputmode="url" placeholder="example.com" />
+          </p>
+      </WaitlistForm>
+
+      <p class="fineprint">{NO_FEE_LINE}</p>
+    </section>
+
+    <section class="wl-section" aria-labelledby="not-h" id="what-it-is-not">
+      <h2 id="not-h">What a company page is not</h2>
+      <ul class="prose">
+        <li>It is not an endorsement. We recommend no one, and we never will.</li>
+        <li>
+          It is not a rank. There is no order to climb, no badge to earn, and no position that money moves. A company
+          page is a record of dated facts with their sources named.
+        </li>
+        <li>
+          It is not a check on the company. We do not inspect work, call customers, read complaint histories, or confirm
+          insurance. Where a certification is shown, the claim is only that a body's own public roster showed that name
+          on the date printed beside it.
+        </li>
+        <li>
+          It is not an advertisement, and nothing on it is sold. We take no fee from any certification body, guild, or
+          contractor, and nobody is paid to be mentioned.
+        </li>
+      </ul>
+    </section>
+
+    <BeforeYouRely variant="waitlist" />
+
+    <p class="wl-crosslink">
+      Are you a chimney technician rather than an owner? <a href="/professionals">Join the waiting list for a record of
+      your own</a>.
+    </p>
+  </div>
+</Base>

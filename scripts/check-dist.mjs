@@ -82,7 +82,8 @@ for (const f of htmlFiles) {
   for (const bad of [/>\s*(undefined|NaN|null)\s*</, /="(undefined|NaN)"/, /\b(undefined|NaN) ·|· (undefined|NaN)\b/, /\$NaN|NaN%/]) if (bad.test(html)) err(f, `rendering artefact ${bad}`);
   for (const bad of [/lorem ipsum/i, /\[object Object\]/]) if (bad.test(text)) err(f, `banned string ${bad}`);
   if (/verified professional/i.test(text)) err(f, 'contains "verified professional"');
-  if (/Chimney Services(?!\.)|chimney\.services(?![/a-z.])/.test(text.replace(/www\.chimney\.services/g, ''))) {
+  // An email address at the domain is not an entity-spelling slip.
+  if (/Chimney Services(?!\.)|chimney\.services(?![/a-z.])/.test(text.replace(/www\.chimney\.services|@chimney\.services/g, ''))) {
     warnings.push(`${rel}: possible entity spelling variant`);
   }
   if (/CSIA\s*(\/|,|\bor\b|\band\b)\s*(CC[A-Z]+\s*(\/|,|\bor\b|\band\b)\s*)?(OR\s+)?NCSG|CSIA[^.;()]{0,25}; NCSG/i.test(text)) err(f, 'certification order: CSIA listed before NCSG');
@@ -185,8 +186,9 @@ for (const f of learnPages) {
     if (!m[0].includes('See the researched range above')) err(f, `price link for "${m[1]}" has the wrong text`);
   }
 }
-// ---- Registry records (/pro/*): one H1, valid JSON-LD, and never the words
-// "verified professional" — a record confers no status on anybody.
+// ---- Registry records (/pro/*): one H1, indexable, valid Person + FAQPage
+// JSON-LD, and never the words "verified professional" — a record confers no
+// status on anybody.
 const proPages = htmlFiles.filter((f) => path.relative(DIST, f).split(path.sep)[0] === 'pro');
 const llmsRaw = fs.readFileSync(path.join(DIST, 'llms.txt'), 'utf8');
 for (const f of proPages) {
@@ -194,7 +196,7 @@ for (const f of proPages) {
   const html = fs.readFileSync(f, 'utf8');
   const text = stripTags(html);
   if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'registry page: expected exactly 1 <h1>');
-  if (!/<meta name="robots" content="noindex, follow"/.test(html)) err(f, 'registry page must be noindex, follow');
+  if (/noindex/.test(html)) err(f, 'registry page must be indexable');
   for (const bad of ['verified professional', 'verified pro', 'approved professional', 'trusted professional']) {
     if (text.toLowerCase().includes(bad)) err(f, `registry page contains "${bad}"`);
   }
@@ -218,15 +220,21 @@ for (const f of proPages) {
     }
   }
   if (!types.includes('Organization')) err(f, 'registry page missing Organization JSON-LD');
-  for (const t of ['BreadcrumbList', 'Person']) if (!types.includes(t)) err(f, `registry record missing ${t} JSON-LD`);
+  for (const t of ['BreadcrumbList', 'Person', 'FAQPage']) if (!types.includes(t)) err(f, `registry record missing ${t} JSON-LD`);
+  const faqQuestions = (html.match(/class="faq__q"/g) ?? []).length;
+  if (faqQuestions < 3) err(f, `registry record: expected 3 FAQ questions in the DOM, found ${faqQuestions}`);
+  if (!/href="\/professionals"/.test(html)) err(f, 'registry record: missing the /professionals waiting-list link');
 }
 if (proPages.length) {
-  for (const sm of files.filter((x) => /sitemap-.*\.xml$/.test(x))) {
-    if (/\/pro\//.test(fs.readFileSync(sm, 'utf8'))) errors.push(`${path.basename(sm)}: registry records must be excluded from sitemaps`);
-  }
+  const proSitemap = files.find((x) => /sitemap-pro-\d+\.xml$/.test(x));
+  const proXml = proSitemap ? fs.readFileSync(proSitemap, 'utf8') : '';
+  if (!proSitemap) errors.push('sitemaps: no sitemap-pro-*.xml segment for registry records');
   const recordPages = proPages.filter((f) => /^pro\/[a-z0-9-]+\.html$/.test(path.relative(DIST, f).split(path.sep).join('/')));
   for (const f of recordPages) {
     const slug = path.basename(f, '.html');
+    if (!proXml.includes(`<loc>${SITE_ORIGIN}/pro/${slug}</loc>`)) errors.push(`pro sitemap: missing /pro/${slug}`);
+    if (!/<lastmod>/.test(proXml)) errors.push('pro sitemap: entries carry no lastmod');
+    if (proXml.includes(`/pro/${slug}.json`)) errors.push(`pro sitemap: ${slug}.json is not a page and must not be listed`);
     if (!fs.existsSync(path.join(DIST, 'pro', `${slug}.json`))) errors.push(`pro/${slug}: machine-readable record /pro/${slug}.json is missing`);
     else {
       const rec = JSON.parse(fs.readFileSync(path.join(DIST, 'pro', `${slug}.json`), 'utf8'));
@@ -260,7 +268,10 @@ for (const rel of ['/chicago.html']) {
       err(f, `company JSON-LD parse error: ${e.message}`);
     }
   }
-  for (const t of ['BreadcrumbList', 'LocalBusiness']) if (!types.includes(t)) err(f, `company page missing ${t} JSON-LD`);
+  for (const t of ['BreadcrumbList', 'LocalBusiness', 'FAQPage']) if (!types.includes(t)) err(f, `company page missing ${t} JSON-LD`);
+  const faqQuestions = (html.match(/class="faq__q"/g) ?? []).length;
+  if (faqQuestions < 3) err(f, `company page: expected 3 FAQ questions in the DOM, found ${faqQuestions}`);
+  if (!/href="\/companies"/.test(html)) err(f, 'company page: missing the /companies waiting-list link');
   // The public rating is quoted once, as a number on a day. Never as markup:
   // this site publishes no review or rating schema anywhere.
   for (const needle of ['1,097', '4.9']) {
@@ -274,6 +285,47 @@ for (const rel of ['/chicago.html']) {
   const pagesSitemap = files.find((x) => /sitemap-pages-\d+\.xml$/.test(x));
   const xml = pagesSitemap ? fs.readFileSync(pagesSitemap, 'utf8') : '';
   if (!xml.includes(`<loc>${SITE_ORIGIN}/chicago</loc>`)) errors.push('pages sitemap: missing /chicago');
+}
+
+// ---- Waiting-list pages (/companies, /professionals): indexable, one H1, a
+// real form, and none of the three words this site never uses about itself —
+// it is not a directory, it publishes no listings, and nobody here is a
+// "verified professional".
+const pagesSitemapFile = files.find((x) => /sitemap-pages-\d+\.xml$/.test(x));
+const pagesXml = pagesSitemapFile ? fs.readFileSync(pagesSitemapFile, 'utf8') : '';
+for (const rel of ['/companies.html', '/professionals.html']) {
+  const f = path.join(DIST, rel.slice(1));
+  if (!fs.existsSync(f)) {
+    errors.push(`${rel}: waiting-list page is missing from dist`);
+    continue;
+  }
+  const slug = rel.replace(/^\//, '').replace(/\.html$/, '');
+  const html = fs.readFileSync(f, 'utf8');
+  const text = stripTags(html);
+  if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'waiting-list page: expected exactly 1 <h1>');
+  if (/noindex/.test(html)) err(f, 'waiting-list page must be indexable');
+  if (!/<form\b/.test(html)) err(f, 'waiting-list page: no <form>');
+  if (!/name="website2"/.test(html)) err(f, 'waiting-list page: no honeypot field');
+  if (!/<noscript>/.test(html)) err(f, 'waiting-list page: no <noscript> note');
+  for (const [label, re] of [
+    ['directory', /\bdirector(y|ies)\b/i],
+    ['listing', /\blistings?\b/i],
+    ['verified professional', /verified\s+professional/i],
+  ]) {
+    if (re.test(text)) err(f, `waiting-list page contains the banned word "${label}"`);
+  }
+  if (!/placement is never sold/i.test(text)) err(f, 'waiting-list page: does not say placement is never sold');
+  const types = [];
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      types.push(JSON.parse(m[1])['@type']);
+    } catch (e) {
+      err(f, `waiting-list JSON-LD parse error: ${e.message}`);
+    }
+  }
+  for (const t of ['BreadcrumbList', 'WebPage']) if (!types.includes(t)) err(f, `waiting-list page missing ${t} JSON-LD`);
+  if (!pagesXml.includes(`<loc>${SITE_ORIGIN}/${slug}</loc>`)) errors.push(`pages sitemap: missing /${slug}`);
+  if (!llmsRaw.includes(`${SITE_ORIGIN}/${slug})`)) errors.push(`llms.txt: missing /${slug}`);
 }
 
 const learnIndex = path.join(DIST, 'learn.html');
@@ -308,7 +360,19 @@ for (const m of llms.matchAll(/\]\(https:\/\/www\.chimney\.services([^)]*)\)/g))
 const csv = fs.readFileSync(path.join(DIST, 'data', 'rights-table.csv'), 'utf8');
 if (!csv.startsWith('# Source: Chimney.Services — cite as https://www.chimney.services/rights')) errors.push('rights-table.csv: missing attribution line');
 const robots = fs.readFileSync(path.join(DIST, 'robots.txt'), 'utf8');
-for (const bot of ['GPTBot', 'ClaudeBot', 'PerplexityBot', 'Google-Extended']) if (!robots.includes(bot)) errors.push(`robots.txt: missing ${bot}`);
+for (const bot of [
+  'GPTBot',
+  'ClaudeBot',
+  'PerplexityBot',
+  'Google-Extended',
+  'CCBot',
+  'anthropic-ai',
+  'Applebot-Extended',
+]) {
+  if (!new RegExp(`^User-agent: ${bot}\\s*\\nAllow: /`, 'mi').test(robots)) errors.push(`robots.txt: ${bot} is not allowed`);
+}
+if (!robots.includes('Sitemap: https://www.chimney.services/sitemap-index.xml')) errors.push('robots.txt: missing the sitemap index');
+if (/^\s*Disallow:\s*\/\s*$/m.test(robots)) errors.push('robots.txt: a Disallow: / rule is present');
 for (const sm of files.filter((f) => /sitemap-.*\.xml$/.test(f))) {
   const xml = fs.readFileSync(sm, 'utf8');
   for (const m of xml.matchAll(/<loc>https:\/\/www\.chimney\.services([^<]*)<\/loc>/g)) {

@@ -815,6 +815,240 @@ table.data td.mono {
   flex: 1 1 200px;
 }
 
+/* ---------- Waiting-list forms (/companies, /professionals) ----------
+   Same document-formal rules as everything else: 1px lines, mono labels,
+   square corners, no fills. A form here is a printed form, not a widget. */
+.wl-form {
+  border: 1px solid var(--ink);
+  padding: 20px 18px 18px;
+  margin: 24px 0;
+  max-width: 640px;
+}
+@media (min-width: 620px) {
+  .wl-form {
+    padding: 26px 26px 22px;
+  }
+}
+.wl-fields {
+  display: grid;
+  gap: 16px 20px;
+}
+@media (min-width: 560px) {
+  .wl-fields--two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .wl-field--wide {
+    grid-column: 1 / -1;
+  }
+}
+.wl-field {
+  display: grid;
+  gap: 5px;
+  align-content: start;
+}
+.wl-field > label,
+.wl-legend {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.wl-req {
+  color: var(--ember);
+  margin-left: 2px;
+}
+.wl-opt {
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--muted);
+}
+.wl-field input[type='text'],
+.wl-field input[type='email'],
+.wl-field input[type='tel'],
+.wl-field input[type='url'],
+.wl-field select {
+  font: inherit;
+  font-size: 1rem;
+  padding: 9px 10px;
+  border: 1px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 0;
+  width: 100%;
+  appearance: none;
+}
+.wl-field select {
+  background-image: none;
+}
+.wl-field input:focus-visible,
+.wl-field select:focus-visible {
+  outline: 2px solid var(--ember);
+  outline-offset: 1px;
+}
+.wl-hint {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0;
+}
+.wl-checks {
+  border: 1px solid var(--rule);
+  padding: 12px 14px;
+  margin: 0;
+  display: grid;
+  gap: 6px 20px;
+}
+@media (min-width: 560px) {
+  .wl-checks {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.wl-checks legend {
+  padding: 0 4px;
+}
+.wl-check {
+  display: flex;
+  gap: 8px;
+  align-items: baseline;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+.wl-check input[type='checkbox'] {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--ink);
+  flex: none;
+  margin: 0;
+  position: relative;
+  top: 2px;
+}
+/* The honeypot: present in the DOM, out of the tab order, off the page. */
+.wl-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.wl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  align-items: center;
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid var(--rule);
+}
+.wl-status:empty {
+  display: none;
+}
+.wl-status {
+  margin: 14px 0 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--rule);
+  font-size: 0.94rem;
+  line-height: 1.55;
+  max-width: var(--measure);
+}
+.wl-status[data-kind='ok'] {
+  border-left-color: var(--ink);
+}
+.wl-status[data-kind='error'] {
+  border-left-color: var(--ember);
+}
+.wl-noscript {
+  margin: 14px 0 0;
+  padding-left: 12px;
+  border-left: 2px solid var(--rule);
+  font-size: 0.9rem;
+  color: var(--muted);
+  max-width: var(--measure);
+}
+.wl-page {
+  max-width: 760px;
+  margin: 0 auto 8px;
+}
+.wl-section {
+  margin-top: 40px;
+  border-top: 1px solid var(--ink);
+  padding-top: 18px;
+}
+.wl-section > h2 {
+  margin-bottom: 10px;
+}
+.wl-section p {
+  max-width: var(--measure);
+}
+.wl-list {
+  list-style: none;
+  margin: 0 0 18px;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+  max-width: var(--measure);
+}
+.wl-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: 0.96rem;
+  line-height: 1.55;
+}
+.wl-list__label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  display: block;
+  margin-bottom: 2px;
+}
+.wl-crosslink {
+  margin: 28px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+.wl-crosslink a {
+  color: inherit;
+  text-decoration-color: var(--rule);
+}
+.wl-crosslink a:hover,
+.wl-crosslink a:focus-visible {
+  color: var(--ember);
+  text-decoration-color: currentColor;
+}
+
+/* ---------- FAQ blocks (record + company pages) ---------- */
+.faq {
+  margin-top: 40px;
+  border-top: 1px solid var(--ink);
+  padding-top: 18px;
+}
+.faq > h2 {
+  margin-bottom: 10px;
+}
+.faq__item {
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 0;
+  max-width: var(--measure);
+}
+.faq__q {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+.faq__a {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.6;
+  color: var(--ink);
+}
+
 /* ---------- Footer ---------- */
 .footer {
   border-top: 1px solid var(--ink);

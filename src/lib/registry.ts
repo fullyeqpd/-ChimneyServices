@@ -187,6 +187,100 @@ export function orderedCredentials(r: RegistryRecord): RegistryCredential[] {
   return [...r.credentials].sort((a, b) => rank(a) - rank(b));
 }
 
+/** "Buffalo Grove, IL" → { city: "Buffalo Grove", region: "IL" }. */
+export function employerPlace(r: RegistryRecord): { city: string; region: string } | null {
+  const m = /^(.+?),\s*([A-Z]{2})$/.exec(r.employerLocation ?? '');
+  return m ? { city: m[1], region: m[2] } : null;
+}
+
+/** Issuer abbreviations in the fixed order, e.g. "NFI & SPRAT". */
+export function issuerList(r: RegistryRecord): string {
+  const names = orderedCredentials(r).map((c) => c.issuer);
+  if (names.length === 0) return '';
+  if (names.length === 1) return names[0];
+  return `${names.slice(0, -1).join(', ')} & ${names[names.length - 1]}`;
+}
+
+/**
+ * The record's <title>, without the " | Chimney.Services" suffix the layout's
+ * gate requires. The full shape is
+ *   "{Name} — {issuers} Certified Chimney Technician, {City} {ST}"
+ * and it is shortened, in order, until the distinctive part fits 60 characters:
+ * first the job phrase goes, then the place. Nothing is invented to fill it.
+ */
+export const TITLE_MAX = 60;
+export function recordTitleBase(r: RegistryRecord): string {
+  const issuers = issuerList(r);
+  const place = employerPlace(r);
+  const certPart = issuers ? `${issuers} Certified` : 'Chimney technician record';
+  const wherePart = place ? `, ${place.city} ${place.region}` : '';
+  const candidates = [
+    `${r.name} — ${certPart}${issuers ? ' Chimney Technician' : ''}${wherePart}`,
+    `${r.name} — ${certPart}${wherePart}`,
+    `${r.name} — ${certPart}`,
+    r.name,
+  ];
+  return candidates.find((c) => c.length <= TITLE_MAX) ?? candidates[candidates.length - 1];
+}
+
+/** Meta description: who, where, what was found, when, and what it is not. */
+export const DESCRIPTION_MAX = 155;
+export function recordDescription(r: RegistryRecord): string {
+  const place = employerPlace(r);
+  const where = place ? `, ${place.city} ${place.region}` : '';
+  const issuers = issuerList(r);
+  const plural = r.credentials.length === 1 ? 'certification' : 'certifications';
+  const issuerRef = r.credentials.length === 1 ? "the issuer's" : "each issuer's";
+  const when = shortDate(r.lastChecked);
+  const checked = when ? `, checked ${when}` : '';
+  const full = `${r.name}${where}: ${issuers} ${plural} found on ${issuerRef} own public roster${checked}. Not an endorsement.`;
+  if (full.length <= DESCRIPTION_MAX) return full;
+  return `${r.name}${where}: ${issuers} ${plural} found on ${issuerRef} own public roster${checked}.`.slice(0, DESCRIPTION_MAX);
+}
+
+/**
+ * The three questions a record page answers in the DOM, and as FAQPage
+ * JSON-LD. Every answer is assembled from fields already on the record — the
+ * claim, the "not checked" list, the issuers' own lookups — so the FAQ adds no
+ * claim the page does not already make.
+ */
+export function recordFaqs(r: RegistryRecord): { q: string; a: string }[] {
+  const creds = orderedCredentials(r);
+  // "…Technicians's" is not a word. A name that already ends in s takes the
+  // bare apostrophe.
+  const possessive = (name: string) => (name.endsWith('s') ? `${name}'` : `${name}'s`);
+  const found = creds
+    .map((c) => {
+      const when = shortDate(c.checkedAt);
+      const num = hasCertNumber(c) ? `, certificate ${c.certNumber}` : `, with no certificate number shown by the issuer`;
+      const expiry = monthYear(c.issuerListedExpiry);
+      return `${c.title}${num}${when ? `, found on ${possessive(c.issuerName)} own public lookup on ${when}` : ''}${
+        expiry ? `, where the issuer lists expiry as ${expiry}` : ''
+      }`;
+    })
+    .join('. ');
+  const none = r.noneOnRecord.map((n) => n.issuer).join(' and ');
+
+  const howTo = creds
+    .map((c) => `${c.issuer}: ${c.lookupUrl} — ${c.lookupNote}`)
+    .join(' ');
+
+  return [
+    {
+      q: 'What was checked on this record?',
+      a: `${RECORD_CLAIM} On this record: ${found}.${none ? ` Nothing is on record from ${none}.` : ''}`,
+    },
+    {
+      q: 'What was not checked?',
+      a: `${r.notChecked.map((n) => `${n.label} — ${n.why}`).join(' ')} A certification is a test somebody passed on a day, not a licence, an approval, or a promise about the work.`,
+    },
+    {
+      q: 'How do I verify this myself?',
+      a: `Run the same search we ran, on the issuer's own page. ${howTo} The full text of that search is printed on this page under "The prompt those buttons send", and the machine-readable copy of this record is published at ${SITE_URL}${recordJsonPath(r)}. A roster match is not proof of identity, competence, insurance or honesty.`,
+    },
+  ];
+}
+
 /** The machine-readable record served at /pro/{slug}.json. */
 export function recordJson(r: RegistryRecord) {
   return {

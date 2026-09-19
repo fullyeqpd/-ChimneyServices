@@ -35,6 +35,15 @@ const maxDate = (dates) => dates.filter(Boolean).sort().at(-1);
 const rightsLastmod = maxDate(states.map((s) => s.lastVerified));
 const licensingLastmod = maxDate(licensing.states.map((s) => s.lastChecked));
 
+// Registry records (/pro/{slug}): lastmod = the date the record was last
+// checked against an issuer's roster, falling back to the day it was created.
+const registryFile = path.resolve('./src/data/registry.json');
+/** @type {{ records: { slug: string, lastChecked: string | null, recordCreated: string }[] }} */
+const registry = fs.existsSync(registryFile) ? JSON.parse(fs.readFileSync(registryFile, 'utf8')) : { records: [] };
+const proLastmod = Object.fromEntries(
+  registry.records.map((r) => [`${SITE}/pro/${r.slug}`, r.lastChecked ?? r.recordCreated]),
+);
+
 const strip = (url) => url.replace(/\/$/, '');
 const withLastmod = (item, date) => (date ? { ...item, lastmod: new Date(`${date}T00:00:00Z`).toISOString() } : item);
 
@@ -45,10 +54,15 @@ export default defineConfig({
   build: { format: 'file' },
   integrations: [
     sitemap({
-      // Registry records (/pro/*) are noindex while the registry is unlaunched,
-      // so they stay out of every sitemap. The JSON endpoint stays reachable.
-      filter: (page) => !noindex.has(strip(page)) && !/^https:\/\/www\.chimney\.services\/pro(\/|$)/.test(strip(page)),
+      // Registry record pages are indexable and listed in their own segment.
+      // Their machine-readable twins (/pro/{slug}.json) are not pages, so they
+      // stay out of every sitemap.
+      filter: (page) => !noindex.has(strip(page)) && !/\.json$/.test(strip(page)),
       chunks: {
+        pro: (item) =>
+          /^https:\/\/www\.chimney\.services\/pro\/[a-z0-9-]+$/.test(strip(item.url))
+            ? withLastmod(item, proLastmod[strip(item.url)])
+            : undefined,
         rights: (item) => (strip(item.url) === `${SITE}/rights` ? withLastmod(item, rightsLastmod) : undefined),
         states: (item) => (/\/[a-z-]+\/rights$/.test(strip(item.url)) ? withLastmod(item, stateLastmod[strip(item.url)]) : undefined),
         licensing: (item) => {

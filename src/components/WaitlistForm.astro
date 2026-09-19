@@ -1,0 +1,140 @@
+---
+// The shell both waiting-list forms share: honeypot, render timestamp, submit
+// row, inline status, and the no-JavaScript note. Fields are slotted by the
+// page, because a company and a person are asked different things.
+import { WAITLIST_ENDPOINT, MIN_FILL_MS, FALLBACK_EMAIL } from '../lib/waitlist';
+interface Props {
+  /** Which list this is. Sent as `type`, and used in the success line. */
+  type: 'company' | 'professional';
+  /** What the success line says opens, e.g. "company pages". */
+  opensLabel: string;
+  button: string;
+  id: string;
+  /** Extra class on the field grid, e.g. "wl-fields--two". */
+  fieldsClass?: string;
+}
+const { type, opensLabel, button, id, fieldsClass } = Astro.props;
+---
+<form
+  class="wl-form"
+  id={id}
+  method="post"
+  action={WAITLIST_ENDPOINT}
+  data-waitlist
+  data-type={type}
+  data-opens={opensLabel}
+  data-min-ms={String(MIN_FILL_MS)}
+>
+  <div class={['wl-fields', fieldsClass].filter(Boolean).join(' ')} data-waitlist-fields>
+    <slot />
+  </div>
+
+  <!-- Honeypot. Left empty by people, filled by scripts. Hidden from the tab
+       order and from assistive technology, never from the DOM. -->
+  <div class="wl-hp" aria-hidden="true">
+    <label for={`${id}-website2`}>Leave this field empty</label>
+    <input id={`${id}-website2`} name="website2" type="text" tabindex="-1" autocomplete="off" />
+  </div>
+  <input type="hidden" name="t" value="" data-render-stamp />
+
+  <p class="wl-actions" data-waitlist-actions>
+    <button class="button" type="submit" data-waitlist-submit>{button}</button>
+  </p>
+
+  <p class="wl-status" role="status" aria-live="polite" data-waitlist-status></p>
+
+  <noscript>
+    <p class="wl-noscript">
+      This form sends with JavaScript. With JavaScript switched off, email {FALLBACK_EMAIL} with the same details and
+      we will add you by hand.
+    </p>
+  </noscript>
+</form>
+
+<script is:inline>
+  (function () {
+    var form = document.querySelector('form[data-waitlist]');
+    if (!form) return;
+    var endpoint = form.getAttribute('action');
+    var stamp = form.querySelector('[data-render-stamp]');
+    if (stamp) stamp.value = String(Date.now());
+    var status = form.querySelector('[data-waitlist-status]');
+    var submit = form.querySelector('[data-waitlist-submit]');
+    var minMs = Number(form.getAttribute('data-min-ms') || '3000');
+    var opens = form.getAttribute('data-opens') || 'this';
+    var byHand = "email hello@chimney.services and we'll add you by hand.";
+
+    function say(msg, kind) {
+      if (!status) return;
+      status.textContent = msg;
+      status.setAttribute('data-kind', kind);
+    }
+
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      if (form.reportValidity && !form.reportValidity()) return;
+      if (Date.now() - Number(stamp && stamp.value ? stamp.value : 0) < minMs) {
+        say('That was quicker than a form can be filled in. Give it a moment and send again.', 'error');
+        return;
+      }
+
+      var data = { type: form.getAttribute('data-type') };
+      var creds = [];
+      new FormData(form).forEach(function (value, key) {
+        if (key === 'credentials') {
+          creds.push(String(value));
+          return;
+        }
+        data[key] = String(value);
+      });
+      if (creds.length) data.credentials = creds;
+
+      if (submit) submit.disabled = true;
+      say('Sending…', 'pending');
+
+      fetch(endpoint, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      })
+        .then(function (res) {
+          return res
+            .json()
+            .catch(function () {
+              return {};
+            })
+            .then(function (body) {
+              return { ok: res.ok, status: res.status, body: body };
+            });
+        })
+        .then(function (r) {
+          if (r.ok && r.body && r.body.ok) {
+            form.setAttribute('data-sent', 'true');
+            var fields = form.querySelector('[data-waitlist-fields]');
+            if (fields) fields.setAttribute('hidden', 'hidden');
+            var actions = form.querySelector('[data-waitlist-actions]');
+            if (actions) actions.setAttribute('hidden', 'hidden');
+            say(
+              "You're on the list. We'll email " +
+                (data.email || 'you') +
+                ' when ' +
+                opens +
+                ' open. No fee, no ranking, nothing to buy.',
+              'ok',
+            );
+            return;
+          }
+          if (submit) submit.disabled = false;
+          if (r.status === 503) {
+            say("The list isn't open yet — " + byHand, 'error');
+            return;
+          }
+          say((r.body && r.body.error ? 'Not sent: ' + r.body.error + '. ' : 'Not sent. ') + 'Try again, or ' + byHand, 'error');
+        })
+        .catch(function () {
+          if (submit) submit.disabled = false;
+          say('Not sent — the connection failed. ' + byHand, 'error');
+        });
+    });
+  })();
+</script>

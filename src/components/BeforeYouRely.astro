@@ -1,12 +1,20 @@
 ---
 import { CLOSING_RULE } from '../lib/site';
-interface Props { dateLabel?: string | null; variant?: 'law' | 'guide' | 'record' | 'company' }
+interface Props { dateLabel?: string | null; variant?: 'law' | 'guide' | 'record' | 'company' | 'waitlist' }
 const { dateLabel, variant = 'law' } = Astro.props;
 ---
 <aside class="box box--ink" aria-labelledby="before-you-rely" id="before-you-rely-box">
   <p class="band__title" id="before-you-rely">Before you rely on this</p>
   <ul class="prose">
-    {variant === 'company' ? (
+    {variant === 'waitlist' ? (
+      <>
+        <li>Joining a waiting list is not a page, and it is not a promise of one. It tells us you want one built, and where to write when we start.</li>
+        <li>Nothing on this site is an endorsement, a recommendation, or an approval. We recommend no one.</li>
+        <li>Placement is never sold. A page here cannot be bought, and nobody can pay to rank higher, to be added, or to be left off.</li>
+        <li>We check a certification against the issuer's own public roster and record what we saw, with the date. We do not check identity, background, work quality, or insurance.</li>
+        <li>We write to the address you give us about this, and nothing else. No fee, no list sales, no sponsors.</li>
+      </>
+    ) : variant === 'company' ? (
       <>
         <li>Contact details, hours, and the list of services on this page came from the company itself. We have not watched any of that work being done, and we do not repeat it as fact.</li>
         <li>Certifications and guild membership came from an issuer's own public roster, on the dates shown on this page. A roster entry is a subscription or a test somebody passed on a day — not a guarantee of competence, honesty, or insurance.</li>
@@ -33,7 +41,9 @@ const { dateLabel, variant = 'law' } = Astro.props;
         <li>State rules differ. For licensing, permits and home-sale rules, read the <a href="/rights">50-state laws table</a>.</li>
       </>
     )}
-    <li>Every date on this page is only when we last looked{dateLabel ? ` (${dateLabel})` : ''} — not a promise that nothing has changed since.</li>
+    {variant !== 'waitlist' && (
+      <li>Every date on this page is only when we last looked{dateLabel ? ` (${dateLabel})` : ''} — not a promise that nothing has changed since.</li>
+    )}
     <li>{CLOSING_RULE}</li>
   </ul>
 </aside>
