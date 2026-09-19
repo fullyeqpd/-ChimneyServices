@@ -31,6 +31,7 @@ export const RESERVED_SLUGS = new Set([
   'rights',
   'robots.txt',
   'services',
+  'sitemap',
   'sitemap-index.xml',
 ]);
 

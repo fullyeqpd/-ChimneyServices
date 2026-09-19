@@ -376,6 +376,7 @@ for (const rel of ['/companies.html', '/professionals.html']) {
     }
     if (!/<button[^>]*id="state-go-btn"[^>]*>Go to my state<\/button>/.test(html)) err(f, 'home: no "Go to my state" button');
     if (!/class="state-index"/.test(html)) err(f, 'home: the no-JS state index is gone');
+    if (!/<a href="\/sitemap">Site map<\/a>/.test(html)) err(f, 'home: the footer "Site map" link is missing');
     const stateIndexLinks = [...html.matchAll(/<ul class="state-index"[\s\S]*?<\/ul>/g)]
       .flatMap((m) => [...m[0].matchAll(/href="\/([a-z-]+)\/rights"/g)].map((x) => x[1]));
     if (stateIndexLinks.length !== 51) err(f, `home: state index lists ${stateIndexLinks.length} states, expected 51`);
@@ -539,6 +540,86 @@ for (const sm of files.filter((f) => /sitemap-.*\.xml$/.test(f))) {
   for (const m of xml.matchAll(/<loc>https:\/\/www\.chimney\.services([^<]*)<\/loc>/g)) {
     if (m[1].endsWith('.xml')) continue;
     if (!resolveInternal(m[1] || '/')) errors.push(`${path.basename(sm)}: loc does not resolve ${m[1]}`);
+  }
+}
+
+// ---- The sitemap for bots (XML): the whole indexable site, once each.
+//
+// set(every .html in dist, minus 404, minus noindex) must equal set(every
+// <loc> across the segments). A page that exists but is in no segment is
+// invisible to a crawler that trusts the sitemap; a loc with no page behind it
+// is a 404 we asked to be crawled. Machine-readable twins (.json) and the
+// Pages Functions (/api/*) are not pages and never belong here.
+const segmentUrls = new Map(); // absolute URL -> the segment file that lists it
+{
+  const segFiles = files.filter((f) => /^sitemap-[a-z]+-\d+\.xml$/.test(path.basename(f))).sort();
+  if (!segFiles.length) errors.push('sitemaps: no sitemap-{segment}-N.xml files were generated');
+
+  const indexFile = path.join(DIST, 'sitemap-index.xml');
+  if (!fs.existsSync(indexFile)) errors.push('sitemap-index.xml: missing from dist');
+  else {
+    const idx = fs.readFileSync(indexFile, 'utf8');
+    for (const seg of segFiles) {
+      const name = path.basename(seg);
+      if (!idx.includes(`<loc>${SITE_ORIGIN}/${name}</loc>`)) errors.push(`sitemap-index.xml: does not list ${name}`);
+    }
+  }
+
+  for (const seg of segFiles) {
+    const name = path.basename(seg);
+    const xml = fs.readFileSync(seg, 'utf8');
+    for (const m of xml.matchAll(/<url>([\s\S]*?)<\/url>/g)) {
+      const loc = m[1].match(/<loc>([^<]*)<\/loc>/)?.[1];
+      if (!loc) {
+        errors.push(`${name}: a <url> entry has no <loc>`);
+        continue;
+      }
+      if (!loc.startsWith(`${SITE_ORIGIN}/`)) errors.push(`${name}: loc is not an absolute ${SITE_ORIGIN} URL: ${loc}`);
+      if (/\.html([?#]|$)/.test(loc)) errors.push(`${name}: loc keeps its .html extension: ${loc}`);
+      if (/\.json([?#]|$)/.test(loc)) errors.push(`${name}: loc is a machine-readable endpoint, not a page: ${loc}`);
+      if (loc.startsWith(`${SITE_ORIGIN}/api/`)) errors.push(`${name}: loc is a Pages Function route, not a page: ${loc}`);
+      if (!/<lastmod>\d{4}-\d{2}-\d{2}/.test(m[1])) errors.push(`${name}: ${loc} carries no lastmod`);
+      if (segmentUrls.has(loc)) errors.push(`sitemaps: ${loc} is listed twice — in ${segmentUrls.get(loc)} and in ${name}`);
+      else segmentUrls.set(loc, name);
+    }
+  }
+
+  const urlOf = (f) => {
+    const rel = '/' + path.relative(DIST, f).split(path.sep).join('/');
+    return rel === '/index.html' ? `${SITE_ORIGIN}/` : SITE_ORIGIN + rel.replace(/\.html$/, '');
+  };
+  const indexablePages = htmlFiles.filter((f) => {
+    if (path.relative(DIST, f).split(path.sep).join('/') === '404.html') return false;
+    return !/<meta name="robots" content="noindex/.test(fs.readFileSync(f, 'utf8'));
+  });
+  const wanted = new Set(indexablePages.map(urlOf));
+  for (const u of wanted) if (!segmentUrls.has(u)) errors.push(`sitemaps: indexable page is in no segment: ${u}`);
+  for (const u of segmentUrls.keys()) if (!wanted.has(u)) errors.push(`sitemaps: ${u} is listed but is not an indexable page in dist`);
+  console.log(`Checked ${segFiles.length} sitemap segment(s): ${segmentUrls.size} URL(s) against ${wanted.size} indexable page(s).`);
+}
+
+// ---- The site map for humans (/sitemap): the same territory, readable.
+// It must reach everything the XML reaches. It may carry more — the CSV, the
+// llms.txt, the record JSON and the XML index itself are files, not pages, so
+// they are here and never in the XML.
+{
+  const f = path.join(DIST, 'sitemap.html');
+  if (!fs.existsSync(f)) errors.push('sitemap.html: the human site map is missing from dist');
+  else {
+    const html = fs.readFileSync(f, 'utf8');
+    if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'site map: expected exactly 1 <h1>');
+    if (/content="noindex/.test(html)) err(f, 'site map must be indexable');
+    const hrefs = new Set([...html.matchAll(/<a\s[^>]*href="([^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&')));
+    const linked = new Set(
+      [...hrefs].filter((h) => h.startsWith('/')).map((h) => (h === '/' ? `${SITE_ORIGIN}/` : SITE_ORIGIN + h.split('#')[0])),
+    );
+    for (const u of segmentUrls.keys()) if (!linked.has(u)) errors.push(`sitemap.html: nothing links to ${u}, which is in the XML sitemap`);
+    const stateLinks = [...hrefs].filter((h) => /^\/[a-z-]+\/(rights|licensing)$/.test(h));
+    if (stateLinks.length !== 102) err(f, `site map: ${stateLinks.length} state links, expected 102 (51 jurisdictions × rights + licensing)`);
+    for (const needed of ['/data/rights-table.csv', '/llms.txt', '/sitemap-index.xml']) {
+      if (!hrefs.has(needed)) err(f, `site map: no link to ${needed}`);
+    }
+    if (!llmsRaw.includes(`${SITE_ORIGIN}/sitemap)`)) errors.push('llms.txt: missing /sitemap');
   }
 }
 

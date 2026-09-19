@@ -30,6 +30,9 @@ export const GET: APIRoute = async () => {
   );
   lines.push(`- [About](${SITE_URL}/about): what Chimney.Services verifies, what it does not, and who pays for it.`);
   lines.push(
+    `- [Site map](${SITE_URL}/sitemap): every page on the site in one human-readable list — state law and licensing pages, guides, company pages, registry records, and the machine-readable files. The crawler copy is ${SITE_URL}/sitemap-index.xml.`,
+  );
+  lines.push(
     `- [Company waiting list](${SITE_URL}/companies): form for a chimney company owner to ask for a company page — a provenance-labeled summary of services, service area, contacts, certified people and a dated public rating snapshot. No fee, no ranking, and placement is never sold.`,
   );
   lines.push(

@@ -54,6 +54,12 @@ export default defineConfig({
   build: { format: 'file' },
   integrations: [
     sitemap({
+      // Every entry carries a lastmod. The chunks below overwrite it with the
+      // date that actually governs the page (verified / checked / updated);
+      // everything else — the home page, /about, /services, the waiting lists,
+      // the company pages and /sitemap — keeps this build date, which is the
+      // honest answer for a page with no dated content of its own.
+      lastmod: new Date(),
       // Registry record pages are indexable and listed in their own segment.
       // Their machine-readable twins (/pro/{slug}.json) are not pages, so they
       // stay out of every sitemap.

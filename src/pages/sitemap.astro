@@ -1,0 +1,196 @@
+---
+// Site map for humans (/sitemap).
+//
+// The XML sitemaps at /sitemap-index.xml are for crawlers; this page is the
+// same territory written out for a reader. Nothing here is hand-typed: every
+// link is built from the data that builds the pages themselves, so a new
+// state, guide, company page or registry record appears here the moment it
+// exists. `npm run check:dist` compares the links on this page against the
+// URLs in the XML segments and fails when the two drift apart.
+import Base from '../layouts/Base.astro';
+import { getStates, getLicensing } from '../lib/content';
+import { getLearnHubs } from '../lib/learn';
+import { getCompanies, companyPath } from '../lib/companies';
+import { getRecords, recordPath, recordJsonPath } from '../lib/registry';
+import { ORG_NAME, SITE_URL, abs, RIGHTS_CSV, monthYear, latest } from '../lib/site';
+
+const path = '/sitemap';
+const title = `Site map — every page | ${ORG_NAME}`;
+const description =
+  'Every page on Chimney.Services in one list: state law and licensing pages, guides, company pages, registry records, and the machine-readable files.';
+
+const states = await getStates();
+const licensingSlugs = new Set(getLicensing().states.map((s) => s.slug));
+for (const s of states) {
+  if (!licensingSlugs.has(s.slug)) throw new Error(`[sitemap] ${s.name} has a rights page but no licensing page — the site map would list 101 state links, not 102.`);
+}
+const hubs = getLearnHubs();
+const companies = getCompanies();
+const records = getRecords();
+const lastVerified = latest(states.map((s) => s.lastVerified));
+
+const start = [
+  ['/', 'Home', 'Start with your state.'],
+  ['/rights', 'Know your rights', 'All 50 states and DC, compared in one table.'],
+  ['/licensing', 'Licensing by trade', 'What sweeping, stove installs, flashing and gas work require.'],
+  ['/services', 'Chimney and fireplace services, explained', 'Every job the trade sells, with the standard behind it.'],
+  ['/learn', 'Learn', 'Short, dated, sourced guides.'],
+  ['/about', 'About', 'What we check, what we do not, and who pays for it.'],
+  ['/companies', 'Company waiting list', 'For an owner who wants a company page built.'],
+  ['/professionals', 'Technician waiting list', 'For a technician who wants a registry record.'],
+] as const;
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Site map', item: abs(path) },
+    ],
+  },
+];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd} citedAs={monthYear(lastVerified)}>
+  <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / SITE MAP</nav>
+  <h1>Site map — every page on Chimney.Services</h1>
+  <p class="lede">
+    Every page on this site, in one list. State law pages first, then the guides, the company and registry pages, and the files built for machines to read.
+  </p>
+
+  <section class="sm-section" aria-labelledby="start-h">
+    <h2 id="start-h">Start here</h2>
+    <ul class="sm-list sm-list--wide">
+      {start.map(([href, label, note]) => (
+        <li><a href={href}>{label}</a> <span class="sm-note">{note}</span></li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="sm-section" aria-labelledby="states-h">
+    <h2 id="states-h">State law pages</h2>
+    <p class="sm-lede">Two pages per state and DC: what the law gives you, and what a credential means where you live.</p>
+    <ul class="sm-list sm-list--cols" aria-labelledby="states-h">
+      {states.map((s) => (
+        <li>
+          <span class="sm-state">{s.name}</span> — <a href={`/${s.slug}/rights`}>Know your rights</a> · <a href={`/${s.slug}/licensing`}>Licensing</a>
+          {s.publishVerdict === 'DO NOT PUBLISH' && <span class="sm-flag">RIGHTS PAGE UNDER REVIEW</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  {hubs.length > 0 && (
+    <section class="sm-section" aria-labelledby="learn-h">
+      <h2 id="learn-h">Learn guides</h2>
+      <ul class="sm-list sm-list--wide">
+        {hubs.map((h) => (
+          <li><a href={`/learn/${h.slug}`}>{h.title}</a> <span class="sm-note">Updated {monthYear(h.updated)}</span></li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {companies.length > 0 && (
+    <section class="sm-section" aria-labelledby="companies-h">
+      <h2 id="companies-h">Company pages</h2>
+      <ul class="sm-list sm-list--wide">
+        {companies.map((c) => (
+          <li>
+            <a href={companyPath(c)}>{c.name}</a>
+            <span class="sm-note">{c.address.city}, {c.address.region} · checked {c.checkedAt}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  {records.length > 0 && (
+    <section class="sm-section" aria-labelledby="registry-h">
+      <h2 id="registry-h">Registry records</h2>
+      <ul class="sm-list sm-list--wide">
+        {records.map((r) => (
+          <li>
+            <a href={recordPath(r)}>{r.name}</a>
+            <span class="sm-note">Record {r.recordNumber} · created {r.recordCreated}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+
+  <section class="sm-section" aria-labelledby="data-h">
+    <h2 id="data-h">Data and machine-readable files</h2>
+    <ul class="sm-list sm-list--wide">
+      <li><a href={RIGHTS_CSV} download>Rights table (CSV)</a> <span class="sm-note">The 51-row comparison as open data, with its attribution line.</span></li>
+      <li><a href="/llms.txt">llms.txt</a> <span class="sm-note">Every page with a one-line summary, for AI crawlers.</span></li>
+      <li><a href="/sitemap-index.xml">XML sitemap index</a> <span class="sm-note">For search engines and AI crawlers.</span></li>
+      {records.map((r) => (
+        <li><a href={recordJsonPath(r)}>Registry record {r.recordNumber} (JSON)</a> <span class="sm-note">The machine-readable copy of {r.name}'s record.</span></li>
+      ))}
+    </ul>
+  </section>
+</Base>
+
+<style>
+  .sm-section {
+    border-top: 1px solid var(--ink);
+    padding-top: 14px;
+    margin: 32px 0;
+  }
+  .sm-section h2 {
+    margin-bottom: 0.3em;
+  }
+  .sm-lede {
+    max-width: var(--measure);
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .sm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0.95rem;
+  }
+  .sm-list li {
+    break-inside: avoid;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .sm-list--wide li {
+    max-width: var(--measure);
+  }
+  .sm-list--cols {
+    columns: 4;
+    column-gap: 28px;
+  }
+  .sm-list--cols li {
+    line-height: 1.45;
+  }
+  .sm-state {
+    font-weight: 600;
+  }
+  .sm-note {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
+    color: var(--muted);
+  }
+  .sm-flag {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+    color: var(--flag);
+  }
+  @media (max-width: 1000px) {
+    .sm-list--cols { columns: 3; }
+  }
+  @media (max-width: 720px) {
+    .sm-list--cols { columns: 2; }
+  }
+  @media (max-width: 480px) {
+    .sm-list--cols { columns: 1; }
+  }
+</style>
