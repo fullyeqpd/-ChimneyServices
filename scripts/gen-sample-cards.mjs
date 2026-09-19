@@ -8,9 +8,17 @@
  * an insurance certificate and not a background check, and the back of the
  * card says so in those words.
  *
- * Two cards are drawn:
+ * Three designs are drawn:
+ *   front / back — the full card: photograph, dates, and the three things the
+ *                 card is not, printed on it.
+ *   simple      — a name, two certification lines and a QR code, and nothing
+ *                 else. Everything the full card prints on itself — the dates,
+ *                 the evidence, what was never checked — is on the record page
+ *                 the QR code opens, so the card does not repeat it.
+ *
+ * Two people are drawn:
  *   art-kalina  — a real record, CS-P-00001, with the photograph that record
- *                 already carries.
+ *                 already carries. This one also gets the simple design.
  *   sample      — a deliberately fictional one, CS-P-00000 / "Sample
  *                 Technician" / "Example Chimney Co.", drawn with a silhouette
  *                 rather than any real person's face and watermarked SAMPLE, so
@@ -192,6 +200,45 @@ function front(card) {
   return out.join('');
 }
 
+// ---- Simple front ---------------------------------------------------------
+//
+// The card a person actually hands over. Who, what two bodies say, and a code
+// that opens the record. No photograph, no dates, no disclaimer strip: those
+// live on the page the code opens, where a reader has room to read them, and
+// repeating them here would only make a small card harder to take in.
+function simple(card) {
+  const out = [stock(), masthead()];
+  out.push(`<rect x="${PAD}" y="106" width="${W - PAD * 2}" height="1" fill="${EMBER}"/>`);
+
+  const qrSize = 220;
+  const qx = W - PAD - qrSize;
+  const qy = 238;
+  out.push(qrPath(card.url, qx, qy, qrSize).svg);
+  out.push(
+    text(`SCAN TO CHECK · ${card.recordNumber}`, {
+      x: qx + qrSize / 2,
+      y: qy + qrSize + 30,
+      font: MONO,
+      size: 13,
+      weight: 500,
+      fill: MUTED,
+      spacing: 1.6,
+      anchor: 'middle',
+    }),
+  );
+
+  out.push(text(card.name, { x: PAD, y: 308, font: DISPLAY, size: 60, weight: 700 }));
+  if (card.roleLine) out.push(text(card.roleLine, { x: PAD, y: 348, font: BODY, size: 19, fill: MUTED }));
+
+  let y = 412;
+  for (const c of card.simpleCredentials ?? card.credentials) {
+    out.push(text(c.issuer, { x: PAD, y, font: MONO, size: 17, weight: 500, fill: MUTED, spacing: 1.4 }));
+    out.push(text(c.line, { x: PAD + 104, y, font: BODY, size: 20, weight: 500 }));
+    y += 44;
+  }
+  return out.join('');
+}
+
 // ---- Back -----------------------------------------------------------------
 function back(card) {
   const out = [stock()];
@@ -245,6 +292,12 @@ const CARDS = [
       { issuer: 'NFI', line: 'Certified · Woodburning Specialist' },
       { issuer: 'SPRAT', line: 'Certified · Level 1 #2602623' },
     ],
+    // Shorter on the simple card, where there is nothing else to read.
+    simpleCredentials: [
+      { issuer: 'NFI', line: 'Woodburning Specialist' },
+      { issuer: 'SPRAT', line: 'Level 1 · #2602623' },
+    ],
+    faces: ['front', 'back', 'simple'],
     url: `${SITE_URL}/pro/art-kalina`,
     photoDataUri,
     photoLabel: 'SUPPLIED — NOT CHECKED',
@@ -261,6 +314,7 @@ const CARDS = [
       { issuer: 'NFI', line: 'Certified · Gas Specialist' },
       { issuer: 'CSIA', line: 'Certified Chimney Sweep (CCS)' },
     ],
+    faces: ['front', 'back'],
     url: `${SITE_URL}/professionals#order`,
     photoDataUri: null,
     photoLabel: 'SAMPLE — NOT A REAL PERSON',
@@ -345,15 +399,16 @@ function decode(file, expected) {
 fs.mkdirSync(OUT, { recursive: true });
 const wantPng = !process.argv.includes('--no-png');
 const results = [];
+const DESIGNS = { front, back, simple };
+let written = 0;
 
 for (const card of CARDS) {
-  for (const [face, draw] of [
-    ['front', front],
-    ['back', back],
-  ]) {
+  for (const face of card.faces) {
+    const draw = DESIGNS[face];
     const name = `${card.key}-${face}`;
     const svg = document_(`${card.title} — ${face}`, draw(card));
     fs.writeFileSync(path.join(OUT, `${name}.svg`), `${svg}\n`);
+    written++;
     if (!wantPng) continue;
     const pngFile = path.join(OUT, `${name}.png`);
     rasterize(svg, pngFile);
@@ -371,5 +426,5 @@ for (const [name, r] of results) {
   console.log(`${r.ok ? 'QR OK  ' : 'QR FAIL'}  ${name}.png${r.ok ? '' : ` — ${r.reason}`}`);
   if (!r.ok) bad++;
 }
-console.log(`Wrote ${CARDS.length * 2} SVG${wantPng ? ` and ${CARDS.length * 2} PNG` : ''} file(s) to public/pro/cards/.`);
+console.log(`Wrote ${written} SVG${wantPng ? ` and ${written} PNG` : ''} file(s) to public/pro/cards/.`);
 if (bad) process.exit(1);

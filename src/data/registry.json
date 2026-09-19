@@ -23,9 +23,9 @@
         "height": 640
       },
       "card": {
-        "front": "/pro/cards/art-kalina-front.png",
-        "back": "/pro/cards/art-kalina-back.png",
-        "alt": "Front of the Chimney.Services ID card for record CS-P-00001, Art Kalina: photograph, the NFI and SPRAT certification lines, the date the rosters were checked, and a QR code that opens this page."
+        "front": "/pro/cards/art-kalina-simple.png",
+        "back": null,
+        "alt": "Chimney.Services ID card for record CS-P-00001: the name Art Kalina, the line Chimney Monkey · Buffalo Grove, IL, two certification lines reading NFI Woodburning Specialist and SPRAT Level 1 · #2602623, and a QR code labelled SCAN TO CHECK · CS-P-00001 that opens this page."
       },
       "supplied": [
         {

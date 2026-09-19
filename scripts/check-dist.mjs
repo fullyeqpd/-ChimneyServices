@@ -458,25 +458,23 @@ for (const rel of ['/companies.html', '/professionals.html']) {
       if (bad.test(html)) err(f, `professionals: payment processing on the page (${bad})`);
     }
 
-    // ---- The sample cards. Both formats shipped, three faces shown, and the
-    // fictional one named as fictional on the page that shows it.
-    for (const name of ['art-kalina-front', 'art-kalina-back', 'sample-front', 'sample-back']) {
+    // ---- The card, shown once. One real record, no invented person: the page
+    // shows the simple card and nothing else from public/pro/cards/.
+    for (const name of ['art-kalina-front', 'art-kalina-back', 'art-kalina-simple', 'sample-front', 'sample-back']) {
       for (const ext of ['png', 'svg']) {
         const file = path.join(DIST, 'pro', 'cards', `${name}.${ext}`);
-        if (!fs.existsSync(file)) errors.push(`pro/cards/${name}.${ext}: sample card is missing from dist`);
+        if (!fs.existsSync(file)) errors.push(`pro/cards/${name}.${ext}: card artwork is missing from dist`);
       }
     }
-    for (const shown of ['art-kalina-front', 'sample-front', 'sample-back']) {
-      const img = html.match(new RegExp(`<img[^>]*src="/pro/cards/${shown}\\.png"[^>]*>`))?.[0];
-      if (!img) err(f, `professionals: /pro/cards/${shown}.png is not shown on the page`);
-      else {
-        for (const attr of ['alt="', 'width="', 'height="', 'loading="lazy"']) {
-          if (!img.includes(attr)) err(f, `professionals: the ${shown} image is missing ${attr}`);
-        }
-      }
+    const cardsShown = [...html.matchAll(/<img[^>]*src="\/pro\/cards\/([a-z0-9-]+)\.png"[^>]*>/g)];
+    if (cardsShown.length !== 1 || cardsShown[0][1] !== 'art-kalina-simple') {
+      err(f, `professionals: expected only art-kalina-simple.png on the page, found ${cardsShown.map((m) => m[1]).join(', ') || 'none'}`);
     }
-    if (!/No such person and no such company exist/i.test(text)) {
-      err(f, 'professionals: the caption does not say the sample card is fictional');
+    for (const attr of ['alt="', 'width="', 'height="', 'loading="lazy"']) {
+      if (!cardsShown[0]?.[0].includes(attr)) err(f, `professionals: the card image is missing ${attr}`);
+    }
+    if (!text.includes("Example: the founder's own record, CS-P-00001.") && !text.includes('Example: the founder&#39;s own record, CS-P-00001.')) {
+      err(f, 'professionals: the card caption is missing or reworded');
     }
   }
 }
@@ -487,10 +485,10 @@ for (const rel of ['/companies.html', '/professionals.html']) {
   const f = path.join(DIST, 'pro', 'art-kalina.html');
   if (fs.existsSync(f)) {
     const html = fs.readFileSync(f, 'utf8');
-    const img = html.match(/<img[^>]*src="\/pro\/cards\/art-kalina-front\.png"[^>]*>/)?.[0];
-    if (!img) err(f, 'record page: the printed card is not shown');
+    const img = html.match(/<img[^>]*src="\/pro\/cards\/art-kalina-simple\.png"[^>]*>/)?.[0];
+    if (!img) err(f, 'record page: the simple printed card is not shown');
     else if (!/alt="[^"]{20,}"/.test(img)) err(f, 'record page: the card image has no real alt text');
-    if (!/href="\/pro\/cards\/art-kalina-front\.png"/.test(html)) err(f, 'record page: the card is not linked to the PNG');
+    if (!/href="\/pro\/cards\/art-kalina-simple\.png"/.test(html)) err(f, 'record page: the card is not linked to the PNG');
   }
 }
 
