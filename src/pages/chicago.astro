@@ -1,0 +1,573 @@
+---
+// /chicago — company summary for Chimney Monkey (Buffalo Grove, IL).
+//
+// The rule this page follows: every block says where it came from. Contact
+// details, hours and the service list are the company's own words; guild
+// membership and individual certifications are what an issuer's own public
+// roster showed on the date named. Nothing here is an endorsement, and no
+// placement on this site is for sale.
+import Base from '../layouts/Base.astro';
+import Chip from '../components/Chip.astro';
+import Glyph from '../components/Glyph.astro';
+import BeforeYouRely from '../components/BeforeYouRely.astro';
+import {
+  getCompany,
+  companyPath,
+  companyUrl,
+  addressLine,
+  areaServed,
+  PROVENANCE_LABEL,
+} from '../lib/companies';
+import { ORG_NAME, SITE_URL, abs } from '../lib/site';
+
+const c = getCompany('chicago');
+const path = companyPath(c);
+const addr = addressLine(c);
+
+const title = `Chimney Monkey — Chimney Sweep & Fireplace Services, Buffalo Grove IL | ${ORG_NAME}`;
+const description =
+  'Chimney Monkey, Buffalo Grove IL: services, service area, contacts and certified people — each fact labeled public record or reported by the business.';
+
+const artRecord = c.people.find((p) => p.recordPath)?.recordPath ?? null;
+
+// ---- JSON-LD. No ratings, no reviews, no claim this page has not evidenced.
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Chicago', item: companyUrl(c) },
+    { '@type': 'ListItem', position: 3, name: c.name, item: companyUrl(c) },
+  ],
+};
+const businessLd = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  '@id': `${companyUrl(c)}#business`,
+  name: c.name,
+  url: c.website,
+  telephone: c.phoneE164,
+  email: c.email,
+  foundingDate: c.founded,
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: c.address.street,
+    addressLocality: c.address.city,
+    addressRegion: c.address.region,
+    postalCode: c.address.postalCode,
+    addressCountry: c.address.country,
+  },
+  areaServed: areaServed(c).map((name) => ({ '@type': 'Place', name })),
+  ...(c.membership
+    ? {
+        memberOf: {
+          '@type': 'Organization',
+          name: c.membership.bodyName,
+          alternateName: c.membership.body,
+          url: c.sources.ncsgMember.url,
+        },
+      }
+    : {}),
+  ...(artRecord ? { employee: [{ '@type': 'Person', '@id': abs(artRecord) }] } : {}),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `${companyUrl(c)}#page`,
+    url: companyUrl(c),
+    name: `${c.name} — ${ORG_NAME}`,
+    publisher: { '@id': `${SITE_URL}/#organization` },
+  },
+};
+const jsonLd = [breadcrumbLd, businessLd];
+---
+<Base title={title} description={description} path={path} jsonLd={jsonLd} modified={c.checkedAt}>
+  <nav class="crumb" aria-label="Breadcrumb">{c.crumb}</nav>
+
+  <div class="co-page">
+    <header>
+      <h1>{c.h1}</h1>
+      <p class="badge-date">
+        Company summary<span class="dot">·</span>Sources as cited<span class="dot">·</span>Checked {c.checkedAtLabel}
+      </p>
+      <p class="lede">{c.lede}</p>
+    </header>
+
+    <!-- ---------- Summary card: the whole company at a glance ---------- -->
+    <section class="cocard" aria-labelledby="summary-h">
+      <p class="cocard__kicker">COMPANY SUMMARY · {c.address.city.toUpperCase()}, {c.address.region}</p>
+      <h2 id="summary-h" class="cocard__name">{c.name}</h2>
+
+      <dl class="cofacts">
+        <div class="cofact">
+          <dt>Founded</dt>
+          <dd>
+            <span class="mono cofact__value">{c.founded}</span>
+            <Chip kind="muted">{PROVENANCE_LABEL.reported}</Chip>
+            <span class="cofact__note">{c.foundedNote} {c.partners} are named by the company as its owners.</span>
+          </dd>
+        </div>
+        <div class="cofact">
+          <dt>Address</dt>
+          <dd>
+            <span class="mono cofact__value">{addr}</span>
+            <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+            <span class="cofact__note">
+              As listed on the guild's own public member directory, checked {c.checkedAtLabel}, and on the company's site.
+            </span>
+          </dd>
+        </div>
+        <div class="cofact">
+          <dt>Phone</dt>
+          <dd>
+            <a class="mono cofact__value" href={`tel:${c.phoneE164}`}>{c.phone}</a>
+            <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+            <span class="cofact__note">
+              The same number appears on NFI's public Find-an-NFI-Pro listing and on the guild's member directory.
+            </span>
+          </dd>
+        </div>
+        <div class="cofact">
+          <dt>Email</dt>
+          <dd>
+            <a class="mono cofact__value" href={`mailto:${c.email}`}>{c.email}</a>
+            <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+            <span class="cofact__note">Published on the guild's member directory and on the company's contact page.</span>
+          </dd>
+        </div>
+        <div class="cofact">
+          <dt>Website</dt>
+          <dd>
+            <a class="mono cofact__value" href={c.website} rel="noopener" target="_blank">{c.websiteLabel}</a>
+            <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+            <span class="cofact__note">Listed by the guild; the site itself is the company's own.</span>
+          </dd>
+        </div>
+        <div class="cofact">
+          <dt>Hours</dt>
+          <dd>
+            <span class="mono cofact__value">{c.hours}</span>
+            <Chip kind="muted">{PROVENANCE_LABEL.reported}</Chip>
+            <span class="cofact__note">
+              The company's contact page states these hours. We have not called outside them to test it.
+            </span>
+          </dd>
+        </div>
+        {c.membership && (
+          <div class="cofact">
+            <dt>Guild membership</dt>
+            <dd>
+              <span class="mono cofact__value">{c.membership.label} · {c.membership.memberType}</span>
+              <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+              <span class="cofact__note">{c.membership.note}</span>
+              <span class="cofact__note">{c.membership.reportedSince}</span>
+            </dd>
+          </div>
+        )}
+      </dl>
+
+      <p class="cocard__sources">
+        <span class="cocard__sources-label">Sources</span>
+        <a class="chip" href={c.sources.ncsgMember.url} rel="noopener" target="_blank">REF · {c.sources.ncsgMember.label}</a>
+        <a class="chip" href={c.sources.nfi.url} rel="noopener" target="_blank">REF · {c.sources.nfi.label}</a>
+        <a class="chip" href={c.sources.siteContact.url} rel="noopener" target="_blank">REF · {c.sources.siteContact.label}</a>
+      </p>
+    </section>
+
+    <!-- ---------- Services ---------- -->
+    <section class="co-section" aria-labelledby="services-h" id="services">
+      <h2 id="services-h">What does Chimney Monkey say it does?</h2>
+      <p class="chips co-prov">
+        <Chip kind="muted">{PROVENANCE_LABEL.reported}</Chip>
+        <span class="fineprint">Taken from the company's own service pages, grouped here for reading. Nothing on this list has been watched, tested or priced by us.</span>
+      </p>
+
+      <div class="cogroups">
+        {c.serviceGroups.map((g) => (
+          <div class="cogroup" id={`services-${g.id}`}>
+            <h3 class="cogroup__title">{g.title}</h3>
+            <ul class="cogroup__list">
+              {g.items.map((item) => <li>{item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+
+      <p class="co-note">{c.serviceStandardNote}</p>
+      <p class="sources">
+        <span class="sources__label">Sources</span>
+        <span class="source"><a class="chip" href={c.sources.siteServices.url} rel="noopener" target="_blank">REF · {c.sources.siteServices.label}</a></span>
+        <span class="source"><a class="chip" href={c.sources.site.url} rel="noopener" target="_blank">REF · {c.sources.site.label}</a></span>
+      </p>
+    </section>
+
+    <!-- ---------- Service area ---------- -->
+    <section class="co-section" aria-labelledby="area-h" id="service-area">
+      <h2 id="area-h">Where does Chimney Monkey work?</h2>
+      <p class="chips co-prov">
+        <Chip kind="muted">{PROVENANCE_LABEL.reported}</Chip>
+        <span class="fineprint">The towns and counties the company names on its own site. A town on this list is a place the company says it goes, not a promise that it will.</span>
+      </p>
+
+      <p class="coarea__counties">
+        <Chip kind="local" />
+        <span class="mono">{c.serviceArea.counties.join(' · ').toUpperCase()}</span>
+        <span class="fineprint">{c.serviceArea.summary}</span>
+      </p>
+
+      <ul class="coarea__towns">
+        {c.serviceArea.towns.map((t) => <li>{t}</li>)}
+      </ul>
+      <p class="fineprint">
+        The company's site adds "and nearby towns" after this list. Ask before you book if your address is not named above.
+      </p>
+    </section>
+
+    <!-- ---------- Certified people on record ---------- -->
+    <section class="co-section" aria-labelledby="people-h" id="people">
+      <h2 id="people-h">Who at this company appears on a certification roster?</h2>
+      <p class="chips co-prov">
+        <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+        <span class="fineprint">
+          Each line below is a name found on an issuer's own public roster, on the date shown. A certification is a test somebody passed on a day — it is not a licence, a background check, or a promise about the work.
+        </span>
+      </p>
+
+      <ul class="copeople">
+        {c.people.map((p) => (
+          <li class="coperson">
+            <p class="coperson__line">
+              {p.recordPath ? (
+                <a class="coperson__name" href={p.recordPath}>{p.name} — {p.credential}</a>
+              ) : (
+                <span class="coperson__name">{p.name} — {p.credential}</span>
+              )}
+              <Chip kind="muted">{PROVENANCE_LABEL[p.provenance]}</Chip>
+            </p>
+            <p class="coperson__meta mono">
+              {p.role ? `${p.role.toUpperCase()} · ` : ''}ON ROSTERS AS {p.nameOnRoster.toUpperCase()}
+            </p>
+            <p class="coperson__note">{p.note}</p>
+            {p.recordPath && (
+              <p class="coperson__link">
+                <a href={p.recordPath}>Read the full registry record<Glyph name="arrow" /></a>
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+
+      <p class="fineprint">
+        The order certification bodies are listed in is fixed across this site — NCSG first, then NFI — so that what is missing is as visible as what is there. No fee is taken from any certification body, guild or contractor, and nobody is paid to be mentioned.
+      </p>
+      <p class="sources">
+        <span class="sources__label">Sources</span>
+        <span class="source"><a class="chip" href={c.sources.nfi.url} rel="noopener" target="_blank">REF · {c.sources.nfi.label}</a></span>
+        <span class="source"><a class="chip" href={c.sources.ncsgDirectory.url} rel="noopener" target="_blank">REF · {c.sources.ncsgDirectory.label}</a></span>
+      </p>
+    </section>
+
+    <!-- ---------- Illinois rights ---------- -->
+    <section class="co-section" aria-labelledby="rights-h" id="illinois-rights">
+      <h2 id="rights-h">Know your rights in Illinois</h2>
+      <p>
+        Illinois issues no state licence that covers chimney sweeping, inspection or relining, so no state exam stands
+        between a homeowner and whoever shows up — which makes the questions you ask, and the paperwork you keep, the
+        whole of your protection. What the state does give you is a home-repair regime with teeth: written contracts,
+        a consumer-rights pamphlet, and a three-day right to cancel on work sold at your door. The City of Chicago runs
+        its own contractor and permit rules on top of the state's, and they are not the same rules as the suburbs
+        this company serves. Read <a href={c.statePath}>Illinois: know your rights</a> for the statutes, the disclosure
+        rules and the cancellation window, and <a href={c.licensingPath}>Illinois licensing by trade</a> for which parts
+        of hearth work — gas, electrical, roofing, structural masonry — do carry a credential requirement and who issues it.
+      </p>
+      <p class="chips">
+        <Chip kind="state" abbr="IL" />
+        <Chip kind="muted">{PROVENANCE_LABEL['public-record']}</Chip>
+      </p>
+    </section>
+
+    <BeforeYouRely dateLabel={c.checkedAtLabel} variant="company" />
+  </div>
+</Base>
+
+<style>
+  /* Single column, document-formal. Same measure as a registry record. */
+  .co-page {
+    max-width: 760px;
+    margin: 0 auto 8px;
+  }
+
+  /* ---------- Summary card ---------- */
+  .cocard {
+    border: 1px solid var(--ink);
+    padding: 22px 22px 20px;
+    background: var(--paper);
+    margin: 4px 0 8px;
+  }
+  @media (min-width: 620px) {
+    .cocard {
+      padding: 28px 30px 24px;
+    }
+  }
+  .cocard__kicker {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  .cocard__name {
+    font-size: clamp(1.7rem, 3.6vw, 2.2rem);
+    margin: 0 0 18px;
+    line-height: 1.1;
+  }
+  .cofacts {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid var(--ink);
+  }
+  .cofact {
+    display: grid;
+    gap: 2px 20px;
+    grid-template-columns: minmax(0, 1fr);
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  @media (min-width: 620px) {
+    .cofact {
+      grid-template-columns: 150px minmax(0, 1fr);
+    }
+  }
+  .cofact dt {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-top: 2px;
+  }
+  .cofact dd {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 10px;
+  }
+  .cofact__value {
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  a.cofact__value {
+    text-decoration-color: var(--rule);
+  }
+  a.cofact__value:hover,
+  a.cofact__value:focus-visible {
+    color: var(--ember);
+    text-decoration-color: currentColor;
+  }
+  .cofact__note {
+    flex: 1 0 100%;
+    font-size: 0.86rem;
+    line-height: 1.55;
+    color: var(--muted);
+    max-width: var(--measure);
+  }
+  .cocard__sources {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 8px;
+    margin: 16px 0 0;
+  }
+  .cocard__sources-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ---------- Sections ---------- */
+  .co-section {
+    margin-top: 40px;
+    border-top: 1px solid var(--ink);
+    padding-top: 18px;
+  }
+  .co-section > h2 {
+    margin-bottom: 10px;
+  }
+  .co-section p {
+    max-width: var(--measure);
+  }
+  .co-prov {
+    align-items: baseline;
+    gap: 6px 10px;
+    margin-bottom: 18px;
+  }
+  .co-prov .fineprint {
+    flex: 1 1 260px;
+    margin: 0;
+    max-width: var(--measure);
+  }
+  .co-note {
+    border-left: 2px solid var(--rule);
+    padding-left: 14px;
+    color: var(--muted);
+    font-size: 0.94rem;
+    margin: 18px 0;
+  }
+
+  /* ---------- Services ---------- */
+  .cogroups {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0;
+    border-top: 1px solid var(--rule);
+  }
+  @media (min-width: 640px) {
+    .cogroups {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 32px;
+    }
+  }
+  .cogroup {
+    padding: 14px 0 16px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cogroup__title {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+  .cogroup__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .cogroup__list li {
+    position: relative;
+    padding-left: 18px;
+    margin: 0 0 4px;
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+  .cogroup__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 9px;
+    height: 1px;
+    background: var(--ink);
+  }
+
+  /* ---------- Service area ---------- */
+  .coarea__counties {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 10px 0;
+    margin: 0 0 16px;
+    font-size: 0.82rem;
+    letter-spacing: 0.06em;
+  }
+  .coarea__counties .fineprint {
+    margin: 0;
+  }
+  .coarea__towns {
+    list-style: none;
+    margin: 0 0 14px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 24px;
+  }
+  @media (min-width: 560px) {
+    .coarea__towns {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 820px) {
+    .coarea__towns {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .coarea__towns li {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  /* ---------- People ---------- */
+  .copeople {
+    list-style: none;
+    margin: 0 0 18px;
+    padding: 0;
+    border-top: 1px solid var(--ink);
+  }
+  .coperson {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .coperson__line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px 10px;
+    margin: 0 0 4px;
+  }
+  .coperson__name {
+    font-family: var(--font-display);
+    font-size: 1.16rem;
+    font-weight: 600;
+  }
+  a.coperson__name {
+    text-decoration-color: var(--rule);
+  }
+  a.coperson__name:hover,
+  a.coperson__name:focus-visible {
+    color: var(--ember);
+    text-decoration-color: currentColor;
+  }
+  .coperson__meta {
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin: 0 0 6px;
+  }
+  .coperson__note {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--muted);
+    margin: 0 0 6px;
+    max-width: var(--measure);
+  }
+  .coperson__link {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.04em;
+  }
+  .coperson__link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration-color: var(--rule);
+  }
+  /* The glyph comes from another component, so the scoped selector has to be
+     global or the SVG renders at its intrinsic size. */
+  .coperson__link :global(svg) {
+    width: 12px;
+    height: 12px;
+    flex: none;
+  }
+  .coperson__link a:hover {
+    color: var(--ember);
+  }
+</style>

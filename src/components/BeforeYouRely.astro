@@ -1,12 +1,19 @@
 ---
 import { CLOSING_RULE } from '../lib/site';
-interface Props { dateLabel?: string | null; variant?: 'law' | 'guide' | 'record' }
+interface Props { dateLabel?: string | null; variant?: 'law' | 'guide' | 'record' | 'company' }
 const { dateLabel, variant = 'law' } = Astro.props;
 ---
 <aside class="box box--ink" aria-labelledby="before-you-rely" id="before-you-rely-box">
   <p class="band__title" id="before-you-rely">Before you rely on this</p>
   <ul class="prose">
-    {variant === 'record' ? (
+    {variant === 'company' ? (
+      <>
+        <li>Contact details, hours, and the list of services on this page came from the company itself. We have not watched any of that work being done, and we do not repeat it as fact.</li>
+        <li>Certifications and guild membership came from an issuer's own public roster, on the dates shown on this page. A roster entry is a subscription or a test somebody passed on a day — not a guarantee of competence, honesty, or insurance.</li>
+        <li>A page here is not an endorsement, a recommendation, or an approval. No company can pay to appear on this site, to rank higher on it, or to be left off it. Placement is never sold, at any price.</li>
+        <li>Hiring is your decision. Ask for a dated certificate of liability insurance, ask which NFPA 211 inspection level you are buying, and get the findings in writing before money changes hands.</li>
+      </>
+    ) : variant === 'record' ? (
       <>
         <li>A record is not an endorsement, a recommendation, or an approval. Appearing here means a certification number was searched for on an issuer's own roster — nothing else, and nobody is vouched for.</li>
         <li>A certification is not a guarantee of competence or honesty. It is a test somebody passed on a day, recorded by the body that set it.</li>

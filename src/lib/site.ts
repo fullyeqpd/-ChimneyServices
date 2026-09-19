@@ -14,11 +14,13 @@ export const LICENSING_CSV = '/data/licensing-matrix.csv';
 /**
  * Top-level URL namespaces the site owns. Content slugs (states, guides,
  * registry records) may never take one of these, or a data row would silently
- * shadow a page. `pro` is reserved for registry records (/pro/{slug}).
+ * shadow a page. `pro` is reserved for registry records (/pro/{slug}), and
+ * `chicago` by the Chimney Monkey company summary (/chicago).
  */
 export const RESERVED_SLUGS = new Set([
   'about',
   'api',
+  'chicago',
   'data',
   'learn',
   'licensing',

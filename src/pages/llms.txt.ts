@@ -3,6 +3,7 @@ import type { APIRoute } from 'astro';
 import { getStates, getLicensing } from '../lib/content';
 import { getLearnHubs } from '../lib/learn';
 import { getRecords } from '../lib/registry';
+import { getCompanies } from '../lib/companies';
 import { SITE_URL, monthYear, latest } from '../lib/site';
 
 export const GET: APIRoute = async () => {
@@ -31,6 +32,19 @@ export const GET: APIRoute = async () => {
       : `- [Learn](${SITE_URL}/learn): chimney guides being written (none published yet).`,
   );
   lines.push('');
+  const companies = getCompanies();
+  if (companies.length) {
+    lines.push('## Company summaries');
+    lines.push(
+      '> A company summary says what a company reports about itself (services, service area, hours, contact details) and what an issuer’s own public roster showed on the date named (guild membership, individual certifications). Every block is labeled PUBLIC RECORD or REPORTED BY BUSINESS. It is not an endorsement, and placement on this site is never sold.',
+    );
+    for (const co of companies) {
+      lines.push(
+        `- [${co.name} — ${co.address.city}, ${co.address.region}](${SITE_URL}/${co.slug}): chimney sweep and fireplace company serving ${co.serviceArea.counties.join(' and ')}, Illinois; services, service area, contact details and the people found on certification rosters (checked ${co.checkedAt}).`,
+      );
+    }
+    lines.push('');
+  }
   if (hubs.length) {
     lines.push('## Learn guides');
     for (const h of hubs) {

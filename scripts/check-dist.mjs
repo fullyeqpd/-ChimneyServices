@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const SITE_ORIGIN = 'https://www.chimney.services';
 const DIST = path.join(SITE, 'dist');
 const errors = [];
 const warnings = [];
@@ -236,6 +237,35 @@ if (proPages.length) {
   }
 }
 console.log(`Checked ${proPages.length} registry page(s).`);
+
+// ---- Company summary pages (/chicago): indexable, one H1, JSON-LD parses,
+// no status language, and never CSIA in connection with this company.
+for (const rel of ['/chicago.html']) {
+  const f = path.join(DIST, rel.slice(1));
+  if (!fs.existsSync(f)) {
+    errors.push(`${rel}: company page is missing from dist`);
+    continue;
+  }
+  const html = fs.readFileSync(f, 'utf8');
+  const text = stripTags(html);
+  if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'company page: expected exactly 1 <h1>');
+  if (/noindex/.test(html)) err(f, 'company page must be indexable');
+  if (/verified professional/i.test(text)) err(f, 'company page contains "verified professional"');
+  if (/CSIA/.test(text)) err(f, 'company page must not mention CSIA');
+  const types = [];
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try {
+      types.push(JSON.parse(m[1])['@type']);
+    } catch (e) {
+      err(f, `company JSON-LD parse error: ${e.message}`);
+    }
+  }
+  for (const t of ['BreadcrumbList', 'LocalBusiness']) if (!types.includes(t)) err(f, `company page missing ${t} JSON-LD`);
+  if (!llmsRaw.includes(`${SITE_ORIGIN}/chicago)`)) errors.push('llms.txt: missing /chicago');
+  const pagesSitemap = files.find((x) => /sitemap-pages-\d+\.xml$/.test(x));
+  const xml = pagesSitemap ? fs.readFileSync(pagesSitemap, 'utf8') : '';
+  if (!xml.includes(`<loc>${SITE_ORIGIN}/chicago</loc>`)) errors.push('pages sitemap: missing /chicago');
+}
 
 const learnIndex = path.join(DIST, 'learn.html');
 if (fs.existsSync(learnIndex)) {

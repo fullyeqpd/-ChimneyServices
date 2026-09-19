@@ -1,0 +1,169 @@
+{
+  "_note": "Company summary pages. Every field carries a provenance value: 'public-record' (found on an issuer's or registry's own public roster, on the date shown) or 'reported' (the company's own website or the owner's own statement). Nothing here is an endorsement, and placement is never sold.",
+  "companies": [
+    {
+      "slug": "chicago",
+      "name": "Chimney Monkey",
+      "legalNote": null,
+      "crumb": "CHICAGO / CHIMNEY MONKEY",
+      "h1": "Chimney Monkey — chimney sweep and fireplace services, Chicago North Shore",
+      "lede": "What this Buffalo Grove company says it does, where it says it works, and which of its people appear on a certification body's own public roster. Every line below is labeled with where it came from.",
+      "founded": "2017",
+      "foundedNote": "“Serving the North Shore Since 2017” on the company's own site.",
+      "partners": "Three partners",
+      "address": {
+        "street": "741 Hastings Dr",
+        "city": "Buffalo Grove",
+        "region": "IL",
+        "regionName": "Illinois",
+        "postalCode": "60089",
+        "country": "US"
+      },
+      "phone": "847-994-4388",
+      "phoneE164": "+1-847-994-4388",
+      "email": "contact@chimneymonkey.com",
+      "website": "https://chimneymonkey.com",
+      "websiteLabel": "chimneymonkey.com",
+      "hours": "Monday to Friday, 8am – 9pm",
+      "statePath": "/illinois/rights",
+      "licensingPath": "/illinois/licensing",
+      "checkedAt": "2026-09-19",
+      "checkedAtLabel": "19 September 2026",
+      "sources": {
+        "ncsgMember": {
+          "url": "https://ncsg.org/member/chimney-monkey-2",
+          "label": "NCSG — member listing"
+        },
+        "ncsgDirectory": {
+          "url": "https://ncsg.org/find-a-sweep/find-an-ncsg-member",
+          "label": "NCSG — Find an NCSG Member"
+        },
+        "nfi": {
+          "url": "https://www.nficertified.org/public/find-an-nfi-pro/",
+          "label": "NFI — Find an NFI Pro"
+        },
+        "site": {
+          "url": "https://chimneymonkey.com",
+          "label": "chimneymonkey.com"
+        },
+        "siteServices": {
+          "url": "https://chimneymonkey.com/services/",
+          "label": "chimneymonkey.com/services"
+        },
+        "siteContact": {
+          "url": "https://chimneymonkey.com/contact-us/",
+          "label": "chimneymonkey.com/contact-us"
+        }
+      },
+      "membership": {
+        "body": "NCSG",
+        "bodyName": "National Chimney Sweep Guild",
+        "label": "NCSG member company",
+        "memberType": "Voting Member",
+        "provenance": "public-record",
+        "note": "Chimney Monkey appears on the National Chimney Sweep Guild's own public member directory as a Voting Member, listed at 741 Hastings Dr, Buffalo Grove, IL 60089 with the phone number shown above. Checked 19 September 2026. Guild membership is a business subscription, not a competence test — it says the company pays dues and agrees to the guild's code, nothing about the work done on your roof.",
+        "reportedSince": "The company's own site says “NCSG Member since 2017”. The guild's directory shows membership today; it does not publish a start date, so the 2017 figure stays the company's own claim."
+      },
+      "serviceGroups": [
+        {
+          "id": "sweeping-inspection",
+          "title": "Sweeping and inspection",
+          "items": [
+            "Chimney Sweep Service",
+            "Chimney Inspections — Level 1, Level 2 and Level 3",
+            "Fireplace Cleaning",
+            "Gas Log Troubleshooting"
+          ]
+        },
+        {
+          "id": "repair-masonry",
+          "title": "Repair and masonry",
+          "items": [
+            "Chimney Repair",
+            "Chimney Leak Repair — cracks, settlement and leaks",
+            "Masonry Repair",
+            "Custom Masonry",
+            "Crown Repair",
+            "Chimney Relining"
+          ]
+        },
+        {
+          "id": "installs",
+          "title": "Installation and fabrication",
+          "items": [
+            "Chimney Cap Installation",
+            "Chase Covers",
+            "Gas Fireplace Installation",
+            "Fireplace Mantel Installation",
+            "Custom Fireplace Design Services"
+          ]
+        },
+        {
+          "id": "vents-exterior",
+          "title": "Vents and exterior work",
+          "items": ["Dryer Vent Service", "Gutter Cleaning"]
+        }
+      ],
+      "serviceStandardNote": "The company's site describes its inspections as “NFPA 211 compliant”. NFPA 211 is the national standard that defines inspection Levels 1, 2 and 3; it is not a licence and no one audits the claim for you. Ask for the level in writing before the visit and for the findings in writing after it.",
+      "serviceArea": {
+        "counties": ["Cook County", "Lake County"],
+        "summary": "Serving Cook & Lake Counties",
+        "towns": [
+          "Bensenville",
+          "Buffalo Grove",
+          "Chicago",
+          "Deerfield",
+          "Des Plaines",
+          "Elk Grove",
+          "Evanston",
+          "Franklin Park",
+          "Glencoe",
+          "Glenview",
+          "Golf",
+          "Highland Park",
+          "Kenilworth",
+          "Kildeer",
+          "Lake Bluff",
+          "Lake Forest",
+          "Lincolnwood",
+          "Melrose Park",
+          "Morton Grove",
+          "Niles",
+          "Northbrook",
+          "Northfield",
+          "Palatine",
+          "Park Ridge",
+          "River Grove",
+          "Schaumburg",
+          "Schiller Park",
+          "Skokie",
+          "Vernon Hills",
+          "Wheeling",
+          "Wilmette",
+          "Winnetka",
+          "Wood Dale"
+        ]
+      },
+      "people": [
+        {
+          "name": "Art Kalina",
+          "nameOnRoster": "Artjoms Kalinicenko",
+          "credential": "NFI Woodburning Specialist, SPRAT Level 1",
+          "recordPath": "/pro/art-kalinicenko-00001",
+          "role": "Founding Partner",
+          "provenance": "public-record",
+          "note": "Listed on NFI's public Find-an-NFI-Pro search as a Woodburning Specialist under Chimney Monkey; SPRAT Level 1 confirmed against SPRAT's own verification system. Checked 18 September 2026. The full record shows what was checked and what was not."
+        },
+        {
+          "name": "Brett Conklin",
+          "nameOnRoster": "Brett Conklin",
+          "credential": "NFI Gas, Pellet and Woodburning Specialist",
+          "recordPath": null,
+          "role": null,
+          "provenance": "public-record",
+          "note": "Shown on NFI's public Find-an-NFI-Pro listing for this company as certified in all three fuels. No registry record has been created for this person, so nothing beyond that listing has been checked."
+        }
+      ]
+    }
+  ]
+}
