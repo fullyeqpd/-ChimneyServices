@@ -25,6 +25,9 @@ export const GET: APIRoute = async () => {
   lines.push(`- [Rights table CSV](${SITE_URL}/data/rights-table.csv): the comparison table as open data.`);
   lines.push(`- [Licensing by state and trade](${SITE_URL}/licensing): credentials for sweeping, stove installs, flashing and gas hearth work, plus insurance rules.`);
   lines.push(`- [Licensing matrix CSV](${SITE_URL}/data/licensing-matrix.csv): the licensing matrix as open data.`);
+  lines.push(
+    `- [Chimney and fireplace services, explained](${SITE_URL}/services): every job a chimney or hearth company sells — inspection levels, cleaning, masonry and metal repair, waterproofing, installation, diagnostics — each with what it is, when it is needed, the standard behind it, what evidence to ask for, and a researched national price range where one exists.`,
+  );
   lines.push(`- [About](${SITE_URL}/about): what Chimney.Services verifies, what it does not, and who pays for it.`);
   lines.push(
     `- [Company waiting list](${SITE_URL}/companies): form for a chimney company owner to ask for a company page — a provenance-labeled summary of services, service area, contacts, certified people and a dated public rating snapshot. No fee, no ranking, and placement is never sold.`,

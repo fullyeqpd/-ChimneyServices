@@ -406,6 +406,89 @@ for (const rel of ['/rights.html', '/licensing.html']) {
   if (!types.includes('Dataset')) err(f, 'missing Dataset JSON-LD');
 }
 
+// ---- Services catalogue (/services): one H1, one H3 per service with a
+// stable unique id, the ItemList matching those services exactly, the FAQ in
+// the DOM as well as in JSON-LD, none of the three words this site never uses
+// about itself, and every researched price range rendered at most once.
+{
+  const f = path.join(DIST, 'services.html');
+  if (!fs.existsSync(f)) errors.push('services.html: the services page is missing from dist');
+  else {
+    const html = fs.readFileSync(f, 'utf8');
+    const text = stripTags(html);
+    if ((html.match(/<h1[\s>]/g) ?? []).length !== 1) err(f, 'services: expected exactly 1 <h1>');
+    if (/noindex/.test(html)) err(f, 'services page must be indexable');
+
+    const h3Ids = [...html.matchAll(/<h3 id="([^"]+)"/g)].map((m) => m[1]);
+    if (h3Ids.length < 40) err(f, `services: ${h3Ids.length} service <h3> headings, expected at least 40`);
+    const dupH3 = h3Ids.filter((x, i) => h3Ids.indexOf(x) !== i);
+    if (dupH3.length) err(f, `services: duplicate service anchors: ${[...new Set(dupH3)].join(', ')}`);
+    for (const id of h3Ids) {
+      if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(id)) err(f, `services: anchor "${id}" is not kebab-case`);
+      if (!html.includes(`href="#${id}"`)) err(f, `services: anchor "${id}" has no link to itself`);
+    }
+
+    const types = [];
+    let itemList = null;
+    let faqLd = null;
+    for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      let obj;
+      try {
+        obj = JSON.parse(m[1]);
+      } catch {
+        continue; // parse errors already reported above
+      }
+      types.push(obj['@type']);
+      if (obj['@type'] === 'ItemList') itemList = obj;
+      if (obj['@type'] === 'FAQPage') faqLd = obj;
+      if (obj['@type'] === 'Service' || obj.offers || obj.priceRange) err(f, 'services: price or offer markup is forbidden');
+    }
+    for (const t of ['BreadcrumbList', 'WebPage', 'ItemList', 'FAQPage']) {
+      if (!types.includes(t)) err(f, `services: missing ${t} JSON-LD`);
+    }
+    if (itemList) {
+      const items = itemList.itemListElement ?? [];
+      if (items.length !== h3Ids.length) err(f, `services: ItemList has ${items.length} items but the page has ${h3Ids.length} services`);
+      for (const it of items) {
+        const frag = String(it.url ?? '').split('#')[1];
+        if (!frag || !h3Ids.includes(frag)) err(f, `services: ItemList item does not resolve to a service anchor: ${it.url}`);
+        if (!it.name) err(f, 'services: ItemList item without a name');
+      }
+    }
+    // The rendered text carries HTML entities the stripper leaves alone.
+    const decoded = text.replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"');
+    if (faqLd) {
+      const qs = faqLd.mainEntity ?? [];
+      if (qs.length !== 4) err(f, `services: FAQPage has ${qs.length} questions, expected 4`);
+      for (const q of qs) {
+        if (!q.name || !q.acceptedAnswer?.text) err(f, 'services: FAQPage question missing name or answer text');
+        if (!decoded.includes(q.name)) err(f, `services: FAQ question is not in the DOM: ${q.name}`);
+      }
+    }
+
+    // Price blocks are a shared component with its own wording ("not data from
+    // listings on this site"), so the page's own prose is what is checked.
+    const outsidePrices = stripTags(html.replace(/<figure class="price-block"[\s\S]*?<\/figure>/g, ''));
+    for (const [label, re] of [
+      ['directory', /\bdirector(y|ies)\b/i],
+      ['listing', /\blistings?\b/i],
+      ['verified professional', /verified\s+professional/i],
+    ]) {
+      if (re.test(outsidePrices)) err(f, `services page contains the banned word "${label}"`);
+    }
+    if (/\$/.test(outsidePrices)) err(f, 'services: a dollar sign appears outside a price block');
+    const priceSlugs = [...html.matchAll(/<figure class="price-block"[^>]*data-price-slug="([^"]+)"/g)].map((m) => m[1]);
+    const dupPrice = priceSlugs.filter((x, i) => priceSlugs.indexOf(x) !== i);
+    if (dupPrice.length) err(f, `services: price range rendered more than once: ${[...new Set(dupPrice)].join(', ')}`);
+
+    if (!pagesXml.includes(`<loc>${SITE_ORIGIN}/services</loc>`)) errors.push('pages sitemap: missing /services');
+    if (!llmsRaw.includes(`${SITE_ORIGIN}/services)`)) errors.push('llms.txt: missing /services');
+    for (const nav of ['/rights', '/licensing', '/services', '/learn', '/about']) {
+      if (!html.includes(`href="${nav}"`)) err(f, `services: masthead nav link ${nav} is missing`);
+    }
+  }
+}
+
 const learnIndex = path.join(DIST, 'learn.html');
 if (fs.existsSync(learnIndex)) {
   const idx = fs.readFileSync(learnIndex, 'utf8');

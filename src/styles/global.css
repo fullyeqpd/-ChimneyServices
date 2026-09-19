@@ -1356,3 +1356,66 @@ table.data td.mono {
 .topic-list li p:last-child {
   margin-bottom: 0;
 }
+
+/* ---------- Services catalogue (/services) ---------- */
+.service-group {
+  border-top: 1px solid var(--ink);
+  margin-top: 44px;
+  padding-top: 16px;
+}
+.service-group > h2 {
+  margin-top: 0;
+}
+.service-group__blurb {
+  max-width: var(--measure);
+  color: var(--muted);
+}
+.service {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+  margin-top: 24px;
+  max-width: var(--measure);
+}
+.service > h3 {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+.service__what {
+  margin: 0 0 12px;
+}
+.service__facts {
+  margin: 0 0 12px;
+  display: grid;
+  gap: 8px;
+}
+.service__facts > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+}
+@media (min-width: 720px) {
+  .service__facts > div {
+    grid-template-columns: 148px minmax(0, 1fr);
+    gap: 4px 16px;
+  }
+}
+.service__facts dt {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.service__facts dd {
+  margin: 0;
+}
+.service__facts-upsell dt {
+  color: var(--ember);
+}
+.service__learn {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+}
+.service .price-block {
+  margin: 12px 0 0;
+}

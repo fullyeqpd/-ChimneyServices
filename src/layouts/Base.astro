@@ -12,12 +12,13 @@ interface Props {
   jsonLd?: Record<string, unknown>[];
   modified?: string | null;
   citedAs?: string | null;
-  section?: 'rights' | 'licensing' | 'learn' | 'about' | 'home';
+  section?: 'rights' | 'licensing' | 'services' | 'learn' | 'about' | 'home';
 }
 const { title, description, path, noindex, ogType, jsonLd, modified, citedAs, section } = Astro.props;
 const nav = [
   ['rights', '/rights', 'Rights'],
   ['licensing', '/licensing', 'Licensing'],
+  ['services', '/services', 'Services'],
   ['learn', '/learn', 'Learn'],
   ['about', '/about', 'About'],
 ] as const;

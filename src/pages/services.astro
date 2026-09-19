@@ -1,0 +1,208 @@
+---
+// /services — every job a chimney or hearth company sells, defined.
+//
+// The page exists because an invoice line like "smoke chamber parging" tells a
+// homeowner nothing, and the trade knows it. Each entry says what the work is,
+// when it is actually needed, the standard it answers to, and what evidence to
+// ask for. Where a job is a known scare-sell, that is said plainly with a way
+// to check it. We recommend nobody, and no price here is a quote.
+import Base from '../layouts/Base.astro';
+import Chip from '../components/Chip.astro';
+import PriceBlock from '../components/PriceBlock.astro';
+import BeforeYouRely from '../components/BeforeYouRely.astro';
+import { getServices, getServiceGroups, serviceTags, learnName, SERVICES_UPDATED } from '../lib/services';
+import { ORG_NAME, SITE_URL, abs, monthYear } from '../lib/site';
+
+const path = '/services';
+const title = `Chimney & Fireplace Services Explained: Every Job, Defined | ${ORG_NAME}`;
+const description =
+  'Every chimney and fireplace service explained: inspections, sweeping, masonry and liner repair, installs — what each job is for and what to ask for.';
+
+const services = getServices();
+const groups = getServiceGroups();
+const updatedLabel = monthYear(SERVICES_UPDATED) ?? SERVICES_UPDATED;
+const updatedUpper = updatedLabel.toUpperCase();
+
+const tagGlyph = (t: string) => (t.startsWith('NATIONAL') ? 'globe' : t === 'VARIES BY STATE' ? 'landmark' : undefined);
+
+const faq = [
+  {
+    id: 'faq-sweep-vs-inspection',
+    q: "What's the difference between a chimney sweep and a chimney inspection?",
+    a: 'A sweep is cleaning: brushes and a vacuum take soot and creosote out of the flue. An inspection is looking: a technician checks the structure, the clearances and the condition of the flue against NFPA 211 and writes down what was found. Most companies do both on one visit, which is why the two get confused, and why a cheap sweep can arrive with a long list of findings attached. They are separate jobs with separate purposes, so ask for both to be named separately on the invoice — including which inspection level you are buying.',
+  },
+  {
+    id: 'faq-licensed',
+    q: 'Which of these services need a licensed contractor?',
+    a: 'It varies by state, and sometimes by city inside a state. Sweeping itself requires no state credential in almost every jurisdiction; masonry rebuilds, appliance installs and anything that touches a gas line are the work most likely to need a license, a permit and an inspection. Gas connections in particular are licensed work in most states — normally a gas fitter or a plumber. Our state pages set out what each state requires — read the laws by state and the licensing by state before you assume it either way.',
+    links: [
+      ['/rights', 'Chimney laws by state'],
+      ['/licensing', 'Licensing by state'],
+    ] as [string, string][],
+  },
+  {
+    id: 'faq-how-often',
+    q: 'Do I need all of this every year?',
+    a: 'No. NFPA 211 asks for one thing annually: an inspection of the chimney and the appliance connected to it. Cleaning happens when there is enough build-up to justify it, which for a lightly used fireplace may not be every year. Everything else on this page — crown work, liners, caps, parging, rebuilds — is repair work, and repair work belongs to a finding. If a company proposes it without showing you what prompted it, the finding is missing.',
+  },
+  {
+    id: 'faq-real-repair',
+    q: 'How do I know a recommended repair is real?',
+    a: 'Three habits cover most of it. Ask to be shown what was found — a photograph or camera footage of your chimney, with something in the frame for scale, not a stock picture or a diagram. Ask for it in writing: the finding, the inspection level it came from, the date, and what happens if nothing is done. And for any job of real size, get a second opinion from a company that did not find the problem. Honest technicians expect all three; the answer you get to the first one usually tells you the rest.',
+  },
+];
+
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: ORG_NAME, item: SITE_URL },
+    { '@type': 'ListItem', position: 2, name: 'Chimney and fireplace services', item: abs(path) },
+  ],
+};
+const webPageLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': `${abs(path)}#page`,
+  url: abs(path),
+  name: title,
+  description,
+  inLanguage: 'en-US',
+  dateModified: SERVICES_UPDATED,
+  isPartOf: { '@id': `${SITE_URL}/#organization` },
+  publisher: { '@id': `${SITE_URL}/#organization` },
+  about: {
+    '@type': 'Thing',
+    name: 'Chimney and fireplace services',
+    description:
+      'The jobs a chimney or hearth company sells, each defined: what the work is, when it is needed, the standard behind it, and what evidence to ask for.',
+  },
+};
+// An ItemList of definitions, not offers. This site publishes no price markup
+// and no Service schema: a researched national range is not an offer, and
+// nobody here is selling the work.
+const itemListLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Chimney and fireplace services, explained',
+  numberOfItems: services.length,
+  itemListOrder: 'https://schema.org/ItemListUnordered',
+  itemListElement: services.map((s, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: s.name,
+    url: `${abs(path)}#${s.slug}`,
+  })),
+};
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+};
+const jsonLd = [breadcrumbLd, webPageLd, itemListLd, faqLd];
+---
+<Base
+  title={title}
+  description={description}
+  path={path}
+  jsonLd={jsonLd}
+  modified={SERVICES_UPDATED}
+  citedAs={updatedLabel}
+  section="services"
+>
+  <nav class="crumb" aria-label="Breadcrumb">CHIMNEY.SERVICES / SERVICES EXPLAINED</nav>
+
+  <h1>Chimney and fireplace services, explained — every job a chimney company sells and what it is for</h1>
+  <p class="badge-date">Updated {updatedLabel}<span class="dot">·</span>National<span class="dot">·</span>{services.length} services</p>
+
+  <p class="lede learn-intro" id="intro">
+    A chimney company sells dozens of different jobs, and the names on the quote rarely explain themselves. This page
+    defines every one of them: what the work is, when it is actually needed, the standard it answers to, and what to ask
+    to be shown before you agree to it. We recommend nobody and take no fees — the point is that you can read a quote and
+    know what you are reading.
+  </p>
+
+  <nav class="jump" id="jump" aria-label="Jump to a group of services">
+    {groups.map((g, i) => (
+      <a class={`chip${i === 0 ? ' chip--active' : ''}`} href={`#group-${g.group.id}`} title={g.group.heading}>
+        {String(i + 1).padStart(2, '0')} {g.group.label} ({g.services.length})
+      </a>
+    ))}
+    <a class="chip" href="#faq">FAQ</a>
+  </nav>
+
+  {groups.map((g) => (
+    <section class="service-group" aria-labelledby={`group-${g.group.id}`}>
+      <h2 id={`group-${g.group.id}`}>{g.group.heading}</h2>
+      <p class="service-group__blurb">{g.group.blurb}</p>
+
+      {g.services.map((s) => (
+        <article class="service">
+          <h3 id={s.slug}>{s.name}</h3>
+          <p class="read__meta">
+            <a class="anchor-mark" href={`#${s.slug}`} aria-label={`Link to ${s.name}`}>#{s.slug}</a>
+            <span>UPDATED {updatedUpper}</span>
+            {serviceTags(s).map((t) => <Chip glyph={tagGlyph(t)}>{t}</Chip>)}
+          </p>
+          <p class="service__what">{s.what}</p>
+          <dl class="service__facts">
+            <div>
+              <dt>When it is needed</dt>
+              <dd>{s.when}</dd>
+            </div>
+            <div>
+              <dt>Standard</dt>
+              <dd>{s.standard ?? 'No national chimney standard covers this one.'}</dd>
+            </div>
+            <div>
+              <dt>Ask for</dt>
+              <dd>{s.askFor}</dd>
+            </div>
+            {s.upsellNote && (
+              <div class="service__facts-upsell">
+                <dt>Known upsell</dt>
+                <dd>{s.upsellNote}</dd>
+              </div>
+            )}
+          </dl>
+          {s.variesByState && (
+            <p class="state-line">
+              Licensing, permits and what is allowed differ by state — see the <a href="/rights">50-state laws table</a>
+              {' '}and <a href="/licensing">licensing by state</a>.
+            </p>
+          )}
+          {s.priceSlug && <PriceBlock slug={s.priceSlug} id={`price-${s.priceSlug}`} />}
+          {s.learn && (
+            <p class="service__learn">
+              <a href={s.learn}>Read the guide: {learnName(s.learn).toLowerCase()} →</a>
+            </p>
+          )}
+        </article>
+      ))}
+    </section>
+  ))}
+
+  <section aria-labelledby="faq" class="faq-section">
+    <h2 id="faq">Frequently asked questions about chimney services</h2>
+    <div class="faq">
+      {faq.map((f, i) => (
+        <details id={f.id} open={i === 0}>
+          <summary><h3>{f.q}</h3></summary>
+          <div class="prose">
+            <p>{f.a}</p>
+            {'links' in f && (
+              <p class="chips">
+                {(f as { links: [string, string][] }).links.map(([href, label]) => (
+                  <a class="chip" href={href}>{label}</a>
+                ))}
+              </p>
+            )}
+          </div>
+          <p class="fineprint"><a class="anchor-mark" href={`#${f.id}`}>#{f.id}</a></p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <BeforeYouRely dateLabel={updatedLabel} variant="guide" />
+</Base>
